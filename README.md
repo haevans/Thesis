@@ -527,3 +527,6 @@ The history of releases can be viewed at [ChangeLog](ChangeLog.md)
 *   Tina Schwamb - testing and bug reports
 
 *   John Plaice - Bug fixes
+
+
+Look I have made an edit to see if git is working properly.
