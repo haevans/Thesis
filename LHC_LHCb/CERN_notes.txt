@@ -1,0 +1,34 @@
+Here I shall write some notes about interesting things that I know or have learnt about CERN and this shall then form a basis of what I shall write about in that section.
+
+Source Marco's Thesis
+> CERN = European Organisation for Nuclear Research
+> CERN came out of WW2  Louis de Broglie advocated the creation of a european lab (in 1949 in a Eurpoean Cutural conference in Lausanne)
+> CERN was establisehd in 1954 - 12 founding member states and Geneva was chosen.
+> Noteworthy sucesses are;     
+  > Weak Neutral Current at the Garamell bubble chamber in 1973
+  > SPS for which stochastic cooling was invented (Nobel prize for that person), W and Z were discovered at the SPS
+  > LEP which showed the 3 neutrinos below Mz
+
+LEP stopped in 2000, so the LHC could be built.
+
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+Information from CERN LHC brocher
+
+> there	    are 7 active experiments on the LHC ring - ATLAS, CMS, LHCb, TOTEM, ALICE, LHCf	and MoEDAL. There are 5	active experiments on the SPS and 2 on data anlysis, 2 active on the PS and 1 in data analy\
+sis and	    also experiemnts base on ISOLDE and AD,  as well  as non accelerator experiments and those in development.
+
+
+
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+From the LHC brocher
+
+>CERN was founded in 1954 and there are 21 member states
+
+
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+From the CERN webpage
+
+> when CERN was founded it was focused on understanding what was inside that atom - but since then things have changed and the work at CERN is now particile physics.
