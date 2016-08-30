@@ -4,7 +4,7 @@
 %if print - it's like a print out if not its what you get online. Spaceing is 
 %different.
 %\documentclass[a4paper,12pt,times,numbered,print,index]{Classes/PhDThesisPSnPDF}
-\documentclass[a4paper,12pt,fourier,numbered,index]{Classes/PhDThesisPSnPDF}
+\documentclass[a4paper,12pt,default,numbered,index]{Classes/PhDThesisPSnPDF}
 
 %NOTE---------------------------------------------------------------------------
 %All figures need to go into the Figs file
@@ -117,7 +117,10 @@
 
 \frontmatter
 
-
+%Options to move where the chapter headings are;
+%option 1 - \chapterfont{\centering} puts it in the center of the page
+%option 2 - \chapterfont{\raggedleft} puts it on the right side, ie. ragged on the left, smooth on the right
+%option 3 - \chapterfont{\raggedright} puts it on the left side
 
 
 
@@ -129,15 +132,16 @@
 \chapterfont{\raggedleft}
 \include{Abstract/abstract}
 \include{Acknowledgement/acknowledgement}
+\include{Preface/preface}
 \chapterfont{\raggedright}
 
 % *********************** Adding TOC and List of Figures ***********************
 
 \tableofcontents
 
-\listoffigures
+%\listoffigures
 
-\listoftables
+%\listoftables
 
 % \printnomenclature[space] space can be set as 2em between symbol and description
 %\printnomenclature[3em]
@@ -145,8 +149,9 @@
 %\printnomenclature
 
 % ******************************** Main Matter *********************************
-\include{Introduction/Introduction}
 \mainmatter
+\include{Introduction/Introduction}
+%\mainmatter
 \include{LHC_LHCb/LHC}
 \include{LHC_LHCb/LHCb}
 \include{Theory/theory}
@@ -158,13 +163,13 @@
 %\backmatter
 
 % ********************************** Bibliography ******************************
-\begin{spacing}{0.9}
+%\begin{spacing}{0.9}
 
 % To use the conventional natbib style referencing
 % Bibliography style previews: http://nodonn.tipido.net/bibstyle.php
 % Reference styles: http://sites.stat.psu.edu/~surajit/present/bib.htm
 
-\bibliographystyle{apalike}
+\bibliographystyle{ieeetr}
 %\bibliographystyle{unsrt} % Use for unsorted references  
 %\bibliographystyle{plainnat} % use this to have URLs listed in References
 \cleardoublepage
