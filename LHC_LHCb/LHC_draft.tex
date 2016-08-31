@@ -78,6 +78,7 @@ bunch crossing rate is 40 MHz
 2808 bunches per beam with > 10^{11} protons in a bunch but there could be 3600 but there are not because of transfer and injection, include these numbers because they are relevant for luminoscity.
 Design luminoscity is 10^34cm-2s-1
 The existing accelerators were upgraded to give the needed bunch intensities and emmittances.
+The revolution frequency for beams is 11.245 kHz.
 
 
 Sentence ideas - this is what I originally has
@@ -90,10 +91,13 @@ I think that the order here is nice.
 
 
 
-The protons for the LHC originate from hydroden atoms in a gas, the gas is ionised to strip away the electrons and the protons are accelerated through a chain of particle accelerators of increasing energy before being injected into the LHC. The chain of accelerators, shown in Fig.~\ref{fig:accelerator_chain}, consists of existing accelerators that have been used in various experiments through the second half of the last century and have been upgraded to meet the requirements for providing protons for the LHC. 
-The protons leave the chain of accelerators with of energy of 450\gev per proton and in bunches of  >$10^{11}$, as the bunches injected into the LHC they are split into two opositely circulating beams.
+The protons for the LHC originate from hydroden atoms in a gas, the gas is ionised to strip away the electrons and the protons are accelerated through a chain of particle accelerators of increasing energy before being injected into the LHC. The chain of accelerators, shown in Fig.~\ref{fig:accelerator_chain}, consists of existing accelerators that have been used in various experiments through the second half of the last century and have been upgraded to meet the requirements needed for providing protons for the LHC. 
+The protons leave the chain of accelerators with of energy of 450 \gev per proton and in bunches of  >$10^{11}$, as the bunches injected into the LHC they are split into two opositely circulating beams.
 The LHC accelerates the protons to the desired center of mass energy using supercooled Radio Frequency cavities for acceleration and superconducting dipole magnets to bend the beams around the ring. 
-The design configuration for the beams is to have 2808 bunches per circulating beam with 25~ns between each bunch, the bunches are focused using quadrupole magnets before being brought to collide at 4 interaction points with a bunch crossing rate of 40~MHz. 
+%The design configuration for the beams is to have 2808 bunches per circulating beam with 25~ns between each bunch, 
+Then bunches are focused using quadrupole magnets before being brought to collide at 4 interaction points with a bunch crossing rate of 40~MHz. 
+
+The energy at which the bunches are collided determines the production cross-section of different particles
 
 \begin{figure}[htbp!] 
 \centering    
@@ -104,5 +108,68 @@ The design configuration for the beams is to have 2808 bunches per circulating b
 
 .3
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+So lets now accumulate some facts 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+3> Now only is energy important but so is luminoscity and here is how we get that
+It would be nice here to have a plot of the integrated luminoscity delivered to LHCb over 2011 - 2016.
+Luminoscity is a measure of the collision rate
+design liminoscity is 10^34cm-2s-1
+The lunminoscity is reached through numbers of bunches and revolution frequency/25ns.
+Magnets focus the beams into the shape required for the delivered luminoscity.
+Difference between instananeous and integrated luminoscity,
+Can also have luminoscity in terms of mu.
+Experiments can focus/defocus the beam to get the luminoscity they require.
+Instantaneous lumi can be integrated over time and this is how we get a measure of how much data is recorded.
+The maximum instaneanous lumi decreases over time as the number of protons in the bunches reduces. LHCb uses luminoscity leveling so that it gets the same luminoscity all the time.
+Luminoscity is a measure of the number of protons crossing a unit area per unit time.
+Energy allow new effects to be produced but luminoscity is also important because if show the number of crossing and the number of events in a process pre second is N = L.sigma where sigma is the production cross section for a praticular process for if sigma is low we need high luminoscuty. (What is the production cross section of Bs and Bd mesons? Surely high but we just have a low BF.)
+
+
+The number of events produced as the beams collide for a particular process pre second is given by
+
+N = L . sigma
+
+where L is the instantaneous luminoscity and sigma the production cross section for the process. 
+
+The prodcution cross-section for difference particles depends on the CoM energy of the collisions, the high energies the LHC can reach at allows the production of particles not accessible at past colliders. 
+But in order to get a large number of interesting events the instantaneous luminoscity is also important. 
+
+The instantaneous lunimoscity is a meaure of how many collisision occur per second, it is given by
+
+\begin{equation}
+\mathcal{L} = \frac{N^{2} f n_{b}}{\mathcal{F}}.
+\label{eq:inst_lumi}
+\end{equation}
+
+where $N$ is the number of protons per bunch, $n_{b}$ the number of bunches per beam, $f$ the bunch revolution frequency and $\mathcal{F}$ contains information about the beam geometry. The LHC is designed to operate at an instantaneous luminoscity of $10^{34}$ cm$^{-2}$s$^{-1}$, in order to reach this luminoscity the LHC can have 2808 bunches per beam and a revolution frequency for beams is 11.245 kHz leading to a seperation of 25 ns between bunches. The luminoscity delivered at each interaction point can be tuned by the quadrupole magnets altering the shape of each bunch.
+
+
+The high energies that the LHC operates at allows the production of particles not accessible at past colliders (eg the Higgs and would allow the search for heavy BSM particles). However in order to produce a large number of these particles the LHC the number of proton interactions per bunch crossing needs to be large. The luminoscity of a collider is a measure of the collision rate
+
+The production of particles increases with energy therefore the high energies at the LHC could allow for greater number of particles to be produced or new particles.
+
+
+
+
+
+
+
+
+
+
+But in order to get a large number of interesting events the instantaneous luminoscity is also important. 
+
+
+The CoM energy of a collider is an important measure of it's preformance as it dictates what particles can or could be produced in collisions but another important measure of collider performance is the instantaneous luminoscity a collider can provide. The instantaneous luminoscity, $\mathcal{L}$, is a meaure of how many collisision occur per second, it is given by
+
+\begin{equation}
+\mathcal{L} = \frac{N^{2} f n_{b}}{\mathcal{F}}.
+\label{eq:inst_lumi}
+\end{equation}
+
+where $N$ is the number of protons per bunch, $n_{b}$ the number of bunches per beam, $f$ the bunch revolution frequency and $\mathcal{F}$ contains information about the beam geometry. The LHC is designed to operate at a maxiumum instantaneous luminoscity of $10^{34}$ cm$^{-2}$s$^{-1}$, in order to reach this luminoscity the LHC can have 2808 bunches per beam and a revolution frequency for beams is 11.245 kHz leading to a seperation of 25 ns between bunches. The higher the luminoscity, the more collisions happen in a second and the more particles will be produced, this can either be advantageous or disadvantageous depending on what physics process is being studied and the detector design that recors the collisions. Therefore luminoscity delivered at each interaction point can be tuned by the quadrupole magnets by altering the shape of each bunch for the experiments at each point.
+
+
+
 \section{The LHCb Experiment}
 \label{LHCb}

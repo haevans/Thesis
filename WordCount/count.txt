@@ -1,0 +1,3 @@
+Day	Month	Hour	Minutes	Words
+31	08	12	19	502
+
