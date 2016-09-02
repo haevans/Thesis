@@ -1,3 +1,6 @@
+Here see Thesis/Documents/PS_springer.pdf
+
+
 Here I shall write some notes about interesting things that I know or have learnt about CERN and this shall then form a basis of what I shall write about in that section.
 
 Source Marco's Thesis
@@ -32,3 +35,4 @@ From the LHC brocher
 From the CERN webpage
 
 > when CERN was founded it was focused on understanding what was inside that atom - but since then things have changed and the work at CERN is now particile physics.
+

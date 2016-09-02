@@ -1,0 +1,125 @@
+Here is the information and some facts about the LHC and the experiments on the LHC as well as Run 1, 2 and LS1.
+
+################################################################################################################
+
+Facts about the LHC and where the protons come from
+####################################################
+The LHC was conceived in 1980, construction started in 2000 and the first beams were circulated in 2008.
+It was built in the LEP tunnel with a circumference of 27km to save on costs. 
+It was desinged to operate at 14TeV therefore it needed 8.3T magnets to bend the beams that could get to 14 TeV in the LEP tunnel. This was deceided since it would be a significant improvement compared to LEP and the Trevatron.
+The LHC can also collide lead ions can get to an energy of 2.76 TeV per nucleon due to the 8.3T magnets. They use 208Pb+82 which are stripped of electrons, the CoM energy is 1.15PeV and luminoscity 10^27cm-2s-1
+Protons travel in oposite directions around the ring in seperate vacuum chambers and are bent by dipole magnets.
+Protons are brought to collide in 4 seperate places.
+
+Protons come for hydorgen atoms in a gas they are ionised to get the protons
+First Linac2 accelerated to 50MeV then the Proton Synchrotron Booster (PSB) uses 4 parallel accelerator rings to increase the proton energy to 1.4 GeV
+Proton Synchrotron accelerated the protons to 25GeV and creates the bunch structure needed for the LHC. This was build and operation in 1959, it was CERN's first circular accelerator. (More details about the PS can be found here https://www.google.co.uk/url?sa=t&rct=j&q=&esrc=s&source=web&cd=14&cad=rja&uact=8&ved=0ahUKEwjj3LjWmevOAhVJVxoKHWtoCUgQFghnMA0&url=http%3A%2F%2Fwww.springer.com%2Fcda%2Fcontent%2Fdocument%2Fcda_downloaddocument%2F9783642308437-c2.pdf%3FSGWID%3D0-0-45-1386217-p174512778&usg=AFQjCNHPZYsk77ci48XiCeOq0gJk4sY_Sw&sig2=no5A80lwi1Mpw7Idzml9oQ and http://cerncourier.com/cws/article/cern/28138 and in /usera/hme28/Thesis/Documents/PS_springer.pdf)
+
+Super Proton Synchrotron increases proton energu up to 450 GeV and then the protons are injected into the LHC
+At injection the proton bunches are divided into two beams travelling in oposite directions.
+Parts of this accelerator chain were experiments in their own right in the past and contributed to important scientic discoveries. They have been modified to suit the needs of the LHC.
+
+There is space for 3600 bunches pre beam in the LHC but the design was to have up to 2808 to allow the transfer of the beam between different accelerators at different times
+1232 dipole magnets to keep protons going in a circle and are increased up to 8.3T as beams go up to 7TeV. They are super conducting magents which are kept at 1.9K and are 15m in length. This is acheived using heluim.
+Once the protons are at the required energy quadropole magnets focus the beams before the collisions there 392 quadrupole magnets that are between 5-7m in length. The beams are focused to a width of around 14 microms.
+16 super conducting radio frequency cavities accelerate the protons (8 per beam), these cavities ensure protons going to fast get smaller acceleration and slow protons get a higher acceleration.
+LHC designed to make bunches seperated by 25ns but Run 1 had only 50 ns and aroun 1400 bunches per beam and at least some of 2015 saw 25ns bunch spacing.
+The LHC beams travel in an ultra high vacuum better than 10^08mbar.
+The rate at which bunches cross at the interaction points is 40 MHz
+There are > 10^{11} protons in a bunch
+Design luminoscity is 10^34cm-2s-1, which yields 20-30 proton-proton interactions per bunch crossing. 
+This luminoscity cannot be done with proton-antiproton collisions because it would require anti-proton production that would exceed the capabilities of the LHC. We can't use electrons because the loss of energy due to Bremstralung radiation would be very high.
+High energy and high luminoscity is needed to have a high chance of creating and detecting previously unobsered particles in a sensible time frame.
+At LHCb the luminoscity is around 4 x 10^32 cm-2x-1 giving 2 proton-proton interactions per bunch crossing, it allows better SV reconstruction. LHCb uses luminoscity levelling.
+The revolution frequency for beams is 11.245 kHz.
+There are three main steps to before collisions; ramp - energy is increased; squeeze - quadrupole magnets with side of each interaction point/experiment squeeze the bunches into the required shape for collisions; the last step is to remove the seperation bumps using local corrector magnets, these are the spaces that keep the beams seperate during the ramp and squeeze phases.
+The LHC broke in 2008 because there was a bad electical connection between 2 dipole magnets which caused thermal resistance because the magnets are so cold this caused an explosion.
+
+Luminoscity is an important measure of a colliders performance, the luminoscity and energy together are important to consider in order to create and detect possible new physics particles in a reasonable time frame. Information about what luminoscity is is in /usera/hme28/Thesis/Documents/luminoscity.pdf
+
+For this part I read the detector chapters of Will Barter, Alessio Morda, Marco Bettler and Ed Greening.
+
+
+Facts about Run 1, LS1 and also Run 2
+#####################################
+
+Run 1
+https://timeline.web.cern.ch/timelines/The-Large-Hadron-Collider/overlay#2013-02-16%2009:00:00
+http://cerncourier.com/cws/article/cern/54381
+This was from 2010 - 2013. The proton-proton beam energy in 2010 and 2011 was 7TeV and this was raised to 8TeV for 2012. There were various ion runs as well, the data taken in 2013 corresponded to ion runs and proton collisions that were relevant for these runs. 
+"And during the last weeks of the run, the remarkable figure of 100 petabytes of data stored in the CERN mass-storage systems was surpassed. This data volume is roughly equivalent to 700 years of full HD-quality movies."
+2012 was used as commisioning phase and establishing confidence in operational proceedures.
+2011 and 2012 had high bunch intensity and lower than nomial emmitance (a measure of the spread of the beam in transverse phase space) due to good performance of the input accelerator chain. This lead to higher pileup in collisions but the experiments dealt well with that.
+
+
+LS1
+https://home.cern/about/updates/2013/02/long-shutdown-1-exciting-times-ahead
+https://timeline.web.cern.ch/timelines/The-Large-Hadron-Collider/overlay#2013-02-16%2009:00:00
+ https://press.cern/backgrounders/major-work-experiments-run-2
+The long shut down began early 2013
+On the LHC they re-did thousands of high-current splices between the superconducting magnets (after the LHC broke in 2008 the connections between the magnets were checked and they weren't ideal therefore Run 1 was at 7/8TeV but LS1 allowed them to be re-done and therefore the energy could be increased) and additional sheilding was added to protect electronics.
+"During LS1 the upgrade of the PS access control system, which includes the installation of 25 new biometrically controlled access points, will continue. The whole tunnel ventilation system will also be dismantled and replaced, with 25 air-handling units representing a cumulated flow rate of 576,000 cubic metres per hour to be installed around the accelerator's 628-metre circumference. Meanwhile, at the SPS, about 100 kilometres of radiation-damaged cables used in the instrumentation and control systems will be removed or replaced."
+LHCb - HERSCHEL was added to study CEP, part of the berylium beampipe was replaced and also the new support structure for the beam pipe is now lighter.
+
+Run2 
+https://home.cern/about/engineering/restarting-lhc-why-13-tev
+13 TeV was chosen to optimise the  delivery of particle collisions for physics research and allow for finding new physics asap. This decision was made in light of the 1232 dipole magnets, the higher energy the protons can have need a stronger magnetic field and therefore more currenet running through the magnets. These are superconducting magnets at 1.9K, the current travels through superconducting coils a small change in temperature disrupts this and causes a quench - the current begin extract in a short time but everything is safe. These magnets have a memory and have to be trained. Early on they will quench at low currents but over training the currents they quench at increases, but if the magnets have been warm for a long period they do not remember 100% of the current they quenched at before but they are still better than when they were first used. Before 2008 a sample of magnets were trained for 14 TeV and it was found that some didn't have as higher memory as expected. Therefore to get then to what is needed for 14 TeV would take a lot of training quenches and a long time getting in the way of physics research, but it would take less time at 13 TeV . Therefore 13 TeV was chosen so that new physics could be found asap. The decision about whether to go to 14 TeV is one for later in Run 2.
+
+Facts about other CERN experiments
+##################################
+MOEDAL (Monopole and Exotics Detector at the LHC )
+http://home.cern/about/experiments/moedal
+This experiment was approved in 2010 and looks for magentic monopole (particles that carry magnetic charge) and also highly ionizing Stable Massive Particles which are in BSM theories. It is at the same point of the LHC as LHCb
+
+LHCf (LHC forward experiemt)
+http://home.cern/about/experiments/lhcf
+It is location +/- 140m from the ATLAS experiment and is looking for particles thrown foward by collisions at the LHC which are suposed to simulate cascades that cosmic rays make when the higt the atmosphere in a labatory cosmic rays. This can help scientist to interperate and callibrate large scale cosmic ray experiments that could cover 1000s km.
+
+TOTEM (Total, elastic and diffractive cross-section measurement)
+http://home.cern/about/experiments/totem
+This experiment looks at head on collisions of protons in the forward direction which is not covered by other LHC experiments. Using these collisions it is looking to study properties of the protons themselves. It is at the same interaction point as CMS and the experiment coveres 500m, it has been used in collaboration with CMS to study invariant mass created in collisions.
+
+CMS (Compact Muon Solenoid)
+http://home.cern/about/experiments/cms
+Designed to seartch for the Higgs, dark matter, extra dimensions and physics beyond the SM but as well as preforming precision measurements of the SM. It is a 4pi detector.
+
+ATLAS (A Toroidal LHC ApparatuS)
+http://home.cern/about/experiments/atlas
+The ATLAS detector has the same physic goals as CMS but a different design. It is a 4pi detector.
+
+LHCb (Large Hadron Collider Beauty Experiment)
+http://home.cern/about/experiments/lhcb
+It is a single arm forward spectrometer that is designed to look at CP violating processing to see if they differ from the SM and also studing rare b-hadron decays as indirect probes for discovering new physics processes.
+
+
+
+
+
+The overall plan for this section was to do
+###########################################
+
+So overall this plan seems to be;
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+1> The LHC is a synchrotron to collide protons at 14 TeV (and ions)
+2> This is how the LHC gets it's protons and accelerates them (maybe mention the bunch spacing too?)
+3> Now only is energy important but so is luminoscity and here is how we get that
+4> Here are the experiments that are on the LHC - see they are different
+5> This is what the LHC has done since 2010 and here are the numbers of energy and luminoscity for LHCb 
+
+
+Working from the following rough ideas
+%%%%%%%%%%%%%%%
+
+The LHC was designed to cllide protons at 14 TeV. It collides lead-ions too but these are irrelevant to my thesis. The LHC accelterated and collides protont and ipons and it has 2 beams that go in oposite directions.
+
+
+It starts with protons from hydrogen whccih are accelerated through a chain of past CERN accelerators adapted to feed the LHC. 
+
+The protons are around 450 GeV when they are put into the LHC. They are delivered in bunches. THe LHC then accelerates these beams of proton bunches using RF cavities, bendin the beam around it's ring with dipole magents up to the desirerd energu. Once they have made it, the numches are quite spread out so need to be focued sing quadroploe magnets before they are collided at the 4 intereaction points. Prehaps some details about fills of the LHC? Look here is a picture of the accelerator chain that feeds the LHC. 
+
+As well as the energy as an important charteristic of a collider - because the cross-section to produce various particles increases with energy, the luminoscity  is also well important. The instantaneous luminoscity is given here and the parameters mean some interesting things. The luminoscity is proportianol to the collision rate. The parameters can be controlled by the magents to suit the different needs of the experiments. For example ATLAS and CMS use all possible luminoscity which decreases with a fill, where as LHCb operates at a lower luminoscity which is made constant through adjustments to the bunch shapes during a fill. Look here is a cool graph that shows all the things.
+
+There are 7 experiemnts on the LHC that make used of these collisions. CMS and ATLAS are general purpose detectors which were designed to search for the Higgs and identify NP particles which are not in the SM. ALICE uses heavy ion collisions to study quark-gluon plasma. LHCf, TOTEM and MODAL fo some other things. The final experiment LHCb collects data that is used in this thesis and will be explained soon.
+
+The LHC began properly in 2010 and ran in 2012 taking data at 7TeV and 8TeV, there was then a long shut down and various things were done. In 2015 data taking started up again, and is still on going, at the higher energy of 13TeV. The nice table here shows the energy the LHC opereated at each year and the integrated luminoscity collected by LHCb. (Not sure if this should go here or somewhere else, leave here for now).
+
