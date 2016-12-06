@@ -1,0 +1,136 @@
+\section{LHCb Experiment}
+
+%Brief overview of LHCb setting the scene for the rest of the section; physics aims, motivates the shape, it collects stuff and is made or many subdetectors, look here is a picture.
+% Should define what upstream and downstream are
+
+Physics motivations is the indirect search/evidence for new physics by looking at CP violation and rare decays of beauty and charm hadrons. (Almost a quote).
+lower lunimiscoity  means that events are dominated by a single pp interaction which reduced the occupancy of the detector and also reduces radiation damage.
+LHCb must have a good trigger (efficiency) to select B hadrons with a vareity of final states. To identify B hadrons we need excellent vertex and momentum resolution which are necessary to have good proper time resolution and mass resolution. We need to be able to identify protons, kaons and pions. 
+
+Detector geometry is chosen because at high energies b and anti-b hadrons are produed in either a forward of backward cone around the beam pipe.
+
+%Perhaps I could add a section about b physics and LHCb design and go into more detail about the production? Then the start of this section could just be an overview of LHCb as an introduction that sets the scene for the next sections.
+\subsection{\bbbar production}
+The LHC experiment was designed to make precise measurements of processes predicted with the SM to indirectly search for hines ot New Physics processes. %Simon has a reference here.
+In particular it was designed to measure both CP violating decays and race decays originating from $b$-hadrons. The physics motivations for the LHCb experiment are quite different compared to those the the general purpose detectors, ATLAS and CMS at the LHC, these differences are reflected in the experimental design. The LHCb experiment is a single-arm forward spectrometer that covers the angular region 10 to 250 mrad in the (non-bending) vertical direction and 10 to 300 mrad in the (bending) horisontal direction. The central acceptance is determined by the beampipe. The reduced abgular acceptance of LHC compare to the 4\pi acceptance of the GPDs is due to the prcesses that dominate \bbbar pair production in proton collisions. At the LHC \bbbar pairs are mainly produced through quark anti-quark annihilation, gluon - gluon fusion and gluon splitting, the Feyman diagrams for these processes are shown in Fig. XX. %there are references in some theses for this
+These production processes lead to the \bbbar pairs being produced at small angles relative to the beampipe. The angular distribution of \bbbar pairs produced is shown in Fig. XX. Therefore although LHCb has a smaller angular acceptance compared to teh GPDs it accepts approximately 40\% of $b$ quarks produced at the LHC.
+
+
+\subsection{Tracking}
+%What is tracking in general?
+- reconstruct electrically charged particles as the travel through the detector
+- with the addition of a magnet we can measure the momentum of charged particles as well
+- momentum is also necessary to interpert the information taken by the RICH
+- usually silicon or MWPC
+- measures the electric charge
+- tracks can be extraploated/interpolated into other detectors to link what is recoreded there with the tracks of charged particles
+%Why is is needed?
+- accurate tracking of the flights of charged particles is essential for all physics analyses
+- good tracking is needed to get good mometum resolution which then leads to good mass resolution which enables sucessful seperation of signal and background events. 
+- allows the location and seperation of production and decay verticies to be measured, this is necessary to determine the mass of decaying particles and also the decay time. Also allows the seperation of signal and background events if this SV is precisely known by looking at isolating tracks.
+- displaced SVs are a signature of heacy flavour decays (Susan has some references)
+- provide accurate spatial measurements of charged particle tracs which allows the calculation of momentum and impact parameters
+- LHCb need excellent mass and proper time resolution, therefore needs great momentum and vertex resolutions. Examples of this could be given, such as the oscillation of the Bs anti-Bs system, or linking it to what I am trying to measure?
+- Bs lifetime is about 1ps, therefore it will fly ~1cm before it decays, need good vertex resolution to find this and identify the Bs decay products.
+%How does it work in LHCb (~3 parts of the detector, and then reconstruction), ie what is it made of and briefly how do they fit together.
+- vertex locator (VELO) surrounds the interaction point.
+- The tracking system in LHCb consists of the VELO, TT, T1-3 and the magent. VELO is a silcon detector designed to reconstructed PVs and SVs, the magnet bends charged particles allowing momentum of the particles to the determined and the tracking stations TT and T1-3 record the bent tracks. TT is just before the magnet, the T1-3 stations consists of an inner tracker made of silicon and an outer tracker made of straw tubes.
+- Reconstruction algorithms join up hits in the different tracking detectors to reconstruct events.
+- precision tracking is done by the VELO and the full tracjectories are reconstructed using information from the velo, TT, T1-3, along with momentum resolution. 
+- hits are connected in the different detectors during track reconstruction
+%Special considerations - minimise material in the detector?
+- The momentum resolution is directly effectec by multiple scattering in the detectors therefore tracking detectors are desugned to minimise the material in the detector acceptance.
+
+
+
+\subsubsection{VELO}
+%What is the VELO, what is it designed to do and why is that important for physics?
+- designed to track charged particles and to reconstruct decay verticies, including secondary verticies of B mesons
+- the Velo is situated at the interaction point where protons collide
+- identify production verticies, which is why interaction point is within the VELO.
+- identifies the displacement of the SV from the PV - charateristic of B hadron decays.
+- B hadrons travel about 1cm before decaying because they have a long lifetime ~1.5ps for the B meson. the VELO must providetrack resolution of the order of 1mm. If we have good vertex resolution this property of B mesons can be used to get rid of backgroud events
+- Tracks from B hadron decays usually have large impact parameters compared to the PV, this is useful to remove background decays
+%How is the VELO made and how does this acheive the physics goals.
+- the VELO extends upstream of the interaction point so that PVs can be correctly reconstructed
+> There are 21 stations in the VELO on each side arranged along the beam direction
+> each half of the velo is the same as the other but they are displaced by 150mm in the z direction which allows them to overlap
+> The VELO is silicon micro-strip detectors and they alternate as to whether they cover radial or azimuthal coordinates. Each half of the VELO is made to overlap so stop edge effects
+> Each half of the VELO is in an aluminum box, since the velo site in the LHC vacuum the box protects the vacuum from potential gas leaks from the modules and also keeps the velo electronics free of the RF EM fields generated by the beam. These are called RF boxed. Where the boxes meet they are corrugated to let them come together well, this part is called the RF foil and is part of the material budget of the VELO
+> material budget comes to 17.5\% or a radiation length.
+> velo stips are 100 micro meters in width
+> - The VELO can make the best vertex locations and impact parameters if it is very close to the beam. The Velo can retract, stable beams 8mm from beam during injection 3cm. The VELO can make the best vertex locations and impact parameters if it is very close to the beam.
+> There are R-sensors and phi-sensors that alternate. The position on the sensors and z-distance of the sensor shows where the particle went
+> R sensors have concentric rings from the ceneter but the distance between strips gradually gets larger (pitch) from the center outwards (Nice picture in Ed's thesis)
+> R sensor strips are split into 4 45degree regions so have low capacitance and occupancy, the closest is 8.2mm from the nominal beam axis.
+> phi sensor have an inner and outer region where the inner strips are shorts and the 2 sections are skewed wrt each other (Nice picture in Ed's thesis)
+> phi sensor split in two due to occupancny and resolution reasons
+> skewed phi strips help with pattern recognition
+- cylindrical geometry of the VELO allows for fast reconstruction used for triggering events with b-hadrons
+- - z axis is chosen to keep full LHCb acceptance and to ensure that any track with LHCb angular acceptance should pass through at least 3 sensors
+- velo is in a vacuum to reduce the material seem by particles
+- there is a gap at the center of the velo sensors to allow the beam to pass through the gap
+- the velo sides overlap during stable beams to there is feedback about the relative positions of each side which helps with detector alignment
+
+%Additional VELO facts.
+- velo also computes the luminoscity using van de meer scans
+- the velo is used to locate tracks/verticies, in the velo the magnet's field is very low, straight track trajectories made in the velo are used as seeds in track resonstruction, used as a pileup detector.
+> 2 additions stations upstream (away from the rest of the detector) of the interaction point that are used in the pile-up veto system to remove events that contain too many proton interactions
+> the pile up part is 2 segments/things that detect the number of primary interactions and also the track multiplicity in one bunch crossing for LHCb we want about 1 interaction per event (I think)
+%Performance of the VELO only?
+> vertex resolution in the transverse plane 10-20 mircons, in the z directions 50-100 microns depending on the number of tracks in teh vertex. It can determine inpact parameters to a resolution of 13 microns for high momentum tracks
+ the velo forms part of the tracking system
+> best resolution is 4 micrometers which allows a lifetime measurement of 50 fs (there's a reference in Ed's thesis)
+> In a typical event at LHCb 30-35 tracks per interaction vertex are reconstructed which leads to a PV resolution of 12 micro meters in the transverse plan and 65 along the beam axis.
+
+%Images
+- picture of the modules
+- picture of the VELO schematic - red and blue picture
+- layout of the r and phi sensors
+- picture of how the foils fit together
+- plots to performance
+
+%references
+- Harry has references for the sub-dectectors - he references the TDRs, he also has references for LHCb in the start of the chapter and his plots all have references too. Simon's is similar.
+
+\subsubsection{Magnet}
+%What is it, what is it designed to do and why is that important for physics?
+%How does is it made and how does it acheive the physics goals?
+
+\subsubsection{Tracking Stations} %Or split us the TT and T1-3.
+Tracker Turicensis and T1-3 that are split as the inner tracker (silicon) and the outer tracker (straw tubes).
+\subsubsection{Track resconstruction and preformance}
+
+
+\subsection{Particle Identification}
+\subsubsection{RICH}
+\subsubsection{Calrimeters}
+\subsubsection{Muon Stations}
+\subsubsection{Combined PID information and performance}
+
+\subsection{Trigger and event filtering}
+
+\subsection{MC and Software}
+
+\subsection{LHCb data collected so far}
+
+-------------------------------------------------------------------------
+Version 1 of LHCb introduction.
+
+The LHC experiment was designed to make precise measurements of processes predicted with the SM to indirectly search for hines ot New Physics processes. %Simon has a reference here.
+In particular it was designed to measure both CP violating decays and race decays originating from $b$-hadrons. The physics motivations for the LHCb experiment are quite different compared to those the the general purpose detectors, ATLAS and CMS at the LHC, these differences are reflected in the experimental design. The LHCb experiment is a single-arm forward spectrometer that covers the angular region 10 to 250 mrad in the vertical direction and 10 to 300 mrad in the horisontal direction. The central acceptance is determined by the beampipe. The reduced abgular acceptance of LHC compare to the 4\pi acceptance of the GPDs is due to the prcesses that dominate \bbbar pair production in proton collisions. At the LHC \bbbar pairs are mainly produced through quark anti-quark annihilation, gluon - gluon fusion and gluon splitting, the Feyman diagrams for these processes are shown in Fig. XX. %there are references in some theses for this
+These production processes lead to the \bbbar pairs being produced at small angles relative to the beampipe. The angular distribution of \bbbar pairs produced is shown in Fig. XX. Therefore although LHCb has a smaller angular acceptance compared to teh GPDs it accepts approximately 40\% of $b$ quarks produced at the LHC.
+
+The side view of the LHCb detector is shown in Fig. X. The coordinate systems has it's origin at the interatcion point where the protons collide on the left hand sige of the diagram, the $z$- axis follow the beam pipe and the y and x ases are the horizontal and vertical directions. 
+
+The detector is composed of a series of sub detectors, starting with the VELO next to the interataction point and ending with the muon stations, as the distance from the interataction point increases so does the size of the sub detetors in order to cover the required angular acceptance.
+
+The sub detectors can be classified in two main categories;
+\begin{itemize}
+\item {\bf Tracking}, (VELO, magnet and tracking stations) records the trajectories of charged particles through the detector
+\item {\bf Particle identification}; (RICH, calorimeters and muon stations) identifies the type of each particle transversing the detector
+\end{itemize}
+
+In a typical \bsmumu decay, the \bs will be produced at the interaction point and decay whilst still in the VELO. The muons will then travel the length of the detector to the muon stations. Figure X shows and example of what happens in in a \bsmumu decay.
+
+The following sections describe the tracking and praticle identification sub-detectors in detail, then outline the trigger and some other stuff that is relevant to data collection and analysis at the LHCb experiment. 
