@@ -2,9 +2,9 @@
 
 The LHCb experiment is one of the 7 experiments located on the Large Hadron Collider. It was built in order to search for indirect evidence of new physics phenomona through the study of CP violation and rare decays for hadrons that contain b and c quarks.
 
-In proton collisions provided by the LHC heavy quark pairs are predominantly produced at small angles to the beam pipe. The dominant production mechanisms that produced bbbar pairs are quark anti-quark annihilation, gluon-gluon fusions and  gluon splitting as shown in the Feynman diagrams in Figure X. There must be some other reason why these processes lead to the quarks being boosted along the beam pipe and I shall explain that here. Once the bbbar pairs are produced the quarks hadronise(?), in to Bs, Bd, B+ and many others and the decays of these hadrons have some specific characteristics. B-mesons tend to have long lifetime around 1 ps therefore travel ~1cm from the interaction vertex where they were produced before decaying at a secondary vertex. Since b quarks are heavy quarks, the hadrons they for can decay into a large range of different particles from light particle such as electrons and photons to heavier particles like kaons, muons and D mesons. The experiment was designed around the production characteristics of bbbar pairs and to enable precise measurements of b hadron decays. 
+In proton collisions provided by the LHC heavy quark pairs are predominantly produced at small angles to the beam pipe. The dominant production mechanisms that produced bbbar pairs are quark anti-quark annihilation, gluon-gluon fusions and  gluon splitting as shown in the Feynman diagrams in Figure X. There must be some other reason why these processes lead to the quarks being boosted along the beam pipe and I shall explain that here. Once the bbbar pairs are produced the quarks hadronise(?), in to Bs, Bd, B+ and many others and the decays of these hadrons have some specific characteristics. B-mesons have long lifetime around 1 ps therefore travel ~1cm from the interaction vertex where they were produced before decaying at a secondary vertex. Good identification of the secondary vertices is necessary to determine that the B hadrons decay into. Since b quarks are heavy quarks, the hadrons they for can decay into a large range of differnt particles from light particle such as electrons and photons to heavier particles like kaons, muons and D meson. Therefore a good detector for b physics needs to be able to identity a range of decay produced to accurately reconstruct what actually decayed. The experiment was designed around the production characteristics of bbbar pairs and to enable precise measurements of b hadron decays. 
 
-The LHCb experiment was built as a single arm forward spectrometer, with an angular coverage of 10 to 300 mrad in the vertical direction and 10 to 250 mrad in the horizontal direction relative the the beam pipe. This angular coverage what chosen to exploit the small angles relative the the beam pipe that bbbar pairs are produced at. A cross-section of the detector is shown in Figure \ref{fig:LHCb_detector}, where a right handed coordinate system is used. Protons collide at the interaction point on the left hand side of the diagram, the products of the collisions then travel through the detector leaving information in the different sub detectors along the length of the detector. The information deposited in the sub detectors are reconstructed to determine what happened in the proton collisions. The sub detectors can be classified in to two main categories; tracking system and particles identification system .
+The LHCb experiment was built as a single arm forward spectrometer, with an angular coverage of 10 to 300 mrad in the vertical direction and 10 to 250 mrad in the horizontal direction relative the the beam pipe. This angular coverage what chosen to exploit the small angles relative the the beam pipe that bbbar pairs are produced at. A cross-section of the detector is shown in Figure X, where a right handed coordinate system is used. Protons collide at the interaction point on the left hand side of the diagram, the products of the collisions then travel through the detector leaving information in the different sub detectors along the length of the detector. The information deposited in the sub detectors are reconstructed to determine what happened in the proton collisions. The sub detectors can be classified in to two main categories; tracking system and particles identification system .
 
 The tracking system is make up to the vertex locator (VELO), the magnet, the TT and the tracking stations T1-3. The VELO is designed to provide precise tracking measurements to identity the primary and secondary vertices characteristic of b-hadron decays in order to determine accurate lifetimes of b-hadrons. The magnet and tracking stations are combined to give high momentum resolution which is necessary to achieve good mass resolution which is used to distinguish between different b hadrons and separate signal and background decays.
 
@@ -12,7 +12,7 @@ The particle identification detectors provide complementary information about th
 
 The measurement of of decays of heavy hadrons requires accurate reconstruction of secondary vertices, this is achieved in part by the tracking systems however another aspect of the LHCb experiment deigns that enables this is the luminosity the experiment operates at. The LHC was designed to deliver a luminosity of X, proton collisions at this luminosity leads to a large amount of pile up. Pile up is stuff from the decay that is not interesting and is close to the beam pipe, therefore in the LHCb acceptance and makes it hard to accurately reconstruct secondary verticies. Therefore LHCb operates at a lower luminosity of ~ X in order to reduce the amount of pile up and enable accurate reconstruction of b hadron decays. 
 
-
+The tracking and PID systems are described in the following sections as well as the way events are selected at LHCb and processed and analyses. 
 
 
 
@@ -37,8 +37,24 @@ The measurement of of decays of heavy hadrons requires accurate reconstruction o
 \subsection{Tracking}
 
 
-\subsubsection{VELO}
+The tracking system within the LHCb experiment consists of the VELO, the magnet and the tracking stations which are the Tracker Turicensis (TT) and three tracking stations (T1-3). The VELO surrounds the interaction point and the magnet is between the TT and the tracking stations (T1-3). Together they work to provide precise information of the passage of charged particles though the detector which is needed for accurate analysis for b-hadron decays. The VELO gives precise information about the primary and secondary vertices where as the tracking stations give full track reconstruction. 
 
+\subsubsection{VELO}
+The VELO is a silicon detector that surrounds the interaction point. It’s main goal is to provide precise information about the interaction vertices and secondary decay vertices of particles produced in proton collisions. Important to give us lifetimes and impact parameters. The VELO covers the full LHCb angular acceptance.
+
+The VELO is made up of 2 identical halves, each half consists of 21 stations each containing 2 silicon sensors arranged along the beam pipe. The arrangement is shown in figure X. The z distribution is such that the flow covers the full LHCb acceptance and a charged track within the acceptance will pass through at least 3 stations. In each station the 2 sensor measure different coordinates, one measures the r coordinates of charged particles and the other measures the phi coordinates they are distributed along the length of the VELO. The r, phi and z cordidiates are used to reconstruct charged particle trajectories. Cylindrical coordinates were chosen to allow for fast reconstruction for particle trajectories in the VELO so that the can be used in the trigger. Figure X shows examples of the two types of sensor in the VELO. There is a small hole in the centre of the sensors to let the beam through.
+
+The momentum resolution of charged tracks depends on multiple scattering, therefore to allow for good momentum resolution to be determine in the other tracking stations, the VELO is kept in a vacuum so reduce it’s material budget. Each half of the VELO is enclosed inside an aluminium box, this keeps the VELO in a  vacuum the VELO but it also shields the electronic readouts of the VELO from radio frequencies which are generated by the beam. The VELO material budget comes to 17.5 $\%$ of a radiation length.
+
+Excellent vertex resolution is required in the VELO, to achieve this the sensors in the VELO need to be as close as possible to the interaction point. This is achieve by having 2 separate halves to the VELO. During data taking when the VELO is record the location of primary and secondary vertices the veto sensor at only 8mm from the beam axis. However during the injection phase of the beam the width of the beam is much greater, therefore the 2 halves of the VELO can retract so that they are 3cm from the nominal beam axis which keeps them safe from radiation damage. This is all shown in Figure X. The two half of the veto aren’t aligned, they are displaced by 150 mm in the z direction so that when the VELO is closed, the sensors in each half overlap, this helps with detector alignment and reduced edge effects.
+
+
+Furthermore the interaction point is within the velo, there are sensors up stream of the interaction point which allows for accurate reconstruction of PVs.
+
+
+Another feature if the VELO is that is can act a veto for high pile up events. There are 2 VELO sensor upstream of the interaction point that act a pile up vetoes, they given information to the trigger about how many pp interactions there were with each bunch crossing and help to select only what we’d be good a reconstructing. ( it rejects events with a large number of pp interactions)
+
+Overall the VELO gives such and such precision.  vertex resolution in the transverse plane 10-20 mircons, in the z directions 50-100 microns depending on the number of tracks in teh vertex. The VELO is also important the impact parameter resolution and decay time resolutions.  (This may go at the end so that everything for tracking is together?) best resolution is 4 micrometers which allows a lifetime measurement of 50 fs. (Performance paper)
 
 
 \begin{figure}[tb] 
@@ -62,11 +78,33 @@ The measurement of of decays of heavy hadrons requires accurate reconstruction o
   \label{fig:velo_sensor}
 \end{figure}
 
-\subsubsection{Magnet}
+\subsubsection{Tracking Stations} 
+The LHCb experiment has 4 tracking stations in addition to the VELO, the Tracker Turicensis (TT) which is located upstream of the magnet and the tracking stations T1 to T3 located down stream of the magnet. These tracking stations provide complementary tracking information to that of the VELO and the presence of the magnetic field within the tracking stations allows the momentum of charged particles to be determined. 
 
-\subsubsection{Tracking Stations} %Or split us the TT and T1-3.
+
+
+The TT is made up of 4 layers of silicon trackers spaced 27 cm apart that covers the full LHCb angular acceptance. The TT is located just within the influence of the magnetic field of the dipole magnet, which provides the detector with 2 main purposes. Firstly, the TT tracks the passage of charged particles with high momentum to enable high momentum resolution for tracks when combined with the other tracking stations. In order to achieve this the TT has a resolution of 50 $\mu$m for a single hit which means that multiple scattering rather than detector resolution is the limiting factor for the momentum resolution. The second purpose of the TT is to record tracks of low momentum particles that are then swept out of the detector acceptance as they continue through the magnetic field. 
+%Information from just the TT and the VELO can provide an momentum accuracy of ~ 20 $\%$. 
+%active area of 8.4m^2
+
+
+The 3 tracking stations T1-3 are split into two sections, they are each composed of an Inner Tracker (IT) made of silicon and an Outer Tracker (OT) composed of straw tubes. 
+The increase in size of the tracking stations between the TT and the T3 in order that the detectors cover the required angular acceptance is very large.  The TT is 150 cm by 130 cm where as the T3 station is 600cm by 490 cm, this is illustrated in Figure X. Therefore due to cost reasons the tracking stations cannot be whole made of silicon. 
+
+The IT is very similar in design to the TT, it is make of 4 layers of silicon trackers in each station with a track resolution of 50 $\mu$m.
+%and has an active area of 4.0m2. 
+The silicon trackers are arranged in a cross shape around the beam pipe, as shown in Figure X, although the cover less than 2$\%$ of the tracking stations 20$\%$ of tracks pass through them. This allows the occupancy of the OT to be less than 10$\$ so that it can be made of something other than silicon and still give good overall momentum resolution. The OT of each tracking station is made of 2 staggered layers of straw tubes, they cover the remaining area required for cover the LHCb full angular acceptance which includes tracks bend by the magnetic field of the magnet. The tubes have a fast drift time of 50 ns which enables a better than 200 $\mu$m track resolution. 
+
+
+\subsubsection{The Dipole Magnet}
+A warm dipole magnet is used to measurement the momentum of charged particles travelling through the LHCb detector. In a magnetic field the trajectories of charged particles are bent and from the radius of curvature of the particle track the momentum of said particle can be determined.
+
+The magnet is located between the TT and the tracking stations T1-3 and it’s field covers the full LHCb acceptance. The field is in the vertical direction therefore bending tracks in the horizontal direction. The magnet was designed so that it’s strength in the RICH detectors is negligible (less than 2 mT) and to have the largest strength possible between the TT and T1-3. Figure X shows a plot of the magnet strength overlaid on the detector. A small magnetic field is achieved in the RICH detectors by shielding. The magnet was therefore designed to have an integrated field strength is 4Tm for track that travel 10m and the peak strength is 1.1T. % I should maybe mention the measurement of the field and how it had to be accurate (with Hall probes) in order to get good momentum resolution but I don’t want to.
+
+The polarity of the magnetic field is periodically switched therefore bending charged tracks in opposite directions. This is done so that left-right detection asymmetries can be measured and it helps with the systematic uncertainties of CP violation measurements. % These are not relevant for B2mm.
 
 \subsubsection{Track resconstruction and preformance}
+
 
 
 \subsection{Particle Identification}

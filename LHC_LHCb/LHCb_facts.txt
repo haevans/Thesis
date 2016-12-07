@@ -59,8 +59,8 @@ VELO - vertex locator
 > phi sensor have an inner and outer region where the inner strips are shorts and the 2 sections are skewed wrt each other (Nice picture in Ed's thesis)
 > phi sensor split in two due to occupancny and resolution reasons
 > skewed phi strips help with pattern recognition
-
-> vertex resolution in the transverse plane 10-20 mircons, in the z directions 50-100 microns depending on the number of tracks in teh vertex. It can determine inpact parameters to a resolution of 13 microns for high momentum tracks
+> veto z set up so it covers full lhcb acceptance and also each track goes through at least 3 sensors
+>Ω. It can determine inpact parameters to a resolution of 13 microns for high momentum tracks
  the velo forms part of the tracking system
 > best resolution is 4 micrometers which allows a lifetime measurement of 50 fs (there's a reference in Ed's thesis)
 > In a typical event at LHCb 30-35 tracks per interaction vertex are reconstructed which leads to a PV resolution of 12 micro meters in the transverse plan and 65 along the beam axis.
@@ -103,8 +103,9 @@ Magnet
 > Warm dipole magnet
 > magents strength allows momentum resolution of delta p / p ~0.4%
 > polarity is inverted to study left-right asymmetries dectection effects and evaluate systematics for CP-vioation related analyses.
-
-
+> The design of the magnet with an integrated magnetic field of 4 Tm for tracks of 10 m length had to accommodate the contrasting needs for a field level inside the RICHs envelope less than 2 mT and a field as high as possible in the regions be- tween the vertex locator, and the Trigger Tracker tracking station- LHCb detector at the LHC(it has potentially used references in)
+- to get the required momentum resolutions for charged particles the magnetic field in- tegral   Bdl must be measured with a relative precision of a few times 10−4 and the position of the B-field peak with a precision of a few millimetres
+- want to have no magnetic field in the RICH.
 
 Calorimeters
 ##################################################################
@@ -141,10 +142,15 @@ TT - Tracker turicensis
 > 4% of a radiation length
 > within the fringe of the magnetic field
 > higher momemtum tracks not bent out of the acceptance are used in the full tracking system for the momentum measurement
-
-
+- The TT is a 150cm wide and 130cm high planar tracking station that is located up- stream of the LHCb dipole magnet and covers the full acceptance of the experiment.
+- active area of 8.4m^2
+- single hit resolution was needed to be about 50 micro meters, then the momentum resolution is dominated by multiple scatters over the full range of possible particle momenta. Read out strip pitches of about 200 micrometers achieves this.
+The TT is kept at 5 degrees C to limit radiation damage
+To aid track reconstruction algorithms, the four detection layers are arranged in two pairs, (x,u) and (v,x), that are separated by approximately 27 cm along the LHC beam axis.
 T1-3 - Tracking stations
 ##################################################################
+- IT active ares is 4.0m2
+- The IT covers a 120 cm wide and 40 cm high cross shaped region in the centre of the three tracking stations downstream of the magnet. 
 > These three stations are split into 2
 > inner part (IT) of the stations are the same as the TT in design but smaller covering 120 by 40cm cross shaped region around the beam pipe with an active area of 4m^2 and a radiation length of 3.5%
 > The IT covers 2% of the detector acceptance but 20% of tracks go through it so needs good resolution
