@@ -17,7 +17,7 @@ Notes about actual writing
 
 
 
-LHCb general
+LHCb in general
 ##################################################################
 Marco and Will put the references in the chapter intorduction, this is nice.
 > Single arm forward spectrometer designed to study particles containing b quarks
@@ -30,7 +30,28 @@ Marco and Will put the references in the chapter intorduction, this is nice.
 > Coordinates are on the LHCb picture, z is the beam axis, y the vertical and x the horizontal. Beams collide at the origin. The z axis is the ideal proton orbit around the LHC.
 > detector is 10m in length (?)
 > Alessio does a nice overview of what the detector aims to do and also what happens to particles in a collision - ie b hadrons produced at the collision points, move through the velo and decay, move through rest of the detectors then the trigger gets rid on most events.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+
+Tracking 
+##################################################################
+> velo, magnet, TT , T1-3
+> goods tracking needed to give good momentum resolution which will lead to good mass resolution which can be used to get rid of signal and background events
+> reconstruct electically charged particles as they travel throught the detector
+> momentum and therefore quanties related to the moment can be measured from the tracks because there is a magnet
+> Momentum is also important to interpret the RICH
+> Alessio's thesis has a nice figure of how the different tracking stations are used together
+> Differences between types of tracks are:
+  - Velo tracks leave tracks only in the velo!
+  - T tracks are only in the T1-3 stations and are usually produces by secondary interactions of particles with the detector material
+  - Upstream tracksa are in the velo and TT only
+  - Downstream tracks are in teh TT and T1-3 stations
+  - Long tracks are in the velo, TT and T1-3 stations
+> Alessio has information about the track reconstruction algorithms
+> Mometum resolution is directly effected by multiple scattering in the detectors therefore tracking detectors are designed to minismise the material in the detector acceptance
+> Marco also talks about the track reconstruction
+> "The study of CP violation and rare decays in the heavy flavour sector requires the accurate measurement of production and decay vertices and track impact parameters, both for avour tagging and for background rejection. The most stringent demands on the vertex reconstruction arise from the decay time resolution requirements to resolve the fast flavour oscillations induced by B0 s{B0s mixing."  Performance paper,
 
 
 VELO - vertex locator
@@ -73,22 +94,6 @@ Prephaps something like
 - How does the velo acheive it's goals, how is it made, it can move (why?)
 - How does the Velo perform
 
-Beampipe
-#################################################################
-Beriylum beam pipe runs the length of the detector
-
-
-RICH
-##################################################################
-> Two RICH stations, one after the VELO and the other after the tracking stations, they cover complementary momentum and angular regions
-> Ring imaging cherenkov detectors
-> when charged particles go through a dielectriv medium they polarise it locally, if the particle speed it greater than the speed of light photons coherently interfer creating a wavefront at an angle theta_c wrt the particle direction (Maroc has a reference here) this angle is related to the particle velocity as cos(theta_c_) = 1/n.beta, where beta = v/c. If the speed is < c the photons deconstructively interefer therefore making no wavefront.
-> Measuring the angle tells us how fast the particle is moving. This information combined with the mometum from the tracking stations tells us what the particle is - right?
->In the RICH light produced in the dewtector moves through the radiator and is refected off a spherical mirros on to a detector that is sensitive to the position. Hybrid Photon Detectors are used, but the magnet's field can degrade these so the RICH is protected/shielded so this does not happen.
-> Rich 1 has a silicon areogel senstivit to up 10GeV and C4F10 sensitive to 10-60 GeV. All the mirros and detection stuff are locatioed outside the LHCb acceptance
-> THe Rich 2 is sensitive to 15-100 GeV and is made of CF4. It covers +/- 120 mrad in the horizontal and +/- 100 mrad in the vertial so only where you expect to get high energy particles.
-> The radius of the ring gives a measure of theta_c and therefore the velocity.
-
 Magnet
 ##################################################################
 > Main component of the field is in the y axis therefore the particles are bent horizontally
@@ -106,31 +111,6 @@ Magnet
 > The design of the magnet with an integrated magnetic field of 4 Tm for tracks of 10 m length had to accommodate the contrasting needs for a field level inside the RICHs envelope less than 2 mT and a field as high as possible in the regions be- tween the vertex locator, and the Trigger Tracker tracking station- LHCb detector at the LHC(it has potentially used references in)
 - to get the required momentum resolutions for charged particles the magnetic field in- tegral   Bdl must be measured with a relative precision of a few times 10−4 and the position of the B-field peak with a precision of a few millimetres
 - want to have no magnetic field in the RICH.
-
-Calorimeters
-##################################################################
-> these are behind the RICH 2 and consist of the preshower (SPD/PS), electromagnetic calorimeter (ECAL) and the hadronic calorimeter (HCAL)
-> Calorimeters provide information to the trigger are hadron, electron and photn transverse momentum
-> These measure the position and energy of hadrons, electron and photons.
-> The SPD distinguished between neutral and charged oarticles, it is the Scintillator Pad Detector, it seperates photons and electrons which would have similar profiles in the ECAL
-> The preshower(PS) is a thin layer of lead then scintillators like the SPD. It makes the most of the different interaction lengths of the electron and charged pion. Electrons will produce showers in the lead but the pions will not. This information is used the the trigger hlt1
-> The ECAL is for electromagnetic showers and is used in the L0, it wants all the shower to develop in the ECAL for the best E_T resolution.
-> ECAL has resolution os deltaE/E = 9%/sqrt(E)(+)0.8% where E is in GeV - this requires information from the PS
-> HCAL resolution deltaE/E = 69%/sqrt(E)(+)9%
-
-Muon detectors
-##################################################################
-> 5 muon stations, one after RICH 2 the rest at the end after the HCAL
-> high pt muons are used in the trigger because they will have come from interesting B mesons.
-> muons have a high matter penetrating power compared to electrons, hadrons ets, this is expolited in the muon station positions and their makeups
-> the muons stations are outside the magnetic field, therefore track reconstruction is fast.
-> They cover the full LHCb angular acceptance
-> The granulartity reduces due to multiple scarttering that increase in likelihood with distance from the beam pipe
-> There are ison absorbers of ~80cm between each muon station to remove particles that are not muons. There is also an iron wall after the end of the last muon station to stop particles travelling downstream into the detector.
-> The stations used multiwire proporinal chamebers on the outer parts but the inner sections use gas electron multipler foils because the flunence is high in the inner most region and MWPCs won't get the needed effieicny.
-> MWPC uses Ar, CO2 and CF4 at 40%, 55% and 5%. There is a pitch of 2mm. I think there is a high detection efficinecy because therer are 4 sentivive gas layers in each layer and only one layer needs to rehister a signal.
-> GEM thin Kapton foil between copper plated 140 micro meter pitch A very strong volage is applied accross the copper plates.
-> A muon is identified if hits in the muon station can be matched to what is seen in the tracking stations.
 
 
 TT - Tracker turicensis
@@ -172,34 +152,83 @@ T1-3 - Tracking stations
 > The +/- 5 degrees helps to improve the track reconstruction algorithms
 The OT - do the tubes coved the whole vertical height of the detector? So you only know the x,z position of the particle? Alison said that is you know the time you can work out the vertical position - so prehaps I need to understand straw tubes.
 >"If one also precisely measures the timing of the current pulses of the wires and takes into account that the ions need some time to drift to the nearest wire, one can infer the distance at which the particle passed the wire. This greatly increases the accuracy of the path reconstruction and is known as a drift chamber."
+> "The outer parts of the tracking stations T1{T3 are equipped with a straw-tube detector (OT) [31]. Charged particles traversing the straw-tubes will ionise the gas along their trajectory. The drift-times of the ionisation electrons to the wire located at the centre of the straw are measured with respect to the beam crossing signal. The distribution of the recorded drift-time, which is proportional to the distance of the particle trajectory to the wire, is shown in Figure 9 (right)." Performace paper.
 
 Why are the tracking +/-5 degrees?
 Would be nice to explain how much larger the OT is compared to the IT and the TT in easy to read and understand terms. There's a picture to illustrate this.
 
-Tracking 
-##################################################################
-> velo, magnet, TT , T1-3
-> goods tracking needed to give good momentum resolution which will lead to good mass resolution which can be used to get rid of signal and background events
-> reconstruct electically charged particles as they travel throught the detector
-> momentum and therefore quanties related to the moment can be measured from the tracks because there is a magnet
-> Momentum is also important to interpret the RICH
-> Alessio's thesis has a nice figure of how the different tracking stations are used together
-> Differences between types of tracks are:
-  - Velo tracks leave tracks only in the velo!
-  - T tracks are only in the T1-3 stations and are usually produces by secondary interactions of particles with the detector material
-  - Upstream tracksa are in the velo and TT only
-  - Downstream tracks are in teh TT and T1-3 stations
-  - Long tracks are in the velo, TT and T1-3 stations
-> Alessio has information about the track reconstruction algorithms
-> Mometum resolution is directly effected by multiple scattering in the detectors therefore tracking detectors are designed to minismise the material in the detector acceptance
-> Marco also talks about the track reconstruction
-
+How does the tracking work and preform?
+#######################################
+How does it work? - Performance paper tells me all
+> tracks are defined depending on which tracking station they are detected in
+>Velo tracks only have tracks in the VELO and are used to reconstruct PV
+> T tracks cross the tracking statiosn T1-3 are are cause by particles being created from interactions from the detector, important for pattern recognition in the RICH 2
+>> Up stream tracks leave stuff in teh velo and the TT, so are upstream of the magnets, typcially low momentum particles that are swept out of the detector acceptance by the magnetic field. Poor mometum resolution but can be used to undersand backgrounds in the RICH and help with flavour tagging of B hadrons
+> Down stream tracks leave stuff in the TT and T1-3  the decay products of long lived particles
+> Long tracks are in the whole detector and have the most previse resolutions, these are the most important for b-hadron decays
+> Tracking algorithms take as seeds/starting points tracks in the VELO or the TT and then add information from the other detectors into the reconstruction.
+> Once the tracks have been reconstructed they enable parameters linked to the tracks to be reconstructed, once a vertex position has been fitted for the the vertex chi2 can be found. Parameters such as the fligh distance and the flight distanace chi2 measure how far the particle moved before decaying. There is also the impact parameter which is wrt the interaction vertex, it is the distance of closest approach between the tracks and the PV (useful for b hadrons live a while)
+> tracks in the VELO and T1-3 are used a seed to help find tracks in other parts of the detector, by searching in windows of the other detectors. Once the segments have all been found a Kalam fiter algorithm is used for fit the possible trajectories and this takes account of multiple scattering an dengery loss in the detector.
+> fitter gives some tracks that are clones, these are removed bu an algorithm and the one with the most hits wins.
+> if two or more tracks have many hits in common, the one with the most hits is kept
+> fake tracks occur as well this is generally when the VELO and the T stations are incorrectly associtaed, the amount this happens depends on the multiplicty of the event and can be from 6.5% to 20%. Cuts are applied on a neural network to remove these.
+> Kalam fitter gives a chi2/ndof for the track. LHCb makes requirements on these for each year to ensure that only good tracks are used. 
+> tracking performace seems to be a diferent concept to the preformance of each detector. 
+> Overall track momentum resolution is ...
+> efficiency to correctly reconstruct tracks is ...
+> IP resolution - from the VELO, varies with mometum, transverse momentun, it's ~35 mum for a particle with PT of 1GeV/c
+> Vertex resolutions- this comes from the VELO, 10-25 mum transverse to the beam and 50-100 mum parallel to the beam, but it depends on the number of tracks in the event. There are plots in the performance papaer and VELO performance paper that ilustrate this. - needed for good decay time res, helps to identift types of B hadron and to remove background.
+> decay time resolutions again from the VELO, this is super important to Bs ocisllating system. 50ns typlically, this was evaluated in Run 1.
+> TT and IT have resolution of 50 mum in Run 1
+> OT has fridt time of 35 ns and track resolution of ~200 mum for a particle with P > 10GeV, then mutilple scattering isn't what limits the resolution but the detector itself.
+> Track efficiency is evalutated for long tracks since they have the best resolution and are also most important for physics analyses. Efficiencies vary with p, eta, nTracks and NPVs and they were computed with JPsi2MuMu tag and probe method (I don't understand how that works), the momentum resolution is also computed but this depends on the mometum of the final state particles(there is a nice plot) and therefore the mass resolution depends on the particle properties as well and it has been measured for different resonances and the Z. 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 PID
 ##################################################################
 > Designed to distinguish electrons, muons, protons, kaons and charged pions and also photons from neutral pions
 > These are the daughter particles which are mostly what we detect, so we need to know what they are in order to find out what type of B meson they came from and also to distunguish events with similar kiniematics and topology
 > Marco explains how the PID all works togerhter to get the DLL PID information
+
+
+RICH
+##################################################################
+> Two RICH stations, one after the VELO and the other after the tracking stations, they cover complementary momentum and angular regions
+> Ring imaging cherenkov detectors
+> when charged particles go through a dielectriv medium they polarise it locally, if the particle speed it greater than the speed of light photons coherently interfer creating a wavefront at an angle theta_c wrt the particle direction (Maroc has a reference here) this angle is related to the particle velocity as cos(theta_c_) = 1/n.beta, where beta = v/c. If the speed is < c the photons deconstructively interefer therefore making no wavefront.
+> Measuring the angle tells us how fast the particle is moving. This information combined with the mometum from the tracking stations tells us what the particle is - right?
+>In the RICH light produced in the dewtector moves through the radiator and is refected off a spherical mirros on to a detector that is sensitive to the position. Hybrid Photon Detectors are used, but the magnet's field can degrade these so the RICH is protected/shielded so this does not happen.
+> Rich 1 has a silicon areogel senstivit to up 10GeV and C4F10 sensitive to 10-60 GeV. All the mirros and detection stuff are locatioed outside the LHCb acceptance
+> THe Rich 2 is sensitive to 15-100 GeV and is made of CF4. It covers +/- 120 mrad in the horizontal and +/- 100 mrad in the vertial so only where you expect to get high energy particles.
+> The radius of the ring gives a measure of theta_c and therefore the velocity.
+
+Calorimeters
+##################################################################
+> these are behind the RICH 2 and consist of the preshower (SPD/PS), electromagnetic calorimeter (ECAL) and the hadronic calorimeter (HCAL)
+> Calorimeters provide information to the trigger are hadron, electron and photn transverse momentum
+> These measure the position and energy of hadrons, electron and photons.
+> The SPD distinguished between neutral and charged oarticles, it is the Scintillator Pad Detector, it seperates photons and electrons which would have similar profiles in the ECAL
+> The preshower(PS) is a thin layer of lead then scintillators like the SPD. It makes the most of the different interaction lengths of the electron and charged pion. Electrons will produce showers in the lead but the pions will not. This information is used the the trigger hlt1
+> The ECAL is for electromagnetic showers and is used in the L0, it wants all the shower to develop in the ECAL for the best E_T resolution.
+> ECAL has resolution os deltaE/E = 9%/sqrt(E)(+)0.8% where E is in GeV - this requires information from the PS
+> HCAL resolution deltaE/E = 69%/sqrt(E)(+)9%
+
+Muon detectors
+##################################################################
+> 5 muon stations, one after RICH 2 the rest at the end after the HCAL
+> high pt muons are used in the trigger because they will have come from interesting B mesons.
+> muons have a high matter penetrating power compared to electrons, hadrons ets, this is expolited in the muon station positions and their makeups
+> the muons stations are outside the magnetic field, therefore track reconstruction is fast.
+> They cover the full LHCb angular acceptance
+> The granulartity reduces due to multiple scarttering that increase in likelihood with distance from the beam pipe
+> There are ison absorbers of ~80cm between each muon station to remove particles that are not muons. There is also an iron wall after the end of the last muon station to stop particles travelling downstream into the detector.
+> The stations used multiwire proporinal chamebers on the outer parts but the inner sections use gas electron multipler foils because the flunence is high in the inner most region and MWPCs won't get the needed effieicny.
+> MWPC uses Ar, CO2 and CF4 at 40%, 55% and 5%. There is a pitch of 2mm. I think there is a high detection efficinecy because therer are 4 sentivive gas layers in each layer and only one layer needs to rehister a signal.
+> GEM thin Kapton foil between copper plated 140 micro meter pitch A very strong volage is applied accross the copper plates.
+> A muon is identified if hits in the muon station can be matched to what is seen in the tracking stations.
+
+
 
 Trigger
 #################################################################
