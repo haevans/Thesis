@@ -120,7 +120,7 @@ Long tracks are the most useful for physics analyses because they are formed fro
 
 The efficiency to correctly reconstruct tracks depends of different parameters of the events, such as the momentum to the particle producing the track, for long tracks they are correctly reconstructed on average of 96$\%$ of the time as shown in Figure XX for Run 1 data. 
 
-
+Tracking efficiencies were measured using tag and probe method with Jpsi2MuMu, the average effieicny is better than 95 $\%$ for the mometum range 5 - 200 GeV and pseuoradify range 2-5 for Run 1. % (this is pretty much a quote from the paper. There are lots of plots in the paper so I think I should leabe them out!
 Once the segments of the track have been found the trajectory is fitted with a Kalam fitter with takes into account multiple scattering and energy loss within the detector. For each track the fitter returns the chi2/ndof for each track which is a measure of quality for the track. In LHCb this parameter is used to ensure that only ‘good’ tracks are used in analyses. 
 
 Inevitably every track that is reconstructed is not correct, there are two main types of incorrectly reconstructed tracks. The first is clone tracks that occur when the two tracks share many hits in common, when this happens the track with the highest number of total hits it used and the other is discarded. The second type of incorrect track are ghost tracks when segments in different detectors are incorrectly joined together, this can happen with tracks in the VELO and T1-3 stations, the number of times that this happened depends on the multiplicity of an event. These tracks are remove by cutting on the output of a neural network that returns a probability of how likely a track is to be fake.
@@ -139,6 +139,38 @@ The impact parameter is another important variable, it measure the distance of c
 
 Finally, the measurement of lifetime of b hadrons at LHCb needs accurate decay time measurements but more importantly to understand the rapidly oscillating Bs system good decay time resolution is needed. To reconstruct the decay time information about particle momentum and decay length, how far the particle travelled before it decays are needed. Therefore good PV resolution and moment resolution are needed. The LHCb detector achieved typically 50 ns resolution on the decay time. 
 
+
+VELO performance paper \cite{LHCbVELOGroup:2014uea}.
+LHCb preformance paper \cite{Aaij:2014jba}.
+Tracking effieicny paper \cite{Aaij:2014pwa}.
+
+
+\begin{figure}[tb] 
+  \centering    
+  \includegraphics[ width=1.0\textwidth]{Types_of_tracks.png}
+  \caption{Source: \cite{Aaij:2014pwa}.}
+  \label{fig:types_of_tracks}
+\end{figure}
+
+
+
+\begin{figure}[tb] 
+  \centering    
+  \includegraphics[ width=1.0\textwidth]{Long_track_efficiency_wrt_p.png}
+  \caption{Source: \cite{Aaij:2014pwa}. There is also 2010 and 2011, and other variables so prehaps put no image and just says it's around 96$\%$ for Run 1.}
+  \label{fig:types_of_tracks}
+\end{figure}
+
+
+
+
+
+\begin{figure}[tb] 
+  \centering    
+  \includegraphics[ width=1.0\textwidth]{Long_track_efficiency_wrt_Ntracks.png}
+  \caption{Source: \cite{Aaij:2014pwa}.There is also 2010 and 2011, and other variables so prehaps put no image and just says it's around 96$\%$ for Run 1.}
+  \label{fig:types_of_tracks}
+\end{figure}
 
 
 
