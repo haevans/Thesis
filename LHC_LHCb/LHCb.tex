@@ -103,8 +103,41 @@ The magnet is located between the TT and the tracking stations T1-3 and it’s f
 
 The polarity of the magnetic field is periodically switched therefore bending charged tracks in opposite directions. This is done so that left-right detection asymmetries can be measured and it helps with the systematic uncertainties of CP violation measurements. % These are not relevant for B2mm.
 
-\subsubsection{Track resconstruction}
-\subsubsection{Preformance of the tracking}
+\subsubsection{Track resconstruction and Preformance of the tracking}
+
+
+The information left by the passage of charged particles in each of the VELO, TT and T stations are combined using track reconstruction algorithms for determine the passage of charged particles through the detector. The algorithms start with either segments of tracks in the VELO or the T stations as seeds and then extrapolate using these segments into the other tracking detectors joining tracking in specific search windows in each detector. The rescontructed tracks are classified into five different types depending on what signature they left in each detector. The different types of tracks are illustrated in Figure X. 
+
+VELO tracks come from particles that only leave information in the VELO, these tracks usually are at a large angle or are travelling backwards and are useful in reconstructing primary vertices.
+
+Upstream tracks are formed by low momentum particles that are only observed in the VELO and the TT because they are them swept out of the detector acceptance by the magnetic field. These tracks have a poor momentum resolution but are useful for understanding backgrounds and pattern recognition in the RICH 1 which is located between the VELO and the TT provided the particles have sufficient momentum to be seen in the RICH.
+
+Downstream tracks come from decay of the long lived particles, these particles do no leave information in the VELO only the TT and T stations. 
+
+T tracks are tracks that only cross the T1-3 station and are formed from particles created from interactions with the material in the detector. Similarly to upstream tracks, T tracks can help to understand backgrounds and pattern recognition in the RICH2 which is located just before the T stations.
+
+Long tracks are the most useful for physics analyses because they are formed from information left in the VELO, TT and T1-3 stations and consequently these tracks have the best momentum resolution.
+
+The efficiency to correctly reconstruct tracks depends of different parameters of the events, such as the momentum to the particle producing the track, for long tracks they are correctly reconstructed on average of 96$\%$ of the time as shown in Figure XX for Run 1 data. 
+
+
+Once the segments of the track have been found the trajectory is fitted with a Kalam fitter with takes into account multiple scattering and energy loss within the detector. For each track the fitter returns the chi2/ndof for each track which is a measure of quality for the track. In LHCb this parameter is used to ensure that only ‘good’ tracks are used in analyses. 
+
+Inevitably every track that is reconstructed is not correct, there are two main types of incorrectly reconstructed tracks. The first is clone tracks that occur when the two tracks share many hits in common, when this happens the track with the highest number of total hits it used and the other is discarded. The second type of incorrect track are ghost tracks when segments in different detectors are incorrectly joined together, this can happen with tracks in the VELO and T1-3 stations, the number of times that this happened depends on the multiplicity of an event. These tracks are remove by cutting on the output of a neural network that returns a probability of how likely a track is to be fake.
+
+
+
+Once the tracks have been reconstructed this allows the computation of different parameters that are necessary for the identifying different b hadron decays. The performance of the tracking system has been studied of Run 1 data \ref{ performance paperS}. The tracking system provide measurement of the momentum of the charged particles that it tracks, good momentum resolution is required in order to obtain good mass resolution which is necessary to identify different  b hadrons and to distinguish between signal and background events. The momentum resolution of long tracks is shown in figure X OR the momentum resolution is $\delta$p/p = X - Y $\%$ which depends on the momentum of the reconstructed track. 
+
+
+The tracking system allows accurate reconstruction of primary verticies, this is necessary to measure time dependant processes, lifetimes and identify decaying particles. It was particular important for LHCb so that is could measure the rapidly oscillation Bs system. The PV resolution has been measured on 2012 data and varies with the number of tracks used to reconstruct the vertex, on average the vertex resolution transverse to the beam is between 10 and 25 mum and parallel to the beam is  between 50 and 150 mum for the z direction as shown in figure X for 2011 data. %Ref veto paper.
+
+
+
+The impact parameter is another important variable, it measure the distance of closest approach of a track to the PV, long lived particles tend to have a large IP wrt to PV because they travel before they decay. Good measurements of the IP help to remove prompt backgrounds. The IP resolution depends on the momentum of the particles and figure X shows the IP resolution for 2012 data, for a track with transverse momentum of 1 GeV/c is has an IP resolution of 35 mum.
+
+
+Finally, the measurement of lifetime of b hadrons at LHCb needs accurate decay time measurements but more importantly to understand the rapidly oscillating Bs system good decay time resolution is needed. To reconstruct the decay time information about particle momentum and decay length, how far the particle travelled before it decays are needed. Therefore good PV resolution and moment resolution are needed. The LHCb detector achieved typically 50 ns resolution on the decay time. 
 
 
 
