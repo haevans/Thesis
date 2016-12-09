@@ -4,7 +4,14 @@ The LHCb experiment is one of the 7 experiments located on the Large Hadron Coll
 
 In proton collisions provided by the LHC heavy quark pairs are predominantly produced at small angles to the beam pipe. The dominant production mechanisms that produced bbbar pairs are quark anti-quark annihilation, gluon-gluon fusions and  gluon splitting as shown in the Feynman diagrams in Figure X. There must be some other reason why these processes lead to the quarks being boosted along the beam pipe and I shall explain that here. Once the bbbar pairs are produced the quarks hadronise(?), in to Bs, Bd, B+ and many others and the decays of these hadrons have some specific characteristics. B-mesons have long lifetime around 1 ps therefore travel ~1cm from the interaction vertex where they were produced before decaying at a secondary vertex. Good identification of the secondary vertices is necessary to determine that the B hadrons decay into. Since b quarks are heavy quarks, the hadrons they for can decay into a large range of differnt particles from light particle such as electrons and photons to heavier particles like kaons, muons and D meson. Therefore a good detector for b physics needs to be able to identity a range of decay produced to accurately reconstruct what actually decayed. The experiment was designed around the production characteristics of bbbar pairs and to enable precise measurements of b hadron decays. 
 
-The LHCb experiment was built as a single arm forward spectrometer, with an angular coverage of 10 to 300 mrad in the vertical direction and 10 to 250 mrad in the horizontal direction relative the the beam pipe. This angular coverage what chosen to exploit the small angles relative the the beam pipe that bbbar pairs are produced at. A cross-section of the detector is shown in Figure X, where a right handed coordinate system is used. Protons collide at the interaction point on the left hand side of the diagram, the products of the collisions then travel through the detector leaving information in the different sub detectors along the length of the detector. The information deposited in the sub detectors are reconstructed to determine what happened in the proton collisions. The sub detectors can be classified in to two main categories; tracking system and particles identification system .
+The LHCb experiment was built as a single arm forward spectrometer, with an angular coverage of 10 to 300 mrad in the vertical direction and 10 to 250 mrad in the horizontal direction relative the the beam pipe. This angular coverage what chosen to exploit the small angles relative the the beam pipe that bbbar pairs are produced at. A cross-section of the detector is shown in Figure \ref{fig:LHCb_detector}, where a right handed coordinate system is used. Protons collide at the interaction point on the left hand side of the diagram, the products of the collisions then travel through the detector leaving information in the different sub detectors along the length of the detector. The information deposited in the sub detectors are reconstructed to determine what happened in the proton collisions. The sub detectors can be classified in to two main categories; tracking system and particles identification system .
+
+\begin{figure}[htb] 
+  \centering    
+  \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/lhcb.png}
+  \caption{Cross section of the LHCb detector \cite{Alves:2008zz}.}
+  \label{fig:LHCb_detector}
+\end{figure}
 
 The tracking system is make up to the vertex locator (VELO), the magnet, the TT and the tracking stations T1-3. The VELO is designed to provide precise tracking measurements to identity the primary and secondary vertices characteristic of b-hadron decays in order to determine accurate lifetimes of b-hadrons. The magnet and tracking stations are combined to give high momentum resolution which is necessary to achieve good mass resolution which is used to distinguish between different b hadrons and separate signal and background decays.
 %Need good decay time resolution if we are to measure the rapidly oscillatin Bs system.
@@ -15,13 +22,6 @@ The measurement of of decays of heavy hadrons requires accurate reconstruction o
 The tracking and PID systems are described in the following sections as well as the way events are selected at LHCb and processed and analyses. 
 
 
-
-\begin{figure}[tb] 
-  \centering    
-  \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/lhcb.png}
-  \caption{Cross section of the LHCb detector \cite{Alves:2008zz}.}
-  \label{fig:LHCb_detector}
-\end{figure}
 
 
 
@@ -82,7 +82,7 @@ Overall the VELO gives such and such precision.  vertex resolution in the transv
 
 \begin{figure}[tb] 
   \centering    
-  \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/placeholder.jpeg}
+  \includegraphics[ width=1.0\textwidth]{placeholder.jpeg}
   \caption{The velo sensor \cite{Alves:2008zz}.}
   \label{fig:velo_sensor}
 \end{figure}
@@ -232,8 +232,57 @@ Tracking effieicny paper \cite{Aaij:2014pwa}.
 
 
 \subsection{Particle Identification}
+In LHCb the particles identification detectors consist of two ring imaging cerenkov detectors, an electromagnetic and hadrons calorimeter and the muons stations. Together these detectors distinguish between different charged leptons and hadrons and between neutral particle such as photons from neutral pions that are produced in b-hadron decays. Good particles identification is necessary because accurate identification of daughter particles identifies what b hadron decayed and also it is necessary to distinguish between topologically similar decays, such as b2pipi, b2pik, b2mumu. %This could be out elsewhere prehaps in the RICH specific part?
 \subsubsection{RICH}
+RICH detectors are used at LHCb to distinguish between charged hadrons and leptons that have a momentum between X and Y GeV/c, the main goal for the RICH is to distingush between pions, kaons and protons. This needs to be done because correctly reconstruting the b hadron invarient mass relies on correctly identifying what it decayed into. Information from the RICH is particularly important at distingusihing different b2hh decays which is useful for this thesis. The energy range of the RICH detectors was chosen because the typical decay products of 2 body b hadron decays is around 50 GeV. The detectors are based on the following principle; when a charged particle travels through a dielectric medium excited atoms caused by the passage of the charged particle are polarized, if the particle is travelling faster than the speed of light in the medium then the excitation energy is released as a coherent wavefront. The angle the wavefront travels relative to the particle trajectory depends on the speed at which the particle was travelling in the following way;
+cos_thetac = c/nv. 
+
+There are two detectors that cover complimentary momentum regions. The RICH 1 detector is located between the VELO and the TT station, it covers the full LHCb angular acceptance and provides PID information on particles in the momentum range 1-60GeV/c. The RICH 1, is illustrated in Figure X, it contains two different radiator materials; at the front of the detector is a aerogel which is sensitive to particles with the momentum up to 10 GeV and behind the aerogel is a gas radiator which is sensitive to particles from 10 - 60 GeV. The aerogel radiation was removed after Run 1 of the LHC. (I should have mentioned Run 1 before now!) As charged particles travel through the RICH 1 rings of light are produced. These are focused by spherical mirror on to Hybrid Photon Detectors, the radii of the detected rings provides information about how fast the particle was travelling. %The speed of the particles, when combined with information about it’s momentum from the tracking stations realise the particles mass and therefore it’s identity.
+
+The RICH 2 detector is located upstream of the RICH 1, between the last tracking station and before the first muon station. The RICH 2 consists of a gas radiator sensitive to particles with a momentum range 50 - 100 GeV/c and the detection principle of the ring of light is the same as the RICH 1 as illustrated in figure X. Unlike the RICH 1 the RICH 2 detector does not cover the full LHCb angular acceptance but only +/- 120 mrad in the horizontal and +/- 100 mrad in the vertial direction where the higher momentum particles it is sensitive to are present, the other particles have been bent by the magnet out of this region. 
+Both the RICH detectors usse HPDs, these are sheilded from the magnet field using iron sheets so that the field is of the order of 2mT on the HPDs, this allows accurate detection of light created within the RICH detectors. 
+The rings of light collected by the RICH detectors when combined with information about it’s momentum from the tracking stations realise the particles mass and therefore it’s identity. Figure X shows how the cerenkov angle and momentum can be combined to identify different types of particles, there are distinct bands for each particle mass. Figure X shows what is expected for the different radiators.  
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/RICH_radiators.pdf}
+  \caption{ \cite{Alves:2008zz}.}
+  \label{fig:RICH_radiator_predictions}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/rich2_schematic.png}
+  \caption{Diagram of the RICH2 detector \cite{Alves:2008zz}.}
+  \label{fig:RICH2_diagram}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[ width=0.49\textwidth]{./Figs/LHC_LHCb/RICH1diagram.png}
+  \includegraphics[ width=0.30\textwidth]{./Figs/LHC_LHCb/rich2_schematic.png}
+  \caption{Diagram of the RICH1 detector \cite{Alves:2008zz}.}
+  \label{fig:RICH1_diagram}
+\end{figure}
+
+\begin{figure}[htb]
+  \centering
+  \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/RICH1_performance.png}
+  \caption{Performance of the RICH1 detector \cite{Adinolfi:2012qfa}.}
+  \label{fig:RICH_preformance}
+\end{figure}
+
+
 \subsubsection{Calrimeters}
+The calorimeter system in the LHCb experiment consists of the Scintillating Pad Detector (SDP), Pre Shower (PS), electromagnetic calorimeter (ECAL) and the hadronic calorimeter (HCAL). The main purposes of the calorimeters are to identify electrons, photons and hadrons with high transverse momentum to be used in the first level of the trigger the L0, and also to help with the reconstruction and identification of these particles. It is only the ECAL that will provide measurements on the position and energy of photons and neutral pions in the LHCb experiment. 
+
+The calorimeters in LHCb are sampling calorimeters that consists of layers of lead and scintillating material. In the lead incident particles create showers of secondary particles which then produce light when the pass through the scintillators. This travels through a wave length shifter then is can be collected by photon multiplier tubes and turned into an electrical signal. In the ECAL showers are started by ionisation, bremstralung radiation or pair production depending on the energy of the incident particle and whether is it a $e^{\pm}$ or a photon. In the HCAL it is interaction via the strong force that leads to showers of secondary particles. 
+
+The SDP, PS and ECAL all work together to identify electrons, positrons and photons. The SPD is a layer of scintillating material allows separation of election and photon showers created later in the calorimeter. This is because it is only charged particles that will produce light in the scintillator and the photons will not. The PS consists of a lead absorber followed by another scintillator similar to the SPD, the length of the lead absorber is chosen so that elections will start showers in the absorber but pions will not. There is only a 1$\%$ chance of a pion creating shower in the PS. Information collected by the PS enable showers created by pions in the ECAL to be separated from those created by electrons and positrons. The SPD is to separate electrons and charged pions. The ECAL is designed to contain the entire shower of high energy photons so that it can provide good energy resolutions of photons passing through the detector. The ECAL has an energy resolution of $\delta E / E = 9\%/\sqrt{(E)} \oplus 0.8\%$  provided information from the PD and SPD are used. 
+
+The HCAL is predominately designed for use in the trigger and there is no requirement that the HCAL contains the full hadronic showers, therefore it was designed with an energy resolution of $\delta E / E = 69\% / \sqrt{(E)} \oplus 9\%$. 
+
+
 \subsubsection{Muon Stations}
 \subsubsection{Combined PID information and performance}
 
