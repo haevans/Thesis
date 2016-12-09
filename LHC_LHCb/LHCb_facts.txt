@@ -233,7 +233,7 @@ Muon detectors
 ##################################################################
 > 5 muon stations, one after RICH 2 the rest at the end after the HCAL
 > high pt muons are used in the trigger because they will have come from interesting B mesons.
-> muons have a high matter penetrating power compared to electrons, hadrons ets, this is expolited in the muon station positions and their makeups
+> muons have a high matter penetrating power compared to electrons, hadrons ets, this is expolited in the muon station positions and their makeups, this is because they do no interact via the strong force and they have a large mass so that energy loss through bremstralung is low
 > the muons stations are outside the magnetic field, therefore track reconstruction is fast.
 > They cover the full LHCb angular acceptance
 > The granulartity reduces due to multiple scarttering that increase in likelihood with distance from the beam pipe
@@ -242,8 +242,19 @@ Muon detectors
 > MWPC uses Ar, CO2 and CF4 at 40%, 55% and 5%. There is a pitch of 2mm. I think there is a high detection efficinecy because therer are 4 sentivive gas layers in each layer and only one layer needs to rehister a signal.
 > GEM thin Kapton foil between copper plated 140 micro meter pitch A very strong volage is applied accross the copper plates.
 > A muon is identified if hits in the muon station can be matched to what is seen in the tracking stations.
-
-
+> “The muon system provides fast information for the high-pT muon trigger at the earliest level (Level-0) and muon identification for the high-level trigger (HLT) and offline analysis.”
+> muons are present in the final states of many b hadron decays
+>”is composed of five stations (M1-M5) of rect- angular shape, placed along the beam axis”
+> “The minimum momentum of a muon to cross the five stations is approximately 6 GeV/c since the total absorber thickness, including the calorime- ters, is approximately 20 interaction lengths.”
+>” Station M1 is placed in front of the calorimeters and is used to improve the pT measurement in the trigger.“
+> “Stations M1–M3 have a high spatial resolution along the x coordinate (bending plane). They are used to define the track direction and to calculate the pT of the candidate muon with a resolution of 20%. Stations M4 and M5 have a limited spatial resolution, their main purpose being the identification of penetrating particles.”
+> decay including muons are topologically similar to those including hadrons i.e. Bsmumu, B2pipi, B2pik! Therefore the muons allow good identification of penetrating muons with a low hadron mis ID probability
+> Size of the muons stations increases with distance from the interaction point just like the OT stations
+> the muon stations effectively cover the full LHCb angular acceptance
+> “The muon system covers the angular range 20-306 mrad in the horizontal plane, and 16-258 mrad in the vertical plane. This is su cient to capture about 20% of muons from semileptonic B decays [80].”
+> the absorbers are made of iron
+>”The muon stations use two di↵erent technologies; multi-wire proportional chambers (MWPCs) are used for all regions except the inner region of M1. In this region the expected particle rate would exceed safety limits for ageing, so triple-GEM (gas electron multiplier) technology is used instead [80].”
+> Quotes are from Will’s thesis or from the ‘LHCb at the LHC’ paper.
 
 Trigger
 #################################################################
