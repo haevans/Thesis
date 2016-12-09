@@ -127,6 +127,7 @@ TT - Tracker turicensis
 - single hit resolution was needed to be about 50 micro meters, then the momentum resolution is dominated by multiple scatters over the full range of possible particle momenta. Read out strip pitches of about 200 micrometers achieves this.
 The TT is kept at 5 degrees C to limit radiation damage
 To aid track reconstruction algorithms, the four detection layers are arranged in two pairs, (x,u) and (v,x), that are separated by approximately 27 cm along the LHC beam axis.
+
 T1-3 - Tracking stations
 ##################################################################
 - IT active ares is 4.0m2
@@ -201,18 +202,32 @@ RICH
 >In the RICH light produced in the dewtector moves through the radiator and is refected off a spherical mirros on to a detector that is sensitive to the position. Hybrid Photon Detectors are used, but the magnet's field can degrade these so the RICH is protected/shielded so this does not happen.
 > Rich 1 has a silicon areogel senstivit to up 10GeV and C4F10 sensitive to 10-60 GeV. All the mirros and detection stuff are locatioed outside the LHCb acceptance
 > THe Rich 2 is sensitive to 15-100 GeV and is made of CF4. It covers +/- 120 mrad in the horizontal and +/- 100 mrad in the vertial so only where you expect to get high energy particles.
-> The radius of the ring gives a measure of theta_c and therefore the velocity.
+> The radius of the ring gives a measure of theta_c and therefore the velocity. 
+> “The RICH 1 detector is shielded from the magnetic field using iron plates which reduce the magnetic field in the HPD plane to a maximum value of 2.4 mT.” Will 
+> It is the HPDs that need to be shielded.
+> RICH detector give a ring of light, this light is related to the speed of the particle, therefore with the momentum from the tracking detectors the mass and therefore the identity of the particles can be determined. 
+>  e, μ, ⇡, K and p+ identification in the rich, They have to be charge particles.
 
 Calorimeters
 ##################################################################
 > these are behind the RICH 2 and consist of the preshower (SPD/PS), electromagnetic calorimeter (ECAL) and the hadronic calorimeter (HCAL)
 > Calorimeters provide information to the trigger are hadron, electron and photn transverse momentum
 > These measure the position and energy of hadrons, electron and photons.
-> The SPD distinguished between neutral and charged oarticles, it is the Scintillator Pad Detector, it seperates photons and electrons which would have similar profiles in the ECAL
-> The preshower(PS) is a thin layer of lead then scintillators like the SPD. It makes the most of the different interaction lengths of the electron and charged pion. Electrons will produce showers in the lead but the pions will not. This information is used the the trigger hlt1
+> The SPD distinguished between neutral and charged particles, it is the Scintillator Pad Detector, it seperates photons and electrons which would have similar profiles in the ECAL
+> The preshower(PS) is a thin layer of lead then scintillators like the SPD. It makes the most of the different interaction lengths of the electron and charged pion. Electrons will produce showers in the lead but the pions will not. This information is used the the trigger hlt1. 1% of pions will interact with the lead converter. This is necessary in case pions begin to shower in the ECAL.
 > The ECAL is for electromagnetic showers and is used in the L0, it wants all the shower to develop in the ECAL for the best E_T resolution.
-> ECAL has resolution os deltaE/E = 9%/sqrt(E)(+)0.8% where E is in GeV - this requires information from the PS
-> HCAL resolution deltaE/E = 69%/sqrt(E)(+)9%
+> ECAL has energy resolution os deltaE/E = 9%/sqrt(E)(+)0.8% where E is in GeV - this requires information from the PS
+> HCAL energy resolution deltaE/E = 69%/sqrt(E)(+)9%
+> functions of the Calo; L0 trigger from transverse energy of hadrons, electrons and photons, improved PID of electrons, photons and hadrons as well as energy and position. Reconstruction on pi0 and prompt photons needed for flavour tagging and study of B meson decays.
+> PS does charged pions and electrons, SPD pi0. it’s scintillator lead scintillator
+> all the calorimeters follow the same principle, scintillation light is transmitted to a PMT by wavelength shifting fibres.  When a particle looses energy via ionisation or excitation of atoms in a material it is travelling through, sometimes depending on the material this energy reemerges as visible or UV light which can then be measured by a PMT.
+> A calorimeter detects energy of a particle by absorbing it, absorbers make showers of secondary particles and so on whilst scintillators or MWPCs detect the energy as light. I suppose the amount of ionisation and excitation depends on the energy of the incident particles.
+> ECAL, scintillator/lead, same for the HCAL - sampling calorimeters
+> EM calorimeters are when particles (electrons, positrons and photons) interact electromagnetically, through ionisation, bremstralung or pair production, depending on their energy.
+> Hadronic calorimeters particles interact via the song force. 
+> SPD is first, before an absorber so that electrons will make light in it but photons will not. Then there is a lead absorber before the PS, the PS is used to separate pion and election showers. 
+> Why do pions interact with the ECAL?
+> ECAL is designed to capture the whole shower where as the HCAL is not. 
 
 Muon detectors
 ##################################################################
