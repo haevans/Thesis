@@ -291,7 +291,58 @@ The HCAL is predominately designed for use in the trigger and there is no requir
   \caption{Muon system \cite{Alves:2008zz}.}
   \label{fig:muon_system}
 \end{figure}
-\subsubsection{Combined PID information and performance}
+
+The muons stations are desigend to identify highly penetrating muons, the information is used in the trigger and also in offline analyses. Muons are produced in from many b-hadron decays, some decays are topologically similar to b-hadron decays that do not include muons such as Bs2MuMu, Bd2KPi, Bs2KK, Bd2pipi. Therefore good muon identification is vital for triggering these events and enabling accurate reconstruction of events. 
+Compared to other particles muons have a high penerating power due to their realtively large mass and because muons do not interact via the strong force, these proties are exploited in the muon detectors. 
+
+There are 5 muon stations, M1-5, that work together to provide track and identigy highly penerating muons. The first muon station is located before the calorimeters, it's inner section is where the fluence is greater is make of gas electron multipler foils and it's outer section is made from MWPC. Stations M2-5 are located after the HCAL, by which point most other partciles have been absored by the calorimeters. These stations are made from MWPC and between each station is 80cm of lead absorber which ensure only highly penetrating muons pass through the muon detector. A muon must have a mometum of at least 3 GeV/c to pass through the calorimeters and M2 and M3, to travel through all the muons stations a muon must have a mometume of 6 GeV/c. 
+The first 3 stations have a high spactial resolution and provide track and PT meinformation to be used the the trigger. M1 is located before the calorimeters to improve the PT measurement. The last two stations have lower spatial resolution and are designed to identify highly penetrating muons. After the muon stations there is am iron wall to stop any particles from travelling downstream of the detector. The size of the muon stations increases with distance from the interaction point to ensure tat the full angular accetpance of the detector is covered. Tracking information collected in the muon stations can be use in the trigger because the station lie outside the magnetic field which allows for fast reconstruction of the tracks and a muon is identified if information in the muon stations can be matched with hits in the tracking detectors. 
+
+\subsubsection{PID information and performance}
+
+The information collected in the PID detectors is useful to provide several discriminting varaible that can be used to identify muons, protons, kaons, pions and electrons.
+
+The muon stations are used, along with information from the tracking system, to procude a binary selection (isMuon) which is used to identidy muons. The tracking system is used to extrapolate a field of interest within the muon stations, a muon is identified if hits in the muon stations can be combined with those from the tracking system within the field of interest. The number of the hits required in the muon stations depend on the mometum of the muon, muons with mometum in the range 3<p<6 GeV must leave hits in M2-3, those in the  mometum range 6<p<10 muon leave hits in M2-3 and either M4 or M5 and finally muons with mometum above 10 GeV must be observed in all the muon stations. Figure~\ref{fig:isMuon_efficiency} shows the efficiencyt for the isMuon selection for selecting muons and also the mis-identification for hadrons to pass this selection. The mis-ID rate is higher at for lower mometum particles, which is expected given there are less hits in the muons detectors. The main contribution is the mis ID comes from the kaons and pions that decay in flight, the  muons from these decays are then detected in the muon stations.
+
+
+
+
+
+\begin{figure}[htb] 
+  \centering    
+  \includegraphics[ width=1.0\textwidth]{./Figs/placeholder.jpeg}
+  \caption{Place holder efficieny and misID effiecnies from LHCb preformance paper.}
+  \label{fig:isMuon_efficiency}
+\end{figure}
+
+
+
+
+The information from all the PID detectors is combined in two different way to provide global particle identification variables. One method is based on likelihood fits and the other is based on Neural Networks. In the first method, a likelihood fits are performed in each sub-detectorthat compare each charged particle track to different particle hypotheses. The information from the likelihoods in each sub detector is then combined into a global variable. This varible is the difference in the log - likelihoods between the track corresponding to a pion and a different particles hypothesis (kaon, proton, muon, electron), it gives a measure of how likely each particle hypothesis is compared to a pion. These variables are known as DLL variables. 
+
+
+
+
+The second method uses information from the PID detectors and the tracking system in Neural Networks to provide a probability of a track having a particular partice hypothesis. This method takes into account correlations between detector systems and extract detector information that are not considered in the likelihood method. The Neural Networks are trained on simulated inclusive b decays and can be tuned to suit different situations such as the data taking year. The variables produced by the Neural Networks are known as ProbNN variables. 
+
+
+Figure~\ref{fig:DLL_vs_ProbNN} shows a comparison of the preformance of the DLL and ProbNN variables for signal effeciency can background rejection in selection protons and muons. Although the performance to the two types of variables are quite different, the efficiencies of the variables vary with different kinematic properties of the decay, such as the momentum, and the properties of the variables measure are different Therefore the most approproate PID variable type to use depends on the situation it is being used in. 
+
+
+
+
+\begin{figure}[htb] 
+  \centering    
+  \includegraphics[ width=1.0\textwidth]{./Figs/placeholder.jpeg}
+  \caption{Place holder for muon and proton efficiency comparisons for DLL and ProbNN from LHCb performance paper.}
+  \label{fig:DLL_vs_ProbNN}
+\end{figure}
+
+
+
+
+
+
 
 \subsection{Trigger and event filtering}
 

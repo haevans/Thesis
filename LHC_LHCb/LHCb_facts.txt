@@ -256,5 +256,69 @@ Muon detectors
 >”The muon stations use two di↵erent technologies; multi-wire proportional chambers (MWPCs) are used for all regions except the inner region of M1. In this region the expected particle rate would exceed safety limits for ageing, so triple-GEM (gas electron multiplier) technology is used instead [80].”
 > Quotes are from Will’s thesis or from the ‘LHCb at the LHC’ paper.
 
+
+PID reconstruction
+############################################################
+https://indico.cern.ch/event/226062/contributions/475644/attachments/371741/517276/ANNPIDRetuning-Reco14-06052013.pdf
+
+RICH
+---
+Olli -
+"The RICH reconstruction algorithms perform a global likelihood fit, which considers all
+possible mass hypotheses for reconstructed tracks that pass through the RICH detectors.
+In Run 1 and during data-taking in 2015 six hypotheses were considered for each track:
+electron, muon, pion, kaon, proton and “below Cherenkov threshold”.  An illustration of
+the kaon-pion separation performance in Run 1 is given in Fig. 3.11. Starting in 2016 the
+deuteron hypothesis will also be included, allowing several new analyses to be carried out.
+...
+ In the offline reconstruction both
+binary (“IsMuon”) and likelihood-ratio variables are calculated. These are based on finding
+hits within a field of interest (FOI) in enough muon stations, where the required number of
+muon stations and FOI size are dependent on momentum, and considering the distribution
+of hits around the extrapolated track position.
+Information from the RICH, calorimeter and muon systems is combined to produce, for
+each charged particle track, a likelihood value for each mass hypothesis. Differences in the
+logarithms of these combined likelihoods (DLLs) are used extensively in event selections to
+distinguish different types of particle."
+
+
+
+ "The PID information obtained separately from the muon, RICH, and calorimeter systems is combined to provide a single set of more powerful variables. Two different approaches are used. In the first method (DLL variables) the likelihood information produced by each sub-system is simply added linearly, to form a set of combined likelihoods. These variables give a measure of how likely the mass hypothesis under consideration is, for any given track, relative to the pion hypothesis. A second approach (ProbNN variables) has been subsequently developed to improve upon the simple log likelihood variables both by taking into account correlations between the detector systems and also by including additional information. This is carried out using multivariate techniques, combining PID information from each sub-system into a single probability value for each particle hypothesis.
+
+Detailed information about the ProbNN approach can be found in this presentation by Chris, slide 10; information about the Run 2 version of the ProbNN variables can be found in this presentaion by Chris (slide 11)Some comparative study of DLL versus ProbNN variable performance (Run 1) can be found here (A. Pearce, PPTS of 8 Jul 2013) and here (A. Hicheur, PID workshop, Jan 2014)
+
+ProbNN variables use information from the tracking and the 3 PID systems, CALO RICH and MUON. The variables used as input for the ProbNN can be found here, actually sued at runtime to list what variables are used (looking at a specific file: the first 5 lines are other settings, the inputs start on the 6th; lines with a # at the start are commented out, so not used). The names in these files can then be match to actually know how data are extracted by looking at this file, which shows the mapping between the name and a helper class, and then to this which shows exactly what each helper does.
+
+The training of ProbNN variables is done using MC inclusive B events. Actual performance depends on the tuning (blending of MC samples) used. A large collection of information on the various tunes can be found digging in this folder. For general purposes MCTuneV2 and MCTuneV3 tunings are available, that have different performance (ID and/or misID) and can be used simultaneously, the choice depending on the specific analysis. The main difference between MC12TuneV3 and MC12TuneV2 is that ghosts have been removed from the training samples (explicitly the ghost have been removed from the backgrounds of all the networks excluding the ghost one). This leads to an improvement in the performance for electrons (have a look to slides 18-23 here for a summary of electron ID performance with the two tunings) while for the other particles it is not that simple to say whether MCTuneV2 or MCTuneV3 is best.
+
+To see which tune performs better in a specific analysis it is useful that the MCTuneV2 and MCTuneV3 might coexist. Users can directly compare themselves the two tunings by means of the new TupleTool TupleToolANNPID. This tool can be configured with a list of tunes, and will add each (with the tune in the variable name) to each stable particle you ask it to. The values are computed on the fly, rather than relying on the values saved in the ProtoParticles, and thus is able to save more than one tuning at the same time, which previously was not possible. " PID Global Twiki https://twiki.cern.ch/twiki/bin/view/LHCb/GlobalParticleID
+
+"Tip on DLL values (i.e. Why there is a peak at PIDx == 0?)
+
+The reason for the peak is any DLL is the difference between two species, one normally being pion. So PIDk is actually DLL(K-pi).
+
+If the expected signature of the RICHes is below Cherenckov threshold for both species, no Cherenkov light is emitted and the signature for both is the same. In short RICH cannot tell them apart and the DLL(K-pi) == 0. precisely. Note that in Run2 the spike at 0 will be much larger than it was in Run1, due to the fact Aerogel has been removed and thus the effective momentum thresholds for a number of tracks will be increased (defined by C4C10 instead of Aerogel).
+
+Practically, placing a cut (< or >) at precisely 0 is a bad idea because this means to cut on a delta function. The correct approach is to demand at least one of the two mass hypotheses in the DLL difference is above threshold as this is enough to make sure the signatures in the RICHes will be different, and thus the DLL is not 0. The "above threshold" request can be made either via the RichPID data objects (which have methods to do this) or via a direct momentum cut "
+
+"Photons    come    in    two    types,    nonconverted    &    converted    (i.einteracted    with    an    upstream    detector    to    make    a    e+e-­‐    pair)    "
+Reasons    for    mis‐ID of Muons;
+- Spurious    hits    in    muon    system    
+- Real    muon    in    event    with    similar    trajectory    
+- As    P    increases    the    windows    for    search    decrease    and    more    hits    are    required,    hence    the    drop    in    mis‐id    rates.    
+- Decays    in    flight    for    kaons    and    pions    hence    larger    mis‐id    rates    than    for    protons    
+
+- DLL are combined log likelohood, they combine the likelihood fits from the RICH, Calorimeters and the Muon stations, everything is done relative to a particle being a pion
+_ DLL combined tracking with PID information for the whole event, it is the difference in log likelihoods between a track having 2 different mass hypotheses
+- Each sub-system provides log-likelihood information (differences) on the particle species it is able to distinguish. 
+- DLL give a measure of how likely the mass hypothesis under consideration is, for any given track, relative to the pion hypothesis.
+- ProbNN  variables    are  neural networks that are trained    on    MC    using:    RICH,    CALO,    MUON    PID, the RICH    Radiation Threshold    Info    and VELO and tracking information
+- ProbNN training done using MC inclusive B events.
+- ProbNN and DLL have different performances with decay kinematics eg track mometum. The best depends on the situation.    
+ - ProbNN uses both by taking into account correlations between the detector systems and also by including additional information
+- Also for muons there is a binary selection, that requires hits in a certain number of muon stations depending on the muon energy, within a cetain field of interest which is extraploated from the tracking stations to identify a muon. Fir 3<p<6 DeV nust have hits in M2-3, 6<p<10 hits in M2-3 and either 4 or 5, p > 10 hits in M2-5.
+
+- main muon mis ID comes from decays in flight of kaons or pions, ie the particles decay making muons and get reconstructed as muons and not kaons or pions.
+
 Trigger
 #################################################################
