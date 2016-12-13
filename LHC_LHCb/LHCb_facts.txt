@@ -382,6 +382,10 @@ TurboCalib
 Information is saved from HLT2 as in the Turbo stream, but the raw event information is retained and the offline reconstruction is also performed. This consists exclusively of calibration selections for online monitoring and measurement of PID and tracking efficiencies. 
 > The HLT is based on the same software as used throughout LHCb data processing and simula-tion 
 
+Things I don't understand about the trigger - 
+ - If alignment and calibration occured before HLT in Run 2 where did they occur in Run 1 and what is they purpose?
+ - What is a 'flow chart' of data analuysis in LHCb, to go from a particle moving through the detector to a stripped data set?
+ - prehaps I should change the order to that it's 1. 'flow chart', 2. Trigger, 3. Stripping
 
 Event stripping
 > each analysis has it's own stripping lines

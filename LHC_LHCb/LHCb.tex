@@ -363,6 +363,11 @@ The  $E_{T}$ and $p_{T}$ thresholds and the multiplcity limit for the L0 trigger
 
 
 \subsubsection{HLT trigger}
+Events that are accepted by trigger lines in the L0 are moved to the event fileter farm where the HLT is run. The HLT trigger is a software trigger that is split into two levels that are run sucessively. The HLT1 is the first level of the HLT. It runs on the output of the L0 checking the decisions make by the L0 trigger and reducing the event rate.% from 1 MHz for processing in the HLT2. 
+Time constraints in the HLT1 do not allow for full event reconstrciotn with all the LHCb sub-detectors, instead the HLT1 runs reconstruction and selction alorithms on even information from the VELO and tracking stations. These trigger lines are composed of generic selection criteria, making decisions that confirm those made in the L0 about particular particle types and also identify generic types of particle decay sich as inclusive b or c hadron decays. The second level of the HLT, HLT2, runs on the output of the HLT1 which provides an event rate that is low enough to allow event reconstruction includeing all detector sub systems to be performed. The trigger lines in teh HLT2 are designed to select decays relevant to specific physics analyses or particle decay topologies, this is made possible by detailed information from the reconstruction. 
+
+Just like the L0 trigger, trigger lines in the HLT vary for each year of data taking both the selection critera used in the lines and also new trigger lines being introduced. The number of HLT2 lines increases with each year of data taking as understanding of the capabilities of the experiment increases; there were about 100 HTL2 lines in 2011, 200 in 2012 and 450 in 2015. Furthermore, significant changes were made in the reconstruction used in the HLT between Run 1 and Run 2,  the details of the changes made can be found in CITE. The majority of the changes to the HLT for Run 2 are not relevant for the analysis discussed in this thesis, the overall impact is that a more detailed reconstruction is used in the decisions of the Run 2 HLT lines compared to Run 1.
+
 
 
 \subsection{MC and Software}
