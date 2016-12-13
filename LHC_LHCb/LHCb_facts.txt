@@ -322,3 +322,67 @@ _ DLL combined tracking with PID information for the whole event, it is the diff
 
 Trigger
 #################################################################
+
+> The collision rate at the LHC is too high to be read out by the detector, therefore a trigger is needed that selects events that could be interesting for physics reasons and only these are stored offline
+>50ns bunch crossing at LHCb in Run 1 - 2015 50 and 25ns 
+>In run I the trigger reduced the rate of events to be saved for physics analysis to 2 - 5kHz
+> The difference between online and offline resonstruction in Run 1 are the simpli ed reconstruction, possible misalignments and reduced resolution, as compared to the oine reconstruction.  
+> A "trigger line" is composed of a sequence of reconstruction algorithms and selections.  The trigger line returns an accept or reject decision.  An event will be accepted by L0, HLT1 or HLT2 if it is accepted by at least one of its trigger lines at the relevant stage
+> only about 15% of these events will include at least one B meson with all its decay products contained in the spectrometer acceptance. Furthermore the branching ratios of interesting B meson decays used to study for instance CP violation are typically less than 10-3 . The offline analysis uses event selections based on the masses of the B mesons, their lifetimes and other stringent cuts to enhance the signal over background. For the best overall performance the trigger was therefore optimised to achieve the highest efficiency for the events selected in the offline analysis,  while rejecting uninteresting background events as strongly as possible
+
+> The purpose of the L0 trigger is to reduce the LHC beam crossing rate of 40 MHz to the rate of 1 MHz with which the entire detector can be read out. Due to their large mass, B mesons decays often produce particles with large transverse momentum (pT) and energy (ET) respectively. 
+
+
+
+Hardware trigger
+> LHC bunch crossing frequency can be up to 40 MHz
+> L0 must reduce it to 1 MHz which is the rate that the full detector can be read out.
+> latency of the L0 us 4\mu seconds and it is built from custom designed software
+> There are 3 inputs to the L0; the VELO pileup veto system which is used mainly for luninoscity measurements rather than physics analyses, it estimates the number of PVs in an event; the Calorimeters, these identify electron, hadrons and photons for the triggers by looking at energy deposited in different parts of the detector; the muons stations, fast reconstruction of muons is done and they have to have a minumum PT to be triggered.
+> electron and hadron triggers - identifies highest ET photon and electron in the ECAL, highest ET hadrons in the HCAL and two highest PT hadrons in the muon stations. These candidates then have to pass PT thresholds and nSPD hits. SPD multiplicity/hits is the number of charged tracks passing through the SPD in an event is gives a measure of the occupancy of the event. Events with high occupancy take a longer time to reconstruct in the software triggers, inefficiency and CPU intensive. These candidates are removed to get optimal HLT performance.
+> PT requirements change per year to make the most of the resources avaliable given the pp CoM energy
+> There are also dedicated trigger lines to detect Central Exclusive production, very low occupancey is charteristic of these events ( Will has a reference).
+> if an events passes any of the trigger lines then the entrie event is read out and recorded.
+> The L0 trigger is divided into three triggers ; the L0-Calorimeter trigger, the L0-Muon trigger and the L0-PileUp trigger, the latter being used only for the determination of the luminosity 
+> The L0Dimuon trigger adds a small number of events to the L0Muon trigger - there are some potentially useful plots in the preformance paper
+> The L0 system is fully synchronous with the 40 MHz bunch crossing signal of the LHC.
+
+Software Trigger
+> For Run 1: The HLT is divided in two levels.  In the  rst level (HLT1), a partial event reconstruction is performed.  In the second level (HLT2), the complete event is reconstructed.  Where time allows, the HLT uses the same reconstruction algorithms as employed oine, with some simpli calculations that are needed to satisfy the time constraints. 
+>Hlt1 seems to just use tracking and mometum for each L0 trigger
+> aim of the HLT1 is to confirm the L0 trigger decisions but it uses more infomration from the detector.
+> reduces 1MHz from the L0 to what can be processed offline whic was 3.5kHz in 2011 and 12.5kHz in 2015 due to increase in computing resources. Olli
+> approximately 5kHz is saved (Run 1) - Simon
+> HLT1 usese the VLOE and the tracking stations, output rate was 80 kHz in 2012 and 40 kHz in 2011
+> there are many specific trigger lines, there are some that select a lot of B2MuMu events but these change each year! I don't want to go into them. Prehaps I can talk about them later in the analysis section?
+> HLT2 preforms full event reconstruction for all events that pass at least one HLT1 line, provided that tracks pass a some minimum requirements on the p and pt. pt > 0.5 GeV and p > 5 GeV in 2011 and pt>0.3 GeV in 2012.
+> HLT2 lines provide information for specific analyses, there are many. Some are specific to certain decays, others look for particluar types of particle and some are topological triggers (these use momentum and VELO info to select tracks that are higly displaced from the PV)
+> Trigger decisions; TOS, triggered on signal, the tracks that make up the signal candidate were sufficient to trigger the event; TIS, triggered independant of signal, if the tracks and hits associated with the signal are removed then then event would still have passed the trigger. Dec, Decision, refers to whether a particular trigger line 'fired' or was passed by an event, TIS and TOS are included in this and so is something else I'm not sure about (not 100% sure of this one). This can be done for each line or globally. 
+> run on a dedicated computer farm offline. 
+> HLT1 must process an event in 12ms, so although it can access the full detector readout, full event reconstruction is too slow to be used in the HLT1 lines. 
+> NB Will has a nice diagram that illustrate the levels in the trigger. 
+> Should I include some trigger efficiencies? Or I can put these later in the Thesis?
+> HLT1 and HLT2 lines vary for each year, particulary there are new or modified lines for Run 2 compared to Run 1. The thresholds for the L0 changed but not he lies thenselves. NB I should have mentioned Run 1 and Run2 before now, prehaps in the LHC section. 
+>all events passing the HLT are stored on disk, there offline reconstruction is then done (Run 1) which is different to online reconstruction which is used in the trigger. I'm pretty sure for Run 2 that online reconstruction replaces offline reconstruction because of the Turbo stream.
+> HLT1 rate is low enough to allow full event reconstruction
+>  In all there were around 100 HLT2 selections in
+the 2011 configuration, 200 in 2012 and around 450 during 2015 data-takin
+> Olli has schemes for 2011, 2012 and 2015 triggers
+> L0 events are deferred to disk where the HLT trigger is used
+Run 1 and Run 2 and the HLT from Olli's thesis
+> in Run 1 there were clear distinctions between the event reconstructions used the the HLT1, HLT2 and the offline reconstruction
+> Between 2011 and 2012 the size of the Event Filter Farm was increase by a bit and a 'defferal' scheme was introduced.  "Averaged over a typical period of data collection, theLHC delivers stable beams around 30 % of the time, so, if theHLTwere to operate fully synchronously with collisions, the EFF would sit idle for the remaining 70 %. To optimise the use of EFF resources, around 20 % of the events accepted by the L0 trigger were saved to local hard drives of the EFF nodes in 2012. The HLT processed these events later, when the LHC was not providing stable beams." This effectively increased the CPU avalible to the HLT, and allowed down stream tracks (Olli has ref) to be resoncturced in the HLT2 which imporved the effucuency of selecting Ks and lambda^0
+> Run 2 and HLT2 "The HLT underwent significant changes during LS1, the long LHC shutdown separating Run 1 and Run 2. Instead of deferring a fraction of the L0 trigger output, the entire output of HLT1 is saved to the EFF local disks in Run 2, as illustrated in Fig. 4.1c. This new mode of operation allows the detector to be aligned and calibrated [143] before HLT2 is executed, enabling HLT2 selections to make use of offline-quality reconstruction informa- tion, and ensuring optimal use is made of EFF resources. Improvements to the computing infrastructure permit more processing time to be allocated to each event in HLT2, and allow around twice as much data to be output by HLT2. The additional processing time is used to perform higher-quality reconstruction than the Run 1 HLT , including full reconstruc- tion of the RICH detectors and calorimeter systems, which were only used sparingly in the Run 1 HLT2 due to timing constraintsThe reconstruction performed in the Run 2 HLT2 is of sufficiently high quality that no offline reconstruction is necessary for some data (the Turbo stream, Sect. 4.2.4), and thismust only be performed once for the remaining data. In contrast, in Run 1 a second offline reprocessing was required after the detector alignment and calibration had been performed."
+> In run 2 different HLT2 lines are saved to differnt places. 
+Full
+This is similar to Run 1, minimal information is saved from HLT2 and physics analysis depends on the offline reconstruction. It is typically used for signals that are not fully reconstructed in HLT2, such as b -hadron decays selected by the inclusive trigger, or for analyses that need to [re-]run dedicated event reconstructions, such as searches for very rare decays and modes with neutral particles. 
+Turbo
+Sufficient information is saved from HLT2 that no offline reconstruction is required prior to physics analysis [148]. This stream is suitable for analyses that are fully reconstructed in HLT2 and do need the full reconstructed event information. In principle the raw event information is discarded to save storage space, although in practice this information was retained during 2015 data-taking. 
+TurboCalib
+Information is saved from HLT2 as in the Turbo stream, but the raw event information is retained and the offline reconstruction is also performed. This consists exclusively of calibration selections for online monitoring and measurement of PID and tracking efficiencies. 
+> The HLT is based on the same software as used throughout LHCb data processing and simula-tion 
+
+
+Event stripping
+> each analysis has it's own stripping lines
+> the full offline reconstruction in run using information for all sub detectors. Selection is applied to select specific decays and to reduce the amount of data making it to a size that is relevant to each analysis and so an analyst can use it. For example, B2MuMu only cares about muons so if an event doesn't contain a muon who cares? We use this information to remove background events so we end up with a data set that is enhances with signal events and is a sensible size. 

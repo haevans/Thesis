@@ -261,7 +261,7 @@ The rings of light collected by the RICH detectors when combined with informatio
   \centering
   \includegraphics[ width=0.49\textwidth]{./Figs/LHC_LHCb/RICH1diagram.png}
   \includegraphics[ width=0.30\textwidth]{./Figs/LHC_LHCb/rich2_schematic.png}
-  \caption{Diagram of the RICH1 detector \cite{Alves:2008zz}.}
+  \caption{Diagram of the RICH1 detector \cite{Alves:2008zz}, also Olli has a nice picture of a HPD schematic.}
   \label{fig:RICH1_diagram}
 \end{figure}
 
@@ -273,7 +273,7 @@ The rings of light collected by the RICH detectors when combined with informatio
 \end{figure}
 
 
-\subsubsection{Calrimeters}
+\subsubsection{Calorimeters}
 The calorimeter system in the LHCb experiment consists of the Scintillating Pad Detector (SDP), Pre Shower (PS), electromagnetic calorimeter (ECAL) and the hadronic calorimeter (HCAL). The main purposes of the calorimeters are to identify electrons, photons and hadrons with high transverse momentum to be used in the first level of the trigger the L0, and also to help with the reconstruction and identification of these particles. It is only the ECAL that will provide measurements on the position and energy of photons and neutral pions in the LHCb experiment. 
 
 The calorimeters in LHCb are sampling calorimeters that consists of layers of lead and scintillating material. In the lead incident particles create showers of secondary particles which then produce light when the pass through the scintillators. This travels through a wave length shifter then is can be collected by photon multiplier tubes and turned into an electrical signal. In the ECAL showers are started by ionisation, bremstralung radiation or pair production depending on the energy of the incident particle and whether is it a $e^{\pm}$ or a photon. In the HCAL it is interaction via the strong force that leads to showers of secondary particles. 
@@ -311,7 +311,7 @@ The muon stations are used, along with information from the tracking system, to 
 \begin{figure}[htb] 
   \centering    
   \includegraphics[ width=1.0\textwidth]{./Figs/placeholder.jpeg}
-  \caption{Place holder efficieny and misID effiecnies from LHCb preformance paper.}
+  \caption{Place holder efficieny and misID effiecnies https://inspirehep.net/record/1236807/plots.}
   \label{fig:isMuon_efficiency}
 \end{figure}
 
@@ -345,6 +345,25 @@ Figure~\ref{fig:DLL_vs_ProbNN} shows a comparison of the preformance of the DLL 
 
 
 \subsection{Trigger and event filtering}
+
+
+The LHC was designed to collide protons at a rate of 40 MHz, this rate is too high for infomation to be read out of the LHCb detector. However most pp collisions do not produce particles within the detector acceptance that are interesting for physics analyses at LHCb, therefore LHCb uses a trigger system that selects potentially intereting events to be saved for later physics analysis.The trigger has been designed to select interesting physics events with a high efficiency whilst reducing the number of background events whilst reducing the event rate to one where information from the full detector can be read out.  There are two levels to the LHCb trigger; the hardware trigger and the software trigger. The hardware trigger is know as the level-zero (L0) trigger and reduces the 40 MHz event rate to 1MHz which is the rate at which the full detector can be read out. The hardware trigger is know as the High-Level-Trigger (HLT), it has two stages and runs on the output of the L0 further reducing the event rate by ultilising information for all the detector sub-systems. Each level of the trigger is composed of trigger 'lines'; these lines are made up of reconstruction and selection algorithms and either accept or reject each event. Only events that are acceptance by a trigger line at both the L0 and HLT analyses are avalible for physics analyses. 
+
+\subsubsection{L0 trigger}
+
+The L0 trigger runs synchronously to the LHC bunch crossing. It's purpose is to reduce the events rate to 1 MHz, where information from the full detector can be read out. Therefore the L0 is limited to use information from teh detector that can be read at the same rate as the LHC collision rate.
+The L0 uses information from 3 parts of the detector to make decisions about the relevance of each event. The pileup veto stations in teh VELO are used to make L0 pileup trigger lines, these are relevant only for luminoscity measurements and will not be discussed further here.
+
+The other L0 trigger lines are based on the kinematic propertices of b-hadron decays. The heavy masses of b0hadrons means that their decays are charaterised bu the produceion of daughter particles with large transverse mometum ($p_{T}$) and transerse energy ($E_{T}$).
+%The calorimeters are used to identify events that conatin electron, photons and hadrons with high $E_{T}$. 
+The calorimeters are used to define trigger lines that select events containing high $E_{T}$ electrons, photons or hadrons. Information from the PS, SPD, ECAL and HCAL is used to identify electrons, photons and hadrons in each event. Events are then accepted by the trigger lines if there is an  electron, photon or hadron with $E_{T}$ above a threshold value provided the event multiplicty is not too high. The $E_{T}$ thresholds are different for each particle type. Events with high multiplicity take a long time to reconstruct and process in the HLT, therefore it is not efficiency to keep these events. The multiploty is measured by the number of hits in the SPD detector (nSPD), only events with nSPD lower than a specified value can pass an L0 trigger line. 
+In a similar way the muon statiosn are used to identify muons with high $p_{T}$. There are 2 L0 muon lines that accept events based on muon $p_{T}$ if either a single muon has a $p_{T}$  above a threshold value or if the two highest $p_{T}$  muons have above a threshold value, provided the event multiplicty is not too high. %The L0 muon trigger lines are most important to select \bsmumu candidates. The efficiencies for these 2 lines are show in Figure X, most eventa are triggered by the L0Muon but some are added by the L0Dimuon lines. 
+
+The  $E_{T}$ and $p_{T}$ thresholds and the multiplcity limit for the L0 trigger lines vary for each year of data taking and are shown in table X. 
+
+
+\subsubsection{HLT trigger}
+
 
 \subsection{MC and Software}
 
