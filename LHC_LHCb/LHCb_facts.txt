@@ -390,3 +390,36 @@ Things I don't understand about the trigger -
 Event stripping
 > each analysis has it's own stripping lines
 > the full offline reconstruction in run using information for all sub detectors. Selection is applied to select specific decays and to reduce the amount of data making it to a size that is relevant to each analysis and so an analyst can use it. For example, B2MuMu only cares about muons so if an event doesn't contain a muon who cares? We use this information to remove background events so we end up with a data set that is enhances with signal events and is a sensible size. 
+
+
+
+Software, MC and stuff like that.
+#################################
+(Harry)
+-  Once data has passed the trigger it must be processed before it can be used in physics analyses.
+
+GAUDI FRAMEWORK
+- C++ framework used accross the experiment that ensures that changes are made smoothly and universally and all tools and algorithms are avaliable accross the experiment
+- the conditions data base store information about the running conditions of the experiment which is something that changes throughout the experiment. It also allows simulated data to be produced. 
+- framework implemets the software
+- suited to the a distributed computing system, which is great because LHCb uses the world wide LHC computing grid. The GRID allows data to be stored all over the world and the analysis code it then sent to where the data is so that the data does not need to be transported to the analysts. The GRID is managed by DIRAC software and jobs are submitted via the GANGA project. 
+
+SIMULTAION
+- simulation software provides simulated events mirroring what happens in data. The Gauss application is used to do this, it uses Pythia with and LHCb specific configuration to model proton-proton collisions and the production of particles. The EvtGen application calculated the flight of these particles through the detector volume and their decays.
+- Generated events are ususally forced to include a particular signal decay of interest
+-Boole applicaition deals with the response of the detecotr to the simulated events, the model of the detector is based on GEANT4, it simulates the detector's digital output which can then be passed through the same trigger, reconstruction and analysis chain as real data
+- Final state radiation if modelled by PHOTOS.
+- a GEANT4 toolkit is used to describe the interaction of particles with the detector and its response.
+- the same trigger software and offline reconstruction algorithms are used for simulated data as for real data, but also additional information about the generated particles is kept to be used when the data are analysed.
+
+RECONSTRUCTION
+- Burnel takes digitised readout of the detector, either from simulation or from data and produces data that is of physics interst, such are momentum, energy and PID measurements. It takes hits in the tracking stations and preforms fits to determine the trajectory and momentum of particles. Takes clusters of energy deposited by showers in the calorimeters to get particle energy, performed a combined reconstruction of the different PID detectors to produce the PID variables. 
+- the output of Brunel is a full reconstructed dataset known as a "Data Storage Tape" (DST) or microDST file.
+- DaVinci assigns particle hypothesis given information from BRUNEL, this enables it to compute particle masses of intermediate and parent particles. 
+ANALYSIS
+-DaVinci, takes track objects from Burnel and preforms fits to produce PVs and SVs and calculates a wide range of kinematic properties needed for anaylses, ie proper time, distance of flight. DaVinci also allows the implementation of the Stripping Proceedure which are series of particle selection sequences. The output of DaVinc is with a ROOT ntuple file that is used directly for measurements or a DST file with can be processed futher.
+- ROOT enables easy visualisation for data in histograms, a ROOT tuple includes all information requested by the analyst.
+- the RooFit package sits inside the ROOT framework and enables fit to the data to be performed. 
+- "The stripping produces signal candidates using particles found in the offline reconstruction and applies additional selection requirements to improve signal purity."
+- in some stripped files, only the signal candidate is save whilst others keep the fully reconstructed event
+- the output of the trigger is too large to be stored and used by all the analysts therefore stripping lines are used. Aim is to keep as much of the signal as possible but reduce background events by applying loose selection cuts.
