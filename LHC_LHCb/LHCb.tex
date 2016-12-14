@@ -380,18 +380,33 @@ Just like the L0 trigger, trigger lines in the HLT vary for each year of data ta
 
 
 
+
+The first step in processing the output of the detector is reconstructing events, this is done by the BRUNEL ap[plication. It takes the digitised detector read out and reconstructs hits in the tracking stations to find particle trajectories and momenta and combined information from the RICH detectors, calorimeters and Muon Stations to compute PID variables. The output of processing by the BRUNEL application are stored in 'Data Summary Type' DST. 
+
+Next the DaVinci application is used to fit the tracks reconstructed in BRUNEL with primary and secondary verticies. This application at assigns particle hypotheses to each track and reconstructs the decay trees of particles in the detector, computing the kinimatic properties that are needed for physics analyses. The the reconstructed output of the trigger is too large to be stored in one place and to be used by all the analysts therefore a 'stripping' proceedure is used to break up the data into a managable size for physics analyses. Each physics analysis designs a set of loose selection requirements specific to their decay of interste, the selections are applied to the reconstructed events and are designed to keep as much of the signal as possible but reduce the number background events. The output of this process is smaller DST files, events passing the stripping selections can either be save with the full event information or with just the tracks related to the signal candidate. The choice depends on the physics process the stripping line is relevant for. The DaVinci application is then used one last time to produce ROOT files from the output of the stripping lines, these files display the data in histogram and are used for physics analyses. 
+
+As well as data collected by the experiment, simulated data that mirror what is expected in the experiment is needed to understand the detector performance and for physics analyses. There is a set of software applications that are dedicated to the production of Monte Carlo simulated events. Events are generated using the Gauss application, this package uses PYTHIA to model proton-proton collisions and the production of particles, then the EvtGen application to calculate the decay of these particles. Both PYTHIA and EvtGen have been tuned for the production and decay of particles within the LHCb detector. In the simulation the type of particles generated and how they decay can be specified so that the simulated events are relevant to particular physics analyses.  The detector response to the simulated events is processed by the BOOLE application with uses GEANT4 to model the detector. The output of the BOOLE application is the digitised reponse of the detector which is then processed by BRUNEL and DaVinci in the same way as the real data to produce ROOT files that are used in physics analyses. 
+
+
+The LHCb software framework is set up so that it can be used on the Worldwide LHC Computing Grid, the Grid is made up of computers across the world that each store part for the LHCb data set and simulation data. Despite the stripping process the data produced at LHCb is too large to be stored in one place. The DIRAC system mananges GIRD site and use the GANGA project allows the submission analysis code to differnt sites. The GRID enables analysts to be able to process and study the large amounts of data produced by LHCb without having to store the data where the analyst is. 
+
+
+
+
+
 \subsection{LHCb data collected so far}
+The data taking periods of the LHC can be split up into different 'Runs' which are sperated by Long Shut Down periods when maintenance and upgrades are performed on the LHC, the detectors and the accelerator chain that delivers protons to the LHC. Run 1 began in 2010 and ended in 2013, during this Run the LHC operated at two different center of mass energies. In 2010 and 2011 the LHC delivered proton collisions a a center-of-mass energy of 7 TeV, this was increased to 8 TeV in 2012. The luminoscity recored by LHCb in each was; 0.04 fb-1 in 2010, 1.10 fb-1 in 2011 and 2.08 fb-1 in 2012. After Run 1 the LHC and experiment entered the Long Shutdown 1 (LS1) when the machine and experiments were perpard to deliver and detect proton collisions at $\sqrt{s}$ = 13 TeV. Run 2 began in early 2015 and is still on going, so far LHCb has recoreded 0.32 fb in 2015 and 1.67 fb in 2016 both at a center-of-mass energy of 13 TeV. Figure X shows the intergrated lumnoscity collected by LHCb in each year of data taking and the cumulative luminoscity. The recorded luminoscity of Run 2 is currently less that what was recorded in Run 1, however the production cross section for b-hadrons approximately doubled with the increase in center-of-mass energy between Run 1 and Run2 therefore the Run 2 data set will already contain more b-hadrons useful for physics analyses than the Run 1 data set. 
+
+
+The expected end of Run 2 is in 2018 by which time LHCb is expected to have recorded 5 fb-1 luminoscity during the Run. Run 2 will be followed by a second long shut down period (LS2) in which LHCb shall be upgraded ready to recorde proton collisions at 14 TeV during Run 3. This run of data taking is expected to be from 2021 - 2024 and by the end of Run 3 LHCb is expected to have collected an intergrated lumnioscity of 23 fb-1 over all the runs. 
+
 
 \begin{figure}[tb] 
   \centering    
-  \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/IntegratedLumiCumul.png}
+  \includegraphics[ width=0.49\textwidth]{./Figs/LHC_LHCb/IntegratedLumiCumul.png}
+  \includegraphics[ width=0.49\textwidth]{./Figs/LHC_LHCb/IntLumiRun1-2.png}
+
   \caption{Source: LHCb.}
-  \label{fig:cumulative_lumi}
+  \label{fig:LHCb_lumi}
 \end{figure}
 
-\begin{figure}[tb] 
-  \centering    
-  \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/IntLumiRun1-2.png}
-  \caption{Source: LHCb.}
-  \label{fig:yearly_lumi}
-\end{figure}
