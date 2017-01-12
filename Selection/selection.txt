@@ -1,0 +1,56 @@
+Plan for the selection section
+##############################
+
+Topics to include in the chapter;
+---------------------------------
+
+Stripping
+
+My study into the stripping selection?
+
+Trigger
+
+Offline selection cuts ? (Mass, reapplying the stripping cuts, Jpsi veto)
+
+PID and backgrounds relevant to the analysis
+
+BDT - choice, variables and cut optimisation
+
+How to order this? What have other people done?
+-----------------------------------------------
+Simon
+/\/\/\
+At the start of the chapter before the sections begin he explains the aim of the selection and the outline the parts of the selection and their purposes in the logical order and which sections they are describes. He also states the importantance of MC. Finally before going into detail on the selection itself he states what parts he did and what was done over time by others. 
+
+- MC samples; table of the MC samples used, the MC version and the number of events and also explaination of weighting done and PIDCalib.
+
+- Trigger, stripping and preselection; stripping lines, including specific line names and stripping versions, a table of the cuts and the an explaination of the variables that the cuts are on and why those variables are motivated to be used. Preselection cuts that are tighter trigger requirements or slightly different cuts are detailed in a table as well as the trigger requirements.
+
+- PID; brief discussion about the PID variables that are detailed in a table
+
+- MVA; explaination of what a BDT is, the different ones used in his analysis, the variables that go into it and the isolation variables used.
+
+- Fiducaial cuts
+
+- Vetoes for specific backgrounds
+
+NB, he did only some of the fiducial cuts and the vetoes.
+
+
+My plan;
+
+The chapter layout will be based on what Simon did (roughly).
+
+- Chapter introduction that motivates the selection and what it aims to do and why.
+- MC samples used/needed.
+- The trigger - keep it seperate and simple.
+- Stripping - include a table with the cuts and expaining the variables used as Simon does and also showing that I need to select B2MuMu and B2hh events. Include the studies that were done on the stripping selection, explaining how there was stuff set in the past (reference the other work) and how I looked at if we can improve in efficiency of the selection for the signal.
+- Pre- selection - BDTS (describe what it is and say how a BDT is decscirbed later) mass cut, Jpsi veto, explain how the old stripping cuts must (for this analysis) be enforced.
+- PID - this could be included into the pre/offline selection or perhaps the offline selection could be a broader heading?
+- BDT - description of a BDT and it's purpose, the development of what I did on the BDT and the comparisons with the BF BDT (B2hh data and sidebands), cut optimisation. (If this ends up being extremely long then it could be a sperate chapter).
+
+Plan to do ...
+
+- Read (and make notes) what Siim wrote in his thesis about the selection and possible Alessio as well. This will help me to better understand the motivation of the cuts.
+- Go over Simon's chapter start again to remind myself how he did things.
+- Plan a section then write that section, prehaps leaving the introduction to the end since then I'll know all the details.
