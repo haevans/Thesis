@@ -1,0 +1,50 @@
+This is the evolving outline for my thesis.
+
+Acknowledgements
+
+Preface
+
+Introduction (?)
+
+Theroetical Motivation (and Experimental Status)
+------------------------------------------------
+Some stuff about the SM, why the BF and lifetime are theoretically interesting. What the experimental status of the BF measurement is. Why it is still interesting in light of the other slighly odd LHCb results.
+
+Detector Chapter
+----------------
+Including an overview of the LHC, the LHCb detector purpose and subdetectors, the software, MC production and data taken so far and what is relevant for this thesis.
+
+- Should probably add the luminoscity for 2016 that I actually use and say the due to the doubling of the CoM energy the production cross section doubles for Bs2MuMu so Run 1 and 2 should contain comparible numbers of Bs2MuMu events.
+
+
+Selection of Bs2MuMu events for the effective lifetime
+------------------------------------------------------
+Stripping, trigger, offline selection cuts, PID (and backgrounds) and BDT. 
+
+Measuring the Bs2MuMu Effective lifetime
+----------------------------------------
+Details of the acceptance and decay time fits that are used and the optimisation of the fit strategy.
+
+Systematics
+-----------
+All the systematics as in the analysis note, fun!
+
+Results and future propects
+---------------------------
+The results of the analysis preformed, and how A_DG is unphysical at the moment. Projections into the furture of when it could start to be interesting and also acknowledge that analysis method may well change when there are more events!
+
+
+The Bs2MuMu BF
+--------------
+Summary of the BF measurement and result, linking to the parts in the selection that are the same. 
+
+Conclusions
+-----------
+
+
+What things are used in the analysis that I did not develop or test?
+####################################################################
+> The PID linear combination
+> The pdfs used in the mass fits for signal and backgrounds
+> The Bs2KPi mass pdfs (Harry)
+> The predictions for the expected number of events for the backgrouds etc.
