@@ -1,4 +1,4 @@
-Plan for the selection section
+sel	Plan for the selection section
 ##############################
 
 Topics to include in the chapter;
@@ -41,7 +41,7 @@ My plan;
 
 The chapter layout will be based on what Simon did (roughly).
 
-- Chapter introduction that motivates the selection and what it aims to do and why.
+- Chapter introduction that motivates the selection and what it aims to do and why. Should explain that a lot of this was developed in the past and is similar/the same as used in the BF analyses. (Which is why there are 2 BDTs - see Siim's thesis).
 - MC samples used/needed.
 - The trigger - keep it seperate and simple.
 - Stripping - include a table with the cuts and expaining the variables used as Simon does and also showing that I need to select B2MuMu and B2hh events. Include the studies that were done on the stripping selection, explaining how there was stuff set in the past (reference the other work) and how I looked at if we can improve in efficiency of the selection for the signal.
@@ -54,3 +54,130 @@ Plan to do ...
 - Read (and make notes) what Siim wrote in his thesis about the selection and possible Alessio as well. This will help me to better understand the motivation of the cuts.
 - Go over Simon's chapter start again to remind myself how he did things.
 - Plan a section then write that section, prehaps leaving the introduction to the end since then I'll know all the details.
+- I will also have to read and understand about the isolation varaibles in the global BDT and those in the BDTs I trained and also the PID selection (prehaps gloss over that like Simon seemed to?)
+
+Q: Do I want to explain the backgrounds that are present in some detail in order to motivate the selection?  
+
+
+TRIGGER
+-------
+I should make sure I explain what a trigger line is, to quote Siim ' A "trigger lines" is a unique set of selection criteria and/or reconstruction criteia within a trigger level.
+What do I want to include? Just the requirements that we make and a discussion as to why or do I also want to include efficiencies/details of the lines that actually trigger the events? If so that would require some work I think. Siim's thesis has the Run 1 info in.
+
+Detailed Chapter plan
+=====================
+Introduction
+
+
+
+- The analysis in chapter X requires Bs2MuMu and B2hh decays to be idetified from the LHCb data sets. 
+- Bs2MuMu selection is challenging. Bs2MuMu have a pretty clear 2 muon signature in the detector but lots of other process make muons and these can mimic the Bs2MuMu decay. The mimicing decays are known as backgrounds not signal as the Bs2MuMu are. Because Bs2MuMu are very rare they are hard to find amoungst the backgrounds. The background processes are described in X.
+-  To understand different aspects of the analysis we rely on decays that have a similar topology to Bs2MuMu but are more common, these have already had various properties measured so are understood well for our purposes. We use b2hh decays which includes Bs2KK, Bs2KPi, BdKPi. To be useful as control/valiation channels that selection needs to be as close as possible to Bs2MuMu - since the topologies are similar it's not a problem till the PID. B2hh decays are much easier to find, the Bs2MuMu selection is not optimal for these decays since it's optimal for Bs2MuMu but because they are much more abundant that Bs2MuMu it's all fine.
+- This chapter explains the selection of Bs2MuMu and B2hh decays, the selection occurs in several stages, but in order to design the selection and understand things later used in the analysis MC is needed which is detailed in section X.
+- the trigger and stripping selection apply loose selection cuts to remove backgrounds. 
+- Then tigter/cuts specific to the analysis are applied
+- Then there is the PID 
+- Finally and MVA
+- The selection and study of backgrounds has been developed by many people for the BF analysis, add some references, here I indicate what I actually did.
+
+
+
+Backgrounds
+%NOTES - from Alessio
+%- Background events are events appearing very similar to BS2MuMu signal but originated from different processes
+%- exclusive di-muon processes/elastic pp->ppmumu collisions (mediated by a photon) elastic because the protons remain whole, dimuon pair will have a low PT, removed by py cyt
+%- prompt combinatorial background, so there are 2 muons produced at the PV, the can be combined to make a almost instranteaously decaying Bs
+%- Bs2MuMugamma - this is a 3 body decay that is not helicity supressed, the mass cut pt +/- 500 MeV removes this
+%- 'long lived' Combinatorial background, combinations of muons that are produced by seperate semi-leptonic B decays in the event
+%- semi-leptonic decays in which one of the decays is mis-identified as a muon or one of the decay objects is not detected. Include Bc as well.
+%- B2hh decays where both are mis- identified as muons.
+%- poorly reconstructed candidates, clones/ghosts
+%- Bd2MuMu is here a background, however the mass if the only thing that seperated Bs2MuMu and Bd2MuMu decays, most of the selection is the same for Bs2MuMu.
+%- Have a mass plot that shows the different backgrounds that previous analyses have found/that we expect to be present in this mass window and their mass distribution? Or prehaps not.
+%- Signature of Bs2MuMu decay is 2 muons forming a good common vertex that is significanlty seperated from the PV. The combined mometum vector of the muons must point to the PV.
+
+%What do I want to say?
+- Bs2MuMu leaves the following signal charateristics in the detector, 2 muons that form a good vertex that is displaced from the PV because Bs has a lifetime. Also the combined mometum of the muons should point backwards to the PV because it's just the muons that come from the Bs2MuMu
+- There are other processes that can appear similar to Bs2MuMu/can be reconstructed with similar properties to real Bs2MuMu decays. These are background decays, the selection described in the section aims to seperate Bs2MuMu decays from these backgrounds.
+- The main sources of backgrounds for Bs2MuMu are; (begin some bullet points - Nooo am I copying others?)
+- exclusive di-muon processes/elastic pp->ppmumu collisions (mediated by a photon) elastic because the protons remain whole, dimuon pair will have a low PT, the protons travel down the beam pipe (There's a reference in Thesis 2013-249)
+- prompt combinatorial background,  pp collisions produce 2 muons at the PV, these are combined to form Bs that has 0 lifetime
+- Bs2MuMugamma - processes where the photon is not emitted in the final state, this is a 3 body decay that is not helicity supressed therefore it can be much more common. However the photon gains a large momentum therefore reducing the B mass by a lot if it is reconstructed as Bs2MuMu, ie without the photon (There's a reference in Thesis 2013-249)
+- poorly reconstructed candidates
+- 'long lived' combinatorial background, 2 muons produced from sperate semi-leptonic decays combined to produce a Bs with a non-zero lifetime
+- semi-leptonic decays in which one of the decays is mis-identified as a muon or one of the decay objects is not detected. The reconstructed mass of these decays is lower than is should be because something is missing. Include Bc as well. Include a list here or in a table of these backgrounds. They include \bdpimunu, \bsKmunu, \bpimumu, \bdpimumu, \bcjpsimunu with \jpsimumu
+- b2hh decays where both the hadrons are mis-identified mostly due to decays in flight of the hadrons - again will give lower than expected B mass
+- The first 4 types of backgrounds listed can be removed by exploiting the obvious differences between background from these processes and real Bs2MuMu decays, which will be highlighted in the next few sections, and keep a high signal efficiency but the last 3 are harder to remove and more effort is needed to remove/constrain them and there is a greater signal efficiency loss.
+- Also as a final note for the effecitve lifetime the Bd2MuMu is here a background, however the mass if the only thing that seperated Bs2MuMu and Bd2MuMu decays, most of the selection is the same for Bs2MuMu.
+
+MC
+
+- Similated events are needed in the development of the selection and for aspects of the analysis strategy in Chapter X. 
+- With simulated events large samples of particular decays can be produced, in much large numbers than are seen in data, which is not hard for Bs2MuMu! From these event the effectiveness of the selection to keep signal events whilst remove background events can be determind. Needed for evaluating efficiencies.
+- Monte Carlo simulated events and their passage through the detector, as described in the Chapter X, are used.
+- A large range of simulated decays times are needed to understand all the backgrounds relevant for this analysis and the BF analysis. Only those that are used for studies detailed in this analysis are listed in Table X.
+- The production of simulated events in constantly being developed and leads to different simulation versions which keep trying to be more like data and also the need to be updated for new data taking years.
+- Each year of data taking is done with slight different data taking conditions and specification in the trigger therefore MC is needed for each data taking year seperately to understand how the data will behave properly. New simulation models are developed to keep up with the data taking years. 
+- Simulated events for Bs2MuMu, Bs2KK and Bd2KPi for 2011, 2012, 2015 and 2016 are used for selection and analysis work, they have similar simulation versions so that they are consistent/as consistent as possible.
+- In general the simulation is run with the stripping selections included however usually it's in the flagged mode, so events that didn't pass the stripping are still saved and can be later used. 
+%- Something about the triggers as flagged?
+- However is the requested sample is too large ... There exists a special set of bbbar2MuMuX MC that was developed specifically for past BF analyses. It only exists for 2012 condition because it was CPU intensive to produce. As a consequence is it stripping filtered so non of those cuts can change! The MC as well as Bs2MuMu simulated events with the same simulation condiditions are used for the training of the MVA as described in section X.
+- Although MC on the whole correctly represents data there are some areas where it isn't great. These include the PID variablels in MC and also the modelling of the underlying pp event. The PID problems can be corrected for using a package called PIDCalib and MC can be reweighted using data to get the correct MC distributions, this will be described in Chapter X.
+
+
+
+Trigger
+- The trigger is the first line of selection
+- B2MuMu are very rare, want to keep as much signal as possible 
+- use broad trigger requirements to keep as much signal as possible. 
+- A trigger line is a unique set of selection critera, in this analysis specific trigger lines are not used, but the combined results of many trigger lines at each level of the trigger are used.
+- trigger requirements are in the table here for Bs2MuMu events. We require TIS or TOS, definitions in section X at each level for Bs2MuMu events.
+- The L0Global combines ...
+- The Hlt1Phys combines ...
+- The Hlt2Phys combines ...
+- the lines vary from year to year, dominant lines at each level are shown in the table with the efficiencies from Bs2MuMu MC - Not exactly sure what there actually are!
+- the choice of trigger lines is to get through as much of the signal as possible but also to chose decisions that are well reproduced in MC so that the acceptance can be determined (?)
+- Slightly different trigger requirements are used for B2hh events, these are also shown in table X, the requirements are that either Dec are used or only TIS triggers. It will be made clear in later sections which it is and the motivation behind the decisions. 
+- There was a problem with the HLT2 Phys _dec decision in 2016 MC, this only effects the B2hh decays. In order to emulate this trigger a combination of Hlt2 lines that select Bs2MuMu events, listed in table X, is used instead of HLT2Phys. This is not surprising since we are using the MC as soon as it was validated for 2016!
+
+
+
+Stripping
+- aim to remove obvious backgrounds and reduce datase to a more managable size.
+- Stripping selection is run centrally, stripping lines are loose requirement designed to select particular decays, however one stripping line can be used in multiple analyses. Stripping selection tends to be the same over a long period of time and details of the selection are tuned after the stripping. The main aim is to reduce the bandwith to a managable level which is allocated for each line.
+- This analysis uses 2 stripping lines to select B2hh and B2MuMu decays, the cuts are shown in table X. These cuts are applied to reconstructed stuff in the stripping. This is what the paramters mean and why they are used in the stripping.
+- The same stripping cuts are used for each year of data taking expect some that are applied centrally to do with track quality.
+- The stripping lines have been in place for a long time with little modifications, I did a study focused on a few cuts to determine the best values what would help keep as much signal as possible.
+- Here is the study. 
+
+
+Pre-selection/Offline selection - possible have sub sections for the different cuts
+- The output of the trigger and stripping selection includes many BS2MuMu candidates but many are not reconstructed from Bs2MuMu decays.
+- After the stripping selection other cuts are applied, tighter selection cuts. These cuts are listed in the Table X and are explained here and shown for B2hh and Bs2MuMu.
+- A MVA, BDTS, is used to remove background events. Motivated for the BF analysis. Discussion of boosted decision trees is in section X. Looked at removing it but no need to.
+- Mass cut at 5320 MeV. The motivation come from mass fit studies that are detailed in section X. Look this removes pretty much all the backgrounds from mis-ID decays and also the Bd2MuMu.
+- Jpsi veto
+- Cuts tighted so match MC that is used to train the BDT
+
+
+PID
+
+- PID used to select interesting decays from background in the case of Bs2MuMu. For B2hh used to seperate different b2hh decays.
+- Two types are used, DLL and ProbNN which are explained in Section X
+- The table shows the cuts. The linear combination was developed for the BF analysis (?)
+- ProbNN cuts reduce the CBG and reduce tails of other backgrounds that are in the mass region.
+
+BDT (have sub sections)
+
+- Cuts alone can't remove enough background to see the very rare Bs2MuMu decay, use machine learning algorithms.
+- Boosted decision trees have been developed for this analysis
+- A BDT is
+- A BDT was developed for the BF, but also for the effective lifetime to ensure the lifetime wasn't used as an input variable and to investigate using uBoost BDT.
+- various versions have been considered the different types are ...
+- different types are used with different input variables, the main power comes from isolation variables
+- Explain various isolation variables (it's all work done by others!)
+- trained on data and MC and just MC
+- Here are the BDTs that were developed for the effective lifetime, after some selection cuts
+- Here is a summary of the BF BDT
+- Here is a comparison of the preformance and the choice
+- Here is the optimistation of how the BDT cut choice was made.
