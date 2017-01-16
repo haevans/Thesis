@@ -3,10 +3,11 @@
 
 %if print - it's like a print out if not its what you get online. Spaceing is 
 %different.
-%\documentclass[a4paper,12pt,times,numbered,print,index]{Classes/PhDThesisPSnPDF}
-\documentclass[a4paper,12pt,default,numbered,index,draft]{Classes/PhDThesisPSnPDF}
+\documentclass[a4paper,12pt,times,numbered,print,index, chapter]{Classes/PhDThesisPSnPDF}
+
 %\usepackage{lineno}
 %\linenumbers
+
 %NOTE---------------------------------------------------------------------------
 %All figures need to go into the Figs file
 %-------------------------------------------------------------------------------
@@ -98,10 +99,10 @@
 % author name for submission to the Student Registry, use the `abstract' option in
 % the document class.
 
-%\ifdefineAbstract
-% \pagestyle{empty}
-% \includeonly{Declaration/declaration, Abstract/abstract}
-%\fi
+\ifdefineAbstract
+ \pagestyle{empty}
+ \includeonly{Declaration/declaration, Abstract/abstract}
+\fi
 
 % ***************************** Chapter Mode ***********************************
 % The chapter mode allows user to only print particular chapters with references
@@ -109,13 +110,13 @@
 % Useful option to review a particular chapter or to send it to supervisior.
 % To use choose `chapter' option in the document class
 
-%\ifdefineChapter
-% \includeonly{Chapter3/chapter3}
-%\fi
+\ifdefineChapter
+ \includeonly{Selection/selection}
+\fi
 
 % ******************************** Front Matter ********************************
 \begin{document}
-%uncomment line below for full draft
+
 \frontmatter
 
 %Options to move where the chapter headings are;
@@ -125,7 +126,6 @@
 
 
 
-%Uncomment all lines below for full draft
 \include{./title/title}
 \chapterfont{\centering}
 %\include{Dedication/dedication}
@@ -147,14 +147,15 @@
 % \printnomenclature[space] space can be set as 2em between symbol and description
 %\printnomenclature[3em]
 
-%\printnomenclature
+\printnomenclature
 
 % ******************************** Main Matter *********************************
 \mainmatter
-\include{Introduction/Introduction}
-\mainmatter
+
+%\include{Introduction/Introduction}
 \include{LHC_LHCb/LHC_LHCb}
 \include{Theory/theory}
+
 \include{Selection/selection}
 
 
@@ -163,7 +164,7 @@
 %\backmatter
 
 % ********************************** Bibliography ******************************
-%\begin{spacing}{0.9}
+\begin{spacing}{0.9}
 
 % To use the conventional natbib style referencing
 % Bibliography style previews: http://nodonn.tipido.net/bibstyle.php

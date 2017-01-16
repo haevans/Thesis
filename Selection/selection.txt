@@ -56,12 +56,11 @@ Plan to do ...
 - Plan a section then write that section, prehaps leaving the introduction to the end since then I'll know all the details.
 - I will also have to read and understand about the isolation varaibles in the global BDT and those in the BDTs I trained and also the PID selection (prehaps gloss over that like Simon seemed to?)
 
-Q: Do I want to explain the backgrounds that are present in some detail in order to motivate the selection?  
+Q: Do I want to explain the backgrounds that are present in some detail in order to motivate the selection? Yes.
 
 
 TRIGGER
 -------
-I should make sure I explain what a trigger line is, to quote Siim ' A "trigger lines" is a unique set of selection criteria and/or reconstruction criteia within a trigger level.
 What do I want to include? Just the requirements that we make and a discussion as to why or do I also want to include efficiencies/details of the lines that actually trigger the events? If so that would require some work I think. Siim's thesis has the Run 1 info in.
 
 Detailed Chapter plan
@@ -138,7 +137,7 @@ Trigger
 - the lines vary from year to year, dominant lines at each level are shown in the table with the efficiencies from Bs2MuMu MC - Not exactly sure what there actually are!
 - the choice of trigger lines is to get through as much of the signal as possible but also to chose decisions that are well reproduced in MC so that the acceptance can be determined (?)
 - Slightly different trigger requirements are used for B2hh events, these are also shown in table X, the requirements are that either Dec are used or only TIS triggers. It will be made clear in later sections which it is and the motivation behind the decisions. 
-- There was a problem with the HLT2 Phys _dec decision in 2016 MC, this only effects the B2hh decays. In order to emulate this trigger a combination of Hlt2 lines that select Bs2MuMu events, listed in table X, is used instead of HLT2Phys. This is not surprising since we are using the MC as soon as it was validated for 2016!
+- There was a problem with the HLT2 Phys _dec decision in 2016 MC, this only effects the B2hh decays. In order to emulate this trigger a combination of Hlt2 lines that select Bs2hh events, listed in table X, is used instead of HLT2Phys. This is not surprising since we are using the MC as soon as it was validated for 2016!
 
 
 

@@ -2,7 +2,7 @@
 \label{selection_chapter}
 The analysis described in Chapter X requires \bsmumu and \bhh decays to be identified in the data sets recorded by the LHCb experiment. Although \bsmumu decays leave a clear 2 muon signature in the detector, the selection of these decays is challenging because it is a very rare process and there are many other processes that can mimic a \BsMuMu decay in the detector. The background processes are described in Section~\ref{sec:backgroundoutline}. To understand different aspects of the selection and analysis of \BsMuMu decays, particle decays with a similar topology to \BsMuMu are used. \bhh decays, where $h = K, \pi$, are used because they have large branching fractions and are well understood from pervious LHCb analyses as well as a similar topology to \bsmumu decays. The selection of \bhh decays is kept as close as possible to the selection of \bsmumu so they can be used as a validation channels.
 
-This Chapter describes the selection of \bsmumu and \bhh decays, the development of the selection relies on simulated events which are detailed in Section~\ref{sec:MCsamples}. The selection occurs in several stages, the first step is choosing what requirements to place on the trigger which is followed by the stripping selection where loose selection requirements are applied to remove obvious background events. These two steps are described in Sections~\ref{sec:triggerRequirements} and \ref{sec:stripping}. A tighter selection is applied to the output of the stripping as described in Section~{sec:offline_sel} and particle identification requirements are used in Section~\{sec:PID} to further reduced background events. Finally a multivariate classifier is described in Section~\ref{sec:BDT} used as the final step in the selection to reduced the backgrounds to a level suitable for the analysis in Chapter X to be preformed. 
+This Chapter describes the selection of \bsmumu and \bhh decays, the development of the selection relies on simulated events which are detailed in Section~\ref{sec:MCsamples}. The selection occurs in several stages, the first step is choosing what requirements to place on the trigger which is followed by the stripping selection where loose selection requirements are applied to remove obvious background events. These two steps are described in Sections~\ref{sec:triggerRequirements} and \ref{sec:stripping}. A tighter selection is applied to the output of the stripping as described in Section~\ref{sec:offline_sel} and particle identification requirements are used in Section~\ref{sec:PID} to further reduced background events. Finally a multivariate classifier is described in Section~\ref{sec:BDT} used as the final step in the selection to reduced the backgrounds to a level suitable for the analysis in Chapter X to be preformed. 
 
 
 The LHCb collaboration has published a number of papers studying the \bsmumu decay, the selection described in this Chapter has been built up over a number of years by a range of different collaboration members. The studies detailed in sections X, X and Y was done for this thesis.
@@ -31,10 +31,102 @@ Separating the backgrounds from the \bsmumu decays can be done relatively straig
 
 \subsection{Monte Carlo Samples}
 \label{sec:MCsamples}
+Simulated events are needed for the development of the selection for \bsmumu and \bhh decays and to study aspects of the analysis strategy. Monte Carlo simulated events and their passage through the LHCb detector, as described in Section X, are used. The advantage of simulated events is that a clean sample a particular type of particle decay can be produced in much greater numbers compared to what is seen in data. A large range of different simulated decays types have been used over time for the development of the selection, the simulated decays used directly for studies documented in this thesis are listed in Table~\ref{tab:MC_decays}.
 
+Each year data is collected at LHCb the conditions the experiment operates at and the proton collisions delivered by the LHC change. These changes include differences in the the selection used in the trigger for each year and increases in the centre of mass energy of proton collisions. 
+
+
+Therefore to understand data collected in different years simulated events from each year of data taking is needed.
+
+The production of simulated events is constantly being developed as understanding of the detector increases and to take into account changes made in each data taking year. Therefore there exists a number of different simulation versions that can be used to simulate events.
+
+Simulated events for \bsmumu, \bskk and \bdkpi for data taken in 2011, 2012, 2015 and 2016 are used for selection and analysis work, similar simulation versions are chose for each year to ensure the simulated events are as similar as possible.
+
+%In general the stripping selections are applied to simulated events, however events that do not pass the stripping selection are still saved and can be used after reprocessing the simulated events. However simulation conditions can be set up so that events that do not pass the stripping selection are discarded and can never be used and also cuts can be applied on particles when they are generated before the detector response is simulated and the events are reconstructed. This is used when a very large same of simulated events needs to be generated in order to have a suitably large same of events reconstructed.
+
+Two simulated samples of \bbbarmumux is used to understand the long lived combinatorial background and for the training of the multivariate classifier in Section \ref{sec:BDT}. For these samples events that did not pass the stripping selection have not been saved and requirements were applied to the generated events. 
+Simulated \bsmumu events with the same simulation version are also used for training the multivariate classifier to keep the simulation condition consistent.
+
+Although in general simulated events accurately model what occurs in data there are several areas where this is not the case. The distributions of particle identification variables and properties of the underlying proton-proton event, such as the number of tracks in an event, are not well modelled in simulation. %Have I said what an event is?
+The mis-modelling of particle identification variables can be corrected for using the PIDCalib package but this is not used directly for this thesis. 
+Comparisons of the number of tracks in an event between simulated decays and data can be used to re-weight simulated decays to that the under lying event is accurately modelled. This is described in Sections X.
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{llll}
+\hline
+Decay 			& Year 	& Simulation Version 	& Generated Events \\ \hline 
+\bsmumu			& 2011 	& sim08   		& 0.5M		  \\ 
+       			& 2012	& sim06b  		& 2M			 \\ 
+       			&     	& sim08  		& 			 \\ 
+        		& 2015	& sim09  		& 2M	 \\ 
+        		& 2016	& sim09  		&  \\ \hline
+\bdkpi			& 2011	& sim08  		& 0.8M  \\ 
+        		& 2012	& sim08  		& 8.5M \\ 
+        		& 2015	& sim09  		& 4M  \\ 
+        		& 2016	& sim09  	 	&  \\ \hline
+\bskk   		& 2012	& sim08  		& 7M \\ 
+        		& 2015	& sim09   		&  \\  \hline
+\bbbarmumux, p$_{T}$	& 2012 	& sim06 		& 	\\ \hline
+\bbbarmumux, p$_{T}$	& 2012 	& sim06 		& \\ 	\hline
+
+\end{tabular}
+\caption{Simulated events used for developing the selection and the analysis described in Chapter X. Requirements imposed on generated \bbbarmumux decays are included alongside the decay type.}
+\label{tab:MC_decays}
+\end{center}
+\end{table}
 
 \subsection{Trigger}
 \label{sec:triggerRequirements}
+The trigger is the first step in the selection process and the structure of the trigger is described in Section X. Since \bsmumu decays are very rare a broad set of trigger requirements is used in order to keep a high proportion of \bsmumu decay at this step of the selection. The requirements are are listed in Table~\ref{tab:triggers}.  Specific trigger lines are not used in the selection but rather the combined results of a large selection of trigger lines. The L0Global tigger combines all trigger lines present in the L0 trigger, it selects an event provided at least one L0 selects it and rejects an event if no L0 trigger selects it. The Hlt1Phys and Hlt2Phys triggers are very similar to the L0Global trigger except that decisions are based only trigger lines related to physics processes and HLT trigger lines used for calibration are excluded. Events are required to be either TIS, triggered independent of signal or TOS, triggered on signal, on the trigger lines used at each level of the trigger.
+%The selection criteria used in trigger lines and the specific lines included in the trigger change with each year of data taking, the dominant lines for triggering \bsmumu decays for each year are shown in Table~X. 
+Slightly different trigger requirements are used to select \bhh decays, the same broad trigger lines are used but the requirement on the output varies depending on the use of the \bhh events. There are two sets of different requirements for \bhh decays that are shown in Table~\ref{tab:triggers}, it will be made clear in later sections where \bhh decays are used which trigger requirements are imposed. 
+
+
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Trigger Line	& Trigger decision \\ \hline
+\multicolumn{2}{c}{\bsmumu {\it selection}} \\ \hline
+L0Global	& TIS or TOS \\
+Hlt1Phys	& TIS or TOS \\
+Hlt2Phys	& TIS or TOS \\ \hline
+\multicolumn{2}{c}{\bhh {\it selection set 1}} \\ \hline
+L0Global	& Dec\\
+Hlt1Phys	& Dec \\
+Hlt2Phys	& Dec \\ \hline
+\multicolumn{2}{c}{\bhh {\it selection set 2}} \\ \hline
+L0Global	& TIS\\
+Hlt1Phys	& TIS \\
+Hlt2Phys	& TIS \\ \hline
+\end{tabular}
+\caption{Trigger lines used to select \bsmumu and \bhh decays.}
+\label{tab:triggers}
+\end{center}
+\end{table}
+There was a problem with the implementation of the Hlt2Phys Dec decision in 2016 simulated events.%, the decision returned was always 1.  
+This only affect the selection of \bhh decays. In order to emulate this trigger a combination of Hlt2 lines that select \bhh events, listed in Table~\ref{tab:HltDecEmulation}, is used instead of HLT2Phys when the Dec decision is required. 
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{l}
+\bhh trigger lines \\ \hline
+Hlt2Topo2BodyDecision Dec  \\
+Hlt2B2HH Lb2PPiDecision Dec \\
+Hlt2B2HH Lb2PKDecision Dec\\
+Hlt2B2HH B2PiPiDecision Dec\\
+Hlt2B2HH B2PiKDecision Dec \\
+Hlt2B2HH B2KKDecision Dec  \\
+Hlt2B2HH B2HHDecision Dec \\ \hline
+
+\end{tabular}
+\caption{Trigger lines used to emulate the Hlt2Phys_Dec decision for \bhh data and simulated events.}
+\label{tab:HltDecEmulation}
+\end{center}
+\end{table}
 
 \subsection{Stripping}
 \label{sec:stripping}
