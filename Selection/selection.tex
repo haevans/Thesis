@@ -1,19 +1,33 @@
 \chapter{Selection of \bsmumu events for the effective lifetime Measurement}
 \label{selection_chapter}
+The analysis described in Chapter X requires \bsmumu and \bhh decays to be identified in the data sets recorded by the LHCb experiment. Although \bsmumu decays leave a clear 2 muon signature in the detector, the selection of these decays is challenging because it is a very rare process and there are many other processes that can mimic a \BsMuMu decay in the detector. The background processes are described in Section~\ref{sec:backgroundoutline}. To understand different aspects of the selection and analysis of \BsMuMu decays, particle decays with a similar topology to \BsMuMu are used. \bhh decays, where $h = K, \pi$, are used because they have large branching fractions and are well understood from pervious LHCb analyses as well as a similar topology to \bsmumu decays. The selection of \bhh decays is kept as close as possible to the selection of \bsmumu so they can be used as a validation channels.
 
-This chapter explains how \bsmumu decays are selected from the data collected at the LHCb experiment. There are various steps to the selection process than enable a relatively clean sample of \bsmumu decays to be selected to be used in the analysis described in Chapter X. Although the muons from \bsmumu decays leave a clear, easy to identify siganture in the LHCb detector muons in particle decays and interactions as well as hadrons that are mis-identified as muons can be combined to mimic \bsmumu decay. These other processes occur more often than the very rare \bsmumu decays making identifying the actual signal challenging. The selection is designed to remove as many background events as possible whilst keeping a high signal efficiency. The details of the processing that lead to the most imortant background events are outlined in Section \ref{sec:backgroundoutline}.
+This Chapter describes the selection of \bsmumu and \bhh decays, the development of the selection relies on simulated events which are detailed in Section~\ref{sec:MCsamples}. The selection occurs in several stages, the first step is choosing what requirements to place on the trigger which is followed by the stripping selection where loose selection requirements are applied to remove obvious background events. These two steps are described in Sections~\ref{sec:triggerRequirements} and \ref{sec:stripping}. A tighter selection is applied to the output of the stripping as described in Section~{sec:offline_sel} and particle identification requirements are used in Section~\{sec:PID} to further reduced background events. Finally a multivariate classifier is described in Section~\ref{sec:BDT} used as the final step in the selection to reduced the backgrounds to a level suitable for the analysis in Chapter X to be preformed. 
 
- The development selection relies on Monte Carlo simulated events, those needed for this selection are detailed in Section \ref{sec:MCsamples}. 
 
-The selection of \bsmumu decays proceeds in several steps, firstly trigger requirements are used and then there is a stripping selection. The we get some more stuff.
+The LHCb collaboration has published a number of papers studying the \bsmumu decay, the selection described in this Chapter has been built up over a number of years by a range of different collaboration members. The studies detailed in sections X, X and Y was done for this thesis.
 
-The selection of \bsmumu decays has been developed over many years by members of the LHCb collaborations for the measurement of the \bsmumu branching fraction. Not all parts of this Chapter are my work, but I have worked on the areas ...
 
-%I've not explained what a candidate is - should I?
+
+
 
 \subsection{Backgrounds}
 \label{sec:backgroundoutline}
+A \bs decaying into two muons leaves information in the LHCb detector with certain identifying characteristics. The two muons form a good vertex that is displaced from the primary vertex of the event because the Bs has a long lifetime and the combined momentum of the muons can be extrapolated backwards to the primary vertex because the muons are the only decay products of the \bs. There are other processes that occur in proton-proton decays that can leave information in the detector in a similar pattern to \bsmumu decays. The reconstruction, described in Section X, produces many \bsmumu candidates, the aim of the selection is to separate the real \bsmumu decays from the background in the reconstructed candidates.
 
+%The background sources for \bsmumu decays can be split into two groups, those that have quite obvious difference from \bsmumu decays and those that do not. The first set can be removed from the data set by taking advantage of the obvious differences whilst keeping a high 
+
+The main sources of background processes for \bsmumu decays are;
+\begin{itemize}
+\item Elastic collisions of protons, $pp \to p \mu^+{} \mu^{-} p$, can produce a pair of muons whilst the protons travel down the beam pipe. The muons produced have low transverse momentum.
+\item Inelastic proton collisions can create two muons at the primary vertex. These muons can be combined to for a \bs that decays instantaneously. This type of background is prompt  combinatorial background. 
+\item The $B_{S}^{0}\to\mu^{+}\mu^{-}\gamma$ decays can mimic \bsmumu when the photon is not reconstructed. The presence of the photon in the decay means that $B_{S}^{0}\to\mu^{+}\mu^{-}\gamma$ is not helicity surpassed and could therefore be a sizeable background, however the photon gains a large transverse momentum therefore when reconstructed as \bsmumu the \bs mass is much lower than expected.
+\item \bsmumu candidates can be formed when muons produced in separated semi-leptonic decays are combined. These are known as long lived combinatorial background because the reconstructed \bs will not decay instantaneously.
+\item Semi-leptonic decays when on to the daughters is mis-identified as a muon and/or is not detected can mimic \bsmumu decays. The resulting reconstructed mass of the \bs is lower than expected due to the missing particle information. The semi-leptonic decays that contribute to \bsmumu backgrounds in this way are \bdpimunu, \bsKmunu, \bpimumu, \bdpimumu and \bcjpsimunu where \jpsimumu.
+\item \bhh decays, where $ h  = K, \pi$, can form background when both hadrons are mis-identified as muons. This usually occurs when the hadrons decay in flight. The mis-identification of the hadrons leads to the reconstructed \bs mass being lower than expected.
+\end{itemize}
+
+Separating the backgrounds from the \bsmumu decays can be done relatively straightly forwardly for many of the background processes by taking advantage of the obvious differences between the background and \bsmumu decays. However, distinguishing \bsmumu decays from long lived combinatorial backgrounds, and mis-idetificed \bhh and semi-leptonic decays is more challenging and \bsmumu decays must be sacrificed in order to remove a sufficient about of the background processes for the analysis to be performed. 
 
 \subsection{Monte Carlo Samples}
 \label{sec:MCsamples}
@@ -27,7 +41,10 @@ The selection of \bsmumu decays has been developed over many years by members of
 
 
 \subsection{Pre-selection/Offline selection?}
+\label{sec:offline_sel}
 
 \subsection{Particle Identification}
+\label{sec:PID}
 
 \subsection{Multivariate Classifier}
+\label{sec:BDT}
