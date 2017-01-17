@@ -142,13 +142,52 @@ Trigger
 
 
 Stripping
-- aim to remove obvious backgrounds and reduce datase to a more managable size.
-- Stripping selection is run centrally, stripping lines are loose requirement designed to select particular decays, however one stripping line can be used in multiple analyses. Stripping selection tends to be the same over a long period of time and details of the selection are tuned after the stripping. The main aim is to reduce the bandwith to a managable level which is allocated for each line.
-- This analysis uses 2 stripping lines to select B2hh and B2MuMu decays, the cuts are shown in table X. These cuts are applied to reconstructed stuff in the stripping. This is what the paramters mean and why they are used in the stripping.
-- The same stripping cuts are used for each year of data taking expect some that are applied centrally to do with track quality.
-- The stripping lines have been in place for a long time with little modifications, I did a study focused on a few cuts to determine the best values what would help keep as much signal as possible.
-- Here is the study. 
+%- aim to remove obvious backgrounds and reduce datase to a more managable size.
+%- Stripping selection is run centrally, stripping lines are loose requirement designed to select particular decays, however one stripping line can be used in multiple analyses. Stripping selection tends to be the same over a long perio%d of time and details of the selection are tuned after the stripping. The main aim is to reduce the bandwith to a managable level which is allocated for each line.
+%- This analysis uses 2 stripping lines to select B2hh and B2MuMu decays, the cuts are shown in table X. These cuts are applied to reconstructed stuff in the stripping. This is what the paramters mean and why they are used in the stripping.
+%- The same stripping cuts are used for each year of data taking expect some that are applied centrally to do with track quality.
+%- The stripping lines have been in place for a long time with little modifications, I did a study focused on a few cuts to determine the best values what would help keep as much signal as possible.
+%- Here is the study. 
 
+%What are the main point to get accross?
+%- the stripping is aimed at reducing the size of the data set to a managable size that can be used in analyses. This is done by applying selection cuts that are good at rejecting the background but aim to have a high efficiency to select Bs2MuMu decays. The collaboration places restraints of what can be retained after the stripping selection for each analysis.
+%- Stripping lines can be used in more than one analysis.
+%- Stripping cuts are slow to change because it is run centrally. (Not sure if this is important)
+%- The stripping selection is shown here and the purpose of each cut is ... there are some differences between each year ... Bs2MuMu and B2hh are very similar.
+%- The stripping selection has been developed over many years
+
+Prehaps break up into sections?
+
+The stripping is aimed at reducing the size of the data set to a managable size that can be used in analyses. This is done by applying a loose selection cuts that are good at rejecting the background but aim to have a high efficiency to select Bs2MuMu decays. The collaboration places restraints of what can be retained after the stripping selection for each analysis. (Do I need to include the precentages?). Events that do not pass the stripping are not directly/easily avaliable for analysis so want to keep things as loose as possible. 
+- Stripping selection was designed for Run 1, previous studies looked at what cuts to use on kinematic variables. Since then new MC that better describes the detector has been made and LS1 is a good oportunity to review and see if we can improve the signal efficiency for the BF and lifetime analyses whilst keeping the data sets small enough.
+- Table X shows the stripping selection used in analyses X to select Bs2MuMu. (%The selection is different between Bsmumu and B2hh which reflects that b2hh is more abundant than b2mumu, therefore tigher seleciton is needed to meet requirements of the output. Loose Bs2MuMu cuts allow for studies of backgrounds? The cuts applied to b2hh that aren't applied to b2mumu are added later in the selection in section X. )
+- variables used in the stripping selection and their purpose are ... 
+ - reconstructed mass - combined mass and mometa of the decay products of the B meson. Mass cuts remove events that are far from the expected B meson mass and therefore likely to be a background. This cut removes bs2MuMuGamma, tigher mass cuts are used later in the selection
+ - track fit chi2/dof - measure the quality of the fitted track, it removed poorly fitted tracks and therefore background that are formed from poorly reconstructed decays. A low track chi2/ndof corresponds to a good track fit
+ - isMuon PID information from the former chapter, identifies muons in a event
+ - IP chi2 wrt the PV -  this is the change in a vertex fit when a particular particle track is excluded from the fit for the PV. The impact parameter is the. The Bs is produced at the primary vertex where protons collide before travelling to decay at a secondary vertex. Therefore the tracks daughter particles should not pass near the PV so want IP chi2 to be large but those of the Bs should be small. Avoid prompt muons. 
+ - muons it requires the mimimum IPS wrt all PVs in the event to be greater than a certain value to stop using prompt muons. 
+ - Doca - distance of closest approach between two muons from their straight line tracks in the VELO. Ideally should be 0 since the come from the same vertex.
+ - vertex chi2/ndof - describes how well tracks form a particular vertex. A small number indicates a good fit
+ - DIRA, the direction cosine, the angle between the mometum of the B and the vector that connects the PV and the SV. It the resonstruction is correct then it should be peaked at one.
+ - flight distance chi2 - this is computed by adding all the tracks from the decay vertex/decay of the B to the PV and re-fitting for the vertex chi2. It should be large because the B has a long lifetime to the tracks of the daugthers should be significantly displaced from the PV.
+ - PT - trannsverse momentum - component of particle mometum parallel to the beam pipe, expect daughthers to have a large PT
+ - probablilty for a track to be a ghost partucles - see section X for description, want it to be small.
+ - P momentum - particle mometum 
+ - IP, impact parameter of the B is the distance between the straight line of the Bs momentum vector and the PV - should be zero
+ - FD, flight distance, the distance between the PV and the SV ie how far the Bs flies 
+ - lifetime, lenght of time the Bs lives for as it travels from the PV to the SV where it decays, it is computed from the mometum and FD as t = Lm/p. Cuts on the upper lifetime ensure that only B mesons that decay inside the VELO are used. 
+- Efficiencies of these cuts are in table X. Those without efficiencies I cannot change because they are in the reconstruction. Or it makes no sense to change. 
+- Most improvements can be made in these two paramters, they are not independant.
+- look here are some efficiency studies
+- Data retention is important - I've got the increase in size but what about the data retention?
+- choose looser cuts for these two parameters
+
+- futher loose cuts are applied after the stripping selection to remove obvious backgrounds. The total bsmumu and b2hh loose selection are shown in table X, some paramters are tigher for B2hh since it's more common and we need to reduce the data set. 
+- final stripping selection and loose selection are in this table here for all years.
+
+
+- Retentions - B2hh is larger so if I am looking at the retentation of data shouldn't I do that too? But then I have to put the b2hh stripping selection sooner as well which messes up my plan. I think for now, compute B2MuMu and B2hh retentions but leave b2hh out of the text. It's a technical problem more than anything else so it's not that interesting to write about. ASK HARRY. 
 
 Pre-selection/Offline selection - possible have sub sections for the different cuts
 - The output of the trigger and stripping selection includes many BS2MuMu candidates but many are not reconstructed from Bs2MuMu decays.

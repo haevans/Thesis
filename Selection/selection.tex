@@ -2,7 +2,7 @@
 \label{selection_chapter}
 The analysis described in Chapter X requires \bsmumu and \bhh decays to be identified in the data sets recorded by the LHCb experiment. Although \bsmumu decays leave a clear 2 muon signature in the detector, the selection of these decays is challenging because it is a very rare process and there are many other processes that can mimic a \BsMuMu decay in the detector. The background processes are described in Section~\ref{sec:backgroundoutline}. To understand different aspects of the selection and analysis of \BsMuMu decays, particle decays with a similar topology to \BsMuMu are used. \bhh decays, where $h = K, \pi$, are used because they have large branching fractions and are well understood from pervious LHCb analyses as well as a similar topology to \bsmumu decays. The selection of \bhh decays is kept as close as possible to the selection of \bsmumu so they can be used as a validation channels.
 
-This Chapter describes the selection of \bsmumu and \bhh decays, the development of the selection relies on simulated events which are detailed in Section~\ref{sec:MCsamples}. The selection occurs in several stages, the first step is choosing what requirements to place on the trigger which is followed by the stripping selection where loose selection requirements are applied to remove obvious background events. These two steps are described in Sections~\ref{sec:triggerRequirements} and \ref{sec:stripping}. A tighter selection is applied to the output of the stripping as described in Section~\ref{sec:offline_sel} and particle identification requirements are used in Section~\ref{sec:PID} to further reduced background events. Finally a multivariate classifier is described in Section~\ref{sec:BDT} used as the final step in the selection to reduced the backgrounds to a level suitable for the analysis in Chapter X to be preformed. 
+This Chapter describes the selection of \bsmumu and \bhh decays, the development of the selection relies on simulated events which are detailed in Section~\ref{sec:MCsamples}. The selection occurs in several stages, the first step is choosing what requirements to place on the trigger which is followed by a set of loose selection requirements to remove obvious background events. These two steps are described in Sections~\ref{sec:triggerRequirements} and \ref{sec:stripping}. A tighter selection is applied to the output of the stripping as described in Section~\ref{sec:offline_sel} and particle identification requirements are used in Section~\ref{sec:PID} to further reduced background events. Finally a multivariate classifier is described in Section~\ref{sec:BDT} used as the final step in the selection to reduced the backgrounds to a level suitable for the analysis in Chapter X to be preformed. 
 
 
 The LHCb collaboration has published a number of papers studying the \bsmumu decay, the selection described in this Chapter has been built up over a number of years by a range of different collaboration members. The studies detailed in sections X, X and Y was done for this thesis.
@@ -78,6 +78,7 @@ Decay 			& Year 	& Simulation Version 	& Generated Events \\ \hline
 
 \subsection{Trigger}
 \label{sec:triggerRequirements}
+{\it Change this section so that the table has 3 sets of triggers, TOS or TIS, Dec and TIS only and label them set 1, 2 and 3 so that it can be clearly stated which are being used in whatever case}.
 The trigger is the first step in the selection process and the structure of the trigger is described in Section X. Since \bsmumu decays are very rare a broad set of trigger requirements is used in order to keep a high proportion of \bsmumu decay at this step of the selection. The requirements are are listed in Table~\ref{tab:triggers}.  Specific trigger lines are not used in the selection but rather the combined results of a large selection of trigger lines. The L0Global tigger combines all trigger lines present in the L0 trigger, it selects an event provided at least one L0 selects it and rejects an event if no L0 trigger selects it. The Hlt1Phys and Hlt2Phys triggers are very similar to the L0Global trigger except that decisions are based only trigger lines related to physics processes and HLT trigger lines used for calibration are excluded. Events are required to be either TIS, triggered independent of signal or TOS, triggered on signal, on the trigger lines used at each level of the trigger.
 %The selection criteria used in trigger lines and the specific lines included in the trigger change with each year of data taking, the dominant lines for triggering \bsmumu decays for each year are shown in Table~X. 
 Slightly different trigger requirements are used to select \bhh decays, the same broad trigger lines are used but the requirement on the output varies depending on the use of the \bhh events. There are two sets of different requirements for \bhh decays that are shown in Table~\ref{tab:triggers}, it will be made clear in later sections where \bhh decays are used which trigger requirements are imposed. 
@@ -130,6 +131,66 @@ Hlt2B2HH B2HHDecision Dec \\ \hline
 
 \subsection{Stripping}
 \label{sec:stripping}
+%http://lhcb-release-area.web.cern.ch/LHCb-release-area/DOC/stripping/config/stripping20/dimuon/strippingbs2mumulineswidemassline.html
+
+\begin{landscape}
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{llc}
+Particle       & Selection cut                                               & Efficiency of \bsmumu cut \\
+\hline
+\bs            & |M - M$_{PDG}$| $<$ 1200 \mevcc                              & (100.00 $\pm$ 0.00) \\
+               & DIRA > 0                                                    & (99.43 $\pm$ 0.01) $\%$\\
+               & FD $\chi^{2}$ $>$ 225                                       & (83.89 $\pm$ 0.06) $\%$\\
+               & IP $\chi^{2}$ $<$ 25                                        & (96.88 $\pm$ 0.03) $\%$  \\
+               & Vertex $\chi^{2}$/ndof < 9                                  & (97.36 $\pm$ 0.03) $\%$\\
+              & DOCA $<$ 0.3 mm                                              & (99.86 $/pm$ 0.01) $\%$   \\                          
+
+\hline
+$\mu^{+(-)}$   & Track $\chi^{2}$/ndof < 3                                    & -\\
+              & isMuon = True                                                & -\\
+              & Minimum IP $\chi^{2}$ $>$ 25                                  & (80.47 $\pm$ 0.06) $\%$\\
+\hline
+\multicolumn{2}{c}{Efficiency after all stripping cuts}                      & (73.75 $\pm$  0.07) $\%$\\
+\end{tabular}
+\caption{Stripping selection cuts applied to Run 1 events in previous \bsmumu Branching Fraction analyses for select \bsmumu  decays and the efficiencies of the selection cuts on \bsmumu decays from simulated \bsmumu decays.(Note efficiencies are after Dec triggers, these are used in the BF analysis. }
+\label{tab:Run1stripping}
+\end{center}
+\end{table}
+\end{landscape}
+
+
+
+\begin{landscape}
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lll}
+Particle              & \bsmumu                                     & \bhh \\
+\bs                   & 4900 \mevcc $<$ M $<$ 6000 \mevcc                   & 5180 \mevcc $<$ M $<$ 5500\mevcc                           
+                      & DIRA > 0                                             & DIRA > 0                             
+                      & FD $\chi^{2}$ $>$ 121                               & FD $\chi^{2}$ $>$ 121                                  
+                      & IP $\chi^{2}$ $<$ 25                                & IP $\chi^{2}$ $<$ 25                                
+                      & Vertex $\chi^{2}$/ndof < 9                           & Vertex $\chi^{2}$/ndof < 9                               
+                      & DOCA $<$ 0.3 mm                                     & DOCA $<$ 0.3 mm                                            
+                      & $\tau$ $<$ 13.248 \ps                     & $\tau$ $<$ 13.248 \ps
+                      & $p_{T}$ $>$ 500 \mevc                      & $p_{T}$ $>$ 500 \mevc
+\hline
+Daugther $\mu$ or $h$   & Track $\chi^{2}$/ndof < 3 (4)     & Track $\chi^{2}$/ndof < 3 (4)                                            
+                        & isMuon = True                            &                                              
+                        & Minimum IP $\chi^{2}$ $>$ 9                        & Minimum IP $\chi^{2}$ $>$ 9                               
+                        & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc          & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc
+                        & $p$ < 500 \gevc                        & $p$ < 500 \gevc
+                        & ghost probability $<$ 0.3 (0.4)              & ghost probability $<$ 0.3 (0.4)
+ 
+
+
+\hline
+\end{tabular}
+\caption{Loose selection cuts applied to select \bsmumu and \bhh decays, where selection is different between Run~1 and Run~2 the Run~2 values are shown in parenthesis next to the Run~1 values.}
+\label{tab:fullpreselection}
+\end{center}
+\end{table}
+\end{landscape}
 
 
 \subsection{Pre-selection/Offline selection?}
