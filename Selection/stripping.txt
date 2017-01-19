@@ -1,0 +1,67 @@
+
+- The stripping selection is a loose set of selection applied to reconstructed events that have passed the trigger, cuts that taylored for each decay needed in the analysis. The purpose of the stripping selection is to reduce the size of the data set to a managable level so that tighter selection cuts can be developed and applied offline. Events that do not pass the stripping, although they are saved and can be reprocessed, they are not directly avaliable for analysis so want to keep things as loose as possible and keep a high signal efficiency. The collaboration places restraints of what can be retained after the stripping selection for each analysis. 
+
+
+- Stripping selection was designed for Run 1, previous studies looked at what cuts to use on kinematic variables, by studying efficiencies on MC, see here. Since then there is MC that better describes the detector so it's purdent to check the previous results and LS1 is a good oportunity to review and see if we can improve the signal efficiency for the BF and lifetime analyses whilst keeping the data sets small enough.
+
+- The following sections describe the stripping selection used in previous analyses, the study into how to improve Bs2MuMu selection efficicencies of the stripping and a summary the the final choice of stripping and other loose preselection cuts that are applied. 
+
+SECTION RUN 1
+- The Run 1 stripping selection - Table X shows the stripping selection and reconstruction cuts, used in analyses X to select Bs2MuMu, b2hh and B2JpsiK events. The reconstruction cuts are isMuon and the track chi2 and prehaps the ghost prob. The selection of Bs2MuMu and b2hh and b2Jpsik are kept as close as possible because that's important for the BF analysis. However some differences are unavoidable. The selection is different between Bsmumu and B2hh which reflects that b2hh is more abundant than b2mumu, therefore tigher seleciton is needed to meet requirements of the output. Loose Bs2MuMu cuts allow for studies of backgrounds? The cuts applied to b2hh that aren't applied to b2mumu offline. B2JpsiK and Bs2MuMu must diverge because  additional cuts are necessary for the extra particles present in the normalisation channels which will causes dfferences to between the signal and normalisation selection.
+
+- variables used in the stripping selection and their purpose are ... 
+
+ - reconstructed mass - combined mass and mometa of the decay products of the B meson. Mass cuts remove events that are far from the expected B meson mass and therefore likely to be a background. 
+
+ - DIRA, the direction cosine, the angle between the mometum of the B and the vector that connects the PV and the SV. It the resonstruction is correct then it should be peaked at one. Events with a negative value are moving the wrong way.
+
+ - flight distance chi2 - this is computed by adding all the tracks from the decay vertex/decay of the B to the PV and re-fitting for the vertex chi2. It should be large because the B has a long lifetime to the tracks of the daugthers should be significantly displaced from the PV.
+
+ - IP chi2 wrt the PV -  this is the change in a vertex fit when a particular particle track is excluded from the fit for the PV. The impact parameter is the. The Bs is produced at the primary vertex where protons collide before travelling to decay at a secondary vertex. Therefore the tracks daughter particles should not pass near the PV so want IP chi2 to be large but those of the Bs should be small. Avoid prompt muons. 
+
+ - vertex chi2/ndof - describes how well tracks form a particular vertex. A small number indicates a good fit
+
+ - Doca - distance of closest approach between two muons from their straight line tracks in the VELO. Ideally should be 0 since the come from the same vertex.
+
+ - lifetime, lenght of time the Bs lives for as it travels from the PV to the SV where it decays, it is computed from the mometum and FD as t = Lm/p. Cuts on the upper lifetime ensure that only B mesons that decay inside the VELO are used. 
+ 
+
+ - track fit chi2/dof - measure the quality of the fitted track, it removed poorly fitted tracks and therefore background that are formed from poorly reconstructed decays. A low track chi2/ndof corresponds to a good track fit
+
+ - isMuon PID information from the former chapter, identifies muons in a event
+ 
+
+ -minumum IP chi2 wr muons it requires the mimimum IPS wrt all PVs in the event to be greater than a certain value to stop using prompt muons. 
+
+ - PT - trannsverse momentum - component of particle mometum parallel to the beam pipe, expect daughthers to have a large PT
+
+ - P momentum - particle mometum 
+
+ - probablilty for a track to be a ghost particles - see section X for description, want it to be small.
+
+SECTION - studies
+
+- The efficiencies of the Bs2MuMu stripping selection cuts are shown in table X along side the efficiencies for cuts on the other stripping selections. They have been computed from MC but with loose stripping requirements. Only on the mass and the trigger requirements in set A have been specified.
+
+-  As can be seen in the table most of the Bs2MuMu stripping selection cuts have high efficiencies on the decay ~ 97% or higher. The cuts not inlucded are applied in the reconstruction. Also the signal and background channels have similar efficiencies for the selected decays, this is highlighted by figure X and Y that show each cut value as a ratio for signal/normalisation channel. Appart from B2JpsiK daughers the effieicnies are pretty consistent. (The ratio of the efficiencies $B^{0}_{(s)}\to\mu^{+} \mu^{-}$ and $B^{+}\to J/\psi K^{+}$ are shown in Figure \ref{fig:ratio_plots} each cut has been applied on the MC events independently of the other cuts. With the exception of the IP $\chi^{2}$ cuts on the daughter particles, the ratio of efficiencies is well within $2\%$ of 1 for the range of cuts values shown. The ratio of the signal and normalisation channels for the daughter particle IP $\chi^{2}$ markedly deviates from unity, showing that the IP $\chi^{2}$ distribution of the muons and kaon are very different as seen previous in \cite{Diego}.)
+
+
+-  The cuts with lowest effieicnies are the flight distance significance and the daugher min IP requirement, therefore these cuts are considered for selection. They don't select independant events to a change in cuts are considered together. Here is a plot of the efficies (Improvements to the stripping selection efficiencies on signal events could be achieved by changing the DOFS cut on the $B$ or J/$\psi$ and the IPS cut applied to the daughter particles. These two cuts have much lower efficiencies, $83\%$ and $80\%$, respectively, compared with the other selection cuts with efficiencies of $>90\%$. However, each cut does not remove an independently set of events therefore to find an improvement in the efficiencies of the stripping selection the effect of changing one cut on the whole selection efficiency must be considered rather than each cut efficiency separately. Figure \ref{fig:chart} shows the total efficiency on $B^{0}_{(s)}\to\mu^{+} \mu^{-}$ signal events of the stripping selection for a range of DOFS and daughter particles IPS cuts values. The lower the cut, the more efficient the stripping selection is on signal events)
+
+- We look in more detail at some combinations. To choose combinations of DOFS and daughter particle IP $\chi^{2}$ cuts the curve shown in Figure \ref{fig:optimum} was used as a guide. This aims to keep both cuts as tight as possible for a certain efficiency. For each pair of cuts the total efficiency of the stripping selection on $B^{0}_{(s)}\to\mu^{+} \mu^{-}$ and $B^{+}\to$ J/$\psi K^{+}$ signal is show in Table \ref{tab:efficiencies}. For the $B^{+}\to J/\psi K^{+}$ channel  the DOFS cut is applied to the $J/\psi$ and the daughter IPS cut is applied to the $K^{+}$. The efficiencies for the two channels are very similar, within $2\%$ of each other therefore keeping the ratio of their efficiencies close to 1. An increase of $16\%$ can be gained in the stripping selection efficiencies by using the loosest cuts in Table \ref{tab:efficiencies} however looser cuts let through more events therefore before a pair of cuts can be chosen 
+the retention of each set must be investigated. 
+
+- However once of the main purposes of the stripping selection is to reduce the size of the data set, therefore we look at the retentation rates. Also since selection and effiencies need to be similar accross signal and noramlisation channels for the BF analysis the cuts in those stripping lines must change too. Table X shows the retentaion rates for the different cuts along with the effiencicy on signal. All other stripping cuts as listed in table X are applied to compute the retentation.
+
+- Conclusion is to use the looser cuts of 15 and 3, because they will increase the sigal efficiency but not raise the rentention by too much.
+
+
+SECTION: Summary of cuts
+
+-Table X shows the stripping selection applied to bsmumu, bhh and b2JpsiK for 2011, 2012, 2015 and 2016 data along with some other loose preselection cuts that are applied offline. The changes in the FD and daughter IP cuts are reflected in the table. The overall selection effieicnies are also shown.
+
+- Compared to the selection shown for just the stripping in table X, the cuts applied to B2hh but not b2MuMu are now inlucded into the BsMuMu selection. Notibally the reduction in the mass window ensures the removal of Bs2MuMuGamma decays. BsMuMu events that have a higher mass than those allowed in the table, so greater that 6000 are avalible for analysis still and are used in some studies but not for selecting events to measure the effective lifetime.
+
+- Additional requirements on B_PT and mu PT have been included, these cuts remove pp->ppmumu events that have low PT. 
+
+- There only differences between Run 1 and Run 2 cuts are in the track chi2 and the ghost prob because these are now optimal for the new Runs.

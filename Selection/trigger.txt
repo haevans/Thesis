@@ -1,0 +1,24 @@
+- The trigger is the first line of selection
+
+- B2MuMu are very rare, want to keep as much signal as possible 
+
+- use broad trigger requirements to keep as much signal as possible. 
+
+- Instead of making requirements on the descision made by specific trigger lines, but the combined results of many trigger lines at each level of the trigger are used.
+
+- These broad trigger lines are L0Global, Hlt1Phys and Hlt2Phys
+
+- The L0Global combines ...
+
+- The Hlt1Phys combines ...
+
+- The Hlt2Phys combines ...
+
+- Different trigger decisions on these lines are used to select bs2MuMu decays and normalisation channel decays(?) for the BF and lifetime analyses. The BF requires an event to pass the Dec decision at each trigger level where are the lifetime requiremt decisions X. These are shown in table X as set A and set B. This is due to the acceptance fn being taken from MC, the underlying pp event can be not described well in MC therefore trigger decisions can be wrong so we use more specific trigger decisions to that the acceptance can be well constrained in MC as far as the trigger is concerned. 
+
+- the lines vary from year to year, dominant lines at each level are shown in the table with the efficiencies from Bs2MuMu MC - Not exactly sure what there actually are!
+
+- for selection and analysis studies b2hh decays, specifically bs2kk and bd2kPi are used in the lifetime analysis. Different trigger decisions are made on the broad trigger lines depending on the situation that are used. Either events have to pass Dec or TIS, which are set 1 and 3 in table X. It will be made clear in later sections which it is and the motivation behind the decisions. 
+
+- There was a problem with the HLT2 Phys _dec decision in 2016 MC, this only effects the B2hh decays. This effects trigger efficneices for the effective lifetime but not the BF since they get their effiencies in a more complex way. In order to emulate this trigger a combination of Hlt2 lines that select Bs2hh events, listed in table X, is used instead of HLT2Phys. This is not surprising since we are using the MC as soon as it was validated for 2016!
+

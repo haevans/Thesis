@@ -1,0 +1,23 @@
+- Bs2MuMu leaves the following signal charateristics in the detector, 2 muons that form a good vertex that is displaced from the PV because Bs has a lifetime. Also the combined mometum of the muons should point backwards to the PV because it's just the muons that come from the Bs2MuMu
+
+- There are other processes that can appear similar to Bs2MuMu/can be reconstructed with similar properties to real Bs2MuMu decays. These are background decays, the selection described in the section aims to seperate Bs2MuMu decays from these backgrounds.
+
+- The main sources of backgrounds for Bs2MuMu are; (begin some bullet points - Nooo am I copying others?)
+
+- exclusive di-muon processes/elastic pp->ppmumu collisions (mediated by a photon) elastic because the protons remain whole, dimuon pair will have a low PT, the protons travel down the beam pipe (There's a reference in Thesis 2013-249)
+
+- prompt combinatorial background,  pp collisions produce 2 muons at the PV, these are combined to form Bs that has 0 lifetime
+
+- Bs2MuMugamma - processes where the photon is not emitted in the final state, this is a 3 body decay that is not helicity supressed therefore it can be much more common. However the photon gains a large momentum therefore reducing the B mass by a lot if it is reconstructed as Bs2MuMu, ie without the photon (There's a reference in Thesis 2013-249)
+
+- poorly reconstructed candidates
+
+- 'long lived' combinatorial background, 2 muons produced from sperate semi-leptonic decays combined to produce a Bs with a non-zero lifetime
+
+- semi-leptonic decays in which one of the decays is mis-identified as a muon or one of the decay objects is not detected. The reconstructed mass of these decays is lower than is should be because something is missing. Include Bc as well. Include a list here or in a table of these backgrounds. They include \bdpimunu, \bsKmunu, \bpimumu, \bdpimumu, \bcjpsimunu with \jpsimumu
+
+- b2hh decays where both the hadrons are mis-identified mostly due to decays in flight of the hadrons - again will give lower than expected B mass
+
+- The first 4 types of backgrounds listed can be removed by exploiting the obvious differences between background from these processes and real Bs2MuMu decays, which will be highlighted in the next few sections, and keep a high signal efficiency but the last 3 are harder to remove and more effort is needed to remove/constrain them and there is a greater signal efficiency loss.
+
+- Also as a final note for the effecitve lifetime the Bd2MuMu is here a background, however the mass if the only thing that seperated Bs2MuMu and Bd2MuMu decays, most of the selection is the same for Bs2MuMu.

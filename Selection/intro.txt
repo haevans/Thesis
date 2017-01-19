@@ -1,0 +1,22 @@
+
+
+- The analysis of the Bs2MuMu effective lifetime in chapter X requires Bs2MuMu and B2hh decays to be idetified from the LHCb data sets. 
+
+- Bs2MuMu selection is challenging. Bs2MuMu have a pretty clear 2 muon signature in the detector but lots of other process make muons and these can mimic the Bs2MuMu decay. The mimicing decays are known as backgrounds not signal as the Bs2MuMu are. Because Bs2MuMu are very rare they are hard to find amoungst the backgrounds. The background processes are described in X.
+
+-   These decays are also understand different aspects of the analysis and to verify the analysis strategy to measure the Bs2MuMu lifetime we rely on decays that have a similar topology to Bs2MuMu but are more common, these have already had various properties measured so are understood well for our purposes. We use b2hh decays which includes Bs2KK, Bs2KPi, BdKPi. To be useful as control/valiation channels that selection needs to be as close as possible to Bs2MuMu - since the topologies are similar it's not a problem till the PID. B2hh decays are much easier to find, the Bs2MuMu selection is not optimal for these decays since it's optimal for Bs2MuMu but because they are much more abundant that Bs2MuMu it's all fine.
+
+- The BF, both Bs2MuMu and Bd2MuMu are needed, and the are selected in the same way. The BF analysis needs b2KPi and B2JpsiK for normalisation purposes, as well as the selection of Bs2MuMu. It is important that the selection applied to normalisation channels are as close as possible to the signal - why?
+
+- This chapter explains the selection of Bs2MuMu and B2hh decays and BsJpsiK, the selection occurs in several stages, but in order to design the selection and understand things later used in the analysis MC is needed which is detailed in section X. Much of the selection used in the lifetime and BF analyses are the same, the differences will be made clear in each of the sections.
+
+- the trigger and stripping selection apply loose selection cuts to remove obvious backgrounds and reduce the size of the data set to a managable size.
+
+- Then tigter/cuts specific to the analysis are applied
+
+- Then there is the PID 
+
+- Finally and MVA
+
+- The selection and study of backgrounds has been developed by many people for the BF analysis, add some references, here I indicate what I actually did.
+

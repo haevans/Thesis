@@ -1,0 +1,48 @@
+INTRODUCTION
+- cuts can only do so much, we use MVA to seperate signal from combinatorial background. The MVA learns difference in patterns is distributions in the signal and background
+
+- BDTs were developed in parallel for the BF and the effective lifetime analysis. A motivation of this was to ensure that the lifetime itself isn't an input variable to the BDT as it was in the last publication of the BF anlysis and to investigate different forms of boosting.
+
+- BF and lifetime analyses use BDT but for slightly differnt purposes. The BF analysis does not disacard any events based on BDT output but perfomes fits in bins of BDT, where as the lifetime puts a cut on the BDT output the reson is given in section X. 
+
+WHAT IS A BDT
+- look at boosted decision trees, they work this way and we look at several different ways of boosting whic are detailed here and they are implmented with the TMVA package. 
+
+ISOLATION VARIABLES
+- why are they useful
+
+- these are the old ones
+
+- new ones were developed, including isoBDT,  and ZVtop. Several different isoBDTs are used? - or do I have the info with the new ones in? (ZVTop is in Alessio's thesis so I can reference that!)
+
+JET VARIABLES
+
+BDT DEVELOPMENT AND VARIBLES
+What did I do to look at BDTs.
+- started with a list of, n, possible input variables - excluded PID since poor MC modelling
+- on a sample of the dataset trained 1 BDT with the all variables included and looked at the integrated ROC curve value
+- trained n BDTs each with a different variable from the list removed, looked at the integrated ROC curve values
+- made a new set of variables now n-1 in total, the variable removed from the list was the one which the preformance of the BDT was not reduced when the variable was removed. If this was true for more than one varible the lowest ranked varaible was removed
+- this is repreated until removing any variable reduced the preformace of the BDT.
+- thoughout these half the sample was used to train the BDTs and half to test them, they were trained on Bs2MuMu MC and bbbar2MuMuX MC or MC and data to test whether data could be used - it would more accuralty represent stuff but statistically limited. Will not lonfer be the case eventually which will let my stripping selection be used.
+
+This method was used to give two lists of variables one to use with boostings XXX and the other to used with boostings YYY. The selection criteria in table V were applied to the training and testing samples.
+
+The other paramters such as the depth were also determine for each boosting method by ...
+
+There lists of variables are here and the variables mean ....
+
+The BF analysis team produced a different BDT with variables ... in and these mean ...
+
+COMPARISON OF PERFORMANCE
+
+I then compared the performance of the BDTs by two different methods.
+- looking at the signal significance on b2hh decays
+- looking at the high mass sideband of bsMuMu decays and MC as well
+
+The conclusion was to use the BF BDT :(
+
+
+CUT CHOICE OPTIMISATION
+Then ~I~ had to chose the BDT cut choice this was done with toy studies somehow ... 
+
