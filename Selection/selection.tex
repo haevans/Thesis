@@ -164,10 +164,37 @@ Hlt2B2HH B2HHDecision Dec \\ \hline
 \end{center}
 \end{table}
 
-\subsection{Stripping}
+\subsection{Loose Selection}
 \label{sec:stripping}
 %http://lhcb-release-area.web.cern.ch/LHCb-release-area/DOC/stripping/config/stripping20/dimuon/strippingbs2mumulineswidemassline.html
 
+%REDO THIS AFTER WORKING OUT EXACTLY WHAT DETAILS I THINK ARE IMPORTANT TO INCLUDE!
+The stripping selection is a set of loose cuts that are applied to reconstructed events that have passed the trigger. The stripping selection consist of `lines' that are taylored to select particular decays. The aim of stripping lines is to reduce the size of the data sets collected by the experiment to a managable size on which tighter selection cuts to be developed and applied offline. Events that do not pass the selection cuts in the stripping lines are not directly avaliable to physics analyses. Therefore the cuts applied in the stripping lines are designed to remove obvious background events whilst keeping a high efficecny on the decay of interest. Restraints are placed on the amount of data that can pass the stripping selection for a particular analysis, typically this is set to be 0.05$\%$ of the original LHCb data set size for events that are saved in DST files. 
+%This paragraph is ok.
+The stripping lines for \bsmumu decays used in the last published Branching Fraction analysis was designed for at the start of Run ~1 by studying the efficiencies of different selection cuts from simulated events \cite{}. However since then improvements have been made to the simulation of particle decays at LHCb, therefore it is prudent to check the accuracy of the selection efficiencies with the updated simulated events and investegate where improvements can be made to the efficiency of the stripping selection used to select \bsmumu events.  
+
+The following sections describe the stripping selection used in previous analysis, a study to improve \bsmumu selection efficicencies of the stripping and a summary the the final choice of cuts in the stripping lines and other loose preselection cuts that are applied. 
+
+\subsubsection{Run 1 Stripping Selection}
+The stripping selection cuts used for the Run 1 \bmumu Branching Fraction analysis \cite{} to select \bmumu, \bhh and \bujpsik are shown in Table X. The selection of \bujpsik and \bhh decays is kept as similar as possible to the selection of \bsmumu decays to avoid introducing systematic errors when \bhh and \bujpsik decays are used in the normalisation for the Branching Fraction measurement. The selection of \bujpsik event must diverge from the \bsmumu selection due to additoinal particles in the final state of the decay. The stripping selection imposes more cuts to select \bhh decays compared to \bsmumu because \bhh decays are much more abundant therefore extra cuts are needed to reduce the number of events passing the stripping to an acceptable level. The cuts applied to \bhh in the stripping are the later applied to \bsmumu events after the stripping selection. 
+The variables used in the stripping selection are:
+\begin{itemize}
+\item the reconstructed mass, $M$, - the mass and momenta of the decay products of the $B$ meson (or \jpsi) are combined to provide its reconstructed mass. Cuts on the mass remove events with a reconstructed mass far from the expected particle mass and are therefore clearly to be background events. Loose mass requirements are made on for the \bsmumu selection to allow for the study of semi-leptonic backgrounds that have a mass less than the \bs mass when mis-identified as \bsmumu decays;
+\item the ``direction cosine'', DIRA, - this is the cosine of the angle between the mometum vector of the $B$ meson and the vector connecting the primary vertex to the secondary vertex where the $B$ meson decays. For correctly reconstructed events the direction cosine should be very close to one, requiring events to have positive value ensuring events are travelling in the incorrect direction form the SV to the PV are removed;
+\item the flight distance (FD) \chisqd - this is computed by performing the fit for the production vertex of a particle but including the tracks from its decay products that originate from the decay vertex in the fit as well. For a $B$ meson the FD \chisqd is likely to be large because $B$ mesons have long lifetimes therefore the tracks of its decays products will not point back to the production vertex. Alternatively a \jpsi will have a small \chisqd because it decays instantaneously;
+\item track fit \chisqd/$ndof$ - provides a measure of the quality of a fitted track, placing an upper limit on this parameter removes poor quality tracks and therefore backgrounds composed of poorly reconstructed decays;
+\item vertex fit \chisqd/$ndof$ - provides a measure of how well tracks can be combined to form a vertex, placing an upper limit on this parameter removes poorly constrained verticies and therefore backgrounds composed of poorly reconstructed decays;
+\item ``distance of closest approach'' (DOCA) - this is the distance of closest appoach of two partilcles computed from the straight tracks in the VELO. For the decay products of a particle, for example the muons from \bsmumu, this distance would ideally be zero because they originate from the same vertex;
+\item decay time \lt - this is the length of time a particle lives for as it travels from its production vertex to its decay vertex. Applying an upper decay time cut removes unphysical background decays;
+\item isMuon - particle identification variable defined in Section \ref{} that returns True for muons and False for other particles;
+\item transverse mometum, \pt - the component of a particle's momentum perpendicular to the beam axis. Decay products of $B$ mesons are expected to have relatively high \pt values due to the heavy $B$ meson masses however an upper limit removes unphysical backgrounds
+\item momentum, \p - an upper limit on the mometum of a particle  removes unphysical backgrounds
+\item ghost probability - defined in Section \ref{} provides the probability of a tracking being composed on random hits in the detector.
+\item impact parameter (IP) \chisqd - this is the change in the fit for a primary vertex caused by removing one track in the fit. In a \bsmumu decay, the \bs is produced at the PV therefore it should have a small IP \chisqd value whereas the muons will be displace from the PV because of the realtively long lifetime of the \bs and therefore will have a large IP \chisqd;
+\item Minimum muon impact parameter (IP) \chisqd - this is the IP \chisqd of the muons with respect to all PVs in the event, this is to remove prompt muons created at any PV in the event and therefore reduce the prompt combinatorial background. 
+
+
+\end{itemize}
 \begin{landscape}
 \begin{table}[ht]
 \begin{center}

@@ -7,7 +7,7 @@
 - The following sections describe the stripping selection used in previous analyses, the study into how to improve Bs2MuMu selection efficicencies of the stripping and a summary the the final choice of stripping and other loose preselection cuts that are applied. 
 
 SECTION RUN 1
-- The Run 1 stripping selection - Table X shows the stripping selection and reconstruction cuts, used in analyses X to select Bs2MuMu, b2hh and B2JpsiK events. The reconstruction cuts are isMuon and the track chi2 and prehaps the ghost prob. The selection of Bs2MuMu and b2hh and b2Jpsik are kept as close as possible because that's important for the BF analysis. However some differences are unavoidable. The selection is different between Bsmumu and B2hh which reflects that b2hh is more abundant than b2mumu, therefore tigher seleciton is needed to meet requirements of the output. Loose Bs2MuMu cuts allow for studies of backgrounds? The cuts applied to b2hh that aren't applied to b2mumu offline. B2JpsiK and Bs2MuMu must diverge because  additional cuts are necessary for the extra particles present in the normalisation channels which will causes dfferences to between the signal and normalisation selection.
+- The Run 1 stripping selection - Table X shows the stripping selection and reconstruction cuts, used in analyses X to select Bs2MuMu, b2hh and B2JpsiK events. The reconstruction cuts are isMuon and the track chi2 and prehaps the ghost prob. The selection of Bs2MuMu and b2hh and b2Jpsik are kept as close as possible in order to avoid the introduction of systematic uncertianties in the normalisation. However some differences are unavoidable. The selection is different between Bsmumu and B2hh which reflects that b2hh is more abundant than b2mumu, therefore tigher seleciton is needed to meet requirements of the output. Loose Bs2MuMu cuts allow for studies of backgrounds? The cuts applied to b2hh that aren't applied to b2mumu offline. B2JpsiK and Bs2MuMu must diverge because  additional cuts are necessary for the extra particles present in the normalisation channels which will causes dfferences to between the signal and normalisation selection.
 
 - variables used in the stripping selection and their purpose are ... 
 
@@ -17,13 +17,12 @@ SECTION RUN 1
 
  - flight distance chi2 - this is computed by adding all the tracks from the decay vertex/decay of the B to the PV and re-fitting for the vertex chi2. It should be large because the B has a long lifetime to the tracks of the daugthers should be significantly displaced from the PV.
 
- - IP chi2 wrt the PV -  this is the change in a vertex fit when a particular particle track is excluded from the fit for the PV. The impact parameter is the. The Bs is produced at the primary vertex where protons collide before travelling to decay at a secondary vertex. Therefore the tracks daughter particles should not pass near the PV so want IP chi2 to be large but those of the Bs should be small. Avoid prompt muons. 
-
  - vertex chi2/ndof - describes how well tracks form a particular vertex. A small number indicates a good fit
+
 
  - Doca - distance of closest approach between two muons from their straight line tracks in the VELO. Ideally should be 0 since the come from the same vertex.
 
- - lifetime, lenght of time the Bs lives for as it travels from the PV to the SV where it decays, it is computed from the mometum and FD as t = Lm/p. Cuts on the upper lifetime ensure that only B mesons that decay inside the VELO are used. 
+ - lifetime, lenght of time the Bs lives for as it travels from the PV to the SV where it decays, it is computed from the mometum and FD as t = Lm/p. Cuts on the upper lifetime ensure that only B mesons that decay inside the VELO are used.  fiducial cut to remove unphysical backgrounds
  
 
  - track fit chi2/dof - measure the quality of the fitted track, it removed poorly fitted tracks and therefore background that are formed from poorly reconstructed decays. A low track chi2/ndof corresponds to a good track fit
@@ -33,11 +32,17 @@ SECTION RUN 1
 
  -minumum IP chi2 wr muons it requires the mimimum IPS wrt all PVs in the event to be greater than a certain value to stop using prompt muons. 
 
- - PT - trannsverse momentum - component of particle mometum parallel to the beam pipe, expect daughthers to have a large PT
+ - PT - trannsverse momentum - component of particle mometum parallel to the beam pipe, expect daughthers to have a large PT fiducial cut to remove unphysical backgrounds
 
- - P momentum - particle mometum 
+ - P momentum - particle mometum fiducial cut to remove unphysical backgrounds
 
  - probablilty for a track to be a ghost particles - see section X for description, want it to be small.
+
+ - IP chi2 wrt the PV -  this is the change in a vertex fit when a particular particle track is excluded from the fit for the PV. The impact parameter is the. The Bs is produced at the primary vertex where protons collide before travelling to decay at a secondary vertex. Therefore the tracks daughter particles should not pass near the PV so want IP chi2 to be large but those of the Bs should be small. Avoid prompt muons. In case there are several PVs in one event, the
+vertex for which the B0 s IP is minimum is considered.
+
+- IP chi2 wrt the PV -  this is the change in a vertex fit when a particular particle track is excluded from the fit for the PV. The impact parameter is the. The Bs is produced at the primary vertex where protons collide before travelling to decay at a secondary vertex. Therefore the tracks daughter particles should not pass near the PV so want IP chi2 to be large but those of the Bs should be small. Avoid prompt muons. In case there are several PVs in one event, the
+vertex for which the B0 s IP is minimum is considered.
 
 SECTION - studies
 
