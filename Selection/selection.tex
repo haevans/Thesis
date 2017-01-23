@@ -169,14 +169,68 @@ Hlt2B2HH B2HHDecision Dec \\ \hline
 %http://lhcb-release-area.web.cern.ch/LHCb-release-area/DOC/stripping/config/stripping20/dimuon/strippingbs2mumulineswidemassline.html
 
 %REDO THIS AFTER WORKING OUT EXACTLY WHAT DETAILS I THINK ARE IMPORTANT TO INCLUDE!
-The stripping selection is a set of loose cuts that are applied to reconstructed events that have passed the trigger. The stripping selection consist of `lines' that are taylored to select particular decays. The aim of stripping lines is to reduce the size of the data sets collected by the experiment to a managable size on which tighter selection cuts to be developed and applied offline. Events that do not pass the selection cuts in the stripping lines are not directly avaliable to physics analyses. Therefore the cuts applied in the stripping lines are designed to remove obvious background events whilst keeping a high efficecny on the decay of interest. Restraints are placed on the amount of data that can pass the stripping selection for a particular analysis, typically this is set to be 0.05$\%$ of the original LHCb data set size for events that are saved in DST files. 
+%The stripping selection is a set of loose cuts that are applied to reconstructed events that have passed the trigger. The stripping selection consist of `lines' that are taylored to select particular decays. The aim of stripping lines is to reduce the size of the data sets collected by the experiment to a managable size on which tighter selection cuts to be developed and applied offline. Events that do not pass the selection cuts in the stripping lines are not directly avaliable to physics analyses. Therefore the cuts applied in the stripping lines are designed to remove obvious background events whilst keeping a high efficecny on the decay of interest. Restraints are placed on the amount of data that can pass the stripping selection for a particular analysis, typically this is set to be 0.05$\%$ of the original LHCb data set size for events that are saved in DST files. 
 %This paragraph is ok.
-The stripping lines for \bsmumu decays used in the last published Branching Fraction analysis was designed for at the start of Run ~1 by studying the efficiencies of different selection cuts from simulated events \cite{}. However since then improvements have been made to the simulation of particle decays at LHCb, therefore it is prudent to check the accuracy of the selection efficiencies with the updated simulated events and investegate where improvements can be made to the efficiency of the stripping selection used to select \bsmumu events.  
 
-The following sections describe the stripping selection used in previous analysis, a study to improve \bsmumu selection efficicencies of the stripping and a summary the the final choice of cuts in the stripping lines and other loose preselection cuts that are applied. 
+The events that pass the selection requirements in the trigger are reconstructed and the number of events is reduced by a set of loose selection cuts. These selection cuts are aimed at removing obvious background decays by exploiting the differences between real \bmumu decays and backgrounds that mimic them. The loose selection is composed to two parts; the stripping selection, outlined in Section~\ref{Software_Simulation}, and a set pre-selection cuts. 
+
+
+The Branching Fraction and effective lifetime analyses share the same loose selection, afterwards tighter cuts are applied to remove specific backgrounds many of which are tuned for each analysis, hence the loose selection cuts are called the pre-selection cuts. 
+
+%The data set that comes out of the trigger is too large to be processed seperately for each physics analysis. The stripping selection, briefly introduced in Section~\ref{}, is a set of selection requirements taht are applied once and the output of the stripping is used for each physics analysis. The aim of the stripping selection is to reduce the size of the data set to a managable size that each analyst can use to develop their analysis. It is compased of many stripping `lines', each line consists fo a set of selection cuts that have been tuned to select particle decays relevant for each physics analysis and only events that pass a stripping line are avaliable to be used in physics analyses.  There are restrictions placed on the amount of data that can pass a stripping line, typically the output of a line must be less than 0.05~$\%$ of the original data set size. The analyses described in Chapters X and Y use the output of three stripping lines designed to select \bsmumu, \bhh and \bujpsik decays. 
+
+The stripping lines used in the last published Branching Fraction analysis were designed at the start of Run ~1 by studying the efficiencies of different selection cuts from simulated events \cite{}. However since then improvements have been made to the simulation of particle decays at LHCb, therefore it is prudent to check the accuracy of the selection efficiencies with updated simulated events and investegate where improvements can be made to the efficiency of the stripping selection used to select \bsmumu events.  Furthermore,  before the start of Run~2 during the long shut down the stripping selection was re-run on the data collect in Run~1 allowing changes to be made to existing stripping lines and new lines to be added. The stripping selection and efficiency studies are described in Sections~\ref{strippingold} and \ref{strippingstudies}. %The changes discussed in Section X were included in this re-running of the stripping selection and are inlucded in the stripping lines used for Run~2 data.
+In general the stripping selection imposes only loose requirements so that as much information as possible is still avaliable to develop the analysis and understand background events after the stripping selection. Therefore after the stripping selection further loose selection requirements are applied to remove different background decays before the tighter selection requirements detailed in Section~\ref{finalloosesel}.
+
+
+
+%The following sections describe the stripping selection used in previous analysis, a study to improve \bsmumu selection efficicencies of the stripping and a summary the the final choice of cuts in the stripping lines and other loose preselection cuts that are applied. 
 
 \subsubsection{Run 1 Stripping Selection}
-The stripping selection cuts used for the Run 1 \bmumu Branching Fraction analysis \cite{} to select \bmumu, \bhh and \bujpsik are shown in Table X. The selection of \bujpsik and \bhh decays is kept as similar as possible to the selection of \bsmumu decays to avoid introducing systematic errors when \bhh and \bujpsik decays are used in the normalisation for the Branching Fraction measurement. The selection of \bujpsik event must diverge from the \bsmumu selection due to additoinal particles in the final state of the decay. The stripping selection imposes more cuts to select \bhh decays compared to \bsmumu because \bhh decays are much more abundant therefore extra cuts are needed to reduce the number of events passing the stripping to an acceptable level. The cuts applied to \bhh in the stripping are the later applied to \bsmumu events after the stripping selection. 
+\label{strippingold}
+The stripping selection cuts and cuts applied during the reconstruction of particle decays for the Run 1 \bmumu Branching Fraction analysis \cite{} to select \bmumu, \bhh and \bujpsik are shown in Table X. The selection of \bujpsik and \bhh decays is kept as similar as possible to the selection of \bsmumu decays to avoid introducing systematic errors when \bhh and \bujpsik decays are used in the normalisation for the Branching Fraction measurement. The selection of \bujpsik event must diverge from the \bsmumu selection due to additoinal particles in the final state of the decay. The stripping selection imposes more cuts to select \bhh decays compared to \bsmumu because \bhh decays are much more abundant therefore extra cuts are needed to reduce the number of events passing the stripping to an acceptable level. The cuts applied to \bhh in the stripping are the later applied to \bsmumu events after the stripping selection. 
+
+
+\begin{landscape}
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lll}
+  Particle              & \bsmumu                                     & \bhh                            &\bujpsik       \\
+\hline             
+\bs or $B^{+}$         & |M - M$_{PDG}$| $<$ 1200 \mevcc              & |M - M$_{PDG}$| $<$ 500 \mevcc    & |M - M$_{PDG}$| $<$   500 \mevcc   \\          
+                      & DIRA > 0                                    & DIRA > 0                          & Vertex $\chi^{2}$/ndof < 45    \\       
+                      & FD $\chi^{2}$ $>$ 121                        & FD $\chi^{2}$ $>$ 121             & IP $\chi^{2}$ $<$ 25  \\ 
+                      & IP $\chi^{2}$ $<$ 25                         & IP $\chi^{2}$ $<$ 25              &         \\            
+                      & Vertex $\chi^{2}$/ndof < 9                   & Vertex $\chi^{2}$/ndof < 9        &         \\   
+                      & DOCA $<$ 0.3 mm                             & DOCA $<$ 0.3 mm                   &         \\               
+                      &                                             & $\tau$ $<$ 13.248 \ps             &         \\
+                      &                                             & $p_{T}$ $>$ 500 \mevc             &          \\
+\hline   
+\jpsi                  &                                             &                                   & |M - M$_{PDG}$| $<$   60 \mevcc   \\
+                      &                                             &                                   & DIRA > 0    \\
+                      &                                             &                                   & FD $\chi^{2}$ $>$ 169 (225)  \\
+                      &                                             &                                   & Vertex $\chi^{2}$/ndof < 9        \\  
+                      &                                             &                                   &   DOCA $<$ 0.3 mm       \\  
+\hline             
+Daugther $\mu$ or $h$   & Track $\chi^{2}$/ndof < 3                 & Track $\chi^{2}$/ndof < 3           & Track $\chi^{2}$/ndof < 3     \\       
+                        & isMuon = True                             &                                    & isMuon = True           \\ 
+                        & Minimum IP $\chi^{2}$ $>$ 9               & Minimum IP $\chi^{2}$ $>$ 9         & Minimum IP $\chi^{2}$ $>$ 25     \\                   
+                        &                                           & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc &  \\
+                        &                                           & $p$ < 350 \gevc                     &  \\
+                        &                                           & ghost probability $<$ 0.3 (0.4)     &  \\
+\hline
+$K^{+}$                 &                                           &                                     & Track $\chi^{2}$/ndof < 3   \\
+                       &                                           &                                     & $p_{T}$ $>$ 0.25 \gevc  \\
+                       &                                           &                                     & Minimum IP $\chi^{2}$ $>$ 25 \\
+                       &                                           &                                     &  isLong = True  \\ 
+\hline
+\end{tabular}
+\caption{Selection requirements applied during the stripping selection for Run~1 data used in the \bmumu Branching Fraciton analysis \cite{} to select \bmumu, \bhh and \bujpsik decays. The track $\chi^{2}$/ndof and isMuon cut are applied during the reconstuction.}
+\label{tab:PreviousStripping}
+\end{center}
+\end{table}
+\end{landscape}
+
 The variables used in the stripping selection are:
 \begin{itemize}
 \item the reconstructed mass, $M$, - the mass and momenta of the decay products of the $B$ meson (or \jpsi) are combined to provide its reconstructed mass. Cuts on the mass remove events with a reconstructed mass far from the expected particle mass and are therefore clearly to be background events. Loose mass requirements are made on for the \bsmumu selection to allow for the study of semi-leptonic backgrounds that have a mass less than the \bs mass when mis-identified as \bsmumu decays;
@@ -194,61 +248,176 @@ The variables used in the stripping selection are:
 \item Minimum muon impact parameter (IP) \chisqd - this is the IP \chisqd of the muons with respect to all PVs in the event, this is to remove prompt muons created at any PV in the event and therefore reduce the prompt combinatorial background. 
 
 
+
+\subsubsection{Improving Stripping Selection Efficiency for \bmumu decays}
+\label{strippingstudies}
+\begin{landscape}
 \end{itemize}
 \begin{landscape}
 \begin{table}[ht]
 \begin{center}
-\begin{tabular}{llc}
-Particle       & Selection cut                                               & Efficiency of \bsmumu cut \\
+\begin{tabular}{p{6cm}lll}
+                  & \multicolumn{3}{c}{Efficiency}  \\ 
+\cline{2-4}
+Requirement                                  & \bsmumu                   & \bhh                &\bujpsik  \\
 \hline
-\bs            & |M - M$_{PDG}$| $<$ 1200 \mevcc                              & (100.00 $\pm$ 0.00) \\
-               & DIRA > 0                                                    & (99.43 $\pm$ 0.01) $\%$\\
-               & FD $\chi^{2}$ $>$ 225                                       & (83.89 $\pm$ 0.06) $\%$\\
-               & IP $\chi^{2}$ $<$ 25                                        & (96.88 $\pm$ 0.03) $\%$  \\
-               & Vertex $\chi^{2}$/ndof < 9                                  & (97.36 $\pm$ 0.03) $\%$\\
-              & DOCA $<$ 0.3 mm                                              & (99.86 $/pm$ 0.01) $\%$   \\                          
+$B$ |M - M$_{PDG}$|                           & (100.00 $\pm$ 0.00)$\%$  & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
+\bsd or \jpsi DIRA                            & (99.43 $\pm$ 0.01) $\%$  & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
+\bsd or \jpsi FD $\chi^{2}$                   & (83.89 $\pm$ 0.06) $\%$  & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
+\bsd or \jpsi IP $\chi^{2}$                   & (96.88 $\pm$ 0.03) $\%$  & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
+\bsd or \jpsi vertex $\chi^{2}$/ndof          & (97.36 $\pm$ 0.03) $\%$  & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
+\bsd or \jpsi DOCA                           & (99.86 $/pm$ 0.01) $\%$   & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\               
+\hline
+%$\mu$ or $h$ track $\chi^{2}$/ndof          & -                         & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
+%$\mu$ or $h$ isMuon                         & -                         & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
+$\mu$ or $h$ minimum IP $\chi^{2}$           & (80.47 $\pm$ 0.06) $\%$  & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
+\hline
+Efficiency after above cuts                  & (73.75 $\pm$  0.07) $\%$  & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
+\hline
+Efficiency after all striping line cuts      & (73.75 $\pm$  0.07) $\%$  & ( $\pm$ )$\%$        & ( $\pm$ )$\%$ \\
 
-\hline
-$\mu^{+(-)}$   & Track $\chi^{2}$/ndof < 3                                    & -\\
-              & isMuon = True                                                & -\\
-              & Minimum IP $\chi^{2}$ $>$ 25                                  & (80.47 $\pm$ 0.06) $\%$\\
-\hline
-\multicolumn{2}{c}{Efficiency after all stripping cuts}                      & (73.75 $\pm$  0.07) $\%$\\
 \end{tabular}
-\caption{Stripping selection cuts applied to Run 1 events in previous \bsmumu Branching Fraction analyses for select \bsmumu  decays and the efficiencies of the selection cuts on \bsmumu decays from simulated \bsmumu decays.(Note efficiencies are after Dec triggers, these are used in the BF analysis. }
-\label{tab:Run1stripping}
+\caption{Stripping line efficiencies for \bsmumu, \bhh and \bujpsik  2012 simulated decays after broad trigger requirements. Selection cuts applied are listed in Table~\ref{}.  }
+\label{tab:Run1strippingEff}
 \end{center}
 \end{table}
 \end{landscape}
 
+The efficiencies of the stripping lines for selecting \bmumu, \bhh and \bujpsik decays are shown in Table \ref{tab:Run1strippingEff}. The efficiencies are evalutated using 2012 sim06 simulated events and a loose set of trigger requirements (set A from Table~\ref{tab:triggers}) have been imposed. Only cuts that are applied to select \bmumu decays are evaluated, the efficiencies for the isMuon and track $\chi^{2}$/$ndof$ are not included because decays that do not pass these requirements are not included in the samples of simulated events. 
+
+The selection efficiencies are similar accross the different decays for the selection cuts that are shared with the \bmumu selection, and the total efficicency is around 70~$\%$ for all decays. 
+
+The similarity of selection efficiencies across the different decays is futher illustrated in Figure~\ref{fig:ratio_plots} which shows the ratio of the efficiencies $B^{0}_{(s)}\to\mu^{+} \mu^{-}$ and $B^{+}\to J/\psi K^{+}$ where each cut has been applied independantly.  With the exception of the IP $\chi^{2}$ cuts on the daughter particles, the ratio of efficiencies is well within $2\%$ of 1 for the range of cuts values shown. The ratio of the \bsmumu and \bujpsik efficiencies for the daughter particle IP $\chi^{2}$ markedly deviates from unity, showing that the IP $\chi^{2}$ distribution of the muons and kaon are very different as seen previous in \cite{Diego}. If the other selection cuts are applied to the simularted events before the daughter IP $\chi^{2}$ requirement the ratio of \bmumu and \bujpsik efficiencies is much closer to 1. 
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/IPS.png}
+        \caption{ }
+        \label{fig:IPS_ratio}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/CHI2.png}
+        \caption{ }
+        \label{fig:CHI2_ratio}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)
+
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/DOFS.png}
+        \caption{ }
+        \label{fig:FD_ratio}
+    \end{subfigure}
+   \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/daug_IPS.png}
+        \caption{ }
+        \label{fig:IPS_ratio}
+    \end{subfigure}
+    \caption{The ratio of $B^{0}_{(s)}\to\mu^{+} \mu^{-}$ to $B^{+}\to J/\psi K^{+}$ stripping efficiencies on MC events when each cut has been applied independently of all other cuts. The current cut values are marked by the blue lines.}
+    \label{fig:ratio_plots}
+\end{figure}
+
+
+The efficiencies for most of the stripping cuts is \sim 97~$\%$, however, the efficienices of the cuts on the FD $\chi^{2}$ of the \bsd or \jpsi and the daugher IP $\chi^{2}$ of the muon or hadron pair are lower at $83\%$ and $80\%$, respectively. Therefore improvements to the stripping selection efficiencies could be acheived by altering these two selection requirements. 
+
+
+The set of events removed by each cut in a stripping selection is not independant. Therefore the effect of changing on cut on the total efficiencyu of a stripping selection must be considered. Figure~\ref{fig:efficiencyplots} shows the total efficiency of the \bsmumu stripping line on simulated \bsmumu events that have passes the trigger requirement for a range of cut values for the FD $\chi^{2}$ and daugher IP $\chi^{2}$ requirements. As expected the lower the cut values are the more efficient the stripping line becomes. However one of the main purposes of the stripping selection is to reduce the size of the data set by removing obvious background events, therefore the cuts cannot be set as loose as possible. The curve on Figure~\ref{fig:efficiencyplots} is used as a guide to study a set of FD $\chi^{2}$ and daughter IP $\chi^{2}$ cut values in more depth, taking in to account both the signal efficiency and the amount of data retained by the selection, the set of chosen cuts aims to keep both cuts as tight as possible for a certain efficiency. Any changed applied to the \bmumu stripping line must be propagated through into the stripping lines for \bhh and \bujpsik decays in order to keep the selection as similar as possible for across all the decays. Changes to the \bsd FD $\chi^{2}$ in \bsmumu correspond to a change in the \bsd FD $\chi^{2}$ in \bhh and the \jpsi FD $\chi^{2}$ for \bujpsik, similarly changes to the muon IP $\chi^{2}$ in \bsmumu correspond to changes in the hadron IP $\chi^{2}$ in \bhh and the muon IP $\chi^{2}$ in \bujpsik. Table~\ref{tab:eff_and_retention} showns the total efficiencies of the \bmumu, \bhh and \bujpsik stripping lines along side the amount of data retained for the set of cuts illustrated in Figure~\ref{fig:eff_contours}. The data retention is computed by applying the stripping selection to a sub-set of 2012 data, with the trigger requirements applied, to find the number of events that pass the stripping lines for each pair of FD $\chi^{2}$ and daughter IP $\chi^{2}$ cuts. The number of events for each set of cuts is normalised to the number of events passing the original Run~1 stripping line requirements in order to show the fractional increase caused by loosening the cut values. 
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/strip_chart.png}
+        \caption{ }
+        \label{fig:eff}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/strip_chart1.png}
+        \caption{ }
+        \label{fig:eff_contours}
+    \end{subfigure}
+    \caption{Efficiency figures.}
+    \label{fig:efficiencyplots}
+\end{figure}
+
+
+(Not explained that some cuts are in the reconstruction very well, so are applied before the stripping and I cannot change them and I've not made the trigger requirements clear either or probably exactly what cuts are applied to get the efficiencies, I've not included the B2JpsiK plots - do I want to? I don't think they add much to the dicussion, they show a comparison of efficiencies and that it's flat - I can ask Harry if it would add much to the discussion).
+\begin{landscape}
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{ ll|lll|lll}\hline
+                       &                     & \multicolumn{3}{c}{Stripping line efficiency} &  \multicolumn{3}{c}{Stipping line retention} \\
+\cline{3-8}
+\bsd, \jpsi FD \chisqd & \mu, $h$ IP \chisqd & \bsmumu & \bdkpi   & \bujpsik & \bsmumu & \bdkpi & \bujpsik \\
+\hline
+15                     &5.00                 & XX $\%$ &  XX $\%$ &  XX $\%$ &  XX      & XX     & XX        \\
+14                    &4.25                  & XX $\%$ &  XX $\%$ &  XX $\%$ &  XX      & XX     & XX        \\
+13                    &4.00                  & XX $\%$ &  XX $\%$ &  XX $\%$ &  XX      & XX     & XX        \\
+12                    &3.50                  & XX $\%$ &  XX $\%$ &  XX $\%$ &  XX      & XX     & XX        \\
+11                    &3.00                  & XX $\%$ &  XX $\%$ &  XX $\%$ &  XX      & XX     & XX        \\
+10                    &2.75                  & XX $\%$ &  XX $\%$ &  XX $\%$ &  XX      & XX     & XX        \\
+9                     &2.50                  & XX $\%$ &  XX $\%$ &  XX $\%$ &  XX      & XX     & XX        \\
+\hline
+\end{tabular}
+\end{center}
+\label{tab:eff_and_retention}
+\caption{Retention of data and stripping line efficiencies. Efficiencies are \bdkpi but retention is \bhh because the stripping line selects all \bhh decays, $h$ is $K$ or $\pi$. }
+\end{table}
+\end{landscape}
+
+An increase of $16\%$ can be gained in the stripping selection efficiencies by using the loosest cuts in Table \ref{tab:eff_and_retention} however the loosest cuts increase the amount of data passing the \bmumu stripping selection by a factor of 7. The final set of cuts used in the stripping selection must be a compromise between the selection efficiency and the amount of data that passes the selection. The selection cuts of \bs FD $\chi^{2}$ $>$ 121 and minumum muon IP $\chi^{2}$ $>$ 9 would increase the \bmumu selection efficiency by from 71~$\%$ to 82~$\%$ and the amount of data retained would be doubles. The increase of the data retained by the \bhh and \bujpsik lines is smaller and the efficiencies are similar to the \bmumu selection efficiencies. Therefore these cuts are applied in the stripping selection for this analysis. However the increase in efficiency after the stripping selection will not necessarily be propagated through the whole analysis. 
+
+
+
+\subsection{Final Selection and Pre-selection}
+\label{finalloosesel}
+The stripping selection requirements along with a number of other loose selection cuts to select \bmumu, \bhh and \bujpsik decays in 2011, 2012, 2015 and 2016 are shown in Table~\ref{tab:fullpreselection}. The selection includes the looser stripping cuts on the \bsd and \jpsi FD \chisqd and muon and hadron IP \chisqd. Additionally the selection of \bmumu decays includes the momentum, ghost track probabilty and decay time cuts made in the \bhh stripping line, but were absent in the \bmumu stripping line. Several cuts are included to remove specific background events, the mass requirement on \bmumu decays is tightened to ensure $B_{S}^{0}\to\mu^{+}\mu^{-}\gamma$ decays are not within the mass window and a lower bound is placed on the $B$ meson transverse mometum to remove pairs of muons originating from $pp \to p\mu\mu p$ decays. %Something about that decays with mass above 6000 MeV are used for background studies?
+The decays that pass the selection cuts in Tables~\ref{tab:fullpreselection} in both data and simulated events are used to develop tigher selection requirements. 
 
 
 \begin{landscape}
 \begin{table}[ht]
 \begin{center}
-\begin{tabular}{lll}
-Particle              & \bsmumu                                     & \bhh \\
-\bs                   & 4900 \mevcc $<$ M $<$ 6000 \mevcc                   & 5180 \mevcc $<$ M $<$ 5500\mevcc                           
-                      & DIRA > 0                                             & DIRA > 0                             
-                      & FD $\chi^{2}$ $>$ 121                               & FD $\chi^{2}$ $>$ 121                                  
-                      & IP $\chi^{2}$ $<$ 25                                & IP $\chi^{2}$ $<$ 25                                
-                      & Vertex $\chi^{2}$/ndof < 9                           & Vertex $\chi^{2}$/ndof < 9                               
-                      & DOCA $<$ 0.3 mm                                     & DOCA $<$ 0.3 mm                                            
-                      & $\tau$ $<$ 13.248 \ps                     & $\tau$ $<$ 13.248 \ps
-                      & $p_{T}$ $>$ 500 \mevc                      & $p_{T}$ $>$ 500 \mevc
-\hline
-Daugther $\mu$ or $h$   & Track $\chi^{2}$/ndof < 3 (4)     & Track $\chi^{2}$/ndof < 3 (4)                                            
-                        & isMuon = True                            &                                              
-                        & Minimum IP $\chi^{2}$ $>$ 9                        & Minimum IP $\chi^{2}$ $>$ 9                               
-                        & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc          & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc
-                        & $p$ < 500 \gevc                        & $p$ < 500 \gevc
-                        & ghost probability $<$ 0.3 (0.4)              & ghost probability $<$ 0.3 (0.4)
- 
+\begin{tabular}{llll}
+Particle                & \bsmumu                                     & \bhh                                 & \bujpsik
+\bs or $B^{+}$          & 4900 \mevcc $<$ M $<$ 6000 \mevcc           &  |M - M$_{PDG}$| $<$   500 \mevcc      & |M - M$_{PDG}$| $<$   500 \mevcc   \\                              
+                        & DIRA > 0                                    & DIRA > 0                             & Vertex $\chi^{2}$/ndof < 45    \\       
+                        & FD $\chi^{2}$ $>$ 121                       & FD $\chi^{2}$ $>$ 121                 & IP $\chi^{2}$ $<$ 25  \\               
+                        & IP $\chi^{2}$ $<$ 25                        & IP $\chi^{2}$ $<$ 25                  &   \\             
+                        & Vertex $\chi^{2}$/ndof < 9                  & Vertex $\chi^{2}$/ndof < 9            &   \\                  
+                        & DOCA $<$ 0.3 mm                             & DOCA $<$ 0.3 mm                      &    \\                    
+                        & $\tau$ $<$ 13.248 \ps                       & $\tau$ $<$ 13.248 \ps                &    \\
+                        & $p_{T}$ $>$ 500 \mevc                        & $p_{T}$ $>$ 500 \mevc                &    \\
+\hline    
+\jpsi                   &                                             &                                      & |M - M$_{PDG}$| $<$   60 \mevcc   \\
+                        &                                             &                                      & DIRA > 0    \\
+                        &                                             &                                      & FD $\chi^{2}$ $>$ 121  \\
+                        &                                             &                                      & Vertex $\chi^{2}$/ndof < 9        \\  
+                        &                                             &                                      &   DOCA $<$ 0.3 mm       \\  
 
+\hline
+Daugther $\mu$ or $h$   & Track $\chi^{2}$/ndof < 3 (4)               & Track $\chi^{2}$/ndof < 3 (4)         & Track $\chi^{2}$/ndof < 3     \\                                           
+                        & isMuon = True                               &                                      & isMuon = True           \\        
+                        & Minimum IP $\chi^{2}$ $>$ 9                 & Minimum IP $\chi^{2}$ $>$ 9           & Minimum IP $\chi^{2}$ $>$ 25     \\                       
+                        & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc   &
+                        & $p$ < 500 \gevc                             & $p$ < 500 \gevc                      &
+                        & ghost probability $<$ 0.3 (0.4)             & ghost probability $<$ 0.3 (0.4)      &
+\hline
+$K^{+}$                 &                                             &                                      & Track $\chi^{2}$/ndof < 3   \\
+                       &                                             &                                      & $p_{T}$ $>$ 0.25 \gevc  \\
+                       &                                             &                                      & Minimum IP $\chi^{2}$ $>$ 25 \\
+                       &                                             &                                      &  isLong = True  \\ 
+\hline
 
 \hline
 \end{tabular}
-\caption{Loose selection cuts applied to select \bsmumu and \bhh decays, where selection is different between Run~1 and Run~2 the Run~2 values are shown in parenthesis next to the Run~1 values.}
+\caption{Loose selection cuts applied to select \bsmumu, \bhh and \bujpsik decays, where selection is different between Run~1 and Run~2 the Run~2 values are shown in parenthesis next to the Run~1 values.}
 \label{tab:fullpreselection}
 \end{center}
 \end{table}
@@ -257,9 +426,63 @@ Daugther $\mu$ or $h$   & Track $\chi^{2}$/ndof < 3 (4)     & Track $\chi^{2}$/n
 
 \subsection{Pre-selection/Offline selection?}
 \label{sec:offline_sel}
+The output of the stripping selection still includes many background decays, further cuts shown in Table~\ref{} reduce the background decays. Some selection cuts are designed to remove specific background decays and the selection for \bsmumu decays used in the Branching Fraciton and effective lifetime analyses starts to diverge slightly.
+
+The BDTS is a multivariate classifer that is designed to reduce the number of combinatorial background events. It is a Boosted Decision Tree (BDT) (see Section~\ref{} for a detailed description) that is trained on \bsmumu and \bbbarmumux simulated decays that have passed the \bmumu selection requirements in Table~\ref{}. The BDTS uses variables similar to those in the stripping selection to classify events;
+\begin{itemize}
+\item impace parameter \chisqd of the \bds
+\item vertex \chisqd of the \bsd
+\item direction cosine of 
+\item distance of closest apporach of the muons
+\item minimum impact paramter \chisqd of the muons with respect to all primary verticies in the event
+\item impact paramter of the \bsd, this is the distance of closest approch of the $B$ to the primary vertex
+\end{itemize}
+The BDTS is applied to all candidates passing the \bmumu, \bhh and \bujpsik stripping lines, and candidates are required to have a BDTS value above 0.05. The chosen cut value has a efficiency of X $\%$ on \bsmumu decays and reject X $\%$ of \bbbarmumux decays. 
+
+
+The semi-leptonic \bcjpsimunu decays when \jpsimumu contribute to the background of \bmumu decays when a muon from the \jpsi forms a good vertex with the muon from the $B_{c}^{+}$ decay. Due to the high mass of the $B_{c}^{+}$ this could place mis-reconstructed candidates within the \bs mass window. A `jpsi veto' can be used to remove background events from \bcjpsimunu decays. The veto works by removing events where one muon from the \bmumu candidate combined with any other opositely charged muon in the event has $\m_{\mu\mu} - m_{\jpsi}| < 30$~\mevcc. The veto has a rejection power of X  $\%$ on \bcjpsimunu events that have passed \bmumu selection cuts in Table~\ref{} and rejects only  $\%$ of \bmumu signal events. The expected number of \bcjpsimunu events after the full selection can be found in Section~X. 
+
+
+The simiulated \bbbarmumux decays are used to train the multivarite classifier (Sect.~\ref{}) used in the Branching Fraction and effective lifetime analyses and variables included within the classifier (Sect.~\ref{}) as well as the BDTS. The simulated \bbbarmumux decays had tighter cuts on the FD \chisqd of the \bsd and minimum IP \chisqd of the muons than those listed Table~\ref{} applied when it was created. Events that did not pass those cuts are not avaliable for use in the classifier training, therefore these must be applied to all data and simulated decays to ensure the most effective and reliable performance of the multivarite classifers used in the analyses. 
+
+The effective lifetime analysis requires that \bsmumu candidates have a dimuon invariant mass greater than 5320 \mevcc. The motivation comes from mass fit studies that are detailed in Section X. The consequence of this cut is to remove \bdmumu events and most background from mis-identified semi-leptonic and \bhh decays. The expect number of \bdmumu and mis-identified decays after the full selection can be found in Section~X.
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{lll}
+\bsmumu                                     & \bhh                                 & \bujpsik
+\hline
+BDTS $>$ 0.05                              & BDTS $>$ 0.05                         & BDTS $>$ 0.05  \\       
+\jpsi veto $\m_{\mu\mu} - m_{\jpsi}| < 30$~\mevcc &\jpsi veto $\m_{\mu\mu} - m_{\jpsi}| < 30$~\mevcc & - \\
+\bsd FD \chisqd $>$ 225                     & \bsd FD \chisqd $>$ 225              & \jpsi FD \chisqd $>$ 225 \\
+$\mu$ minimum IP \chisqd > 25              &$h$ minimum IP \chisqd > 25             &$\mu$ minimum IP \chisqd > 25     \\
+M $>$ 5320 \mevcc                           &  -                                     & -  \\
+
+\end{tabular}
+\caption{Selection cuts applied to select \bsmumu, \bhh and \bujpsik decays.}
+\label{tab:selection}
+\end{center}
+\end{table}
+%\end{landscape}
+
+
 
 \subsection{Particle Identification}
 \label{sec:PID}
+%Not a fan of this section :(
+Particle identification (PID) variables are used to refine the selection of \bmumu candidates and to seperate different \bhh decays. 
+
+In the selection of \bmumu decays PID variables are particularly useful to reduce the backgrounds coming from mis-identified semi-leptonic decays and \bhh decays and also help to reduce the number of combinatorial backgroudn events. 
+
+The PID requirements to select \bmumu decays in the Branching Fraction and \bsmumu in the lifetime analysis are in Table~\ref{} alongside requirements to seperate \bhh decays. Two types of PID variables, defined in Section~\ref{PID_variables}, are used; DLL variables and ProbNN variables. DLL variables are useful to seperate \bhh decays where $h$ is either a pion or kaon because the varaibles compare different particle hypotheses with the pion hypotheses.
+
+Requirements on ProbNN variables vary with the year of data taking because the classifers used in ProbNN variables are tuned to give the best performance depending on the different data taking conditions in the detector for each year. %The cuts are chosen to give similar efficiencies for each data sets at selecting signal and removing background accross the different years. 
+
+Tighter PID requirements are used to select \bmumu decays for the Branching Fraction measurements compared to those used for the effective lifetime measurement. This is because more mis-identidied decays extend in to the \bd mass window than the \bs mass window therefore tigher requirements are necessary to reduce them to an acceptable level. %However this also reduces the efficiency for selecting \bmumu decays. 
+
+{\it Prehaps a better way for the PID is to put the requirements in the text because the is could be clearer or maybe have two tables one for bsmumu and one for bhh? Also another consideration prehaps it would be clearere to seperate the effective lifetime and the BF after the stripping selection. I could clearly explain that the stripping and loose selection is used for both and therefore the BF decays must be considered in the stripping selection but after that the selection will focus on the effective lifetime. }
+
 
 \subsection{Multivariate Classifier}
 \label{sec:BDT}

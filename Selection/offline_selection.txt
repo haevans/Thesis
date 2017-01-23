@@ -20,7 +20,7 @@ Jpsi Veto
 
 
 MC cuts
-- The MC samples used to train the final choice of the BDT and variables included within the BDT detailed in section X as well as the BDTS use the bbbar2mumuX MC in table X. Tigher cuts on the FD and min IP chi2 than those in table X were applied when the MC sample was created and event that did not pass the cuts are not avaliable for use. Therefore these must be applied to all data and MC to ensure the most effective and reliable performance of the BDT and 
+- The MC samples used to train the final choice of the BDT and variables included within the BDT detailed in section X as well as the BDTS use the bbbar2mumuX MC in table X. Tigher cuts on the FD and min IP chi2 than those in table X were applied when the MC sample was created and event that did not pass the cuts are not avaliable for use. Therefore these must be applied to all data and MC to ensure the most effective and reliable performance of the BDT 
 
 
 Mass Cuts

@@ -67,6 +67,6 @@ SECTION: Summary of cuts
 
 - Compared to the selection shown for just the stripping in table X, the cuts applied to B2hh but not b2MuMu are now inlucded into the BsMuMu selection. Notibally the reduction in the mass window ensures the removal of Bs2MuMuGamma decays. BsMuMu events that have a higher mass than those allowed in the table, so greater that 6000 are avalible for analysis still and are used in some studies but not for selecting events to measure the effective lifetime.
 
-- Additional requirements on B_PT and mu PT have been included, these cuts remove pp->ppmumu events that have low PT. 
+- Additional requirements on B_PT have been included, these cuts remove pp->ppmumu events that have low PT. 
 
 - There only differences between Run 1 and Run 2 cuts are in the track chi2 and the ghost prob because these are now optimal for the new Runs.
