@@ -1,3 +1,4 @@
+
 INTRODUCTION
 - cuts can only do so much, we use MVA to seperate signal from combinatorial background. The MVA learns difference in patterns is distributions in the signal and background
 

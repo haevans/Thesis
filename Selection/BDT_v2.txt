@@ -1,0 +1,64 @@
+These are the bullet points I have made from several attempts at writing words!
+TO DO TO ADD TO NOTES:
+>Read and TMVA guide
+
+
+- The data set we have after applying all the selection cuts still has a lot of background events in, theses are mostly from bbbar2mumux decays. The best way to remove these whilst keeping a reasonable efficiency for selecting bsmumu decays is to use a multivariate classifier and put a cut on the output of the classifier.
+
+- A multivariate classifier (briefly) is … A multivariate classfier is an algorithm that leanrs differences between signa and background events in the following way; the classifier is given tow input samples, one contain only signal decays and the other containing just background decays and a set of input variables. THese input variables have different distributions for signal and background events. The classifier uses the distributions of ths input variables with it's knowledge of which events are signal and background to learn the difference between the two types of events. The algorithm is then be applied to a data set containing an unknown mixture of signal and background events and distinguish between them.  For each event the algotithm produce s a number typically between -1 and +1 with high numbers indicating signal-like events and low numbers indicating background-like events. A cut can then be places on the output of the classifier to remove background events with a classifer response less thatn a particular value and the remaining daata set has a high purity for signal events.
+
+- The published analysis uses a BDT, it had the lifetime as one of the input variables, this is not ideal for the effective lifetime measurement
+
+- PERHAPS; have a shorter intro to an MVA since the BDT covers it. Then afterwards outline what this section will explain saying how we’ll look at classifiers for the effective lifeimte and look at the performance, then compare that with the classifier for the BF and then explain how we get the cut on the output. Therefore the MVA intro just needs to be enough so that the outline makes sense. 
+
+LIFETIME BDT DEVELOPEMENT
+BDT INTRODUCTION(NEEDS WORK)
+
+- We use a boosted decision tree (BDT), To seperate the signal \bsmumu decays from the background decays a type of classifer called a Boost Decision Tree (BDT) is used. Other types of classifers were investigated however their performance was not as good. A BDT is made up of the combined outputs of seperate decision trees. A decision tree begins with a sample of event, where each event is know to be signal or background and a set of variables descrubing these events. The decision tree applied a cut on a variable that will be the most effective at seperating the signal and background events in the sample and creates two sub-samples. Another cut is then applied on each of the sub-samples to futher seperate signal from background. This process is repeated until a certain number of cuts, defined as the depth of the tree, or the number of events in each sub-sample has reached a minumum number. Each sub-sample produced at the end of the tree is called a leaf. The tree then uses it's knowledge of whehter an event is signal or background to assign each event the value of +1 or -1. An event is given a value +1 if it is in a leaf that is made up of a majority of signal events and an event is given the value -1 if it is in a leaf that has a majority of background events. The final decisions made by the tree are not prefect, some signal (background) events will be mis-classified as background events and given the value of -1 (+1). ( I think there is a lot of repetition here between the multivariate classifier introduction and the BDT one - can I make the MVA briefer and then keep the detailed for the BDT?)
+
+
+- One decision tree on its own is often not particulary good at classifying events, there is not way to correct mis-classified events in the leaves, and it is particularly sensitive to statistical fluctuations in the training samples. A BDT combined the output of numerous decision trees to improve the classification of events and reduce the depandance of the final decisions on statistical flucuations. A BDT starts with one decision tree and it then assigns weights to events in the sample depending on whether the output of the decision tree classified the events correctly or incorrectly. The weighted sample is then used as the input for the training of the next decision tree. The weights are designed so that the next tree is more likely to correly classify previously mis-classified events. This process is repeated until a certain number of trees have been trained. The reweighting process is know as boosting and the weighted applied to the samples are taken into account when combining the output of each decision tree into the overall output of the BDT.
+
+- When you train a classifier its performance depends on several things, the size of the training samples, the input variables used and also the parameters that dictate the training itself.
+
+- a large training sample is useful because it stops that BDT being too sensitive to statistical fluctuations and the larger the sample the more information that classifier has to learn the difference between signal and background
+
+- input variables needed to have different distributions between signal and background decays, the more different the better however the BDT performance is insensitive to poorly discriminating variables they can be included but just won’t add anything to the performance
+
+- the variables that you can tune are the number of trees, the tree depth, the minimum number of events a node can have before the tree has to stop, the ‘speed’ at which AdaBoost works and the number of cuts that a tree tried for a variable before making a decision. Perhaps these can be done in more detail when I optimise the parameters.
+
+- all of these make a difference but some are more important that others, if you have a tiny sample size and not discriminating variables it doesn’t matter what parameters you chose to train the BDT the overall performance will be poor.
+
+- You need to avoid overtraining, this is when the training is very sensitive to statistical fluctuations in the samples used for training. It makes decisions on which variable to use or the cuts that are just dependant on flutucations rather than that actual trends in the data. Using a BDT rather than one DT reduced this and so does having a large training sample but so also does limiting the depth of the trees.
+
+- TMVA is used to train the BDTs and to chose the input variables. TMVA offered several types of boosting methods. The next sections discuss the training and performance of BDTs with Adaptive boosting, gradient boosting and also uBoost method. The uBoost method is a novel way in which the output of the BDT can have a uniform efficacy for a specified variables therefore any cuts you apply will effect the effieciy in a uniform way. This is interesting for the effective lifetimes, many discriminating variables are correlated with the lifetime and you need to be able to describe well the effieicny in order to measure the lifetime (NEEDS WORK TO CLARIFY WHAT I WANT TO SAY!)
+
+
+TRAINING SAMPLES (NEEDS WORK)
+- use simulated decays for Bs2MuMu because it’s the only way there can be enough
+- use two different training samples for background data and simulated decays, these are actually simulated bbbar2mumuX decays and the same decays in data but are all reconstructed as bs2mumu (AHH is that ok to say or not?)
+- there are advantages and disadvantages to both, data is ultimately exactly  what we want to get rid of so the background is being described perfectly but is signal is MC and backgourd data the the algorithm can learn data - MC differences so must be careful which variables are used. Also data has limited number of events
+- simulation have more backgournd events but it’s not ideal. Still important that variables that are used are accurate in data and MC because want the BDT to work well!
+- A set of selection cuts are applied these are XXX that data has a different mass cut
+- The number of events in each sample is XXX
+
+
+INPUT VARIBLES
+
+BDT PREFORMANCE
+
+OPTIMISING INPUT VARIBLES
+
+BF BDT
+
+LIFETIME BF BDT COMPARISON (including new isolation variables)
+
+CUT OPTIMISATION
+
+
+CONCERNS
+========
+- only optimised the BDT parameters for the BDT with MC for background, a better study would have been to optimise for all - but uBoost took too long. I could optimise for the BDTG but I don’t want to given the time I had
+- I could have re-done my studies with the better isolation variables in but I did not - that would not have taken as long now that I know what to do. 
+- I am dubious to do it all again because it may change the conclusion and it would also be a a lot of work. But I don’t want to spend ages writing up what I have and editing the plots only to change everything in the future. I want to get this chapter done! It would be more satisfying to have a better study but then it would be a lie and quite disappointing if I changed it all or would it be a lie? I could make a comprise and just optimise the parameters for the BDTs? 
+

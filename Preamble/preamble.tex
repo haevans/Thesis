@@ -56,7 +56,7 @@
 
 
 % Captions: This makes captions of figures use a boldfaced small font.
-%\RequirePackage[small,bf]{caption}
+\RequirePackage[small,bf]{caption}
 
 \RequirePackage[labelsep=space,tableposition=top]{caption}
 \renewcommand{\figurename}{Fig.} %to support older versions of captions.sty
@@ -81,7 +81,7 @@
 % ********************************** Tables ************************************
 \usepackage{booktabs} % For professional looking tables
 \usepackage{multirow}
-
+\renewcommand{\arraystretch}{1.2}
 %\usepackage{multicol}
 %\usepackage{longtable}
 %\usepackage{tabularx}
@@ -185,8 +185,7 @@
 \fi
 
 % changes the default name `Bibliography` -> `References'
-\renewcommand{\bibname}{References}
-
+\renewcommand{\bibname}{Bibliography}
 
 % ******************************** Roman Pages *********************************
 % The romanpages environment set the page numbering to lowercase roman one
