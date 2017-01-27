@@ -49,7 +49,8 @@ The simulated decays used for studies documented in this thesis are listed in Ta
 
 There exist multiple versions of the simulation because it is updated as understanding of the detector increases and to incoporate differences in data taking condidtions, such as the trigger lines or center-of-mass energy, present in each year of data is collected. Similar simulation versions must be used to compare different types of simulated decays or data taking condidations so that differences are not masked by variations in the simulation of the decays. The simulated decays in Table~\ref{tab:MC_decays} listed under the studies they are used in. 
 
-
+Simulated \bbbarmumux decays are used to understand the combinatorial background of \bsmumu decays, however producing a large enough sample of these decays to be useful is computational expensive and produces large output files to save generated decays. Therefore cuts are applied at the generation level for \bbbarmumux decays to reduce the size of the samples that are saved and to speed production. The cuts, listed in Table~\ref{tab:MC_decays}, are applied on the muon momenta, the reconstructed mass of the muon pair, the product of the momenta of the muons and the distance of closest approach of the two muon. %The generator level cuts save a factor of 5 of what needs to be saved, striping filtering also reduces it by a factor of 10! The information is in the LHCb-ANA-2013-032, the 2012 bbbarmumux sample corresponds to 7fb-1.
+  
 %The development of the selection and analysis of \bsmumu decays requires the use of simuluated decays, as described in Section X. The reconstucted \bsmumu candidates come for a range of different different processes, as already discussed, in order to seperate real \bsmumu decays from the background, large clean samples of simulated decays are used so that the differences between signal and background decays can be understood. Futhermore simulated samples are needed to understand 
 
  
@@ -57,30 +58,32 @@ There exist multiple versions of the simulation because it is updated as underst
 \begin{center}
 \begin{tabular}{llll}
 \hline
-Decay 			& Year 	& Simulation Version 	& Generated Events \\ \hline 
+Decay 			& Data taking conditions 	& Simulation Version 	& Generated Events per magnet polarity \\ \hline 
 \multicolumn{4}{c}{{\it Stripping selection studies selection}}  \\ \hline 
-\bsmumu			& 2012	& sim06b  		& 2M			 \\ 
-\bdmumu			& 2012	& sim06b  		& \\ 
-\bdkpi			& 2012	& sim06b  		& \\ 
-\bujpsik		& 2012	& sim06b  		& \\ \hline 
+\bsmumu			& 2012	& sim06b  		& 1 M			 \\ 
+\bdmumu			& 2012	& sim06b  		& 1 M\\ 
+\bdkpi			& 2012	& sim06b  		& 500 k\\ 
+\bujpsik		& 2012	& sim06b  		& 500 k\\ \hline 
 \multicolumn{4}{c}{{\it Multivarite classifer training}}  \\ \hline
-\bbbarmumux, p$_{T}$    & 2012  & sim06b                &       \\
-\bbbarmumux, p$_{T}$    & 2012  & sim06b                & \\
-\bsmumu                 & 2012  & sim06b                & \\ \hline
+\bbbarmumux, p $>$ 3 \gevc, 4.7 $< M_{\mu^{+} \mu^{-} <$ 6.0 \gevcc, DOCA $<$ 0.4mm, 1 $<$ PtProd $<$ 16~\gevc
+                        & 2012  & sim06b                & 4.0 M      \\
+\bbbarmumux, p $>$ 3 \gevc, 4.7 $< M_{\mu^{+} \mu^{-} <$ 6.0 \gevcc, DOCA $<$ 0.4mm, PtProd $>$ 16~\gevc
+                        & 2012  & sim06b                & 3.3 M\\
+\bsmumu                 & 2012  & sim06b                & 1 M \\ \hline
 \multicolumn{4}{c}{{\it Analysis method development}}  \\ \hline 
-\bsmumu			& 2011 	& sim08   		& 0.5M		  \\ 
-       			& 2012 	& sim08  		& 			 \\ 
-        		& 2015	& sim09  		& 2M	 \\ 
-        		& 2016	& sim09  		&  \\ 
-\bdkpi			& 2011	& sim08  		& 0.8M  \\ 
-        		& 2012	& sim08  		& 8.5M \\ 
-        		& 2015	& sim09  		& 4M  \\ 
-        		& 2016	& sim09  	 	&  \\ 
-\bskk   		& 2012	& sim08  		& 7M \\ 
-        		& 2015	& sim09   		&  \\  \hline
+\bsmumu			& 2011 	& sim08a   		& 0.3 M		  \\ 
+       			& 2012 	& sim08i  		& 1 M			 \\ 
+        		& 2015	& sim09a  		& 1 M	 \\ 
+        		& 2016	& sim09a  		& 1 M ? \\ %Is this correct? I thought in the ntuples we have a lot more 2015 than 2016 MC? 
+\bdkpi			& 2011	& sim08b  		& 0.4 M  \\ %11102003
+        		& 2012	& sim08g  		& 4.3M \\ 
+        		& 2015	& sim09a  		& 2 M  \\ 
+        		& 2016	& sim09a  	 	& 4.1 M \\ 
+\bskk   		& 2012	& sim08g  		& 3.6 M \\ %13102002, 2016 is sim09a 4.1 M per pol, 2011 is sim-8b and 0.8 M per pol
+        		& 2015	& sim09a   		& 2 M \\  \hline
 \end{tabular}
 \vspace{0.7cm}
-\caption{Simulated decays used for developing the selection and the analysis method listed according to the studies the decays are used in. Requirements are imposed on \bbbarmumux decays as they decays are generated, the cuts are included alongside the decay type. The number of generated events includes approximately equal numbers of decays for each magnet polarity.}
+\caption{Simulated decays used for developing the selection and the analysis method listed according to the studies the decays are used in. Requirements are imposed on \bbbarmumux decays as they decays are generated, the cuts are included alongside the decay type.}
 \label{tab:MC_decays}
 \end{center}
 \end{table}
