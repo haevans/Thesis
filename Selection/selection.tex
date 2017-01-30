@@ -415,13 +415,13 @@ The complete list of selection cuts applied in the cut based selection to select
 
 Additional selection requirements are applied after the stripping to remove specific backgrounds. A lower bound is placed on the $B$ meson transverse mometum to remove pairs of muons originating from $pp \to p\mu\mu p$ decays and a \jpsi veto is used to remove backgrounds from \bcjpsimunu decays. The semi-leptonic \bcjpsimunu decays, where \jpsimumu, contribute to the background of \bmumu decays when a muon from the \jpsi forms a good vertex with the muon from the $B_{c}^{+}$ decay. Due to the high mass of the $B_{c}^{+}$ this could place mis-reconstructed candidates within the \bs mass window. A `jpsi veto' can be used to remove background events from \bcjpsimunu decays. The veto works by removing events where one muon from the \bmumu candidate combined with any other opositely charged muon in the event has $|m_{\mu\mu} - m_{\jpsi}| < 30$~\mevcc. The veto has a rejection power of X  $\%$ on \bcjpsimunu events that have passed \bmumu selection cuts in Table~\ref{} and rejects only  $\%$ of \bmumu signal events. The expected number of \bcjpsimunu events after the full selection can be found in Section~X. 
 
-The $B$ meson mass range for both \bsmumu and \bhh decays is narrower than the range in the stripping selection in Section~\ref{strippingold}. \bsmumu candidates are required to have a dimuon invariant mass greater than 5320 \mevcc. The motivation comes from mass fit studies that are detailed in Section X. The consequence of this cut is to remove \bdmumu decays, $B_{s}^{0} \to \mu^{+} \mu^{-} \gamma$ backgrounds and backgrounds from mis-identified semi-leptonic and \bhh decays. The expect number of \bdmumu and mis-identified decays after the full selection can be found in Section~X. Similary the \bhh mass window is reduced to remove contributions from mis-identified backgrounds. 
+The $B$ meson mass range for both \bsmumu and \bhh decays is narrower than the range in the stripping selection in Section~\ref{strippingold}. \bsmumu candidates are required to have a dimuon invariant mass greater than 5320 \mevcc. The motivation comes from mass fit studies that are detailed in Section X. The consequence of this cut is to remove \bdmumu decays, $B_{s}^{0} \to \mu^{+} \mu^{-} \gamma$ backgrounds and most backgrounds from mis-identified semi-leptonic and \bhh decays. The expect number of \bdmumu and mis-identified decays after the full selection can be found in Section~X. Similary the \bhh mass window is reduced to remove contributions from mis-identified backgrounds. 
 
 The selection applied to Run~1 and Run~2 is the same for all variables expect the track ghost probability and track \chisqd/ndof. Slightly looser cuts are used for Run~2 to take advantage to changes in the reconstruction that were introduced for Run~2. 
 
 %\begin{landscape}
 %\vspace*{\fill}
-\begin{table}[ht]
+\begin{table}[htbp]
 \begin{center}
 \begin{tabular}{lll}
 Particle                & \bsmumu                                     & \bhh                                 \\
@@ -462,15 +462,42 @@ Daugther $\mu$ or $h$   & Track $\chi^{2}$/ndof < 3 (4)               & Track $\
 %Not a fan of this section :(
 Particle identification (PID) variables are used to refine the selection of \bmumu candidates and to seperate different \bhh decays. 
 
-In the selection of \bmumu decays PID variables are particularly useful to reduce the backgrounds coming from mis-identified semi-leptonic decays and \bhh decays and also help to reduce the number of combinatorial backgroudn events. 
+In the selection of \bmumu decays PID variables are particularly useful to reduce the backgrounds coming from mis-identified semi-leptonic decays and \bhh decays and also help to reduce the number of combinatorial background events. The semi-leptonic decays that contribute to \bsmumu backgrounds are \bdpimunu, \bsKmunu, \bpimumu, \bdpimumu and \bcjpsimunu where \jpsimumu.
 
-The PID requirements to select \bmumu decays in the Branching Fraction and \bsmumu in the lifetime analysis are in Table~\ref{} alongside requirements to seperate \bhh decays. Two types of PID variables, defined in Section~\ref{PID_variables}, are used; DLL variables and ProbNN variables. DLL variables are useful to seperate \bhh decays where $h$ is either a pion or kaon because the varaibles compare different particle hypotheses with the pion hypotheses.
+The PID requirements to select \bmumu decays are shown Table~\ref{} alongside requirements to seperate different \bhh decays. Two types of PID variables, defined in Section~\ref{PID_variables}, are used; DLL variables and ProbNN variables. 
 
-Requirements on ProbNN variables vary with the year of data taking because the classifers used in ProbNN variables are tuned to give the best performance depending on the different data taking conditions in the detector for each year. %The cuts are chosen to give similar efficiencies for each data sets at selecting signal and removing background accross the different years. 
+%A linear combination of ProbNN variables is used to select \bsmumu decays and remove semi-leptonic backgrounds. 
+A linear combination of ProbNN variables is used to select \bsmumu decays and remove semi-leptonic backgrounds, in addition to the isMuon requirement applied in the stripping selection.
+The classifers used in ProbNN variables are tuned to give the best performance depending on the different data taking conditions in the detector for each year. %The efficiency of a cut on the linear combination of ProbNN variables to select \bsmumu decays and to reject background decays depends on the ProbNN tune being used. 
+Since different tunes are used to select \bsmumu decays in 2016 data compared to Run~1 and 2015 data, the requirement on the linear combination of ProbNN variables varies with the year of data taking. The cuts are chosen to give similar efficiencies for each data sets at selecting signal and removing background accross the different years. 
 
-Tighter PID requirements are used to select \bmumu decays for the Branching Fraction measurements compared to those used for the effective lifetime measurement. This is because more mis-identidied decays extend in to the \bd mass window than the \bs mass window therefore tigher requirements are necessary to reduce them to an acceptable level. %However this also reduces the efficiency for selecting \bmumu decays. 
 
-{\it Prehaps a better way for the PID is to put the requirements in the text because the is could be clearer or maybe have two tables one for bsmumu and one for bhh? Also another consideration prehaps it would be clearere to seperate the effective lifetime and the BF after the stripping selection. I could clearly explain that the stripping and loose selection is used for both and therefore the BF decays must be considered in the stripping selection but after that the selection will focus on the effective lifetime. }
+
+The seperation of different \bdkpi and \bskk decays is done via DLL variables. These are useful to seperate \bhh decays where $h$ is either a pion or kaon because the varaibles compare different particle hypotheses with the pion hypotheses. The selection requirements used are the same for each year of data taking.
+
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{lll}
+Decay                    & Particle               & PID requirements \\
+\hline
+\bsmumu (Run~1 and 2015) & $mu^{+}$ and $\mu^{-}$ & ProbNN$\mu$ * (1 - ProbNN$\pi$) * (1 - ProbNN$p$) > 0.2 \\
+\bsmumu (2016)           & $mu^{+}$ and $\mu^{-}$ & ProbNN$\mu$ * (1 - ProbNN$\pi$) * (1 - ProbNN$p$) > 0.4 \\
+\bdkpi and \bskpi       & $K^{+}$                & DLL$_{K\pi}$ $>$ 10 \\
+                         & $\pi{-}$              & DLL$_{K\pi}$ $<$ -10 \\
+\bskk                    & $K^{+}$ and $K^{-}$    & DLL$_{K\pi}$ $>$ 10 \\
+\hline
+\end{tabular}
+\vspace{0.7cm}
+\caption{Particle identification requirements to select \bsmumu decays and to seperate the \bhh decays \bdkpi and \bskpi from \bskk. }
+\label{tab:PID}
+\end{center}
+\end{table}
+
+
+%Tighter PID requirements are used to select \bmumu decays for the Branching Fraction measurements compared to those used for the effective lifetime measurement. This is because more mis-identidied decays extend in to the \bd mass window than the \bs mass window therefore tigher requirements are necessary to reduce them to an acceptable level. %However this also reduces the efficiency for selecting \bmumu decays. 
+
+%{\it Prehaps a better way for the PID is to put the requirements in the text because the is could be clearer or maybe have two tables one for bsmumu and one for bhh? Also another consideration prehaps it would be clearere to seperate the effective lifetime and the BF after the stripping selection. I could clearly explain that the stripping and loose selection is used for both and therefore the BF decays must be considered in the stripping selection but after that the selection will focus on the effective lifetime. }
 
 
 
