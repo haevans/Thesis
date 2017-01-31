@@ -120,87 +120,77 @@ The mis-modelling of particle identification variables can be corrected for usin
 \section{Trigger}
 \label{sec:triggerRequirements}
 
-The trigger is the first step in the selection process and the structure of the trigger is described in Section X. Since \bsmumu decays are very rare a broad set of trigger requirements is used in order to keep a high proportion of \bsmumu decay at this step of the selection. Specific trigger lines are not used in the selection but rather the combined results of a large selection of trigger lines at each level of the trigger. The combinations of trigger lines used are the L0Global, Hlt1Phys and Hlt2Phys triggers. The L0Global trigger combines all trigger lines present in the L0 trigger, it selects an event provided at least one L0 selects it and rejects an event if no L0 trigger selects it. The Hlt1Phys and Hlt2Phys triggers are very similar to the L0Global trigger except that decisions are based only trigger lines related to physics processes and HLT trigger lines used for calibration are excluded. 
+%The trigger is the first step in the selection process and the structure of the trigger is described in Section X. Since \bsmumu decays are very rare a broad set of trigger requirements is used in order to keep a high proportion of \bsmumu decay at this step of the selection. Specific trigger lines are not used in the selection but rather the combined results of a large selection of trigger lines at each level of the trigger. The combinations of trigger lines used are the L0Global, Hlt1Phys and Hlt2Phys triggers. The L0Global trigger combines all trigger lines present in the L0 trigger, it selects an event provided at least one L0 selects it and rejects an event if no L0 trigger selects it. The Hlt1Phys and Hlt2Phys triggers are very similar to the L0Global trigger except that decisions are based only trigger lines related to physics processes and HLT trigger lines used for calibration are excluded. 
 
-Different trigger decisions on these lines are used to select decays for the Branching Fraction and effective lifetime analyses. The Branching fraction selection imposed the loosest trigger requirements by requiring a event to pass the `Dec' decision at each trigger level as illustrated in set `A' of Table X. Trigger decisions are defined in Section X. The effective lifetime analysis has slightly more constrained trigger requirement, requiring an event passes either the `TIS' or `TOS' decision at each level of the trigger as illustrated in set `B' of Table X. The trigger choice for the effective lifetime is motivated by the determination of the acceptance function in Section X. 
+%Different trigger decisions on these lines are used to select decays for the Branching Fraction and effective lifetime analyses. The Branching fraction selection imposed the loosest trigger requirements by requiring a event to pass the `Dec' decision at each trigger level as illustrated in set `A' of Table X. Trigger decisions are defined in Section X. The effective lifetime analysis has slightly more constrained trigger requirement, requiring an event passes either the `TIS' or `TOS' decision at each level of the trigger as illustrated in set `B' of Table X. The trigger choice for the effective lifetime is motivated by the determination of the acceptance function in Section X. 
 %The selection criteria used in trigger lines and the specific lines included in the trigger change with each year of data taking, the dominant lines for triggering \bsmumu decays for each year are shown in Table~X. 
 
-Events are required to be either TIS, triggered independent of signal or TOS, triggered on signal, on the trigger lines used at each level of the trigger.
+%Events are required to be either TIS, triggered independent of signal or TOS, triggered on signal, on the trigger lines used at each level of the trigger.
 %The selection criteria used in trigger lines and the specific lines included in the trigger change with each year of data taking, the dominant lines for triggering \bsmumu decays for each year are shown in Table~X. 
-Slightly different trigger requirements are used to select \bhh decays used to develop and validate the effective lifetime analysis, the same broad trigger lines are used but the requirement on the output varies depending on the use of the \bhh events. The are two sets of trigger requirements, set `A' and `C', in Table~\ref{tab:triggers} are used to select \bhh decays, it will be made clear in later sections where \bhh decays are used which trigger requirements are imposed. 
+%Slightly different trigger requirements are used to select \bhh decays used to develop and validate the effective lifetime analysis, the same broad trigger lines are used but the requirement on the output varies depending on the use of the \bhh events. The are two sets of trigger requirements, set `A' and `C', in Table~\ref{tab:triggers} are used to select \bhh decays, it will be made clear in later sections where \bhh decays are used which trigger requirements are imposed. 
+
+The trigger, described in Section X, it the first step in the selection, it selects events that could contain an interesting physics process and these events are saved to be used in physics analyses. \bsmumu and \bhh candidates are reconstructed from events that have passed the trigger. For each candidate it is useful to know whether is was a particle in that candidate that caused the event to be selected by a trigger line or if it was another part of the event. There are several different decisions that identify this;
+\begin{itemize}
+\item TOS, triggered on signal - a candidate is identified as TOS if information from only the candidate was enough to cause a trigger line to select the event
+\item TIS, triggered independant of signal - a candidate is identified as TIS if another part of the event independant of the candidate was enough to cause a trigger line to select the event
+\item DEC - a candidate is identified as DEC if anything in the event caused a trigger line to select an event. This includes TIS and TOS and also events where a combination of information from the candidate and something else in the event was needed for a trigger line to select the event
+\end{itemize}
+
+\bsmumu decays are very rare decays and therefore trigger requirements used to select these decays are chosen to keep a high efficiency for selecting \bsmumu decays are this step of the selection. The trigger lines L0Global, Hlt1Phys and Hlt2Phys are used and candidates are required to be TOS or TIS at each level of the trigger. These trigger lines combine the decisions of many individual lines used in the trigger which allows a high efficiency to be acheived for selecting \bsmumu decays. The L0Global trigger combines all trigger lines present in the L0 trigger, it selects an\
+ event provided at least one L0 selects it and rejects an event if no L0 trigger selects it. The Hlt1Phys and Hlt2Phys triggers are very similar to the L0Global trigger except that decisions are based only trigger lines related to physics processes and HLT trigger lines used for calibration are exclude.
+
+
+Slightly different trigger decisions are used to select \bhh decays but the same trigger lines are used. To be useful as a validation channel the efficiency of the trigger requirements as a function of the decay time needs to be similar to the \bsmumu triggers, this is acheived by requiring \bhh decays to be TIS at each level of the trigger. %\bhh candidates are required to be TIS at each level of the trigger, this trigger decision is used to ensure the trigger efficiency to select \bhh decays is similar to the \bsmumu trigger efficiency. 
+
+The requirements imposed on the trigger to select \bsmumu and \bhh decays is shown in Table~ref{tab:triggers}.
 
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{ll}
 \hline
 Trigger Line	& Trigger decision \\ \hline
-\multicolumn{2}{c}{{\it set A}} \\ \hline
-L0Global	& Dec\\
-Hlt1Phys	& Dec \\
-Hlt2Phys	& Dec \\ \hline
-\multicolumn{2}{c}{{\it set B}} \\ \hline
+%\multicolumn{2}{c}{{\it set A}} \\ \hline
+%L0Global	& Dec\\
+%Hlt1Phys	& Dec \\
+%Hlt2Phys	& Dec \\ \hline
+\multicolumn{2}{c}{{\it Select \bsmumu decays}} \\ \hline
 L0Global	& TIS or TOS \\
 Hlt1Phys	& TIS or TOS \\
 Hlt2Phys	& TIS or TOS \\ \hline
-\multicolumn{2}{c}{{\it set C}} \\ \hline
+\multicolumn{2}{c}{{\it Select \bhh decays}} \\ \hline
 L0Global	& TIS\\
 Hlt1Phys	& TIS \\
 Hlt2Phys	& TIS \\ \hline
 \end{tabular}
 \vspace{0.7cm}
-\caption{Trigger lines used to select \bsmumu and \bhh decays. Set `A' is used to select decays for the Branching Fraction analysis. Set `B' is used to select \bsmumu decays for the effective lifetime analysis. Sets `A' and `C' are used to select \bhh decays used to develop the \bsmumu effective lifetime analysis.}
+\caption{Trigger lines used to select \bsmumu and \bhh decays.}% Set `A' is used to select decays for the Branching Fraction analysis. Set `B' is used to select \bsmumu decays for the effective lifetime analysis. Sets `A' and `C' are used to select \bhh decays used to develop the \bsmumu effective lifetime analysis.}
 \label{tab:triggers}
 \end{center}
 \end{table}
 
-% An alternative table and therefore the text needs editing.
-\afterpage{
-\begin{landscape}
-\vspace*{\fill}
-\begin{table}[htbp]
+
+%There was a problem with the implementation of the Hlt2Phys Dec decision in 2016 simulated events.%, the decision returned was always 1.  
+%This only affect the selection of \bhh decays. In order to emulate this trigger a combination of Hlt2 lines that select \bhh events, listed in Table~\ref{tab:HltDecEmulation}, is used instead of HLT2Phys when the Dec decision is required. 
+
+%\begin{table}[ht]
 %\begin{center}
-\centering
-\begin{tabular}{lllll}
-\hline
-	   &\multicolumn{4}{c}{Trigger decision} \\ \hline
-\cline{2-5}
-Trigger Line & Branching Fraction analysis & \bsmumu effective lifetime &\multicolumn{2}{c}{\bhh effective lifetime} \\
-             &                             &                            & set A      & set B \\
-\cline{4-5}
-L0Global	& Dec                      & TIS or TOS                 & TIS        & Dec \\
-Hlt1Phys	& Dec                       & TIS or TOS                 & TIS        & Dec \\
-Hlt2Phys	& Dec                      & TIS or TOS                 & TIS        & Dec \\ \hline
-\end{tabular}
-\vspace{0.7cm}
-\caption{Trigger lines used to select \bsmumu and \bhh decays. Set `A' is used to select decays for the Branching Fraction analysis. Set `B' is used to select \bsmumu decays for the effective lifetime analysis. Sets `A' and `C' are used to select \bhh decays used to develop the \bsmumu effective lifetime analysis.}
-\label{tab:triggers2}
+%\begin{tabular}{l}
+%\hline
+%\bhh trigger lines \\ \hline
+%Hlt2Topo2BodyDecision Dec  \\
+%Hlt2B2HH Lb2PPiDecision Dec \\
+%Hlt2B2HH Lb2PKDecision Dec \\
+%Hlt2B2HH B2PiPiDecision Dec \\
+%Hlt2B2HH B2PiKDecision Dec \\
+%Hlt2B2HH B2KKDecision Dec  \\
+%Hlt2B2HH B2HHDecision Dec \\ \hline
+
+%\end{tabular}
+%\vspace{0.7cm}
+%\caption{Trigger lines used to emulate the Hlt2Phys$\_$Dec decision for \bhh data and simulated events.}
+%\label{tab:HltDecEmulation}
 %\end{center}
-\end{table}
-\vspace*{\fill}
-\end{landscape}
-}
-There was a problem with the implementation of the Hlt2Phys Dec decision in 2016 simulated events.%, the decision returned was always 1.  
-This only affect the selection of \bhh decays. In order to emulate this trigger a combination of Hlt2 lines that select \bhh events, listed in Table~\ref{tab:HltDecEmulation}, is used instead of HLT2Phys when the Dec decision is required. 
-
-\begin{table}[ht]
-\begin{center}
-\begin{tabular}{l}
-\hline
-\bhh trigger lines \\ \hline
-Hlt2Topo2BodyDecision Dec  \\
-Hlt2B2HH Lb2PPiDecision Dec \\
-Hlt2B2HH Lb2PKDecision Dec \\
-Hlt2B2HH B2PiPiDecision Dec \\
-Hlt2B2HH B2PiKDecision Dec \\
-Hlt2B2HH B2KKDecision Dec  \\
-Hlt2B2HH B2HHDecision Dec \\ \hline
-
-\end{tabular}
-\vspace{0.7cm}
-\caption{Trigger lines used to emulate the Hlt2Phys$\_$Dec decision for \bhh data and simulated events.}
-\label{tab:HltDecEmulation}
-\end{center}
-\end{table}
+%\end{table}
 
 \section{Cut Based Selection}
 \label{sec:cut_based_sel}
@@ -293,7 +283,7 @@ $K^{+}$                 &                                           &           
 \label{strippingstudies}
 
 
-The efficiencies of the stripping lines for selecting \bmumu, \bhh and \bujpsik decays are shown in Table \ref{tab:Run1strippingEff}. The efficiencies are evaluated using 2012 sim06 simulated events and a loose set of trigger requirements (set A from Table~\ref{tab:triggers}) have been imposed. This set of trigger requirements is used in the Branching Fraction measurement in Chapter X. Only cuts that are applied to select \bmumu decays are evaluated, the efficiencies for the isMuon and track $\chi^{2}$/$ndof$ are not included because decays that do not pass these requirements are not included in the samples of simulated events. 
+The efficiencies of the stripping lines for selecting \bmumu, \bhh and \bujpsik decays are shown in Table \ref{tab:Run1strippingEff}. The efficiencies are evaluated using 2012 sim06 simulated events and a loose set of trigger requirements has been imposed. Candidates are required to pass the DEC decision of the L0Global, Hlt1Phys and Hlt2Phys trigger lines because these trigger requirements are used in the Branching Fraction measurement in Chapter X. Only cuts that are applied to select \bmumu decays are evaluated, the efficiencies for the isMuon and track $\chi^{2}$/$ndof$ are not included because decays that do not pass these requirements are not included in the samples of simulated events. 
 
 The selection efficiencies are similar across the different decays for the selection cuts that are shared with the \bmumu selection, and the total efficiency is around 70~$\%$ for all decays. The similarity of selection efficiencies across the different decays is further illustrated in Figure~\ref{fig:ratio_plots} which shows the ratio of the efficiencies $B^{0}_{(s)}\to\mu^{+} \mu^{-}$ and $B^{+}\to J/\psi K^{+}$ where each cut has been applied independently.  With the exception of the IP $\chi^{2}$ cuts on the daughter particles, the ratio of efficiencies is well within $2\%$ of~1 for the range of cuts values shown. The ratio of the \bsmumu and \bujpsik efficiencies for the daughter particle IP $\chi^{2}$ markedly deviates from unity, showing that the IP $\chi^{2}$ distribution of the muons and kaon are very different as seen previous in \cite{Diego}. If the other selection cuts are applied to the simulated events before the daughter IP $\chi^{2}$ requirement the ratio of \bmumu and \bujpsik efficiencies is much closer to~1. 
 
