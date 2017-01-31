@@ -418,7 +418,7 @@ Efficiency after all striping line cuts      & (73.75 $\pm$  0.07) $\%$  & ( $\p
 
 The complete list of selection cuts applied in the cut based selection to select \bsmumu and \bhh decays in Run~1 and Run~2 data are listed in Tables~\ref{}. The stripping selection cuts from Table~\ref{} are included with the $B$ mesons FD \chisqd and daughter IP \chisqd requirements updated to the looser values and the selection of \bmumu decays includes the momentum, ghost track probability and decay time cuts made in the \bhh stripping line, but were absent in the \bmumu stripping line.
 
-Additional selection requirements are applied after the stripping to remove specific backgrounds. A lower bound is placed on the $B$ meson transverse momentum to remove pairs of muons originating from $pp \to p\mu\mu p$ decays and a \jpsi veto is used to remove backgrounds from \bcjpsimunu decays. The semi-leptonic \bcjpsimunu decays, where \jpsimumu, contribute to the background of \bmumu decays when a muon from the \jpsi forms a good vertex with the muon from the $B_{c}^{+}$ decay. Due to the high mass of the $B_{c}^{+}$ this could place mis-reconstructed candidates within the \bs mass window. A `jpsi veto' can be used to remove background events from \bcjpsimunu decays. The veto works by removing events where one muon from the \bmumu candidate combined with any other oppositely charged muon in the event has $|m_{\mu\mu} - m_{\jpsi}| < 30$~\mevcc. The veto has a rejection power of X  $\%$ on \bcjpsimunu events that have passed \bmumu selection cuts in Table~\ref{} and rejects only  $\%$ of \bmumu signal events. The expected number of \bcjpsimunu events after the full selection can be found in Section~X. 
+Additional selection requirements are applied after the stripping to remove specific backgrounds. A lower bound is placed on the $B$ meson transverse momentum to remove pairs of muons originating from $pp \to p\mu\mu p$ decays and a \jpsi veto is used to remove backgrounds from \bcjpsimunu decays. The semi-leptonic \bcjpsimunu decays, where \jpsimumu, contribute to the background of \bmumu decays when a muon from the \jpsi forms a good vertex with the muon from the $B_{c}^{+}$ decay. Due to the high mass of the $B_{c}^{+}$ this could place mis-reconstructed candidates within the \bs mass window. A `\jpsi veto' can be used to remove background events from \bcjpsimunu decays. The veto works by removing events where one muon from the \bmumu candidate combined with any other oppositely charged muon in the event has $|m_{\mu\mu} - m_{\jpsi}| < 30$~\mevcc. The veto has a rejection power of X  $\%$ on \bcjpsimunu events that have passed \bmumu selection cuts in Table~\ref{} and rejects only  $\%$ of \bmumu signal events. The expected number of \bcjpsimunu events after the full selection can be found in Section~X. 
 
 The $B$ meson mass range for both \bsmumu and \bhh decays is narrower than the range in the stripping selection in Section~\ref{strippingold}. \bsmumu candidates are required to have a dimuon invariant mass greater than 5320 \mevcc. The motivation comes from mass fit studies that are detailed in Section X. The consequence of this cut is to remove \bdmumu decays, $B_{s}^{0} \to \mu^{+} \mu^{-} \gamma$ backgrounds and most backgrounds from mis-identified semi-leptonic and \bhh decays. The expect number of \bdmumu and mis-identified decays after the full selection can be found in Section~X. Similarly the \bhh mass window is reduced to remove contributions from mis-identified backgrounds. 
 
@@ -446,7 +446,7 @@ Daughter $\mu$ or $h$   & Track $\chi^{2}$/ndof < 3 (4)               & Track $\
                         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc    \\
                         & $p$ < 500 \gevc                             & $p$ < 500 \gevc                       \\
                         & ghost probability $<$ 0.3 (0.4)             & ghost probability $<$ 0.3 (0.4)   \\
-                        & $|m_{\mu\mu} - m_{\jpsi}| < 30$~\mevcc        &$|m_{\mu\mu} - m_{\jpsi}| < 30$~\mevcc    \\
+                        & $|$m_{\mu\mu} - m_{\jpsi}$| $<$ 30$~\mevcc        &$|$m_{\mu\mu} - m_{\jpsi}$| $<$ 30$~\mevcc    \\
                         & isMuon = True                               &  -                                \\
 
 \hline
@@ -512,24 +512,70 @@ Decay                    & Particle               & PID requirements \\
 
 
 \section{Multivariate Classifiers}
-\label{sec:offline_sel}
-The output of the stripping selection still includes many background decays, further cuts shown in Table~\ref{} reduce the background decays. Some selection cuts are designed to remove specific background decays and the selection for \bsmumu decays used in the Branching Fraction and effective lifetime analyses starts to diverge slightly.
+\label{sec:MVC}
 
-The BDTS is a multivariate classifier that is designed to reduce the number of combinatorial background events. It is a Boosted Decision Tree (BDT) (see Section~\ref{} for a detailed description) that is trained on \bsmumu and \bbbarmumux simulated decays that have passed the \bmumu selection requirements in Table~\ref{}. The BDTS uses variables similar to those in the stripping selection to classify events;
+The selection described so far remove a large number of background candidates however because \bsmumu decays occur very rarely the data is still dominated by long lived combinatorial background from \bbbarmumux decays. To increase the signal purity of the data multivariate classifiers are used to separate signal from background events. 
+
+A multivariate classifier is an algorithm that learns differences between signal and background candidates in the following manner, firstly the classifier is given two input samples, one contain only signal decays and the other containing just background decays and a set of input variables. These input variables have different distributions for signal and background events. Then the classifier uses the distributions of the input variables with its knowledge of which events are signal and background to learn the difference between the two types of events. Finally the algorithm is then be applied to a data set containing an unknown mixture of signal and background events and distinguish between them. For each event the algorithm produces a number, typically between -1 and +1, where high numbers indicate signal-like candidates and low numbers indicating background-like candidates. A cut is placed on the output of the classifier to remove background events with a classifier response less than a particular value and the remaining data set has a higher purity for signal events.
+
+Two multivariate classifiers are used to select \bsmumu decays. Both classifiers are a type called Boosted Decision Trees (BDT) that are described in Section~\ref{sec:GeneralBDT}. A range of different classifiers were investigated but BDTs preformed the best at separating signal and background candidates. 
+
+The first classifier (Sect. X), called the BDTS, is used to remove candidates that are very unlikely to be signal and is has  high efficiency to select \bsmumu decays. The second classifier (Sect. X), called simply the BDT, is the final step in the selection process, the output is used to remove almost all remaining background candidates and has much lower efficiency to select signal events compared to the BDTS. The cuts applied to the output of this classifier is optimised to give the lowest expected uncertainty on the measurement of the \bsmumu effective lifetime (Sect. X).
+
+Both classifiers were developed for the measurement of the \bmumu Branching Fractions. In the selection \bsmumu decays for this analysis the second classifier is used to classify candidates into 8 bins containing increasing proportions of signal candidates, not candidates are removed based on the output of the second BDT. Therefore the BDTS is necessary to reduce the number of background events to a more manageable level. The use of a single classifier was investigated to  select candidates to measure the \bsmumu effective lifetime however it was found that the two classifiers developed for the Branching Fraction measurement performed best. 
+
+\subsection{Boosted Decision Trees}
+\label{sec:GeneralBDT}
+A BDT is made up of the combined outputs of separate decision trees. A decision tree begins with a data sample, where each candidate is know to be signal or background and a set of variables describing these events. The decision tree applies a cut on a variable that will be the most effective at separating the signal and background in the sample and creates two sub-samples. Another cut is then applied on each of the sub-samples to further separate signal from background. This process is repeated until either a certain number of cuts, defined as the depth of the tree, or the number of candidates in each sub-sample has reached a minimum number. Each sub-sample produced at the end of the tree is called a leaf. The tree then uses the knowledge of which candidates are signal or background to assign a value of +1 or -1 to every candidate. A candidate is given a value +1 if it is in a leaf where the majority is signal and the value -1 if it is in a leaf that has a majority of candidates are background. The final decisions made by the tree are not prefect, some signal (background) events will be mis-classified as background events and given the value of -1 (+1). 
+
+One decision tree on its own is often not particularly good at classifying events, there is no way to correct mis-classified events in the leaves, and it is particularly sensitive to statistical fluctuations in the training samples. A BDT combines the output of numerous decision trees to improve the classification of events and reduce the dependance of the final decisions on statistical fluctuations. A BDT starts with one decision tree and then assigns weights to events in the sample depending on whether the output of the decision tree classified the events correctly or incorrectly. The weighted sample is then used as the input for the training of the next decision tree. The weights are designed so that the next tree is more likely to correctly classify previously mis-classified events. This process is repeated until a certain number of trees have been trained. The re-weighting process is known as boosting and the weights applied to the samples are taken into account when combining the output of each decision tree into the overall output of the BDT. The output of a BDT will be a number between -1 and +1 where high numbers indicate signal-like candidates and low numbers indicating background-like candidates.
+
+{\bf This is only really relevant if I describe the BDT training that I did. Start:}
+
+The ability of a BDT to correctly identify signal and background candidates depends on three main factors;
 \begin{itemize}
-\item impact parameter \chisqd of the \bds
-\item vertex \chisqd of the \bsd
-\item direction cosine of 
+\item the size of the training samples - a large training sample is useful to prevent the BDT from being sensitive to statistical fluctuations and contains more information the classifier can use to learn the difference between signal and background
+\item the input variables - different distributions in the input variables for signal and background candidates enable the classifier to easily separate the types of candidates, the overall performance is insensitive to poorly discriminating variables that are included
+\item parameters that dictate the BDT training - the training of a BDT is specified by several parameters; the number of trees, the tree depth, the minimum number of events a leaf can contain;, the `speed’ at which the boosting occurs and the number of cut values that a tree tries for a variable before making a decision.
+\end{itemize}
+
+These three factors affect the performance of the BDT however the importance of each varies but together they can be used to prevent overtraining of the BDT. Overtraining is when the BDT is very sensitive to the statistical fluctuations in the training sample and is extremely accurate at classifying the candidates in the training sample by preforms poorly at classifying candidates in a statistically independent sample. Although this is less common in BDT than single decision trees, it can be avoided by having a sufficiently large training sample or by limiting the depth of trees or the number of trees in the BDT. 
+
+{\bf End.}
+
+The TMVA package is use to develop and train the BDTs, the package provides several different methods of boosting that can be used. The adaptive boosting method was found to produce the most effective BDT. %READ WHAT SIMON WROTE BECAUSE I DON’T UNDERSTAND TMVA! :( , in the adaptive boosting method the weight assigned during boosting comes form the number of incorrectly classified candidates. The weights have the form 
+
+%\begin{equation}
+%\alpha = ???
+%\end{equation}
+
+%where. Therefore incorrectly assigned candidates are given a higher weight than correctly classified candidates. The `speed’ at which the boosting occurs is controlled by a the parameter $\beta$ where $\alpha \rightarrow \alpha^{\beta}$, this can be specified in the training of the decision tree, a large number of boosting steps can improve the performance of the BDT.
+
+
+\subsection{Training signal and background samples}
+Simulated \bsmumu and \bbbarmumux decays are used to provide large signal and background training samples for both BDTs. In data \bsmumu candidates in the mass range 5431 to 6550 \mevcc consist almost entirely of \bbbarmumux decays, however the number of candidates in this mass range is too small to be a useful as sample of background candidates to train a BDT with comparable preformance to one trained entirely on simulated decays. 
+The simulated sample \bbbarmumux decays corresponds to the background expected with 7~\fb of data from $pp$ collisions at $\sqrt{s}$ = 8~\tev. The production of such a large sample requires a lot of space to be saved, therefore several measures were taken to reduce the size needed to save the simulated \bbbarmumux decays. The cuts, listed in Table~\ref{tab:MC_decays}, were applied to the simulated decays as they were generated to reduce the number of events saved on disk. Also the stripping selection cuts in Table~\ref{tab:PreviousStripping} were applied and candidates that did not pass the stripping selection were not saved. Unfortunately the \bbbarmumux sample therefore does not include candidates that are selected by the looser stripping selection described in Section~\ref{}. In order to gain the best BDT performance on data the same cuts should be applied to data that are applied to the samples used to train the BDT. Therefore the original cuts of and must be used to select \bsmumu candidates. 
+The complete list of selection requirements applied to the training samples used to develop both BDTs are listed in Table~\ref{}, the same selection is applied to \bsmumu and \bbbarmumux decays. %loose particle identification requirements are included to remove obvious background candidates. What exactly did Matteo apply, because Siim says bsmumu and bhh candidates are treated identically??
+ 
+\subsection{The BDTS}
+%The output of the stripping selection still includes many background decays, further cuts shown in Table~\ref{} reduce the background decays. Some selection cuts are designed to remove specific background decays and the selection for \bsmumu decays used in the Branching Fraction and effective lifetime analyses starts to diverge slightly.
+
+%The BDTS is a multivariate classifier that is designed to reduce the number of combinatorial background events. It is a Boosted Decision Tree (BDT) (see Section~\ref{} for a detailed description) that is trained on \bsmumu and \bbbarmumux simulated decays that have passed the \bmumu selection requirements in Table~\ref{} and additional particle identification cuts listed in Table X. 
+The BDTS uses variables similar to those in the stripping selection to classify events;
+\begin{itemize}
+\item impact parameter \chisqd of the \bs
+\item vertex \chisqd of the \bs
+\item direction cosine of \bs
 \item distance of closest approach of the muons
 \item minimum impact parameter \chisqd of the muons with respect to all primary vertices in the event
-\item impact parameter of the \bsd, this is the distance of closest approach of the $B$ to the primary vertex
+\item impact parameter of the \bs, this is the distance of closest approach of the $B$ to the primary vertex
 \end{itemize}
-The BDTS is applied to all candidates passing the \bmumu, \bhh and \bujpsik stripping lines, and candidates are required to have a BDTS value above 0.05. The chosen cut value has a efficiency of X $\%$ on \bsmumu decays and reject X $\%$ of \bbbarmumux decays. 
+The BDTS is applied to all candidates passing the \bmumu and \bhh stripping lines, and candidates are required to have a BDTS value above 0.05. The chosen cut value has a efficiency of X $\%$ on \bsmumu decays and reject X $\%$ of \bbbarmumux decays. 
 
 
 
 
-The simulated \bbbarmumux decays are used to train the multivariate classifier (Sect.~\ref{}) used in the Branching Fraction and effective lifetime analyses and variables included within the classifier (Sect.~\ref{}) as well as the BDTS. The simulated \bbbarmumux decays had tighter cuts on the FD \chisqd of the \bsd and minimum IP \chisqd of the muons than those listed Table~\ref{} applied when it was created. Events that did not pass those cuts are not available for use in the classifier training, therefore these must be applied to all data and simulated decays to ensure the most effective and reliable performance of the multivariate classifiers used in the analyses. 
+%The simulated \bbbarmumux decays are used to train the multivariate classifier (Sect.~\ref{}) used in the Branching Fraction and effective lifetime analyses and variables included within the classifier (Sect.~\ref{}) as well as the BDTS. The simulated \bbbarmumux decays had tighter cuts on the FD \chisqd of the \bsd and minimum IP \chisqd of the muons than those listed Table~\ref{} applied when it was created. Events that did not pass those cuts are not available for use in the classifier training, therefore these must be applied to all data and simulated decays to ensure the most effective and reliable performance of the multivariate classifiers used in the analyses. 
 
 
 
