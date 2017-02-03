@@ -597,7 +597,43 @@ The BDTS uses input variables similar to those in the stripping selection to cla
 \item minimum impact parameter \chisqd of the muons with respect to all primary vertices in the event
 \item impact parameter of the \bs, this is the distance of closest approach of the $B$ to the primary vertex
 \end{itemize}
-The signal and background samples used to train the BDTS are simulated \bsmumu decays and \bsmumu candidates in Run~1 data from the mass ranges 4800 - 5000 \mevcc and 5500 - 6000 \mevcc. The selection cuts listed in Table~\ref{tab:BDTSpresel} are applied to the training samples and the training parameters used in the BDT are listed in Table~\ref{tab:}. The output of the BDTS is flattened between 0 and 1 so that signal is uniformly distributed across the range and background is peaked at zero. The BDTS is applied to all candidates passing the \bmumu and \bhh stripping lines, and candidates are required to have a BDTS value above 0.05. The chosen cut value has a efficiency of X $\%$ on \bsmumu decays and reject X $\%$ of \bbbarmumux decays. This is illustrated in Figure X. 
+The signal and background samples used to train the BDTS are simulated \bsmumu decays and \bsmumu candidates in Run~1 data from the mass ranges 4800 - 5000 \mevcc and 5500 - 6000 \mevcc. The selection cuts listed in Table~\ref{tab:BDTSpresel} are applied to the training samples and the training parameters used in the BDT are listed in Table~\ref{tab:}. The output of the BDTS is flattened between 0 and 1 so that signal is uniformly distributed across the range and background is peaked at zero as illustrated in Figure~\ref{fig:FlatteningBDTS}. The BDTS is applied to all candidates passing the \bmumu and \bhh stripping lines, and candidates are required to have a BDTS value above 0.05. The chosen cut value has a efficiency of X $\%$ on \bsmumu decays and reject X $\%$ of \bbbarmumux decays. This is illustrated in Figure~\ref{fig:BDTSpreformance}. 
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:BDTSsig}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:BDTSbkg}
+    \end{subfigure}
+    \caption{Signal MC and and background (from somewhere) showing the reponses for the BDTS and how is it flattened.}
+    \label{fig:FlatteningBDTS}
+\end{figure}
+
+\begin{figure}
+    \centering
+   % \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        %\caption{ }
+       % \label{fig:BDTSsig}
+    %\end{subfigure}
+   % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+   % \begin{subfigure}[b]{0.4\textwidth}
+      % \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+      %  \caption{ }
+     %   \label{fig:BDTSbkg}
+  %  \end{subfigure}
+    \caption{Something to illustrate how good the BDTS is at working. I think prehaps the BsMuMu stripping line and the B2hh stripping line with all selection applied, but a different mass range to make it clear, and then with and without the BDTS cut. Prehaps no PID requirements to seperate b2hh decays as well.}
+    \label{fig:BDTSpreformance}
+\end{figure}
 
 \begin{table}[htbp]
 \begin{center}
@@ -642,7 +678,25 @@ nCuts & 20 \\
 
 The global BDT is the final step in selecting \bsmumu decays and it is ver effective at seperating them from long lived combinatorial background decays. The discrimintaing power schieved by the global BDT is mostly dependant on isolation variables. Isolation variables, or just isolations, provide a measure of how isolated or far away each muon from a \bsmumu candidate is from other track in the event. The tracks of the muons from a rel \bsmumu decays will be, in general, far from other trakcs in the event because the \bsmumu decays tree contains no other tracks apart from the muons. However combinatorial background arises from semi-leptonic decays therefore muon tracks are likely to be close to other tracks that have originated from the same decay tree as the muon. Various different definitions of isolations have been used acorss different experiments from D0 and CDF to ATLAS, CMS and LHCb. These variables are very useful in the selection of very rare decays like \bsmumu because they enable background to bve removed whilst keeping a high efficiency for signal decays.
 
-Two isolation variables are used in the global BDT, one compares long tracks in the event to muons in \bsmumu candidates and the other compares VELO tracks in the event to the muons. The definition of the track types can be found in Section X. The isolation variables are built from the output of BDTs. For each type of track a BDT is trained on simulated \bsmumu and \bbbarmumux decays using a set of input variables that describe track and vertex properties. The BDT compares the $\mu^{+}$ from a \bsmumu candidate with all other tracks in the event, excluding the track of the $\mu^{-}$, and gives an output, {\it iso$_{\mu^{+}}$(track)}, for each possible $\mu^{+}$ - track pairing. The sample process is repeated for the $\mu^{-}$. The BDT is designed to produce high output values for muons from \bbbarmumux decays and a low value for muons from \bsmumu decays. The isolation variable of a \bsmumu candidates is then composed of the sum of the highest values of {\it iso$_{\mu^{+}}$(track)} and {\it iso$_{\mu^{-}}$(track)} for any tracks in the event. The input cariables used to the Long track and VELO track isolations are listes in Appendix~\ref{}. The seperation power of these isolations are shown in Figure~\ref{}. Full details of the isolation development can be found in~\ref{}.
+Two isolation variables are used in the global BDT, one compares long tracks in the event to muons in \bsmumu candidates and the other compares VELO tracks in the event to the muons. The definition of the track types can be found in Section X. The isolation variables are built from the output of BDTs. For each type of track a BDT is trained on simulated \bsmumu and \bbbarmumux decays using a set of input variables that describe track and vertex properties. The BDT compares the $\mu^{+}$ from a \bsmumu candidate with all other tracks in the event, excluding the track of the $\mu^{-}$, and gives an output, {\it iso$_{\mu^{+}}$(track)}, for each possible $\mu^{+}$ - track pairing. The sample process is repeated for the $\mu^{-}$. The BDT is designed to produce high output values for muons from \bbbarmumux decays and a low value for muons from \bsmumu decays. The isolation variable of a \bsmumu candidates is then composed of the sum of the highest values of {\it iso$_{\mu^{+}}$(track)} and {\it iso$_{\mu^{-}}$(track)} for any tracks in the event. The input cariables used to the Long track and VELO track isolations are listes in Appendix~\ref{}. The seperation power of these isolations are shown in Figure~\ref{fig:Isolations}. Full details of the isolation development can be found in~\ref{}.
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:long}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:velo}
+    \end{subfigure}
+    \caption{Long track and Velo track isolation distributions of signal and background passing cuts in Table X.}
+    \label{fig:Isolations}
+\end{figure}
 
 The isolations are used along with five other varibles in the global BDT. The full list of input variables used are;
 \begin{itemize}
@@ -655,18 +709,115 @@ The isolations are used along with five other varibles in the global BDT. The fu
 \item angle between the momentum vector of the \bs and the vector connecting the production and decay vertices of the \bs
 \end{itemize}
 
-These variables were chosen by training a BDT beginign with the most discrimintaing variable, the Long track isolation, and adding variables to determine which improved the performance to the classifer. Only variables that improved the performance were included in the global BDT. The training parameters used in the BDT are listed in Table~\ref{}. These parameters were chosen by scanning across a range of variables and chosing those that gave the best performance. 
+A comparison of the signal and background distributions of the input variables are shown in Figures~\ref{fig:Isolations} and \ref{fig:BDTvars}. These variables were chosen by training a BDT beginign with the most discrimintaing variable, the Long track isolation, and adding variables to determine which improved the performance to the classifer. Only variables that improved the performance were included in the global BDT. The training parameters used in the BDT are listed in Table~\ref{tab:BDTtrainingparams}. These parameters were chosen by scanning across a range of variables and chosing those that gave the best performance. 
 
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+        %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:}
+    \end{subfigure}
+    \caption{Distributions of variables that go into the BDT after some set of selection cuts. Do I want another one that is for the BDTS?}
+    \label{fig:BDTvars}
+\end{figure}
+
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Parameter & Value \\ \hline
+nTrees & 1000 \\
+%nEventsMin & 400 \\
+MinNodeSize & 1$\%$ \\
+MaxDepth & 3 \\
+%NNodesMax = 100000 \\
+$\beta$ & 0.75 \\
+nCuts & 30 \\
+\hline
+\end{tabular}
+\vspace{0.7cm}
+\caption{Training parameters used to specify the train of the global BDT.}
+\label{tab:BDTtrainingparams}
+\end{center}
+\end{table}
 
  %The global BDT was trained on simulated \bsmumu and \bbbarmumux decays with 2012 data taking conditions for the signal and background samples. The simulated decas had to pass the selection requirements listed in Table~\ref{}. Independant samples were used for training and testing the global BDT. 
 
 
 Simulated \bsmumu and \bbbarmumux decays are used to provide large signal and background training samples for the global BDT. In data \bsmumu candidates in the mass range 5431 to 6550 \mevcc consist almost entirely of \bbbarmumux decays, however the number of candidates in this mass range is too small to be a useful as sample of background candidates to train a BDT with comparable preformance to one trained entirely on simulated decays. 
 The simulated sample \bbbarmumux decays corresponds to the background expected with 7~\fb of data from $pp$ collisions at $\sqrt{s}$ = 8~\tev. The production of such a large sample requires a lot of space to be saved, therefore several measures were taken to reduce the size needed to save the simulated \bbbarmumux decays. The cuts, listed in Table~\ref{tab:MC_decays}, were applied to the simulated decays as they were generated to reduce the number of events saved on disk. Also the stripping selection cuts in Table~\ref{tab:PreviousStripping} were applied and candidates that did not pass the stripping selection were not saved. Unfortunately the \bbbarmumux sample therefore does not include candidates that are selected by the looser stripping selection described in Section~\ref{}. In order to gain the best BDT performance on data the same cuts should be applied to data that are applied to the samples used to train the BDT. Therefore the original cuts of and must be used to select \bsmumu candidates. 
-The complete list of selection requirements applied to the training samples used to develop global BDT are listed in Table~\ref{}, the same selection is applied to \bsmumu and \bbbarmumux decays. Independant samples were used for training and testing the global BDT. 
+The complete list of selection requirements applied to the training samples used to develop global BDT are listed in Table~\ref{tab:BDTpresel}, the same selection is applied to \bsmumu and \bbbarmumux decays. Independant samples were used for training and testing the global BDT. 
  
-In the same way as the BDTS the final output of the global BDT is flattened to have a response between 0 and 1 that is uniform for signal and the background peaks at zero. The flattening is important for the measurement of the \bmumu Branching Fractions where a simultaneous fit is applied to the dimuon invariant mass in bins of BDT, flattening the BDT output enavke bins containing equal proportions of signal decays to be easily created. 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{ll}
+\hline
+\multicolumn{2}{c}{Selection applied to BDT training samples.} \\ \hline
+\bs FD $\chi^{2}$ $>$ 225 &$\mu^{\pm}$ $p_{T}$ $>$ 500 \mevc \\
+\bs IP $\chi^{2}$ $<$ 25  & $\mu^{\pm}$ track $\chi^{2}$/ndof $<$ 3    \\
+\bs Vertex $\chi^{2}$/ndof $<$ 9    &$\mu^{\pm}$ minimum IP $\chi^{2}$ $>$ 25   \\
+\bs DOCA $<$ 0.3 mm    & $\mu^{\pm}$ 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\
+\bs $\tau$ $<$ 13.248 \ps  &$\mu^{\pm}$  $p$ $<$ 500 \gevc  \\
+\bs $p_{T}$ $>$ 500 \mevc  &  \\ %\bs DIRA $>$ 0 &
+isMuon == 1 & B$\_$Hlt1Phys$\_$Dec ==1\\
+B$\_$L0Global$\_$Dec ==1 & B$\_$Hlt2Phys$\_$Dec ==1 \\
+4900 $<$ M$_{\mu^{+}\mu^{-}}$ < 6000 \mevcc & \\
+\hline
+\end{tabular}
+\vspace{0.7cm}
+\caption{Selection cuts applied to select candidates for signal and background samples used to train the BDT.}
+\label{tab:BDTpresel}
+\end{center}
+\end{table}
 
+In the same way as the BDTS the final output of the global BDT is flattened to have a response between 0 and 1 that is uniform for signal and the background peaks at zero, as shown in Figure~\ref{fig:FlatteningBDT}. The flattening is important for the measurement of the \bmumu Branching Fractions where a simultaneous fit is applied to the dimuon invariant mass in bins of BDT, flattening the BDT output enavke bins containing equal proportions of signal decays to be easily created. 
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:BDTsig}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \caption{ }
+        \label{fig:BDTbkg}
+    \end{subfigure}
+    \caption{Signal MC and and background (from somewhere) showing the reponses for the BDT and how is it flattened.}
+    \label{fig:FlatteningBDT}
+\end{figure}
 
 
 \subsection{Global BDT cut optimisation}
@@ -683,9 +834,28 @@ R = \frac{\epsilon(BDT > X)}{\epsilon(BDT > 0.55)}
 \end{equation}
 where $\epsilon(BDT > X)$ is the efficiency of the cuts BDT $>$ X. The full selection requirement are applied to the simulated decays before taking the effieicny. The ratios for the different cuts values are shown in Table~\ref{tab:EfficiencyRatioCombBG}. Simulated decays had to be used to compute the efficiencies rather than data because there were too few candidates left after the higher BDT cuts were applied to data to enable meaningful studies. 
 
-The mass distribution of the combinatorial background is a decaying exponential, it was observed from the simualted \bbbarmumux decays that the slope of the mass dustrubution changed with the BDT cut value as illustrated in Figure~\ref{}. The change in slope is accounted for when generating events for the toy experiment by changing the slope parameter ($\lambda$) for each BDT cut. Table~\ref{tab:CBGSlopeBDT} shows the slope of the mass distibtuion for different BDT cuts values evealutaed from \bbbarmumux simulated decays.
+The mass distribution of the combinatorial background is a decaying exponential, it was observed from the simualted \bbbarmumux decays that the slope of the mass dustrubution changed with the BDT cut value as illustrated in Figure~\ref{fig:BDTmasses}. The change in slope is accounted for when generating events for the toy experiment by changing the slope parameter ($\lambda$) for each BDT cut. Table~\ref{tab:CBGSlopeBDT} shows the slope of the mass distibtuion for different BDT cuts values evealutaed from \bbbarmumux simulated decays.
 
 The results from 10,000 toy experiments for BDT cut values every 0.05 in the range 0.4 - 0.65 are shown in Table~\ref{tab:selOptimisation} along with the expected number of \bsmumu and combinatorial background decays for each BDT cut value. The median uncertainty of the fit for \tmumu and \invtmumu are given along with the signal significance ($\mathcal{S} = S/\sqrt{S+B}$) for each BDT cut. The highest signal significance and lowest expected uncertainties occur for a BDT cut of 0.55, therefore this cut value is used to select \bsmumu decays. 
+
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/BDT0p4.pdf}
+        \caption{ }
+        \label{fig:BDT0p4}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/Selection/BDT0p55.pdf}
+        \caption{ }
+        \label{fig:BDT0p5}
+    \end{subfigure}
+    \caption{Mass distribution of \bbarmumux decays after BDT cuts of 0.4 and 0.55.}
+    \label{fig:BDTmasses}
+\end{figure}
 
 
 \begin{table}[ht]
