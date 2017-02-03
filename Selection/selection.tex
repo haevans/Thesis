@@ -286,7 +286,7 @@ $K^{+}$                 &                                           &           
 The efficiencies of the stripping lines for selecting \bsmumu, \bhh and \bujpsik decays are shown in Table \ref{tab:Run1strippingEff}. The efficiencies are evaluated using 2012 sim06 simulated events. No trigger requirements have been applied to that only the effect of the stripping selection on the efficiencies can be assessed. % and a loose set of trigger requirements has been imposed. Candidates are required to pass the DEC decision of the L0Global, Hlt1Phys and Hlt2Phys trigger lines because these trigger requirements are used in the Branching Fraction measurement in Chapter X. 
 Only cuts that are applied to select \bmumu decays are evaluated, all candidates have had the isMuon, track $\chi^{2}$/$ndof$ and muon transverse mometum cuts already applied during the reconstruction and events that do not pass these cuts are not included because decays that do not pass these requirements are not included in the samples of simulated events. The efficiencies of the stripping selection to select \bdmumu decays is extremely similar to the efficiency to select \bsmumu decays therefore it is not considered in these studies.
 
-The selection efficiencies are similar across the different decays for the selection cuts that are shared with the \bmumu selection, and the total efficiency is around 70~$\%$ for all decays. The similarity of selection efficiencies across the different decays is further illustrated in Figure~\ref{fig:ratio_plots} which shows the ratio of the efficiencies $B^{0}_{(s)}\to\mu^{+} \mu^{-}$ and $B^{+}\to J/\psi K^{+}$ where each cut has been applied independently.  With the exception of the IP $\chi^{2}$ cuts on the daughter particles, the ratio of efficiencies is well within $2\%$ of~1 for the range of cuts values shown. The ratio of the \bsmumu and \bujpsik efficiencies for the daughter particle IP $\chi^{2}$ markedly deviates from unity, showing that the IP $\chi^{2}$ distribution of the muons and kaon are very different as seen previous in \cite{Diego}. If the other selection cuts are applied to the simulated events before the daughter IP $\chi^{2}$ requirement the ratio of \bmumu and \bujpsik efficiencies is much closer to~1. 
+The selection efficiencies are similar across the different decays for the selection cuts that are shared with the \bmumu selection, and the total efficiency is around 70~$\%$ for all decays. The similarity of selection efficiencies across the different decays is further illustrated in Figure~\ref{fig:ratio_plots} which shows the ratio of the efficiencies $B^{0}_{(s)}\to\mu^{+} \mu^{-}$ and $B^{+}\to J/\psi K^{+}$ where each cut has been applied independently.  With the exception of the IP $\chi^{2}$ cuts on the daughter particles, the ratio of efficiencies is well within $2\%$ of~1 for the range of cuts values shown. The ratio of the \bsmumu and \bujpsik efficiencies for the daughter particle IP $\chi^{2}$ markedly deviates from unity, showing that the IP $\chi^{2}$ distribution of the muons and kaon are very different as seen previous in \cite{Diego}. If the other selection cuts are applied to the simulated events before the daughter IP $\chi^{2}$ requirement the ratio of \bmumu and \bujpsik efficiencies is much closer to~1. Also the ratio of efficiencies for \bdkpi is shown in Figure~\refl{fig:ratio_plotsBd2KPi}.
 
 
 The efficiencies for most of the stripping cuts is $\sim 97 \%$, however, the efficiencies of the cuts on the FD $\chi^{2}$ of the \bsd or \jpsi and the daughter IP $\chi^{2}$ of the muon or hadron pair are lower at $83 \%$ and $80 \%$, respectively. Therefore improvements to the stripping selection efficiencies could be achieved by altering these two selection requirements. 
@@ -354,6 +354,38 @@ Efficiency after all striping line cuts      & (73.75 $\pm$  0.07) $\%$  & ( $\p
 \end{landscape}
 %\end{sideways}
 }
+
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/IPS.png}
+        \caption{ }
+        \label{fig:IPS_ratioKPi}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                                                    
+      %(or a blank line to force the subfigure onto a new line)                                                                                                   
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/CHI2.png}
+        \caption{ }
+        \label{fig:CHI2_ratioKPi}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                                                    
+    %(or a blank line to force the subfigure onto a new line)                                                                                                     
+
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/DOFS.png}
+        \caption{ }
+        \label{fig:FD_ratioKPi}
+    \end{subfigure}
+   \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/daug_IPS.png}
+        \caption{ }
+        \label{fig:IPS_ratioKPi}
+    \end{subfigure}
+    \caption{The ratio of \bsmumu to \bdkpi stripping efficiencies on MC events when each cut has been applied independe\
+ntly of all other cuts. The current cut values are marked by the blue lines.}
+    \label{fig:ratio_plotsBd2KPi}
+\end{figure}
 
 \begin{figure}
     \centering
@@ -567,7 +599,25 @@ Both classifiers were developed for the measurement of the \bmumu Branching Frac
 
 \subsection{Boosted Decision Trees}
 \label{sec:GeneralBDT}
-A BDT is made up of the combined outputs of separate decision trees. A decision tree begins with a data sample, where each candidate is know to be signal or background and a set of variables describing these events. The decision tree applies a cut on a variable that will be the most effective at separating the signal and background in the sample and creates two sub-samples. Another cut is then applied on each of the sub-samples to further separate signal from background. This process is repeated until either a certain number of cuts, defined as the depth of the tree, or the number of candidates in each sub-sample has reached a minimum number. Each sub-sample produced at the end of the tree is called a leaf. The tree then uses the knowledge of which candidates are signal or background to assign a value of +1 or -1 to every candidate. A candidate is given a value +1 if it is in a leaf where the majority is signal and the value -1 if it is in a leaf that has a majority of candidates are background. The final decisions made by the tree are not prefect, some signal (background) events will be mis-classified as background events and given the value of -1 (+1). 
+A BDT is made up of the combined outputs of separate decision trees. A decision tree begins with a data sample, where each candidate is know to be signal or background and a set of variables describing these events. The decision tree applies a cut on a variable that will be the most effective at separating the signal and background in the sample and creates two sub-samples. Another cut is then applied on each of the sub-samples to further separate signal from background. This process is repeated until either a certain number of cuts, defined as the depth of the tree, or the number of candidates in each sub-sample has reached a minimum number. Each sub-sample produced at the end of the tree is called a leaf. The tree then uses the knowledge of which candidates are signal or background to assign a value of +1 or -1 to every candidate. A candidate is given a value +1 if it is in a leaf where the majority is signal and the value -1 if it is in a leaf that has a majority of candidates are background. The final decisions made by the tree are not prefect, some signal (background) events will be mis-classified as background events and given the value of -1 (+1). The decision making process of a decision tree is illustrated in Figure~\ref{fig:DT}.
+
+\begin{figure}
+    \centering
+    %\begin{subfigure}[b]{0.4\textwidth}                                                                                                                          
+        \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+       % \caption{ }                                                                                                                                              
+      %  \label{fig:eff}                                                                                                                                          
+  %  \end{subfigure}                                                                                                                                              
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                                                    
+      %(or a blank line to force the subfigure onto a new line)                                                                                                   
+   % \begin{subfigure}[b]{0.4\textwidth}                                                                                                                          
+       % \includegraphics[width=\textwidth]{./Figs/Selection/strip_chart1.png}                                                                                    
+      %  \caption{ }                                                                                                                                              
+      %  \label{fig:eff_contours}                                                                                                                                 
+  %  \end{subfigure}                                                                                                                                              
+    \caption{Illustration of a decision tree.}
+    \label{fig:DT}
+\end{figure}
 
 One decision tree on its own is often not particularly good at classifying events, there is no way to correct mis-classified events in the leaves, and it is particularly sensitive to statistical fluctuations in the training samples. A BDT combines the output of numerous decision trees to improve the classification of events and reduce the dependance of the final decisions on statistical fluctuations. A BDT starts with one decision tree and then assigns weights to events in the sample depending on whether the output of the decision tree classified the events correctly or incorrectly. The weighted sample is then used as the input for the training of the next decision tree. The weights are designed so that the next tree is more likely to correctly classify previously mis-classified events. This process is repeated until a certain number of trees have been trained. The re-weighting process is known as boosting and the weights applied to the samples are taken into account when combining the output of each decision tree into the overall output of the BDT. The output of a BDT will be a number between -1 and +1 where high numbers indicate signal-like candidates and low numbers indicating background-like candidates.
 
