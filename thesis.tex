@@ -3,7 +3,7 @@
 
 %if print - it's like a print out if not its what you get online. Spaceing is 
 %different.
-\documentclass[a4paper,12pt,numbered,print,index, chapter]{Classes/PhDThesisPSnPDF}
+\documentclass[a4paper,12pt,numbered,print,index]{Classes/PhDThesisPSnPDF}
 
 %\usepackage{lineno}
 %\linenumbers
@@ -159,6 +159,13 @@
 \include{Selection/selection}
 
 
+
+%\begin{appendices} % Using appendices environment for more functunality                                                                         
+
+%\include{Appendix1/appendix1}
+
+%\end{appendices}
+
 % ********************************** Back Matter *******************************
 % Backmatter should be commented out, if you are using appendices after References
 %\backmatter
@@ -173,6 +180,7 @@
 \bibliographystyle{ieeetr}
 %\bibliographystyle{unsrt} % Use for unsorted references  
 %\bibliographystyle{plainnat} % use this to have URLs listed in References
+
 \cleardoublepage
 \bibliography{References/references} % Path to your References.bib file
 
@@ -189,10 +197,12 @@
 
 % ********************************** Appendices ********************************
 
-\begin{appendices} % Using appendices environment for more functunality
+\appendix
+%\begin{appendices} % Using appendices environment for more functunality
 
-\include{AppendixA/appendixA}
-\end{appendices}
+\include{Appendix1/appendix1}
+
+%\end{appendices}
 
 % *************************************** Index ********************************
 \printthesisindex % If index is present
