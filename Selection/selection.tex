@@ -378,7 +378,7 @@ The selection efficiencies are very similar for each stripping cut across the di
         \label{fig:FD_ratioKPi}
     \end{subfigure}
    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth]{./Figs/Selection/Bs2MuMu_KPi_FD.pdf}
+        \includegraphics[width=\textwidth]{./Figs/Selection/Bs2MuMu_KPi_daughter_IP.pdf}
         \caption{ }
         \label{fig:IPS_ratioKPi}
     \end{subfigure}
@@ -410,7 +410,7 @@ The selection efficiencies are very similar for each stripping cut across the di
         \label{fig:FD_ratio}
     \end{subfigure}
    \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth]{./Figs/Selection/BsMuMu_JpsiK_FD.pdf}
+        \includegraphics[width=\textwidth]{./Figs/Selection/Bs2MuMu_JpsiK_daughter_IP.pdf}
         \caption{ }
         \label{fig:IPS_ratio}
     \end{subfigure}
@@ -733,7 +733,7 @@ The signal and background samples used to train the BDTS are simulated \bsmumu d
 \begin{figure}
     \centering
    % \begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+        \includegraphics[width=\textwidth]{./Figs/Selection/2016_BDTS_impact.pdf}
         %\caption{ }
        % \label{fig:BDTSsig}
     %\end{subfigure}
@@ -744,7 +744,7 @@ The signal and background samples used to train the BDTS are simulated \bsmumu d
       %  \caption{ }
      %   \label{fig:BDTSbkg}
   %  \end{subfigure}
-    \caption{Something to illustrate how good the BDTS is at working. I think prehaps the BsMuMu stripping line and the B2hh stripping line with all selection applied, but a different mass range to make it clear, and then with and without the BDTS cut. Prehaps no PID requirements to seperate b2hh decays as well.}
+    \caption{Invariant mass spectrum for \bhh decays in 2016 data passing the selection requirements in Table~\ref{tab:BDTSpresel} before and after the BDTS cut is applied.}
     \label{fig:BDTSpreformance}
 \end{figure}
 
@@ -924,7 +924,7 @@ Hlt2Phys	&DEC \\
 \end{center}
 \end{table}
 
-In the same way as the BDTS the final output of the global BDT is flattened to have a response between 0 and 1 that is uniform for signal and the background peaks at zero, as shown in Figure~\ref{fig:FlatteningBDT} for each year of data taking. The flattening is important for the measurement of the \bmumu Branching Fractions where a simultaneous fit is applied to the dimuon invariant mass in bins of BDT, flattening the BDT output enable bins containing equal proportions of signal decays to be easily created. 
+The global BDT is used for data taken in all years and in the same way as the BDTS the final output of the global BDT is flattened to have a response between 0 and 1 that is uniform for signal and the background peaks at zero, as shown in Figure~\ref{fig:FlatteningBDT} for each year of data taking. The flattening is important for the measurement of the \bmumu Branching Fractions where a simultaneous fit is applied to the dimuon invariant mass in bins of BDT, flattening the BDT output enable bins containing equal proportions of signal decays to be easily created. The signal efficiency and background rejection of the global BDT is shown in Figure~\ref{fig:BDTperformance} for all years of data taking, the preformance is similar across all the years. 
 
 
 \begin{figure}
@@ -945,6 +945,24 @@ In the same way as the BDTS the final output of the global BDT is flattened to h
     \label{fig:FlatteningBDT}
 \end{figure}
 
+
+\begin{figure}
+    \centering
+ \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/Selection/BDTflat_bkgnd.pdf}%ROC_full.pdf}
+        \caption{ }
+        \label{fig:ROCfull}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.48\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/Selection/BDTflat_bkgnd.pdf}%ROC_zoom.pdf}
+        \caption{ }
+        \label{fig:ROCzoom}
+    \end{subfigure}
+        \caption{Global BDT performance for 2011, 2012, 2015 and 2016 data taking conditions. Signal efficiency is calculated from \bsmumu simulated decays and background rejection from data passing the \bsmumu selection with $m_{\mu^{+}\mu^{-} > 5447$ \mevcc. The full BDT range is shown in the left plot and only the most sensitive region is shown in the right.}
+    \label{fig:BDTperformance}
+\end{figure}
 
 \subsection{Global BDT cut optimisation}
 \label{sec:globalBDToptimisation}
