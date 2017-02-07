@@ -680,7 +680,7 @@ A BDT is made up of the combined outputs of separate decision trees. A decision 
 One decision tree on its own is often not particularly good at classifying events, there is no way to correct mis-classified events in the leaves, and it is particularly sensitive to statistical fluctuations in the training samples. A BDT combines the output of numerous decision trees to improve the classification of events and reduce the dependence of the final decisions on statistical fluctuations. A BDT starts with one decision tree and assigns weights to decays in the signal and background samples depending on whether the output of the decision tree classified the events correctly or incorrectly. The weighted sample is then used as the input for the training of the next decision tree. The weights are designed so that the next tree is more likely to correctly classify previously mis-classified events. This process is repeated until a certain number of trees have been trained. The re-weighting process is known as boosting and the weights applied to the samples are taken into account when combining the output of each decision tree into the overall output of the BDT. The output of a BDT will be a number between -1 and +1 where high numbers indicate signal and low numbers indicating background.
 
 
-The TMVA package~\cite{} is use to develop and train the BDTs, the package provides several different methods of boosting that can be used. The adaptive boosting method was found to produce the most effective BDT.
+The TMVA package~\cite{Hocker:2007ht} is use to develop and train the BDTs, the package provides several different methods of boosting that can be used. The adaptive boosting method was found to produce the most effective BDT.
 This method of boosting assigns decays incorrectly classified by one tree the weight, $w$, before being used as the input to the next decision tree. The weights assigned are given by
 \begin{equation}
 w = \frac{1 - f}{f}\text{, where } f = \frac{\text{total misclassified events}}{\text{total events}}.
@@ -694,7 +694,7 @@ The ability of a BDT to correctly identify signal and background candidates depe
 \item parameters that dictate the BDT training - the training of a BDT is specified by several parameters; the number of trees (NTrees), the tree depth (MaxDepth), the minimum number of events a leaf can contain (nEventsMin or MinNodeSize\footnote{nEventsMin is the minimum number of decays in a lead where as MinNodeSize is the number of decays in a leaf given as a percentage of the training sample size. The parameter specified in the training depends on the version of the TMVA package used. });, the `speed’ at which the boosting occurs ($\beta$) and the number of cut values that a tree tries for a variable before making a decision (nCuts).
 \end{itemize}
 
-These three factors affect the performance of the BDT however the importance of each varies. Together they can be used to prevent the BDT being very sensitive to the statistical fluctuations in the training sample. This  is called overtraining, an overtained BDT is extremely accurate at classifying the candidates in the training sample by preforms poorly at classifying candidates in a statistically independent sample. Although this is less common in BDT than single decision trees, it can be avoided by having a sufficiently large training sample or by limiting the depth of trees or the number of trees in the BDT. 
+These three factors affect the performance of the BDT however the importance of each varies. Together they can be used to prevent the BDT being very sensitive to the statistical fluctuations in the training sample. This  is called overtraining, an overtrained BDT is extremely accurate at classifying the candidates in the training sample by preforms poorly at classifying candidates in a statistically independent sample. Although this is less common in BDT than single decision trees, it can be avoided by having a sufficiently large training sample or by limiting the depth of trees or the number of trees in the BDT. 
 
 \subsection{The BDTS}
 \label{BDTS}
@@ -974,7 +974,7 @@ The fit procedure to extract \tmumu from the data is described in depth in Chapt
 \begin{itemize}
 \item the mass and decay time distribution for number of expected \bsmumu and combinatorial background events are generated using the expected mass and decay time probability density functions
 \item an unbinned maximum likelihood fit is performed to the dimuon invariant mass spectrum, where the \bsmumu and combinatorial background yields are free to float in the fit along with the slope of the combinatorial background mass distribution c
-\item the mass fit is used to compute sWeights using the sPlot method \cite{}
+\item the mass fit is used to compute sWeights using the sPlot method \cite{Pivk:2004ty}
 \item a maximum likelihood fit is performed to the sWeighted decay time distribution to extract \tmumu and \invtmumu. 
 \end{itemize}
 Full details of the toy experiment set up and the probability density functions used are given in Appendix X. 
