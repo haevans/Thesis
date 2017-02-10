@@ -111,8 +111,7 @@
 % To use choose `chapter' option in the document class
 
 \ifdefineChapter
- %\includeonly{Selection/selection} 
- \includeonly{Appendix1/appendix1}
+ \includeonly{Selection/selection} 
 \fi
 
 % ******************************** Front Matter ********************************
@@ -129,10 +128,10 @@
 
 \include{./title/title}
 \chapterfont{\centering}
-%\include{Dedication/dedication}
-\include{Declaration/declaration}
-\chapterfont{\raggedleft}
 \include{Abstract/abstract}
+\include{Declaration/declaration}
+\include{Dedication/dedication}
+\chapterfont{\raggedleft}
 \include{Acknowledgement/acknowledgement}
 \include{Preface/preface}
 \chapterfont{\raggedright}
@@ -153,19 +152,18 @@
 % ******************************** Main Matter *********************************
 \mainmatter
 
-%\include{Introduction/Introduction}
+\include{Introduction/Introduction}
 \include{LHC_LHCb/LHC_LHCb}
 \include{Theory/theory}
-
 \include{Selection/selection}
-\include{LifetimeMeasurement/lifetimeMeasurement.tex}
+\include{BranchFractionMeasurement/BFMeasurement}
+\include{LifetimeMeasurement/lifetimeMeasurement}
+\include{LifetimeSystematics/lifetimeSystematics}
+\include{Summary/summary}
 
 
-%\begin{appendices} % Using appendices environment for more functunality                                                                         
-
-%\include{Appendix1/appendix1}
-
-%\end{appendices}
+\listoffigures
+\listoftables
 
 % ********************************** Back Matter *******************************
 % Backmatter should be commented out, if you are using appendices after References

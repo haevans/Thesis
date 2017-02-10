@@ -26,3 +26,53 @@ Mass and decay time fit model/Measuring the effective lifetime
 - toys to get the final configuration
 - expected sensitivity of the measurement and a comparison with what is needed to distinguish A_DG from -1 and +1
 
+------------------------------------------------------------------------------------
+- Strategy overview
+  	   > Measuring the effective lifetime is done by fitting the mass distribution to get sWeights and the using the sWeights of for the weighted decay time distribution. 
+	   > sWeights work by ... (variables must not be correlated) for an indepth discussion please see X. RooFit package is used to implement this, however we need to re-normalise the sWeights so that the uncertainties are corectly estimated. 	   
+	   > Toy experiments were performed to find the fit method that gave the smallest expected statistical uncertainty.
+	   > Other fit stragies were looked at but simplicity was important since we have so few events and the aim is to have the smallest statistical uncertainty on the measurement.
+
+- Correlation (The prehaps could go in the earlier section instead of being a seperate section?)
+	> sPlot method relies of the mass and lifetime not being correlated, the correclation have been evaliated for simulated Bs2MuMu candidates passing the full selection and data candidates above 5447 MeV/c2 without the BDT cut. The correlation is the order of a few percent therefore it doesn't matter
+
+- Mass pdfs ? 
+       > These were provided from the BF in a range of different ways! (and so also were the expected yields).  (These were provided by the BF because they have to know them for their final fit, this evalutation is discussed in Section X).
+         > B2hh, pion and kaon are mis-identified as muons they pollute mainly the Bd mass window
+         > B0->pimunu and Bs2KMunu, the kaon or pion are mis-identified as muons and pollute only the low mass sideband
+         > Lambda_b, proton is mis-identified as a muon and pollutes the left side band, and Bs and Bd mass windows.
+         > B0(+)->pimumu nad Bc->jpsimunu, two real muons are selected. B0(+) pollutes the left sideband and the Bc the whole window.
+         > These have to be well known for the BF even if they are not under the mass peaks of the Bd and Bs becuase they impact the CBG estimation that is under the mass peaks
+         > Lets find sentence to describe each evaluation (including signal):
+	   	     
+       > The CBG is an exponential and the slope is left to float in the final fit (for generation we use the fitted slopes for the BDT as documented in an earlier section)
+
+- Decay time PDF
+  	> Acceptance * expo as described earlier, the advantage of using sWeights is that we do not need to know the PDFs of the backgrounds however these are important for the toy studies
+	> B2hh and semi-leptonic, these all have known lifetimes which is nice and we assume some form of acceptance function
+	> For the CBG this is harder because it's not a background from a specific decay. The BDT has the largest impact on the acceptance shape (after the stripping) so to accurately model this we must apply the BDT cut. However the BDT cut leaves too few Bs2Mumu background decays to be able to get a useful model so we use B2hh decays, so the same selection but with no PID requirements. We get the slopes by fitting the high lifetime slopes because the acceptance will be flat. Then we fix these values and fit the whole range to get the acceptance function. The plots and numbers are shown here. As a cross check we look at the average lifetime in bins of BDT for B2Hh and Bs2MuMu background decays passing all the selection cuts but no PID for B2hh. They are pretty similar and there is no cause for concern here. The stability of toys to this model is discussed in section X.
+
+- Overview of the toy studies
+  	   > To develop the fit the toy studies were done by
+	     	- generate mass and decay time distributions from the PDFs
+		- use the expected number of each type of event passing the selection for each decay (These were provided by the BF because they have to know them for their final fit, this evalutation is discussed in Section X).
+		- fit the mass to get sWeights then fit the decay time distribution, to get tau or tau-1
+		- measure of sucess, pull distribution of free parameters in the fit and the uncertainty on the result of the decay time fit
+	   > A number of differnt toy studies were performed that look at different mass ranges, as you can see from the plot X only Bdmumu, lambda_b and bhh are under the Bs mass peak so by changing the mass fit range different backgrounds can be excluded
+
+- to fit for tau or 1/tau
+     	   > During the development of the fit the pulls were biased for fitting for tau no matter what backgrounds were included. This is illustrated for a very simple to model in Figure X. However as the number of events increase the pulls are now good. 
+	   > The likelihood function for the tau fit explains this
+	   > However is we fit instead for 1/tau we see the following
+	   > But 1/tau fits are actually biased themselves and also tau is of more physics interest
+	   > The point of the pulls/this discussion is that the uncertainties are incorrectly estimates but another way to look at this is the coverage. Here is the coverage test of out very simple model. Look tau is actually ok for the expected statistics, therefore moving on we shall look at both and deciede later. The bias from the lifetime fit can be evaluated later when we have actually determined the fit and also with the number of events we actually see.
+	
+- The actual toy studies!	
+      	    > 10, 000 toys were done per configuration
+      	    > We looked at a range of things, that are listed in the table here and there results are here. 
+	    > The best is the mass cut, when only the Bs and CBG are modelled.
+	    > Maybe show some pull plots? And/or mass fits?
+	    > Here are some fits
+
+- The expected uncertainty
+      	    > From the final fit the expected uncertatinties are shown for tau and 1/tau but here are some plots and look at the ranges!
