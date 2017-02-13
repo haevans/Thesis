@@ -9,16 +9,20 @@ Overall plan is
 > Results
 
 
-Overview
+Overview - the aim is to be quite brief in order to limit repetition.
 --------------------------------------------
 Things that I think I should include are:
 > The BF is the ratio of the number of B2MuMu decays to the number of B mesons of that type produced, but the number we measure won't be the number that occured because no detector or selection is ideal
 > Can measure BF from the luminoscity and the cross section (equation) but this method isn't ideal due to large uncertainties on the cross-section and the luminoscity (Don't actually need this)
 > Actually measure the BF using normalisation channels, the normalisation channel should be abundant, well measured BF and be similar to B2MuMu so that MC dependant cancels out in the ratios. 
-> We use B2JpsiK and B2KPi as noramlisation (Bs2JpsiPhi not well know BF enough :( ) - Prehaps this could go in the normalisation section??
+> To get the BF unbinned fit in bins of BDT to get the number of signal decays, the details are in Section Z and the normalisation proceedure is in Section Y.
+
+(
+(> We use B2JpsiK and B2KPi as noramlisation (Bs2JpsiPhi not well know BF enough :( ) - Prehaps this could go in the normalisation section??)
 > Signal events are classified acording to mass and BDT output, the number of signal events is extracted by a simultaneous fit in BDT bins to the dimuon invariant mass. Therefore needed to know what mass pdfs of the signal and the fraction of signal events that will be in each BDT bin (Sect X), prehaps state the BDT bins here?? Or maybe in the BDT section??
 > However the selection isn't perfect and backgrounds are still present after the selection and the number of background varies per BDT bin, therefore the mass pdfs and BDT fractions are needed for each BDT bin as well (Sect X) 
 > Prehaps have the overall details and the motivation here and then the technical details like BDT bins and which noramalisation channels are used in the next section.
+)
 
 Signal and Background PDFs
 --------------------------
@@ -47,7 +51,7 @@ Siganl Classification - two main parts; mass pdf and BDT pdf
 
 On to the backgrounds.
 
-(lan;
+(plan;
 - here are the backgrounds that make it through the selection and what their mass pdfs look like, I could include the BFs of each decay here??
 - We need to know the numbers even if they are not below the peak because of the CBG
 - This is how they are evaluted;
@@ -67,14 +71,59 @@ On to the backgrounds.
 
 Mass pdfs and number of expected events in each BDT bin.
 - Two different methods are used for B2hh and other backgrounds
-- CBG is ont done with way but is modelled by an exp in the final fit
+- CBG is ont done with way but is modelled by an exp in the final fit, the slope is in common in all bins of the same data set but the yield can vary (not sure if that goes here or not?)
 - B2hh, the number of events is taken from Bd2KPi decays data for each year, using TIS triggers, then these number are scaled to the expected mis-ID values using selection and mis-ID PID effieincies. This is done for each BDT bin. There is an equation for this. The mass fit is from smeared MC to represent what you get when the hadrons decay in flight and PID weights are appliued. The seperate fits are combined using PID efficiencies and BFs. The PDF is a sum of 2 CBs. 
 - Semi-leptonic decays - the pdfs are evaluated for each BDT bin using an Argus function from simulated decays. The number of events is normalised to the number of B2JpsiK decays using the equation X, the efficiencies have the following definitions and come from MC, execpt the PID eff., they are evaluated for each BDT bin expect the generation eff. The hadronisation factor are taken into account for each decay. The mass shapes for B->pimunu and b->kmunu are very similar, and are combined. The same is done for B+ and B0->pimumu. The number of events is evaluated for each year of data taking. The BFs are either measured or predictions are used. (I could add the BFs used for each decay and also the equation to get the number of events?? It depends on how much detail I really want to include, I should be consistent for peaking backgrounds and B2hh - I should probably include the tables, deceide later, this is just supposed to help planning by adding more details.).
 
 
 Normalistaion
 -------------
+- The noramlisation is introduced in the overview
+- The noramlisation channels used are;	 
+      		    - B2JpsiK because it has a large BF or XX and the 2 muons in the final state are triggered in the same way as B2MuMu, but there will be a difference in the reconstruction and selection efficiencies due to the extra K+ in the final state
+		    - Bd2KPi - also large BF that is XX, the difference between this and the signal are the trigger and PID.
 
+
+- In more detail the normalistaion equation is given here. The alpha parameters need to be computed seperately for the Bd and the Bs (hadronisation factors). Normalisation factors are computed seperatly for each decay, channel and energy and are combined together at the end to make one factor for each decay.
+
+- Hadronisation factors - fd=fu=fb therefore nothing is needed for the Bd2MuMu. But Bs2MuMu we need fs/fd and fs/fu but fd=fu. This was measured for 7TeV at LHCb, so we use that value and it's independant of energy therefore I can be used for 2012 and Run 2. However for Run 2 it must be multiplued by thge observed realtive production difference between Run 1 and Run2 (what is this??) (see note p113 for the details)
+
+- The detection effieicivcies contrain 3 main parts (as illutrated ?) that must be evalutated for signal and bkgnd;
+      		- the acceptance - efficiency decay products end up in the detector accptance
+		- reconstruction and seleciton - eff that events are reconstructed and pass the selection incdluing PID
+		- Trigger - effieincies of the trigger lines.
+- efficiencies are computed seperatly for the Bd and the Bs and using simulated decays. for BS2MuMu.
+- The hadraonisation factors contribute the biggest unceratiny to the normalisation, this could be avoided by using a Bs decay but the BFs are not well known enough for B2Jpsiphi - why don't we use Bs2KK?
+
+- extracting the yields
+  	     - B2JpsiK - mass model is Ipathia function for signal, amd RooKeysPdf for Bplus->Jpsipiplus both with parameters from MC, CBG is an expo, uncertainties on the yields include different mass models, statistics and gaussaisn constraints on the ipthia model
+	     - Bd2KPi evalutated in the same way as the callibration, from data passing TIS at L0 and Hlt1 but TOS on a specific line at HLT2 to increase the statistics Hlt2B2HHDecision
+
+- efficiencies
+	  - geometrical dectection eff. from MC, in the polar angle [10,400]mrad which is slightly larger than the detector to allow for particle that are recovered by the magnetic field.
+	  - reconstruction and selection - recon eff of decays in the detector acceptance, sel eff of decays that are reconstructed, the determination is based on MC and data, most of MC but with corrections taken from data (PID, IP etc)
+	  - trigger eff. on decays passing the selection and reconstruction. It is done using the TISTOS method (ref(41) in ana note) this is a data driven method. 
+- NB jpsi normalisation factors are used for the peaking backgrounds.
+- The stabilty to noramlisation factors is checked by the ration of Bd2kpisk and B2KPi per year.
+- The noramliation factors for each Run are combined as ((insert equiation) and the total noramlisation for the Bs and Bd is taken as the weighted average of the factors for each mode.
+- The noramliation factors are XXXX. 
+
+Lifetime Correction/Decay time effects - Prehaps this could go into the signal part after the calibration section??
+--------------------------------------
+- The BDT is flattened using MC, and MC is generated using the mean Bs lifetime, at the production time. In the SM the lifetime is the same as the heavy mass lifetime but could be anywhere in between due to NP effects. Also the lifetime used to genereate are given here - Run 1 MC is flatten with 2011 MC and Run 2 with 2015
+- This is important because the BDT output is correlated with the lifetime since it uses information like B_IP etc. Therefore the flattening would biase the BDT output for signal and therefore the fraction of events used in each bin is it's not the same as the generated lifetime. Therefore corrections are evaluated sp A_DG = -1, 0 and 1 by weighting decays according to their lifetimes, the impact of these are listed in Table X. Why is this not part of the BDT calibration? I guess because that uses the Bd and is the same for Bs2MuMu as Bd2MuMu. 
 
 Results
-------
+-------
+- BDT binning choice
+      - unblineded fit / investigating the sidebands showed that for the bins ised in Run 1 and listed earler the BDT is too good and there are no events in the high mass sideband for high BDT bins. Toy studies were preformed to determine the best binning choice given the expected number of background (and signal) events. The final choice was to use 4 bins of BDT with the boundaries 0.25,0.4,0.5,0.6,1.0. Only a small loss in sensitivity occurs with the fewer bins but the fit is more stable. (How does this work since we removed the lowest BDT bin we cannot fit the yield there?) The lowest bin 0-0.25 is not included because it has negliable sensitivty since it is background dominated. I assume that the number from the BDT calibration of the fraction of events expected in this bin are taken into account in the fit for the BF.
+- Final fit performed
+  	- The final fit was performed simulataneously on Run 1 and Run 2 data, so 8 bins 4 bins per year. In the fit the listed backgrounds are included and their expected yields and fractions can float within gaussian constraints, the CBG slope is fixed accross the bins for each Run, the signal shapes and fractions are also gaussianly constrained
+- Results
+	- The numbers are ....
+	- The Bs is observed at 7.8 sigma, the first single experiment observation
+	- Bd at 1.9 sigma therefore CLs method is used to set a limit at ...
+- Compatability of seperate results
+  	- a check was done fitting the Run 1 and Run 2 data sets seperately and the results were compatible at the 1.7 sigma level
+- lifetime effects
+  	   - the fit is done assuming A_DG = +1 as in the SM and the correction factors listed in X are included. If different A_DG values are used the this shifts the Bs central value by 4.6% and 10.9% for A_DG = 0 and -1.
