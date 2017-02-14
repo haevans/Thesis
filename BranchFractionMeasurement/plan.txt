@@ -68,7 +68,7 @@ On to the backgrounds.
 		     - Bc, where the Jpsi goes to 2 muons, this effects the full mass range
 	- CBG, exponential distribution
 - The signal fit is preformed in bins of BDT, therefore the number of these events in each of the BDT bins needs to be evaluteated. Although several of these decays are not in either the Bd or Bs mass windows they need to be known precisely so that the CBG can be accurately estimated in the mass windows because it is in both the left and right sideband and can't predict it accurately.
-
+`
 Mass pdfs and number of expected events in each BDT bin.
 - Two different methods are used for B2hh and other backgrounds
 - CBG is ont done with way but is modelled by an exp in the final fit, the slope is in common in all bins of the same data set but the yield can vary (not sure if that goes here or not?)
@@ -104,6 +104,7 @@ Normalistaion
 	  - reconstruction and selection - recon eff of decays in the detector acceptance, sel eff of decays that are reconstructed, the determination is based on MC and data, most of MC but with corrections taken from data (PID, IP etc)
 	  - trigger eff. on decays passing the selection and reconstruction. It is done using the TISTOS method (ref(41) in ana note) this is a data driven method. 
 - NB jpsi normalisation factors are used for the peaking backgrounds.
+- not the correction factors made (esp the lifetime!)
 - The stabilty to noramlisation factors is checked by the ration of Bd2kpisk and B2KPi per year.
 - The noramliation factors for each Run are combined as ((insert equiation) and the total noramlisation for the Bs and Bd is taken as the weighted average of the factors for each mode.
 - The noramliation factors are XXXX. 
@@ -112,7 +113,7 @@ Lifetime Correction/Decay time effects - Prehaps this could go into the signal p
 --------------------------------------
 - The BDT is flattened using MC, and MC is generated using the mean Bs lifetime, at the production time. In the SM the lifetime is the same as the heavy mass lifetime but could be anywhere in between due to NP effects. Also the lifetime used to genereate are given here - Run 1 MC is flatten with 2011 MC and Run 2 with 2015
 - This is important because the BDT output is correlated with the lifetime since it uses information like B_IP etc. Therefore the flattening would biase the BDT output for signal and therefore the fraction of events used in each bin is it's not the same as the generated lifetime. Therefore corrections are evaluated sp A_DG = -1, 0 and 1 by weighting decays according to their lifetimes, the impact of these are listed in Table X. Why is this not part of the BDT calibration? I guess because that uses the Bd and is the same for Bs2MuMu as Bd2MuMu. 
-
+- possible Bd2MuMu correction on Bd2KPi cancel with the B0 normalisation channels.
 Results
 -------
 - BDT binning choice
@@ -127,3 +128,7 @@ Results
   	- a check was done fitting the Run 1 and Run 2 data sets seperately and the results were compatible at the 1.7 sigma level
 - lifetime effects
   	   - the fit is done assuming A_DG = +1 as in the SM and the correction factors listed in X are included. If different A_DG values are used the this shifts the Bs central value by 4.6% and 10.9% for A_DG = 0 and -1.
+
+
+Fs/fd = Should explain more what is done
+The normalisation is checked with ratios as well.
