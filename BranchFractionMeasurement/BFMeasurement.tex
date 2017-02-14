@@ -1,1 +1,39 @@
 \chapter{Measurement of \bmumu Branching Fractions}
+\label{sec:BFanalysis}
+This Chapter presents the measurements of the \bdmumu and \bsmumu branching fractions. Section X gives an overview of the analysis strategy and a detailed description of how the number for \bmumu decays is extracted from the data is given in Section Y. The noramlisation proceedure to convert the number of observed \bmumu decays in to the branching fractions for these decays is explained in Section X and the results are given in Section Y. 
+
+The work presented in this Chapter was performed by the \bmumu LHCb analysis group and is published here~\cite{}. My contribution was providing the ROOT files which contained the data and simulated events necessary for the analysis development and results.
+
+\section{Analysis Strategy} 
+\label{sec:BFAnalysisStrategy}
+
+The branching fraction of \bmumu decays is the ratio of the number of \bmumu decays and the total number of \bsd mesons produced. However not detector is perfect therefore the number of observed \bmumu decays is reduced by the detection efficiency, $\epsilon$, leading to
+
+\begin{equation}
+
+\mathcal{B}(\bmumu) = \frac{\mathcal{N}(\bmumu)}{\mathcal{N}(\bsd)} = \frac{\mathcal{N}_{obs}(\bmumu)}{\epsilon \mathcal{N}(\bsd)}
+
+\end{equation}
+  where ...$\sigma_{\bbbar}$
+
+The number of \bsd created is needed, this can be calculated from the integrated luminoscity, $\mathcal{L}_{int}$, and the \bbbar production cross-section, $\sigma_{\bbbar}$, by
+
+\begin{equation}
+
+\mathcal{N}(\bsd) = 2 \times \mathcal{L}_{int} \times \sigma_{\bbbar} \times f_{x}
+
+\end{equation}
+
+where $f_{x}$ is the hadronisation factor giving the probability for a $b$ or $\bar{b}$ quark to form a \bs or a $\bar{\bs}$ (equivently for the \bd). The factor of 2 arises because no distinction is made between the \bs and the $\bar{\bs}$. {\it should maybe reference the LHCb experiment and such like things in the detection efficiency and I need to think of a consistent way to display the Bs and Bd modes.}
+
+Although the number of \bsd can be computed this way the unceratinies on the measured cross-section are quite large (the measured cross-section is not precisely known) as well as the hadronisation factors. Therefore to acheive a more precise branching fraction measurement an alternative approach is used where another decay with a well know branching fraction is used to normalise the numb erof \bmumu decays observed to obtain the branching fractions. The extraction of $\mathcal{B}(\bmumu)$ from the number of observed events is done by
+
+\begin{equation}
+
+\mathcal{B}(\bmumu) = \frac{1}{\mathcal{B}_{norm}} . \frac{f_{norm}}{f_{d(s)}}. \frac{\epsilon_{norm}}{\epsilon_{\bmumu}}. \frac{\mathcal{N}_{obs}(\bmumu)}{\mathcal{N}^{obs}_{norm}}
+= \alpha_{s} \times \mathcal{N}_{obs}(\bmumu)
+\end{equation}
+
+where norm. inidicates the normalisation channel, the normalisation parameters can be combined into one normalisation parameter $\alpha$ for the \bs and the \bd. The normalisation proceedure removes the uncertainty from $\sigma_{\bbbar}$ but the hadronisation factors are still included. The ratio of efficiencies also removes the dependance on simulated decays. 
+
+Therefore the number of observed \bmumu decay and the normalisation paramters need to be determined to measure the branching fraction. The selection described in Chapter X allows \bmumu candidates to be classified by dimuon invariant mass and the BDT output. A simultra
