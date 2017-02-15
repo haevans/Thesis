@@ -114,6 +114,8 @@ Lifetime Correction/Decay time effects - Prehaps this could go into the signal p
 - The BDT is flattened using MC, and MC is generated using the mean Bs lifetime, at the production time. In the SM the lifetime is the same as the heavy mass lifetime but could be anywhere in between due to NP effects. Also the lifetime used to genereate are given here - Run 1 MC is flatten with 2011 MC and Run 2 with 2015
 - This is important because the BDT output is correlated with the lifetime since it uses information like B_IP etc. Therefore the flattening would biase the BDT output for signal and therefore the fraction of events used in each bin is it's not the same as the generated lifetime. Therefore corrections are evaluated sp A_DG = -1, 0 and 1 by weighting decays according to their lifetimes, the impact of these are listed in Table X. Why is this not part of the BDT calibration? I guess because that uses the Bd and is the same for Bs2MuMu as Bd2MuMu. 
 - possible Bd2MuMu correction on Bd2KPi cancel with the B0 normalisation channels.
+
+
 Results
 -------
 - BDT binning choice
