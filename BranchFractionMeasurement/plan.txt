@@ -88,16 +88,16 @@ Normalistaion
 
 - Hadronisation factors - fd=fu=fb therefore nothing is needed for the Bd2MuMu. But Bs2MuMu we need fs/fd and fs/fu but fd=fu. This was measured for 7TeV at LHCb, so we use that value and it's independant of energy therefore I can be used for 2012 and Run 2. However for Run 2 it must be multiplued by thge observed realtive production difference between Run 1 and Run2 (what is this??) (see note p113 for the details)
 
+- extracting the yields
+  	     - B2JpsiK - mass model is Ipathia function for signal, amd RooKeysPdf for Bplus->Jpsipiplus both with parameters from MC, CBG is an expo, uncertainties on the yields include different mass models, statistics and gaussaisn constraints on the ipthia model
+	     - Bd2KPi evalutated in the same way as the callibration, from data passing TIS at L0 and Hlt1 but TOS on a specific line at HLT2 to increase the statistics Hlt2B2HHDecision
+
 - The detection effieicivcies contrain 3 main parts (as illutrated ?) that must be evalutated for signal and bkgnd;
       		- the acceptance - efficiency decay products end up in the detector accptance
 		- reconstruction and seleciton - eff that events are reconstructed and pass the selection incdluing PID
 		- Trigger - effieincies of the trigger lines.
 - efficiencies are computed seperatly for the Bd and the Bs and using simulated decays. for BS2MuMu.
 - The hadraonisation factors contribute the biggest unceratiny to the normalisation, this could be avoided by using a Bs decay but the BFs are not well known enough for B2Jpsiphi - why don't we use Bs2KK?
-
-- extracting the yields
-  	     - B2JpsiK - mass model is Ipathia function for signal, amd RooKeysPdf for Bplus->Jpsipiplus both with parameters from MC, CBG is an expo, uncertainties on the yields include different mass models, statistics and gaussaisn constraints on the ipthia model
-	     - Bd2KPi evalutated in the same way as the callibration, from data passing TIS at L0 and Hlt1 but TOS on a specific line at HLT2 to increase the statistics Hlt2B2HHDecision
 
 - efficiencies
 	  - geometrical dectection eff. from MC, in the polar angle [10,400]mrad which is slightly larger than the detector to allow for particle that are recovered by the magnetic field.
