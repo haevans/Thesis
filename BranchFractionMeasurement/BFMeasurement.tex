@@ -36,15 +36,7 @@ Although the number of \bsd can be computed this way the unceratinies on the mea
 
 where norm. inidicates the normalisation channel, the normalisation parameters can be combined into one normalisation parameter $\alpha$ for the \bs and the \bd. The normalisation proceedure removes the uncertainty from $\sigma_{\bbbar}$ but the hadronisation factors are still included. The ratio of efficiencies also removes the dependance on simulated decays. 
 
-Therefore the number of observed \bmumu decay and the normalisation paramters need to be determined to measure the branching fraction. The selection described in Chapter X allows \bmumu candidates to be classified by dimuon invariant mass and the BDT output. {\it mabye BDT vs mass plot?} A simultaneous unbinned maximum likelihood fit is preformed to the dimuon invarient mass spectrum in 4 BDT bins to measure the observed number of \bdmumu and \bsmumu decays. The Run 1 and Run 2 data are kept seperate and the fit is applied simulatanrously to both data sets. To measure the number of \bmumu decays the fit requires knowledge of the mass shapes and the fraction for \bmumu decays in each BDT bin for the signal and backgrounds that pass the selection , the mass and BDT probability distribution functions ($pdfs$) are described in Section X along with the binning choice in Section Y(?). {\it More details about the fit and what is needed - prehaps an equation would help? Make it clearer why the fractions and PDFs need to be known. Explain that the fractions and pdfs of the signal and background need to be known and backgrounds need to be modelled even if they are below the mass window because of the CBG. I think an equation would be ideal because it would make really clear what is fitted for.}
-
-The normalisation decay can be chosen to be as similar as possible to \bmumu decays to reduce systematic uncertainties caused by different detection and selection efficiencies, also it needs to be abundant so the the precision of the branching fraction measurement in not limited by the statisitic avaliable for the normalisation channel and the noralisation decay must have a precisely meased branching fraction which is likely for abundant decays. Two decays are chose as normalisation channels; \bujpsik and \bdkpi. Both decays have large, precisely measured branching fractions and are similar to \bmumu decays in complmentary ways. For \bujpsik, the trigger efficiency is very similar to \bmumu due to the two muons from the \jpsi but the extra particle, $K^{+}$ in the final state will lead to different efficiencies in the selection and reconstruction. Alternatively \bdkpi has a very similar topology to \bmumu therefore the selection and reconstruction efficincies will be similar but the trigger efficiencies for hadrons is quite different compared to muons.  
-
-The normalisation factors $\alpha_{(s)}$ are evaluated independantly for each noramlisation channel and year of data taking, the factors are combined to produce an overall normalisation factor for Run 1 and Run 2. The computation of the normalisation factors is described in Section X. 
-{\it Explain in the normalisation section that ideally a Bs decay would be best but that was not to be.}
-
-{\it Prehaps the information about the BDT bins could go here? Some discussion should because the binning choice is used in the following sections.}
-
+Therefore the number of observed \bmumu decay and the normalisation paramters need to be determined to measure the branching fraction. The selection described in Chapter X allows \bmumu candidates to be classified by dimuon invariant mass and the BDT output. {\it mabye BDT vs mass plot?} A simultaneous unbinned maximum likelihood fit is performed to the dimuon invariant mass distribution in 4 BDT bins to measure the observed number of \bdmumu and \bsmumu decays. The Run 1 and Run 2 data are kept seperate and the fit is applied simulatanrously to both data sets. To measure the number of \bmumu decays the fit requires knowledge of the mass shapes and the fraction of decays in each BDT bin for the both \bmumu decays and the backgrounds still present in the data set. The mass and BDT probability distribution functions ($pdfs$) are described in Section X.
 The binning choice used for the BDT is chosen to optimise both fit stability and senesitivity to the \bmumu branching fractions. The bin boundaries used are
 
 \begin{equation}
@@ -52,10 +44,14 @@ The binning choice used for the BDT is chosen to optimise both fit stability and
 [0.25, 0.4, 0.5, 0.6, 1.0].
 
 \end{equation}
-%In the previous published analysis ... ?
 Candidates with BDT values between 0 and 0.25 are not included in the fit because this bin is dominated by backgrounds from combinatorial decays, inclusion of this bin in the fit does not improve the branching fraction sensitivity and reduced the stability of the fit. The highest BDT is the largest due to the excellent performance of the BDT at removing background decays. Table/Figure X, shows the number of \bmumu candidates in data passing the selection described in Chapter X with dimuon mass greater that 5447 \mevcc. At high BDT values there are very few candidated therefore a wide bin is used for high BDT values to ensure there are enough candidates in high mass regions to ensure a stable, accurate fit.
 
-{\it I should probably mention that the mass windows were kept bin until the final measurement was made.}
+The normalisation decay can be chosen to be as similar as possible to \bmumu decays to reduce systematic uncertainties caused by different detection and selection efficiencies, also it needs to be abundant so the the precision of the branching fraction measurement in not limited by the statisitic avaliable for the normalisation channel and the noralisation decay must have a precisely meased branching fraction which is likely for abundant decays. Two decays are chose as normalisation channels; \bujpsik and \bdkpi. Both decays have large, precisely measured branching fractions and are similar to \bmumu decays in complmentary ways. For \bujpsik, the trigger efficiency is very similar to \bmumu due to the two muons from the \jpsi but the extra particle, $K^{+}$ in the final state will lead to different efficiencies in the selection and reconstruction. Alternatively \bdkpi has a very similar topology to \bmumu therefore the selection and reconstruction efficincies will be similar but the trigger efficiencies for hadrons is quite different compared to muons.  
+
+The normalisation factors $\alpha_{(s)}$ are evaluated independantly for each noramlisation channel and year of data taking, the factors are combined to produce an overall normalisation factor for Run 1 and Run 2. The computation of the normalisation factors is described in Section X. 
+{\it Explain in the normalisation section that ideally a Bs decay would be best but that was not to be.}
+
+{\it Prehaps the information about the BDT bins could go here? Some discussion should because the binning choice is used in the following sections.}
 
 \section{Signal PDFs}
 \label{sec:signalPdfs}
@@ -77,7 +73,8 @@ All parameter are evaluted seperatly for teh \bd and the \bs for each year of da
 
 
 \subsection{BDT PDFs}
-The fraction of \bmumu decays in each BDT bin is meeded to measure the branching fraction therefore the BDT PDF needs to be evaluated. A uniform distribution for \bmumu decyas is expected acorss the full BDT range as designed by the BDT flattening proceedure descriebd in Section~\ref{}. Therefore the fraction of \bmumu decays in a BDT bin should simply be proportional to the bin with. However to avoid any differences between simulated decays and data affecting the expected fraction of \bmumu decays in each BDT bin, the PDF of the BDT is evaluated from data, this process is know as the BDT callibration.
+%The fraction of \bmumu decays in each BDT bin is meeded to measure the branching fraction therefore the BDT PDF needs to be evaluated. 
+A uniform distribution for \bmumu decyas is expected acorss the full BDT range as designed by the BDT flattening proceedure descriebd in Section~\ref{}. Therefore the fraction of \bmumu decays in a BDT bin should simply be proportional to the bin with. However to avoid any differences between simulated decays and data affecting the expected fraction of \bmumu decays in each BDT bin, the PDF of the BDT is evaluated from data, this process is know as the BDT callibration.
 The global BDT is designed to used only kinematic and goemetric information to classigy candidates and include no PID information. Therefore the BDT distribution of \bhh decays, that are topologically simimlar to \bmumu decays, will have the same BDT PDF as \bmumu decays. The \bdkpi decay is used to callibrate the BDT response because it is the most abundant \bhh decay. 
 
 The number of \bdkpi decay is extracted from data using maimum likelihood fits in each BDT bin in each year of data taking. The \bdkpi candidates must pass the standard \bhh selection in Table~\ref{} and are seperated from other \bhh modes using DLL(K-$\pi$) variable. 
@@ -91,7 +88,7 @@ The callibration is preformed for each year seperately then combined to ive the 
 
 \begin{figure}[htbp]
     \centering
-  % \begin{subfigure}[b]{0.4\textwidth}
+   \begin{subfigure}[b]{0.4\textwidth}
         \includegraphics[width= 0.8 \textwidth]{./Figs/BFAnalysis/Bd2KPi_BDTCalibration_RunI.pdf}
         %\caption{ }
        % \label{fig:BDTSsig}
@@ -102,7 +99,7 @@ The callibration is preformed for each year seperately then combined to ive the 
        \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bd2KPi_BDTCalibration_RunII.pdf}
       %  \caption{ }
      %   \label{fig:BDTSbkg}
- %  \end{subfigure}
+   \end{subfigure}
     \caption{\bmumu BDT PDFs for Run 1 and Run 2 data callibrated on \bdkpi decay in black and the combinatorail background decays in blue for \bmumu candidates in data with a dimuon mass above 5477 \mevcc. }
     \label{fig:BDTPDFs}
 \end{figure}
@@ -184,7 +181,46 @@ where $x$ is either $b$ or $s$ to indicate the \bs or \bd and the efficiency ter
 
 \subsection{Number of \bdkpi and \bujpsik decays}
 The yields of \bujpsik and \bdkpi decays are calulated from data using maximum likelihood fits to each year of data taking. 
-The \bujpsik mass pdf is modelled by and Ipathia function and the fit includes components for combinatorial background and $B^{+} \to J/\psi \pi^{+}$ decays that are reconstructed as \bukpsik. The mass pdf parameters are determince from both data and simulated decays. The \bdkpi yields are calucluated in the same way at the BDT callibration and the same trigger requirements are used. Howeve for the normalisation the total number of \bdkpi decays accross the full BDT range is needed rather the bin-by-bin yields. Figure X and Y show the mass fits used to calculate the Run 1 and Run 2 \bdkpi and \bujpsik yields.
+The \bujpsik mass pdf is modelled by and Ipathia function and the fit includes components for combinatorial background and $B^{+} \to J/\psi \pi^{+}$ decays that are reconstructed as \bukpsik. The mass pdf parameters are determince from both data and simulated decays. The \bdkpi yields are calucluated in the same way at the BDT callibration and the same trigger requirements are used. Howeve for the normalisation the total number of \bdkpi decays accross the full BDT range is needed rather the bin-by-bin yields. Figure~\ref{fig:Bdkpiyiel}~and~\ref{fig:Bujpsikyiel} show the mass fits used to calculate the Run 1 and Run 2 \bdkpi and \bujpsik yields.
+
+
+\begin{figure}[htbp]
+    \centering
+  \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=  \textwidth]{./Figs/BFAnalysis/Bd2KPi_mass_RunI_BDTbinNone.pdf}
+        %\caption{ }
+       % \label{fig:BDTSsig}
+    \end{subfigure}
+   % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bd2KPi_mass_RunII_BDTbinNone.pdf}
+      %  \caption{ }
+     %   \label{fig:BDTSbkg}
+   \end{subfigure}
+    \caption{Mass fit to measure \bdkpi yield for the noramlisation for Run 1 (left) and Run 2 (right) data. }
+    \label{fig:Bdkpiyield}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+    \centering
+   \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=  \textwidth]{./Figs/BFAnalysis/Bd2KPi_BDTCalibration_RunI.pdf}
+        %\caption{ }
+       % \label{fig:BDTSsig}
+    \end{subfigure}
+   % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bd2KPi_BDTCalibration_RunII.pdf}
+      %  \caption{ }
+     %   \label{fig:BDTSbkg}
+   \end{subfigure}
+    \caption{ Mass fit to measure \bujpsik yield for the noramlisation for Run 1 (left) and Run 2 (right) data.}
+    \label{fig:Bujpsikyield}
+\end{figure}
 
 
 \subsection{Efficiencies}
@@ -209,7 +245,11 @@ The various yields, efficiencies and hadronisation factors are combined to produ
 
 \section{Results}
 
-As described in Section X the \bsmumu and \bmumu branching fractions are measured by a simulatanous maximum likelihood fit to the dimuon invariant mass of the Run 1 and Run 2 data sets, each divided into four BDT bins. The branching fraction results from the fit are;
+As described in Section X the \bsmumu and \bmumu branching fractions are measured by a simulatanous maximum likelihood fit to the dimuon invariant mass of the Run 1 and Run 2 data sets, each divided into four BDT bins. 
+
+In the fit the mass pdfs and fraction of \bmumu decays in each BDT bin are constained within Gaussain limits using their expected values and unceratinties. The yield of the combinatorial background is left free in the fit in each BDT bin and the slope of the mass distribution is constained to have the same value accross all bins for each data set. The backgrounds from \bhh, \bdpimunu, \bsKmunu, \bpimumu, \bdpimumu and \bcjpsimunu decays have their yields and fractions in each BDT bin constrained around the expected values, similarly to the signal fractions but the mass shapes are fixed in the fit.
+
+The branching fraction results from the fit are;
 
 \begin{equation}
 %\begin{align}
@@ -223,14 +263,12 @@ The statistics significancal of the \bsmumu signal is 7.9 $\sigma$ which is the 
 The quoted \bsmumu branching fraction assumes the SM value for \ADG, applying the corrections detailed in Section X for \ADG values of 0 and -1 shift the central value of $\mathcal{B}(\bsmumu)$ by 4.6 $\%$ and 10.9 $\%$, respectively. 
 
 
-{\it The mass pdfs and fraction of \bmumu decays in each BDT bin are constained within Gaussain limits around their expected values and unceratinties. The yield of the combinatorial background is free in each BDT bin and the slope of the mass distribution is constained to have the same value accross all bins for each data set. The backgrounds form \bhh, \bdpimunu, \bsKmunu, \bpimumu, \bdpimumu and \bcjpsimunu decay have their yields and fractions in each BDT bin constrained around the expected values, similarly to the signal fractions but the mass shapes are fixed in the fit. This could either go in this section or the overview - I'm not sure which is best since it references stuff so may be better here but sounds a bit odd ... ??}
+{\it  This could either go in this section or the overview - I'm not sure which is best since it references stuff so may be better here but sounds a bit odd ... ??}
 
-\begin{figure}[htbp]
-    \centering
-        \includegraphics[width= 0.8 \textwidth]{./Figs/BFAnalysis/placeholder.jpeg}
-      \caption{Maximum likeihood fit in some form, either all the plots or all together?? }
-    \label{fig:MLfit}
-\end{figure}
+
+
+
+
 
 \begin{figure}[htbp]
     \centering
@@ -240,4 +278,53 @@ The quoted \bsmumu branching fraction assumes the SM value for \ADG, applying th
 \end{figure}
 
 
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bsmumu_Fit_Run1_bin2.pdf}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.48\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bsmumu_Fit_Run1_bin3.pdf}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bsmumu_Fit_Run1_bin4.pdf}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.48\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bsmumu_Fit_Run1_bin5.pdf}
+    \end{subfigure}
+
+    \qquad
+
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bsmumu_Fit_Run2_bin2.pdf}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.48\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bsmumu_Fit_Run2_bin3.pdf}
+    \end{subfigure}
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bsmumu_Fit_Run2_bin4.pdf}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.48\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bsmumu_Fit_Run2_bin5.pdf}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.3\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Legend.pdf}
+    \end{subfigure}
+    \caption{Mass distribution in BDT bins for selected \bsmumu and \bdmumu candidates with the fit overlaid for Run 1 and Run 2 data. The components in the total mass pdf (blue) are; \bsmumu (red), \bdmumu (green), \bhh (magenta), \bdpimunu and \bsKmunu (black), \bcjpsimunu (orange), \bpimumu (cyan), \lambdab (green) and combinatorial background (blue).{\it Think about the key, ideally consistent throughout all images! } }
+    \label{fig:BFfit}
+\end{figure}
+
+
+
 {\bf some things I should learn about the BF anyslsis or I think I should mention. The correlaction, orlack ok, between the mass and BDT output. The cascade B decays that are removed by the lower 4900 mass cut (Alessio) and also the decays that contribute to CBG (Siim).}
+
+{\it prehaps put plots and numbers in the appendix??}
