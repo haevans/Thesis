@@ -3,7 +3,7 @@
 
 %if print - it's like a print out if not its what you get online. Spaceing is 
 %different.
-\documentclass[a4paper,12pt,numbered,print,index]{Classes/PhDThesisPSnPDF}
+\documentclass[a4paper,12pt,numbered,print,index, chapter]{Classes/PhDThesisPSnPDF}
 
 %\usepackage{lineno}
 %\linenumbers
@@ -111,7 +111,7 @@
 % To use choose `chapter' option in the document class
 
 \ifdefineChapter
- \includeonly{Selection/selection} 
+ \includeonly{BranchFractionMeasurement/BFMeasurement} 
 \fi
 
 % ******************************** Front Matter ********************************
@@ -153,8 +153,8 @@
 \mainmatter
 
 \include{Introduction/Introduction}
-\include{LHC_LHCb/LHC_LHCb}
 \include{Theory/theory}
+\include{LHC_LHCb/LHC_LHCb}
 \include{Selection/selection}
 \include{BranchFractionMeasurement/BFMeasurement}
 \include{LifetimeMeasurement/lifetimeMeasurement}
