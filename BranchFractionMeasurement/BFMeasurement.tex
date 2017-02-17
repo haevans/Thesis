@@ -58,9 +58,37 @@ The parameters are evaluated using different methods:
 \item $n$ and $\alpha$ - these parameters are evaluated from the mass spectrum of \bdmumu and \bsmumu simulated decays where the mass distributions are smeared to have the same resolution as that measured from the quarkonia decays in data.
 \end{itemize}
 
-All parameters are evaluated separately for the \bd and \bs for each year of data taking. The resulting parameter vales are in good agreement across each year in the Run 1 and Run 2 data sets. The weighted average of the yearly parameters therefore is used to produced the mass \pdfs for Run 1 and Run 2 and are given in Table~\ref{}.
+All parameters are evaluated separately for the \bd and \bs for each year of data taking. The resulting parameter vales are in good agreement across each year in the Run 1 and Run 2 data sets. The weighted average of the yearly parameters therefore is used to produced the mass \pdfs for Run 1 and Run 2 and are given in Tables~\ref{tab:signalpdfRun1} and~\ref{tab:signalpdfRun2} .
+%I am concerned about this table because I do not know where the uncertainties come from ....
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{lcc}
+Parameter & \bdmumu & \bsmumu \\
+$\mu$/\mevcc &5284.73 $\pm$ 0.15_{stat} $\pm$ 0.27_{syst} & 5372.05 $\pm$ 0.16_{stat} $\pm$ 0.36_{syst} \\ 
+$\sigma$/\mevcc & 22.68 $\pm$ 0.05_{stat} $\pm$ 0.39_{syst} &23.07 $\pm$ 0.05_{stat} $\pm$ 0.39_{syst}\\
+$n$& 1.141 $\pm$ 0.026 & 1.156 $\pm$ 0.013 \\
+$\alpha$ & 2.054 $\pm$ 0.013 & 2.053 $\pm$ 0.007 \\
+\end{tabular}
+\vspace{0.7cm}
+\caption{\bmumu mass \pdf parameter values for Run 1.}
+\label{tab:signalpdfRun1}
+\end{center}
+\end{table}
 
-
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{lcc}
+Parameter & \bdmumu & \bsmumu \\
+$\mu$/\mevcc &5279.95 $\pm$ 0.13_{stat} $\pm$ 0.08_{syst} & 5367.34 $\pm$ 0.14_{stat} $\pm$ 0.35_{syst} \\ 
+$\sigma$/\mevcc & 22.46 $\pm$ 0.08_{stat} $\pm$ 0.41_{syst} &22.85 $\pm$ 0.08_{stat} $\pm$ 0.42_{syst}\\
+$n$& 1.118 $\pm$ 0.014 & 1.110 $\pm$ 0.017 \\
+$\alpha$ & 2.063 $\pm$ 0.007 & 2.062 $\pm$ 0.008 \\
+\end{tabular}
+\vspace{0.7cm}
+\caption{\bmumu mass \pdf parameter values for Run 2.}
+\label{tab:signalpdfRun1}
+\end{center}
+\end{table}
 
 \subsection{BDT \pdfs}
 %The fraction of \bmumu decays in each BDT bin is meeded to measure the branching fraction therefore the BDT \pdf needs to be evaluated. 
@@ -133,7 +161,7 @@ The number of mis-identified \bhh decays in each BDT bin, $\mathcal{N}_{B \to hh
 \end{equation}
 where ${\mathcal{N}_{B \to hh}$ is the number of TIS \bhh decays in data, $\epsilon^{TRIG}_{B^{0}_{(s)} \to \mu^{+} \mu^{-}, B \to hh}$ are the \bmumu and \bhh trigger efficiencies and $ \epsilon_{B \to hh \to \mu\mu}$ is the probability that a \bhh decays is mis-identified as \bmumu. The number of \bhh decays triggered by TIS us calculated for the full BDT range from the number of \bdkpi decays in data corrected for the expected fraction of \bhh decays is mode occupies. Apart form the trigger and particle identification requirements the same selection is used for \bdkpi decays as \bmumu, therefore only the trigger and particle identification efficiencies are corrected for. The efficiencies are calculated using a combination of data and simulated decays for each BDT bin and the same BDT \pdf as \bmumu decays is assumed for \bhh decays. 
 
-The expected yield of mis-identified \bhh decays in each BDT bin for Run 1 and Run 2 data are given in Table~\ref{}.
+%The expected yield of mis-identified \bhh decays in each BDT bin for Run 1 and Run 2 data are given in Table~\ref{}.
 
 \subsection{Semi-leptonic mass and BDT \pdfs}
 The mass \pdfs of semi-leptonic backgrounds vary across the BDT range therefore these \pdfs are evaluated using simulated decays separated into each BDT bin. An Argus function~\cite{} is used to describe the mass distributions. The shapes of \bdpimunu and \bsKmunu are extremely similar and therefore these backgrounds are modelled with one common \pdf. Similarly one mass \pdf is used to model \bpimumu decays.
@@ -154,7 +182,7 @@ where $x$ represents each background decay. The background estimation can be fac
 %\end{split}
 \label{eq:BkgndPredict2}
 \end{equation}
-where $\beta$ combined the yield, detection and selection efficiency and hadronisation factors of \bujpsik decays and is the same for all backgrounds. The $\beta$ term is evaluated using the same method as the normalisation of the \bmumu branching fractions described in Section~\ref{sec:Normalisation}. The \bujpisk efficiencies and yields aer evaluated across the full BDT range whereas the detection and selection efficiency of each background, $ \epsilon_{x}$, are evaluated separately for each BDT bin from information from both data and simulated decays. The hadronisation factors and branching fractions are specific to each background and were possible measured, rather than predicted, branching fractions are used. The expected yields of semi-leptonic backgrounds in each BDT bin for Run 1 and Run 2 data are given in Table~\ref{}.
+where $\beta$ combined the yield, detection and selection efficiency and hadronisation factors of \bujpsik decays and is the same for all backgrounds. The $\beta$ term is evaluated using the same method as the normalisation of the \bmumu branching fractions described in Section~\ref{sec:Normalisation}. The \bujpisk efficiencies and yields aer evaluated across the full BDT range whereas the detection and selection efficiency of each background, $ \epsilon_{x}$, are evaluated separately for each BDT bin from information from both data and simulated decays. The hadronisation factors and branching fractions are specific to each background and were possible measured, rather than predicted, branching fractions are used. %The expected yields of semi-leptonic backgrounds in each BDT bin for Run 1 and Run 2 data are given in Table~\ref{}.
 
 \section{Normalisation}
 \label{sec:Normalisation}
@@ -278,8 +306,8 @@ The quoted \bsmumu branching fraction assumes the SM value for \ADG, applying th
 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width= 0.8 \textwidth]{./Figs/BFAnalysis/placeholder.jpeg}
-      \caption{2D likelihood for \bd and \bs BFs. }
+        \includegraphics[width= 0.8 \textwidth]{./Figs/BFAnalysis/2D_contour_plot.png}
+      \caption{\bdmumu and \bsmumu 2-dimesnional likelihood plot for the simultaneous branching fraction fit to Run 1 and Run 2 data. }
     \label{fig:contour}
 \end{figure}
 
@@ -323,13 +351,13 @@ The quoted \bsmumu branching fraction assumes the SM value for \ADG, applying th
     \end{subfigure}
 
     \begin{subfigure}[b]{0.3\textwidth}
-       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/legendB.pdf}
+       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/legendA.pdf}
     \end{subfigure}
     ~
     \begin{subfigure}[b]{0.3\textwidth}
-       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/LegendA.pdf}
+       \includegraphics[width=\textwidth]{./Figs/BFAnalysis/legendB.pdf}
     \end{subfigure}
-    \caption{Mass distribution in BDT bins for selected \bsmumu and \bdmumu candidates with the fit overlaid for Run 1 and Run 2 data. The components in the total mass pdf (blue) are; \bsmumu (red), \bdmumu (green), \bhh (magenta), \bdpimunu and \bsKmunu (black), \bcjpsimunu (orange), \bpimumu (cyan), \lambdab (green) and combinatorial background (blue).{\it Think about the key, ideally consistent throughout all images! } }
+    \caption{Mass distribution in BDT bins for selected \bsmumu and \bdmumu candidates with the fit overlaid for Run 1 and Run 2 data. The components in the total mass pdf (blue) are; \bsmumu (red), \bdmumu (green), \bhh (magenta), \bdpimunu and \bsKmunu (black), \bcjpsimunu (orange), \bpimumu (cyan), \lambdab (green) and combinatorial background (blue).{\it Need to be updated with new tail parameters.} }
     \label{fig:BFfit}
 \end{figure}
 
