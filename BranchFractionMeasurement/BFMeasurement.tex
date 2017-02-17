@@ -8,7 +8,7 @@ The work presented in this Chapter was performed by the \bmumu LHCb analysis gro
 \label{sec:BFAnalysisStrategy}
 The \bmumu branching fractions, $\mathcal{B}$(\bmumu), are defined as the ratio of \bmumu decays that occur to the number of \bsd mesons created. However in reality not every \bmumu decay occuring will be within the LHCb detector acceptance, get reconstructed and pass the selection criteria of Chapter~\ref{selection_chapter}. Therefore the number of observed \bmumu decays at LHCb is reduced from the number of \bmumu decays occuring by the efficiency, $\epsilon$, of the detector, reconstruction and selection.
 The \bmumu branching fractions can be given by
-begin{equation}
+\begin{equation}
 \mathcal{B}(B^{0}_{(s)} \to \mu^{+} \mu^{-}) = \frac{\mathcal{N}_{B^{0}{(s)} \to \mu^{+} \mu^{-}}}{\mathcal{N}_{B^{0}_{(s)}}} = \frac{\mathcal{N}^{obs}_{B^{0}_{(s)} \to \mu^{+} \mu^{-}}}{\eplison \mathcal{N}_{B^{0}_{(s)}}}
 \label{eq:BFdef}
 \end{equation}
@@ -16,19 +16,19 @@ where $\mathcal{N}_{B^{0}{(s)} \to \mu^{+} \mu^{-}(B^{0}_{(s)})}$ is the total n
 
 
 The number of \bsd createdcan be calculated from the integrated luminoscity, $\mathcal{L}_{int}$, and the \bbbar production cross-section, $\sigma_{b \bar{b}}}$, via
-
 \begin{equation}
 \mathcal{N}_{B^{0}_{(s)}} = 2 \times \mathcal{L}_{int} \times \sigma_{b \bar{b}} \times f_{d(s)} 
 \label{eq:NumberB}
 \end{equation}
 
 where $f_{d(s)}$ is the hadronisation factor giving the probability for a $b$ or $\bar{b}$ quark to form a \bd (\bs) or a $\bar{B^{0}}$ ($\bar{B^{0}_{s}}$). The factor of 2 arises because no distinction is made between the \bsd and the $\bar{B^{0}_{s}}$. Although the number of \bsd can be computed this way the measured cross-section is not precisely known. Therefore to acheive a more precise branching fraction measurement an alternative approach is used. Another decay with a well know branching fraction is used to normalise the observed number of \bmumu decays and obtain the branching fractions. The extraction of $\mathcal{B}$(\bmumu) from the number of observed decays therefore is done using
-
-\begin{eqnarray}
-\mathcal{B}(B^{0}_{(s)} \to \mu^{+} \mu^{-}) &=& \frac{1}{\mathcal{B}_{norm}} \cdot \frac{f_{norm}}{f_{d(s)}} \cdot \frac{\epsilon_{norm}}{\epsilon_{B^{0}_{(s)} \to \mu^{+} \mu^{-}}} \cdot \frac{\mathcal{N}^{obs}_{B^{0}_{(s)} \to \mu^{+} \mu^{-}}}{\mathcal{N}^{obs}_{norm}} \\
-&=& \alpha_{d(s)} \cdot \mathcal{N}_{obs}(B^{0}_{(s)} \to \mu^{+} \mu^{-})
+\begin{equation}
+\begin{split}
+\mathcal{B}(B^{0}_{(s)} \to \mu^{+} \mu^{-}) &= \frac{1}{\mathcal{B}_{norm}} \cdot \frac{f_{norm}}{f_{d(s)}} \cdot \frac{\epsilon_{norm}}{\epsilon_{B^{0}_{(s)} \to \mu^{+} \mu^{-}}} \cdot \frac{\mathcal{N}^{obs}_{B^{0}_{(s)} \to \mu^{+} \mu^{-}}}{\mathcal{N}^{obs}_{norm}} \\
+&= \alpha_{d(s)} \cdot \mathcal{N}_{obs}(B^{0}_{(s)} \to \mu^{+} \mu^{-})
+\end{split}
 \label{eq:BFnorm}
-\end{eqnarray}
+\end{equation}
 where $norm$ inidicates the normalisation channel. The normalisation parameters can be combined into one normalisation parameter $\alpha_{d(s)}$ for each of the \bs and \bd decays. The normalisation proceedure removes the uncertainty from $\sigma_{b \bar{b}}$. 
 
 Therefore the number of observed \bmumu decays and the normalisation paramters, $\alpha_{d(s)}$, need to be evaluated to measure the branching fractions. The selection described in Chapter~\ref{selection_chapter} allows \bmumu candidates to be classified by their dimuon invariant mass and global BDT output. As illustrated in Figure~\ref{}. A simultaneous unbinned maximum likelihood fit is performed to the dimuon invariant mass distribution in 4 BDT bins to measure the observed number of \bdmumu and \bsmumu decays. The Run 1 and Run 2 data are kept seperate and the fit is applied simulatanrously to both data sets. To measure the number of \bmumu decays the fit requires knowledge of the mass shapes and the fraction of \bmumu decays in each BDT bin and the number of background decays and their mass shapes in each binl. The mass shapes and fraction of \bmumu decay in each BDT bin are described by probability density functions (\pdfs). The evalutaion of the \bmumu mass \pdfs and the fraction of decays in each BDT bin are described in Section~\ref{sec:signalPdfs}. The expected number of background decays and their mass \pdfs in each BDT bin are described in Section~\ref{sec:backgrounds}.  
@@ -88,7 +88,7 @@ The callibration is preformed for each year seperately then combined to give the
      %   \label{fig:BDTSbkg}
    \end{subfigure}
     \caption{\bmumu BDT \pdfs (black squares) for Run 1 and Run 2 data callibrated on \bdkpi decay and the combinatorail background decays (blue circles) for \bmumu candidates in data with a dimuon mass above 5477 \mevcc. }
-    \label{fig:BDT\pdfs}
+    \label{fig:BDTpdfs}
 \end{figure}
 
 
@@ -140,11 +140,13 @@ The mass \pdfs of semi-leptonic backgrounds vary across the BDT range therefore 
 
 The expected yield of the semi-leptonic backgrounds in each BDT bin is estimated by normalising to the number of \bujpsik decays observed via
 
-\begin{eqnarray}
-\mathcal{N}^{exp}_{x} &=& \mathcal{N}_{B^{+} \to J/\psi K{+}} \cdot \frac{f_{x}}{f_{u}} \cdot \frac{\mathcal{B}_{x}}{\mathcal{B}_{B^{+} \to J/\psi K^{+}}} \cdot \frac{\epsilon^{tot}_{x}}{\epsilon_{tot}^{B^{+} \to J/\psi K^{+}}} \\
-&=& \beta \cdot f_{x} \cdot \epsilon^{tot}_{x} \cdot \mathcal{B}_{x}
+\begin{equation}
+\begin{split}
+\mathcal{N}^{exp}_{x} &= \mathcal{N}_{B^{+} \to J/\psi K{+}} \cdot \frac{f_{x}}{f_{u}} \cdot \frac{\mathcal{B}_{x}}{\mathcal{B}_{B^{+} \to J/\psi K^{+}}} \cdot \frac{\epsilon^{tot}_{x}}{\epsilon_{tot}^{B^{+} \to J/\psi K^{+}}} \\
+&= \beta \cdot f_{x} \cdot \epsilon^{tot}_{x} \cdot \mathcal{B}_{x}
+\end{split}
 \label{eq:BkgndPredict}
-\end{eqnarray}
+\end{equation}
 
 The noramalisation can be factorised, the $\beta$ parameter combines the noramlisation information from the \bujpsik decay and is the same for all backgrounds. The evalutation of these parameters is detail in Section X, since they are the same as used to normalise the \bmumu branching fractions. The hadronisation factor $f_{x}$ depends on the background and where possible the measured branching fractions of the background are used, else the predicted values are used. 
 The total efficiencies, $\epsilon^{tot}$, include the detector acceptance, trigger, selection, reconstruction and particle identification efficiencies for each decay. The efficiencies are calucated for each BDT seperately using information from a combination of data and simulated decays to enable the expected number of background decays in each bin to be found.
@@ -157,11 +159,12 @@ The total efficiencies, $\epsilon^{tot}$, include the detector acceptance, trigg
 As introduced earlier the \bmumu branching fractions are measured by normalising the number of observed\bmumu decays the number of observed \bujpsik and \bdkpi decays. The normaliation paramters, $\apha_{d(s)}$ in equation~\ref{eq:BFnorm} can be re-written in more detail as
 
 
-\begin{eqnarray}
+\begin{equation}
+\end{split}
  \alpha_{d(s)} = \frac{1}{\mathcal{B}_{norm}} \cdot \frac{f_{norm}}{f_{d(s)}} \cdot \frac{\epsilon^{ACC}_{norm}}{\epsilon^{ACC}_{B^{0}_{(s)} \to \mu^{+} \mu^{-}}} \cdot \frac{\epsilon^{RECSEL|ACC}_{norm}}{\epsilon^{RECSEL|ACC}_{B^{0}_{(s)} \to \mu^{+} \mu^{-}}} \cdot \frac{\epsilon^{TRIG|RECSEL}_{norm}}{\epsilon^{TRIG|RECSEL}_{B^{0}_{(s)} \to \mu^{+} \mu^{-}}} \cdot \frac{1}{\mathcal{N}^{obs}_{norm}}
-
+\end{split}
 \label{eq:BFnormDetailed}
-\end{eqnarray}
+\end{equation}
 
 the efficiency term has been split up into several components indicting the efficiency of different stages of event selection.  The evaluations of different terms in equation~\ref{eq:BFnormDetailed} are described in the following sections.
 
@@ -239,13 +242,16 @@ In the fit the mass \pdfs and fraction of \bmumu decays in each BDT bin are cons
 
 The branching fraction results from the fit are;
 
-\begin{eqnarray}
+\begin{equation}
 %\begin{align}
-  \mathcal{B}(B^{0}_{s} \to \mu^{+} \mu^{-}) &=& (2.8 \pm 0.6) \times 10^{-9} \\
-  \mathcal{B}(B^{0} \to \mu^{+} \mu^{-}) &=& (1.6^{+1.1}_{-0.9})    \times 10^{-10} 
+\begin{split}
+  \mathcal{B}(B^{0}_{s} \to \mu^{+} \mu^{-}) &= (2.8 \pm 0.6) \times 10^{-9} \\
+  \mathcal{B}(B^{0} \to \mu^{+} \mu^{-}) &= (1.6^{+1.1}_{-0.9})    \times 10^{-10} 
 %\end{align}
+\end{split}
 \label{eq:BFresults}
-\end{eqnarray}
+\end{equation}
+
 Figure~\ref{fig:MLfit} shows the fit results for \bmumu candidates in the 4 BDT bins for both Run 1 and Run 2 data and Figure~\ref{fig:contour} the 2-dimensioanly likelihood profile for the \bdmumu and \bsmumu branching fraction measurements.
 The statistics significancal of the \bsmumu signal is 7.9 $\sigma$ which is the first single experiment obseravtion of the \bsmumu decay. While the significance of the \bdmumu signal is less at 1.9$\sigma$, therefore the CLs method is used to place an upper limit on the branching fraction of $\mathcal{B}$(\bdmumu)$ < 3.4 \times 10^{-10}$  at the 95~$\%$ confidence level.
 
