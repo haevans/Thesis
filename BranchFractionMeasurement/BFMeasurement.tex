@@ -29,7 +29,8 @@ where $f_{d(s)}$ is the hadronisation factor giving the probability for a $b$ or
 \end{split}
 \label{eq:BFnorm}
 \end{equation}
-where $norm$ indicates the normalisation channel. The normalisation parameters can be combined into one normalisation parameter $\alpha_{d(s)}$ for each of the \bs and \bd decays. The normalisation procedure removes the uncertainty from $\sigma_{b \bar{b}}$. Therefore the number of observed \bmumu decays and the normalisation parameters, $\alpha_{d(s)}$, need to be evaluated to measure the branching fractions. The selection described in Chapter~\ref{selection_chapter} allows \bmumu candidates to be classified by their dimuon invariant mass and global BDT output. As illustrated in Figure~\ref{}. A simultaneous unbinned maximum likelihood fit is performed to the dimuon invariant mass distribution in 4 BDT bins to measure the observed number of \bdmumu and \bsmumu decays. The Run 1 and Run 2 data are kept separate and the fit is applied simultaneously to both data sets. To measure the number of \bmumu decays the fit requires knowledge of the mass shapes and the fraction of \bmumu decays in each BDT bin and the number of background decays and their mass shapes in each bin. The mass shapes and fraction of \bmumu decay in each BDT bin are described by probability density functions (\pdfs). The evaluation of the \bmumu mass \pdfs and the fraction of decays in each BDT bin are described in Section~\ref{sec:signalPdfs}. The expected number of background decays and their mass \pdfs in each BDT bin are described in Section~\ref{sec:backgrounds}.  
+where $norm$ indicates the normalisation channel. The normalisation parameters can be combined into one normalisation parameter $\alpha_{d(s)}$ for each of the \bs and \bd decays. The normalisation procedure removes the uncertainty from $\sigma_{b \bar{b}}$. Therefore the number of observed \bmumu decays and the normalisation parameters, $\alpha_{d(s)}$, need to be evaluated to measure the branching fractions. The selection described in Chapter~\ref{selection_chapter} allows \bmumu candidates to be classified by their dimuon invariant mass and global BDT output. %As illustrated in Figure~\ref{}. 
+A simultaneous unbinned maximum likelihood fit is performed to the dimuon invariant mass distribution in 4 BDT bins to measure the observed number of \bdmumu and \bsmumu decays. The Run 1 and Run 2 data are kept separate and the fit is applied simultaneously to both data sets. To measure the number of \bmumu decays the fit requires knowledge of the mass shapes and the fraction of \bmumu decays in each BDT bin and the number of background decays and their mass shapes in each bin. The mass shapes and fraction of \bmumu decay in each BDT bin are described by probability density functions (\pdfs). The evaluation of the \bmumu mass \pdfs and the fraction of decays in each BDT bin are described in Section~\ref{sec:signalPdfs}. The expected number of background decays and their mass \pdfs in each BDT bin are described in Section~\ref{sec:backgrounds}.  
 
 
 The binning choice used for the BDT is chosen to optimise both fit stability and sensitivity to the \bmumu branching fractions. The bin boundaries used are
@@ -58,37 +59,40 @@ The parameters are evaluated using different methods:
 \item $n$ and $\alpha$ - these parameters are evaluated from the mass spectrum of \bdmumu and \bsmumu simulated decays where the mass distributions are smeared to have the same resolution as that measured from the quarkonia decays in data.
 \end{itemize}
 
-All parameters are evaluated separately for the \bd and \bs for each year of data taking. The resulting parameter vales are in good agreement across each year in the Run 1 and Run 2 data sets. The weighted average of the yearly parameters therefore is used to produced the mass \pdfs for Run 1 and Run 2 and are given in Tables~\ref{tab:signalpdfRun1} and~\ref{tab:signalpdfRun2} .
+All parameters are evaluated separately for the \bd and \bs for each year of data taking. The resulting parameter vales are in good agreement across each year in the Run 1 and Run 2 data sets. The weighted average of the yearly parameters therefore is used to produced the mass \pdfs for Run 1 and Run 2.% and are given in Tables~\ref{tab:signalpdfRun1} and~\ref{tab:signalpdfRun2} .
 %I am concerned about this table because I do not know where the uncertainties come from ....
-\begin{table}[htbp]
-\begin{center}
-\begin{tabular}{lcc}
-Parameter & \bdmumu & \bsmumu \\
-$\mu$/\mevcc &5284.73 $\pm$ 0.15_{stat} $\pm$ 0.27_{syst} & 5372.05 $\pm$ 0.16_{stat} $\pm$ 0.36_{syst} \\ 
-$\sigma$/\mevcc & 22.68 $\pm$ 0.05_{stat} $\pm$ 0.39_{syst} &23.07 $\pm$ 0.05_{stat} $\pm$ 0.39_{syst}\\
-$n$& 1.141 $\pm$ 0.026 & 1.156 $\pm$ 0.013 \\
-$\alpha$ & 2.054 $\pm$ 0.013 & 2.053 $\pm$ 0.007 \\
-\end{tabular}
-\vspace{0.7cm}
-\caption{\bmumu mass \pdf parameter values for Run 1.}
-\label{tab:signalpdfRun1}
-\end{center}
-\end{table}
+%\begin{table}[htbp]
+%\begin{center}
+%\begin{tabular}{lcc}
+% \hline
+%Parameter & \bdmumu & \bsmumu \\  \hline
+%$\mu$/\mevcc &5284.73 $\pm$ 0.15_{stat} $\pm$ 0.27_{syst} & 5372.05 $\pm$ 0.16_{stat} $\pm$ 0.36_{syst} \\ 
+%$\sigma$/\mevcc & 22.68 $\pm$ 0.05_{stat} $\pm$ 0.39_{syst} &23.07 $\pm$ 0.05_{stat} $\pm$ 0.39_{syst}\\
+%$n$& 1.141 $\pm$ 0.026 & 1.156 $\pm$ 0.013 \\
+%$\alpha$ & 2.054 $\pm$ 0.013 & 2.053 $\pm$ 0.007 \\  \hline
+%\end{tabular}
+%\vspace{0.7cm}
+%\caption{\bmumu mass \pdf parameter values for Run 1.}
+%\label{tab:signalpdfRun1}
+%\end{center}
+%\end{table}
 
-\begin{table}[htbp]
-\begin{center}
-\begin{tabular}{lcc}
-Parameter & \bdmumu & \bsmumu \\
-$\mu$/\mevcc &5279.95 $\pm$ 0.13_{stat} $\pm$ 0.08_{syst} & 5367.34 $\pm$ 0.14_{stat} $\pm$ 0.35_{syst} \\ 
-$\sigma$/\mevcc & 22.46 $\pm$ 0.08_{stat} $\pm$ 0.41_{syst} &22.85 $\pm$ 0.08_{stat} $\pm$ 0.42_{syst}\\
-$n$& 1.118 $\pm$ 0.014 & 1.110 $\pm$ 0.017 \\
-$\alpha$ & 2.063 $\pm$ 0.007 & 2.062 $\pm$ 0.008 \\
-\end{tabular}
-\vspace{0.7cm}
-\caption{\bmumu mass \pdf parameter values for Run 2.}
-\label{tab:signalpdfRun1}
-\end{center}
-\end{table}
+%\begin{table}[htbp]
+%\begin{center}
+%\begin{tabular}{lcc}
+% \hline
+%Parameter & \bdmumu & \bsmumu \\  \hline
+%$\mu$/\mevcc &5279.95 $\pm$ 0.13_{stat} $\pm$ 0.08_{syst} & 5367.34 $\pm$ 0.14_{stat} $\pm$ 0.35_{syst} \\ 
+%$\sigma$/\mevcc & 22.46 $\pm$ 0.08_{stat} $\pm$ 0.41_{syst} &22.85 $\pm$ 0.08_{stat} $\pm$ 0.42_{syst}\\
+%$n$& 1.118 $\pm$ 0.014 & 1.110 $\pm$ 0.017 \\
+%$\alpha$ & 2.063 $\pm$ 0.007 & 2.062 $\pm$ 0.008 \\
+% \hline
+%\end{tabular}
+%\vspace{0.7cm}
+%\caption{\bmumu mass \pdf parameter values for Run 2.}
+%\label{tab:signalpdfRun1}
+%\end{center}
+%\end{table}
 
 \subsection{BDT \pdfs}
 %The fraction of \bmumu decays in each BDT bin is meeded to measure the branching fraction therefore the BDT \pdf needs to be evaluated. 
@@ -148,7 +152,7 @@ The selection described in Chapter~\ref{selection_chapter} is effective at reduc
 \end{itemize}
 
 %To measure the number of \bsmumu decays these backgrounds must be modelled in the invariant mass fit in each BDT bin, therefore the mass \pdfs and fraction of events present in each BDT bin must be determined.  Backgrounds that fall below the \bd and \bs mass windows still need to be accruatly modelled so that the number of combinatorial background decays that cover the full mass range can be accuratley described/measured. The proceedure is slightly different for \bhh decays compared to semi-leptonic decays.
-In the fit to the dimuon invariant mass the combinatorial background is modelled by an exponential function. The combinatorial background yield is not constrained in the fit and the slope is constrained to have the same value across all BDT bins for each data set. %These parameters are determined fro a fit to the mass sidebands in data, where all other backgrounds are modelled as well.
+In the fit to the dimuon invariant mass the combinatorial background is modelled by an exponential function. The combinatorial background yield is not constrained in the fit and the slope is constrained to have the same value across all BDT bins for each data set. These parameters are determined from a fit to candidates in data for in BDT bin in the mass ranges [4900, ($m_{B^{0}} - 50$)] \mevcc and [($m_{B^{0}_{0}$ + 60, 6000] \mevcc, where the mass shapes and yields of the remaining backgrounds are constrained as well.
 The mass \pdfs and yields of the background from \bhh and semi-leptonic decays are constrained in the fir around the expected values. The background that have lower masses than the \bd and \bs must be accurately modelled in the fit to ensure that combinatorial background yield, that spans the full mass range, can be accurate described within the signal mass windows. The approaches for finding th mass \pdfs and expected yields differ for \bhh and semi-leptonic backgrounds, these procedures are described in the following sections.
 
 \subsection{\bhh mass and BDT \pdfs}
@@ -210,14 +214,14 @@ The \bujpsik mass pdf is modelled by an Ipathia function~\cite{} and the fit inc
 
 \begin{figure}[htbp]
     \centering
-  \begin{subfigure}[b]{0.4\textwidth}
+  \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=  \textwidth]{./Figs/BFAnalysis/Bd2KPi_mass_RunI_BDTbinNone.pdf}
         %\caption{ }
        % \label{fig:BDTSsig}
     \end{subfigure}
    % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
       %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[b]{0.4\textwidth}
+    \begin{subfigure}[b]{0.48\textwidth}
        \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Bd2KPi_mass_RunII_BDTbinNone.pdf}
       %  \caption{ }
      %   \label{fig:BDTSbkg}
@@ -230,14 +234,14 @@ The \bujpsik mass pdf is modelled by an Ipathia function~\cite{} and the fit inc
 
 \begin{figure}[htbp]
     \centering
-   \begin{subfigure}[b]{0.4\textwidth}
+   \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=  \textwidth]{./Figs/BFAnalysis/BuJpsiK_Run1.pdf}
         %\caption{ }
        % \label{fig:BDTSsig}
     \end{subfigure}
    % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
       %(or a blank line to force the subfigure onto a new line)
-    \begin{subfigure}[b]{0.4\textwidth}
+    \begin{subfigure}[b]{0.48\textwidth}
        \includegraphics[width=\textwidth]{./Figs/BFAnalysis/BuJpsiK_Run2.pdf}
       %  \caption{ }
      %   \label{fig:BDTSbkg}
@@ -272,8 +276,22 @@ The uncertainty on the hadronisation factor ratio contributes the largest uncert
 
 \subsection{Normalisation parameters}
 
-The yields, efficiencies and hadronisation factors are combined to produce separate normalisation factors for each year of data taking and each normalisation channel. The yearly normalisation factors are combined for each channel using to produce the normalisation factors for Run 1 and for Run 2 taking into account correlations between the parameters. A weighted average of the normalisation factors for \bdkpi and \bujpsiK is used to produce the overall normalisation factors for Run 1 and Run 2 as shown in Table~\ref{}.
+The yields, efficiencies and hadronisation factors are combined to produce separate normalisation factors for each year of data taking and each normalisation channel. The yearly normalisation factors are combined for each channel using to produce the normalisation factors for Run 1 and for Run 2 taking into account correlations between the parameters. A weighted average of the normalisation factors for \bdkpi and \bujpsiK is used to produce the overall normalisation factors for Run 1 and Run 2 as shown in Table~\ref{tab:normparams}.
 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{lcc}
+\hline
+Normalisation Paramters & Run 1 & Run 2 \\ \hline
+$\alpha_{d} \times 10^{11}$ & 2.877 $\pm$ 0.101 & 3.521 $\pm$ 0.155 \\ %Why are they so differe  
+$\alpha_{s} \times 10^{10}$ & 1.071 $\pm$ 0.072 & 1.306$ \pm$ 0.095 \\
+\hline
+\end{tabular}
+\vspace{0.7cm}
+\caption{Noramlisation parameters for \bsmumu and \bdmumu for Run 1 and Run 2.}
+\label{tab:normparams}
+\end{center}
+\end{table}
 
 
 \section{Results}
@@ -298,18 +316,16 @@ The branching fraction results from the fit are;
 Figure~\ref{fig:BFfit} shows the fit results for \bmumu candidates in the 4 BDT bins for both Run 1 and Run 2 data and Figure~\ref{fig:contour} the 2-dimensional likelihood profile for the \bdmumu and \bsmumu branching fraction measurements.
 The statistical significance of the \bsmumu signal is 7.9 $\sigma$ which is the first single experiment observation of the \bsmumu decay. While the significance of the \bdmumu signal is less at 1.9$\sigma$, therefore the CLs method is used to place an upper limit on the branching fraction of $\mathcal{B}$(\bdmumu)$ < 3.4 \times 10^{-10}$  at the 95~$\%$ confidence level.
 
-The quoted \bsmumu branching fraction assumes the SM value for \ADG, applying the corrections detailed in Section~\ref{sec:ADGBDTcorrections} for \ADG values of 0 and -1 shift the central value of $\mathcal{B}$(\bsmumu) by 4.6 $\%$ and 10.9 $\%$, respectively. 
+The quoted \bsmumu branching fraction assumes the SM value for \ADG, applying the corrections detailed in Section~\ref{sec:ADGBDTcorrections} for \ADG values of 0 and -1 shift the central value of $\mathcal{B}$(\bsmumu) by 4.6 $\%$ and 10.9 $\%$, respectively. All results are consistent with the predictions of the Standard Model.
 
 
 
-
-
-\begin{figure}[htbp]
-    \centering
-        \includegraphics[width= 0.8 \textwidth]{./Figs/BFAnalysis/2D_contour_plot.png}
-      \caption{\bdmumu and \bsmumu 2-dimesnional likelihood plot for the simultaneous branching fraction fit to Run 1 and Run 2 data. }
-    \label{fig:contour}
-\end{figure}
+%\begin{figure}[htbp] %Put in the summary.
+%    \centering
+%        \includegraphics[width= 0.8 \textwidth]{./Figs/BFAnalysis/2D_contour_plot.png}
+%      \caption{\bdmumu and \bsmumu 2-dimesnional likelihood plot for the simultaneous branching fraction fit to Run 1 and Run 2 data. }
+%    \label{fig:contour}
+%\end{figure}
 
 
 \begin{figure}[htbp]
@@ -357,7 +373,7 @@ The quoted \bsmumu branching fraction assumes the SM value for \ADG, applying th
     \begin{subfigure}[b]{0.3\textwidth}
        \includegraphics[width=\textwidth]{./Figs/BFAnalysis/legendB.pdf}
     \end{subfigure}
-    \caption{Mass distribution in BDT bins for selected \bsmumu and \bdmumu candidates with the fit overlaid for Run 1 and Run 2 data. The components in the total mass pdf (blue) are; \bsmumu (red), \bdmumu (green), \bhh (magenta), \bdpimunu and \bsKmunu (black), \bcjpsimunu (orange), \bpimumu (cyan), \lambdab (green) and combinatorial background (blue).{\it Need to be updated with new tail parameters.} }
+    \caption{Mass distribution in BDT bins for selected \bsmumu and \bdmumu candidates with the fit overlaid for Run 1 and Run 2 data. The fit includes components for \bdmumu, \bsmumu, combinatorial backgrounds, mis-identified \bhh decays and backgrounds from semi-leptonic decays. {\it Needs to be updated for new tail parameters.}}
     \label{fig:BFfit}
 \end{figure}
 
