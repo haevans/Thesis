@@ -1,3 +1,138 @@
 \chapter{Measurement of the \bsmumu effective lifetime}
 \label{sec:lifetimemeasurement}
 
+This chapter describes the mesaurement of the \bsmumu effective lifetime on data that passes teh selection requirements detailed in chapter Y. The overall fit strategy to measure the effective lifetime is described in Section~\ref{}. Toy studies were performed to optimise the details of the final fit configuration, these studies require the mass \pdfs of the signal and background decays in the data set (Sect.~\ref{}) and the signal and background decay time \pdfs (Sect.~\ref{}). The decay time distribution is not as simple as an expo because the selection biases it. The studies are detailed in Section X. Finally the measurement of the \bsmumu effective lifetime is presented in Section~\ref{}.
+{\it Probably need to give some more details here in order to set the scene for the sections better}
+The work presented in this chapter was completed for this thesis except the areas where the same method as the branching fraction analysis is used. 
+{\it I should add B2JpsiPhi earlier as well.}
+
+\section{Overall Fit Strategy (needs better title)}
+\label{sec:fitstrategy}
+
+The selection requirement described in chapter~\ref{} remove the majority of background decays from teh data set. The remainin g data set has a high signal purity from which the \bsmumu effective lifetime, \tmumu, can be measured. THere are two strp in the measurement strategy for the effective lifetime. In the first step an unbinned maximum likelihood fit is performed to the dimuon invariant mass spectrum where the \pdfs describing the \bsmumu signal and bacgournd decays are included. From the mass fit sWeights are extracted using the sPlot method described in~\cite{}. An unbinned maximum likelihood fir is ten applied to the sWeighted decay time distribution to measure the \bsmumu effective lifetime.
+
+The sPlot method provides a way to statistically untangle/seperate the signal and background distributions in a data set. A control variable, in this case the dimuon mass, for which the \pdfs of the signal and backgrounds are known is used to determin ethe yields of the signal and background and from the yields extract the sWeights. %If the signal and background \pdfs are given by $P_{s}(m)$ and $P_{b}(m)$ respectively and their yields are $N_{s}$ and $N_{b}$, the sWeights for signal are given by
+%\begin{equation}
+%\end{equation}
+
+The sWeights are then applied to the data, effectively removing the background. The signal distribution of an independant variable to the control variable, in the case the decay time, can then be found and properties of this distrubtion measured. For the sWeights to work properly at removing the background the control variable and the variable of interst must be uncorrelated. Therefore to measure the \bsmumu effective lifetime using this method the mass \pdfs for the \bsmumu and background decays must be well constrained and as well as the decay time \pdf for \bsmumu however no knowledge is needed in the fit of the background decay time \pdf. This is advantageous because the mass \pdfs are well constrained from the branching fraciton mesurement and the decay time distribution of combinatorial background decays is challeneging to accuratley constrain. 
+
+However the sWeighted obtained directly from the mass fit cannot be used in the \ml fit to the decay time. The noramlisation of these sWeighted will not produce to correct statistical uncertainty on the effective lifetime mesurement. Therefore the sWeights are re-normalised via
+\begin{equation}
+\omega^{'}_{i}= \omega_{i} \cdot \frac{\displaystyle\sum_{j} \omega{i}}{displaystyle\sum_{j} \omega{i}^{2}}
+\end{equation}
+
+to produce the correct statistical uncertainty on the measured effective lifetime.
+
+The use of sWeights requires that the mass and decay time of \bsmumu decays and the backgrounds are not correlated. The correlation has been evaluated for \bsmumu simulated decays and \bbbarmumux decays in data for each year of data taking and is of the order of a few percent as shown in Table~\ref{}. Therefore the dimuon mass can be used to accurately determine sWeighted to mesure the \bsmumu effective lifetime.
+
+
+{\it I really need to understand the sPlot method and why the re-weighting is required! How much detail do I need to include?}
+
+I think perhaps I should explain here about the optimisation of the fit strategy?
+I should explain how Run 1 and Run 2 data will be combined together.  Perhaps I could change the order of this start by describing the sWeighting stuff and then apply it to this measurement and explain what exactly is done?
+Prehaps;
+- several fit approahes were looked at, but it's hard because we have very few events, the best one we found uses the sPlot method to measure the lifetime
+- the sPlot method untangles the signal and background distribtuiosn in a data set to enable an unknow dist to be measured
+- it does this through a control variable which the bkgns and signal dists are known
+- fit that and from the fit the sweights are found are
+- the are optimesed to give
+- and have the following properties
+- then the weights can be applied to the data set, and it will give the signal/background subtracted distributions for the interesting variable
+- a ML fit can then be applied to the weighted interesting variable and it's properties can be measured.
+- however sweights must to re-normalised
+- this only works for uncorrelated variables
+- this is ideal of us, the mass dist. is very well know for signal and backgrounds from the BF analysis therefore this is our control varible
+- the DT dist is slighly complex becaus the selection biases it, it can be determined for signal from simualation and will be. But it's hard to accrautly know the DT dist of CBG which is the dominant background. Therefore sWeighted is great. We need to estimate it for the toys
+- We need the mass and dt to not be correclated and oh look they are not!
+
+
+\section{Mass \pdfs}
+{\it I think that I should put the yields in the toy studies part since it seems strange here.}
+
+The \ml fit to extract the sWeights is very similar to the fit to the mass distrbution used in the the measurement of the \bmumu branching fractions. The total \pdf used in the mass fit has the form
+\begin{equation}
+P_{tot} = N_{s}P_{s}(m_{\mu \mu}} + N_{b}P_{b}(m_{\mu \mu})
+\end{equation}
+where $N_{s(b)}$ are the signal (background) yields and $P_{s(b)}$ are the signal (background) \pdfs. For the effective lifetime measurement the \bmumu mass pdf is included in the background. The same method is used to evalute the mass \pdfs as used for the mass \pfds used in the branching fraction measurement. The same shapes are used but the different particle identification and BDT requirements used in the selection are taken into account in the exact \pdfs used. The data collected in 2011, 2012, 2015 and 2016 are combined for the effective lifetime measurement and the \ml fits are applied to the combined data set. The mass \pdfs for Run 1 are used to describe the \bsmumu signal and I'm not sure what is done about the backgrounds.
+
+Prehaps I should remind the reader what the shapes are for each conponemt and that the backgrounds are the same! Oh bother. This part is very poor! 
+
+Maybe some clear bullet points will help...
+- need to mass pdfs of the signal and backgrounds, the fit to the mass will have the form ... These must be know well to correct sWEights can be found
+- selection is very similar to BF, therefore the backgrounds are the same. These are ......
+- the pdfs used to describe the signal and backgrounds, these are
+- the pdfs are evaluted in the same way as the BF analysis for each part, taking into account the differnt PID and BDT requirements where it's relevant.
+- however for the EL all data is combined into one big fit to we don't split up run 1 and run 2. Therefore some differences are ... the Run 1 signal bsmumu pdf is used ... and for the backgrounds.
+
+\section{Decay time \pdfs}
+%Start clearly explain the bias on the decay time pdf and this effects signal and background
+The efficiency of the selection described in Chapter X varies as a function of decay time for both signal \bsmumu decays and background decays, biasing the decay time distribution. THe bias araises because variables used in the selection and the global BDT, including but no limited to the isolations and the B meson impact parameter and flight distance significance, are correlated with the decay time. Therefore cuts places on these vaibales have a non-uniform efficiency acorss the decay time range. The \pdf describiing the decay time changes from the expected decaying exponential and becomes
+\begin{equation}
+PDF(t) = \epsilon(t) \times e^{-\frac{t}{\tau}}
+\end{equation}
+where $\epsilon(t)$ is the selection efficiency. 
+The decay time distribution is shown in Figure~\ref{sec:signalDTpdf}} for simulated \bsmumu decays and combinatorial background (?) decays at different stages through the selection. The cut on the global BDT causes the biggest decay time bias as expected since it is the hardest selection cut applied. The decay time distributions for the semi-leptonic and \bhh decays are not shown because there are too few decays left after the selection.
+
+To measure the \bsmumu effective lifetime the efficiency of the selection on \bsmumu decay as a function of decay time must be accurately modelled. The determication of $\epsilon(t)$ for \bsmumu decays is described in Section~\ref{sec:signalDTpdf}. Although the sWeighting proceedure used to measure the \bsmumu effective lifetime means that the decay time \pdfs of the backgrounds present in the data set are not needed, realistic  descriptions of these decay time \pdfs are necessary for the to studies used to determine the optimal fit configuration. The background \pdfs are used described in Section~\ref{sec:bkgDTpdf}.
+% I need to say somewhere what the lifetime used to generate the decay time pdf for \bsmumu decays is.
+
+\begin{figure}[htbp]
+    \centering
+   \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width= \textwidth]{./Figs/placeholder.jpeg}
+        %\caption{ }                                                                                                                    
+       % \label{fig:BDTSsig}                                                                                                            
+    \end{subfigure}
+   % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                         
+      %(or a blank line to force the subfigure onto a new line)                                                                         
+    \begin{subfigure}[b]{0.48\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+      %  \caption{ }                                                                                                                    
+     %   \label{fig:BDTSbkg}                                                                                                            
+   \end{subfigure}
+    \caption{}
+    \label{fig:accpteg}
+\end{figure}
+
+\subsection{\bsmumu decay time pdf}
+\label{sec:signalDTpdf}
+The selection efficiency of \bsmumu decays as a function of decay time is modelled by a parameterised `acceptance' function given by
+\begin{equation}
+\epsilon(t) = \frac{[a(t - t{0}]^{n}}{1 + a(t - t{0}]^{n}}
+\label{eq:accpt}
+\end{equation}
+The acceptance function parameters are taken from a fit to simulated \bsmumu decays and are fixed in the fit to data. The parameters could not be determined from data because there are too few \bsmumu decays i data adn the efficency distribution of the more abundant \bhh decays after the selection is quite different to that of \bsmumu so cannot be used instead. This form of acceptance parameterisation has been used in previous LHCb analyses~\cite{}. A range of different acceptance models were test and the parameterisation in equation~\ref{eq:accpt} best descrubed the decay time efficiency.
+
+
+Although simualted decays model distribtuiosn in data reasonably well, the number of tracks present in an event is not well modelled in simulation. %The isolation variables used in the global BDT depend on the number of track in an event and the isolation variables are also correlated with the decay time of the \bs. 
+The \bs decay time distribution does not depend on the number of tracks present in the event however the isolation used in the global BDT do. The isolations are correlated with the decay time of the \bs, therefore the efficiency as a function of decay time of the cut on the global BDT will depend on the number of tracks in the event and will not be accurately modelled in simualted decays.  
+To overcome this the number of tracks in an event for simulated \bsmumu decays are weighted using information from the number of tracks per event for \bdkpi decays in both data and simulation. 
+
+The selection requirements listed in Table~\ref{} are used to identify \bdkpi decays in data and simulated decays but importantly not BDT cut is applied. The DLL$_{K\pi}$ variable is used to seperate \bdkpi decays from other \bhh decays in data and the same requirements are applied to simualted decays. The loose trigger requirements used for the branching fraction analysis are applied to data and simulated decays to keep a high trigger efficiency\footnote{The Hlt2Phys Dec trigger decision was not correctly implemented in 2016 simulated decays, therefore the DEC decisions of a combination of trigger lines designed to select \bhh are used to emulate the Hlt2Phys DEC trigger decision. The trigger lines are ... These requirements are applied to both data and simulated decays.}. The distribution of the number of tracks present in events containing \bdkpi decays are obtained from data by performing a maximum likelihood fit to the \bd mass distribution of candidates passing the selection and extracting sWeights. The distribution of the number of tracks per events are compared for simulated \bdkpi decays and sWeighted \bdkpi decays in data. The mass fits to \bdkpi decays in data are shown in Figure~\ref{} and the normalised distributions of the number of tracks per event in data and simulated decays is shown in Figure~\ref{}. Each year of data taking is kept seperate and the same simluation version is used for \bdkpi simulated decays as avaliable for \bsmumu decays.
+{\it I'm not really sure how clear what is done actually is or how much detail is needed for each part.} 
+
+
+The distributions of the number of trakcs per event for \bdkpi decays in data and simulated decays is used to weight the \bdkpi decays so that the distribution in simulation matches that in data. The weights are evaluated by taking the ratio of the normalised histogramsfor the number of tracks per event in Figure~\ref{}. The affect on the decay time distribution of appling these weights to \bdkpi simulated decays and the global BDT cut is shown in Figure~\ref{}. The different between the decay time distribution with and without the weigts is not large but clearly noticiable at low decay times. 
+
+The same weights are applied to simulated \bsmumu decays that pass selection by binning the number of tracks per event for \bsmumu decays in the same way to used for \bdkpi decays. The weights are applied before the global BDT cut is used. The change in the decay time distribution for \bsmuu simulated decays after the global BDT cut has been applied are shown in Figure~\ref{}. Similarly to \bdkpi decays the biggest effect is at low decay times.
+
+{\it I don't think it is very clear what is actually done, but I can make it clearer later! Once you've got some words it's easier to edit them right?!?}
+
+The reweighing relies on the number of tracks per event to be very similar for \bdkpi and \bsmumu decays, this cannot be evalutated in data due to the small number of \bsmumu decays in data. However Figure~\ref{} shows a comparison of the number of tracks per event for simulated \bsmumu and \bdkpi decays for each year. The resulting distributions are rather similar.
+
+Now the decay time efficicency will be accurately modelled in the weighted simulated \bsmumu decays parameters in the acceptance function can be evaluated. The decay time efficiency for each year of data taking is slighly different, as illustrated in Figure~\ref{}, therefore simulated decays from each year of data taking must be used to determine the acceptance parameters. However the number of simualted decays avalibale for each year does not correspong to the proportions of decays present in data. Therefore weights are used to create a cocktail of simulated decays that has the same proportions of decays for each year of data taking as the data. The weights used are
+\begin{equation}
+\omega_{i} \frac{Y_{i}^{J/\psi \phi} \epsilon_{i}}{\displaystyle\sum_{j} Y_{j}^{J/\psi \phi} \epsilon_{j}}\frac{\displaystyle\sum_{k} N_{k}^{\mu^{+}\mu^{-}}{N_{i}^{\mu^{+}\mu^{-}}
+\end{equation}
+where $i$ represents the year, $N^{\mu^{+}\mu^{-}$ the number of simulated \bsmumu decays avaliable for the year passing the full \bsmumu selection, $Y^{/\psi \phi}$ are the yields of \bsjpsiphi decays in data that have passed the stripping, trigger and pre-selection and $\epsilon$ are the efficiencies of the BDT and particle identification cuts applied to select \bsmumu decays that have already passed the other selection requirements. {\it How much detail do I really need to put in??} The same selection is applied to \bsjpisphi decays as \bsmumu. \bsjpisphi decays are used because the production, reconstruction and selection efficiencies behave the same as \bsmumu acorss the diffrent years of data taking, so the number of \bsjpisphi decays is proportional to the number of \bsmumu decays. 
+
+THw weights applied to simulated \bsmumu decays and values of the different conponents of the weights are given in Table~\ref{}.
+
+An unbinned \ml fit is performed dot ht e combined simulated \bsmumu decay to determine the acceptance parameters in equation~\ref{}. IN the fit the acceptance parameters can float freely and the \bsmumu lifetime is constrained to the average value used to generate the simulated decays. The fit results are shown in Figure~\ref{} and the acceptance parameters are given in Table~\ref{}.
+
+{\it I don't think this is that clear but it's a start right! (I desprately hope so!)}
+
+\subsection{Background decay time pdf}
+\label{sec:bkgDTpdf}
+Not needed in the fit but must be estimated in the toys. For exlusives we used ... for CBG we do something more complex.
