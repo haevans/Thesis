@@ -1,0 +1,99 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19400\viewh12860\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Decay time acceptance (Although this could prehaps be a seperate chapter since it is independant to the fit proceedure)\
+------------------------------------------------------------------------------\
+\
+    
+\b   > The selection described in the previous chapter biases the decay time distribution, look here is a plot of the effects of each step in the selection and also and MC truth distribution that we expect, in case you didn't know what a lifetime looks like!\
+      > The efficiency needs to modelled, which is done so by an acceptance function that is taken from another LHCb paper\
+      > We did look into other paramterisation but this described best the acceptance that we see\
+      > The plan is to take the acceptance paramters from fitting the decay time distribution of MC decays so that the parameters are fixed in the fit to data\
+      > can't use data to obtain the acceptance because there are too few BsMuMu decays and there's not another channel that would have the same efficiency as a function of decay time\
+      > NTrack weights - MC does not model the event multipility very well, so this is the number of tracks recoreded in the event and also the number of hits in the SPD. The decay time does not depend on these parameters but the isolation variables used in the global BDT do and also these are correctlated with the decay time, so this does mean the decay time distribution after the selection is not the same in MC as it is in data\
+      > To overcome this we use the more abundant decay Bd2KPi and compare data and MC. We apply the selection listed in X to data and MC but using loose DEC trigger requirements (note 2016 DEC!) so that there are high statistic and importantly no BDT cut! To select signal decays in data we fit the mass distribution and sWeight the data (do I describe this here or not?) Prehaps describe sWeights briefly. The nTracks normalised plots are shown here (could not use nSPD hits because B2hh triggers cut on this but BsMuMu triggers do not) do data and MC. \
+      > The the weights are taken from dividing bins of the normalised Bd2KPi data and MC distributions (the ratio of histograms) so that MC looks like data. Then here is the effect of applying the weights and then the BDT cut on Bd2KPi decay time distributions (shown weighted and un-weighted MC comparison with TIS triggers?). Overall not a huge change but it is obvious at low decay times.\
+      > The Bs2MuMu us weigted using the same nTracks bins and weights, and here are some more plots of the weighted and un-weighted decay time distributions\
+      > Now we have the MC, the number of MC events for each year isn't the same proportions as data and the acceptance functions vary from year to year (prehaps a plot). Therefore MC needs to be combined taking into account the proportion of decays we expect per year. We do this using some weights and using the B2JpsiPhi channel (These are taken from the BF analysis estimations), this channel is used because it has similar efficiencies per year compared to Bs2MuMu but is more abundant. \
+      > Here are all the weights we use.\
+      > We then fit the weighted cocktail of MC decays in the following way, the decay time dist. is fitting with accept. time expo, where the lifetime in the expo. is fixed to a fit to the MC generated decays. The paramters t0, a and n are allowed to float in the fit. \
+      > The pulls and parameters are shown on here, and so are the parameters for each year's acceptance distributions. Note that the parameter values are highly correlated. Here is also a plot of what the acceptance time actually looks like.\
+Given explanation of how we can\'92t use one year for everything.\
+
+\b0 I should give more details about the sWeights and some plots.\
+
+\b I should make clear the BDT cut is not applied till after the weighing and show the plots before and after.\
+Do I need to write out the pdf that I am actually fitting??\
+
+\b0 Perhaps I should find the nTracks vs mass correlation??\
+Also I could explain sWeights at the start of the chapter?\
+\
+Mass and decay time fit model/Measuring the effective lifetime\
+---------------------------------------------------------\
+- stragegy over view - measuring the mass to get sWeights then measuring the lifetime using those weights. Toys are used to get the fit model out.\
+- Correlation btwn mass and decay time\
+- mass pdfs - these are from the BF analysis\
+- decay time PDFs - including the background model\
+- overview of the toy studies\
+- to fit for tau or 1/tau\
+- toys to get the final configuration\
+- expected sensitivity of the measurement and a comparison with what is needed to distinguish A_DG from -1 and +1\
+\
+------------------------------------------------------------------------------------\
+
+\b - Strategy overview\
+  	   > Measuring the effective lifetime is done by fitting the mass distribution to get sWeights and the using the sWeights of for the weighted decay time distribution. \
+	   > sWeights work by ... (variables must not be correlated) for an indepth discussion please see X. RooFit package is used to implement this, however we need to re-normalise the sWeights so that the uncertainties are corectly estimated. 	   \
+	   > Toy experiments were performed to find the fit method that gave the smallest expected statistical uncertainty.\
+	   > Other fit stragies were looked at but simplicity was important since we have so few events and the aim is to have the smallest statistical uncertainty on the measurement.\
+\
+- Correlation (The prehaps could go in the earlier section instead of being a seperate section?)\
+	> sPlot method relies of the mass and lifetime not being correlated, the correclation have been evaliated for simulated Bs2MuMu candidates passing the full selection and data candidates above 5447 MeV/c2 without the BDT cut. The correlation is the order of a few percent therefore it doesn't matter\
+
+\b0 \
+- Mass pdfs ? \
+       > These were provided from the BF in a range of different ways! (and so also were the expected yields).  (These were provided by the BF because they have to know them for their final fit, this evalutation is discussed in Section X).\
+         > B2hh, pion and kaon are mis-identified as muons they pollute mainly the Bd mass window\
+         > B0->pimunu and Bs2KMunu, the kaon or pion are mis-identified as muons and pollute only the low mass sideband\
+         > Lambda_b, proton is mis-identified as a muon and pollutes the left side band, and Bs and Bd mass windows.\
+         > B0(+)->pimumu nad Bc->jpsimunu, two real muons are selected. B0(+) pollutes the left sideband and the Bc the whole window.\
+         > These have to be well known for the BF even if they are not under the mass peaks of the Bd and Bs becuase they impact the CBG estimation that is under the mass peaks\
+         > Lets find sentence to describe each evaluation (including signal):\
+	   	     \
+       > The CBG is an exponential and the slope is left to float in the final fit (for generation we use the fitted slopes for the BDT as documented in an earlier section)\
+\
+- Decay time PDF\
+  	> Acceptance * expo as described earlier, the advantage of using sWeights is that we do not need to know the PDFs of the backgrounds however these are important for the toy studies\
+	> B2hh and semi-leptonic, these all have known lifetimes which is nice and we assume some form of acceptance function\
+	> For the CBG this is harder because it's not a background from a specific decay. The BDT has the largest impact on the acceptance shape (after the stripping) so to accurately model this we must apply the BDT cut. However the BDT cut leaves too few Bs2Mumu background decays to be able to get a useful model so we use B2hh decays, so the same selection but with no PID requirements. We get the slopes by fitting the high lifetime slopes because the acceptance will be flat. Then we fix these values and fit the whole range to get the acceptance function. The plots and numbers are shown here. As a cross check we look at the average lifetime in bins of BDT for B2Hh and Bs2MuMu background decays passing all the selection cuts but no PID for B2hh. They are pretty similar and there is no cause for concern here. The stability of toys to this model is discussed in section X.\
+\
+- Overview of the toy studies\
+  	   > To develop the fit the toy studies were done by\
+	     	- generate mass and decay time distributions from the PDFs\
+		- use the expected number of each type of event passing the selection for each decay (These were provided by the BF because they have to know them for their final fit, this evalutation is discussed in Section X).\
+		- fit the mass to get sWeights then fit the decay time distribution, to get tau or tau-1\
+		- measure of sucess, pull distribution of free parameters in the fit and the uncertainty on the result of the decay time fit\
+	   > A number of differnt toy studies were performed that look at different mass ranges, as you can see from the plot X only Bdmumu, lambda_b and bhh are under the Bs mass peak so by changing the mass fit range different backgrounds can be excluded\
+	> Give the number of expected events for each channel after the selection in the full mass range with the BDT cut. \
+	> Perhaps put in an appendix the pdfs the were actually used.\
+\
+- to fit for tau or 1/tau\
+     	   > During the development of the fit the pulls were biased for fitting for tau no matter what backgrounds were included. This is illustrated for a very simple to model in Figure X. However as the number of events increase the pulls are now good. \
+	   > The likelihood function for the tau fit explains this\
+	   > However is we fit instead for 1/tau we see the following\
+	   > But 1/tau fits are actually biased themselves and also tau is of more physics interest\
+	   > The point of the pulls/this discussion is that the uncertainties are incorrectly estimates but another way to look at this is the coverage. Here is the coverage test of out very simple model. Look tau is actually ok for the expected statistics, therefore moving on we shall look at both and deciede later. The bias from the lifetime fit can be evaluated later when we have actually determined the fit and also with the number of events we actually see.\
+	\
+- The actual toy studies!	\
+      	    > 10, 000 toys were done per configuration\
+      	    > We looked at a range of things, that are listed in the table here and there results are here. \
+	    > The best is the mass cut, when only the Bs and CBG are modelled.\
+	    > Maybe show some pull plots? And/or mass fits?\
+	    > Here are some fits\
+\
+- The expected uncertainty\
+      	    > From the final fit the expected uncertatinties are shown for tau and 1/tau but here are some plots and look at the ranges!\
+}

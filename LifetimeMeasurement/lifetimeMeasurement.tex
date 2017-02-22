@@ -6,7 +6,9 @@ This chapter describes the mesaurement of the \bsmumu effective lifetime on data
 The work presented in this chapter was completed for this thesis except the areas where the same method as the branching fraction analysis is used. 
 {\it I should add B2JpsiPhi earlier as well.}
 
-\section{Overall Fit Strategy (needs better title)}
+
+
+\section{Fit Strategy}
 \label{sec:fitstrategy}
 
 The selection requirement described in chapter~\ref{} remove the majority of background decays from teh data set. The remainin g data set has a high signal purity from which the \bsmumu effective lifetime, \tmumu, can be measured. THere are two strp in the measurement strategy for the effective lifetime. In the first step an unbinned maximum likelihood fit is performed to the dimuon invariant mass spectrum where the \pdfs describing the \bsmumu signal and bacgournd decays are included. From the mass fit sWeights are extracted using the sPlot method described in~\cite{}. An unbinned maximum likelihood fir is ten applied to the sWeighted decay time distribution to measure the \bsmumu effective lifetime.
@@ -61,7 +63,7 @@ Prehaps I should remind the reader what the shapes are for each conponemt and th
 Maybe some clear bullet points will help...
 - need to mass pdfs of the signal and backgrounds, the fit to the mass will have the form ... These must be know well to correct sWEights can be found
 - selection is very similar to BF, therefore the backgrounds are the same. These are ......
-- the pdfs used to describe the signal and backgrounds, these are
+- the pdfs used to describe the signal and backgrounds, these are ... (Explaining which/if any are combined in the same way as the BF measurement)
 - the pdfs are evaluted in the same way as the BF analysis for each part, taking into account the differnt PID and BDT requirements where it's relevant.
 - however for the EL all data is combined into one big fit to we don't split up run 1 and run 2. Therefore some differences are ... the Run 1 signal bsmumu pdf is used ... and for the backgrounds.
 
@@ -135,4 +137,57 @@ An unbinned \ml fit is performed dot ht e combined simulated \bsmumu decay to de
 
 \subsection{Background decay time pdf}
 \label{sec:bkgDTpdf}
-Not needed in the fit but must be estimated in the toys. For exlusives we used ... for CBG we do something more complex.
+%Not needed in the fit but must be estimated in the toys. For exlusives we used ... for CBG we do something more complex.
+{\it It needs to be clear before this point I think why these are needed and what exactly the toy studies are/aim to do.}
+The final fit to measure the \bsmumu effective lifetime does not require knowledge of the decay time \pdfs of the backgrounds. However the final fit configuration is developed using toy studies that generate the mass and decay time distributions of both signal and background decays. Therefore realistic models of the decay time \pdfs are needed to determine the optimal fit configuration. 
+
+
+The selection biases the decay time distributions of the backgrounds as it does the \bsmumu decay time. Therefore they are described by the same \pdfs as in equation~\ref{}. 
+
+The backgrounds from semi-leptonci, \bhh and \bdmumu decays are asigned the same acceptance function as \bsmumu decays because the efficiency of these decays as a function of decay time is roughly similar or the same as \bsmumu decays. The acceptances of these backgrounds does not need to be as well modelled as the acceptance function of the signal because very few background decays from these sources will be present in the data set after the selection and the final results does not depend on the acceptance function of the backgrounds. The lifetimes of these decays as known, the values used in the toy studies for the decay times \pdfs are given in Table~\ref{}. {\it In the lifetime are any of the backgrounds merged?}
+
+{\it I'm still not happy with the order of this chapter! Perhaps could split it into. 1. overview and explain that toys are needed and perhaps put the needed for the acceptance in here. 2. Signal pdfs 3. Background pdfs. 3. expected yields 4. Toy stufdies; a. outline, b. tau or 1/tau, c. actual results, d. expected sensitivity. 5. Results}
+
+%Lets carry on for now, the order can be rearranged later! (Easier if there are acutally words to rearrange!)
+
+The decay time \pdf of the combinatorial background is more challenging to determine. Since it arises from random combinations of muons in the eventand not from one source, there is no lifetime that describes the background. Furthermore the global BDT which is designed to seperate \bsmumu decays from combinatorial background decays will have a will have a different efficiency as a function of decay time for the combinatorial background compared to the \bsmum signal. The decay time \pdf of the combinatorial background cannot be evaluated from simulated decays or decays in data that pass the full \bsmumu selection, including the global BDT cut, because there are too few candidates left. The decay time \pdf must be evaluated after the global BDT cut because it has the greatest impact on the shape of the acceptance function. Therefore the decay time \pdf of the combinatorial background passing the \bsmumu selection is evaluated in candidates in data that pass the \bhh selection and have a reconstructed mass greater than 5447 \mevcc, above the \bs signal region. The decay time \pdf for combinatorial background decays is modelled by
+\begin{equation}
+PDF_{cbg}(t) = \epsilon(t)\times \left( f \cdot e^{-\frac{t}{\tau_{1}}} + (1-f)\cdot e^{-\frac{t}{\tau_{2}}} \right)
+\label{eq:cbgDTpdf}
+\end{equation}
+where $\tau_{1}$ and $\tau_{2}$ are two independant lifetimes used to describe the background, $f$ describes the fraction of candidates with each lifetime and the same acceptance shape as in equation~\ref{} is used for describe the decay time efficiency. The decay time acceptance is expected to be flat at large decay times, therefore the lifetimes of the combinatorial background decays are determinced from a \ml fit of the two decaying exponentials to candidates with a decay time above X. The acceptance function parameters are then determined from a \ml fit to the full decay time range using the \pdf in equation~\ref{eq:cbgDTpdf} where the lifetimes and the fraction of candidates with each lifetime are fixed. The results are shown in Figure~\ref{} and the \pdf parameters in Table~\ref{}. This model for the background assumes that the decay time distribution of \bhh candidates formed by random combinations of kaons and pions is the same as that of \bsmumu candidates formed by randomly combining muons in the event. There are too few candidates passing the \bsmumu selection to verify this assumption however the average decay time of \bhh and \bsmumu canddiates with a mass above 5447 \mevcc is evaluated in bins of BDT. The results are shown in Table~\ref{}, the average decay times are not significantly different for \bhh and \bsmumu candidates therefore the decay time \pdf described here is a good model for the combinatiral background in the toy studies.
+
+
+
+
+
+\section{Toy Studies for fit optimisation}
+\label{sec:toys}
+The strategy to measure the \bsmumu effective lifetime was described earlier in Section~\ref{}, however given the extremely rare nature of \bsmumu decays, the stability and performance of the final fit will be highly dependant on \ml fit to the invarianant mass distrbituion. Toy studies were performed to determine which mass range, and consequently which backgrounds must be included in the \ml fit, would produce the smallest expected uncertainty on the measured effective lifetime for the data set. 
+
+The expected number of signal and background decays in the data set passing the \bsmumu selection in the mass range 4600 - 6000 \mevcc were used as the basis for the toy studies. The expected yields were calculated using the same methods described in Chapter~\ref{} for the \bmumu branching fraction analysis but taking into account the looser particle identification requirement and the cut places on the global BDT. The number of \bsmumu and \bdmumu decays assumed the predicted branching fraction in the Standard Model. The expected yields are shown in Table~\ref{}. 
+
+The toy studies are performed by generating the mass and decay time distributions for the expected number of signal and background decays using the \pdfs described in Section~\ref{} and~\ref{}. Then sWeights are computed from an unbinned \ml fit to the invaraient mass distribution and the lifetime and its inverse are measured by a unbinned \ml fit to the signal weigted decay time distribution. A series of different mass ranges and background conponents in the mass fit were tested. For each possible configuration 10,000 toy studies were performed and the performance of each configuration was evaluated using using a couple of differnt metrics. The first is the median exptected uncertainty of the \bsmumu lifetime and inverse lifetime, the median rather than the mean unceratinty is used due to the asymentric spread of uncertainties obsvered for the expected statistics. The secondmeasure is the pull distributions of any free parameters in the fit, where the pull is defined as $(x - \mu)/\sigma$ with $x$ the measured parameter value, $\mu$ the value used to generate the toys and $\sigma$ the uncertainty on the measured parameter value. Ideally the pull distributions will be Gaussian in shape with a mean at 0 and a width of 1.
+
+ The details of the toy studies performed are given in Section~\ref{} however first is a discussion of whether the \bsmumu lifetime or inverse lifetime should be measured given the expected number of decays present in the data set.  
+
+\subsection{To fit for $\tau$ or $\tau^{-1}$}
+\label{sec:tauORinvtau}
+During the development of the fit stragey the toy studies produced biased pull distributions for the \bsmumu effective lifetiem no matter what mass fit conficutration was used and when no acceptance function was used in the decay time \pdfs. The pull distribution for \tmumu is shown in Figure~\ref{} for a simplified study where no acceptance function is used and only signal and combinatorial background decays are generated, the distribution is clearly not Gaussian in shape. The bias was more pronounced in early stages of the analysis development which was done assuming the expect signal and background yields of only the Run 1 data set. 
+
+The log-likelihood profile of the decay time fit at a function of \tmumu reveals the cause of the biased pull distribution. For the simiplifed studies illustrated in Figure~\ref{} the decay time is modelled by
+\begin{equation}
+N(t, \tau) = N_{0}e^{-\frac{t}{\tau}}
+\end{equation}
+The likelihood profile as a function of decay time for this model is shown in Figire~\ref{} and there is a clear discontinuity at the zero. The discontinuity arises because the value of $N(t, \tau)$ approaches zero as $\tau$ reduces in value until at the origin when $\tau = 0$ and $N(t, \tau)$ jumps to infinity. The jump in value is reflected as the disconituity in the log-likelihood profile. At the low statistics expected for the data set, particularly when only Run 1 data was considered, the fitted value for \tmumu is within a few standard deviations of the discontinuity, therefore leading the bias in the statistical unceratinty and hence the pull distributions. Howeveras the number of \bsmumu decays is increased the bias in the \tmumu pull distributions disappears as shown in Figure~\ref{}, as is expected.
+
+The bias in the \tmumu pull distribution shows that the distribution cannot be interpreted in the usualy way and also that the statistical uncertainties from the \ml to the weighted decay time distribution may not be correct. 
+
+One way to get around this is to measure the inverse of the lifetime, \invtmumu, instead. The pull distributions for fitting this are shown in Figure~\ref{} and produce unbiased pull values regardless of the statistics. However the lifetime is a more interesting variable from a physics point of view due to its realitionship with \ADG. Furthermore fitting for the \invtmumu introduces a different type of bias in to the fit, but this is negliable for the expected number of statics. 
+
+Ideally the fit statragy would be performed to extract the lifetime not the inverse lifetime. An alternative way to determine the accuracy of the uncertainties from the fit for \tmumu is by performing a coverage test. 
+
+
+   
+\subsection{Toy Results}
+\label{sec:toyresults}
