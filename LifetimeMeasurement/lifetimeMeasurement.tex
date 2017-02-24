@@ -153,6 +153,53 @@ The same weights are applied to simulated \bsmumu decays that pass selection by 
 
 The reweighing relies on the number of tracks per event to be very similar for \bdkpi and \bsmumu decays, this cannot be evalutated in data due to the small number of \bsmumu decays in data. However Figure~\ref{} shows a comparison of the number of tracks per event for simulated \bsmumu and \bdkpi decays for each year. The resulting distributions are rather similar.
 
+
+
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=0.4\textwidth]{Figs/LifetimeMeasurement/2011_nTracks_Bd2KPi_MC_data_comparison_Dec_triggers.pdf}
+    \includegraphics[width=0.4\textwidth]{Figs/LifetimeMeasurement/2012_nTracks_Bd2KPi_MC_data_comparison_Dec_triggers.pdf}
+    \includegraphics[width=0.4\textwidth]{Figs/LifetimeMeasurement/2015_nTracks_Bd2KPi_MC_data_comparison_Dec_triggers.pdf}
+    \includegraphics[width=0.4\textwidth]{Figs/LifetimeMeasurement/2016_nTracks_Bd2KPi_MC_data_comparison_Dec_triggers.pdf}
+  \caption{The number of tracks for \bdkpi candidates for 2011 (top left), 2012 (top right), 2015 (bottom left) and 2016 (bottom right), for Monte Carlo simulated events (red circles) and sWeighted data (green triangles). The histograms have been normalised to have unit area and so the y axis scale is arbitrary.}
+  \label{fig:nTracksMCDataComp}
+\end{figure}
+\FloatBarrier
+
+
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/2011_B_TAU_Bd2KPi_MC_weighted_and_unweighted.pdf}
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/2012_B_TAU_Bd2KPi_MC_weighted_and_unweighted.pdf}
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/2015_B_TAU_Bd2KPi_MC_weighted_and_unweighted.pdf}
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/2016_B_TAU_Bd2KPi_MC_weighted_and_unweighted.pdf}
+  \caption{The decay time distributions for \bdkpi simulated candidates for 2011 (top left), 2012 (top right), 2015 (bottom left) and 2016 (bottom right), before (red circles) and after (blue squares) reweighting by the number of tracks, after the BDT cut and TIS trigger requirements have been applied.}
+  \label{fig:BdToKpi_weightDecayTime}
+\end{figure}
+
+
+
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/nTracks_2011_Bd2KPi_Bs2MuMu_Dec_triggers.pdf}
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/nTracks_2012_Bd2KPi_Bs2MuMu_Dec_triggers.pdf}
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/nTracks_2015_Bd2KPi_Bs2MuMu_Dec_triggers.pdf}
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/nTracks_2016_Bd2KPi_Bs2MuMu_Dec_triggers.pdf}
+  \caption{The number of tracks for \bdkpi (green triangles) and \bsmumu (pink circles) decays in Monte Carlo simulated events after the trigger, stripping and pre-selection but before any BDT cut, for each year: 2011 (top left), 2012 (top right), 2015 (bottom left) and 2016 (bottom right). }
+  \label{fig:BsmmVsBdToKpinTracks}
+\end{figure}
+
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/2011_Bs2MuMu_MC_weighted_unweighted_comparison.pdf}
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/2012_Bs2MuMu_MC_weighted_unweighted_comparison.pdf}
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/2015_Bs2MuMu_MC_weighted_unweighted_comparison.pdf}
+    \includegraphics[width=0.49\textwidth]{Figs/LifetimeMeasurement/2016_Bs2MuMu_MC_weighted_unweighted_comparison.pdf}
+  \caption{The decay time distributions for \bsmumu simulated candidates for 2011 (top left), 2012 (top right), 2015 (bottom left) and 2016 (bottom right), before (red circles) and after (blue squares) reweighting by the number of tracks, after the BDT cut and trigger requirements have been applied.}
+  \label{fig:BsTomumu_weightDecayTime}
+\end{figure}
+
+
 Now the decay time efficicency will be accurately modelled in the weighted simulated \bsmumu decays parameters in the acceptance function can be evaluated. The decay time efficiency for each year of data taking is slighly different, as illustrated in Figure~\ref{}, therefore simulated decays from each year of data taking must be used to determine the acceptance parameters. However the number of simualted decays avalibale for each year does not correspong to the proportions of decays present in data. Therefore weights are used to create a cocktail of simulated decays that has the same proportions of decays for each year of data taking as the data. The weights used are
 \begin{equation}
 \omega_{i}  = \frac{Y_{i}^{J/\psi \phi} \epsilon_{i}}{\displaystyle\sum_{j} Y_{j}^{J/\psi \phi} \epsilon_{j}} \cdot \frac{\displaystyle\sum_{k} N_{k}^{\mu^{+}\mu^{-}}}{N_{i}^{\mu^{+}\mu^{-}}}
