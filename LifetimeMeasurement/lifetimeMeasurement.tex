@@ -26,7 +26,7 @@ The sWeights are then applied to the data, effectively removing the background. 
 
 However the sWeighted obtained directly from the mass fit cannot be used directly in the \ml fit to the decay time. The noramlisation of the sWeights will not produce to correct statistical uncertainty on the effective lifetime mesurement. Therefore the sWeights are re-normalised via
 \begin{equation}
-\omega^{'}_{i}= \omega_{i} \cdot \frac{\displaystyle\sum_{j} \omega{i}}{displaystyle\sum_{j} \omega{i}^{2}}
+\omega^{'}_{i}= \omega_{i} \cdot \frac{\displaystyle\sum_{j} \omega{j}}{\displaystyle\sum_{j} \omega{j}^{2}}
 \end{equation}
 where $\omega_{i}$ are the sWeight values for each decays. The re-normalisaed sWeights will then produce the correct statistical uncertainty in a \ml fit to measure the \bsmumu effective lifetime.
 
@@ -36,13 +36,14 @@ The use of sWeights requires that the mass and decay time of \bsmumu decays and 
 \begin{center}
 \begin{tabular}{lcc}
 \hline
-Year & \bsmumu correlation &  \bbbarmumux correlation \\ \hline \hline
-2011 &  &   \\
-2012 &  &   \\
-2015 &  &   \\ 
-2016 &  & \\
-
+Year & \bsmumu correlation &  \bbbarmumux correlation \\ \hline
+2011 & -0.008  & 0.003  \\
+2012 &  -0.006&   0.008\\
+2015 &  -0.006&   0.010\\ 
+2016 &  0.008& 0.002\\
+\hline
 \end{tabular}
+\vspace{0.7cm}                                                                                                                                               
 \caption{Correlation between mass and decay time for candidate from \bsmumu simulated decays and \bbbarmumux decays from data for 2011, 2012, 2015 and 2016 data taking conditions. The full effective lifetime selection is applied to simulated \bsmumu decays and \bbbarmumux decays in data must pass the effective lifetime selection requirements apart from the global BDT cut and have a dimuon invariant mass of 5447~\mevcc.}
 \label{tab:correlation}
 \end{center}
@@ -78,7 +79,7 @@ Alternative methods were investigated to measure the \bsmumu effective lifetime 
 The selection used to identify \bsmumu candidates for the \bmumu branching fraction and \bsmumu effective lifetime measurements are very similar. 
 The background decays passing the \bsmumu effective lifetime selection and in the mass range 4900 - 6000 \mevcc are the same as those passing the branching fraction selection. Therefore the \ml fit to extract the sWeights is very similar to the fit to the mass distrbution used in the the measurement of the \bmumu branching fractions. The total \pdf used in the mass fit has the form
 \begin{equation}
-P_{tot} = N_{s}P_{s}(m_{\mu \mu}} + \displaystyle\sum_{i} N^i_{b}P^i_{b}(m_{\mu \mu})
+P_{tot} = N_{s}P_{s}(m_{\mu \mu}) + \displaystyle\sum_{i} N^i_{b}P^i_{b}(m_{\mu \mu})
 \end{equation}
 where $i$ represents a particular background, $N_{s(b)}$ are the signal (background) yields and $P_{s(b)}$ are the signal (background) \pdfs. The background decays include; \bdmumu, \lambdab, \bdpimunu, \bsKmunu, \bpimumu, \bcjpsimunu and combinatorial background decays. %For the effective lifetime measurement the \bmumu mass \pdf is included in the background. 
 %The same method is used to evalute the mass \pdfs as used for the mass \pfds used in the branching fraction measurement (Sect.~\ref{}). 
@@ -110,19 +111,19 @@ To measure the \bsmumu effective lifetime the efficiency of the selection on \bs
 
 \begin{figure}[htbp]
     \centering
- %  \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width= 0.8 \textwidth]{./Figs/placeholder.jpeg}
+   \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width= \textwidth]{./Figs/placeholder.jpeg}
         %\caption{ }                                                                                                                    
-       % \label{fig:BDTSsig}                                                                                                            
+        %\label{fig:BDTSsig}                                                                                                            
     \end{subfigure}
-  % % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                         
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                         
       %(or a blank line to force the subfigure onto a new line)                                                                         
- %   \begin{subfigure}[b]{0.48\textwidth}
-   %    \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+    \begin{subfigure}[b]{0.48\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
       %  \caption{ }                                                                                                                    
      %   \label{fig:BDTSbkg}                                                                                                            
-  % \end{subfigure}
-    \caption{Decay time distribution of \bsmumu simulated decays after different stages of the selection process. The generated decay time distribution (purple) before any selection requirements are applied, the stripping and trigger requirements (X), the offline selecion ....}
+   \end{subfigure}
+    \caption{Decay time distribution (left) and selection efficiency as a function of decay time (right) for \bsmumu simulated decays after different stages of the selection process. The generated decay time distribution (purple) before any selection requirements are applied, the stripping and trigger requirements (X), the offline selecion ....}
     \label{fig:accpteg}
 \end{figure}
 
@@ -130,7 +131,7 @@ To measure the \bsmumu effective lifetime the efficiency of the selection on \bs
 \label{sec:signalDTpdf}
 The selection efficiency of \bsmumu decays as a function of decay time is modelled by a parameterised `acceptance' function given by
 \begin{equation}
-\epsilon(t) = \frac{[a(t - t{0}]^{n}}{1 + a(t - t{0}]^{n}}
+\epsilon(t) = \frac{[a(t - t_{0}]^{n}}{1 + a(t - t_{0}]^{n}}
 \label{eq:accpt}
 \end{equation}
 The acceptance function parameters are taken from a fit to simulated \bsmumu decays and are fixed in the fit to data. The parameters could not be determined from data because there are too few \bsmumu decays i data adn the efficency distribution of the more abundant \bhh decays after the selection is quite different to that of \bsmumu so cannot be used instead. This form of acceptance parameterisation has been used in previous LHCb analyses~\cite{}. A range of different acceptance models were test and the parameterisation in equation~\ref{eq:accpt} best descrubed the decay time efficiency.
@@ -154,7 +155,7 @@ The reweighing relies on the number of tracks per event to be very similar for \
 
 Now the decay time efficicency will be accurately modelled in the weighted simulated \bsmumu decays parameters in the acceptance function can be evaluated. The decay time efficiency for each year of data taking is slighly different, as illustrated in Figure~\ref{}, therefore simulated decays from each year of data taking must be used to determine the acceptance parameters. However the number of simualted decays avalibale for each year does not correspong to the proportions of decays present in data. Therefore weights are used to create a cocktail of simulated decays that has the same proportions of decays for each year of data taking as the data. The weights used are
 \begin{equation}
-\omega_{i} \frac{Y_{i}^{J/\psi \phi} \epsilon_{i}}{\displaystyle\sum_{j} Y_{j}^{J/\psi \phi} \epsilon_{j}}\frac{\displaystyle\sum_{k} N_{k}^{\mu^{+}\mu^{-}}{N_{i}^{\mu^{+}\mu^{-}}
+\omega_{i}  = \frac{Y_{i}^{J/\psi \phi} \epsilon_{i}}{\displaystyle\sum_{j} Y_{j}^{J/\psi \phi} \epsilon_{j}} \cdot \frac{\displaystyle\sum_{k} N_{k}^{\mu^{+}\mu^{-}}}{N_{i}^{\mu^{+}\mu^{-}}}
 \end{equation}
 where $i$ represents the year, $N^{\mu^{+}\mu^{-}$ the number of simulated \bsmumu decays avaliable for the year passing the full \bsmumu selection, $Y^{/\psi \phi}$ are the yields of \bsjpsiphi decays in data that have passed the stripping, trigger and pre-selection and $\epsilon$ are the efficiencies of the BDT and particle identification cuts applied to select \bsmumu decays that have already passed the other selection requirements. {\it How much detail do I really need to put in??} The same selection is applied to \bsjpisphi decays as \bsmumu. \bsjpisphi decays are used because the production, reconstruction and selection efficiencies behave the same as \bsmumu acorss the diffrent years of data taking, so the number of \bsjpisphi decays is proportional to the number of \bsmumu decays. 
 
