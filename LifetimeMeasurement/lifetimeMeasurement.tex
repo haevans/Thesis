@@ -83,13 +83,13 @@ where $i$ represents a particular background, $N_{sig(bkg)}$ are the signal (bac
 
 The \bsmumu and \bdmumu mass \pdfs are described by a Crystal ball functions, with the Run~1 parameters given in Table~\ref{tab:signalpdfRun1}. The Run~1 and Run~2 data sets are combined for the measurement of the \bsmumu \el therefore only one mass \pdf is needed to describe \bmumu decays in data. The choice of Run~1 or Run~2 parameters in the \pdf has a negligible affect on the measurement of the \bsmumu \el as shown in Section~\ref{}.
 
-Mis-identified semi-leptonic decays, \lambdab, \bdpimunu, \bsKmunu, \bpimumu, \bcjpsimunu,  are described by Argus functions evaluated from simulated decays using the same method as described in Section~\ref{sec:backgrounds}. The effective lifetime particle identification requirements and the cut on the global BDT are taken into account in the evaluation of the \pdf shapes. In the same was as the mass \pdfs used for the measurement of the \bmumu branching fraction, \bdpimunu and \bsKmunu are modelled with one common \pdf and so are \bpimumu decays.
+Mis-identified semi-leptonic decays, \lambdab, \bdpimunu, \bsKmunu, \bupimumu, \bdpimumu and \bcjpsimunu are each described by an Argus function convoluted with a Gaussian function evaluated from simulated decays using the same method as described in Section~\ref{sec:backgrounds}. The effective lifetime particle identification requirements and the cut on the global BDT are taken into account in the evaluation of the \pdf shapes. However unlike the \pdfs used in the branching fraction analysis a separate \pdf is used for each background decay. %In the same was as the mass \pdfs used for the measurement of the \bmumu branching fraction, \bdpimunu and \bsKmunu are modelled with one common \pdf and so are \bpimumu decays.
 
 Backgrounds from mis-identified \bhh decays are described by the double crystal ball function evaluated using the method described in Section~\ref{sec:backgrounds} with the effective lifetime particle identification requirements applied. Finally the combinatorial background is modelled with a decaying exponential where the slope is left free to float in the final fit.
 
 The mass \pdfs for the signal and backgrounds are evaluated for the mass range 4900 to 6000~\mevcc to be used in the toy studies described in Section~\ref{sec:toys}. The parameters used describing the background shapes are given in Appendix~\ref{}.
 
-{\it Is what I have said about the background pdfs correct? If the PID and BDT are not taken into account, then I can say that these cause a negligible change (though I assume BDT is taken into account to the semi-leptonic backgrounds!} and they are only used in the toys to the description does not need to be perfect. Simple to get around!}
+%{\it Is what I have said about the background pdfs correct? If the PID and BDT are not taken into account, then I can say that these cause a negligible change (though I assume BDT is taken into account to the semi-leptonic backgrounds!} and they are only used in the toys to the description does not need to be perfect. Simple to get around!}
 
 \section{Decay time \pdfs}
 \label{sec:DTpdfs}
@@ -243,7 +243,7 @@ An unbinned \ml fit is performed to the combined simulated \bsmumu decay to dete
 \begin{figure}[htbp]
     \centering
         \includegraphics[width= 0.6 \textwidth]{./Figs/LifetimeMeasurement/Bs2MuMu_Acceptance_plot.pdf}
-    \caption{The selection efficiency histogram as a function of decay time with the acceptance \pdf overlaidfor 2011, 2012, 2015 and 2016 simulated \bsmumu decays. }
+    \caption{The selection efficiency histogram as a function of decay time with the acceptance \pdf overlaid for 2011, 2012, 2015 and 2016 simulated \bsmumu decays. }
     \label{fig:accptplot}
 \end{figure}
 
@@ -256,7 +256,7 @@ The final fit to measure the \bsmumu effective lifetime does not require knowled
 
 The selection biases the decay time distributions of the backgrounds in the same way as the \bsmumu decay time. Therefore they are described by the same \pdfs as in equation~\ref{eq:DTpdf}. 
 
-The backgrounds from semi-leptonic, \bhh and \bdmumu decays are assigned the same acceptance function as \bsmumu decays because the decay time efficiency of these backgrounds roughly the same as \bsmumu decays. The acceptances of these backgrounds does not need to be as accurately known as the acceptance function of the signal because very few background decays from these sources will be present in the data set after the selection and the final results does not depend on the acceptance function of the backgrounds. The lifetimes of these decays as known, the values used in the toy studies for the decay times \pdfs are given in Table~\ref{}. {\it In the lifetime are any of the backgrounds merged?}
+The backgrounds from semi-leptonic, \bhh and \bdmumu decays are assigned the same acceptance function as \bsmumu decays because the decay time efficiency of these backgrounds roughly the same as \bsmumu decays. The acceptances of these backgrounds does not need to be as accurately known as the acceptance function of the signal because very few background decays from these sources will be present in the data set after the selection and the final results does not depend on the acceptance function of the backgrounds. The lifetimes of these background decays are taken from a fit to simulated decays for, for \bhh the fit is performed to a combined set of \bhh decays representing what is expected in data. %the values used in the toy studies for the decay times \pdfs are given in Table~\ref{}. {\it In the lifetime are any of the backgrounds merged?}
 
 The decay time \pdf of the combinatorial background is more challenging to determine. This background arises from random combinations of muons in the event and not from one source, therefore there is no single lifetime that describes the background. Furthermore the global BDT which is designed to separate \bsmumu decays from combinatorial background decays will have a will have a different efficiency as a function of decay time for the combinatorial background compared to the \bsmum signal. The decay time \pdf of the combinatorial background cannot be evaluated from simulated decays or decays in data that pass the \bsmumu selection because there are too few candidates left. %The decay time \pdf must be evaluated after the global BDT cut because it has the greatest impact on the shape of the acceptance function. 
 Therefore the decay time \pdf of the combinatorial background for \bsmumu decays is evaluated from combinational background of \bhh decays using candidates in data that pass the \bhh selection and have a reconstructed mass greater than 5447 \mevcc, above the \bs signal region. The decay time \pdf for combinatorial background decays is modelled by
@@ -274,7 +274,7 @@ Parameter & Value \\
 $a$ & 1.45 $\pm$ 0.12 \ps$^{-1}$\\
 $n$ & 1.92 $\pm$ 0.17 \\
 $t_{0}$ & 0.290 \ps \\
-$\Gamma_{1}$ & $0.05 \pm 0.05$ \ps$^{-1}$ \\ 
+$\Gamma_{1}$ & $0.06 \pm 0.05$ \ps$^{-1}$ \\ 
 $\Gamma_{2}$ & $0.77 \pm 0.17$ \ps$^{-1}$ \\
 $f$ & 0.032 $\pm$ 0.027 \\
 \hline
@@ -310,18 +310,22 @@ The strategy to measure the \bsmumu effective lifetime was described earlier in 
 
 The expected number of signal and background decays in the data set passing the \bsmumu selection in the mass range 4600 - 6000 \mevcc were used as the basis for the toy studies. The expected background yields were calculated using the same methods described in Section~\ref{sec:backgrounds} but taking into account the looser particle identification requirement and the cut placed on the global BDT. The number of \bsmumu and \bdmumu decays are calculated using the normalisation factors in Section~\ref{sec:Normalisation} and assuming the branching fraction values predicted by the Standard Model. The expected yields are shown in Table~\ref{}. 
 
-The toy studies are performed by generating the mass and decay time distributions for the expected number of signal and background decays using the \pdfs described in Section~\ref{sec:ELmasspdfs} and~\ref{sec:DTpdfs}. Then sWeights are computed from an unbinned \ml fit to the invariant mass distribution and the lifetime and its inverse are measured by a unbinned \ml fit to the signal weighted decay time distribution. A series of different mass ranges and background components included in the mass fit were tested. For each possible configuration 10,000 toy studies were performed and the performance of each configuration was evaluated using using a couple of different metrics. The first, is the median expected uncertainty of the \bsmumu lifetime and inverse lifetime, the median rather than the mean uncertainty is used due to the asymmetric spread of uncertainties observed for the expected statistics. The second measure, is the pull distributions of any free parameters in the fit, where the pull is defined as $(x - \mu)/\sigma$ with $x$ the measured parameter value, $\mu$ the value used in the generation and $\sigma$ the uncertainty on the measured parameter value. Ideally the pull distributions will be Gaussian in shape with a mean at 0 and a width of 1.
+The toy studies are performed by generating the mass and decay time distributions for the expected number of signal and background decays using the \pdfs described in Section~\ref{sec:ELmasspdfs} and~\ref{sec:DTpdfs} and assuming the Standard Model prediction for \tmumu. Then sWeights are computed from an unbinned \ml fit to the invariant mass distribution and the lifetime and its inverse are measured by a unbinned \ml fit to the signal weighted decay time distribution. A series of different mass ranges and background components included in the mass fit were tested. For each possible configuration 10,000 toy studies were performed and the performance of each configuration was evaluated using using a couple of different metrics. The first, is the median expected uncertainty of the \bsmumu lifetime and inverse lifetime, the median rather than the mean uncertainty is used due to the asymmetric spread of uncertainties observed for the expected statistics. The second measure, is the pull distributions of any free parameters in the fit, where the pull is defined as $(x - \mu)/\sigma$ with $x$ the measured parameter value, $\mu$ the value used in the generation and $\sigma$ the uncertainty on the measured parameter value. Ideally the pull distributions will be Gaussian in shape with a mean at 0 and a width of 1.
 
  The details of the toy studies performed are given in Section~\ref{sec:toyresults}, however first is a discussion of whether the \bsmumu lifetime or inverse lifetime should be measured given the expected number of decays present in the data set.  
 
 \subsection{To fit for $\tau$ or $\tau^{-1}$}
 \label{sec:tauORinvtau}
-During the development of the fit strategy the toy studies produced biased pull distributions for the measured \bsmumu effective lifetime no matter what mass fit configuration or acceptance function was used. The pull distribution for the effective lifetime, \tmumu, is shown in Figure~\ref{fig:taupulls} for a simplified configuration where no acceptance function is used and only signal and combinatorial background decays are generated in the mass range 4900 - 6000 \mevcc. The distribution is clearly not Gaussian in shape. The bias was more pronounced in early stages of the analysis development which was done assuming the expect signal and background yields of only the Run 1 data set. 
+During the development of the fit strategy the toy studies produced biased pull distributions for the measured \bsmumu effective lifetime no matter what mass fit configuration or acceptance function was used. The pull distribution for the effective lifetime, \tmumu, is shown in Figure~\ref{fig:taupulls} for a simplified configuration where no acceptance function is used and only signal and combinatorial background decays are generated in the mass range 4900 - 6000 \mevcc. The distribution is clearly not Gaussian in shape. The bias was more pronounced in early stages of the analysis development which was done assuming the expect signal and background yields of only the Run 1 data set, also shown in Figure~\ref{fig:taupulls}. 
 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width= 0.6 \textwidth]{./Figs/placeholder.jpeg}  
-    \caption{Pull distribution for \tmumu using  a simplified configuration where no acceptance function is used and only signal and combinatorial background decays are generated in the mass range 4900 - 6000 \mevcc with the expected statistics for 4.4 \fb of data.}
+        \includegraphics[width= 0.49 \textwidth]{./Figs/LifetimeMeasurement/CKM_simple_tau_pull.pdf} 
+        \includegraphics[width= 0.49 \textwidth]{./Figs/LifetimeMeasurement/tau_LL.pdf}  
+
+        %\includegraphics[width= 0.48 \textwidth]{./Figs/LifetimeMeasurement/Run1_simple_tau_pull.pdf} 
+ 
+    \caption{Pull distribution (left) for \tmumu using a simplified configuration where no acceptance function is used and only signal and combinatorial background decays are generated in the mass range 4900 - 6000 \mevcc with the expected statistics for 4.4 \fb of data. Likelihood profile for \tmumu(right).}%(left) and Run 1 only (right).}
     \label{fig:taupulls}
 \end{figure}
 
@@ -329,27 +333,27 @@ The log-likelihood profile of the  fit at a function of \tmumu reveals the cause
 \begin{equation}
 N(t, \tau^{\mu \mu}) = N_{0}e^{-t/\tau_{\mu\mu}
 \end{equation}
-The likelihood profile as a function of decay time for this model is shown in Figure~\ref{} and there is a clear discontinuity at the zero. The discontinuity arises because the value of $N(t, \tau)$ approaches zero as $\tau$ reduces in value until at the origin when $\tau = 0$ and $N(t, \tau)$ jumps to infinity. The jump in value is reflected as the discontinuity in the log-likelihood profile. At the low statistics expected for the data set, particularly when only Run 1 data was considered, the fitted value for \tmumu is only a few standard deviations of the discontinuity, therefore leading the bias in the statistical uncertainty and hence the pull distributions. However as the number of expected signal and background decays are increased the bias in the \tmumu pull distributions disappears as shown in Figure~\ref{fig:morestatstaupulls}, as is expected when the statistical uncertainty deceases and the discontinuity of Figure~\ref{fig:taulike} is no longer within a few standard deviations of the measured \tmumu.
+The likelihood profile as a function of decay time for this model is shown in Figure~\ref{fig:taulike} and there is a clear discontinuity at the zero. The discontinuity arises because the value of $N(t, \tau)$ approaches zero as $\tau$ reduces in value until at the origin when $\tau = 0$ and $N(t, \tau)$ jumps to infinity. The jump in value is reflected as the discontinuity in the log-likelihood profile. At the low statistics expected for the data set, particularly when only Run 1 data was considered, the fitted value for \tmumu is only a few standard deviations of the discontinuity, therefore leading the bias in the statistical uncertainty and hence the pull distributions. However as the number of expected signal and background decays are increased the bias in the \tmumu pull distributions disappears as shown in Figure~\ref{fig:morestatstaupulls}, as is expected when the statistical uncertainty deceases and the discontinuity of Figure~\ref{fig:taulike} is no longer within a few standard deviations of the measured \tmumu.
 
 
-\begin{figure}[htbp]
-    \centering
-        \includegraphics[width= 0.6 \textwidth]{./Figs/placeholder.jpeg}  
-    \caption{Likelihood profile for \tmumu.}
-    \label{fig:taulike}
-\end{figure}
+%\begin{figure}[htbp]
+%    \centering
+%        \includegraphics[width= 0.6 \textwidth]{./Figs/LifetimeMeasurement/tau_LL.pdf}  
+%    \caption{Likelihood profile for \tmumu.}
+%    \label{fig:taulike}
+%\end{figure}
 
 \begin{figure}[htbp]
     \centering
    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width= \textwidth]{./Figs/placeholder.jpeg}
+        \includegraphics[width= \textwidth]{./Figs/LifetimeMeasurement/50fb_simple_tau_pull.pdf}
         %\caption{ }                                                                                                                    
         %\label{fig:BDTSsig}                                                                                                            
     \end{subfigure}
    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                         
       %(or a blank line to force the subfigure onto a new line)                                                                         
     \begin{subfigure}[b]{0.48\textwidth}
-       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+       \includegraphics[width=\textwidth]{./Figs/LifetimeMeasurement/Run1_simple_tau_pull.pdf}
       %  \caption{ }                                                                                                                    
      %   \label{fig:BDTSbkg}                                                                                                            
    \end{subfigure}
@@ -382,29 +386,36 @@ Alternatively, a way to get around having a biased pull distribution is to measu
 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width= 0.6 \textwidth]{./Figs/placeholder.jpeg}  
+        \includegraphics[width= 0.49 \textwidth]{./Figs/LifetimeMeasurement/Gamma_LL.pdf}  
     \caption{Likelihood profile for \Gmumu.}
     \label{fig:gammalike}
 \end{figure}
 
 \begin{figure}[htbp]
     \centering
-  \begin{subfigure}[b]{0.6\textwidth}
-        \includegraphics[width= \textwidth]{./Figs/placeholder.jpeg}
-        %\caption{ }                                                                                                                    
-        %\label{fig:BDTSsig}                                                                                                            
-    \end{subfigure}
-
-
    \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width= \textwidth]{./Figs/placeholder.jpeg}
+        \includegraphics[width= \textwidth]{./Figs/LifetimeMeasurement/Run1_simple_gamma_pull.pdf}
         %\caption{ }                                                                                                                    
         %\label{fig:BDTSsig}                                                                                                            
     \end{subfigure}
    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                         
       %(or a blank line to force the subfigure onto a new line)                                                                         
     \begin{subfigure}[b]{0.48\textwidth}
-       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+       \includegraphics[width=\textwidth]{./Figs/LifetimeMeasurement/CKM_simple_gamma_pull.pdf}
+      %  \caption{ }                                                                                                                    
+     %   \label{fig:BDTSbkg}                                                                                                            
+   \end{subfigure}
+
+
+   \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width= \textwidth]{./Figs/LifetimeMeasurement/50fb_gamma_pull.pdf}
+        %\caption{ }                                                                                                                    
+        %\label{fig:BDTSsig}                                                                                                            
+    \end{subfigure}
+   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                         
+      %(or a blank line to force the subfigure onto a new line)                                                                         
+    \begin{subfigure}[b]{0.48\textwidth}
+       \includegraphics[width=\textwidth]{./Figs/LifetimeMeasurement/50fb_gamma_pull.pdf}
       %  \caption{ }                                                                                                                    
      %   \label{fig:BDTSbkg}                                                                                                            
    \end{subfigure}
@@ -421,23 +432,14 @@ Ideally the fit strategy would be performed to extract the lifetime not the inve
 \subsection{Toy Results}
 \label{sec:toyresults}
 
-The mass distribution of expected number \bsmumu candidates passing the effective lifetime selection is shown in Figure~\ref{} alongside the corresponding decay time distribution. The contributions from the different signal and background sources are shown and the backgrounds beneath the \bs mass peak are the combinatorial background and the tails of the \bhh, \bdmum and \lambdab backgrounds. The expected mass distribution is used to determine a range of mass fit configurations to be tested using toy studies to find the configuration that produces the smallest expected uncertainty on the measurement of \tmumu and \Gmumu.
+The mass distribution of expected number \bsmumu candidates passing the effective lifetime selection is shown in Figure~\ref{}.% alongside the corresponding decay time distribution. 
+The contributions from the different signal and background sources are shown and the backgrounds beneath the \bs mass peak are the combinatorial background and the tails of the \bhh, \bdmum and \lambdab backgrounds. The expected mass distribution is used to determine a range of mass fit configurations to be tested using toy studies to find the configuration that produces the smallest expected uncertainty on the measurement of \tmumu and \Gmumu.
 
 \begin{figure}[htbp]
     \centering
-   \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width= \textwidth]{./Figs/placeholder.jpeg}
-        %\caption{ }                                                                                                                    
-        %\label{fig:BDTSsig}                                                                                                            
-    \end{subfigure}
-   ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                         
-      %(or a blank line to force the subfigure onto a new line)                                                                         
-    \begin{subfigure}[b]{0.48\textwidth}
-       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
-      %  \caption{ }                                                                                                                    
-     %   \label{fig:BDTSbkg}                                                                                                            
-   \end{subfigure}
-    \caption{Mass and decay time distributions for the generated decays in the mass range 4900 - 6000.}
+        \includegraphics[width= 0.6 \textwidth]{./Figs/placeholder.jpeg}
+ 
+    \caption{Mass distributions for the generated decays in the mass range 4900 - 6000.}
     \label{fig:toygen}
 \end{figure}
 
@@ -462,12 +464,6 @@ The mass ranges and backgrounds included in the \pdf for the different configura
 \end{enumerate}
 
 
-
-For each possible mass fit configuration the \bsmumu, \bdmumu and combinatorial background yields are left free in the fit whereas the yields of any other backgrounds are constrained to their expected values. The mass shapes of all components are fixed in the \ml fit except the slope of the combinatorial background because this is not accurately known in data.
-The Standard Model prediction for the \bsmumu effective lifetime, \tH = 1.610 ps, is used to generate events for the toy studies and regardless of which background components are included in the mass fit all backgrounds are generated for each mass range. 
-
-A total of X toy studies are performed for each mass configuration and the results are given in Table~\ref{}. Figure~\ref{fig:toyegs} gives examples of the mass and decay time distributions and \ml fits for a selection of mass fit configurations. The mean and widths of \Gmumu, the \bsmumu yield and combinatorial background yield and slope as well as the median expected uncertainty on \tmumu and \Gmumu are used to measure the performance of each mass fit configuration. The pull distribution of the fit for \tmumu is not used to assess the performance of each mass fit configuration given the discussion in Section~\ref{sec:tauORinvtau}.
-
 \begin{figure}[htbp]
     \centering
    \begin{subfigure}[b]{0.48\textwidth}
@@ -499,22 +495,28 @@ A total of X toy studies are performed for each mass configuration and the resul
 
 
   \begin{subfigure}[b]{0.48\textwidth}
-        \includegraphics[width= \textwidth]{./Figs/placeholder.jpeg}
+        \includegraphics[width= \textwidth]{./Figs/LifetimeMeasurement/5320-6000_toy_mass.pdf}
         %\caption{ }                                                                                                                    
         %\label{fig:BDTSsig}                                                                                                            
     \end{subfigure}
    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.                                                         
       %(or a blank line to force the subfigure onto a new line)                                                                         
     \begin{subfigure}[b]{0.48\textwidth}
-       \includegraphics[width=\textwidth]{./Figs/placeholder.jpeg}
+       \includegraphics[width=\textwidth]{./Figs/LifetimeMeasurement/5320-6000_toy_lifetime.pdf}
       %  \caption{ }                                                                                                                    
      %   \label{fig:BDTSbkg}                                                                                                            
    \end{subfigure}
 
 
-    \caption{Mass and decay time \ml fit for toy configurations X, Y and Z.}
+    \caption{Mass and decay time \ml fit for toy configurations X, Y and 9 (bottom).}
     \label{fig:toyegs}
 \end{figure}
+
+
+For each possible mass fit configuration the \bsmumu, \bdmumu and combinatorial background yields are left free in the fit whereas the yields of any other backgrounds are constrained to their expected values. The mass shapes of all components are fixed in the \ml fit except the slope of the combinatorial background because this is not accurately known in data.
+The Standard Model prediction for the \bsmumu effective lifetime, \tH = 1.610 ps, is used to generate events for the toy studies and regardless of which background components are included in the mass fit all backgrounds are generated for each mass range. 
+
+A total of 10,000 toy studies are performed for each mass configuration and the results are given in Table~\ref{}. Figure~\ref{fig:toyegs} gives examples of the mass and decay time distributions and \ml fits for a selection of mass fit configurations. The mean and widths of \Gmumu, the \bsmumu yield and combinatorial background yield and slope as well as the median expected uncertainty on \tmumu and \Gmumu are used to measure the performance of each mass fit configuration. The pull distribution of the fit for \tmumu is not used to assess the performance of each mass fit configuration given the discussion in Section~\ref{sec:tauORinvtau}.
 
 
 The expected statistical uncertainties for \tmumu and \Gmumu are smallest for mass of the simplest mass fit configuration, fit number 9, where the mass range is restricted to 5320 - 6000 \mevcc and only the \bsmumu and combinatorial background components are used in the total mass \pdf. The mean and widths for the different pull distributions are consistent with the expected mean of 0 and width of 1 for this fit configuration. The wider mass ranges with more background components in the mass \pdf have much larger expected uncertainties for \tmumu and \Gmumu as well as clearly biased pull distributions. It is not surprising that the simplest fit performs the best given the very low expected number of events. 
@@ -526,9 +528,10 @@ The expected uncertainties for the chosen fit configuration for \tmumu and \Gmum
 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width= \textwidth]{./Figs/placeholder.jpeg}
+        \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeMeasurement/5320-6000_tau_err.pdf}
+        \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/5320-6000_gamma_err.pdf}
 
-    \caption{Expected statistical uncertainties for \tmumu and \Gmumu using fit configuration number 9.}
+    \caption{Expected statistical uncertainties for \tmumu (left) and \Gmumu (right) using fit configuration number 9.}
     \label{fig:exptuncert}
 \end{figure}
 
