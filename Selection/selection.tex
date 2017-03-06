@@ -232,7 +232,7 @@ The offline selection cuts are applied to the output of the stripping selection.
 
 
 
-\subsection{Development of the stripping selection}
+\subsubsection{Development of the stripping selection}
 \label{strippingold}
 
 %The stripping selection used to select \bsmumu and \bhh decays for the \bsmumu effective lifetime measurement uses the same stripping lines as the selection of \bmumu decays for the Branching Fraction measurement. 
@@ -294,10 +294,8 @@ Daughter $\mu$ or $h$   & Track $\chi^{2}$/ndof < 3                 & Track $\ch
   Particle            &\bujpsik                             & Particle   &\bsjpsiphi \\
 \hline             
 $B^{+}$        & |M - M$_{PDG}$| $<$   500 \mevcc           & \bs         & |M - M$_{PDG}$| $<$   500 \mevcc             \\          
-                      & Vertex $\chi^{2}$/ndof < 45         &            &  Vertex $\chi^{2}$/ndof < 75         &    \\       
-                      & IP $\chi^{2}$ $<$ 25                &            &  IP $\chi^{2}$ $<$ 25               \\ 
-
-\hline   
+                      & Vertex $\chi^{2}$/ndof < 45         &            &  Vertex $\chi^{2}$/ndof < 75             \\       
+                      & IP $\chi^{2}$ $<$ 25                &            &  IP $\chi^{2}$ $<$ 25               \\ \hline   
 \jpsi                & |M - M$_{PDG}$| $<$   100 \mevcc      & \jpsi      &  |M - M$_{PDG}$| $<$   100 \mevcc     \\
                     & DIRA > 0                             &           &   DIRA > 0           \\
                     & FD $\chi^{2}$ $>$ 225                &           & FD $\chi^{2}$ $>$ 225        \\
@@ -312,7 +310,7 @@ $\mu^{\pm}$               & Track $\chi^{2}$/ndof < 3           &$\mu$       &  
 $K^{+}$             & Track $\chi^{2}$/ndof < 3           & $\phi$           &  |M - M$_{PDG}$| $<$   20 \mevcc  \\
                     & $p_{T}$ $>$ 0.25 \gevc              &           &  Minimum IP $\chi^{2}$ $>$ 4  \\
                    & Minimum IP $\chi^{2}$ $>$ 25         & K$^{\pm}$           & Track $\chi^{2}$/ndof < 3  \\
-                  &                                     &                       & $p_{T}$ $>$ 0.25 \gevc     
+                 &                                   &                       & $p_{T}$ $>$ 0.25 \gevc     \\
 \hline
 \end{tabular}
 \vspace{0.7cm}
@@ -345,7 +343,7 @@ The variables used in the stripping selection are:
 The stripping selection imposes a greater number cuts to select \bhh decays compared to \bsmumu because \bhh decays are much more abundant therefore extra cuts are needed to reduce the number of events passing the stripping to an acceptable level. The cuts applied to only \bhh decays in the stripping are the later applied to \bsmumu candidates in the offline selection. %The cuts on muon transverse momentum, track \chisqd and isMuon (when used) are applied in the reconstruction and cannot be changed.
 
 
-\subsection{Optimisation of \bsmumu stripping selection}
+\subsubsection{Optimisation of \bsmumu stripping selection}
 \label{strippingstudies}
 
 
@@ -577,7 +575,7 @@ Total & 18745743& - \\
 
 
 
-\subsection{Additional offline cuts}
+\subsubsection{Additional offline cuts}
 \label{finalloosesel}
 %Change of previous version, have a summary at the end of the section for each decay and here just list the additional cuts that are applied.
 
@@ -648,8 +646,10 @@ is used to refine the selection of \bmumu candidates. The ProbNN$K$ variable is 
 
 Different tunings of the algorithms used in the ProbNN variables are used to select candidates in Run 1 and 2015 data compared to 2016 data. The tunings perform differently therefore the cut values placed on PID$_{\mu}$ are different for each tuning. The cuts applied to data are
 \begin{equation}
-\text{Run 1 and 2015 - } \text{ PID}_{\mu} > 0.4,
-\text{2016 - } \text{ PID}_{\mu} > 0.8.
+%\begin{split}
+\text{Run 1 and 2015:} \text{ PID}_{\mu} > 0.4 \\
+\text{2016:} \text{ PID}_{\mu} > 0.8.
+%\end{split}
 \end{equation}
 
 The cut value on PID$_{\mu}$ for the Run 1 and 2015 tuning was optimised to sufficently reduce the background decays to enable the highest sensitivity to the \bdmumu because the background decays pollute the \bd mass window. The cut value for 2016 was chosen to have the same or lower background rejection as the Run 1 and 2015 cut, however the 2016 tuning has a better performance therefore the final cut choice has a high efficiency for selecting \bmumu decays. 
@@ -1142,7 +1142,7 @@ The mass of \bsmumu candidates is restricted to the range 5320 - 6000 \mevcc, th
 
 \subsection{Particle identification}
 \label{sec:ELpid}
-The particle identification requirements used for selecting candidates for the mesurement of the \BF analysis were optimised to give the greatest sensitivity to \bdmumu decays. Backgrounds from \bhh and \lambdab decays pollute the \bd mass window and must be reduced as much as possible to enable good sennsitivity of \bdmumu decays. The requirement placed on the linear combination of ProbNN variables in Section~\ref{} is a comprimise between background rejcetion and signal efficiency. However for the measurement of the \bsmumu effective lifetime, the \bd mode is not relevant and the mass region of selected candidates removes the majority of \bdmumu decays and backgrounds from \bhh and \lambda decays, therefore looser particle identification requrements can be used leading to a high efficiency to select signal decays.  
+The particle identification requirements used for selecting candidates for the mesurement of the \BF analysis were optimised to give the greatest sensitivity to \bdmumu decays. Backgrounds from \bhh and \lambdab decays pollute the \bd mass window and must be reduced as much as possible to enable good sennsitivity of \bdmumu decays. The requirement placed on the linear combination of ProbNN variables in Section~\ref{} is a comprimise between background rejcetion and signal efficiency. However for the measurement of the \bsmumu effective lifetime, the \bd mode is not relevant and the mass region of selected candidates removes the majority of \bdmumu decays and backgrounds from \bhh and \lambdab decays, therefore looser particle identification requrements can be used leading to a high efficiency to select signal decays.  
 
 The same linear combination of ProbNN variables in Section~\ref{}, PID$_{\mu}$, is used because there is still a small contribution from mis-identified \bhh and \lambdab decays that can be reduced and in addition the particle identification requirements help to reduce the number of combinatorial background decays. Different ProbNN tunes and consequently cut values are used for Run 1 and 2015 data compared to 2016 data. The cuts are chosen to give similar efficiencies for each data set at selecting signal and removing background and are listed in Table~\ref{}. The cut values have not been optimised because there are too few candidates in data after the selection to enable this and simulated decays are not used because particle identification variables are not well modelled in simulation. However the particle identification requirement are still tight enough to make the expected number of mis-identified decays in the data set after the full selection negliable, as shown in Section~\ref{}. 
 %Maybe some PID plots?
