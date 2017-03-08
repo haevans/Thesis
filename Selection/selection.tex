@@ -1205,11 +1205,70 @@ The understanding of the selection efficiency as a function of decay time was th
 
 \subsubsection{Classifer performance}
 
-The final classifer for the selection of \bsmumu candidates has the greatest seperation powers between signal and combinatorial background decays, it will be the classifier that removes the most combinatorial backgound decays for a given signal efficiency. The performance of the two BDTs developed specifically for the effective lifetime measurement is compared to that of the global BDT used to classify candidates for the branching fraction measurements. Two different approaches are used to evaluate the performances. 
+The final classifer for the selection of \bsmumu candidates has the greatest seperation powers between signal and combinatorial background decays, it will be the classifier that removes the most combinatorial backgound decays for a given signal efficiency. The performance of the two BDTs developed specifically for the effective lifetime measurement is compared to that of the global BDT used to classify candidates for the branching fraction measurements. Two different approaches are used to evaluate the performances. The output of the two BDTs developed for the effective lifetime selection have been flattened like the global BDT to enable easy comparison.
 
 The signal significance for each BDT is evaluates on \bhh decays in Run 1 data and the maximum signal significance in found. The BDTS cut is applied in the selection process because the global BDT was designed to be used with the BDTS and the performance of the BDTs developed for the effective lifetime is best when the BDTS requirement is used. The results are shown in Figure~\ref{}, the global BDT produces the highest signal significance but is closely followed by the adaptive BDT developed for the effective lifetime measurement. 
 
-However since the purpose of the BDT is to remove combinatorial background decays passing the \bsmumu selection and additional comparsion of the different algorithms is made. The number of combinatorial background decays present in Run 1 data passing the \bsmumu selection in Table~\ref{} but in the mass range 5447 - 6550 \mevcc is found for a range of cuts to the output of the three BDTs. No particle identification requirements are applied The cut values are chosen seperatly for each algoithm so that the number of background decays is found for cuts with the same efficiency for selecting \bsmumu decays. The results are given in Table~\ref{} and the global BDT is most effective at removing background decays for a given signal efficiency.
+However since the purpose of the BDT is to remove combinatorial background decays passing the \bsmumu selection and additional comparsion of the different algorithms is made. The number of combinatorial background decays present in Run 1 data passing the \bsmumu selection in Table~\ref{} but in the mass range 5447 - 6550 \mevcc is found for a range of cuts to the output of the three BDTs. No particle identification requirements are applied. The cut values are chosen seperatly for each algoithm so that the number of background decays is found for cuts with the same efficiency for selecting \bsmumu decays. The results are given in Table~\ref{} and the global BDT is most effective at removing background decays for a given signal efficiency.
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{l|cccccccccc}
+\hline
+BDT & \multicolumn{}{c}{Number events above BDT output value}  \\
+   & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\
+Global BDT & 2618 & 717 & 293 & 116 & 51 & 23 & 8 & 3 & 1 \\
+Adaptive BDT & 5445 & 1717 & 647 & 290 &106 & 49 & 21 & 8 & 3 \\
+uBoost BDT & 8967 & 3742 & 1718 & 707 & 298 & 104 & 33 & 10 & 1 \\
+\hline
+\end{tabular}
+\vspace{0.7cm}
+\vspace{0.7cm}
+\caption{Number of candidates in passing the \bsmumu selection in the mass range 5447 - 6000 \mevcc, the selected is loosened so that no particle identification requirements are applied and the loosest trigger requirements are used, requiring DEC at each level of the trigger. }
+\label{tab:bkgds}
+\end{center}
+\vspace{-1.0cm}
+\end{table}
+
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{l|cccccccccc}
+\hline
+BDT & \multicolumn{}{c}{Number events above BDT output value}  \\
+   & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\
+Global BDT & 2618 & 717 & 293 & 116 & 51 & 23 & 8 & 3 & 1 \\
+Adaptive BDT & 5445 & 1717 & 647 & 290 &106 & 49 & 21 & 8 & 3 \\
+uBoost BDT & 8967 & 3742 & 1718 & 707 & 298 & 104 & 33 & 10 & 1 \\
+\hline
+\end{tabular}
+\vspace{0.7cm}
+\vspace{0.7cm}
+\caption{Number of candidates in passing the \bsmumu selection in the mass range 5447 - 6000 \mevcc, the selected is loosened so that no particle identification requirements are applied and the effective lifetime triggerers are used. }
+\label{tab:bkgdsB}
+\end{center}
+\vspace{-1.0cm}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{l|cccccccccc}
+\hline
+BDT & \multicolumn{}{c}{Number events above BDT output value}  \\
+   & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\
+Global BDT & 
+Adaptive BDT &
+uBoost BDT & 
+\hline
+\end{tabular}
+\vspace{0.7cm}
+\vspace{0.7cm}
+\caption{Number of candidates in passing the \bsmumu selection in the mass range 5447 - 6000 \mevcc, the selected is loosened so that particle identification requirements are applied and the effective lifetime triggerers are used. }
+\label{tab:bkgdsC}
+\end{center}
+\vspace{-1.0cm}
+\end{table}
+
 
 Although the global BDT combined with the BDTS performs best at seperating signal from background decays, the efficiency as a function of decay time must also be evalutes for these alorithms to ensure it does not exhibit any strange behaviour. The decay time efficiency is shown in Figure~\ref{} for several BDT cut values and gives a smooth distribution as a function of decay time. For the data set used to measure the \bsmumu effective lifetime the expected number of \bsmumu decays is very low, therefore the benefits of using the uBoost method are outweighting by its poor performance. Therefore the global BDT developed for the the \BF is the best BDT to use for the selection of events for the \bsmumu effective lifetime. 
 
