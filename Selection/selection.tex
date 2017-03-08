@@ -1188,47 +1188,60 @@ Simulated 2012 \bsmumu decays were used as the signal training sample for the BD
 
 The input variables used in the adaptive boosting and uBoost BDTs were chosen seperately starting from a large set of variables including kinematic, geometric and isolation variables. Initially the BDTs were trained using all input variables within the set and variables were removed that had no impact on the performance of the BDT until removing any of the remaining variables had a negative impact on the BDT performance. The final varible sets were different for the two boosting methods; the adaptive boosting BDT (aBDT) uses X input variables and the uBoost BDT (uBDT) uses Y input variables. The full list of input variables used and the definition of those variables are given in Appendix~\ref{}. 
 
-The performance of the BDT with different boosting methods and trained using simulated decays and data as the background decays was evaluated using \bhh decays in data. No particle identification variables were used in the input variables of the BDTs due to the incorrect modelling of particle identification variables in simulated decays, therefore the performance on the BDTs on \bhh decays should be very similar to \bsmumu decays. \bhh decays in data were identified by passing the standard \bhh selection in Table~\ref{} and the trigger requirements used to select \bsmumu decays for the branching fraction analysis, no particle identification requirements were used to seperate different \bhh decays. An unbinned \ml fit was applied to the \bhh mass distribution, where all \bhh decays are reconstructed as \bsmumu, for a range cuts on the BDT outputs and the signal significance $\mathcal{S}$  was evaluated for each cut on the BDT output. In the \ml fit the \bhh mass distribution was modelled with a Gaussian function and the combinatorial background decays with an exponential, an example of the mass fit is given in Figure~\ref{}. The signal signficance is given by
+The performance of the BDT with different boosting methods and trained using simulated decays and data as the background decays was evaluated using \bhh decays in data. No particle identification variables were used in the input variables of the BDTs due to the incorrect modelling of particle identification variables in simulated decays, therefore the performance on the BDTs on \bhh decays should be very similar to \bsmumu decays. \bhh decays in data were identified by passing the standard \bhh selection in Table~\ref{} and the trigger requirements used to select \bsmumu decays for the branching fraction analysis, no particle identification requirements were used to seperate different \bhh decays. An unbinned \ml fit was applied to the \bhh mass distribution, where all \bhh decays are reconstructed as \bsmumu, for a range cuts on the BDT outputs and the signal significance $\mathcal{S}$  was evaluated for each cut on the BDT output. In the \ml fit the \bhh mass distribution was modelled with a Gaussian function and the combinatorial background decays with an exponential, an example of the mass fit is given in Figure~\ref{fig:massEG}. The signal significance is given by
 \begin{equation}
 \mathcal{S} = \frac{S}{sqrt{S+B}}
 \label{eq:SigSigf}
 \end{equation} 
 where S (B) are the number of signal (background) decays within 3 $\sigma$ of the center of the \bhh mass peak. 
-The signal significance as a function of the cut value placed on the BDT output for the different BDTs trained on data and simulated decays for the background samples are shown in Figure~\ref{}. The outputs of the BDTs are not flattened, aBDT gives output values between -1 and +1 and uBDT gives output values between 0 and +1. It is clear from Figure~\ref{} that the performance of BDTs trained on simulated decays is better that that of the BDTs trained on data, this is due to the higher statistics avaliable for simulated decays. The number of decays used in the training samples after the selection requirements are shown in Table~\ref{}. Furthermore the performance of aBDT is better that uBDT which is expected because the adpative BDT is not constrained to have a uniform efficiency across the decay time range. 
+The signal significance as a function of the cut value placed on the BDT output for the different BDTs trained on data and simulated decays for the background samples are shown in Figure~\ref{fig:SSelBDTs}. The outputs of the BDTs are not flattened, aBDT gives output values between -1 and +1 and uBDT gives output values between 0 and +1. It is clear from Figure~\ref{fig:SSelBDTs} that the performance of BDTs trained on simulated decays is better that that of the BDTs trained on data, this is due to the higher statistics avaliable for simulated decays. The number of decays used in the training samples after the selection requirements are shown in Table~\ref{}. Furthermore the performance of aBDT is better that uBDT which is expected because the adpative BDT is not constrained to have a uniform efficiency across the decay time range. 
+\begin{figure}[htbp]
+    \centering
+        \includegraphics[width=0.49 \textwidth]{./Figs/Selection/BDT_data_MC_comp.pdf}
+    \caption{Example of the mass fit to \bhh Run 1 data to find the signal significance, \bhh decay are modelled by a Gaussian function (), combinatorial background decays by an exponential and the total \pdf is also plotted (). }
+    \label{fig:massEG}
+\end{figure}
 
-Both the adaptive and uBoost BDTs shown in Figure~\ref{} were trained without applying the BDTS cut to the training samples, however the signal significance on \bhh decays has been revaluated with not BDTS cut applied, with the BDTS cut applied after the BDT training and before the BDT training. The improvement in the overall performances of the BDTs is small but appling the BDTS cut to \bhh as well as the BDT given the highest signal significances. 
+\begin{figure}[htbp]
+    \centering
+        \includegraphics[width=0.49 \textwidth]{./Figs/Selection/BDT_data_MC_comp.pdf}
+       \includegraphics[width=0.49 \textwidth]{./Figs/Selection/uBoost_data_MC_comp.pdf}
+    \caption{Signal significance from \bhh decays in Run 1 data of the adaptive (left) and uBoost (right) BDTs trained using simulated decays and data as the background training samples.}
+    \label{fig:SSelBDTs}
+\end{figure}
+
+Both the adaptive and uBoost BDTs shown in Figure~\ref{fig:SSelBDTs} were trained without applying the BDTS cut to the training samples, however the signal significance on \bhh decays has been revaluated with not BDTS cut applied, with the BDTS cut applied after the BDT training and before the BDT training. The improvement in the overall performances of the BDTs is small but appling the BDTS cut to \bhh as well as the BDT given the highest signal significances. 
 
 The training parameters of the adaptive BDT have been optimised by iterating over a large range of different values, whereas the training parameters of the uBoost were not optimised because changing the parameters has a small impact of the overall BDT performance~\cite{}. The values used are given in Appendix~\ref{}. 
 
-The understanding of the selection efficiency as a function of decay time was the main motivation for investigating the uBoost boosting method. The performance of the uBoost boosting method is quite a lot worse than the adaptive BDT method. The selection efficiency as a function of decay time has been evalutated in simulated \bsmumu decays after the all selection requirements and a range of different cut values on the outputs of the adaptive and uBoost BDTs trained on simulated decays. The cut values are chosen to have the same selection efficiencies for each algorithm. The efficiencies are shown in Figure~\ref{}, although the shapes are quite different the unifrom efficiecny of the uBoost BDT is evident. The adaptive BDT removes a greater proportion of decays at low decay time than the uBoost method. Ideally, to reduce systematic uncertainties on the measurement of the effective lifetime, the selection would not bias the decay time distribution, however with the expected statistics of the data set an unbiased selection would not be approtriate. However the efficienciy of the adaptive boost BDT is smooth across the decay time range and therefore using that algorithm would not cause any sever problems. 
+The understanding of the selection efficiency as a function of decay time was the main motivation for investigating the uBoost boosting method. The performance of the uBoost boosting method is quite a lot worse than the adaptive BDT method. The selection efficiency as a function of decay time has been evaluated in simulated \bsmumu decays after the all selection requirements and a range of different cut values on the outputs of the adaptive and uBoost BDTs trained on simulated decays. The cut values are chosen to have the same selection efficiencies for each algorithm. The efficiencies are shown in Figure~\ref{fig:accptsELBDTs}, although the shapes are quite different the uniform efficiency of the uBoost BDT is evident. The adaptive BDT removes a greater proportion of decays at low decay time than the uBoost method. Ideally, to reduce systematic uncertainties on the measurement of the effective lifetime, the selection would not bias the decay time distribution, however with the expected statistics of the data set an unbiased selection would not be appropriate. However the efficiency of the adaptive boost BDT is smooth across the decay time range and therefore using that algorithm would not cause any sever problems. 
+\begin{figure}[htbp]
+    \centering
+        \includegraphics[width=0.49 \textwidth]{./Figs/Selection/BDT_acceptances.pdf}
+       \includegraphics[width=0.49 \textwidth]{./Figs/Selection/uBoost_accpt.pdf}
+    \caption{Selection efficiency as a function of decay time of simulated 2012 \bsmumu decays for the adaptive (left) and uBoost (right) BDTs. The selection requirements applied to the training sample are applied to the simulated decays and cuts are places on the BDT output so that the efficiency of the cut on decays passing the other selection requirements is 100~$\%$, 75~$\%$, 50~$\%$ and 25~$\%$. }
+    \label{fig:accptsELBDTs}
+\end{figure}
 
+\subsubsection{Classifier performance}
 
-\subsubsection{Classifer performance}
-
-The final classifer for the selection of \bsmumu candidates has the greatest seperation powers between signal and combinatorial background decays, it will be the classifier that removes the most combinatorial backgound decays for a given signal efficiency. The performance of the two BDTs developed specifically for the effective lifetime measurement is compared to that of the global BDT used to classify candidates for the branching fraction measurements. Two different approaches are used to evaluate the performances. The output of the two BDTs developed for the effective lifetime selection have been flattened like the global BDT to enable easy comparison.
+The final classifier for the selection of \bsmumu candidates has the greatest separation powers between signal and combinatorial background decays, it will be the classifier that removes the most combinatorial background decays for a given signal efficiency. The performance of the two BDTs developed specifically for the effective lifetime measurement is compared to that of the global BDT used to classify candidates for the branching fraction measurements. Two different approaches are used to evaluate the performances. The output of the two BDTs developed for the effective lifetime selection have been flattened like the global BDT to enable easy comparison.
 
 The signal significance for each BDT is evaluates on \bhh decays in Run 1 data and the maximum signal significance in found. The BDTS cut is applied in the selection process because the global BDT was designed to be used with the BDTS and the performance of the BDTs developed for the effective lifetime is best when the BDTS requirement is used. The results are shown in Figure~\ref{}, the global BDT produces the highest signal significance but is closely followed by the adaptive BDT developed for the effective lifetime measurement. 
 
+\begin{figure}[htbp]
+    \centering
+        \includegraphics[width=0.49 \textwidth]{./Figs/Selection/BDT_data_MC_comp.pdf}
+    \caption{Signal significance from \bhh decays in Run 1 data of the adaptive and uBoost BDTs trained using simulated decays as the background sample and the signal significance of the global BDT developed for the branching fraction measurement. The selection requirements listed in Table~\ref{} are used, apart from the isMuon requirement and the mass range. }
+    \label{fig:SSall}
+\end{figure}
+
+
 However since the purpose of the BDT is to remove combinatorial background decays passing the \bsmumu selection and additional comparsion of the different algorithms is made. The number of combinatorial background decays present in Run 1 data passing the \bsmumu selection in Table~\ref{} but in the mass range 5447 - 6550 \mevcc is found for a range of cuts to the output of the three BDTs. No particle identification requirements are applied. The cut values are chosen seperatly for each algoithm so that the number of background decays is found for cuts with the same efficiency for selecting \bsmumu decays. The results are given in Table~\ref{} and the global BDT is most effective at removing background decays for a given signal efficiency.
 
-\begin{table}[htbp]
-\begin{center}
-\begin{tabular}{l|cccccccccc}
-\hline
-BDT & \multicolumn{}{c}{Number events above BDT output value}  \\
-   & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\
-Global BDT & 2618 & 717 & 293 & 116 & 51 & 23 & 8 & 3 & 1 \\
-Adaptive BDT & 5445 & 1717 & 647 & 290 &106 & 49 & 21 & 8 & 3 \\
-uBoost BDT & 8967 & 3742 & 1718 & 707 & 298 & 104 & 33 & 10 & 1 \\
-\hline
-\end{tabular}
-\vspace{0.7cm}
-\vspace{0.7cm}
-\caption{Number of candidates in passing the \bsmumu selection in the mass range 5447 - 6000 \mevcc, the selected is loosened so that no particle identification requirements are applied and the loosest trigger requirements are used, requiring DEC at each level of the trigger. }
-\label{tab:bkgds}
-\end{center}
-\vspace{-1.0cm}
-\end{table}
+Additionally all BDTs improve upon the performance of the classifier used in the last published analysis. 
+
+
 
 
 \begin{table}[htbp]
@@ -1237,40 +1250,27 @@ uBoost BDT & 8967 & 3742 & 1718 & 707 & 298 & 104 & 33 & 10 & 1 \\
 \hline
 BDT & \multicolumn{}{c}{Number events above BDT output value}  \\
    & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\
-Global BDT & 2618 & 717 & 293 & 116 & 51 & 23 & 8 & 3 & 1 \\
-Adaptive BDT & 5445 & 1717 & 647 & 290 &106 & 49 & 21 & 8 & 3 \\
-uBoost BDT & 8967 & 3742 & 1718 & 707 & 298 & 104 & 33 & 10 & 1 \\
+Global BDT  & 2261 & 597 & 229 & 89 & 34 & 13 & 4 & 1 & 0 \\ 
+Adaptive BDT  & 4623 & 1395 & 513 & 215 & 77 & 32 & 15 & 4 & 2 \\
+uBoost BDT & 7904 & 3344 & 1535 &630 & 268 & 92 & 27 & 7 & 0 \\
 \hline
 \end{tabular}
 \vspace{0.7cm}
 \vspace{0.7cm}
-\caption{Number of candidates in passing the \bsmumu selection in the mass range 5447 - 6000 \mevcc, the selected is loosened so that no particle identification requirements are applied and the effective lifetime triggerers are used. }
-\label{tab:bkgdsB}
-\end{center}
-\vspace{-1.0cm}
-\end{table}
-
-\begin{table}[htbp]
-\begin{center}
-\begin{tabular}{l|cccccccccc}
-\hline
-BDT & \multicolumn{}{c}{Number events above BDT output value}  \\
-   & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\
-Global BDT & 
-Adaptive BDT &
-uBoost BDT & 
-\hline
-\end{tabular}
-\vspace{0.7cm}
-\vspace{0.7cm}
-\caption{Number of candidates in passing the \bsmumu selection in the mass range 5447 - 6000 \mevcc, the selected is loosened so that particle identification requirements are applied and the effective lifetime triggerers are used. }
+\caption{Number of candidates in passing the \bsmumu selection in the mass range 5447 - 6000 \mevcc, the selected is that particle identification requirements are applied and the effective lifetime triggerers are used, including BDTS cut. The output of each BDT is flattened to have a uniform response between 0 and 1, therefore the cuts applied to each BDT will have the same efficiency.}
 \label{tab:bkgdsC}
 \end{center}
 \vspace{-1.0cm}
 \end{table}
 
 
-Although the global BDT combined with the BDTS performs best at seperating signal from background decays, the efficiency as a function of decay time must also be evalutes for these alorithms to ensure it does not exhibit any strange behaviour. The decay time efficiency is shown in Figure~\ref{} for several BDT cut values and gives a smooth distribution as a function of decay time. For the data set used to measure the \bsmumu effective lifetime the expected number of \bsmumu decays is very low, therefore the benefits of using the uBoost method are outweighting by its poor performance. Therefore the global BDT developed for the the \BF is the best BDT to use for the selection of events for the \bsmumu effective lifetime. 
+Although the global BDT combined with the BDTS performs best at separating signal from background decays, the efficiency as a function of decay time must also be evalutes for these alorithms to ensure it does not exhibit any strange behaviour. The decay time efficiency is shown in Figure~\ref{} for several BDT cut values and gives a smooth distribution as a function of decay time. For the data set used to measure the \bsmumu effective lifetime the expected number of \bsmumu decays is very low, therefore the benefits of using the uBoost method are outweighting by its poor performance. Therefore the global BDT developed for the the \BF is the best BDT to use for the selection of events for the \bsmumu effective lifetime. 
+\begin{figure}[htbp]
+    \centering
+        \includegraphics[width=0.49 \textwidth]{./Figs/Selection/BDT_data_MC_comp.pdf}
+    \caption{Selection efficiency as a function of decay time of simulated 2012 \bsmumu decays for the global BDT. The selection requirements applied to the training sample are applied to the simulated decays and cuts are places on the BDT output so that the efficiency of the cut on already selection event in 100~$\%$, 75~$\%$, 50~$\%$ and 25~$\%$. }
+    \label{fig:accptsBFBDTs}
+\end{figure}
 
 \subsubsection{Global BDT choice}
 \label{sec:globalBDToptimisation}
