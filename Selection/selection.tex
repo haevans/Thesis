@@ -247,7 +247,7 @@ The stripping selections used to selection all decays necessary for the measurem
 %In addition to \bmumu and \bhh decays the measurement of the \bmumu Branching Fractions requires \bujpsik decays. \bdkpi and \bujpsik decays are used to normalise the number of observed \bsmumu decays to the number created in $pp$ collisions. 
 
 There are four separate stripping lines that select \bmumu, \bujpsik, \bsjpsiphi and \bhh candidates, the selection of the all decays is kept as similar as possible to the signal selection to avoid introducing systematic uncertainties in the normalisation procedure of the \bmumu branching fractions described in Chapter~\ref{sec:BFanalysis}. However, the selection of \bujpsik and \bsjpsiphi decays must diverge from the \bmumu selection due to the additional particles in the final state of the decay. Any changes made to the \bmumu stripping selection to improve the selection efficiency must be included in the selection of the other decays to keep the systematic uncertainties under control, this is particularly important for \bhh and \bujpsik decays. %, therefore all three stripping lines must be studied together. 
-The stripping selection cuts applied for the Run~1 Branching Fraction analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bmumu, \bujpsik, \bsjpsiphi and \bhh candidates are listed in Table~\ref{tab:PreviousStripping1} and~\ref{tab:PreviousStripping2} .
+The stripping selection cuts applied for the Run~1 Branching Fraction analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bmumu, \bujpsik, \bsjpsiphi and \bhh candidates are listed in Table~\ref{tab:PreviousStrippingA} and~\ref{tab:PreviousStrippingB} .
 
 
 %The stripping selection cuts and cuts applied during the reconstruction of particle decays for the Run 1 \bmumu Branching Fraction analysis \cite{} to select \bmumu, \bhh and \bujpsik are shown in Table X. The selection of \bujpsik and \bhh decays is kept as similar as possible to the selection of \bsmumu decays to avoid introducing systematic errors when \bhh and \bujpsik decays are used in the normalisation for the Branching Fraction measurement. The selection of \bujpsik event must diverge from the \bsmumu selection due to additoinal particles in the final state of the decay. The stripping selection imposes more cuts to select \bhh decays compared to \bsmumu because \bhh decays are much more abundant therefore extra cuts are needed to reduce the number of events passing the stripping to an acceptable level. The cuts applied to \bhh in the stripping are the later applied to \bsmumu events after the stripping selection. 
@@ -280,8 +280,8 @@ Daughter $\mu$ or $h$   & Track $\chi^{2}$/ndof < 3                 & Track $\ch
 \hline
 \end{tabular}
 \vspace{0.7cm}
-\caption{Selection requirements applied during the stripping selection for Run~1 data used in the \bmumu Branching Fraction analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bmumu and \bhh decays. $M_{PDG}$ corresponds to the Particle Data Group~\cite{Olive:2016xmw} mass of each particle.}%The track $\chi^{2}$/ndof and isMuon cut are applied during the reconstruction.}
-\label{tab:PreviousStripping1}
+\caption{Selection requirements applied during the stripping selection for Run~1 data used in the \bmumu Branching Fraction analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bmumu and \bhh decays. $M_{PDG}$ corresponds to the Particle Data Group~\cite{Olive:2016xmw} mass of each particle.}
+\label{tab:PreviousStrippingA}
 \end{center}
 \end{table}
 %\vspace*{\fill}
@@ -319,8 +319,8 @@ $K^{+}$             & Track $\chi^{2}$/ndof < 3           & $\phi$           &  
 \hline
 \end{tabular}
 \vspace{0.7cm}
-\caption{Selection requirements applied during the stripping selection for Run~1 data used in the \bmumu Branching Fraction analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bujpsik and \bsjpsiphi decays. $M_{PDG}$ corresponds to the Particle Data Group~\cite{Olive:2016xmw} mass of each particle.}%The track $\chi^{2}$/ndof and isMuon cut are applied during the reconstruction.}
-\label{tab:PreviousStripping}
+\caption{Selection requirements applied during the stripping selection for Run~1 data used in the \bmumu Branching Fraction analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bujpsik and \bsjpsiphi decays. $M_{PDG}$ corresponds to the Particle Data Group~\cite{Olive:2016xmw} mass of each particle.}
+\label{tab:PreviousStrippingB}
 \end{center}
 \end{table}
 %\vspace*{\fill}
@@ -465,41 +465,19 @@ The efficiencies for most of the stripping cuts are $\sim 97 \%$ or higher, howe
 The set of events removed by each cut in the stripping selection is not independent. Therefore the effect of changing one cut on the total efficiency of a stripping selection must be considered. Figure~\ref{fig:efficiencyplots} shows the total efficiency of the \bsmumu stripping line on simulated \bsmumu decays for a range of FD $\chi^{2}$ and daughter IP $\chi^{2}$ cut values. As expected the lower the cut values the more efficient the stripping line becomes. It is important that any increase in \bsmumu selection efficiency from the stripping is not removed when the trigger requirements are applied, Figure~\ref{fig:triggereffplots} shows that the trigger efficiencies are relatively flat across a large range of FD $\chi^{2}$ and daughter IP $\chi^{2}$ cut values therefore the efficiency gained by a change in the stripping selection is not lost when trigger requirements are imposed. The selection efficiency for \bdmumu is very similar to \bsmumu as seen in Table~\ref{tab:Run1strippingEff}, therefore only \bsmumu have been studied for different stripping selection cut values. 
 
 
-\begin{figure}[htbp]
-    \centering
-    %\begin{subfigure}[b]{0.4\textwidth}
-        \includegraphics[width= 0.8 \textwidth]{./Figs/Selection/Bs2MuMu_efficiency_chart_Feb3.pdf}
-       % \caption{ }
-      %  \label{fig:eff}
-  %  \end{subfigure}
-    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the subfigure onto a new line)
-   % \begin{subfigure}[b]{0.4\textwidth}
-       % \includegraphics[width=\textwidth]{./Figs/Selection/strip_chart1.png}
-      %  \caption{ }
-      %  \label{fig:eff_contours}
-  %  \end{subfigure}
-    \caption{Efficiency of the \bmumu stripping selection for \bsmumu simulated decays for a range of cuts on the \bs FD \chisqd and the minimum muon IP \chisqd.}
-    \label{fig:efficiencyplots}
-\end{figure}
+%\begin{figure}[htbp]
+%    \centering
+%        \includegraphics[width= 0.8 \textwidth]{./Figs/Selection/Bs2MuMu_efficiency_chart_Feb3.pdf}
+%    \caption{Efficiency of the \bmumu stripping selection for \bsmumu simulated decays for a range of cuts on the \bs FD \chisqd and the minimum muon IP \chisqd.}
+%    \label{fig:efficiencyplots}
+%\end{figure}
 
-\begin{figure}[htbp]
-   \centering
-   % \begin{subfigure}[b]{0.7\textwidth}
-   %     \includegraphics[width=\textwidth]{./Figs/Selection/TIS_TOS_Trigger_chart.pdf}
-   %     \caption{ }
-   %     \label{fig:TISTOS}
-   % \end{subfigure}
-   % ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
-      %(or a blank line to force the subfigure onto a new line)
-  %  \begin{subfigure}[b]{0.7\textwidth}
-        \includegraphics[width=0.8\textwidth]{./Figs/Selection/Dec_trigger_chart.pdf}
-   %     \caption{ }
-   %     \label{fog:Dec}
-   % \end{subfigure}
-    \caption{The trigger efficiencies of \bsmumu simulated decays across a range of \bs FD \chisqd and the minimum muon IP \chisqd cut values for the trigger requirements used to select \bmumu decays for the branching fraction measurement. }
-    \label{fig:triggereffplots}
-\end{figure}
+%\begin{figure}[htbp]
+%   \centering
+%        \includegraphics[width=0.8\textwidth]{./Figs/Selection/Dec_trigger_chart.pdf}
+%    \caption{The trigger efficiencies of \bsmumu simulated decays across a range of \bs FD \chisqd and the minimum muon IP \chisqd cut values for the trigger requirements used to select \bmumu decays for the branching fraction measurement. }
+%    \label{fig:triggereffplots}
+%\end{figure}
 
 
 
