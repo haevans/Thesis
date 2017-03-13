@@ -129,7 +129,7 @@ Simulated \bbbarmumux decays are used to understand the combinatorial background
 On the whole simulated decays accurately model what occurs in data, however there are a couple of areas where the simulation falls short of reality.
 %Although in general simulated events accurately model what occurs in data there are several areas where this is not the case. 
 The distributions of particle identification variables and properties of the underlying proton-proton collision, such as the number of tracks in an event, are not well modelled in the simulation. %Have I said what an event is?
-The mis-modelling of particle identification variables can be corrected for using the PIDCalib package~\cite{} and simulated decays can be re-weighted using information from data to accurately model the under lying event, this re-weighting is described in Section~\ref{sec:signalDTpdf}. 
+The mis-modelling of particle identification variables can be corrected for using the PIDCalib package~\cite{Anderlini:2202412} and simulated decays can be re-weighted using information from data to accurately model the under lying event, this re-weighting is described in Section~\ref{sec:signalDTpdf}. 
 
 
 \section{Selection for branching fraction measurements}
@@ -909,7 +909,7 @@ Hlt2Phys&DEC \\
 \vspace{-1.0cm}
 \end{table}
 
-The global BDT is applied to data taken in all years and in the same way as the BDTS the final output of the global BDT is flattened to have a response between 0 and 1 that is uniform for signal and the background peaks at zero, as shown in Figure~\ref{fig:FlatteningBDT} for each year of data taking. The flattening is important for the measurement of the \bmumu branching fractions because a simultaneous fit is applied to the dimuon invariant mass in bins of BDT, flattening the BDT output enable bins containing equal proportions of signal decays to be easily created. The signal efficiency verses the background rejection of the global BDT is shown in Figure~\ref{fig:BDTperformance} for all years of data taking, the performance is similar across all the years but with Run 2 data having a slightly better background rejection for a given signal efficiency. 
+The global BDT is applied to data taken in all years and in the same way as the BDTS the final output of the global BDT is flattened to have a response between 0 and 1 that is uniform for signal and the background peaks at zero, as shown in Figure~\ref{fig:FlatteningBDT} for each year of data taking. The flattening is important for the measurement of the \bmumu branching fractions because a simultaneous fit is applied to the dimuon invariant mass in bins of BDT, flattening the BDT output enable bins containing equal proportions of signal decays to be easily created. The signal efficiency verses the background rejection of the global BDT is shown in Figure~\ref{fig:BDTperformance} for all years of data taking, the performance is similar across all the years but with Run 2 data having a slightly better background rejection for a given signal efficiency. A comparison of the input variables used in the global BDT for each year of data taking is given in Appendix~\ref{sec:appendix1}.
 
 
 \begin{figure}[htbp]
@@ -941,7 +941,7 @@ The global BDT is applied to data taken in all years and in the same way as the 
 %    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
       %(or a blank line to force the subfigure onto a new line)
 %    \begin{subfigure}[b]{0.48\textwidth}
-       \includegraphics[width=\textwidth]{./Figs/Selection/ROC_zoom.pdf}
+       \includegraphics[width=0.6\textwidth]{./Figs/Selection/ROC_zoom.pdf}
         %\caption{ }
         %\label{fig:ROCzoom}
 %    \end{subfigure}
@@ -1262,6 +1262,7 @@ Additionally all BDTs improve upon the performance of the classifier used in the
 \begin{tabular}{l|cccccccccc}
 \hline
 BDT & \multicolumn{9}{c}{Number events above BDT output value}  \\
+\hline
    & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\
 Global BDT  & 2261 & 597 & 229 & 89 & 34 & 13 & 4 & 1 & 0 \\ 
 Adaptive BDT  & 4623 & 1395 & 513 & 215 & 77 & 32 & 15 & 4 & 2 \\
@@ -1297,7 +1298,7 @@ The fit procedure to extract \tmumu from the data is described in depth in Chapt
 \item the mass fit is used to compute sWeights using the sPlot method \cite{Pivk:2004ty}
 \item a maximum likelihood fit is performed to the sWeighted decay time distribution to extract \tmumu and \invtmumu. 
 \end{itemize}
-Full details of the toy experiment set up and the probability density functions used are given in Appendix X. 
+Full details of the toy experiment set up and the probability density functions used are given in Appendix~\ref{sec:appendix2}. 
 
 The number of expected \bsmumu and combinatorial background events for different BDT cut values is derived from the expected number of decays passing in the all the selection cuts and BDT $>$ 0.55 for Run~1 and Run~2 data but in the mass range 4900 $<$ $m_{\mu^{+}\mu^{-}$ $<$ 6000 \mevcc. These predictions assume the SM branching fraction for \bsmumu and are given in Table~\ref{tab:expectednumbers}. Since the output of the global BDT is flattened the number of \bsmumu decays is evenly distributed across the BDT range, therefore the expected number of \bsmumu decays is straight forward to calculated for each BDT cut value. The number of combinatorial background decays expected after each BDT is is computed from simulated \bbbarmumux decays using the ratio
 \begin{equation}
