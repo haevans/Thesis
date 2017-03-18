@@ -146,23 +146,45 @@ The decay tie acceptance comes from weighted simulated decays. This relies on th
 
 \bdkpi decays have a much larger branching fraction the \bsmumu decays at XXX and are therefore more abundant in data. The selection requirements used to identify these decays in 2011, 2012, 2015 and 2016 data are detailed in Chapter~\ref{} and are kept very similar to the \bsmumu selection. All candidates are required to be TIS, although this considerably reduces the statistics, \bhh triggers are $\%$ efficient, the TIS triggers are relatively unbiased with respect to the decay time similarly to triggers that select \bsmumu decays. Whereas TOS triggers that identify \bhh decays create a large bias on the decay time distribution due to the dependence on the trigger lines on IP, IP \chisqd and flight distance variables. The DLL$_{K\pi}$ variable is used to separate \bdkpi decays from other \bhh decays, as detailed in Section~\ref{} and candidates are reconstructed with the daughter with the highest DLL$_{K\pi}$ value assigned the kaon mass hypothesis and the daughter particle with the lowest DLL$_{K\pi}$ value the pion mass hypothesis.
 
-The measurement of the \bdki lifetime is performed in the same way as the \bsmumu effective lifetime measurement and all years of data are combined into one data set. An extended, unbinned maximum likelihood fit is performed to the \bdkpi mass distribution. Components for \bdkpi, \bskpi and combinatorial background decays are included in the mass fit. Both B meson decays are modelled by Crystal Ball functions with parameters taken from some source. Combinatorial background decays are modelled by an exponential function with the slope left free in the mass fit. The mass fit, shown in Figure~\ref{}, is used to calculate sWeighted that are re-normalised using equation~\ref{}. The lifetime, $\tau_{K\pi}$, and the inverse lifetime $\Gamma_{K\pi}$, are measured from an unbinned maximum likelihood fir to the sWeighted decay time distribution. 
+The measurement of the \bdki lifetime is performed in the same way as the \bsmumu effective lifetime measurement and all years of data are combined into one data set. An extended, unbinned maximum likelihood fit is performed to the \bdkpi mass distribution. Components for \bdkpi, \bskpi and combinatorial background decays are included in the mass fit. Both B meson decays are modelled by Crystal Ball functions with parameters taken from some source. Combinatorial background decays are modelled by an exponential function with the slope left free in the mass fit. The mass fit, shown in Figure~\ref{fig:bdkpimassfit}, is used to calculate sWeighted that are re-normalised using equation~\ref{}. The lifetime, $\tau_{K\pi}$, and the inverse lifetime $\Gamma_{K\pi}$, are measured from an unbinned maximum likelihood fir to the sWeighted decay time distribution. 
+
+\begin{figure}[htbp]
+\centering
+  \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/Bd2KPi_mass_fit.pdf}
+\caption{Maximum likelihood fit to the mass distribution of \bdkpi decays for data taken in 2011, 2012, 2015 and 2016. Components for \bdkpi, \bskpi and combinatorial background decays are included in the mass fit. }
+\label{fig:bdkpimassfit}
+\end{figure}
+
 
 The decay time \pdf has the same form as the one used for the \bsmumu decays in equation~\ref{} and the acceptance parameters are found from a fit to weighted '\bdkpi simulated decays using the same method described in Section~\ref{}. In the same way as \bsmumu decays the number of tracks in the event are re-weighted using the same weights as for \bsmumu decays. However the yearly weights applied to combined simulated \bdkpi decays from each year are not dependant on \bsjpsiphi decays. Since \bdkpi decays have a high yield in data, mass fits to each year are used to find the yields and combined the simulated decays from each year. The same mass \pdf used to fit the combined mass distribution is applied to each year. This simplifies the efficiency terms and the weights combining simulated decays in different years are then computed as
 \begin{equation}
 X = Y
 \end{equation}
 
-The acceptance function fit is shown in Figure~\ref{}. 
+The acceptance function fit is shown in Figure~\ref{fig:bdkpiacceptancefit}. 
+
+\begin{figure}[htbp]
+\centering
+  \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/Bd2KPi_accetpance_fit.pdf}
+\caption{Decay time distribution in weighted 2011, 2012, 2015 and 2016 simulated decays and the \ml fit results to determine the acceptance function parameters. }
+\label{fig:bdkpiacceptancefit}
+\end{figure}
 
 The measured \bdkpi lifetime and inverse lifetime are
 \begin{equation}
-\tau_{K\pi} = XX \pm XX  \text{ ps} 
+\tau_{K\pi} = 1.52 \pm 0.03  \text{ ps} 
 \end{equation}
-\begin{equation}
-\Gamma_{K\pi} = XX  \pm XX \text{ ps}^{-1}
-\end{equation}
-where only the statistical uncertainty is given and the decay time fit is shown in Figure~\ref{}. The measured results are consistent with the PDF value of XX $\pm$ YY \ps. Therefore the measurement strategy used to find the \bsmumu \el has been shown to work. The statistical uncertainty of the \bdkpi decay time fits are assigned as systematic uncertainties to provide a measure of how well the acceptance function can be determined from weighted simulated decays for measuring \tmumu and \Gmumu. 
+%%\begin{equation}
+%\Gamma_{K\pi} = XX  \pm XX \text{ ps}^{-1}
+%\end{equation}
+where only the statistical uncertainty is given and the decay time fit is shown in Figure~\ref{fig:bdkpilifetimefit}. The measured results are consistent with the PDF value of 1.520 $\pm$ 0.004 \ps. Therefore the measurement strategy used to find the \bsmumu \el has been shown to work. The statistical uncertainty of the \bdkpi decay time fits are assigned as systematic uncertainties to provide a measure of how well the acceptance function can be determined from weighted simulated decays for measuring \tmumu and \Gmumu. 
+
+\begin{figure}[htbp]
+\centering
+  \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/Bd2KPi_lifetime_fit.pdf}
+\caption{Maximum likelihood fit to the signal weighted decay time distribution of \bdkpi decays for data taken in 2011, 2012, 2015 and 2016. }
+\label{fig:bdkpilifetimefit}
+\end{figure}
 
 However, the determination of the \bsmumu acceptance function relies on weights taken from the number of tracks in an event fro \bdkpi decays in data and simulation. Although the measurement of the \bdkpi lifetime shows the procedure and weighting method works for \bdkpi decays it does not show that the weights taken from \bdkpi decays for the number of tracks in an event can be applied to other decays. Therefore as a cross check, the lifetime of \bskk decays is also measured. 
 
@@ -172,10 +194,10 @@ The \bskk acceptance is found using the same method as \bsmumu with \bsjpisphi d
 \begin{equation}
 \tau_{KK} = XX \pm XX  \text{ ps} 
 \end{equation}
-\begin{equation}
-\Gamma_{KK} = XX  \pm XX \text{ ps}^{-1}
-\end{equation}
-where only the statistical uncertainty is given. The measured values are consistent with the predicted value of XX $\pm$ YY \ps \cite{} and therefore shows that \bdkpi weights can be used for other decays as well as \bdkpi. 
+%\begin{equation}
+%\Gamma_{KK} = XX  \pm XX \text{ ps}^{-1}
+%\end{equation}
+where only the statistical uncertainty is given. The measured values are consistent with the predicted value of 1.395 $\pm$ 0.020 \ps \cite{} and therefore shows that \bdkpi weights can be used for other decays as well as \bdkpi. 
 
 
 \section{Incorrectly assigned primary vertices and additional detector resolution effects}
@@ -208,16 +230,16 @@ $f_{3}$                 & 0.681                \\ \hline
 \end{center}
 \end{table}
 
-\begin{figure}[h]
+\begin{figure}[htbp]
 \centering
-  \includegraphics[width=0.49\textwidth]{figs/decaytime_resolution_plot.pdf}
+  \includegraphics[width=0.49\textwidth]{./Figs/placeholder.jpeg}
 \caption{Fit of the sum of 3 Gaussian functions with a common mean to the difference between the reconstructed decay time and the true decay time of each event that passes the full selection for \bsmumu MC. }
 \label{fig:resolution_fit_plot}
 \end{figure}
 
  We assume that MC gives good estimate of the number of incorrectly assigned PVs, as a check Figure \ref{fig:Bd2KPi_nPVs_MC_data_comparison} shows the number of \bdkpi events passing the selection outlined in Section \ref{sec:lifetime_sys_acceptance} for MC and sWeighted data for each year. On average there are more PVs per event in MC compared to data therefore using MC would give an overestimation of the number of incorrectly assigned PVs expected in data. 
 
-\begin{figure}[ht]
+\begin{figure}[htbp]
   \centering
     \includegraphics[width=0.49\textwidth]{./Figs/placeholder.jpeg}
     \includegraphics[width=0.49\textwidth]{./Figs/placeholder.jpeg}
