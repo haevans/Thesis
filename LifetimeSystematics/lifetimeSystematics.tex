@@ -63,7 +63,7 @@ Furthermore, the pull distributions for \bsmumu yields for toy studies with high
     \centering
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/Bs2MuMu_yield_pull_50fb.pdf}
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/Bs2MuMu_yield_pull_300fb.pdf}
-    \caption{Pull distribution for \bsmumu mesaured yields from toy studies with 50 and 300 \fb.}
+    \caption{Pull distribution for \bsmumu measured yields from toy studies with 50 and 300 \fb.}
     \label{fig:BsmumuYieldPulls}
 \end{figure}
 
@@ -77,7 +77,7 @@ The overall bias in the fit for measuring \tmumu and \Gmumu is evaluated from th
     \centering
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/tau_meas-tau_gen.pdf}
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/tau_meas-tau_gen_observed.pdf}
-    \caption{Overall bias in \tmumu, eveluated as the difference between the measured, $\tau_{measured}$, and the generated, $\tau_{generated}$, lifetimes for toy studies using the expected (left) and observed (right) \bsmumu and combinatorial background yields.}
+    \caption{Overall bias in \tmumu, evaluated as the difference between the measured, $\tau_{measured}$, and the generated, $\tau_{generated}$, lifetimes for toy studies using the expected (left) and observed (right) \bsmumu and combinatorial background yields.}
     \label{fig:BsmumuYieldPulls}
 \end{figure}
 
@@ -128,7 +128,7 @@ Decay & \multicolumn{2}{c}{Expected yield in 5320 - 6000 \mevcc} \\
 \hline
 \end{tabular}
 \vspace{0.7cm}                                                                                                                                               
-\caption{Number of expected decays in data passing the \bsmumu effective lifetime selection in the mass range 5320 - 6000 \mevcc, using the Standard Model and world averge branching fraction values.}
+\caption{Number of expected decays in data passing the \bsmumu effective lifetime selection in the mass range 5320 - 6000 \mevcc, using the Standard Model and world average branching fraction values.}
 \label{tab:tabD}
 \end{center}
 \vspace{-1.0cm}                                                                                                                                               
@@ -224,12 +224,12 @@ where only the statistical uncertainty is given and the fit results are shown in
 \section{Incorrectly assigned primary vertices and additional detector resolution effects}
 \label{sec:PVcheck}
 Measuring the \bsmumu effective lifetime accurately relies on the $B^{0}_{s}$ candidate being assigned to the correct primary vertex in the event, incorrect assignment would lead to the wrong value for the decay time of an event
-In the papers \cite{} that study the lifetime of $B \to J/\psi X$ decays a component is included into the decay time fit to model the number of incorrectly assigned primary vertices (PVs). The decay time fit consists of a \pdf describing X convoluted by the sum of three Gaussian functions; two narrow Gaussian functions model the decay time resolution of the detector and a third wider Gaussian function corresponds to $<1\%$ of decays assigned incorrect PVs. The decay time fit to measure the \bsmumu \el does not explicitly model incorrectly assigned PVs or the detector resolution, however these effects will to some degree be included into the acceptance function. 
+In the papers \cite{Aaij:2016ohx,Aaij:2015vza} that study the lifetime of $B \to J/\psi X$ decays a component is included into the decay time fit to model the number of incorrectly assigned primary vertices (PVs). The decay time fit consists of a \pdf describing X convoluted by the sum of three Gaussian functions; two narrow Gaussian functions model the decay time resolution of the detector and a third wider Gaussian function corresponds to $<1\%$ of decays assigned incorrect PVs. The decay time fit to measure the \bsmumu \el does not explicitly model incorrectly assigned PVs or the detector resolution, however these effects will to some degree be included into the acceptance function. 
 
 A similar model is the papers \citeP{ is used to check the affect of decays with incorrectly assigned PVs and detector resolution effects that are not included in the acceptance function on the measured lifetime. 
 
-{\it This sections needs to be edited with the notes I made on the analysis note.}
-The weighted \bsmumu MC used to compute the acceptance function parameters is used to determine the decay time resolution from the detector resolution and incorrectly assigned PVs. The difference between the reconstructed decay time and the true decay time of each event is computed for events that pass the full selection, the resulting distribution is fitted with the sum of three Gaussian. The Gaussian have the same mean value, which is allowed to float in the fit along with the widths and fraction of each Gaussian entering in the sum. The fit parameters are shown in Table \ref{tab:resolution_fit} and the fit in Figure \ref{fig:resolution_fit_plot}. The fit results have a similar form to those used in \cite{Aaij:2016ohx,Aaij:2015vza}, where the detector resolution is modelled with two narrow Gaussian and the Gaussian for incorrectly assigned PVs is broader and describes a small fraction of events.
+The weighted \bsmumu simulated decays used to compute the acceptance function parameters is used to determine the decay time resolution due to the detector resolution and incorrectly assigned PVs. The difference between the reconstructed decay time and the `true' decay time with which decays were generated is computed for each decay that pass the full selection, the resulting distribution is fitted with the resolution function composed of the sum of three Gaussian. The Gaussian have the same mean value, which is left free in the fit along with the widths and fraction of each Gaussian entering. The fit parameters are shown in Table \ref{tab:resolutionfit}.% and the total fit in Figure \ref{fig:resolution_fit_plot}. 
+The fit results have a similar form to those used in \cite{Aaij:2016ohx,Aaij:2015vza}, where the detector resolution is modelled with two narrow Gaussian and the Gaussian for incorrectly assigned PVs is broader and describes a small fraction of events.
 
 \begin{table}[ht]
 \begin{center}
@@ -247,7 +247,7 @@ $f_{3}$                 & 0.681                \\ \hline
 
 \end{tabular}
 \caption{Parameters from fit to the difference between the reconstructed decay time and the true decay time of each event that passes the full selection for \bsmumu MC. The mean used for all Gaussian is is $\mu$ and $\sigma_{i}$ are the widths of each Gaussian which make up a fraction $f_{i}$ for the total sum.}
-\label{tab:resolution_fit}
+\label{tab:resolutionfit}
 \end{center}
 \end{table}
 
@@ -257,6 +257,13 @@ $f_{3}$                 & 0.681                \\ \hline
 %\caption{Fit of the sum of 3 Gaussian functions with a common mean to the difference between the reconstructed %decay time and the true decay time of each event that passes the full selection for \bsmumu MC. }
 %\label{fig:resolution_fit_plot}
 %\end{figure}
+
+The following model is used to generate 1 million events
+\begin{equation}
+\epsilon (t) [\mathcal{R}(t) \otimes e^{-t/\tau}]
+\end{equation}
+where $\epsilon (t)$ is the acceptance function with parameters given in Table \ref{} and $\mathcal{R}(t)$ is the resolution function. Decays are generated assuming the \bsmumu effective lifetime is equal to the lifetime of the heavy $B^{0}_{s}$ mass eigenstate. A fit to the generated events is performed to extract the lifetime, in this fit the resolution is not included and only the acceptance function and the exponential for the lifetime. The results from the fit are $\tau\left(\Bs\right) = 1.6098\pm 0.0014 \ps$, which is consistent with the lifetime of generate events. The difference between the lifetime used to generate events and the fitted value is 0.0002 ps, a factor of 10 smaller than the lowest systematic uncertainty. This cross check shows that the presence of incorrectly assigned PVs or detector resolution effects that are not included in the acceptance function have a negligible effect on the \bsmumu effective lifetime.
+
 
  We assume that MC gives good estimate of the number of incorrectly assigned PVs, as a check Figure \ref{fig:Bd2KPi_nPVs_MC_data_comparison} shows the number of \bdkpi events passing the selection outlined in Section \ref{sec:lifetime_sys_acceptance} for MC and sWeighted data for each year. On average there are more PVs per event in MC compared to data therefore using MC would give an overestimation of the number of incorrectly assigned PVs expected in data. 
 
@@ -269,13 +276,6 @@ $f_{3}$                 & 0.681                \\ \hline
   \caption{The distributions for the number of primary vertices in an event \bdkpi data (green triangles) and simulated candidates (blue squares) for 2011 (top left), 2012 (top right), 2015 (bottom left) and 2016 (bottom right), for events that pass the selection in Section \ref{sec:lifetime_sys_acceptance}.}
   \label{fig:Bd2KPi_nPVs_MC_data_comparison}
 \end{figure}
-
-
-The following model is used to generate 1 million events
-\begin{equation}
-\epsilon (t) [\mathcal{R}(t) \otimes e^{-t/\tau}]
-\end{equation}
-where $\epsilon (t)$ is the acceptance function with parameters given in Table \ref{tab:acceptanceParams} and $\mathcal{R}(t)$ is the resolution function, the sum of the three Gaussian from the MC fit. Events are generated assuming the \bsmumu effective lifetime is equal to the lifetime of the heavy $B^{0}_{s}$ mass eigenstate. A fit to the generated events is performed to extract the lifetime, in this fit the resolution is not included and only the acceptance function and the exponential for the lifetime. The results from the fit are $\tau\left(\Bs\right) = 1.6098\pm 0.0014 \ps$, which is consistent with the lifetime of generate events. The difference between the lifetime used to generate events and the fitted value is 0.0002 ps, a factor of 10 smaller than the lowest systematic uncertainty, this cross check shows that the presence of incorrectly assigned PVs or detector resolution effects that are not included in the acceptance function have a negligible effect on the \bsmumu effective lifetime.
 
 
 \section{Combinatorial background decay time model}
@@ -295,13 +295,23 @@ The resulting pull distribution for \Gmumu are shown in Figure~\ref{}, the diffe
 \section{Mix of \bs mass eigenstates}
 \label{sec:mixofeigenstates}
 
-In the SM the \bsmumu \el is equal to the lifetime of the heavy \bs mass eigenstate. However the real \bsmumu \el could be between the lifetime of the light and heavy mass eigenstates. The expected/PDG values for the different lifetimes are \tH = and \tL = .
+In the SM the \bsmumu \el is equal to the lifetime of the heavy \bs mass eigenstate. However the real \bsmumu \el could be between the lifetime of the light and heavy mass eigenstates. %The expected PDG values for the different lifetimes are \tH = and \tL = .
 
-As shown in Section~\refP{ the selection efficiency used to identify \bsmumu decays in data is not uniform across the decay time range. The selection rejects a greater protpotuin of candidates with shown lifetimes compared to candidates with longer lifetimes. Therefore he oresenecce of any \bs light mass eigenstates decaying as \bsmumu in data could be masked by the bias in the decay time distribution. The efficiency to selection light \bs mass eigenstates is lower than the efficiency to select heavy \bs mass eigenstates.
+As shown in Section~\ref{} the selection efficiency used to identify \bsmumu decays in data is not uniform across the decay time range. The selection rejects a greater protpotuin of candidates with shown lifetimes compared to candidates with longer lifetimes. Therefore he oresenecce of any \bs light mass eigenstates decaying as \bsmumu in data could be masked by the bias in the decay time distribution. The efficiency to selection light \bs mass eigenstates is lower than the efficiency to select heavy \bs mass eigenstates.
 
-The zise of this effect has been estimated using two very simple toy studies. The first assumes that the selection has not bias on the decay time distribution and 1 million candidates are generated with a lifetime of \tH + tL / 2. Therefore assuming even missing of the light and heavy mass eigenstates contribution to \bsmumu decays. The second set a further 1 million candidates are generate with the same lifetime but with a more realistic model, using the acceptance function in equation~\ref{} and parameters from Table~\ref{}. The first set of candidates is fitted with a single exponential function and the second set with the acceptance function and exponential function in order to find \tmumu and \Gmumu for each distribution. The acceptance parameters are fixed in the fit.
+The size of this effect has been estimated using two very simple toy studies. The first assumes that the selection has not bias on the decay time distribution and 1 million candidates are generated with equal contributions from the heavy and light \bs mass eigenstates.% Therefore assuming even missing of the light and heavy mass eigenstates contribution to \bsmumu decays. 
+The second set a further 1 million candidates are generate with the same mix of eigenstates but with a more realistic model, using the acceptance function in equation~\ref{} and parameters from Table~\ref{}. The first set of candidates is fitted with a single exponential function and the second set with the acceptance function and exponential function in order to find \tmumu and \Gmumu for each distribution. The acceptance parameters are fixed in the fit.
 
-The values of \tmumu and \Gmumu are compared for the two studies and a systematic uncertainty is assigned for the change in \tmumu and \Gmumu values due to the inclusion of the acceptance function. The differences between the two studies are X for \tmumu and Y for \Gmumu.
+The values of \tmumu are compared for the two studies and a systematic uncertainty is assigned for the change in \tmumu and values due to the inclusion of the acceptance function. The \ml fits used to measure \tmumu in the two toy studies are shown in Figure~\ref{fig:mixofstates} and the differences between the measured lifetimes for the two studies is 0.018 \ps and is assigned as the systematic uncertainty.
+
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/No_acc_fit.pdf}
+    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/Acc_fit.pdf}
+  \caption{Maximum likelihood fits to the decay time distribution to measure \tmumu for \bsmumu decays that are composed of an equal mix from the heavy and light mass eigenstates. Decay time distributions are generated assuming a flat acceptance function (left) and the acceptance function used to describe \bsmumu decays in data (right).}
+  \label{fig:mixofstates}
+\end{figure}
+
 
 \section{Production asymmetry of \bs and $\bar{B_{s}^{0}}$}
 \label{sec:productionasymetry}
