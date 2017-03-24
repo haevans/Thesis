@@ -51,7 +51,7 @@ In the toy studies the number of expected decays, $N_{expt}$, in the mass range 
 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width=0.6 \textwidth]{./Figs/LifetimeSystematics/Bs2MuMu_yield_fraction_bias_CKM16.pdf}
+        \includegraphics[width=0.6 \textwidth]{./Figs/LifetimeSystematics/Fractional_bias_Bsmumu_yield_CKM.pdf}
     \caption{Fractional bias of the measured \bsmumu yield from toy studies for 4.4 \fb.}
     \label{fig:FracBias}
 \end{figure}
@@ -142,7 +142,7 @@ Decay & \multicolumn{2}{c}{Expected yield in 5320 - 6000 \mevcc} \\
 \vspace{-1.0cm}                                                                                                                                               
 \end{table}
 
-\subsection{Mass \pdf parameters}
+\section{Mass \pdf parameters}
 \label{sec:massPDFsyst}
 The data collected in Run~1 and Run~2 are combined for the measurement of the \bsmumu effective lifetime and the mass and decay time fits are applied to the combined data. However the parameters used in the mass \pdf in Table~\ref{} were evaluated specifically for Run~1 data and different parameters are available for Run~2 data. Therefore the influence of the choice of mass \pdf parameters on the measured \tmumu and \Gmumu values must be evaluated. 
 
@@ -157,7 +157,7 @@ Toy studies are performed to understand the size of the impact of the mass fit c
 \end{figure}
 
 
-\subsection{Acceptance function accuracy}
+\section{Acceptance function accuracy}
 \label{sec:accptsyst}
 The decay tie acceptance comes from weighted simulated decays. This relies on the assumption that the weighted simulated decays model the data reasonable well. To test this assumption, as well as the strategy used to measure the \bsmumu effective lifetime, the lifetime of the more abundant \bdkpi and \bskk decays are measured.
 
@@ -326,7 +326,7 @@ bin & time / \ps      & candidates & time / \ps    & candidates \\ \hline
 \end{table}
 The model used for the combinatorial background decay time currently introduced no bias into the pull distribution of \Gmumu for toy studies as shown in Figure~\ref{}. However the size of a systematic bias from the choice of the decay time distribution is estimated by two sets of toy studies. The first uses the background decay time distribution in Table~\ref{} and the second set uses the same decay time distribution of expect the lifetime of each component are made longer by 1 standard deviation and the fraction of the long lived component is increase by one standard deviation as well. For both sets of toy studies only combinatorial background and \bsmumu decays are generated and 10,000 studies are performed for each configuration. 
 
-The resulting pull distribution for \Gmumu are shown in Figure~\ref{fig:CBGextreme}}, the difference in the mean value of the distributions for the two studies is negligible and the width changes by 0.008 \ps$^{-1}$ between the two studies. The change in the width is the largest and therefore is taken as the systematic uncertainty, assuming the median expected uncertainties for \Gmumu and \tmumu. Therefore the systematic uncertainties due to the combinatorial background decay time model are X \ps for \tmumu and Y \ps$^{-1}$ for \Gmumu.
+The resulting pull distribution for \Gmumu are shown in Figure~\ref{fig:CBGextreme}}, the difference in the mean value of the distributions for the two studies is negligible and the width changes by 0.008 \ps$^{-1}$ between the two studies. The change in the width is the largest and therefore is taken as the systematic uncertainty, assuming the median expected uncertainties for \Gmumu and \tmumu. Therefore the systematic uncertainties due to the combinatorial background decay time model are 0.002 \ps for \tmumu. %and Y \ps$^{-1}$ for \Gmumu.
 
 \begin{figure}[htbp]
   \centering
@@ -365,8 +365,31 @@ The values of \tmumu are compared for the two studies and a systematic uncertain
 \section{Summary}
 \label{sec:systematicsSummary}
 
-The complete list of systematic uncertainties for \tmumu and \Gmumu are summarised in Table~\ref{}. Adding the uncertainties in quadrature leads to a total uncertainty of X for \tmumu and Y for \Gmumu. The uncertainties correspond to X $\%$ and Y $\%$ of the observed statistical uncertainty for \tmumu and \Gmumu respectively. The small size of the total systematic uncertainties compared to the statistical uncertainties is expected given the observed number of decays. 
+The complete list of systematic uncertainties for \tmumu and \Gmumu are summarised in Table~\ref{tab:totalsyst}. Adding the uncertainties in quadrature leads to a total uncertainty of X for \tmumu and Y for \Gmumu. The uncertainties correspond to X $\%$ and Y $\%$ of the observed statistical uncertainty for \tmumu and \Gmumu respectively. The small size of the total systematic uncertainties compared to the statistical uncertainties is expected given the observed number of decays. 
 
 Although the systematic uncertainty of \tmumu is larger, it is only a small among larger than the uncertainty on \Gmumu and negligible compared to the statistical uncertainty, therefore is presents no barrier to the result being presented in terms of \tmumu.
 
 %What is the percentage of the unceratines of the measured result? Both statistical and systematic?
+
+\begin{table}[htp]
+\begin{center}
+\begin{tabular}{lc}
+\hline
+Sources & Uncertainty \\
+\hline
+Fit accuracy & 0.03 \\
+Background contamination & 0.007 \\
+%Mass \pdf & -
+Acceptance function & 0.03 \\
+Combinatorial background decay time model & 0.008 \\
+Mix of \bs eigenstates & 0.018 \\
+Production asymmetry & 0.002 \\ \hline
+Total & 0.05 \\
+\hline
+\end{tabular}
+\vspace{0.7cm}                                                                                                                                               
+\caption{Summary of the systematic uncertainties on measuring \tmumu, the total uncertainty is achieved by adding the separate uncertainties in quadrature.}
+\label{tab:totalsyst}
+\end{center}
+\vspace{-1.0cm}                                                                                                                                               
+\end{table}
