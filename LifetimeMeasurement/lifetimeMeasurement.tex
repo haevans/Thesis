@@ -250,6 +250,25 @@ An unbinned \ml fit is performed to the combined simulated \bsmumu decays to det
 \end{figure}
 
 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{lc}
+\hline
+Parameter & Value \\
+\hline
+$a$ & 0.574 $\pm$ 0.011 \ps$^{-1}$\\
+$n$ & 1.49 $\pm$ 0.03 \\
+$t_{0}$ &  0.313 $\pm$ 0.007 \ps \\
+
+\hline
+\end{tabular}
+\vspace{0.7cm}             
+\caption{Parameters for the \bsmumu acceptance function determined from weighted simulated \bsmumu decays.}
+\label{tab:accptsig}
+\end{center}
+\vspace{-1.0cm}                                                                                                                                               
+\end{table}
+
 \subsection{Background decay time pdf}
 \label{sec:bkgDTpdf}
 
@@ -514,17 +533,17 @@ Fit no. & Mass Range &   \multicolumn{2}{c}{Components included in the mass \pdf
 
 
 %\afterpage{
-%\begin{landscape}
+\begin{landscape}
 \vspace*{\fill}
 \begin{table}[hp]
 \begin{center}
-\begin{tabular}{p{0.5cm}p{1.0cm}p{1.0cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{1.4cm}}
-%\begin{tabular}{lcccccccccc}
+%\begin{tabular}{p{0.5cm}p{1.0cm}p{1.0cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{1.4cm}}
+\begin{tabular}{lcccccccccc}
 \hline
 Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{N}$(Comb.)} & \multicolumn{2}{c}{$\lambda$} & \tmumu & \multicolumn{3}{c}{\Gmumu} \\ \hline
  &Mean&Width&Mean&Width&Mean&Width&$\sigma$/\ps&Mean&Width&$\sigma$/\ps$^{-1}$\\ \hline
 1. & -0.043 & 1.002 & -0.048 & 1.050 & -0.071 & 1.005 & 0.40 & 0.021 & 0.946 & 0.15 \\
-2. &
+%2. &
 3. & -0.034 & 0.973 & -0.067 & 1.023 & -0.019 & 0.999 & 0.42 & 0.031 & 0.935 & 0.12 \\
 4. & -0.042 & 0.981 & -0.066 & 1.024 & -0.018 & 0.999 & 0.41 & 0.028 & 0.942 & 0.15 \\
 5. & -0.094 & 0.997 & 0.100 & 1.007 & -0.228 & 1.018 & 0.40 & 0.017 & 0.933 & 0.40 \\
@@ -541,10 +560,11 @@ Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{
 \end{center}
 %\vspace{-1.0cm}                                                                                                                                               
 \end{table}
-%\end{landscape}
+\vspace*{\fill}
+\end{landscape}
 %}
 
-\vspace*{\fill}%These are the original number that I ran, but I couldn’t get the correct systematics with these toys. Also I think the lifetime range was too long at 0 - 15 ps. Finally the buffer was set of 0.5 which gives some errors
+%\vspace*{\fill}%These are the original number that I ran, but I couldn’t get the correct systematics with these toys. Also I think the lifetime range was too long at 0 - 15 ps. Finally the buffer was set of 0.5 which gives some errors
 %\afterpage{
 %\begin{landscape}
 %\vspace*{\fill}
@@ -578,7 +598,7 @@ Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{
 %}
 %\vspace*{\fill}
 
-\pagebreak
+%\pagebreak
 
 
 Therefore the fit configuration number 11 is chosen to measure the \bsmumu effective lifetime. Figure~\ref{fig:toyegs} gives an example of the mass and decay time \ml fits for the chosen configuration, it is clear from Figure~\ref{fig:toygen} that the number of background decays from \bdmumu, \bhh and \lambdab is extremely mass above 5320 \mevcc therefore these backgrounds do not need to be modelled in the mass \pdf. The affect on the final result of not modelling these backgrounds is estimated in Section~\ref{}.
