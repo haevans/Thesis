@@ -1,10 +1,10 @@
-\chapter{Measurement of \bmumu Branching Fractions}
+\chapter{Measurement of \bmumu branching fractions}
 \label{sec:BFanalysis}
 This chapter presents the measurements of the \bdmumu and \bsmumu branching fractions. Section~\ref{sec:BFAnalysisStrategy} gives an overview of the analysis strategy and a description of how the \bmumu yield is extracted from the data is given in Section~\ref{sec:signalPdfs}. The estimation of the background decays present in that data set is detailed in Section~\ref{sec:backgrounds} and the  normalisation procedure to convert the number of observed \bmumu decays in to the branching fractions for these decays is explained in Section~\ref{sec:Normalisation}. Finally the results are presented in Section ~\ref{sec:BFResults}. 
 
 The work presented in this Chapter was performed by the \bmumu LHCb analysis group and is published here~\cite{}. My contribution was  maintaining the stripping selection used for this analysis and providing the ROOT files for contained the data and simulated events needed for the analysis development and measurements.
 
-\section{Analysis Strategy} 
+\section{Analysis strategy} 
 \label{sec:BFAnalysisStrategy}
 The \bmumu branching fractions, $\mathcal{B}$(\bmumu), are defined as the ratio of \bmumu decays to the number of \bsd mesons created. However in reality not every \bmumu decay produced in $pp$ collisions will be within the LHCb detector acceptance or be reconstructed and pass the selection criteria of Chapter~\ref{selection_chapter}. Therefore the number of observed \bmumu decays at LHCb is reduced by the efficiency, $\epsilon$, of the detector, reconstruction and selection.
 The \bmumu branching fractions can be given by
@@ -124,7 +124,7 @@ The calibration is preformed for each year separately then combined to give the 
 \end{figure}
 
 
-\subsection{Decay time dependence of the \bsmumu BDT \pdf}
+\subsection{Decay time dependence}% of the \bsmumu BDT \pdf}
 \label{sec:ADGBDTcorrections}
 The output of the global BDT for \bmumu is correlated with the \bmumu decay time due the the choice of input variables used in the BDT as listed in Section~\ref{}. This correlation will lead of slightly incorrect estimations of the \bsmumu BDT \pdf. In the Standard Model the \bsmumu effective lifetime, \tmumu, is equal to the lifetime of the heavy \bs mass eigenstate, \tH, however in reality \tmumu could be somewhere in between the lifetimes of the heavy and light mass eigenstates. As described in Chapter ({\it the Theory Chapter}) the \bsmumu effective lifetime is related to the parameter \ADG, where \ADG = +1 for \tmumu = \tH and \ADG = -1 for \tmumu = \tL, where \tL is the lifetime of the light \bsmumu mass eigenstate.
 
@@ -156,7 +156,7 @@ The selection described in Chapter~\ref{selection_chapter} is effective at reduc
 In the fit to the dimuon invariant mass the combinatorial background is modelled by an exponential function. The combinatorial background yield is not constrained in the fit and the slope is constrained to have the same value across all BDT bins for each data set. These parameters are determined from a simultaneous fit to candidates in data in BDT bins for the mass ranges [4900, ($m_{B^{0}} - 50$)] \mevcc and [($m_{B^{0}_{0}$ + 60, 6000] \mevcc, where the mass shapes and yields of the remaining backgrounds are constrained.
 The mass \pdfs and yields of the background from \bhh and semi-leptonic decays are constrained in the fit around the expected values. The backgrounds that have lower masses than the \bd and \bs must be accurately modelled in the fit to ensure the combinatorial background yield, that spans the full mass range, is accurate described within the signal mass windows. The approaches for finding the mass \pdfs and expected yields differ for \bhh and semi-leptonic backgrounds, these procedures are described in the following sections.
 
-\subsection{\bhh mass and BDT \pdfs}
+\subsection{\bhh}% mass and BDT \pdfs}
 The mass \pdf describing mis-identified \bhh decays is formed of two Crystal Ball functions. The parameter values are evaluated from simulated decays for \bdkpi, \bskk, \bdpipi and \bskpi the have the momenta of tracks smeared to model the hadrons decaying in flight. The parameters are evaluated separately for each decay and combined using the branching fractions and the particle identification efficiencies for each decay.
 
 The number of mis-identified \bhh decays in each BDT bin, $\mathcal{N}_{B \to hh \to \mu \mu}$, is found using the relationship
@@ -168,7 +168,7 @@ where ${\mathcal{N}_{B \to hh}$ is the number of TIS \bhh decays in data, $\epsi
 
 %The expected yield of mis-identified \bhh decays in each BDT bin for Run 1 and Run 2 data are given in Table~\ref{}.
 
-\subsection{Semi-leptonic mass and BDT \pdfs}
+\subsection{Semi-leptonic decays}%mass and BDT \pdfs}
 The mass \pdfs of semi-leptonic backgrounds vary across the BDT range therefore these \pdfs are evaluated using simulated decays separated into each BDT bin. An Argus function~\cite{Argus_pdf} convoluted with an Gaussian Function is used to describe the mass distributions. The shapes of \bdpimunu and \bsKmunu are extremely similar and therefore these backgrounds are modelled with one common \pdf. Similarly one mass \pdf is used to model \bupimumu and \bdpimumu decays.
 
 The expected yields of the semi-leptonic backgrounds in each BDT bin is estimated by normalising to the number of \bujpsik decays observed via
