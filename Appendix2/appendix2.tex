@@ -1,3 +1,59 @@
-\chapter{Development of multivariate classifiers for the \bsmumu effective lifetime measurement}
+\chapter{Input variables and training parameters of BDTs developed for the effective lifetime measurement}
 \label{sec:appendix2}
-Details of the input variables used and the development of the classifiers.
+%Details of the input variables used and the development of the classifiers.
+What need to go into here ...
+- put the reference for where the list of input variables were taken from
+- input variables used for the adaptive boost BDT with explaination of what they are, adding in references
+- input variables used for the uBoost BDT with explaination of what they are, adding in references
+- training parameters for both the uBoost and adaptive boost BDT
+- proof that the BDTs are not overtrained
+- discussion that different isolations are used but overall they don't change the conclusions.
+
+
+SO structure;
+\section{Input variables}
+- the input variables were chosen in the following way
+- the starting set of variables were taken from .... but some others that were developed were added, these include isolation variables
+- The final set of input variables used in the adaptive boost BDT are, (put definitions next to each one and relevant references and also links to that chapters that explain what they are)
+- The final set of input variables used in the uBoost BDT are ... (same details as above)
+- Note that the BDT isolations are different from those used in the BF BDT, due to time constraints they set of varibles weren't re-optimised and also adding them in made the gloabl BDT still performs best
+
+
+\section{Training parameters}
+%- The training parmeters used in the final BDTs trained on data are ....
+The training parameters discussed in Section~\ref{sec:GeneralBDT} put constraints on how a BDT sperates signal and background decays. 
+The training parameters used in the adaptive boost BDT were optimised by iterating over different training parameter values and chosing the BDT which gave the best signal significance for identifyting \bhh decays in Run~1 data. The computation of the signal significance is described in Section~\ref{sec:dev_BDTs}. The final set of training parameters are given in Table~\ref{tab:ELtrainingparamss}.
+The training parameters used in the uBoost BDT have not been optimised and are given in Table~\ref{tab:ELtrainingparamss}. The parameter values suggested in~\cite{Stevens:2013dya} have been used where is was shown that different training parameters had a small impact of the overall BDT performance. %are given in Table~\ref{}, the parameters are taken from~\ref{} and have no alternative parameters were investigated because little improvment can be gained for this algorithm by altering the training parameters.
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{ll|ll}
+\hline
+\multicolumn{2}{Adaptive Boost BDT} & \multicolumn{2}{uBoost BDT} \\ \hline
+Parameter & Value & Parameter & Value\\ \hline
+nTrees & 1000 &  nTrees & 100\\
+%nEventsMin & 400 \\                                                                                                                                                                
+MinNodeSize & 5$\%$ & nEventsMin & 100 \\
+MaxDepth & 3 & MaxDepth & 4 \\
+%NNodesMax = 100000 \\                                                                                                                                                              
+$\beta$ & 0.1 & $\beta$ & 1.0 \\
+nCuts & 30 & nCuts & 200 \\
+\hline
+\end{tabular}
+\vspace{0.7cm}
+\caption{Training parameters used to specify the training of the adaptive boost and uBoost BDT.}
+\label{tab:ELtrainingparamss}
+\end{center}
+\vspace{-1.0cm}
+\end{table}
+
+
+\section{Overtaining test}
+%- Overtaining of the BDTs
+As discussed in Section~\ref{}, it is important that BDTs are not overtained. %To test this the signal and background samples are split into two and half of the signal and background samples are used to train a BDT, the BDT is then applied to the other half of the signal and background samples. 
+The BDT output value is evaluted for each decay in the sample and the output values are compared for both s
+To test this assumption the signal and background samples are both split in two to create a training set and a testing set.
+A BDT is trained using the training set, and the BDT is then applied to both the traning and testing sets. The distribution of BDT output values for signal and background decays inthe training and testing sets are compared. If the BDT is overtrained the response of the BDT will be quite different for the training and testing sets for signal and background decays, however is the BDT is not overtrained the distributions will be similar for the training and testing sets. 
+
+Figure~\ref{} shows the results of this test which is performed using the TMVA package~\cite{}, neither the uBoost BDT of the adaptive boosting BDT developed for the effective lifetime measurement are overtrained. The same test was performed for the global BDT developed of the \BFm and the results are shown in Figure~\ref{}, the global BDT is not overtrained.  
+
+%The output values of the BDT for the set of decays used in training is compared to the output values of the set of decays not used in training. 
