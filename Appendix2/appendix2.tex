@@ -24,11 +24,23 @@
 %Prehaps reference the internal note for the isoBDTs?
 
 
-The input variables used in the adaptive boosting and uBoost BDTs were chosen separately, starting from a large set of variables including kinematic, geometric and isolation variables. Initially the BDTs were trained using all input variables within the set and variables that had no impact on the BDT performance were removed until removing any of the remaining variables had a negative impact on the BDT performance. Each BDT performance was evaluted from the integreated Receiver Operating Charateritic curve, which is the signal efficiency versus (1 - background rejection). The inital set of input variables tested were based on the variables used in~\cite{Abulencia:2005pw}} and new isolation variables that were developed for the study of \bmumu decays. 
+The input variables used in the adaptive boosting and uBoost BDTs were chosen separately, starting from a large set of variables including kinematic, geometric and isolation variables. Initially the BDTs were trained using all input variables within the set and variables that had no impact on the BDT performance were removed until removing any of the remaining variables had a negative impact on the BDT performance. Each BDT performance was evaluted from the integreated Receiver Operating Charateritic curve, which is the signal efficiency versus (1 - background rejection). The inital set of input variables tested were based on the variables used in~\cite{} and new isolation variables that were developed for the study of \bmumu decays. 
 
 
-The adaptive boosting BDT uses 11 input variables and the uBoost BDT uses 21 variables which includes the adaptive boosting BDT varaibles.
-The input variables used in both algorithms are related to the \bs, the muons and isolation variables. Some of the input variables used are also in used in the cut based selection, these variables are; 
+The adaptive boosting BDT uses 11 input variables and the uBoost BDT uses 21 variables which includes all variables in used by adaptive boosting BDT.
+The input variables used in both algorithms are related to the \bs, the muons, isolation variables and properties of jets in the reconstructed in the event. Isolation variables, discussed in Section~\ref{}, give a measure of how busy an event is and the seperation of the tracks in a \bsmumu candidate from other tracks in the event. 
+
+
+The BDTs are designed to remove combinatorial background decays, where many of the muons combined to form this background are produced from semi-leptonic decays. 
+Therefore the background will be from, overall, $b\bar{b} \to mu^{+} mu^{-} X_{1} X_{2}$ where each of the X's belongs to either the b or $\bar{b}$
+Jets are useful for identidy semi-leptonic decays, which have the form $b \to l\nu_{l} X$, because jets are a generic way to inclusively reconstruct the X. The lepton can then end up in the jet or not in the jet and this can be specified in the reconstruction. The same is true for the $\bar{b}$ decay that will be produced in the same $pp$ interaction as the $b$.
+For semi-leptonic decays, the jet of one b quark will either have or not have the lepton in it.
+Where as for \bsmumu decays a jet could have both leptons in it but no the other b quark produced. But for backgrounds is the jet has both leptons in it it will also have the other b quark as well.
+The options are, 2 muons in 2 jets, 2 muons and 2 seperate jets and 2 muons in one jet.
+Once the jets in an event have been created variables can be constructed based on the properties of the jets and the comparison to leptons in the event. These variables help to identify semi-leptonic decays. Therefore these can be used to identify backgrounds for \bsmumu decays. This information is complementatry to that in the isolation variables.
+
+The BDT input variables include variables that are also used in the cut based selection. These variables are;
+%Some of the input variables used are also in used in the cut based selection, these variables are; 
 \begin{itemize}
 \item impact parameter and impact parameter \chisqd of the \bs
 \item vertex fit \chisqd/$ndof$ of the \bs 
@@ -37,30 +49,28 @@ The input variables used in both algorithms are related to the \bs, the muons an
 \item the minimum impact parameter significance of the two muons
 %\item the polerisation angle which is the cosine of the angle between a vector perpendicular ot the plane containing the \bs momentum and the beam axis and the muon momentum in the \bs rest frame
 \end{itemize}
-The definitaion of these variables are given in Section~\ref{strippingold}. The additional variables not used in the cut based selection are;
+The definitions of these variables are given in Section~\ref{strippingold}. The additional input variables used in both BDTs are; %the cut based selection are;
 %Many of these variables used in the stripping selection and the definitions are given in Section~\ref{strippingold}. 
 \begin{itemize}
 \item  the polerisation angle which is the cosine of the angle between a vector perpendicular otthe plane containing the \bs momentum and the beam axis and the muon momentum in the \bs rest frame 
 \item $(\Delta \phi)^{2}$ where $\Delta \phi$ is the difference in azimuthal angles of the muons\item a BDT based isolation variable designed in the same way was those described in Section~\ref{sec:globalBDT}, using information from long (?) tracks. This isolation version was produced during the development of the final isolations used in the global BDT, the details of this variable can be found in~\cite{Archilli:1970886}. \footnote{Replacing this isolation variable with the Long track and VELO track isolations does no significantly improve the overall BDT performance.}
 \item isolation variable ({\it ZViso}) which uses a topological vertex algorithm and is defined in~\cite{Morda:2120795}
 \end{itemize}
-
-The additional input variables used in the uBoost BDT are;
+The remanining input variables used in the uBoost BDT are;
+%The additional input variables used in the uBoost BDT are;
 \begin{itemize}
 \item $(\Delta \eta)^{2}$, where $\Delta \eta$ is the difference in the pseudorapidity of the muons
-\item an isolation variable of the \bs candidate based on the definition use by the CDF collaboration in the search for \bmumu decays~\cite{Abulencia:2005pw}. The isolation is computed from the transverse momentum, $p_T$ of the \bs and all tracks in an event within a cone around the \bs, the isolation is defined as
+\item an isolation variable of the \bs candidate based on the definition use by the CDF collaboration in the search for \bmumu decays~\cite{Abulencia:2005pw}. The isolation is computed from the transverse momentum of the \bs, $p_{T}(B)$ and transverse momentum of tracks, $p_{T}(tracks)$, in an event that fall within a cone around the \bs. The cone is defined as $\sqrt{\delta \eta^{2} + \delta \phi^{2}} > 1.0$ where $\delta \eta$ and $\delta \phi$ are the differences in pseudorapidity and azimuthal angle of a track in the events and the \bs candidate. The isolation variable is defined as 
 \begin{equation}
 I_{CDF} = \frac{p_{T}(B_{s}{^0})}{p_{T}(B_{s}{^0}) + \displaystyle\sum_{track \in cone}p_{T}(track) }
-\end{equation}
-where the cone is 
-\begin{equation}
-\sqrt{\delta \eta^{2} + \delta \phi^{2}} > 1.0
-\end{equation}
-$\delta \eta$ and $\delta \phi$ are the differences in pseudorapidity and azimuthal angle of a track in the events and the \bs candidate (This is very simlar in layout to Alessio's)
 \item a cut based muon isolation, this isolation varibale was the precursor of the BDT based isolation variables and is based on placing cuts on variables relating long tracks in the event to the muons in \bsmumu candidates. The definition of this variable can be found in~\ref{Mordà:2120795}} %isolation_Giampi
-\item %B_otherB_ang
-\item %B_otherB_boo_ang
-\item four jet based variabes %B_JETBJETWIDTH, B_JETBPT, B_JETBPTRATIO, B_JETMU1DRMU2
+\item the angle between the \bs momentum and the sum of the momenta of all tracks in the event, excluding tracks from long lived particles and tracks associated with a different primary vertex then the pirmary vertex of the \bs. If there are too few candidates in the event to compute this variable the value is set to 1 %B_otherB_ang
+\item the angle between the $\mu^+$ candidate in the \bs rest frame and the sum of the momenta in the \bs rest frame of all tracks in the event, excluding tracks from long lived particles and tracks associated with a different primary vertex then the pirmary vertex of the \bs. If there are too few tracks in the event to compute this variable the angle is set to $\pi/2$%B_otherB_boo_ang
+%\item variabes %B_JETBJETWIDTH, B_JETBPT, B_JETBPTRATIO, B_JETMU1DRMU2
+\item B_JETBJETWIDTH, averge value of $\sqrt{\Detla \eta^2 + \Detla \phi^2}$ where the difference is computed between each component in the jet and tje jet, it is a weighted average weighted by the $P_{T}$ of each component. For jets that are forces to contain both muons in the \bsmumu candidate and are build around the \bs
+\item B_JETBPT, the transverse momentum of jets that are forces to contain both muonsin the \bsmumu candidate and are build around the \bs
+\item B_JETBPTRATIO, the ratio of the transverse momentum of the leptons and the jet forces to contain the leptons when jets that are forces to contain both muonsin the \bsmumu candidate and are build around the \bs
+\item B_JETMU1DRMU2, distance between a jet force to contain one lepton and the other lepton in the \bsmumu candidate? I think Xavier sent me some information about this?
 \item the direction cosine, DIRA, as defined in~\red{strippingold}
 \end{itemize}
 
