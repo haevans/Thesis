@@ -57,6 +57,7 @@ Year & \bsmumu correlation &  \bbbarmumux correlation \\ \hline
 The sWeights are calculated using the RooFit package~\cite{Verkerke:2003ir}, however the raw sWeights from the mass fit cannot be used directly in the \ml fit to measure the \el. The normalisation of the sWeights will not produce the correct statistical uncertainty on the effective lifetime measurement. Therefore the sWeights are re-normalised via
 \begin{equation}
 \omega^{'}_{i}= \omega_{i} \cdot \frac{\displaystyle\sum_{j} \omega{j}}{\displaystyle\sum_{j} \omega{j}^{2}}
+\label{eq:sWeightsrex}
 \end{equation}
 where $\omega_{i}$ are the sWeights values for each decay. The re-normalised sWeights will produce the correct statistical uncertainty in a \ml fit to measure the \bsmumu effective lifetime.
 
