@@ -404,18 +404,18 @@ The production asymmetry is given by
 \end{equation}
 where $\sigma\left(B^{0}_{s}\right)$ and $\sigma\left(\overline{B}^{0}_{s}\right)$ are the production cross-sections for \bs and $\overline{B}^{0}_{s}$ mesons respectively. The production asymmetry was measured by LHCb in 2011 at a centre of mass energy of 7~TeV as $ A_{p} = (1.09 \pm 2.61 \pm 0.66) \%$ \cite{Aaij:2014bba}. The presence of the production asymmetry modifies the \bsmumu decay rate to be
 \begin{eqnarray}
- \Gamma\left( B^0_s(t) \rightarrow \mu^{+}\mu^{-}\right)& =& \left(\frac{1+A_p}{2}\right)\Gamma(B^0_s(t)\rightarrow \mu^{+} \mu^{-})& &+ \left(\frac{1-A_p}{2}\right)\Gamma(\overline{B}^0_s(t)\rightarrow \mu^{+} \mu^{-}).
+\Gamma\left( B^0_s(t) \rightarrow \mu^{+}\mu^{-}\right) = \left(\frac{1+A_p}{2}\right)&\Gamma&(B^0_s(t)\rightarrow \mu^{+} \mu^{-}) \nonumber \\
+& & + \left(\frac{1-A_p}{2}\right)\Gamma(\overline{B}^0_s(t)\rightarrow \mu^{+} \mu^{-}).
 \label{eq:modifieddecayrate}
 \end{eqnarray}
 
-
 The affect of the production asymmetry on the measured lifetime can be determined from equations~\ref{eq:el} and~\ref{eq:modifieddecayrate} using the decay rates of \bsmumu and $\overline{B}^{0}_{s} \to \mu^{+} \mu^{-}}$ given in Chapter~\ref{sec:theory} as
 \begin{eqnarray}
- \Gamma(B^0_s(t)\rightarrow \mu^{+} \mu^{-}) &=& \frac{1}{2}N_{\mu^{+} \mu^{-}} |A_{\mu^{+} \mu^{-}}|^2 (1+|\epsilon|^2)e^{-\Gamma_{s} t} \bigg\{ \cosh \frac{\Delta\Gamma_{s} t}{2} + \nonumber \\
-& & C_{\lambda} \cos(\Delta m_{s} t) + A_{\Delta\Gamma}^{\mu^{+}\mu^{-}} \sinh \frac{\Delta\Gamma_{s} t}{2} + \\
+ \Gamma(B^0_s(t)\rightarrow \mu^{+} \mu^{-}) &=& \frac{1}{2}N_{\mu^{+} \mu^{-}} |A_{\mu^{+} \mu^{-}}|^2 (1+|\epsilon|^2)e^{-\Gamma_{s} t} \bigg\{ \cosh \frac{\Delta\Gamma_{s} t}{2} + \nonumber \\ 
+& & C_{\lambda} \cos(\Delta m_{s} t) + A_{\Delta\Gamma}^{\mu^{+}\mu^{-}} \sinh \frac{\Delta\Gamma_{s} t}{2} + \nonumber \\
 & & S_{\lambda} \sin(\Delta m_{s} t) \bigg\}, \\ 
- \Gamma(\overline{B}^{0}_{s}(t)\rightarrow \mu^{+} \mu^{-} ) &=& \frac{1}{2}N_{\mu^{+} \mu^{-}} |A_{\mu^{+} \mu^{-}}|^2 (1+a) (1+|\xilambda|^2)e^{-\Gamma_{s} t} \bigg\{ \cosh \frac{\Delta\Gamma_{s} t}{2} \nonumber \\
-& & - C_{\lambda} \cos(\Delta m_{s} t) + A_{\Delta\Gamma}^{\mu^{+} \mu^{-}} \sinh \frac{\Delta\Gamma_{s} t}{2} - \\
+ \Gamma(\overline{B}^{0}_{s}(t)\rightarrow \mu^{+} \mu^{-} ) &=& \frac{1}{2}N_{\mu^{+} \mu^{-}} |A_{\mu^{+} \mu^{-}}|^2 (1+a) (1+|\epsilon|^2)e^{-\Gamma_{s} t} \bigg\{ \cosh \frac{\Delta\Gamma_{s} t}{2} \nonumber \\
+& & - C_{\lambda} \cos(\Delta m_{s} t) + A_{\Delta\Gamma}^{\mu^{+} \mu^{-}} \sinh \frac{\Delta\Gamma_{s} t}{2} - \nonumber \\
 & & S_{\lambda} \sin(\Delta m_{s} t) \bigg\}  
 \end{eqnarray}
 
@@ -424,10 +424,9 @@ The affect of the production asymmetry on the measured lifetime can be determine
 The total decay rate then becomes
 \begin{eqnarray}
  \Gamma\left( B^0_s(t) \rightarrow \mu^+\mu^-\right) %&=& \left(\frac{1+A_p}{2}\right)\Gamma(B_s^0(t)\rightarrow \mu^+ \mu^-) + \left(\frac{1-A_p}{2}\right)\Gamma(B^0_s(t)\rightarrow \mu^+ \mu^-) \nonumber \\ 
-             &=& \frac{1}{2}N_{\mu^{+} \mu^{-}} |A_{\mu^{+} \mu^{-}}|^2 (1+|\epsilon|^2)e^{-\Gamma_{s} t} \bigg\{ \cosh \frac{\Delta\Gamma_{s} t}{2} + \\
-& &A_{\Delta\Gamma}^{\mu^+ \mu^-} \sinh \frac{\Delta\Gamma_s t}{2} \nonumber \\
-& & + A_p \left[ C_{\lambda} \cos(\Delta m_{s} t) + 
-& & S_{\lambda} \sin(\Delta m_s t) \right] \bigg\} + \mathcal{O}(a)
+             &=& \frac{1}{2}N_{\mu^{+} \mu^{-}} |A_{\mu^{+} \mu^{-}}|^2 (1+|\epsilon|^2)e^{-\Gamma_{s} t} \bigg\{ \cosh \frac{\Delta\Gamma_{s} t}{2} + \nonumber \\
+& &A_{\Delta\Gamma}^{\mu^+ \mu^-} \sinh \frac{\Delta\Gamma_s t}{2} + A_p [ C_{\lambda} \cos(\Delta m_{s} t) + \nonumber \\
+& & S_{\lambda} \sin(\Delta m_s t)] \bigg\} + \mathcal{O}(a)
 \end{eqnarray}
 where the production asymmetry has introduced an additional oscillatory term which disappears when $A_p=0$. % ~\ref{}.
 Using the relationships $\Delta\Gamma_{s} = \Gamma_{L} - \Gamma_{H}$ and $\Gamma_{s} = (\Gamma_{L} + \Gamma_{H})/2$ and ignoring terms $\mathcal{O}(a)$, the decay rate becomes
@@ -439,10 +438,15 @@ Using the relationships $\Delta\Gamma_{s} = \Gamma_{L} - \Gamma_{H}$ and $\Gamma
 where $N' \equiv \frac{1}{4}N_{\mu^{+} \mu^{-}} |A_{\mu^{+} \mu^{-}}|^2 (1+|\epsilon|^2)$. 
 This decay rate can be used to calculate the \bsmumu effective lifetime in the presence of a production asymmetry. Using integration by parts the contributing terms to the effective lifetime become
 \begin{eqnarray}
- \int_0^\infty t \left<\Gamma\left( B^0_s(t) \rightarrow \mu^{+} \mu^{-}\right)\right> dt = &N'& \bigg\{ \frac{1-A_{\Delta\Gamma}^{\mu^{+} \mu^{-}}}{\Gamma_{L}^2} + \frac{1+A_{\Delta\Gamma}^{\mu^{+} \mu^{-}}}{\Gamma_{H}^{2}} \nonumber \\
-&+& 2A_p \left[C_{\lambda}\frac{\Gamma_{S}^2 - \Delta m_{s}^2}{(\Delta m_{s}^2 + \Gamma_{s}^2)^2}\\
-&+& S_{\lambda}\frac{2 \Gamma_{S} \Delta m_{s}}{(\Delta m_{s}^2 + \Gamma_{S}^2)^2} \right] \bigg\}
+ \int_0^\infty t \left<\Gamma\left( B^0_s(t) \rightarrow \mu^{+} \mu^{-}\right)\right> dt = &N'& \bigg\{ \frac{1-A_{\Delta\Gamma}^{\mu^{+} \mu^{-}}}{\Gamma_{L}^2} + \frac{1+A_{\Delta\Gamma}^{\mu^{+} \mu^{-}}}{\Gamma_{H}^{2}} \\
+&+& \frac{2A_p}{(\Delta m_{s}^2 + \Gamma_{s}^2)^2} \left [C_{\lambda}(\Gamma_{S}^2 - \Delta m_{s}^2) + 2S_{\lambda} \Gamma_{S} \Delta m_{s} \right ] \bigg\} \nonumber
 \end{eqnarray}
+%\begin{eqnarray}
+% \int_0^\infty t \left<\Gamma\left( B^0_s(t) \rightarrow \mu^{+} \mu^{-}\right)\right> dt = &N'& \bigg\{ \frac{1-A_{\Delta\Gamma}^{\mu^{+} \mu^{-}}}{\Gamma_{L}^2} + \frac{1+A_{\Delta\Gamma}^{\mu^{+} \mu^{-}}}{\Gamma_{H}^{2}} \nonumber \\
+%&+& 2A_p \left [C_{\lambda}\frac{\Gamma_{S}^2 - \Delta m_{s}^2}{(\Delta m_{s}^2 + \Gamma_{s}^2)^2} \nonumber \\
+%&+& S_{\lambda}\frac{2 \Gamma_{S} \Delta m_{s}}{(\Delta m_{s}^2 + \Gamma_{S}^2)^2} \right] \bigg\}
+%\end{eqnarray}
+
 and
 \begin{eqnarray}
  \int_0^\infty \left<\Gamma\left( B_s(t) \rightarrow \mu^{+} \mu^{-} \right)\right> dt = &N'&\bigg\{ \frac{1-A_{\Delta\Gamma}^{\mu^{+} \mu^{-}}}{\Gamma_{L}} + \frac{1+A_{\Delta\Gamma}^{\mu^{+} \mu^{-}}}{\Gamma_{H}} \nonumber \\
