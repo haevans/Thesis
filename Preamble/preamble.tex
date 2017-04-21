@@ -5,7 +5,8 @@
 % Set {innerside margin / outerside margin / topmargin / bottom margin}  and
 % other page dimensions
 \ifsetCustomMargin
-  \RequirePackage[left=37mm,right=30mm,top=35mm,bottom=30mm]{geometry}
+%  \RequirePackage[left=30mm,right=20mm,top=30mm,bottom=20mm]{geometry} %This is what the binders recommend, I think it's not great
+  \RequirePackage[left=35mm,right=25mm,top=35mm,bottom=25mm]{geometry}    
   \setFancyHdr % To apply fancy header after geometry package is loaded
 \fi
 
@@ -142,6 +143,9 @@
 \newcommand{\bd}{$B^{0}$\xspace}
 \newcommand{\pdfs}{PDFs\xspace}
 \newcommand{\pdf}{PDF\xspace}
+\newcommand{\barbsd}{$\overline{B}_{(s)}^{0}$\xspace}
+\newcommand{\barbs}{$\overline{B}_{s}^{0}$\xspace}
+\newcommand{\barbd}{$\overline{B}^{0}$\xspace}
 
 \newcommand{\elm}{effective lifetime measurement\xspace}
 \newcommand{\el}{effective lifetime\xspace}
