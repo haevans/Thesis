@@ -3,8 +3,10 @@
 
 %if print - it's like a print out if not its what you get online. Spaceing is 
 %different.
-\documentclass[a4paper,12pt,numbered,index]{Classes/PhDThesisPSnPDF}
+\documentclass[a4paper,12pt,numbered,index, chapter]{Classes/PhDThesisPSnPDF}
 
+%\newboolean{inbibliography}
+%\setboolean{inbibliography}{false}
 %\usepackage{lineno}
 %\linenumbers
 
@@ -111,7 +113,7 @@
 % To use choose `chapter' option in the document class
 
 \ifdefineChapter
- \includeonly{Theory/theory} 
+ \includeonly{Summary/summary} 
 \fi
 
 % ******************************** Front Matter ********************************
@@ -175,8 +177,9 @@
 % To use the conventional natbib style referencing
 % Bibliography style previews: http://nodonn.tipido.net/bibstyle.php
 % Reference styles: http://sites.stat.psu.edu/~surajit/present/bib.htm
-
-\bibliographystyle{ieeetr}
+%\addcontentsline{toc}{section}{References}
+%x\setboolean{inbibliography}{true}
+\bibliographystyle{LHCb}
 %\bibliographystyle{unsrt} % Use for unsorted references  
 %\bibliographystyle{plainnat} % use this to have URLs listed in References
 
