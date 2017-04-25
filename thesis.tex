@@ -1,12 +1,10 @@
- % ******************************* PhD Thesis Template **************************
+% ******************************* PhD Thesis Template **************************
 % Please have a look at the README.md file for info on how to use the template
 
 %if print - it's like a print out if not its what you get online. Spaceing is 
 %different.
-\documentclass[a4paper,12pt,numbered,index, chapter]{Classes/PhDThesisPSnPDF}
+\documentclass[a4paper,12pt,numbered,index]{Classes/PhDThesisPSnPDF}
 
-%\newboolean{inbibliography}
-%\setboolean{inbibliography}{false}
 %\usepackage{lineno}
 %\linenumbers
 
@@ -113,7 +111,7 @@
 % To use choose `chapter' option in the document class
 
 \ifdefineChapter
- \includeonly{Summary/summary} 
+ \includeonly{Theory/theory} 
 \fi
 
 % ******************************** Front Matter ********************************
@@ -177,9 +175,8 @@
 % To use the conventional natbib style referencing
 % Bibliography style previews: http://nodonn.tipido.net/bibstyle.php
 % Reference styles: http://sites.stat.psu.edu/~surajit/present/bib.htm
-%\addcontentsline{toc}{section}{References}
-%x\setboolean{inbibliography}{true}
-\bibliographystyle{LHCb}
+
+\bibliographystyle{ieeetr}
 %\bibliographystyle{unsrt} % Use for unsorted references  
 %\bibliographystyle{plainnat} % use this to have URLs listed in References
 
