@@ -1,6 +1,13 @@
-\chapter{Theory of $B\to \mu^+ \mu^-$ decays; the Standard Model and beyond}
+\chapter{Theory of \boldmath{$B\to \mu^+ \mu^-$} decays; the Standard Model and beyond}
 \label{sec:theory_chptr}
-\section{$B^0_{(s)}\to \mu^+ \mu^-$ decays in the Standard Model}
+This Chapter describes the theoretical motivation for the study of \bmumu decays. 
+The processes through which these decays occur in the SM are discussed in Section~\ref{sec:bsmumu_in_SM} and the framework used to determine the theoretical predictions of \BFs is outlined in Section~\ref{sec:BFdef}. 
+Quark mising over time leads to oscillations of a \bs to a \barbs and a difference between the predicted and measured \bsmumu \BF, these oscillations and the difference \BFs values are discussed in Section~\ref{sec:quarkmaixing}. 
+A new parameter, \ADG, is introduced by the \bs - \barbs oscillations that is sensitive to NP and can be measure through the effective lifetime of \bsmumu decays as described in Section~\ref{sec:ADG_EL}. The SM predictions for \BFs and the effective lifetime are given in Section~\ref{sec:SM_predictions} and the ways in which NP can influence these observables is discussed briefly in Section~\ref{sec:NPmodels}.
+
+
+
+\section{\boldmath{$B^0_{(s)}\to \mu^+ \mu^-$} decays in the Standard Model}
 \label{sec:bsmumu_in_SM}
 %Prehaps I should mention anti-particles earlier?
 In the Standard Model (SM), quarks and anti-quarks can be combined in pairs to form mesons. The neutral $B$ mesons, \bd and \bs, are made up of a $\bar{b}$ quark combined with a d quark for the \bd and an $s$ quark for the \bs. Their anti-particles, \barbd and \barbs, are formed by swapping which quark in the pair is an anti-quark. These particles are unstable and exit for $\sim 10^{-12}$ before decaying into lepton, light mesons or a combination of both. One decay mode is when the \bsd decays into two oppositely charged muons as \bmumu~\footnote{\bmumu refers to both the particle and anti-particles decays of the \bd and \bs unless otherwise specified.}. This decay mode occurs very rarely in the SM compared to other decay modes of the \bsd, the suppression of this mode arises from several different sources.
@@ -300,6 +307,7 @@ where $y_{(s)}$ relates the heavy and light mass eigenstate decay times as $y_s 
 \end{equation}
 For the $B^0$-$\overline{B}^0$ oscillations the difference in the lifetimes of the heavy and light mass eigenstates is extremely small therefore $y_d$ negligible and the prompt \BF is equivalent to the experimental \BF. However for \bs-$\overline{B}^0_s$ oscillations there is a large difference in the lifetimes of the mass eigenstates and $y_s =XX \pm YY$~\cite{}. The prompt \BF must therefore be corrected to account for the oscillations before it is compared to the experimental value.
 \section{\ADG and the effective lifetime}
+\label{sec:ADG_EL}
 The definition of \ADG in Equation~\ref{eq:A_DGa} shows that it depends upon the transition amplitude of \bsmumu decays. In Section~\ref{} the effective Hamiltonian for this decay was discussed and the \BF given in terms of the complex variables $P$ and $S$. \ADG can also be expressed in terms of there parameters as~\cite{}
 \begin{equation}
 A_{\Delta \Gamma} = \frac{|P|\cos \varphi_P + |S| \cos \varphi_S}{|P|^2 + |S|^2}
@@ -327,6 +335,25 @@ It can be measured by fitting a single exponential to the same set of decays use
 %\end{align}
 In the SM only the heavy \bs mass eigenstates decays as \bsmumu therefore the \el equals the lifetime of the heavy mass eigenstate, $\tau_{\mu\mu} = \tau_H = \frac{1}{\Gamma_H}$. Therefore the effective lifetime offers a measurement complementary to the \BFs to study the SM and NP models in \bsmumu decays.
 
+\section{The Standard Model predictions}
+\label{sec:SM_predictions}
+
+The SM provides precise predictions of the \bmumu \BFs of~\cite{Bobeth:2013uxa, Aoki:2016frl, Fleischer:2017ltw}
+\begin{align}
+\mathcal{B}(B^0_{s} \to \mu^+ \mu^-)& = (3.57 \pm 0.16) \times 10^{-9}\\
+\mathcal{B}(B^0 \to\mu^+ \mu^-)& = (1.02 \pm 0.06) \times 10^{-10}
+\end{align}
+where quark oscillations have been accounted for in the quoted value of the \bsmumu \BF. The largest contributions to the theoritical uncertainties come from the CKM matrix elements and the decay constants of the \bs and the \bd.
+In the SM the \bsmumu effective lifetime is prediction to be~\cite{Fleischer:2017ltw}
+\begin{equation}
+\tau_{\mu\mu} = 1.61 \pm 0.01 \mathrm{ps}.
+\end{equation}
+The Heavy Flavour Averaging group provides the world averages for the measured values of the lifetime of the light and heavy \bs mass eigenstates to be $\tau_{H} = 1.609 \pm 0.010$~ps and $\tau_{L} = 1.414 \pm 0.006$~ps~\cite{Amhis:2016xyh}.
+The difference in these lifetimes is $0.195$~ps.
+Therefore a precision of 0.38~ps would be needed to distinguish between \ADG = $+1$ and \ADG = $-1$ a five standard deviations with the \EL. 
+
+
+
 \section{New Physics models and \bmumu decays}
 \label{sec:NPmodels}
 There exist a large number of NP theories that can influence \bmumu decays in a variety of different ways. Measurements of the \bmumu \BFs and \bsmumu effective lifetime can constrain the parameter space available for NP models and could reveal which models occur in nature. For a comprehensive discussion of NP models relevant to \bmumu decays and the constraints on these models from the latest \BF measurements see~\cite{}. This section will briefly introduce how some NP models that could still be seen with \bmumu decays given the current precision of the \BF measurements. %can be studied with \bmumu decays.
@@ -334,19 +361,30 @@ There exist a large number of NP theories that can influence \bmumu decays in a 
 As discussed in Section~\ref{} the ration of the \bdmumu and \bsmumu \Bfs provides an excellent test of the flavour structure of the SM and NP theories. Both the measured ratio and theoretical predictions are more precise than the individual \BFs due to the cancellation of uncertainties in the ratio. Figure~\ref{fig:ratio} shows possible values accessible by NP theories alongside the SM prediction and measured value of the \BF ratio. The prediction of the Minimal Flavour Violation (MFV) hypothesis is included in Figure~\ref{fig:ratio}. 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width=0.49\textwidth]{./Figs/placeholder.jpeg}
-    \caption{Ratio plot.}
+        \includegraphics[width=0.49\textwidth]{./Figs/Theory/MFV.pdf}
+    \caption{Correlations between the \bdmumu and \bsmumu \BFs including the SM prediction, the Minimal Flavour Violation hypothesis (MFV), four Minimal Supersymmetric Standard Models (MSSM) and the SM extended to contrain four generations of fermiosn (SM4)~\cite{Straub:2010ih}.}
     \label{fig:ratio}
 \end{figure}
 The MFV hypothesis predicts that the coupling of quark flavour and $\mathcal{CP}$ violation follow the same Yukawa structure as the SM in NP models. It is a popular theory to describe the flavour structure in NP models due to the current agreement of measurements with the SM predictions. A significant deviation of the \BF ratio from the SM or MFV hypothesis predictions will clearly indicate the need to a new flavour structure in theoretical models.
 
-Additionally NP models can move the \BF values and \ADG away from the SM predictions by providing new particles that can mediate the interaction. These new particles would change the Wilson coefficients included in the parameters $P$ and $S$. The dependence of the \BFs and \ADG on $P$ and $S$ are different as shown in Equations~\ref{} and~\ref{}, therefore NP models can influence the observables differently. The allowed values of \ADG and the ration of the measured and prompt SM prediction for $\mathcal{B}$(\bsmumu) are shown in Figure~\ref{fig:NPmodels} for situations where $S=0$, $P=1$, $P\pm S = 1$ and $\varphi_P, \varphi_S \in {0, \pi}$. It is clear that if NP effects are not revealed in the \BF measurements, they could still appear in \ADG. Furthermore in some scenarios \ADG is needed to resolve degeneracies that arise from information from the \BF alone.
-\begin{figure}[htbp]
+Additionally NP models can move the \BF values and \ADG away from the SM predictions by providing new particles that can mediate the interaction. These new particles would change the Wilson coefficients included in the parameters $P$ and $S$. The dependence of the \BFs and \ADG on $P$ and $S$ are different as shown in Equations~\ref{} and~\ref{}, therefore NP models can influence the observables differently. The allowed values of \ADG and the ration of the measured and prompt SM prediction for $\mathcal{B}$(\bsmumu) are shown in Figures~\ref{fig:NPmodelsA} and~\ref{fig:NPmodelsB} for situations where $S=0$, $P=1$, $P\pm S = 1$ and $\varphi_P, \varphi_S \in {0, \pi}$. It is clear that if NP effects are not revealed in the \BF measurements, they could still appear in \ADG. Furthermore in some scenarios \ADG is needed to resolve degeneracies that arise from information from the \BF alone.
+\begin{figure}[tbp]
     \centering
-        \includegraphics[width=0.49\textwidth]{./Figs/placeholder.jpeg}
-    \caption{Possible \BF and \ADG values.}
-    \label{fig:NPmodels}
+        \includegraphics[width=0.49\textwidth]{./Figs/Theory/NP_S_0.png}
+        \includegraphics[width=0.49\textwidth]{./Figs/Theory/NP_P_1.png}
+    \caption{Allowed values for $\mathcal{B}$(\bsmumu) and \ADG for situations where $S=0$ (left) and $P=1$ (right)~\cite{Buras:2013uqa,Knegjens:2014zva}. The ratio $\overline{R}$ plotted is from an average of the individual results from the CMS and LHCb collaborations given in Equations~\ref{} and~\ref{} from~\cite{CMSandLHCbCollaborations:2013pla}, the results from the combined analysis of the CMS and LHCb data gives $\overline{R} = 0.76^{+0.2}_{-{0.18}$~\cite{CMS:2014xfa}.}
+    \label{fig:NPmodelsA}
 \end{figure}
+
+\begin{figure}[tbp]
+    \centering
+        \includegraphics[width=0.49\textwidth]{./Figs/Theory/NP_P_pm_S_1.png}        
+        \includegraphics[width=0.49\textwidth]{./Figs/Theory/NP_phi.png}
+    \caption{Allowed values for $\mathcal{B}$(\bsmumu) and \ADG for situations where $P \pm S = 1$ (left) and $\varphi_P, \varphi_S \in {0, \pi}$ (right)~\cite{Buras:2013uqa,Knegjens:2014zva}. The ratio $\overline{R}$ plotted is from an average of the individual results from the CMS and LHCb collaborations given in Equations~\ref{} and~\ref{} from~\cite{CMSandLHCbCollaborations:2013pla}, the results from the combined analysis of the CMS and LHCb data gives $\overline{R} = 0.76^{+0.2}_{-{0.18}$~\cite{CMS:2014xfa}.}
+    \label{fig:NPmodelsB}
+\end{figure}
+
+
 Various NP models can influence the values of $P$ and $S$, these include the two Higgs doublet model (2HDM), supersymmetric models, models including leptoquarks and models that obey the MFV hypothesis as mentioned earlier.
 
 The 2HDM extend the Higgs sector of the SM by introducing two complex scalar field doublets both with non-zero vacuum expectation values. Spontaneous symmetry breaking then produces 2 charged, one neutral pseudoscalar and 2 neutral scalar Higgs bosons. The new particles can enter the loops of \bmumu decays and also allow FCNCs to occur that the tree level. Different scenarios of this model depend on the Higgs-quark interactions and can incorporate the MFV hypothesis. The different formulations of the model can lead to versions with $S=0$, $P=1$ or $P\pmS = 1$ as illustrated with the possible \BF and \ADG values for \bsmumu decays in Figure~\ref{fig:NPmodels}.
