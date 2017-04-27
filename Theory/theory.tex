@@ -1,25 +1,26 @@
-\chapter{Theory of \boldmath{$B\to \mu^+ \mu^-$} decays; the Standard Model and beyond}
+\chapter[Theory of $B\to \mu^+ \mu^-$ decays; the Standard Model and beyond]{Theory of \boldmath{$B\to \mu^+ \mu^-$} decays; the Standard Model and beyond}
 \label{sec:theory_chptr}
 This Chapter describes the theoretical motivation for the study of \bmumu decays. 
-The processes through which these decays occur in the SM are discussed in Section~\ref{sec:bsmumu_in_SM} and the framework used to determine the theoretical predictions of \BFs is outlined in Section~\ref{sec:BFdef}. 
-Quark mising over time leads to oscillations of a \bs to a \barbs and a difference between the predicted and measured \bsmumu \BF, these oscillations and the difference \BFs values are discussed in Section~\ref{sec:quarkmaixing}. 
-A new parameter, \ADG, is introduced by the \bs - \barbs oscillations that is sensitive to NP and can be measure through the effective lifetime of \bsmumu decays as described in Section~\ref{sec:ADG_EL}. The SM predictions for \BFs and the effective lifetime are given in Section~\ref{sec:SM_predictions} and the ways in which NP can influence these observables is discussed briefly in Section~\ref{sec:NPmodels}.
+The description of these decays within the SM framework is presented in Section~\ref{sec:bsmumu_in_SM} and the determination of the theoretical predictions of \BFs is outlined in Section~\ref{sec:BFdef}.
+The discussion of the theoretical \BFs is based on references~\cite{Blake:2016olu,Anikeev:2001rk}. 
+Quark mixing leads to oscillations of a \bs to a \barbs over time and a difference between the values of the predicted and measured \bsmumu \BFs. These oscillations and the influence on the \BFs values are described in Section~\ref{sec:quarkmaixing} and follows the material in refereneces~\cite{Dunietz:2000cr, Anikeev:2001rk,Nierste:2009wg}. 
+A new parameter, \ADG, arises from the \bs - \barbs oscillations and it can be measured through the effective lifetime of \bsmumu decays as described in Section~\ref{sec:ADG_EL}. The SM predictions for \BFs and the effective lifetime are given in Section~\ref{sec:SM_predictions} and the ways in which NP can influence these observables is briefly discussed in Section~\ref{sec:NPmodels}.
 
 
 
-\section{$B^0_{(s)}\to \mu^+ \mu^-$ decays in the Standard Model}
+\section[$B^0_{(s)}\to \mu^+ \mu^-$ decays in the Standard Model]{\boldmath{$B^0_{(s)}\to \mu^+ \mu^-$} decays in the Standard Model}
 \label{sec:bsmumu_in_SM}
 %Prehaps I should mention anti-particles earlier?
-In the Standard Model (SM), quarks and anti-quarks can be combined in pairs to form mesons. The neutral $B$ mesons, \bd and \bs, are made up of a $\bar{b}$ quark combined with a d quark for the \bd and an $s$ quark for the \bs. Their anti-particles, \barbd and \barbs, are formed by swapping which quark in the pair is an anti-quark. These particles are unstable and exit for $\sim 10^{-12}$ before decaying into lepton, light mesons or a combination of both. One decay mode is when the \bsd decays into two oppositely charged muons as \bmumu~\footnote{\bmumu refers to both the particle and anti-particles decays of the \bd and \bs unless otherwise specified.}. This decay mode occurs very rarely in the SM compared to other decay modes of the \bsd, the suppression of this mode arises from several different sources.
+In the SM, quarks and anti-quarks can be combined in pairs to form mesons that are held together by the strong force. The neutral $B$ mesons, \bd and \bs, are made up of a $\bar{b}$ quark combined with a $d$ quark for the \bd and an $s$ quark for the \bs. Their anti-particles, \barbd and \barbs, are formed by swapping over which quark flavour in the pair is the anti-quark. These particles are unstable and exist for $\sim10^{-12}$~s before decaying into leptons, lighter mesons or a combination of both. One decay mode is when the \bsd decays into two oppositely charged muons as \bmumu~\footnote{\bmumu refers to both the particle and anti-particle decays of the \bd and \bs unless otherwise specified.}. This decay mode occurs very rarely in the SM compared to other decay modes of the \bsd, the suppression of this mode arises from several different sources.
 
-The composite quarks of a \bsd both have the same charge, therefore in the decay \bmumu only quark flavour and not quark charge changes. This type of decay is called a flavour changing neutral current (FCNC). These decays must proceed via the weak force because it is the only interaction in which quark flavour is not conserved through the exchange of a $W$ boson. However, FCNCs are forbidden in the SM to occur at the tree level by the GIM mechanism~\cite{}. Therefore \bmumu decays proceed via $W$-box and $Z^0$ penguin diagrams as shown in Figure~\ref{fig:SM_diag}.
+The composite quarks of a \bsd both have the same charge, therefore in the decay \bmumu only quark flavour and not quark charge changes. This type of decay is called a flavour changing neutral current (FCNC). These decays must proceed via the weak force because it is the only interaction in which quark flavour is not conserved via the exchange of a $W$ boson. However, FCNCs are forbidden in the SM to occur at the tree level by the GIM mechanism~\cite{PhysRevD.2.1285}. Therefore \bmumu decays proceed via $W$-box and $Z^0$-penguin diagrams as shown in Figure~\ref{fig:SM_diag}.
 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width=0.49\textwidth]{./Figs/Theory/W_diagram.pdf}
-        \includegraphics[width=0.49\textwidth]{./Figs/Theory/Z0_penguin_v1.pdf}
-        \includegraphics[width=0.49\textwidth]{./Figs/Theory/Z0_penguin_v2.pdf}
-    \caption{Feynman diagrams for \bmumu decays in the SM via $W$=box and $Z^0$ penguin processes.}
+        \includegraphics[width=0.4\textwidth]{./Figs/Theory/W_diagram.pdf}
+        \includegraphics[width=0.4\textwidth]{./Figs/Theory/Z0_penguin_v1.pdf}
+        \includegraphics[width=0.4\textwidth]{./Figs/Theory/Z0_penguin_v2.pdf}
+    \caption{Feynman diagrams for \bsmumu decays in the SM via $W$-box and $Z^0$-penguin processes. The same diagrams apply to \bdmumu decays but the $s$ quark is exchanged for a $d$ quark.}
     \label{fig:SM_diag}
 \end{figure}
 
@@ -28,27 +29,43 @@ The lack of \bmumu decays at the tree level causes them to be suppressed compare
 
 %{\it I think that this needs to be re-worded.
 
-%Although the weak force allows quark flavour to change the coupling strengths between different quark flavours are not all the same magnitude. The coupling strengths are described by the CKM matrix. Quarks can Quarks fall into three families; $u$ and $d$, $c$ and $s$, $t$, and $b$. They can also be seperated into two types depending on their charge; up-type quarks include $u$, $c$ and $t$, down-type quarks include $d$, $s$ and $b$. The weak force couples up-type quarks to the weak eigenstates of the down-type quark in the same family with the same strength. The weak quark eigenstates are not the same as the mass eigenstates and the two types of states are related via the CKM matrix as
+%Although the weak force allows quark flavour to change the coupling strengths between different quark flavours are not all the same magnitude. The coupling strengths are described by the CKM matrix. Quarks can Quarks fall into three families; $u$ and $d$, $c$ and $s$, $t$, and $b$. They can also be separated into two types depending on their charge; up-type quarks include $u$, $c$ and $t$, down-type quarks include $d$, $s$ and $b$. The weak force couples up-type quarks to the weak eigenstates of the down-type quark in the same family with the same strength. The weak quark eigenstates are not the same as the mass eigenstates and the two types of states are related via the CKM matrix as
 %}
 
 %{\it where $d^', s^'$ and $b^'$ are weak eigenstates and $d, s$ and $b$ are mass eigenstates. The CKM matrix is a unitary matrix, which ensures no tree level FCNCs occur, with complex elements that give the coupling strengths of different quarks, for example the amplitude of a $u$ quark changing into a $d$ quark is proportional to $|V_{ud}|$.}
 
 
-Although the weak force allows quark flavour to change the coupling strengths between different quark flavours are not all the same magnitude. The coupling strengths are described by the CKM matrix. Quarks can be separated into two types depending on their charge; up-type quarks include $u$, $c$ and $t$, down-type quarks include $d$, $s$ and $b$. The weak force couples all up-type quarks to the weak eigenstate of the down-type quark in the same family with the same strength. Where the quark families are; $u$ and $d$, $c$ and $s$, $t$, and $b$. The weak quark eigenstates are not the same as the mass eigenstates and the two types of states are related via the CKM matrix as
+Although the weak force allows quark flavour to change the coupling strengths between different quark flavours are not all the same magnitude. The coupling strengths are described by the CKM matrix. Quarks can be separated into two types depending on their charge; up-type quarks include $u$, $c$ and $t$, down-type quarks include $d$, $s$ and $b$. The weak force couples all up-type quarks to the weak eigenstate of the down-type quark in the same family with the same strength. Where the quark families are; $u$ and $d$, $c$ and $s$, $t$, and $b$. The weak quark eigenstates are not the same as the mass eigenstates and the two types of states are related via the CKM matrix~\cite{PhysRevLett.10.531,doi:10.1143/PTP.49.652} as
 \begin{equation}
-\mathbf{V_{CKM}} =
+\begin{pmatrix}
+d'\\
+s'\\
+b'
+\end{pmatrix}
+= 
+\mathbf{V_{CKM}}
+\begin{pmatrix}
+d\\
+s\\
+b
+\end{pmatrix} =
  \begin{pmatrix}
    V_{ud} & V_{us} & V_{ub} \\
    V_{cd} & V_{cs} & V_{cb} \\
    V_{td} & V_{ts} & V_{tb}
  \end{pmatrix}
+\begin{pmatrix}
+d\\
+s\\
+b
+\end{pmatrix}
 \label{eq:CKMA}
 \end{equation}
-where $d^', s^'$ and $b^'$ are weak eigenstates and $d, s$ and $b$ are mass eigenstates. The CKM matrix is a unitary matrix which ensures no tree level FCNCs occur. The complex elements of the matrix give the coupling strengths of quarks, for example the amplitude of a $u$ quark changing into a $d$ quark is proportional to $|V_{ud}|$.
+where $d'$, $s'$ and $b'$ are weak eigenstates and $d$, $s$ and $b$ are mass eigenstates. The CKM matrix is a unitary matrix with complex elements which ensures no tree level FCNCs occur. Each element of the matrix gives the coupling strengths of transitions between the mass eigenstates of quarks, for example the amplitude of a $u$ quark changing into a $d$ quark is proportional to $|V_{ud}|$.
 
-The difference in the coupling strengths is most easily illustrated through the Wolenstein parametrisation~\cite{} of the CKM matrix, which parametrises the matrix elements in terms of $\lambda = |V_{us}| \approx 0.22$. The CKM matrix then becomes
+The difference in the coupling strength sizes can illustrated through the Wolfenstein parametrisation of the CKM matrix~\cite{PhysRevLett.51.1945}, which parametrises the matrix elements in powers of the small parameter of $\lambda = 0.22 \approx |V_{us}|$. The CKM matrix then becomes
 \begin{equation}
-V_{CKM} =
+\mathbf{V_{CKM}} =
  \begin{pmatrix}
  1 - \frac{1}{2}\lambda^2 & \lambda & \lambda^3 A (\rho - i \eta) \\
  - \lambda                & 1 - \frac{1}{2}\lambda^2 & \lambda^2 A \\
@@ -56,67 +73,70 @@ V_{CKM} =
  \end{pmatrix} + \mathcal{O}(\lambda^4).
 \label{eq:CKMB}
 \end{equation}
-From this parametrisation is it clear that the CKM matrix is almost diagonal. For a \bmumu decay to occur one off diagonal element in needed to described the quark transitions in Figure~\ref{fig:SM_diag}. Therefore introducing an additional source of suppression to the decay. 
+This parametrisation shows that the CKM matrix is almost diagonal. For a \bmumu decay to occur one off diagonal element in needed to described the quark transitions in Figure~\ref{fig:SM_diag}. Therefore introducing an additional source of suppression to the decay. 
 
-The internal quark lines in Figure~\ref{fig:SM_diag} can have contributions from $u$, $c$ and $t$ quarks. However in the SM the contributions from $u$ and $c$ quarks are negligible when compared to the $t$ quark. This is due to the large top quark mass and because the coupling strength of the $b$ quark to any quark except the $t$ is extremely small.
+The internal quark lines in Figure~\ref{fig:SM_diag} can have contributions from $u$, $c$ and $t$ quarks. However in the SM the contributions from $u$ and $c$ quarks are negligible when compared to the $t$ quark. This is due to the large $t$ quark mass and because the coupling strength of the $b$ quark to any quark except the $t$ is extremely small.
 
 
-The final source of suppression of \bmumu decays comes from the helicities of the muons in the final state. The \bds is a spin zero particle and for angular momentum to be conserved in the decay the spins of the two muons must be oppositely aligned. This leads to the muons having opposite helicities. % Therefore the prodiction of one of the muons will always be supressed.
-However the weak force only couple to left-handed particle states and right-handed anti-particle states. In the high energy limit where particles are massless, negative helicity states are equal to left-handed states and positive helicity states are equal to right-handed states.
+The final source of suppression of \bmumu decays comes from the helicities of the muons in the final state. Both \bd and \bs are spin zero particles and for angular momentum to be conserved in the decay the spins of the two muons must be oppositely aligned. This leads to the muons having opposite helicities. % Therefore the production of one of the muons will always be suppressed.
+The weak force only couples to left-handed particle states and right-handed anti-particle states. In the high energy limit where particles are massless, negative helicity states are equal to left-handed states and positive helicity states are equal to right-handed states.
 Therefore if the muons were massless the weak interaction could only produce a $\mu^-$ and a $\mu^+$ with opposite helicities which cannot conserve angular momentum in \bmumu decays.
-Muon are not massless therefore \bmumu decay can occur but are suppressed because $m_{\mu} \ll M_{B_{(s)}$ leading to one of the helicity states of the muons being disfavoured.
+Muon are not massless therefore \bmumu decay can occur but are suppressed because $m_{\mu} \ll M_{B_{(s)}$~\cite{Olive:2016xmw} leading to one of the helicity states of the muons always being disfavoured.
 
-Overall \bmumu decays are highly suppressed within the framework of the SM compared to other decay modes of \bsd mesons. Therefore these decays offer excellent processes in which to search for New Physics (NP) phenomena because the contribution of NP affects to these decay rates can be at a similar order of magnitude to those from the SM.
+Overall \bmumu decays are highly suppressed within the framework of the SM compared to other decay modes of \bsd mesons. Therefore these decays offer excellent processes in which to search for NP because the contribution of BSM theories to these decay rates can be at a similar order of magnitude to those from the SM.
 
-\section{\bmumu Branching Fraction}
+\section[\bmumu Branching Fraction]{\boldmath{\bmumu} Branching Fraction}
 \label{sec:BFdef}
-The \BF of a particle decay offers an excellent observable through which predictions of the SM can be compared to measured values. The \bmumum \BF is defined as the fraction of the total number of \bsd particle that decay into two muons. It can be calculated from the decay rate, which is the probability per unit tie that a \bsd decays into two muons.
-
-The SM predictions are calculated from the ``prompt'' decay rate that ignore any evolution with time of the \bsd particles. The \BFs are calculated using 
+The \BF of a particle decay offers an excellent observable through which predictions of the SM can be compared to measured values. The \bmumu \BF is defined as the fraction of the total number of \bsd particles that decay into two muons. It can be calculated from the decay rate, which is the probability per unit time that a \bsd decays into two muons, as
 \begin{equation}
-\mathcal{B}(B^0_{(s)} \to \mu^+ \mu^-) = \frac{ \tau_{B_{(s)}} }{2} \langle \Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-) \rangle \big{|}_{t=0}
+\mathcal{B}(B^0_{(s)} \to \mu^+ \mu^-) \equiv \frac{\Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-) + \Gamma(\
+\overline{B}^0_{(s)}(t) \to \mu^+ \mu^-)}{\Gamma(B^{0}_{(s)}) + \Gamma(\overline{B}^{0}_{(s)}) }
+\end{equation}
+
+The SM predictions are calculated from the `prompt' decay rate that ignore any evolution with time of the \bsd particles. The \BFs are calculated using~\cite{DeBruyn:2012wj} 
+\begin{equation}
+\mathcal{B}(B^0_{(s)} \to \mu^+ \mu^-)_{\mathrm{th}} = \frac{ \tau_{B_{(s)}} }{2} \langle \Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-) \rangle \big{|}_{t=0}
 \label{sec:BF_prompt}
 \end{equation}
 where $\tau_{B_{(s)}$ is the mean lifetime of the \bsd and $\langle \Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-) \rangle$ is defined as
 \begin{equation}
-\langle \Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-) \rangle = \Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-) + \Gamma(\overline{B}^0_{(s)}(t) \to \mu^+ \mu^-)
+\langle \Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-) \rangle = \Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-) + \Gamma(\overline{B}^0_{(s)}(t) \to \mu^+ \mu^-).
 \end{equation}
+The \BFs are calculated this way to enable easy comparison of different $B$ meson \BFs including \bd, \bs and $B^+$~\cite{DeBruyn:2012wj}.
 
-The \BFs are calculated this way to enable easy comparison of different $B$ meson \BFs including \bd, \bs and $B^+$~\cite{}.
-
-The prompt decay rate is evaluated from Fermi's golden rule, relating the decay rate  to the transition amplitude, $\big|\mathcal{M}(B^0_{(s)} \to \mu^+ \mu^-)\big|$, and the parameter phase space to give~\cite{}
+The prompt decay rate is evaluated from Fermi's golden rule, relating the decay rate  to the transition amplitude, $\left|\mathcal{M}(B^0_{(s)} \to \mu^+ \mu^-)\right|$, and the kinematics of the decay to give~\cite{Tolk:2148631}
 \begin{equation}
-\Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-)\big{|}_{t=0} = \frac{1}{16\pi} \frac{1}{M_{B_{(s)}}} \sqrt{1 -4 \left (\frac{m_{\mu}}{M_{B_{(s)}}} \right )^2} \big|\matcal{M}(B^0_{(s)} \to \mu^+ \mu^-)\big|^2
+\Gamma(B^0_{(s)}(t) \to \mu^+ \mu^-)\big{|}_{t=0} = \frac{1}{16\pi} \frac{1}{M_{B_{(s)}}} \sqrt{1 -4 \left (\frac{m_{\mu}}{M_{B_{(s)}}} \right )^2} \left|\mathcal{M}(B^0_{(s)} \to \mu^+ \mu^-)\right|^2
 \label{sec:FGR}
 \end{equation}
-where $m_{\mu}$ and $M_{B_{(s)}}$ are the masses of the muon and the \bsd, respectively. The factor of $m_{\mu}/M_{B_{(s)}}$ arise from the helicity suppression discussed in Section~\ref{sec:bsmumu_in_SM}.
+where $m_{\mu}$ and $M_{B_{(s)}}$ are the masses of the muon and the \bsd, respectively. The factor of $\right( \frac{m_{\mu}}{M_{B_{(s)}}}\left)$ comes from the helicity suppression discussed in Section~\ref{sec:bsmumu_in_SM}.
 
 
-Weak decays like \bmumu contain components that occur at different energy scales, from the weak propagators at $M_W \approx 80$~\gevcc to the strong coupling of the \bsd meson at $\Lambda_{QCD} \sim 0.2$\gev. This enable the Operator Product Expansion~\cite{} method to be used to construct the effective Hamiltonian, $\mathcal{H}_{eff}$, and calculate the transition amplitude $|\matcal{M}(B^0_{(s)} \to \mu^+ \mu^-)| = \langle \mu \mu | \mathcal{H}_{eff} | B^0_{(s)} \rangle$. The effective Hamiltonian divides the interaction into two energy levels with the structure
+Weak decays like \bmumu include interactions that occur at different energy scales, from the weak propagators at $M_W \approx 80$~\gevcc to the strong coupling in the \bsd meson at $\Lambda_{QCD} \sim 0.2$~\gev~\cite{Olive:2016xmw}. %This enable the Operator Product Expansion~\cite{} method to be used to construct the effective Hamiltonian, $\mathcal{H}_{eff}$, and calculate the transition amplitude $|\matcal{M}(B^0_{(s)} \to \mu^+ \mu^-)| = \langle \mu \mu | \mathcal{H}_{eff} | B^0_{(s)} \rangle$. The effective Hamiltonian divides the interaction into two energy levels with the structure
+The Operator Product Expansion~\cite{PhysRev.179.1499,Wilson1972} is used to create the effective hamiltonian, $\mathcal{H}_{eff}$, which splits the interaction into two energy levels. The transition amplitude then becomes 
 \begin{equation}
-\mathcal{H}_{eff}  = \frac{G_F}{\sqrt{2}} \displaystyle\sum_{i} V^i_{CKM} \mathcal{C}(\mu)_i \mathcal{O}(\mu)_i
+|\matcal{M}(B^0_{(s)} \to \mu^+ \mu^-)| \equiv \langle \mu \mu | \mathcal{H}_{eff} | B^0_{(s)} \rangle  = \frac{G_F}{\sqrt{2}} \displaystyle\sum_{i} V^i_{CKM} \langle \mu \mu | \mathcal{C}(\mu)_i \mathcal{O}(\mu)_i | B^0_{(s)} \rangle
 \label{sec:eff_hamil_def}
 \end{equation}
-where $G_F$ is the Fermi coupling constant, $V_{CKM}^i$ are CKM matrix elements, $\matcal{C}_i$ are Wilson coefficients and $\mathcal{O}_i$ are local operators. The energy scale $\mu$ separates the two energy levels in the interaction. The Wilson coefficients describe short scale processes with energies above $\mu$. This incorporates the internal structure and loops of Feynman diagrams leading to the dependant of Wilson coefficients on $W^{\pm}$, $Z^0$, $H^0$ and $t$ quark masses. The long distance processes are described by the local operators $\mathcal{O}_i$ for energies less than $\mu$. The local operators link the initial and final states of the decay.% indendant of the internal structure of the interaction. 
-Wilson coefficients can be calculated using perturbation theory however this cannot be used for the local operators which can lead to large theoretical uncertainties on their values. The choice of $\mu$ is arbitrary however the final transition amplitude must be independent of $\mu$. Often the mass of the decaying particle is used. 
+where $G_F$ is the Fermi coupling constant, $V_{CKM}^i$ are CKM matrix elements, $\matcal{C}_i$ are Wilson coefficients and $\mathcal{O}_i$ are local operators. The energy scale $\mu$ separates the two energy levels in the interaction. The Wilson coefficients describe short scale processes with energies above $\mu$. This incorporates the internal structure and loops of Feynman diagrams leading to the dependance of Wilson coefficients on the $W^{\pm}$, $Z^0$, $H^0$ and $t$ quark masses. The long distance processes are described by the local operators $\mathcal{O}_i$ for energies less than $\mu$. The local operators link the initial and final states of the decay. % indendant of the internal structure of the interaction. 
+Wilson coefficients can be calculated using perturbation theory however this cannot be used for the local operators which can lead to large theoretical uncertainties on their values. The choice of $\mu$ is arbitrary however the final transition amplitude must be independent of $\mu$, often the mass of the decaying particle is used. 
 
-The Operator Product Expansion can be used to describe weak decays with different initial and final states as well as internal structure. In the effective Hamiltonian in Equation~\ref{} the CKM matrix elements are factored out of the Wilson coefficients and operators, therefore the same coefficients and operators can be used to describe the \bd and \bs decays.
-
-Th effective Hamiltonian for \bmumu decays is
+%The Operator Product Expansion can be used to describe weak decays with different initial and final states as well as internal structure. 
+In the effective Hamiltonian in Equation~\ref{sec:eff_hamil_def} the CKM matrix elements are factored out of the Wilson coefficients and operators, therefore the same coefficients and operators can be used to describe the \bd and \bs decays.
+The effective Hamiltonian for \bmumu decays is~\cite{DeBruyn:2012wk}
 \begin{equation}
 \mathcal{H}_{eff} = -\frac{G_F \alpha}{\sqrt{2\pi}} V_{tq}^{*}V_{tb} \displaystyle\sum_{i}^{10,S,P} (\matcal{C}_i\matcal{O}_i + \matcal{C}^{'}_{i}\matcal{O}_{i}^{'})
 \label{eq:eff_hamil_bmumu}
 \end{equation}
-where $\alpha$ is the fine structure constant and $q$ corresponds to the $d$ quark in the \bd or the $s$ quark in the \bs. Terms proportional to $V^*_{cq}V_{cb}$ and $V^*_{cq}V_{ub}$ are negligible. The only operators that can contribute to the \bmumu effective Hamiltonian are
+where $\alpha$ is the fine structure constant and $q$ corresponds to the $d$ quark in the \bd or the $s$ quark in the \bs. Terms proportional to $V^*_{cq}V_{cb}$ and $V^*_{cq}V_{ub}$ neglected because they are negligible. The operators that can contribute to the \bmumu effective Hamiltonian due to the initial and final decay states are
 \begin{align}
  \mathcal{Q}_{10}&=(\bar{q}\gamma^{\mu}P_{L}b)(\bar{l}\gamma_{\mu}\gamma_{5}l), &\qquad
  \mathcal{Q}_{10}^{(')}&= (\bar{q}\gamma^{\mu}P_{R}b)(\bar{l}\gamma_{\mu}\gamma_{5}l), \\
  \mathcal{Q}_{S}&= m_{b}(\bar{q}P_{R}b)(\bar{l}l),  &\qquad
 \mathcal{Q}_{S}^{(')}&= m_{b}(\bar{q}P_{L}b)(\bar{l}l), \\
  \mathcal{Q}_{P}&= m_{b}(\bar{q}P_{R}b)(\bar{l}\gamma_{5}l), &\qquad
- \mathcal{Q}_{P}^{(')}&= m_{b}(\bar{q}P_{L}b)(\bar{l}\gamma_{5}l)
+ \mathcal{Q}_{P}^{(')}&= m_{b}(\bar{q}P_{L}b)(\bar{l}\gamma_{5}l).
 \end{align}
-
 %\begin{eqnarray}
 % \mathcal{Q}_{10}&=(\bar{q}\gamma^{\mu}P_{L}b)(\bar{l}\gamma_{\mu}\gamma_{5}l),  \qquad
 % \mathcal{Q}_{10}^{(')}&= (\bar{q}\gamma^{\mu}P_{R}b)(\bar{l}\gamma_{\mu}\gamma_{5}l), \\
@@ -126,18 +146,17 @@ where $\alpha$ is the fine structure constant and $q$ corresponds to the $d$ qua
 % \mathcal{Q}_{P}^{(')}&= m_{b}(\bar{q}P_{L}b)(\bar{l}\gamma_{5}l) 
 %\label{eq:operators}
 %\end{eqnarray}
+The operator $\mathcal{O}_{10}$ encompasses the only significant contributions in the SM that come from $W$-box and $Z^0$ penguin diagrams. The operator $\mathcal{O}_{10}^'$ describes the equivalent interactions as $\mathcal{O}_{10}$ but for right handed currents that are forbidden in the SM. %, de and $\mathcal{O}_{10}^'$ does not contribute in the SM because is describes right handed currents.% which are forbidden in weak interactions in the SM are described by $\mathcal{O}_{10}^'$ and 
+ Finally, the operators $\mathcal{O}_{S}^{(')}$ and $\mathcal{O}_{P}^{(')}$ correspond to the exchange of scalar and pseudo-scalar particles which is negligible in the SM. 
 
-The operator $\mathcal{O}_{10}$ encompasses the only significant contributions in the SM from $W$-box and $Z^0$ penguin diagrams. 
-Right handed currents which are forbidden in weak interactions in the SM are described by $\mathcal{O}_{10}^'$ and $\mathcal{O}_{S}^{(')}$ and $\mathcal{O}_{P}^{(')}$ correspond to the exchange of scalar and pseudo-scalar particles which is negligible in the SM. 
+The purely leptonic final state of \bmumu decays means that the computation of the transition amplitude can be spilt in two so that all uncertainties arising from the bound \bsd states are encompassed into one parameter, $F_{B_{(s)}}}$, the hadronic decay factor. This leads to a theoretically clean prediction for the \BF.
 
-The purely leptonic final state of \bmumu decays enable the computation of the transition amplitude to be spilt in two so that all uncertainties arising from the bound \bsd states are encompassed into one final parameter, $F_{B_{(s}}}$ the hadronic decay factor. This leads to a theoretically clean prediction for the \BF.
-
-The \BFs for \bmumu decays can be written as
+The \BFs for \bmumu decays can therefore be written as~\cite{Buras:2013uqa}
 \begin{equation}
 \mathcal{B}(B^{0}_{(s)} \to \mu^{+} \mu^{-})=&\frac{\tau_{B_{(s)}}G_{F}^{4} M_{W}^{4} \sin^{4}\theta_{W} }{8\pi^{5}} \big|\mathcal{C}_{10}^{SM} V^{*}_{tq}V_{tb}\big|^{2} F_{B_{(s)}}M_{B_{(s)}} m_{\mu}^{2} \sqrt{1 - \frac{4m_{\mu}^{2}}{M^{2}_{B_{(s)}}}} (|P|^{2} + |S|^{2})
 \label{eq:BF_form}
 \end{equation}
-where $\theta_W$ is the weak mixing angle and $M_{W}$ the mass of the W boson. The \BF has been parametrised in terms of $\mathcal{C}_{10}^{SM}$, $P$ and $S$, where $\mathcal{C}_{10}^{SM}$ is the SM value of the operator $\mathcal{C}_{10}$ and 
+where $\theta_W$ is the weak mixing angle and $M_{W}$ the mass of the $W$ boson. The \BF has been parametrised in terms of $\mathcal{C}_{10}^{SM}$, $P$ and $S$, where $\mathcal{C}_{10}^{SM}$ is the SM value of the operator $\mathcal{C}_{10}$ and 
 \begin{equation}
 P \equiv |P| e^{i\varphi_P} \equiv \frac{\mathcal{C}_{10} - \mathcal{C}_{10}^{'}}{\mathcal{C}_{10}^{SM}} + \frac{M^2_{B_{(s)}}}{2m_{\mu}} \frac{m_b}{m_b + m_q} \frac{\mathcal{C}_{P} - \mathcal{C}_{P}^{'}}{\mathcal{C}_{10}^{SM}} 
 \label{eq:P}
@@ -146,58 +165,57 @@ P \equiv |P| e^{i\varphi_P} \equiv \frac{\mathcal{C}_{10} - \mathcal{C}_{10}^{'}
 S \equiv |S| e^{i\varphi_S} \equiv \sqrt{1- \frac{4m_{\mu}^{2}}{M^{2}_{B_{(s)}}}} \frac{M^{2}_{B_{(s)}}}{2m_{\mu}}  \frac{m_b}{m_b + m_q}  \frac{\mathcal{C}_{S} - \mathcal{C}_{S}^{'}}{\mathcal{C}_{10}^{SM}} 
 \label{eq:S}
 \end{equation}
-In the SM $P=1$ and $S=0$, however the \BFs are parametrised in terms of $P$ and $S$ because NP models can alter their values. 
+In the SM $P=1$ and $S=0$, however the \BFs are parametrised in terms of $P$ and $S$ because BSM theories can significantly alter their values. 
+%The dependence of the \BFs on $\mathcal{C}_{10}$ makes \bmumu decays one of the best decays to study this parameter and these decays are also very sensitive to scale particles~\cite{}. 
+The presence of scalar particles could increase the \BFs above the SM expectation through $\mathcal{C}_S^{(')}$ leading to $S>0$, also the contributions from scalar particles are not subject to helicity constraints. Pseudoscalar particles can either enhance or suppress the \BFs compared to the SM prediction depending on how the values of $\mathcal{C}_P^{(')}$ interfere with $\mathcal{C}_{10}^{(')}$ in NP models.
 
-The dependence of the \BFs on $\mathcal{C}_{10}$ makes \bmumu decays one of the best decays to study this parameter and these decays are also very sensitive to scale particles~\cite{}. The presence of scalar particles could increase the \BFs above the SM expectation through $\mathcal{C}_S^{(')}$ be producing $S>0$, and the contribution from scalar particles is not subject to helicity constraints. Pseudoscalar particles can either enhance or supree the \BFs compared to the SM prediction depending on how the values of $\mathcal{C}_P^{(')}$ interfere with $\mathcal{C}_10^{(')}$ in NP models.
 
-
-As well as the individual \BFs of \bdmumu and \bsmumu decays the ratio of the two \BFs is also an interesting variable to test the SM and study NP models.The ratio of \BFs is
+As well as the individual \BFs of \bdmumu and \bsmumu decays the ratio of the two \BFs is also an interesting observable. The ratio of \BFs is given by
 \begin{equation}
-  \mathcal{R} = \frac{\mathcal{B}(B^{0} \to \mu^{+} \mu^{-})}{\mathcal{B}(B^{0}_{s}\to \mu^{+} \mu^{-})} = \frac{\tau_{B}}{\tau_{B_{s}}} \bigg{|} \frac{V_{td}}{V_{ts}} \bigg{|}^{2} \frac{M_{B}^{2} m_{\mu}^{2}}{M_{B_{s}}^{2} m_{\mu}^{2}} \sqrt{\frac{1 - \frac{4m_{\mu}^{2}}{M^{2}_{B}}}{1- \frac{4m_{\mu}^{2}}{M^{2}_{B_{s}}}}} 
+  \mathcal{R} = \frac{\mathcal{B}(B^{0} \to \mu^{+} \mu^{-})}{\mathcal{B}(B^{0}_{s}\to \mu^{+} \mu^{-})} = \frac{\tau_{B}}{\tau_{B_{s}}} \bigg{|} \frac{V_{td}}{V_{ts}} \bigg{|}^{2} \frac{M_{B}^{2}}{M_{B_{s}}^{2}} \sqrt{\frac{1 - \frac{4m_{\mu}^{2}}{M^{2}_{B}}}{1- \frac{4m_{\mu}^{2}}{M^{2}_{B_{s}}}}} 
+\label{eq:BF_ratio}
 \end{equation}
-
-the uncertainty on the ratio will be less that the individual \BFs because sources of uncertainties including those from Wilson coefficients and $|V_{tb}|$ cancel out. Furthermore the ratio has no dependence on any Wilson coefficients and therefore provides an excellent observable to test the flavour structure of the SM and NP models.
+and the uncertainty on the ratio is less that the individual \BFs because sources of uncertainties including those from Wilson coefficients and $|V_{tb}|$ cancel out. The ratio does not depend on Wilson coefficients and provides an excellent observable to test the flavour structure of the SM and BSM theories.
 
 
 \section{Quark mixing}
 \label{sec:quarkmaixing}
-The theoretical prediction for the \bmumu \BFs do not take into account the evolution of the \bsd and \barbsd mesons with time. Once a \bsd is created it will oscillate between the particle and anti-particle states as it propagates through time, the same is true for the \barbsd. Therefore the states that travel through time are a superposition of the \bsd and the \barbsd. These oscillation occurs as the constituents quarks transition between different flavours through the exchange of $W$ bosons as illustrated in Figure~\ref{fig:Oscl_diag}.
+The theoretical prediction for the \bmumu \BFs does not take into account the evolution of the \bsd and \barbsd mesons with time. Once a \bsd is created it will oscillate between the particle and anti-particle states as it propagates through time, the same is true for the \barbsd. Therefore the states that travel through time are a superposition of the \bsd and the \barbsd. These oscillation occurs as the constituents quarks transition between different flavours through the exchange of $W$ bosons as illustrated in Figure~\ref{fig:Oscl_diag}.
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width=0.9\textwidth]{./Figs/Theory/Oscillation_1.pdf}
-        \includegraphics[width=0.9\textwidth]{./Figs/Theory/Oscillation_2.pdf}
-    \caption{Oscillation of \bsd and \barbsd quarks through the exchange of $W$ bosons.}
+        \includegraphics[width=0.5\textwidth]{./Figs/Theory/Oscillation_1.pdf}
+        \includegraphics[width=0.5\textwidth]{./Figs/Theory/Oscillation_2.pdf}
+    \caption{Oscillation of \bs and \barbs quarks through the exchange of $W$ bosons. The same diagrams apply to \bd and \barbd oscillations but with the $s$ quark exchanged for a $d$ quark.}
     \label{fig:Oscl_diag}
 \end{figure}
-The \BFs are measured from data where \bsd and \barbsd decays are not separated, this is known as an untagged sample of \bmumu decays. Since a \bsd or \barbsd lives for $\sim 10^-12$~s before decaying the state that decays will not necessarily be the same as the one that was produced. The measured \BF is not the same as the `prompt' \BF used for the theoretical prediction, the measured value corresponds to the time integrated \BF given by
+The \BFs are measured from data where \bsd and \barbsd decays are not separated, which is called as an untagged sample of \bmumu decays. Since a \bsd or \barbsd lives for $\sim 10^{-12}$~s before decaying the state that decays will not necessarily be the same as the one that was produced. The measured \BF is not the same as the `prompt' \BF used for the theoretical prediction, the measured value corresponds to the time integrated \BF given by~\cite{DeBruyn:2012wj}
 \begin{equation}
-  \mathcal{B}(B^0_{(s)} \to \mu^+ \mu^-)_{exp} \equiv \frac{1}{2} \int^{\infty}_0 \langle \Gamma(B^0_{(s)}(t) \to \mu^+\mu^-) \rangle dt
+  \mathcal{B}(B^0_{(s)} \to \mu^+ \mu^-)_{\mathrm{exp}} \equiv \frac{1}{2} \int^{\infty}_0 \langle \Gamma(B^0_{(s)}(t) \to \mu^+\mu^-) \rangle dt.
 \label{eq:time_BF}
 \end{equation}
-Therefore for a meaningful comparison to be made between the measured and predicted \BF values, the difference in the two definitions must be evaluated.
+Therefore for a meaningful comparison between the measured and predicted \BF values, the difference in the two definitions must be evaluated~\cite{DeBruyn:2012wk,Buras:2013uqa,DeBruyn:2012wj}.
 
-\subsection{Time evolution of the \bsd}
+\subsection[Time evolution of the \bsd]{Time evolution of the \boldmath{\bsd}}
 \label{sec:oscillations}
 Initially each $b$ and $\bar{b}$ quark hardonises to form a \bsd or \barbsd described at $t=0$ by the states $| B^0_{(s)} \rangle$ and $| \overline{B}^0_{(s)} \rangle$. In order to evaluate the time integrated \BFs the evolution of these states with time must be evaluated. The time dependant Schr\"{o}dinger equation (TDSE) describes the time evolution of the particle and anti-particle states as
 \begin{equation}
-i \frac{d}{dt}\begin{pmatrix}{| B^0_{(s)}(t) \rangle \\ | \overline{B}^0_{(s)}(t) \rangle }\end{pmatrix} = \Bigg{(} \mathbf{M} - \frac{i\mathbf{\Gamma}}{2} \Bigg{)} \begin{pmatrix}{| B^0_{(s)}(t) \rangle \\ | \overline{B}^0_{(s)}(t) \rangle }\end{pmatrix} 
+i \frac{d}{dt}\begin{pmatrix}{| B^0_{(s)}(t) \rangle \\ | \overline{B}^0_{(s)}(t) \rangle }\end{pmatrix} = \Bigg{(} \mathbf{M} - \frac{i\mathbf{\Gamma}}{2} \Bigg{)} \begin{pmatrix}{| B^0_{(s)}(t) \rangle \\ | \overline{B}^0_{(s)}(t) \rangle }\end{pmatrix}. 
 \label{eq:TDSE}
 \end{equation}
 $\mathbf{M}$ and $\mathbf{\Gamma}$ are $2 \times 2$ hermitian matrices describing mass and decay time with the properties $M_{12}^{*} = M_{21}$ and $\Gamma_{12}^{*} = \Gamma_{21}$. Invariance under charge, parity and time inversion introduces additional constraints of $M_{11} = M_{22}$ and $\Gamma_{11} = \Gamma_{22}$. 
 
-The \bsd-\barbsd oscillations ensure that for any $t>0$ the particles are a superposition of $| B^0_{(s)} \rangle$ and $| \overline{B}^0_{(s)} \rangle$ states. The off diagonal elements in the mass and decay time matrices mean that the eigenstates of the TDSE have different masses and lifetime to the \bsd and \barbsd. The eigenstates can be given by heavy, $H$, and light, $L$, mass states defined a $t=0$ as
+The \bsd-\barbsd oscillations ensure that for any $t>0$ the particles are a superposition of $| B^0_{(s)} \rangle$ and $| \overline{B}^0_{(s)} \rangle$ states. The off diagonal elements in the mass and decay time matrices mean that the eigenstates of the TDSE have different masses and lifetime to the \bsd and \barbsd. The eigenstates can be given by heavy, $H$, and light, $L$, mass states defined at $t=0$ as
 \begin{equation}
-| B_H \rangle = p | B^0_{(s)} \rangle - q \overline{B}^0_{(s)} \rangle, \qquad |B_L \rangle = p  | B^0_{(s)} \rangle + q \overline{B}^0_{(s)} \rangle
+| B_H \rangle = p | B^0_{(s)} \rangle - q |\overline{B}^0_{(s)} \rangle, \qquad |B_L \rangle = p  | B^0_{(s)} \rangle + q \overline{B}^0_{(s)} \rangle
 \label{eq:mass_states}
 \end{equation}
-with eigenvalues of $(m_{H,L} - i\Gamma_{H,L}/2)$ and $p$ and $q$ are constrained by $|p|^2 + |q|^2 = 1$. The eigenvalues are different for the \bd and \bs systems however the treatment of the two systems is identical, to simplify the notation only the \bs system will be described in the following discussion.
+with eigenvalues of $(m_{H,L} - i\Gamma_{H,L}/2)$ and the coefficients $p$ and $q$ are constrained by $|p|^2 + |q|^2 = 1$. The eigenvalues are different for the \bd and \bs systems however the treatment of the two systems is identical, to simplify the notation only the \bs system will be described in the following discussion.
 The time evolution of the heavy and light mass eigenstates is given by
 \begin{equation}
   | B_H (t)\rangle = | B_H \rangle e^{-i(m_H - i\frac{\Gamma_H}{2})t}, \qquad | B_L (t)\rangle = | B_L \rangle e^{-i(m_L - i\frac{\Gamma_L}{2})t}
 \label{eq:time1}
 \end{equation}
-from the TDSE. The time evolution of the flavour states can now be determined from equations~\ref{eq:mass_states} and~\ref{eq:time1} as
-
+from the TDSE. Therefore the time evolution of the flavour states can now be determined from equations~\ref{eq:mass_states} and~\ref{eq:time1} as
 \begin{align}
 | B^{0}_{s}(t) \rangle &= \frac{1}{2p}\left(|B_{L}(t)\rangle + |B_{H}(t) \rangle \right)  = f_{+}(t) |B^{0}_{s} \rangle + \frac{q}{p}f_{-}(t) |\overline{B}^{0}_{s}\rangle \\
 | \overline{B}^{0}_{s}(t) \rangle &= \frac{1}{2q}\left(|B_{L}(t)\rangle - |B_{H}(t) \rangle \right)  = \frac{p}{q}f_{-}(t) |B^{0}_{s} \rangle+ f_{+}(t) |\overline{B}^{0}_{s}\rangle 
@@ -215,13 +233,13 @@ f_{\pm} = \frac{1}{2} e^{-i(m_s - i\Gamma_s)t} \left \{ e^{i(\Delta m_s + i \Del
 \end{equation}
 The relationships
 \begin{align}
-m_s &\equiv \frac{m_H + m_L}{2}, &  \Delta m_s &\equiv m_H - m_L\\
-\Gamma_s &\equiv \frac{(\Gamma_H + \Gamma_L)}{2}, & \qquad \Delta \Gamma_s &\equiv \Gamma_L - \Gamma_H
+m_s &\equiv \frac{m_H + m_L}{2}, &  \Delta m_s &\equiv m_H - m_L,\\
+\Gamma_s &\equiv \frac{(\Gamma_H + \Gamma_L)}{2}, & \qquad \Delta \Gamma_s &\equiv \Gamma_L - \Gamma_H,
 \label{eq:deltas}
 \end{align}
 have been used in the expressions of $|B^{0}_{s}(t)\rangle$ and $|\overline{B}^{0}_{s} \rangle$. The difference $\Delta m_s$ is defined so that it is always positive whereas $\Delta\Gamma_s$ can take either sign. The time evolution is written in terms of these variables because $\Delta m_s$ and $\Delta\Gamma_s$ are measurable quantities.
 
-Theoretical predictions are available for $M_{12}$ and $\Gamma_{12}$ therefore it is useful to express the measurable quantities in terms of them. This is done by solving the characteristic equation of the TDSE, $|\mathbf{M} - i \mathbf{\Gamma}/2 - \lambda \mathbf{I}| = 0$, which has the solutions
+Theoretical predictions can be calculated for $M_{12}$ and $\Gamma_{12}$ therefore it is useful to express the measurable quantities in terms of them. This is done by solving the characteristic equation of the TDSE, $|\mathbf{M} - i \mathbf{\Gamma}/2 - \lambda \mathbf{I}| = 0$, which has the solutions
 \begin{equation}
 \Delta m^2 - \frac{\Delta\Gamma^2}{4} = 4(|M_{12}|^2 - \frac{1}{4} |\Gamma_{12}|^2) 
 \end{equation}
@@ -230,7 +248,7 @@ Theoretical predictions are available for $M_{12}$ and $\Gamma_{12}$ therefore i
 \end{equation}
 where $\phi \equiv \mathrm{arg}(-M_{12}/\Gamma_{12})$.
 
-The observed relationship $\Delta \Gamma \ll \Delta m$ as well as $\Gamma_{12} \ll M_{12}$ are used to separate the expressions for $\Delta m$ and $\Delta \Gamma$ to give
+The observed relationship $\Delta \Gamma \ll \Delta m$ as well as $\Gamma_{12} \ll M_{12}$~\cite{Nierste:2009wg} are used to separate the expressions for $\Delta m$ and $\Delta \Gamma$ to give
 \begin{equation}
 \Delta m = 2 |M_{12}| \left( 1 + \mathcal{O}\left ( \left | \frac{\Gamma_{12}}{M_{12}} \right |^2 \right) \right) 
 \end{equation}
@@ -239,12 +257,11 @@ The observed relationship $\Delta \Gamma \ll \Delta m$ as well as $\Gamma_{12} \
 \end{equation}
 The values of $p$ and $q$ can also be related to the measurable quantities and $\Gamma_{12}$ and $M_{12}$ by diagonalising $(\mathbf{M} - \frac{i}{2}\mathbf{\Gamma})$ to produce
 \begin{align}
-\frac{q}{p} &= -\frac{\Delta m_{s}^{2} + i \Delta \Gamma_{s}/2 }{2M_{12} - i \Gamma_{12}}\\ 
-& \approx - e^{-i\phi_{M}}\left (1-\frac{a}{2} \right ) + \mathcal{O}\left ( \left | \frac{\Gamma_{12}}{M_{12}} \right |^{2} \right ) 
+\frac{q}{p} &= -\frac{\Delta m_{s}^{2} + i \Delta \Gamma_{s}/2 }{2M_{12} - i \Gamma_{12}} \approx - e^{-i\phi_{M}}\left (1-\frac{a}{2} \right ) + \mathcal{O}\left ( \left | \frac{\Gamma_{12}}{M_{12}} \right |^{2} \right ) 
 \end{align}
-where $\phi_M \equiv \mathrm{arg}(M_{12}/|M_{12}|)$ and $ a \equiv |\Gamma_{12}}/M_{12}|}\sin \phi$ and the relationships $\Delta \Gamma \ll \Delta m$ and $\Gamma_{12} \ll M_{12}$  have been used in the second line. The value of $\phi_M$ is related to the elements of the CKM matrix and $\phi_M = \mathrm{arg}(V_{tb}^*V_{td})$ for the \bd and $\phi_M = \mathrm{arg}(V_{tb}^*V_{ts})$ for the \bs. The ratio of $p$ and $q$ is given in terms of the small parameter $a$ which is needed to evaluate some SM processes. 
+where $\phi_M \equiv \mathrm{arg}(M_{12}/|M_{12}|)$ and $ a \equiv |\Gamma_{12}}/M_{12}|}\sin \phi$ and the relationships $\Delta \Gamma \ll \Delta m$ and $\Gamma_{12} \ll M_{12}$ have been used. The value of $\phi_M$ is related to the elements of the CKM matrix and $\phi_M = \mathrm{arg}(V_{tb}^*V_{td})$ for the \bd and $\phi_M = \mathrm{arg}(V_{tb}^*V_{ts})$ for the \bs. The ratio of $p$ and $q$ is given in terms of the small parameter $a$ which is needed to evaluate some SM processes. 
 
-The necessary parameters used to describe the time evolution of \bsd and \barbsd states have now all been expressed in terms of measurable or predictable quantities therefore the time dependant decay rates can now be evaluated. The decay rates can be expressed as
+The necessary parameters used to describe the time evolution of \bsd and \barbsd states have now been expressed in terms of measurable or predictable quantities therefore the time dependant decay rates can now be evaluated. The decay rates can be expressed as
 \begin{align}
 \Gamma (B^0_{(s)}(t) \to \mu^+ \mu^-) = \mathcal{N}|\langle \mu \mu | B^0_{(s)} \rangle|^2, \quad
 \Gamma (\overline{B}^0_{(s)}(t) \to \mu^+ \mu^-) =\mathcal{N}|\langle \mu\mu | \overline{B}^0_{(s)} \rangle|^2
@@ -262,17 +279,17 @@ where $A_{\mu\mu} = \langle \mu^+\mu^- | B^0_s \rangle$ and $\overline{A}_{\mu\m
 & \quad {}+ 2\mathrm{Im}(\lambda_{\mu\mu})\sin(\Delta m_s t) \bigg\}
 \label{eq:decayratesA}
 \end{align}
-The time integrated \BF depends on the sum of the \bsd and \barbsd time dependant decay rates, using Equation~\ref{eq:decayratesA} and ignoring terms $\mathcal{O}(s)$ the total decay rate is
+The time integrated \BF depends on the sum of the \bsd and \barbsd time dependant decay rates, using Equation~\ref{eq:decayratesA} and ignoring terms $\mathcal{O}(a)$ the total decay rate is
 \begin{equation}
 \langle \Gamma (B^0_s(t) \to \mu^+ \mu^-) \rangle & = \mathcal{N} |A_{\mu\mu}|^2 (1 + |\lambda_{\mu\mu}|^2) e^{- \Gamma_s t} \left(\cosh \left( \frac{\Delta \Gamma_s t}{2} \right) + A_{\Delta\Gamma}\sinh \left(\frac{\Delta \Gamma_s t}{2}\right)\right). 
 \label{sec:decayratesB}
 \end{equation}
-A new parameter, $A_{\Delta \Gamma}$, has been introduced into the total decay rate, it is defined as
+A new parameter, $A_{\Delta \Gamma}$, has been introduced into the total decay rate and it is defined as
 \begin{equation}
 A_{\Delta\Gamma} = \frac{2\mathrm{Re}(\lambda_{\mu\mu})}{1 + |\lambda_{\mu\mu}|^2}.
 \label{eq:A_DGa}
 \end{equation}
-The meaning of $A_{\Delta\Gamma}$ is made clearer when the total decay rate is written in terms of the heavy and light \bsd mass eigenstates as
+The meaning of $A_{\Delta\Gamma}$ can be seen when the total decay rate is written in terms of the heavy and light \bsd mass eigenstates as
 \begin{align}
   \langle\Gamma (B^0_s(t) \to \mu^+ \mu^-) \rangle &= \mathcal{N} |A_{\mu\mu}|^2 (1 + |\lambda_{\mu\mu}|^2) \left( (1 - A_{\Delta\Gamma})e^{-\Gamma_L t} + (1 + A_{\Delta\Gamma})e^{-\Gamma_{H} t} \right) \nonumber \\
 &= R_H e^{-\Gamma_H t} + R_L e^{-\Gamma_L t}
@@ -282,58 +299,56 @@ The final expression for the decay rates shows how \bmumu decays can be describe
 \begin{equation}
 A_{\Delta\Gamma} = \frac{R_H - R_L}{R_H + R_L}.
 \end{equation}
-The values \ADG can take range from +1 when only heavy mass eigenstates decay as \bsmumu and -1 when only light mass eigenstates decay as \bsmumu.
+The values \ADG can take range from +1 when only heavy mass eigenstates decay as \bsmumu and $-1$ when only light mass eigenstates decay as \bsmumu.
 \subsection{Impact on the Branching Fraction}
 \label{sec:BFimpact}
-The time dependant decay rates can can be used to understand the difference between the two \BF definitions. The final for of the decay rates in Equation~\ref{eq:decayratesC} makes the evaluations of the \BF straightforward. The prompt \BF used in the theoretical predictions is
+The time dependant decay rates are used to understand the difference between the two \BF definitions. The final form of the decay rates in Equation~\ref{eq:decayratesC} is used in the evaluations of the \BFs. The `prompt' \BF used in the theoretical predictions is
 \begin{align}
-\mathcal{B}(B^{0}_{s} \to \mu^{+} \mu^{-})_{th} &\equiv \frac{\tau_{B_{s}}}{2} \langle \Gamma(B^{0}_{s} \to \mu^{+} \mu^{-}) \rangle \\
-&=\frac{\tau_{B_{s}}}{2} (R_{H} + R_{L})
+\mathcal{B}(B^{0}_{s} \to \mu^{+} \mu^{-})_{\mathrm{th}} &= \frac{\tau_{B_{s}}}{2} \langle \Gamma(B^{0}_{s} \to \mu^{+} \mu^{-}) \rangle \\
+&=\frac{\tau_{B_{s}}}{2} (R_{H} + R_{L}).
 \end{align}
-
 %\begin{align}
 %  \mathcal{B}(B^{0}_{(s)} \to \mu^{+} \mu^{-})_{th}& &\equiv \frac{\tau_{B_{(s)}}}{2}\langle \Gamma (B^{0}_{(s)} \to \mu^{+}\mu^{-}) \rangle \bigg|_{t=0}\nonumber \\
 % &= \frac{\tau_{B_{(s)}}{2} (R_{H} + R_{L})
 %\end{align}
 The time integrated \BF that is measured is
 \begin{align}
-  \mathcal{B}(B^{0}_{(s)} \to \mu^{+}\mu^{-})_{exp} &\equiv \frac{1}{2} \int^{\infty}_0 \langle \Gamma (B^{0}_{(s)} \to \mu^{+}\mu^{-}) \rangle  dt \nonumber \\
+  \mathcal{B}(B^{0}_{(s)} \to \mu^{+}\mu^{-})_{\mathrm{exp}} &= \frac{1}{2} \int^{\infty}_0 \langle \Gamma (B^{0}_{(s)} \to \mu^{+}\mu^{-}) \rangle  dt \nonumber \\
 &= \frac{1}{2} \left( \frac{R_{H}}{\Gamma_{H}} + \frac{R_{L}}{\Gamma_{L}} \right) \nonumber \\
-&= \frac{\tau_{B_{(s)}}}{2}(R_{H} + R_{L}) \left[ \frac{1 + A_{\Delta\Gamma}y_{s}}{1 - y_{s}^{2}} \right]
+&= \frac{\tau_{B_{(s)}}}{2}(R_{H} + R_{L}) \left[ \frac{1 + A_{\Delta\Gamma}y_{(s)}}{1 - y_{(s)}^{2}} \right]
 \end{align}
-where $y_{(s)}$ relates the heavy and light mass eigenstate decay times as $y_s = \Delta \Gamma_s / 2\Gamma$. Therefore the measured and prompt \BF values are related as
+where $y_{(s)}$ relates the heavy and light mass eigenstate decay times as $y_{(s)} = \Delta \Gamma_{(s)} / 2\Gamma_{(s)}$. Therefore the measured and prompt \BF values are related as
 \begin{equation}
-  \mathcal{B}(B^0_{(s)} \to \mu^+\mu^-)_{exp} = \left[ \frac{1 + A_{\DeltaGamma}y_{s}}{1 - y_{s}^{2}} \right] \mathcal{B}(B^0_{(s)} \to \mu^+ \mu^-)_{th}
+  \mathcal{B}(B^0_{(s)} \to \mu^+\mu^-)_{\mathrm{exp}} = \left[ \frac{1 + A_{\Delta\Gamma}y_{(s)}}{1 - y_{(s)}^{2}} \right] \mathcal{B}(B^0_{(s)} \to \mu^+ \mu^-)_{\mathrm{th}}
 \end{equation}
-For the $B^0$-$\overline{B}^0$ oscillations the difference in the lifetimes of the heavy and light mass eigenstates is extremely small therefore $y_d$ negligible and the prompt \BF is equivalent to the experimental \BF. However for \bs-$\overline{B}^0_s$ oscillations there is a large difference in the lifetimes of the mass eigenstates and $y_s =XX \pm YY$~\cite{}. The prompt \BF must therefore be corrected to account for the oscillations before it is compared to the experimental value.
-\section{\ADG and the effective lifetime}
+For the $B^0$-$\overline{B}^0$ oscillations the difference in the lifetimes of the heavy and light mass eigenstates is extremely small therefore $y$ negligible and the prompt \BF is equivalent to the experimental \BF. However for \bs-$\overline{B}^0_s$ oscillations there is a large difference in the lifetimes of the mass eigenstates and $2y_s =0.129 \pm 0.006$~\cite{Amhis:2016xyh}. The prompt \BF must therefore be corrected to account for the oscillations before it is compared to the experimental value.
+\section[\ADG and the effective lifetime]{\boldmath{\ADG} and the effective lifetime}
 \label{sec:ADG_EL}
-The definition of \ADG in Equation~\ref{eq:A_DGa} shows that it depends upon the transition amplitude of \bsmumu decays. In Section~\ref{} the effective Hamiltonian for this decay was discussed and the \BF given in terms of the complex variables $P$ and $S$. \ADG can also be expressed in terms of there parameters as~\cite{}
+The definition of \ADG in Equation~\ref{eq:A_DGa} shows that it depends upon the transition amplitude of \bsmumu decays. In Section~\ref{sec:BFdef} the effective Hamiltonian for this decay was discussed and the \BF given in terms of the complex variables $P$ and $S$. Therefore \ADG can also be expressed in terms of these parameters as~\cite{DeBruyn:2012wk}
 \begin{equation}
 A_{\Delta \Gamma} = \frac{|P|\cos \varphi_P + |S| \cos \varphi_S}{|P|^2 + |S|^2}
 \label{eq:NP_ADG}
 \end{equation}
-In the SM, $P=1$ and $S=0$ therefore \ADG takes the maximal value of +1 and only the heavy mass eigenstate decays as \bsmumu This can be understood because the final 2 muon state of a \bsmumu decay is a $\mathcal{CP}$ odd state and the heavy \bs mass eigenstate is a $\mathcal{CP}$ odd state to a very good approximation.
+In the SM $P=1$ and $S=0$ therefore \ADG takes the maximal value of +1 and only the heavy mass eigenstate decays as \bsmumu. This can be understood because the final state of a \bsmumu decay is a $\mathcal{CP}$ odd state and the heavy \bs mass eigenstate is a $\mathcal{CP}$ odd state state.
 
-However NP models can alter the values of $P$ and $S$, moving them away from the SM expectations. A change in these values could alter either both the measured \BF and \ADF or just one. Since the comparison of the measured \BF to the SM prediction relies on \ADG, in order to distinguish NP effects that coule move the \BF away from the SM value, \ADG must be measured as well. 
+As discussed in Section~\ref{sec:BFdef}, NP models can alter the values of $P$ and $S$, moving them away from the SM expectations. A change in these values could alter both the measured \BF and \ADG or just one of these observables. Since the comparison of the measured \BF to the SM prediction relies on \ADG, in order to understand possible NP effects in \BF, \ADG must be measured as well. 
 
-The value of \ADG could be measured directly from the time dependant decay rate of \bsmumu decays. This method involves separating the \bsmumu decays into those with $| B^0_s \rangle$ initial states and $|\overline{B}^0_s\rangle$ initial states, which needs a large number of \bsmumu decays. Since \bsmumu are very rare decays this approach is currently not viable. Alternatively \ADG can be measured through the \bsmumu effective lifetime~\cite{}. The effective lifetime is the mean decay time of an untagged sample of \bsmumu decays and is defined as
+The value of \ADG can be measured directly from the time dependant decay rate of \bsmumu decays. This method involves separating the \bsmumu decays into those with $| B^0_s \rangle$ and $|\overline{B}^0_s\rangle$ initial states, which needs a large number of \bsmumu decays. Since \bsmumu are very rare decays this approach is currently not viable. Alternatively \ADG can be measured through the \bsmumu effective lifetime~\cite{DeBruyn:2012wj}. The effective lifetime is the mean decay time of an untagged sample of \bsmumu decays, defined as~\cite{Fleischer:2011cw}
 \begin{equation}
-  \tau_{\mu\mu} = \frac{\int^{\infty}_0 t\langle \Gamma (B^0_s \to \mu^+ \mu^-) \rangle dt}{\int^{\infty}_0 \langle \Gamma (B^0_s \to\mu^+ \mu^-) \rangle dt}.
+  \tau_{\mu\mu} \equiv \frac{\int^{\infty}_0 t\langle \Gamma (B^0_s \to \mu^+ \mu^-) \rangle dt}{\int^{\infty}_0 \langle \Gamma (B^0_s \to\mu^+ \mu^-) \rangle dt}.
 \label{eq:EL_def}
 \end{equation}
-It can be measured by fitting a single exponential to the same set of decays used to measure the \BF~\cite{}. The effective lifetime can be expressed in terms of \ADG using the decay rates in Equation~\ref{}
+It can be measured by fitting a single exponential to the same set of decays used to measure the \BF~\cite{DeBruyn:2012wj}. The effective lifetime can be expressed in terms of \ADG using the decay rates in Equation~\ref{eq:decayratesC} as
 \begin{align}
 \tau_{\mu\mu} %&=\frac{\frac{R_{H}}{\Gamma_{H}^{2}} + \frac{R_{L}}{\Gamma_{L}^{2}}}{\frac{R_{H}}{\Gamma_{H}^{2}} + \frac{R_{L}}{\Gamma_{L}}}  \nonumber \\
-= \frac{\tau_{B_{s}}}{(1 - y_{s}^{2})} \frac{( 1 + 2A_{\Delta\Gamma}y_{s} + y_{s}^{2})}{(1 + A_{\Delta\Gamma}y_{s})}
+= \frac{\tau_{B_{s}}}{(1 - y_{s}^{2})} \frac{( 1 + 2A_{\Delta\Gamma}y_{s} + y_{s}^{2})}{(1 + A_{\Delta\Gamma}y_{s})}.
 \end{align}
-
 %\begin{align}
 %\tau_{\mu\mu} &= \frac{\frac{R_{H}}{\Gamma_{H}^{2}} + \frac{R_{L}}{\Gamma_{L}^{2}}}{\frac{R_{H}}{\Gamma_{H}} + \frac{R_{L}}{\Gamma_{L}}}\\
 %&=  \frac{\tau_{B_{s}}}{(1 - y_{s}^{2}) \frac{(1 + 2 A_{\Delta\Gamma}y_{s} + y_{s}^{2})}{(1 + A_{\Delta\Gamma}y_{s})}
 %\label{eq:EL_ADG}
 %\end{align}
-In the SM only the heavy \bs mass eigenstates decays as \bsmumu therefore the \el equals the lifetime of the heavy mass eigenstate, $\tau_{\mu\mu} = \tau_H = \frac{1}{\Gamma_H}$. Therefore the effective lifetime offers a measurement complementary to the \BFs to study the SM and NP models in \bsmumu decays.
+In the SM only the heavy \bs mass eigenstates decays as \bsmumu and the \el equals the lifetime of the heavy mass eigenstate, $\tau_{\mu\mu} = \tau_H = \frac{1}{\Gamma_H}$. The effective lifetime offers a measurement complementary to the \BFs to study the SM and NP models in \bsmumu decays due to the dependant of the \el on \ADG.
 
 \section{The Standard Model predictions}
 \label{sec:SM_predictions}
@@ -343,54 +358,53 @@ The SM provides precise predictions of the \bmumu \BFs of~\cite{Bobeth:2013uxa, 
 \mathcal{B}(B^0_{s} \to \mu^+ \mu^-)& = (3.57 \pm 0.16) \times 10^{-9}\\
 \mathcal{B}(B^0 \to\mu^+ \mu^-)& = (1.02 \pm 0.06) \times 10^{-10}
 \end{align}
-where quark oscillations have been accounted for in the quoted value of the \bsmumu \BF. The largest contributions to the theoritical uncertainties come from the CKM matrix elements and the decay constants of the \bs and the \bd.
-In the SM the \bsmumu effective lifetime is prediction to be~\cite{Fleischer:2017ltw}
+where quark oscillations have been accounted for in the quoted value of the \bsmumu \BF. The largest contributions to the theoretical uncertainties come from the CKM matrix elements and the decay constants of the \bs and the \bd.
+The ratio of the \BF values, defined in Equation~\ref{eq:BF_ratio} is~\cite{CMS:2014xfa} 
+\begin{equation}
+\mathcal{R} = \frac{\mathcal{B}(B^0 \to\mu^+ \mu^-)}{\mathcal{B}(B^0_{s} \to \mu^+ \mu^-)} = 0.0295^{+0.0028}_{-0.0025}.
+\end{equation}
+In the SM the \bsmumu effective lifetime is predicted to be~\cite{Fleischer:2017ltw}
 \begin{equation}
 \tau_{\mu\mu} = 1.61 \pm 0.01 \mathrm{ps}.
 \end{equation}
 The Heavy Flavour Averaging group provides the world averages for the measured values of the lifetime of the light and heavy \bs mass eigenstates to be $\tau_{H} = 1.609 \pm 0.010$~ps and $\tau_{L} = 1.414 \pm 0.006$~ps~\cite{Amhis:2016xyh}.
 The difference in these lifetimes is $0.195$~ps.
-Therefore a precision of 0.38~ps would be needed to distinguish between \ADG = $+1$ and \ADG = $-1$ a five standard deviations with the \EL. 
+Therefore a precision of 0.38~ps would be needed to distinguish between \ADG = $+1$ and \ADG = $-1$ a 5$\sigma$ with the \el. 
 
 
 
 \section{New Physics models and \bmumu decays}
 \label{sec:NPmodels}
-There exist a large number of NP theories that can influence \bmumu decays in a variety of different ways. Measurements of the \bmumu \BFs and \bsmumu effective lifetime can constrain the parameter space available for NP models and could reveal which models occur in nature. For a comprehensive discussion of NP models relevant to \bmumu decays and the constraints on these models from the latest \BF measurements see~\cite{}. This section will briefly introduce how some NP models that could still be seen with \bmumu decays given the current precision of the \BF measurements. %can be studied with \bmumu decays.
+There exist a large number of BSM theories that can influence \bmumu decays in different ways. Measurements of the \bmumu \BFs and \bsmumu effective lifetime can constrain the parameter space available for NP and could reveal which theories are the correct extension of the SM. This section will briefly introduce how some NP models that could still be seen with \bmumu decays given the current precision of the \BF measurements. %can be studied with \bmumu decays.
+For a more detailed discussions of NP models relevant to \bmumu decays and contraints on these models from measurements see references~\cite{Buras:2013uqa,Knegjens:2014zva,Altmannshofer:2014rta}.
 
-As discussed in Section~\ref{} the ration of the \bdmumu and \bsmumu \Bfs provides an excellent test of the flavour structure of the SM and NP theories. Both the measured ratio and theoretical predictions are more precise than the individual \BFs due to the cancellation of uncertainties in the ratio. Figure~\ref{fig:ratio} shows possible values accessible by NP theories alongside the SM prediction and measured value of the \BF ratio. The prediction of the Minimal Flavour Violation (MFV) hypothesis is included in Figure~\ref{fig:ratio}. 
+As discussed in Section~\ref{sec:BFdef} the ratio of the \bdmumu and \bsmumu \Bfs provides an excellent test of the flavour structure of the SM and BSM theories. %Both the measured ratio and theoretical predictions are more precise than the individual \BFs due to the cancellation of uncertainties in the ratio. 
+Figure~\ref{fig:ratio} shows possible values accessible by BSM theories alongside the SM prediction. The prediction of the Minimal Flavour Violation (MFV)~\cite{DAmbrosio:2002vsn} hypothesis is included in Figure~\ref{fig:ratio}. 
 \begin{figure}[htbp]
     \centering
-        \includegraphics[width=0.49\textwidth]{./Figs/Theory/MFV.pdf}
-    \caption{Correlations between the \bdmumu and \bsmumu \BFs including the SM prediction, the Minimal Flavour Violation hypothesis (MFV), four Minimal Supersymmetric Standard Models (MSSM) and the SM extended to contrain four generations of fermiosn (SM4)~\cite{Straub:2010ih}.}
+        \includegraphics[width=0.8\textwidth]{./Figs/Theory/MFV.pdf}
+    \caption{Correlations between the \bdmumu and \bsmumu \BFs including the SM prediction, the Minimal Flavour Violation hypothesis (MFV), four Minimal Supersymmetric Standard Models (MSSM)~\cite{Martin:1997ns} and the SM extended to constrain four generations of fermions~(SM4)~\cite{Hou:2008xd}. Figure is taken from~\cite{Straub:2010ih}.}
     \label{fig:ratio}
 \end{figure}
-The MFV hypothesis predicts that the coupling of quark flavour and $\mathcal{CP}$ violation follow the same Yukawa structure as the SM in NP models. It is a popular theory to describe the flavour structure in NP models due to the current agreement of measurements with the SM predictions. A significant deviation of the \BF ratio from the SM or MFV hypothesis predictions will clearly indicate the need to a new flavour structure in theoretical models.
+The MFV hypothesis predicts that the coupling of quark flavour and $\mathcal{CP}$ violation follow the same Yukawa structure as the SM in NP models. It is a popular theory to describe the flavour structure in NP models due to the current agreement of measurements with the SM predictions. A significant deviation of the \BF ratio from the SM or MFV hypothesis predictions would indicate the need to a new flavour structure in theoretical models.
 
-Additionally NP models can move the \BF values and \ADG away from the SM predictions by providing new particles that can mediate the interaction. These new particles would change the Wilson coefficients included in the parameters $P$ and $S$. The dependence of the \BFs and \ADG on $P$ and $S$ are different as shown in Equations~\ref{} and~\ref{}, therefore NP models can influence the observables differently. The allowed values of \ADG and the ration of the measured and prompt SM prediction for $\mathcal{B}$(\bsmumu) are shown in Figures~\ref{fig:NPmodelsA} and~\ref{fig:NPmodelsB} for situations where $S=0$, $P=1$, $P\pm S = 1$ and $\varphi_P, \varphi_S \in {0, \pi}$. It is clear that if NP effects are not revealed in the \BF measurements, they could still appear in \ADG. Furthermore in some scenarios \ADG is needed to resolve degeneracies that arise from information from the \BF alone.
+Additionally NP models could move the \BFs and \ADG away from the SM predictions by providing new particles that can contribute to the decays. These new particles would change the Wilson coefficients included in the parameters $P$ and $S$. The dependence of the \BFs and \ADG on $P$ and $S$ are different, as shown in Equations~\ref{eq:BF_form} and~\ref{eq:NP_ADG}, therefore NP models can influence the observables independently. The allowed values of \ADG and the ratio of the measured \BF to prompt SM prediction are shown in Figure~\ref{fig:NPmodelsB} for possible situations where $S=0$, $P=1$, $P\pm S = 1$ and $\varphi_P, \varphi_S \in {0, \pi}$. These figures illustrate that if NP effects are not revealed in the \BF measurements, they could still appear in \ADG. Furthermore in some scenarios \ADG is needed to resolve degeneracies that arise from information from the \BF alone.
 \begin{figure}[tbp]
     \centering
         \includegraphics[width=0.49\textwidth]{./Figs/Theory/NP_S_0.png}
         \includegraphics[width=0.49\textwidth]{./Figs/Theory/NP_P_1.png}
-    \caption{Allowed values for $\mathcal{B}$(\bsmumu) and \ADG for situations where $S=0$ (left) and $P=1$ (right)~\cite{Buras:2013uqa,Knegjens:2014zva}. The ratio $\overline{R}$ plotted is from an average of the individual results from the CMS and LHCb collaborations given in Equations~\ref{} and~\ref{} from~\cite{CMSandLHCbCollaborations:2013pla}, the results from the combined analysis of the CMS and LHCb data gives $\overline{R} = 0.76^{+0.2}_{-0.18}$~\cite{CMS:2014xfa}.}
-    \label{fig:NPmodelsA}
-\end{figure}
-
-\begin{figure}[tbp]
-    \centering
         \includegraphics[width=0.49\textwidth]{./Figs/Theory/NP_P_pm_S_1.png}        
-        \includegraphics[width=0.49\textwidth]{./Figs/Theory/NP_phi.png}
-    \caption{Allowed values for $\mathcal{B}$(\bsmumu) and \ADG for situations where $P \pm S = 1$ (left) and $\varphi_P, \varphi_S \in {0, \pi}$ (right)~\cite{Buras:2013uqa,Knegjens:2014zva}. The ratio $\overline{R}$ plotted is from an average of the individual results from the CMS and LHCb collaborations given in Equations~\ref{} and~\ref{} from~\cite{CMSandLHCbCollaborations:2013pla}, the results from the combined analysis of the CMS and LHCb data gives $\overline{R} = 0.76^{+0.2}_{-0.18}$~\cite{CMS:2014xfa}.}
+        \includegraphics[width=0.45\textwidth]{./Figs/Theory/NP_phi.png}
+    \caption{Allowed values for $\mathcal{B}$(\bsmumu) and \ADG for situations where $S=0$ (top left), $P=1$ (top right), $P \pm S = 1$ (bottom left) and $\varphi_P, \varphi_S \in {0, \pi}$ (bottom right)~\cite{Buras:2013uqa,Knegjens:2014zva}. The ratio $\overline{R}$ plotted is from an average of the individual results from the CMS and LHCb collaborations from~\cite{CMSandLHCbCollaborations:2013pla}, the results from the combined analysis of the CMS and LHCb data gives $\overline{R} = 0.76^{+0.2}_{-0.18}$~\cite{CMS:2014xfa}.}
     \label{fig:NPmodelsB}
 \end{figure}
 
+Amongst the BSM theories that can influence the values of $P$ and $S$ are the two Higgs doublet model (2HDM)~\cite{HALL1981397}, supersymmetric models~\cite{Witten:1981nf}, models including leptoquarks and models that obey the MFV hypothesis as mentioned earlier.
 
-Various NP models can influence the values of $P$ and $S$, these include the two Higgs doublet model (2HDM), supersymmetric models, models including leptoquarks and models that obey the MFV hypothesis as mentioned earlier.
+The 2HDM extends the Higgs sector of the SM by introducing two complex scalar field doublets both with non-zero vacuum expectation values. Spontaneous symmetry breaking then produces 2 charged, one neutral pseudoscalar and 2 neutral scalar Higgs bosons. The new particles can enter the loops of \bmumu decays and allow FCNCs to occur that the tree level. Different scenarios of this model depend on the Higgs-quark interactions and can incorporate the MFV hypothesis. This model can produce scenarios where $S=0$, $P=1$ or $P\pm S = 1$~\cite{Buras:2013uqa,Knegjens:2014zva} and the corresponding \BF and \ADG values for \bsmumu decays as shown in Figure~\ref{fig:NPmodelsB}.
 
-The 2HDM extend the Higgs sector of the SM by introducing two complex scalar field doublets both with non-zero vacuum expectation values. Spontaneous symmetry breaking then produces 2 charged, one neutral pseudoscalar and 2 neutral scalar Higgs bosons. The new particles can enter the loops of \bmumu decays and also allow FCNCs to occur that the tree level. Different scenarios of this model depend on the Higgs-quark interactions and can incorporate the MFV hypothesis. The different formulations of the model can lead to versions with $S=0$, $P=1$ or $P\pmS = 1$ as illustrated with the possible \BF and \ADG values for \bsmumu decays in Figure~\ref{fig:NPmodels}.
+Supersymmetric (SUSY) models extend the SM by giving each SM particle a supersymmetric partner. The resulting theory is symmetric under the transformation of fermions to boson and bosons to fermions. So far no evidence for SUSY particles has been found therefore the symmetry must be broken and the mass of SUSY particles is greater than their SM partners. The Minimal Supersymmetric Standard Model (MSSM) includes a Higgs sector similar to the 2HDM and there are scenarios where it obeys the MFV hypothesis. \bmumu decays are sensitive to this model provided the ratio of the vacuum expectations values of the Higgs doublet is large~\cite{Babu:1999hn,Isidori:2001fv,Buras:2002vd}. The MSSM can produce values for \ADG and the \bsmumu \BF shown in Figure~\ref{fig:NPmodelsB} for situations where $P\pm S =1$ and $\varphi_P, \varphi_S \in {0, \pi}$~\cite{Buras:2013uqa,Knegjens:2014zva}.
 
-Supersymmetric (SUSY) models extend the SM by giving each SM particle a supersymmetric partner so that the model is now symmetric under the transformation of fermions to boson and bosons to fermions. So far no evidence for SUSY particles has been found therefore the symmetry must be broken and the mass of SUSY particles is greater than their SM partners. Different models exist and include the Minimal Supersymmetric Standard Model (MSSM) that includes a Higgs sector similar to the 2HDM. Current measurements have lead to strong constraints on the MSSM however \bmumu decays are still sensitivity to this model provided the ratio of the vacuum expectations values of the Higgs doublet is large. The MSSM can produce values for \ADG and the \bsmumu \BF shown in Figure~\ref{fig:NPmodels} for situations where $P\pmS =1$ and $\varphi_P, \varphi_S \in {0, \pi}$.
+Models including leptoquarks are currently popular to explain the anomalies observed in heavy flavour measurements~\cite{Barbieri:2016las,Becirevic:2016yqi,Hiller:2014yaa,Bauer:2015knc,Fajfer:2015ycq}. A leptoquark is a boson that carries both lepton and baryons numbers. The exact quantum numbers depend on the interactions with SM fermions and leptoquarks can enable FCNCs to occur at the tree level. Therefore leptoquarks could enhance \bmumu decays but information from \ADG is necessary for the study of leptoquarks with \bmumu decays because it resolves degeneracies that are present with just the \BF measurements~\cite{Altmannshofer:2017wqy}.
 
-Models including leptoquarks are currently popular because they can provide explanations for the anomalies observed in $R(D^*)$ and $R(K)$ as well as the angular observables of $B^0 \to K^* \mu^+ \mu^-$. A leptoquarks is a boson that carries both lepton and baryons numbers. Their exact quantum numbers depend on the interactions with SM fermions and they can enable FCNCs to occur at the tree level and cause lepton flavour violation. Therefore leptoquarks could enhance \bmumu decays by allowing them to occur at tree level. Information from \ADG is necessary for the study of leptoquarks with \bmumu decays because it resolves degeneracies that are present with just the \BF measurements.
-
-The past measurements of \bmumu \BFs has places constraints on NP models however the current experimental precision still leave plenty of room for NP effects to be revealed. The observation of \bsmumu decays makes it possible to start investigating \ADG through the \bsmumu \el. Measurement of \ADG will proved important information, complementary to the \bmumu 'BF measurements to search for NP effect in \bsmumu decays.
+Although \bmumu decays are yet to reveal NP, the current experimental precision still leaves plenty of room for NP to be revealed. The observation of \bsmumu decays makes it possible to start investigating \ADG through the \bsmumu \el. A measurement of \ADG will proved important information, complementary to the \bmumu \BF measurements to search for NP in \bsmumu decays.
