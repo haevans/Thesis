@@ -310,16 +310,16 @@ The stripping selection cuts applied for the Run~1 branching fraction analysis~\
 \hline             
 \bsd         & |M - M$_{PDG}$| $<$ 1200 \mevcc              & |M - M$_{PDG}$| $<$ 500 \mevcc     \\          
                       & DIRA > 0                                    & DIRA > 0                             \\       
-                      & $\chi^{2}_{FD}$ $>$225                        &  $\chi^{2}_{FD}$ $>$225              \\ 
-                      &  $\chi^{2}_{IP}$ $<$ 25                         & $\chi^{2}_{IP}$ $<$ 25                \\            
-                      & $\chi^{2}_{VTX}$ < 9                   &  $\chi^{2}_{VTX}$ < 9                \\   
+                      & \chiFD $>$225                        &  \chiFD $>$225              \\ 
+                      &  \chiIP $<$ 25                         & \chiIP $<$ 25                \\            
+                      & \chivtx < 9                   &  \chivtx < 9                \\   
                       & DOCA $<$ 0.3 mm                             & DOCA $<$ 0.3 mm                            \\               
                       &                                             & $\tau$ $<$ 13.248 \ps                      \\
                       &                                             & $p_{T}$ $>$ 500 \mevc                      \\
 \hline             
 $\mu$ or $h$   &$\chi^{2}_{trk} < 3$                 & $\chi^{2}_{trk} < 3$            \\       
                         & isMuon = True                             &                                             \\ 
-                        & Minimum $\chi^{2}_{IP}$ $>$ 25               & Minimum $\chi^{2}_{IP}$ $>$ 25             \\                   
+                        & Minimum \chiIP $>$ 25               & Minimum \chiIP $>$ 25             \\                   
                         &    $p_{T}$ $>$ 0.25 \gevc                   & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\
                         &                                           & Ghost probability $<$ 0.3        \\
 
@@ -345,21 +345,21 @@ $\mu$ or $h$   &$\chi^{2}_{trk} < 3$                 & $\chi^{2}_{trk} < 3$     
 \hline             
 $B^{+}$        & |M - M$_{PDG}$| $<$   500 \mevcc           & \bs         & |M - M$_{PDG}$| $<$   500 \mevcc             \\          
                       & $\chi^{2}_{VTX}<$ 45         &            &  $\chi^{2}_{VTX} <$ 75             \\       
-                      & $\chi^{2}_{IP}$ $<$ 25                &            &  $\chi^{2}_{IP}$ $<$ 25               \\ \hline   
+                      & \chiIP $<$ 25                &            &  \chiIP $<$ 25               \\ \hline   
 \jpsi                & |M - M$_{PDG}$| $<$   100 \mevcc      & \jpsi      &  |M - M$_{PDG}$| $<$   100 \mevcc     \\
                     & DIRA > 0                             &           &   DIRA > 0           \\
-                    &  $\chi^{2}_{FD}$ $>$ 225                &           & $\chi^{2}_{FD}$ $>$ 225        \\
-                    & $\chi^{2}_{VTX}$ < 9           &           & $\chi^{2}_{VTX}$ < 9       \\  
+                    &  \chiFD $>$ 225                &           & \chiFD $>$ 225        \\
+                    & \chivtx < 9           &           & \chivtx < 9       \\  
                     &   DOCA $<$ 0.3 mm                   &            & DOCA $<$ 0.3 mm      \\  
 \hline             
-$\mu^{\pm}$               & $\chi^{2}_{trk}$ < 3           &$\mu^{\pm}$       &   $\chi^{2}_{trk}$ < 3 \\       
+$\mu^{\pm}$               & \chitrk < 3           &$\mu^{\pm}$       &   \chitrk < 3 \\       
                     & isMuon = True                      &            &isMuon = True    \\ 
-                    & Minimum $\chi^{2}_{IP}$ $>$ 25        &            & Minimum $\chi^{2}_{IP}$ $>$ 25    \\                   
+                    & Minimum \chiIP $>$ 25        &            & Minimum \chiIP $>$ 25    \\                   
                     &  0.25 \gevc $<$ $p_{T}$            &            &  0.25 \gevc $<$ $p_{T}$    \\
 \hline
-$K^{+}$             & $\chi^{2}_{trk}$ < 3           & $\phi$           &  |M - M$_{PDG}$| $<$   20 \mevcc  \\
-                    & $p_{T}$ $>$ 0.25 \gevc              &           &  Minimum $\chi^{2}_{IP}$ $>$ 4  \\
-                   & Minimum $\chi^{2}_{IP}$ $>$ 25         & K$^{\pm}$           & $\chi^{2}_{trk}$ < 3  \\
+$K^{+}$             & \chitrk < 3           & $\phi$           &  |M - M$_{PDG}$| $<$   20 \mevcc  \\
+                    & $p_{T}$ $>$ 0.25 \gevc              &           &  Minimum \chiIP $>$ 4  \\
+                   & Minimum \chiIP $>$ 25         & K$^{\pm}$           & \chitrk < 3  \\
                  &                                   &                       & $p_{T}$ $>$ 0.25 \gevc     \\
 \hline
 \end{tabular}
@@ -378,17 +378,17 @@ The variables used in the stripping selection are:
 \begin{itemize}
 \item the reconstructed mass ($M$) - the mass and momenta of the decay products of the $B$ meson (or \jpsi) are combined to provide its reconstructed mass. Cuts on the mass remove candidates with a reconstructed mass far from expected, which are consistent with background. Loose mass requirements are made in the \bmumu selection to allow for the study of semi-leptonic backgrounds that have a mass less than the \bsd mass when mis-identified as a \bmumu decay;
 \item the ``direction cosine'', DIRA - this is the cosine of the angle between the momentum vector of the particle and the vector connecting the production and decay vertices\footnote{The production vertex of the $B$ or the primary vertex is identified by extrapolating the $B$ meson momentum vector towards the beam axis. The closest vertex to the intersection of the $B$ momentum and the beam axis is assigned as the primary vertex.} of the particle. For correctly reconstructed candidates the direction cosine should be very close to one, requiring candidates to have positive value ensuring events are travelling in the wrong direction are removed;
-\item the flight distance ($\chi^{2}_{FD}$) - this is computed by performing the fit for the production vertex of a particle with and without including the tracks from its decay products that originate from the decay vertex in the fit as well. For a $B$ meson the FD \chisqd is likely to be large because $B$ mesons have long lifetimes therefore the tracks of its decays products will not point towards the production vertex;
-\item track fit \chisqd/$ndof$ ($\chi^{2}_{trk}$) - provides a measure of the quality of a fitted track, placing an upper limit removes poor quality tracks and backgrounds composed of poorly reconstructed decays;
-\item vertex fit \chisqd/$ndof$ ($\chi^{2}_{VTX}$)- provides a measure of how well tracks can be combined to form a vertex, placing an upper limit removes poorly constrained vertices and backgrounds composed of poorly reconstructed decays;
+\item the flight distance (\chiFD) - this is computed by performing the fit for the production vertex of a particle with and without including the tracks from its decay products that originate from the decay vertex in the fit as well. For a $B$ meson the \chiFD is likely to be large because $B$ mesons have long lifetimes therefore the tracks of its decays products will not point towards the production vertex;
+\item track fit \chisqd/$ndof$ (\chitrk) - provides a measure of the quality of a fitted track, placing an upper limit removes poor quality tracks and backgrounds composed of poorly reconstructed decays;
+\item vertex fit \chisqd/$ndof$ (\chivtx)- provides a measure of how well tracks can be combined to form a vertex, placing an upper limit removes poorly constrained vertices and backgrounds composed of poorly reconstructed decays;
 \item distance of closest approach (DOCA) - this is the distance of closest approach of two daugher particles that make up the parent particle, computed from straight tracks in the VELO. For the decay products of a particle, for example the muons from \bmumu, this distance would ideally be zero because the muons originate from the same vertex;
 \item decay time ($\tau$) - is the length of time a particle lives as it travels from its production vertex to its decay vertex. Applying an upper decay time cut removes unphysical background decays;
 \item isMuon - particle identification variable, defined in Section~\ref{PID}, that returns True for muons and False for other particles;
 \item transverse momentum ($p_{T}$) - the component of a particle's momentum perpendicular to the beam axis. Decay products of $B$ mesons are expected to have relatively high \pt due to the heavy $B$ meson masses however an upper limit removes unphysical backgrounds;
 \item momentum ($p$) - an upper limit on the momentum of a particle  removes unphysical backgrounds;
 \item ghost probability - defined in Section~\ref{sec:Track_recon} provides the probability of a track being composed on random hits in the detector, tracks from the passage of real particles will have a low ghost probability; 
-\item impact parameter \chisqd ($\chi^{2}_{IP}$) - this is the change in the fit \chisqd for a primary vertex (PV) caused by removing one track in the fit. In a \bsmumu decay, the \bsd is produced at the PV therefore it should have a small $\chi^{2}_{IP}$ value whereas the muons will be displaced from the PV because of the relatively long lifetime of the \bsd and therefore will have a large $\chi^{2}_{IP}$;
-\item minimum impact parameter ($\chi^{2}_{IP}$) - this is the $\chi^{2}_{IP}$  of the muons with respect to all PVs in the event, this parameter is used to remove prompt muons created at any PV in the event and therefore reduce the prompt combinatorial background. 
+\item impact parameter \chisqd (\chiIP) - this is the change in the fit \chisqd for a primary vertex (PV) caused by removing one track in the fit. In a \bsmumu decay, the \bsd is produced at the PV therefore it should have a small \chiIP value whereas the muons will be displaced from the PV because of the relatively long lifetime of the \bsd and therefore will have a large \chiIP;
+\item minimum impact parameter (\chiIP) - this is the \chiIP  of the muons with respect to all PVs in the event, this parameter is used to remove prompt muons created at any PV in the event and therefore reduce the prompt combinatorial background. 
 \end{itemize}
 
 The stripping selection imposes a greater number of cuts to select \bhh decays compared to \bsmumu because \bhh decays are much more abundant. Therefore extra cuts are needed to reduce the number of events passing the stripping to an acceptable level. The cuts applied to only \bhh decays in the stripping are applied to \bsmumu candidates in the offline selection. %The cuts on muon transverse momentum, track \chisqd and isMuon (when used) are applied in the reconstruction and cannot be changed.
@@ -399,7 +399,7 @@ The stripping selection imposes a greater number of cuts to select \bhh decays c
 
 
 The efficiency of the cuts used in the stripping lines to selecting \bmumu, \bhh and \bujpsik decays are shown in Table \ref{tab:Run1strippingEff}; only cuts that are in common with the \bmumu stripping lines are listed. The efficiencies of \bhh and \bujpsik are studied as well as \bmumu because the selection of these channels are used for the normalisation of the branching fractions. %must be kept similar to reduce systematic uncertainties in the normalisation procedure described in Chapter~\ref{sec:BFanalysis}. 
-The efficiencies are evaluated using 2012 sim06 simulated events that have the minimum track \pt, track \chisqd and isMuon requirements imposed. These cuts are applied during the reconstruction and particles that do not pass these requirements are not included in the samples of simulated decays. No trigger requirements have been applied so that only the effect of the stripping selection on the efficiencies can be assessed. During the simulation of particle decays the trigger is run in {\it pass through} mode so that all reconstructed are saved, not just those that have passed a trigger line.
+The efficiencies are evaluated using 2012 sim06 simulated events that have the minimum track \pt, \chitrk and isMuon requirements imposed. These cuts are applied during the reconstruction and particles that do not pass these requirements are not included in the samples of simulated decays. No trigger requirements have been applied so that only the effect of the stripping selection on the efficiencies can be assessed. During the simulation of particle decays the trigger is run in {\it pass through} mode so that all reconstructed are saved, not just those that have passed a trigger line.
 
 \afterpage{
 \begin{landscape}
@@ -415,12 +415,12 @@ Requirement                                  & \bsmumu                   & \bdmu
 \hline
 $B$ |M - M$_{PDG}$|                           & (100.00 $\pm$ 0.00)$\%$  & (100.00 $\pm$ 0.00 )$\%$      & (98.25 $\pm$ 0.02)$\%$        & (99.73 $\pm$ 0.02)$\%$ \\
 \bsd or \jpsi DIRA                            & (99.41 $\pm$ 0.01) $\%$  & (99.47 $\pm$ 0.01)$\%$        & (99.47 $\pm$ 0.01)$\%$        & (95.83 $\pm$ 0.08)$\%$ \\
-\bsd or \jpsi FD $\chi^{2}$                   & (83.74 $\pm$ 0.06) $\%$  & (83.96 $\pm$ 0.06)$\%$        & (83.83 $\pm$ 0.06)$\%$        & (82.90 $\pm$ 0.15)$\%$ \\
-\bsd or \jpsi IP $\chi^{2}$                   & (96.78 $\pm$ 0.03) $\%$  & (96.93 $\pm$ 0.03)$\%$        & (97.44 $\pm$ 0.03)$\%$        & (97.52 $\pm$ 0.06)$\%$ \\
+\bsd or \jpsi \chiFD                   & (83.74 $\pm$ 0.06) $\%$  & (83.96 $\pm$ 0.06)$\%$        & (83.83 $\pm$ 0.06)$\%$        & (82.90 $\pm$ 0.15)$\%$ \\
+\bsd or \jpsi \chiIP                   & (96.78 $\pm$ 0.03) $\%$  & (96.93 $\pm$ 0.03)$\%$        & (97.44 $\pm$ 0.03)$\%$        & (97.52 $\pm$ 0.06)$\%$ \\
 \bsd or \jpsi vertex $\chi^{2}$/ndof          & (97.21 $\pm$ 0.03) $\%$  & (97.18 $\pm$ 0.03)$\%$        & (97.68 $\pm$ 0.02)$\%$        & (96.78 $\pm$ 0.07)$\%$ \\
 \bsd or \jpsi DOCA                           & (99.82 $\pm$ 0.01) $\%$   & (99.80 $\pm$ 0.01)$\%$        & (99.83 $\pm$ 0.01)$\%$        & (99.58 $\pm$ 0.03)$\%$ \\               
 
-$\mu$, $h$, $K^{+}$ minimum IP $\chi^{2}$    & (80.16 $\pm$ 0.06) $\%$  & (80.62 $\pm$ 0.06 )$\%$        & (79.66 $\pm$ 0.07)$\%$        & (86.98 $\pm$ 0.14)$\%$ \\
+$\mu$, $h$, $K^{+}$ minimum \chiIP    & (80.16 $\pm$ 0.06) $\%$  & (80.62 $\pm$ 0.06 )$\%$        & (79.66 $\pm$ 0.07)$\%$        & (86.98 $\pm$ 0.14)$\%$ \\
 \hline
 Total after above cuts                  & (71.29 $\pm$  0.07) $\%$  & (71.82 $\pm$ 0.07)$\%$        & (70.97 $\pm$ 0.07)$\%$        & (71.30 $\pm$ 0.18)$\%$ \\
 \hline
@@ -440,7 +440,7 @@ Total after all cuts      & (71.29 $\pm$  0.07) $\%$                & (71.82 $\p
 %\noindent
 %requirements have been applied so that only the effect of the stripping selection on the efficiencies can be assessed. During the simulation of particle decays the trigger is run in {\it pass through} mode so that all reconstructed are saved, not just those that have passed a trigger line. 
 
-The selection efficiencies are very similar for each stripping cut across the different decays, fitting the requirement that the selection of signal and normalisation decays used in the branching fraction measurement are as similar as possible. The similarity of the selection efficiencies for the signal and normalisation decays is further illustrated in Figures~\ref{fig:ratioplotsJpsik} and \ref{fig:ratio_plotsBd2KPi} which show the ratio of selection efficiencies of \bsmumu decays to \bujpsik and \bdkpi decays for a range of selection cuts. With the exception of the \bsmumu and \bujpsik $\chi^{2}_{IP}$ cuts on the daughter particles, the ratio of efficiencies is well within $3\%$ of unity for the range of cuts values shown. The ratio of the \bsmumu and \bujpsik efficiencies for the daughter particle $\chi^{2}_{IP}$, Figure ~\ref{fig:IPS_ratioKPi}}, markedly deviates from unity, showing that the $\chi^{2}_{IP}$ distribution of the muons and kaon are very different as seen previously in reference~\cite{Diego}. If the $\chi^{2}_{FD}$, \bs or \jpsi $\chi^{2}_{IP}$ and $\chi^{2}_{VTX}$ selection cuts are applied to the simulated events before the daughter $\chi^{2}_{IP}$ requirement the ratio of \bmumu and \bujpsik efficiencies is much closer to~1. The stability of the ratios of selection efficiencies across a large range of cuts values shows that changing a cut value in the \bmumu selection will have a similar impact on the efficiencies of the normalisation decays. 
+The selection efficiencies are very similar for each stripping cut across the different decays, fitting the requirement that the selection of signal and normalisation decays used in the branching fraction measurement are as similar as possible. The similarity of the selection efficiencies for the signal and normalisation decays is further illustrated in Figures~\ref{fig:ratioplotsJpsik} and \ref{fig:ratio_plotsBd2KPi} which show the ratio of selection efficiencies of \bsmumu decays to \bujpsik and \bdkpi decays for a range of selection cuts. With the exception of the \bsmumu and \bujpsik \chiIP cuts on the daughter particles, the ratio of efficiencies is well within $3\%$ of unity for the range of cuts values shown. The ratio of the \bsmumu and \bujpsik efficiencies for the daughter particle \chiIP, Figure ~\ref{fig:IPS_ratioKPi}}, markedly deviates from unity, showing that the \chiIP distribution of the muons and kaon are very different as seen previously in reference~\cite{Diego}. If the \chiFD, \bs or \jpsi \chiIP and \chivtx selection cuts are applied to the simulated events before the daughter \chiIP requirement the ratio of \bmumu and \bujpsik efficiencies is much closer to~1. The stability of the ratios of selection efficiencies across a large range of cuts values shows that changing a cut value in the \bmumu selection will have a similar impact on the efficiencies of the normalisation decays. 
 
 
 \begin{figure}[htbp]
@@ -507,24 +507,24 @@ The selection efficiencies are very similar for each stripping cut across the di
 \end{figure}
 
 
-The efficiencies for most of the stripping cuts are $\sim 97 \%$ or higher, however, the efficiencies of the cuts on the$\chi^{2}_{FD}$ of the \bsd or \jpsi and the daughter $\chi^{2}_{IP}$ of the muon or hadron pair are lower at $83 \%$ and $80 \%$, respectively. Therefore improvements to the stripping selection efficiencies could be achieved by altering these two selection requirements. 
+The efficiencies for most of the stripping cuts are $\sim 97 \%$ or higher, however, the efficiencies of the cuts on the\chiFD of the \bsd or \jpsi and the daughter \chiIP of the muon or hadron pair are lower at $83 \%$ and $80 \%$, respectively. Therefore improvements to the stripping selection efficiencies could be achieved by altering these two selection requirements. 
 
 
 
-The set of events removed by each cut in the stripping selection is not independent. Therefore the effect of changing one cut on the total efficiency of a stripping selection must be considered. Figure~\ref{fig:efficiencyplots} shows the total efficiency of the \bsmumu stripping line on simulated \bsmumu decays for a range of $\chi^{2}_{FD}$ and daughter $\chi^{2}_{IP}$ cut values. As expected the lower the cut values the more efficient the stripping line becomes. It is important that any increase in \bsmumu selection efficiency from the stripping is not removed when the trigger requirements are applied, Figure~\ref{fig:triggereffplots} shows that the trigger efficiencies are relatively flat across a large range of $\chi^{2}_{FD}$ and daughter $\chi^{2}_{IP}$ cut values therefore the efficiency gained by a change in the stripping selection is not lost when trigger requirements are imposed. The selection efficiency for \bdmumu is very similar to \bsmumu as seen in Table~\ref{tab:Run1strippingEff}, therefore only \bsmumu have been studied for different stripping selection cut values. 
+The set of events removed by each cut in the stripping selection is not independent. Therefore the effect of changing one cut on the total efficiency of a stripping selection must be considered. Figure~\ref{fig:efficiencyplots} shows the total efficiency of the \bsmumu stripping line on simulated \bsmumu decays for a range of \chiFD and daughter \chiIP cut values. As expected the lower the cut values the more efficient the stripping line becomes. It is important that any increase in \bsmumu selection efficiency from the stripping is not removed when the trigger requirements are applied, Figure~\ref{fig:triggereffplots} shows that the trigger efficiencies are relatively flat across a large range of \chiFD and daughter \chiIP cut values therefore the efficiency gained by a change in the stripping selection is not lost when trigger requirements are imposed. The selection efficiency for \bdmumu is very similar to \bsmumu as seen in Table~\ref{tab:Run1strippingEff}, therefore only \bsmumu have been studied for different stripping selection cut values. 
 
 
 \begin{figure}[tbp]
     \centering
         \includegraphics[width= 0.8 \textwidth]{./Figs/Selection/Bs2MuMu_efficiency_chart_Feb3.pdf}
-    \caption{Efficiency of the \bmumu stripping selection for \bsmumu simulated decays for a range of cuts on the \bs $\chi^{2}_{FD}$ and the minimum muon $\chi^{2}_{IP}$.}
+    \caption{Efficiency of the \bmumu stripping selection for \bsmumu simulated decays for a range of cuts on the \bs \chiFD and the minimum muon \chiIP.}
     \label{fig:efficiencyplots}
 \end{figure}
 
 \begin{figure}[htbp]
    \centering
         \includegraphics[width=0.8\textwidth]{./Figs/Selection/trigger_chart.pdf}
-    \caption{The trigger efficiencies of \bsmumu simulated decays across a range of \bs $\chi^{2}_{FD}$ and the minimum muon $\chi^{2}_{IP}$ cut values for the trigger requirements used to select \bmumu decays for the branching fraction measurement. }
+    \caption{The trigger efficiencies of \bsmumu simulated decays across a range of \bs \chiFD and the minimum muon \chiIP cut values for the trigger requirements used to select \bmumu decays for the branching fraction measurement. }
     \label{fig:triggereffplots}
 \end{figure}
 
@@ -534,7 +534,7 @@ The set of events removed by each cut in the stripping selection is not independ
 
 One of the main purposes of the stripping selection, as described in Section~\ref{SoftwareSimulation}, is to reduce the size of the data set, therefore the cuts cannot be set as loose as possible and the amount of data passing the selection must be considered. Also, any change applied to the \bmumu stripping line must be propagated through into the stripping lines for \bhh, \bujpsik and \bsjpsiphi decays therefore the retention of all stripping lines must be evaluated.
 
-Table~\ref{tab:Retention} shows the total efficiency of the \bsmumu stripping line along side the amount of data retained for the set of cuts on the $\chi^{2}_{FD}$ and daughter $\chi^{2}_{IP}$ for the \bmumu, \bhh, \bujpsik and \bsjpsiphi stripping lines for a set of $\chi^{2}_{IP}$ and $\chi^{2}_{FD}$ cuts. %The amount of data retained by each selection has been normalised to the original set of stripping select cuts. 
+Table~\ref{tab:Retention} shows the total efficiency of the \bsmumu stripping line along side the amount of data retained for the set of cuts on the \chiFD and daughter \chiIP for the \bmumu, \bhh, \bujpsik and \bsjpsiphi stripping lines for a set of \chiIP and \chiFD cuts. %The amount of data retained by each selection has been normalised to the original set of stripping select cuts. 
 The set of chosen cuts used in Table~\ref{tab:Retention} aims keep both cuts as tight as possible for a certain \bsmumu efficiency. 
 
 
@@ -561,7 +561,7 @@ $\sqrt{\chi^{2}_{FD}}$ & Daughter  $\sqrt{\text{IP} \chi^{2}}$ & \bsmumu  & \bmu
 \end{center}
 %\label{tab:Retention}
 \vspace{0.7cm}
-\caption{The efficiency of the \bmumu stripping line to select \bsmumu decays and the change in the data retention for \bmumu, \bhh, \bujpsik and \bsjpsiphi stripping lines for a range of FD \chisqd and daughter IP \chisqd cut values. The amount of data passing each selection has been normalised to the original set of stripping select cuts. The fractional uncertainty on the retention is less than 1 $\%$.}
+\caption{The efficiency of the \bmumu stripping line to select \bsmumu decays and the change in the data retention for \bmumu, \bhh, \bujpsik and \bsjpsiphi stripping lines for a range of \chiFD and daughter \chiIP cut values. The amount of data passing each selection has been normalised to the original set of stripping select cuts. The fractional uncertainty on the retention is less than 1 $\%$.}
 \label{tab:Retention}
 \end{table}
 \vspace*{\fill}
@@ -569,12 +569,12 @@ $\sqrt{\chi^{2}_{FD}}$ & Daughter  $\sqrt{\text{IP} \chi^{2}}$ & \bsmumu  & \bmu
 }
 
 
-The data retention is computed by applying the stripping selection to a sub-set of 2012 data to find the number of events that pass the stripping lines for each pair of FD $\chi^{2}$ and daughter IP $\chi^{2}$ cuts. No trigger requirements are imposed on trigger lines because the stripping selection run on the full output of the trigger. The number of events for each set of cuts is normalised to the number of events passing the original Run~1 stripping line requirements  to show the fractional increase caused by loosening the cut values. 
+The data retention is computed by applying the stripping selection to a sub-set of 2012 data to find the number of events that pass the stripping lines for each pair of \chiFD and daughter \chiIP cuts. No trigger requirements are imposed on trigger lines because the stripping selection run on the full output of the trigger. The number of events for each set of cuts is normalised to the number of events passing the original Run~1 stripping line requirements  to show the fractional increase caused by loosening the cut values. 
 
 An increase of 15~$\%$ can be gained in the stripping selection efficiencies by using the loosest cuts in Table~\ref{tab:Retention} however the loosest cuts increases the amount of data passing the \bmumu stripping selection by a factor of 7 and the \bhh stripping selection by a factor of 4. Table~\ref{tab:NumEvents} shows the number of Run~1 candidates passing the original stripping selection listed in Tables~\ref{tab:PreviousStrippingA} and~\ref{tab:PreviousStrippingB} for the last published analysis. The \bhh stripping line lets through the most candidates where as the \bmumu stripping line saves far fewer candidates, therefore a change in the retention of the \bhh line is more significant than the \bmumu line. 
 
 
-The final set of cuts used in the stripping selection must be a compromise between the selection efficiency and the amount of data that passes the selection. The selection cuts of \bs FD $\chi^{2}$ $>$ 121 and minimum muon IP $\chi^{2}$ $>$ 9 would increase the \bmumu selection efficiency by from 71~$\%$ to 82~$\%$ and the amount of data retained would be doubled. The increase of the data retained by the \bhh, \bujpsik and \bsjpsiphi lines is smaller and the efficiencies are similar to the \bmumu selection efficiencies. Therefore these cuts are applied in the stripping selection for this analysis. %However the increase in efficiency after the stripping selection will not necessarily be propagated through the whole analysis. 
+The final set of cuts used in the stripping selection must be a compromise between the selection efficiency and the amount of data that passes the selection. The selection cuts of \bs \chiFD $>$ 121 and minimum muon \chiIP $>$ 9 would increase the \bmumu selection efficiency by from 71~$\%$ to 82~$\%$ and the amount of data retained would be doubled. The increase of the data retained by the \bhh, \bujpsik and \bsjpsiphi lines is smaller and the efficiencies are similar to the \bmumu selection efficiencies. Therefore these cuts are applied in the stripping selection for this analysis. %However the increase in efficiency after the stripping selection will not necessarily be propagated through the whole analysis. 
 
 
 
@@ -614,11 +614,11 @@ Additional selection requirements are applied after the stripping to remove spec
 
 The offline selection of \bmumu decays includes the momentum, ghost track probability and decay time cuts made in the \bhh stripping line, but were absent in the \bmumu stripping line. Also a narrower mass range of 4900 - 6000 \mevcc is imposed to remove $B_{s}^{0} \to \mu^{+} \mu^{-} \gamma$ backgrounds. The stripping selection for \bmumu decays is kept loose to allow for the study of background decays in data. 
 
-The selection applied to Run~1 and Run~2 data is the same for all variables expect the track ghost probability and track \chisqd/$ndof$. Slightly looser cuts of track ghost probability $<$ 0.4 and track \chisqd/$ndof$ < $4$, are used in Run~2 to take advantage of changes in the reconstruction that were introduced for Run~2. 
+The selection applied to Run~1 and Run~2 data is the same for all variables expect the track ghost probability and \chitrk. Slightly looser cuts of track ghost probability $<$ 0.4 and \chitrk < $4$, are used in Run~2 to take advantage of changes in the reconstruction that were introduced for Run~2. 
 
 Table~\ref{tab:BFfullselection} summaries all selection cuts used to identify \bmumu %, \bhh, \bujpsik and \bsjpsiphi 
 decays at the end of this section.
-%The complete list of selection cuts applied in the cut based selection to select \bsmumu and \bhh decays in Run~1 and Run~2 data are listed in Tables~\ref{tab:fullpreselection}. The stripping selection cuts from Table~\ref{tab:PreviousStripping} are included with the $B$ mesons FD \chisqd and daughter IP \chisqd requirements updated to the looser values and the selection of \bmumu decays includes the momentum, ghost track probability and decay time cuts made in the \bhh stripping line, but were absent in the \bmumu stripping line.
+%The complete list of selection cuts applied in the cut based selection to select \bsmumu and \bhh decays in Run~1 and Run~2 data are listed in Tables~\ref{tab:fullpreselection}. The stripping selection cuts from Table~\ref{tab:PreviousStripping} are included with the $B$ mesons \chiFD and daughter \chiIP requirements updated to the looser values and the selection of \bmumu decays includes the momentum, ghost track probability and decay time cuts made in the \bhh stripping line, but were absent in the \bmumu stripping line.
 
 %Additional selection requirements are applied after the stripping to remove specific backgrounds. A lower bound is placed on the $B$ meson transverse momentum to remove pairs of muons originating from $pp \to p\mu^{+}\mu^{-} p$ decays and a \jpsi veto is used to remove backgrounds from \bcjpsimunu decays. The semi-leptonic \bcjpsimunu decays, where \jpsimumu, contribute to the background of \bmumu decays when a muon from the \jpsi forms a good vertex with the muon from the $B_{c}^{+}$ decay. Due to the high mass of the $B_{c}^{+}$ this could place mis-reconstructed candidates within the \bs mass window. A `\jpsi veto' can be used to remove background events from \bcjpsimunu decays. The veto works by removing events where one muon from the \bmumu candidate combined with any other oppositely charged muon in the event has $m_{\mu^{+}\mu^{-}}$ -$ m_{J/\psi}} < 30$  \mevcc. %The veto has a rejection power of X  $\%$ on \bcjpsimunu events that have passed \bmumu other selection cuts in Table~\ref{tab:fullpreselection} and rejects only  $\%$ of \bmumu signal events. The expected number of \bcjpsimunu events after the full selection can be found in Section~X. 
 
@@ -636,8 +636,8 @@ decays at the end of this section.
 %\hline
 %\bs or $B^{+}$          & 5320 \mevcc $<$ M $<$ 6000 \mevcc           & 5100 \mevcc $<$ M $<$ 5500  \mevcc      \\                          
 %                        & DIRA $>$ 0                                    & DIRA $>$ 0                             \\
-%                        & FD $\chi^{2}$ $>$ 121                       & FD $\chi^{2}$ $>$ 121                  \\       
-%                        & IP $\chi^{2}$ $<$ 25                        & IP $\chi^{2}$ $<$ 25                   \\
+%                        & \chiFD $>$ 121                       & \chiFD $>$ 121                  \\       
+%                        & \chiIP $<$ 25                        & \chiIP $<$ 25                   \\
 %                        & Vertex $\chi^{2}$/ndof $<$ 9                  & Vertex $\chi^{2}$/ndof $<$ 9              \\      
 %                        & DOCA $<$ 0.3 mm                             & DOCA $<$ 0.3 mm                          \\    
 %                        & $\tau$ $<$ 13.248 \ps                       & $\tau$ $<$ 13.248 \ps                \\
@@ -645,7 +645,7 @@ decays at the end of this section.
 
 %\hline
 %Daughter $\mu$ or $h$   & Track $\chi^{2}$/ndof $<$ 3 (4)               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
-%                        & Minimum IP $\chi^{2}$ $>$ 9                 & Minimum IP $\chi^{2}$ $>$ 9           \\             
+%                        & Minimum \chiIP $>$ 9                 & Minimum \chiIP $>$ 9           \\             
 %                        & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc    \\
 %                        & $p$ $<$ 500 \gevc                             & $p$ $<$ 500 \gevc                       \\
 %                        & ghost probability $<$ 0.3 (0.4)             & ghost probability $<$ 0.3 (0.4)   \\
@@ -769,13 +769,13 @@ These three factors affect the performance of the BDT however the importance of 
 The BDTS uses input variables similar to those in the stripping selection to classify events;
 \begin{itemize}
 \item impact parameter \chisqd of the \bsd
-\item vertex \chisqd of the \bsd
+\item \chivtx of the \bsd
 \item direction cosine of \bsd
 \item distance of closest approach of the muons
 \item minimum impact parameter \chisqd of the muons with respect to all primary vertices in the event
 \item impact parameter of the \bsd, this is the distance of closest approach of the $B$ to the primary vertex
 \end{itemize}
-The signal and background samples used to train the BDTS are simulated \bsmumu decays and background candidates in a sample of Run~1 data from the mass ranges 4800 - 5000 \mevcc and 5500 - 6000 \mevcc. The selection cuts listed in Table~\ref{tab:BDTSpresel} are applied to the training samples and the training parameters used are listed in Table~\ref{tab:BDTStrainingparams}. The output of the BDTS is flattened between 0 and 1 so that signal is uniformly distributed across the range and background is peaked at zero as illustrated in Figure~\ref{fig:FlatteningBDTS}. The BDTS is applied to all candidates passing the \bmumu, \bhh and \bujpsik stripping lines, and candidates are required to have a BDTS value above 0.05. When the BDTS is applied to \bujpsik decays the distance of closest approach of the muons refers to the muons in the \jpsi and the vertex \chisqd is of the \jpsi. %The chosen cut value has a efficiency of X $\%$ on \bsmumu decays and reject X $\%$ of \bbbarmumux decays. 
+The signal and background samples used to train the BDTS are simulated \bsmumu decays and background candidates in a sample of Run~1 data from the mass ranges 4800 - 5000 \mevcc and 5500 - 6000 \mevcc. The selection cuts listed in Table~\ref{tab:BDTSpresel} are applied to the training samples and the training parameters used are listed in Table~\ref{tab:BDTStrainingparams}. The output of the BDTS is flattened between 0 and 1 so that signal is uniformly distributed across the range and background is peaked at zero as illustrated in Figure~\ref{fig:FlatteningBDTS}. The BDTS is applied to all candidates passing the \bmumu, \bhh and \bujpsik stripping lines, and candidates are required to have a BDTS value above 0.05. When the BDTS is applied to \bujpsik decays the distance of closest approach of the muons refers to the muons in the \jpsi and the \chivtx is of the \jpsi. %The chosen cut value has a efficiency of X $\%$ on \bsmumu decays and reject X $\%$ of \bbbarmumux decays. 
 The performance of the BDTS at removing backgrounds is illustrated in Figure~\ref{fig:BDTSpreformance}. %Full details of the development of the BDTS can be found in~\ref{}.
 
 \begin{figure}[htbp]
@@ -822,9 +822,9 @@ The performance of the BDTS at removing backgrounds is illustrated in Figure~\re
 \hline
 \multicolumn{2}{c}{Selection applied to BDTS training samples.} \\ \hline
 \bs & $\mu^{\pm}$\\ \hline
- FD $\chi^{2}$ $>$ 225 & $p_{T}$ $>$ 500 \mevc \\
- IP $\chi^{2}$ $<$ 25  &  track $\chi^{2}$/$ndof$ $<$ 3    \\
- Vertex $\chi^{2}$/$ndof$ $<$ 9    & minimum IP $\chi^{2}$ $>$ 25   \\
+ \chiFD $>$ 225 & $p_{T}$ $>$ 500 \mevc \\
+ \chiIP $<$ 25  &   \chitrk $<$ 3    \\
+ Vertex $\chi^{2}$/$ndof$ $<$ 9    & minimum \chiIP $>$ 25   \\
  DOCA $<$ 0.3 mm    & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\
  $\tau$ $<$ 13.248 \ps  &  $p$ $<$ 500 \gevc  \\
  $p_{T}$ $>$ 500 \mevc  & \\ 
@@ -885,9 +885,9 @@ The isolations are used along with five other variables in the global BDT. The f
 \item Long track isolation
 \item VELO track isolation
 \item $\sqrt{\Delta \phi^{2} + \Delta \eta^{2}}$, where $\Delta \phi$ is the difference in azimuthal angles of the muons and $\Delta \eta$ the difference in the pseudo-rapidity of the muons
-\item the smallest IP \chisqd with respect to the primary vertex of the \bsmumu of the muons
-\item vertex \chisqd of the \bs
-\item IP \chisqd of the \bs with respect to the primary vertex
+\item the smallest \chiIP with respect to the primary vertex of the \bsmumu of the muons
+\item \chivtx of the \bs
+\item \chiIP of the \bs with respect to the primary vertex
 \item the angle between the momentum vector of the \bs and the vector connecting the production and decay vertices of the \bs
 \end{itemize}
 
@@ -931,7 +931,7 @@ nCuts & 30 \\
 
 
 Simulated \bsmumu and \bbbarmumux decays are used to provide large signal and background training samples for the global BDT. %In data \bsmumu candidates in the mass range 5431 to 6550 \mevcc consist almost entirely of \bbbarmumux decays, however the number of candidates in this mass range is too small to be a useful as sample of background candidates to train a BDT with comparable performance to one trained entirely on simulated decays. 
-The simulated sample \bbbarmumux decays corresponds to the background expected with 7~\fb of data from $pp$ collisions at $\sqrt{s}$~=~8~\tev. The production of such a large sample requires a lot of space to be saved, therefore several measures were taken to reduce the size needed to save the simulated \bbbarmumux decays. The cuts, listed in Table~\ref{tab:MC_decays}, were applied to the simulated decays as they were generated to reduce the number of events saved on disk. Also the stripping selection cuts in Table~\ref{tab:PreviousStrippingA} were applied and candidates that did not pass the stripping selection were not saved. Unfortunately the \bbbarmumux sample therefore does not include candidates that are selected by the looser stripping selection described in Section~\ref{sec:cutbasedsel}. In order to gain the best performance of the BDT on data the same cuts are applied to data that are applied to the samples used to train the BDT. Therefore the original cuts on FD \chisqd and daughter IP \chisqd listed in Table~\ref{tab:PreviousStrippingA} must be used to select \bsmumu candidates. 
+The simulated sample \bbbarmumux decays corresponds to the background expected with 7~\fb of data from $pp$ collisions at $\sqrt{s}$~=~8~\tev. The production of such a large sample requires a lot of space to be saved, therefore several measures were taken to reduce the size needed to save the simulated \bbbarmumux decays. The cuts, listed in Table~\ref{tab:MC_decays}, were applied to the simulated decays as they were generated to reduce the number of events saved on disk. Also the stripping selection cuts in Table~\ref{tab:PreviousStrippingA} were applied and candidates that did not pass the stripping selection were not saved. Unfortunately the \bbbarmumux sample therefore does not include candidates that are selected by the looser stripping selection described in Section~\ref{sec:cutbasedsel}. In order to gain the best performance of the BDT on data the same cuts are applied to data that are applied to the samples used to train the BDT. Therefore the original cuts on \chiFD and daughter \chiIP listed in Table~\ref{tab:PreviousStrippingA} must be used to select \bsmumu candidates. 
 The complete list of selection requirements applied to the training samples used to develop global BDT are listed in Table~\ref{tab:BDTpresel}, the same selection is applied to \bsmumu and \bbbarmumux decays.  
 \begin{table}[htbp]
 \begin{center}
@@ -940,9 +940,9 @@ The complete list of selection requirements applied to the training samples used
 \hline
 \multicolumn{2}{c}{Selection applied to global BDT training samples.} \\ \hline
 \bs & $\mu^{\pm}$\\ \hline
- FD $\chi^{2}$ $>$ 225 & $p_{T}$ $>$ 500 \mevc \\
- IP $\chi^{2}$ $<$ 25  &  track $\chi^{2}$/$ndof$ $<$ 3    \\
- Vertex $\chi^{2}$/$ndof$ $<$ 9    & minimum IP $\chi^{2}$ $>$ 25   \\
+ \chiFD $>$ 225 & $p_{T}$ $>$ 500 \mevc \\
+ \chiIP $<$ 25  & \chitrk $<$ 3    \\
+ Vertex $\chi^{2}$/$ndof$ $<$ 9    & minimum \chiIP $>$ 25   \\
  DOCA $<$ 0.3 mm    & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\
  $\tau$ $<$ 13.248 \ps  &  $p$ $<$ 500 \gevc  \\
  $p_{T}$ $>$ 500 \mevc  &  isMuon = True\\ 
@@ -1018,15 +1018,15 @@ Particle                & \bsmumu                              \\%        & \bhh
 \hline
 \bsd          & 4900 \mevcc $<$ M $<$ 6000 \mevcc     \\%         & 5000 \mevcc $<$ M $<$ 5800  \mevcc      \\                         
                         & DIRA $>$ 0                         \\%              & DIRA $>$ 0                             \\
-                        & FD $\chi^{2}$ $>$ 225              \\%            & FD $\chi^{2}$ $>$ 225                  \\      
-                        & IP $\chi^{2}$ $<$ 25             \\%              & IP $\chi^{2}$ $<$ 25                   \\
+                        & \chiFD $>$ 225              \\%            & \chiFD $>$ 225                  \\      
+                        & \chiIP $<$ 25             \\%              & \chiIP $<$ 25                   \\
                         & Vertex $\chi^{2}$/$ndof$ $<$ 9      \\%               & Vertex $\chi^{2}$/ndof $<$ 9              \\      
                         & DOCA $<$ 0.3 mm    \\%                            & DOCA $<$ 0.3 mm                          \\    
                         & $\tau$ $<$ 13.248 \ps  \\%                        & $\tau$ $<$ 13.248 \ps                \\
                         & $p_{T}$ $>$ 500 \mevc  \\%                         & $p_{T}$ $>$ 500 \mevc                \\%%
 \hline
-$\mu$   & Track $\chi^{2}$/$ndof$ $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
-                        & Minimum IP $\chi^{2}$ $>$ 25 \\%                   & Minimum IP $\chi^{2}$ $>$ 25           \\             
+$\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
+                        & Minimum \chiIP $>$ 25 \\%                   & Minimum \chiIP $>$ 25           \\             
                         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\%          & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc    \\
                         & $p$ $<$ 500 \gevc    \\%                            & $p$ $<$ 500 \gevc                       \\
                         & ghost probability $<$ 0.3 (0.4)     \\%           & ghost probability $<$ 0.3 (0.4)   \\    
@@ -1059,15 +1059,15 @@ Trigger requirements & L0Global = DEC\\
 %\hline
 %\bs or $B^{+}$          & 4900 \mevcc $<$ M $<$ 6000 \mevcc           & 5000 \mevcc $<$ M $<$ 5800  \mevcc      \\                         
 %                        & DIRA $>$ 0                                    & DIRA $>$ 0                             \\
-%                        & FD $\chi^{2}$ $>$ 225                       & FD $\chi^{2}$ $>$ 225                  \\      
-%                        & IP $\chi^{2}$ $<$ 25                        & IP $\chi^{2}$ $<$ 25                   \\
+%                        & \chiFD $>$ 225                       & \chiFD $>$ 225                  \\      
+%                        & \chiIP $<$ 25                        & \chiIP $<$ 25                   \\
 %                        & Vertex $\chi^{2}$/ndof $<$ 9                  & Vertex $\chi^{2}$/ndof $<$ 9              \\      
 %                        & DOCA $<$ 0.3 mm                             & DOCA $<$ 0.3 mm                          \\    
 %                        & $\tau$ $<$ 13.248 \ps                       & $\tau$ $<$ 13.248 \ps                \\
 %                        & $p_{T}$ $>$ 500 \mevc                        & $p_{T}$ $>$ 500 \mevc                \\%%
 %\hline
 %Daughter $\mu$ or $h$   & Track $\chi^{2}$/ndof $<$ 3 (4)               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
-%                        & Minimum IP $\chi^{2}$ $>$ 25                 & Minimum IP $\chi^{2}$ $>$ 25           \\             
+%                        & Minimum \chiIP $>$ 25                 & Minimum \chiIP $>$ 25           \\             
 %                        & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc    \\
 %                        & $p$ $<$ 500 \gevc                             & $p$ $<$ 500 \gevc                       \%\
 %                        & ghost probability $<$ 0.3 (0.4)             & ghost probability $<$ 0.3 (0.4)   \\
@@ -1100,23 +1100,23 @@ Trigger requirements & L0Global = DEC\\
 %\hline             
 %$B^{+}$        & |M - M$_{PDG}$| $<$   500 \mevcc           & \bs         & |M - M$_{PDG}$| $<$   500 \mevcc       %      \\          
 %                      & Vertex $\chi^{2}$/ndof < 45         &            &  Vertex $\chi^{2}$/ndof < 75         &  %  \\       
-%                      & IP $\chi^{2}$ $<$ 25                &            &  IP $\chi^{2}$ $<$ 25               \\ %
+%                      & \chiIP $<$ 25                &            &  \chiIP $<$ 25               \\ %
 
 %\hline   
 %\jpsi                & |M - M$_{PDG}$| $<$   100 \mevcc      & \jpsi      &  |M - M$_{PDG}$| $<$   100 \mevcc     \\
 %                    & DIRA > 0                             &           &   DIRA > 0           \\
-%                    & FD $\chi^{2}$ $>$ 225                &           & FD $\chi^{2}$ $>$ 225        \\
+%                    & \chiFD $>$ 225                &           & \chiFD $>$ 225        \\
 %                    & Vertex $\chi^{2}$/ndof < 9           &           & Vertex $\chi^{2}$/ndof < 9       \\  
 %                    &   DOCA $<$ 0.3 mm                   &            & DOCA $<$ 0.3 mm      \\  
 %\hline             
 %$\mu^{\pm}$               & Track $\chi^{2}$/ndof < 3           &$\mu$       &  Track $\chi^{2}$/ndof < 3 \\       
 %                    & isMuon = True                      &            &isMuon = True    \\ 
-%                    & Minimum IP $\chi^{2}$ $>$ 25        &            & Minimum IP $\chi^{2}$ $>$ 25    \\                   
+%                    & Minimum \chiIP $>$ 25        &            & Minimum \chiIP $>$ 25    \\                   
 %                    &  0.25 \gevc $<$ $p_{T}$            &            &  0.25 \gevc $<$ $p_{T}$    \\
 %\hline
 %$K^{+}$             & Track $\chi^{2}$/ndof < 3           & $\phi$           &  |M - M$_{PDG}$| $<$   20 \mevcc  \\
-%                    & $p_{T}$ $>$ 0.25 \gevc              &           &  Minimum IP $\chi^{2}$ $>$ 4  \\
-%                   & Minimum IP $\chi^{2}$ $>$ 25         & K$^{\pm}$           & Track $\chi^{2}$/ndof < 3  \\
+%                    & $p_{T}$ $>$ 0.25 \gevc              &           &  Minimum \chiIP $>$ 4  \\
+%                   & Minimum \chiIP $>$ 25         & K$^{\pm}$           & Track $\chi^{2}$/ndof < 3  \\
 %                  &                                     &                       & $p_{T}$ $>$ 0.25 \gevc     
 %                        & BDTS > 0.05                                 &           \\                   
 %\hline
@@ -1485,15 +1485,15 @@ Particle                & \bsmumu                              \\%        & \bhh
 \hline
 \bs          & 5320 \mevcc $<$ M $<$ 6000 \mevcc     \\%         & 5000 \mevcc $<$ M $<$ 5800  \mevcc      \\                         
                         & DIRA $>$ 0                         \\%              & DIRA $>$ 0                             \\
-                        & FD $\chi^{2}$ $>$ 225              \\%            & FD $\chi^{2}$ $>$ 225                  \\      
-                        & IP $\chi^{2}$ $<$ 25             \\%              & IP $\chi^{2}$ $<$ 25                   \\
+                        & \chiFD $>$ 225              \\%            & \chiFD $>$ 225                  \\      
+                        & \chiIP $<$ 25             \\%              & \chiIP $<$ 25                   \\
                         & Vertex $\chi^{2}$/$ndof$ $<$ 9      \\%               & Vertex $\chi^{2}$/ndof $<$ 9              \\      
                         & DOCA $<$ 0.3 mm    \\%                            & DOCA $<$ 0.3 mm                          \\    
                         & $\tau$ $<$ 13.248 \ps  \\%                        & $\tau$ $<$ 13.248 \ps                \\
                         & $p_{T}$ $>$ 500 \mevc  \\%                         & $p_{T}$ $>$ 500 \mevc                \\%%
 \hline 
-$\mu$   & Track $\chi^{2}$/$ndof$ $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
-                        & Minimum IP $\chi^{2}$ $>$ 25 \\%                   & Minimum IP $\chi^{2}$ $>$ 25           \\             
+$\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
+                        & Minimum \chiIP $>$ 25 \\%                   & Minimum \chiIP $>$ 25           \\             
                         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\%          & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc    \\
                         & $p$ $<$ 500 \gevc    \\%                            & $p$ $<$ 500 \gevc                       \\
                         & ghost probability $<$ 0.3 (0.4)     \\%           & ghost probability $<$ 0.3 (0.4)   \\    
