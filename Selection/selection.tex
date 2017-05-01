@@ -1,12 +1,20 @@
 \chapter{Event selection}
 \label{selection_chapter}
 
-This chapter describes the criteria used to select and identify \bmumu candidates in data to measure the \bmumu branching fractions and the \bsmumu effective lifetime. In addition to identifying \bmumu, several other decays are needed, % for the measurements and validating the analysis method. 
-the \BF and effective lifetime measurements both require \bsjpsiphi and \bhh decays, where $h = K, \pi$ and the \BF measurements also use \bujpsik decays.  
+This chapter describes the criteria to select and identify $B$-meson decays needed for two analyses: the measurement of the \bmumu \BFs; and the measurement of the \bsmumu \el. The backgrounds that \bmumu decays must be seperated from in data are described in Section~\ref{sec:backgroundoutline}. The development of the selection criteria and analysis stratergies rely on information from simulated particle decays, these are detailed in Section~\ref{sec:MCsamples}. 
 
-Although \bsmumu decays leave a clear two muon signature in the detector, the identification of these decays is challenging because these decays occur very rarely and there are many other processes that can mimic a \bmumu decays in the detector, creating backgrounds in the data. The different background sources present in the data set are discussed in Section~\ref{sec:backgroundoutline}. The development of the selection criteria and analysis strategies to study these decays uses information from simulated particles decays, the details of the simulated decays are given in Section~\ref{sec:MCsamples}. 
-The selection criteria are different for the two analyses. The selection for the \BF measurements %has been continuously developed over many years and the latest version 
-is detailed in Section~\ref{sec:BFsel}. This selection has been adapted for the effective lifetime measurement and the changes in the selection are given in Section~\ref{sec:ELsel}.
+The criteria used to identify $B$-meson decays for the \BF measurements are described in Section~\ref{sec:BFsel}. As well as \bmumu decays this analysis also uses \bukpsik, \bsjpsiphi and \bhh decays, where $h = K, \pi$. Firstly the trigger requirements to select these decays are given in Section~\ref{sec:BFtrigger}. Then in Section~\ref{sec:cutbasedsel} cut-based citeria used to identify each $B$-meson decay are described alongside a study into the optimisation of signal efficiency for several cuts used in this stage of the selection process. The particle identification requirements used to seperate \bmumu decays fro backgroudsn are given in Section~\ref{sec:BFpid}. The last step in the selection reilse on multivariate classifiers that are descrived in Section~\ref{sec:MVC}. A summary of the criteria used to select \bmumu decays for the \BF measurements is given in Section~\ref{sec:BFsummary}.
+
+The identification and selection criteria of decays used for the \BF measurements are adapted for the \el measurement as described in Section~\ref{sec:ELsel}. Similar to the \BF analysis, the \el measurement requires \bsjpsiphi, \bdkpi and \bskk decays as well as \bsmumu decays. The changes made to the trigger requirements, mass range of \bsmumu candidates and the particle identification requirements are presented in Sections~\ref{sec:ELtrigger}, \ref{sec:ELmass} and \ref{sec:ELpid}, respectively. Section~\ref{sec:ELmva} describes an investigation into multivariate classifiers for the \el measurement. Finally the complete set of selection criteria are summarised in Section~\ref{sec:ELsummary}. 
+
+
+
+%This chapter describes the criteria used to select and identify \bmumu candidates in data to measure the \bmumu branching fractions and the \bsmumu effective lifetime. In addition to identifying \bmumu, several other decays are needed, % for the measurements and validating the analysis method. 
+%the \BF and effective lifetime measurements both require \bsjpsiphi and \bhh decays, where $h = K, \pi$ and the \BF measurements also use \bujpsik decays.  
+
+%Although \bsmumu decays leave a clear two muon signature in the detector, the identification of these decays is challenging because these decays occur very rarely and there are many other processes that can mimic a \bmumu decays in the detector, creating backgrounds in the data. The different background sources present in the data set are discussed in Section~\ref{sec:backgroundoutline}. The development of the selection criteria and analysis strategies to study these decays uses information from simulated particles decays, the details of the simulated decays are given in Section~\ref{sec:MCsamples}. 
+%The selection criteria are different for the two analyses. The selection for the \BF measurements %has been continuously developed over many years and the latest version 
+%is detailed in Section~\ref{sec:BFsel}. This selection has been adapted for the effective lifetime measurement and the changes in the selection are given in Section~\ref{sec:ELsel}.
 
 
 %The LHCb collaboration has published a number of papers studying the \bsmumu decay, the selection described in this Chapter has been built up over a number of years by a range of different collaboration members. The studies detailed in Sections \ref{strippingstudies} and \ref{sec:ELsel} were completed for this thesis as well as all figures and quoted efficiencies.
@@ -33,8 +41,33 @@ The main background sources are:
 \end{itemize}
 
 %The selection aims to separate real \bsmumu decays from the background to produce a set of \bsmumu candidates with a high signal purity from which the \bs effective lifetime can be measured. 
-The separation of \bmumu decays from the backgrounds is challenging because \bmumu decays are highly suppressed decays therefore reconstructed candidates are predominately made from background decays.
-The removal of some background decays is straight forward by taking advantage of obvious differences between the signal and the backgrounds, however backgrounds from mis-identified semi-leptonic and \bhh decays and long-lived combinatorial background are more challenging to remove. %The dimuon invariant mass distribution from the last published \bmumu Branching Fraction analysis but LHCb is shown in Figure~\ref{fig:LHCbCMS}, components for background from mis-identified semi-leptonic and \bhh decays are present below the \bs mass and the long-lived combinatorial background has an almost flat distribution across the entire mass range. 
+The \BFs of the backgrounds from mis-identfied decays are shown in Table~\ref{}. The separation of \bmumu decays from the backgrounds is challenging because \bmumu decays are much less abundant than the backgrounds therefore reconstructed candidates are predominately made from background decays.
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{ll}
+\hline
+Decay & Branching Fraction \\
+\bskk & $(2.52 \pm 0.17) \times 10^{-5}$~\cite{Olive:2016xmw}\\ 
+\bskpi & $(5.6 \pm 0.6) \times 10^{-6}$~\cite{Olive:2016xmw} \\
+\bdkpi & $(1.96 \pm 0.05)\times 10^{-5}$~\cite{Olive:2016xmw}\\
+\bdpipi & $(5.12 \pm 0.19) \times 10^{-6}$~\cite{Olive:2016xmw} \\
+\bdpimunu& $(1.45 \pm 0.05) \times 10^{-4}$~\cite{Olive:2016xmw} \\
+\bsKmunu& $(1.42 \pm 0.35) \times 10^{-4}$~\cite{Olive:2016xmw, Bouchard:2014ypa,PhysRevD.91.074510} \\ % not measured a prediction using form factors from QCD (2 ana refs) and PDG V_ub
+\lambdab& $(4.1 \pm 1.0) \times 10^{-4}$~\cite{Aaij:2015bfa} \\
+\bupimumu& $(1.83 \pm 0.25) \times 10^{-8}$~\cite{Aaij:2015nea} \\ %LHCb measurement
+\bdpimumu& $(8.6 \pm 3.6) \times 10^{-9}$~\cite{Aaij:2015nea,Wang:2012ab } \\ % not measured uses theory perdiction for ratio with bupimumu
+\bcjpsimunu & $(9.5 \pm 0.2) \times 10^{-6}$~\cite{Aaij:2012dd,Aaij:2014jxa}\\ % not measured use LHCb ration measurements
+\hline
+\end{tabular}
+\vspace{0.7cm}
+\caption{Measured or predicted branching fractions for background decays.}
+\label{tab:backgroundBFs}
+\end{center}
+\vspace{-1.0cm}
+\end{table}
+
+%The removal of some background decays is straight forward by taking advantage of obvious differences between the signal and the backgrounds, however backgrounds from mis-identified semi-leptonic and \bhh decays and long-lived combinatorial background are more challenging to remove. %The dimuon invariant mass distribution from the last published \bmumu Branching Fraction analysis but LHCb is shown in Figure~\ref{fig:LHCbCMS}, components for background from mis-identified semi-leptonic and \bhh decays are present below the \bs mass and the long-lived combinatorial background has an almost flat distribution across the entire mass range. 
 %The \bdmumu is also a background process for measuring the \bsmumu effective lifetime, the only way to seperate \bsmumu and \bdmumu decays is by using the different masses of the \bs and $B^{0}$ mesons. (In the bullet points?)
 
 %Maybe say how since the decay is so rare there are many many more reconstruced background decays than real bsmumu decays?
