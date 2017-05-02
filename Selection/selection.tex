@@ -177,9 +177,16 @@ Decay & Generator level cuts & Data taking & Simulation & Events  \\
 %\vspace{-1.0cm}
 %\end{table}
 
-There exist multiple versions of the simulation because it is updated as understanding of the detector improves and to incorporate differences in data taking conditions, such as the trigger lines or centre-of-mass energy. Similar simulation versions must be used to compare different types of simulated decays or data taking conditions so that differences are not masked by variations in the simulation of the decays. %The simulated decays in Table~\ref{tab:MC_decays} listed under the studies they are used in. 
+There exist multiple versions of the simulation because it is updated as understanding of the detector improves and to incorporate differences in data taking conditions, such as the trigger lines or centre-of-mass energy. 
+Similar versions are chosen for samples used within each study listed in Table~\ref{tab:MC_decays}, so that differences are not masked by variations in the simulation of the decays.
 
-Simulated \bbbarmumux decays are used to understand long-lived combinatorial background. However producing a large enough sample of these decays to be useful is computational expensive and produces large output files to save generated decays. Therefore cuts are applied at the generator level to reduce the size of the samples and to speed up the simulation process. The cuts, listed in Table~\ref{tab:MC_decays}, are applied on the magnitude of the muon momenta, the reconstructed mass of the muon pair, the product of the momenta of the muons and the distance of closest approach of the two muons. %The generator level cuts save a factor of 5 of what needs to be saved, striping filtering also reduces it by a factor of 10! The information is in the LHCb-ANA-2013-032, the 2012 bbbarmumux sample corresponds to 7fb-1.
+
+% for each study given in the table consistent 
+
+%samples with similar simulation versions are used through each study 
+%Similar simulation versions must be used to compare different types of simulated decays or data taking conditions so that differences are not masked by variations in the simulation of the decays. %The simulated decays in Table~\ref{tab:MC_decays} listed under the studies they are used in. 
+
+Simulated \bbbarmumux decays are used to understand long-lived combinatorial background. However producing a large enough sample of these decays to be useful is computational expensive and produces large output files. Therefore cuts are applied at the generator level to reduce the size of the samples and to speed up the simulation process. The cuts, listed in Table~\ref{tab:MC_decays}, are applied on the magnitude of the muon momenta, the reconstructed mass of the muon pair, the product of the transverse momenta of the muons and the distance of closest approach of the tracks of the two muons. In addition to these samples are `stripping filtered' which means that only candidates that pass the stripping selection criteria, discussed in Section~\ref{}, are saved. The cuts applied in the stripping selection are given in Table~\ref{tab:PreviousStrippingA}.%The generator level cuts save a factor of 5 of what needs to be saved, striping filtering also reduces it by a factor of 10! The information is in the LHCb-ANA-2013-032, the 2012 bbbarmumux sample corresponds to 7fb-1.
   
 %The development of the selection and analysis of \bsmumu decays requires the use of simuluated decays, as described in Section X. The reconstucted \bsmumu candidates come for a range of different different processes, as already discussed, in order to seperate real \bsmumu decays from the background, large clean samples of simulated decays are used so that the differences between signal and background decays can be understood. Futhermore simulated samples are needed to understand 
 
@@ -192,7 +199,7 @@ Simulated \bbbarmumux decays are used to understand long-lived combinatorial bac
  
 %Simulated events for \bsmumu, \bskk and \bdkpi for data taken in 2011, 2012, 2015 and 2016 are used for developing the analysis method in Chapter X. 
 
-%The production of simulated events is constantly being developed as understanding of the detector increases and to include changes made for each data is recorded at theLHC. Therefore there exists a number of different simulation versions that can be used to simulate events.
+%The production of simulated decays is constantly being developed as understanding of the detector increases and to include changes made for each data taking year. Therefore there exist samples fo a number of different simulation versions that can be used to simulate events.
 
 %Each year data is collected at LHCb the conditions the experiment operates at and the proton collisions delivered by the LHC change. These changes include differences in the the selection used in the trigger for each year and increases in the centre of mass energy of proton collisions. 
 
@@ -430,9 +437,18 @@ The stripping selection imposes a greater number of cuts to select \bhh decays c
 \subsubsection{Optimisation of \bsmumu stripping selection}
 \label{strippingstudies}
 
+%Simulated decays listed in Table~\ref{tab:Run1strippingEff} are used to study the signal efficieny of selection cuts used in each of the \bmumu, \bhh and \bujpsik stripping lines.
 
+%The efficiency is calculated as the fraction of candidates that pass a selection cut in the sample, given that the candidates are in the dectector acceptance and 
+%The efficiency for each selection cut is calculated as 
+%\begin{equation}
+%\epsilon = \frac{\text{Number of canddas passing selection cut}}{\text{Number of decays in sample}}
+%\end{equation}
+% of each stripping line to select the decays it was designed to select. 
+%The efficicnecy are caluclatuted as ... for all simlarted decays that fall withing the detector acceptance and pass some other cuts. 
 The efficiency of the cuts used in the stripping lines to selecting \bmumu, \bhh and \bujpsik decays are shown in Table \ref{tab:Run1strippingEff}; only cuts that are in common with the \bmumu stripping lines are listed. The efficiencies of \bhh and \bujpsik are studied as well as \bmumu because the selection of these channels are used for the normalisation of the branching fractions. %must be kept similar to reduce systematic uncertainties in the normalisation procedure described in Chapter~\ref{sec:BFanalysis}. 
-The efficiencies are evaluated using 2012 sim06 simulated events that have the minimum track \pt, \chitrk and isMuon requirements imposed. These cuts are applied during the reconstruction and particles that do not pass these requirements are not included in the samples of simulated decays. No trigger requirements have been applied so that only the effect of the stripping selection on the efficiencies can be assessed. During the simulation of particle decays the trigger is run in {\it pass through} mode so that all reconstructed are saved, not just those that have passed a trigger line.
+The efficiencies are evaluated using 2012 sim06 simulated events that have the minimum track \pt, \chitrk and isMuon requirements imposed. %These cuts are applied during the reconstruction and particles that do not pass these requirements are not included in the samples of simulated decays. 
+No trigger requirements have been applied so that only the effect of the stripping selection on the efficiencies can be assessed. During the simulation of particle decays the trigger is run in {\it pass through} mode so that all reconstructed are saved, not just those that have passed a trigger line.
 
 \afterpage{
 \begin{landscape}
@@ -753,7 +769,7 @@ The second classifier (Sect.~\ref{sec:globalBDT}), called the global BDT, is use
 The BDTS is necessary to reduce the background to a more manageable level for the global BDT.
 
 \subsubsection{Boosted Decision Trees}
-\label{sec:GeneralBDT}
+Su\label{sec:GeneralBDT}
 A BDT is made up of the combined outputs of separate decision trees. A decision tree begins with a data sample, where each decay is know to be signal or background and a set of variables describing them. The decision tree applies a cut on a variable that will be the most effective at separating the signal and background in the sample and creates two sub-samples. Another cut is then applied to each of the sub-samples to further separate signal from background. This process is repeated until either a certain number of cuts, defined as the depth of the tree, or the number of candidates in each sub-sample has reached a minimum number. Each sub-sample produced at the end of the tree is called a leaf. The tree uses the knowledge of whether decays are signal or background to assign a value of +1 or -1 to every decay. A decay is given a value +1 if it is in a leaf where the majority is signal and the value -1 if it is in a leaf that has a majority of background decays. The final decisions made by the tree are not perfect, some signal (background) decays will be mis-classified as background and given the value of -1 (+1). %The decision making process of a decision tree is illustrated in Figure~\ref{fig:DT}.
 
 %\begin{figure}
@@ -902,7 +918,14 @@ nCuts & 20 \\
 The global BDT is the final step in identifying \bmumu decays and it is very effective at separating them from long-lived combinatorial background decays. The discriminating power achieved by the global BDT is mostly dependant on isolation variables. Isolation criteria provide a measure of how far away each muon from a \bmumu candidate is from other tracks in the event. The tracks of the muons from a real \bmumu decays will be, in general, far from other tracks in the event because the \bmumu decay tree contains no other tracks apart from the muons. However long-lived combinatorial background arises from semi-leptonic decays where the muon tracks are likely to be close to other tracks that originate from the same decay tree. % as the muon. %Various different definitions of isolations have been used across different experiments from D0 and CDF to ATLAS, CMS and LHCb. 
 Isolation criteria are very useful in the selection of very rare decays like \bsmumu because they enable background to be removed whilst keeping a high efficiency for signal decays.
 
-Two isolation variables are used in the global BDT, one compares long tracks in the event to the muons in \bmumu candidates and the other compares VELO tracks in the event to the muons. The definition of the track types can be found in Section~\ref{sec:Track_recon}. The isolation variables are built from the output of BDTs. For each type of track a BDT is trained on simulated \bsmumu and \bbbarmumux decays using a set of input variables that describe track and vertex properties. The BDT compares the $\mu^{+}$ from a \bsmumu candidate with all other tracks in the event, excluding the track of the $\mu^{-}$, and gives an output, {\it iso$_{\mu^{+}}$(track)}, for each possible $\mu^{+}$ and track pairing. The process is repeated for the $\mu^{-}$. The BDT is designed to produce high output values for muons from \bbbarmumux decays and a low value for muons from \bsmumu decays. The isolation variable of a \bsmumu candidate is then composed of the sum of the highest values of {\it iso$_{\mu^{+}}$(track)} and {\it iso$_{\mu^{-}}$(track)} for any tracks in the event. The separation power of these isolations are shown in Figure~\ref{fig:Isolations}. Full details of the isolation variables can be found in reference~\cite{Archilli:1970886}.
+Two isolation criteria are used in the global BDT, one compares long tracks in the event to the muons in \bmumu candidates and the other compares VELO tracks in the event to the muons. The definition of the track types can be found in Section~\ref{sec:Track_recon}. The isolation variables are built from the output of BDTs. For each type of track a BDT is trained on simulated \bsmumu and \bbbarmumux decays using a set of input variables that describe track and vertex properties. 
+The BDT compares the $\mu^{+}$ from a \bsmumu candidate with all other tracks in the event, excluding the track of the $\mu^{-}$, and gives an output for each possible $\mu^{+}$ and track pairing. The process is repeated for the $\mu^{-}$. The BDT is designed to produce high output values for muons from \bbbarmumux decays and a low value for muons from \bsmumu decays. The isolation criteria of a \bsmumu candidate is then composed of the sum of the highest BDT output values for the $\mu^{+}$ and the $\mu^{-}$. The separation power of these isolations are shown in Figure~\ref{fig:Isolations}. Full details of the isolation variables can be found in reference~\cite{Archilli:1970886}.
+
+
+
+Two isolation criteria are used in the global BDT, one compares long tracks in the event to the muons in \bmumu candidates and the other compares VELO tracks in the event to the muons. The definition of the track types can be found in Section~\ref{sec:Trackrecon}. The isolation variables are built from the output of BDTs. For each type of track a BDT is trained on simulated \bsmumu nd \bbbarmumux decays using a set of input variables that describe track and vertex properties.
+The BDT compares the $\mu^{+}$ from a \bsmumu candidate with all other tracks in the event, excluding the track of the $\mu^{-}$ and gives an output for each possible $\mu^{+}$ and track pairing. The process is repeated for the $\mu^{-}$. The BDT is designd to produce high output values for muons from \bbbarmumux decays and a low value for muons from \bsmumu decays. The isolation citeria of a \bsmumu candidate is then composed of the sum of the highest BDT output values for the $\mu^{+}$ and the $\mu^{-}$. The separation power of these isolations are shown in Figure~\ref{fig:Isolations}. Full details of the isolation variables can be found in reference~\cite{Archilli:1970886}.
+
 
 \begin{figure}[htbp]
     \centering
@@ -962,8 +985,8 @@ nCuts & 30 \\
  %The global BDT was trained on simulated \bsmumu and \bbbarmumux decays with 2012 data taking conditions for the signal and background samples. The simulated decas had to pass the selection requirements listed in Table~\ref{}. Independant samples were used for training and testing the global BDT. 
 
 
-Simulated \bsmumu and \bbbarmumux decays are used to provide large signal and background training samples for the global BDT. %In data \bsmumu candidates in the mass range 5431 to 6550 \mevcc consist almost entirely of \bbbarmumux decays, however the number of candidates in this mass range is too small to be a useful as sample of background candidates to train a BDT with comparable performance to one trained entirely on simulated decays. 
-The simulated sample \bbbarmumux decays corresponds to the background expected with 7~\fb of data from $pp$ collisions at $\sqrt{s}$~=~8~\tev. The production of such a large sample requires a lot of space to be saved, therefore several measures were taken to reduce the size needed to save the simulated \bbbarmumux decays. The cuts, listed in Table~\ref{tab:MC_decays}, were applied to the simulated decays as they were generated to reduce the number of events saved on disk. Also the stripping selection cuts in Table~\ref{tab:PreviousStrippingA} were applied and candidates that did not pass the stripping selection were not saved. Unfortunately the \bbbarmumux sample therefore does not include candidates that are selected by the looser stripping selection described in Section~\ref{sec:cutbasedsel}. In order to gain the best performance of the BDT on data the same cuts are applied to data that are applied to the samples used to train the BDT. Therefore the original cuts on \chiFD and daughter \chiIP listed in Table~\ref{tab:PreviousStrippingA} must be used to select \bsmumu candidates. 
+Simulated \bsmumu and \bbbarmumux decays are used to provide large signal and background training samples for the global BDT. %In data \bsmumu candidates in the mass range 5431 to 6550 \mevcc consist almost entirely of \bbbarmumux decays, however the number of candidates in this mass range is too small to be a useful as sample of background candidates to train a BDT with comparable performance to one trained entirely on simulated decays.
+ %The simulated sample \bbbarmumux decays corresponds to the background expected with 7~\fb of data from $pp$ collisions at $\sqrt{s}$~=~8~\tev. The production of such a large sample requires a lot of space to be saved, therefore several measures were taken to reduce the size needed to save the simulated \bbbarmumux decays. The cuts, listed in Table~\ref{tab:MC_decays}, were applied to the simulated decays as they were generated to reduce the number of events saved on disk. Also the stripping selection cuts in Table~\ref{tab:PreviousStrippingA} were applied and candidates that did not pass the stripping selection were not saved. Unfortunately the \bbbarmumux sample therefore does not include candidates that are selected by the looser stripping selection described in Section~\ref{sec:cutbasedsel}. In order to gain the best performance of the BDT on data the same cuts are applied to data that are applied to the samples used to train the BDT. Therefore the original cuts on \chiFD and daughter \chiIP listed in Table~\ref{tab:PreviousStrippingA} must be used to select \bsmumu candidates. 
 The complete list of selection requirements applied to the training samples used to develop global BDT are listed in Table~\ref{tab:BDTpresel}, the same selection is applied to \bsmumu and \bbbarmumux decays.  
 \begin{table}[htbp]
 \begin{center}
@@ -1039,7 +1062,7 @@ The global BDT is applied to data taken in all years and in the same way as the 
 \subsection{Summary}
 \label{sec:BFsummary}
 The complete set of selection criteria used for identify \bmumu decays in Run~1 and Run~2 data for the \BF measurements is listed in Tables~\ref{tab:BFfullselection}. % ands~\ref{} alongside the selection for \bhh, \bujpsik and \bsjpsiphi decays.
-The selection requirements do not remove all backgrounds decays from the data set but reduce them to a level at which the \BFs can be measured. %The selection criteria for \bhh and \bujpsik decays is kept as close as possible to that used to identify \bmumu decays in order to reduce systematic uncertainties from selection efficiencies in the normalisation procedure described in Section~\ref{sec:Normalisation}. 
+The selection requirements do not remove all backgrounds decays from the data set but reduce them to a level at which the \BFs can be measured. Figure~\ref{} showns a scatter plot of the mass and BDT values for all candidates that pass the selection criteria in Run~1 and Run~2 data. %The selection criteria for \bhh and \bujpsik decays is kept as close as possible to that used to identify \bmumu decays in order to reduce systematic uncertainties from selection efficiencies in the normalisation procedure described in Section~\ref{sec:Normalisation}. 
 %\begin{landscape}
 %\vspace*{\fill}
 \begin{table}[htbp]
@@ -1078,6 +1101,12 @@ Trigger requirements & L0Global = DEC\\
 \vspace{-1.0cm}
 \end{center}
 \end{table}
+
+
+\begin{figure}[tbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{./Figs/Selection/hidef_Fig3.png}
+    \caption{Mass and global BDT values for candidates in Run~1 and Run~2 data that pass the \bmumu selection criteria. The green dashed lines show the \bs and \bd mass windows.}
 %\vspace*{\fill}
 %\end{landscape}
 
@@ -1389,11 +1418,12 @@ The fit procedure to extract \tmumu from the data is described in Chapter~\ref{s
 \end{itemize}
 Full details of the toy experiment set up and the probability density functions used are given in Appendix~\ref{sec:appendix3}. 
 
-The number of expected \bsmumu and combinatorial background events for different BDT cut values is derived from the expected number of decays passing in all the selection cuts and BDT $>$ 0.55\footnote{Initially the observed yields from published the Run~1 \BFm were used to determine the expected number of decays present in 4.4~\fb of Run~1 and Run~2 data and a global BDT cut of 0.55 was found to be optimal. However the expected number of decays was then re-evaluated using the more sophisticated techniques described in Chapter~\ref{sec:BFanalysis} and using global BDT cut of 0.55 and the pseudoexperiments were repeated to check the optimal BDT cut was the same.} for Run~1 and Run~2 data in the mass range 4900 $<$ $m_{\mu^{+}\mu^{-}$ $<$ 6000 \mevcc. These predictions assume the SM branching fraction for \bsmumu and are given in Table~\ref{tab:expectednumbers}. The methods used to evaluate the expected number of each decay in the data are detailed in Chapter~\ref{sec:BFanalysis}. Since the output of the global BDT is flattened, the number of \bsmumu decays is evenly distributed across the BDT range. Therefore the expected number of \bsmumu decays is straight forward to calculated for each BDT cut value. The number of combinatorial background decays expected after each BDT is computed from simulated \bbbarmumux decays using the ratio
+The number of expected \bsmumu and combinatorial background events for different BDT cut values is derived from the expected number of decays passing in all the selection cuts and BDT $>$ 0.55\footnote{Initially the observed yields from published the Run~1 \BFm were used to determine the expected number of decays present in 4.4~\fb of Run~1 and Run~2 data and a global BDT cut of 0.55 was found to be optimal. However the expected number of decays was then re-evaluated using the more sophisticated techniques described in Chapter~\ref{sec:BFanalysis} and using global BDT cut of 0.55 and the pseudoexperiments were repeated to check the optimal BDT cut was the same.} for Run~1 and Run~2 data in the mass range 4900 $<$ $m_{\mu^{+}\mu^{-}$ $<$ 6000 \mevcc. These predictions assume the SM branching fraction for \bsmumu and are given in Table~\ref{tab:expectednumbers}. The methods used to evaluate the expected number of each decay in the data are detailed in Chapter~\ref{sec:BFanalysis}. Since the output of the global BDT is flattened, the number of \bsmumu decays is evenly distributed across the BDT range. Therefore the expected number of \bsmumu decays is straight forward to calculated for each BDT cut value. The number of combinatorial background decays expected after each BDT is computed from simulated \bbbarmumux decays, that have pass all the other selection criteria, using the ratio
 \begin{equation}
 R = \frac{\epsilon(BDT > X)}{\epsilon(BDT > 0.55)},
 \end{equation}
-where $\epsilon(BDT > X)$ is the efficiency of the cut BDT $>$ X. The \bsmumu selection requirements are applied to the simulated decays before taking the efficiency. The ratios for the different cuts values are shown in Table~\ref{tab:EfficiencyRatioCombBG}. Simulated decays had to be used to compute the efficiencies rather than data because there were too few candidates left after the higher BDT cuts were applied to data to enable meaningful studies. 
+where $\epsilon(BDT > X)$ is the efficiency of the cut BDT $>$ X. %The \bsmumu selection requirements are applied to the simulated decays before taking the efficiency. 
+The ratios for the different cuts values are shown in Table~\ref{tab:EfficiencyRatioCombBG}. Simulated decays had to be used to compute the efficiencies rather than data because there were too few candidates left after the higher BDT cuts were applied to data to enable meaningful studies. 
 
 
 
