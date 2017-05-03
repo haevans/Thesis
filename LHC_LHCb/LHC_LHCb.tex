@@ -19,9 +19,9 @@ the hydrogen atoms are ionised to strip away the electrons and then the protons 
 The LHC accelerates the protons to the desired centre-of-mass energy using radio frequency cavities and guides them around the ring with superconducting dipole magnets. %I could add here some details about the magnets and how the LHC accelerates the protons.                                       
 Once the required energy has been reached, the bunches are focused using quadrupole magnets before being collided at 4 interaction points around the LHC ring.% at a bunch crossing rate of 40~MHz.
 
-\begin{figure}[htbp!]
+\begin{figure}[tbp!]
   \centering
-  \includegraphics[trim = 125mm 2mm 125mm 90mm, clip, width=1.2\textwidth]{./Figs/LHC_LHCb/accelerator_complex.jpg}
+  \includegraphics[width=1.0\textwidth]{./Figs/LHC_LHCb/accelerator_complex.jpg}
   \caption{The accelerator complex at CERN. The chain of accelerators used to inject protons into the LHC begins with the Linac 2 which accelerates protons to 50~\mev, the protons are passed to the Proton Synchrotron Booster that accelerates them to 1.4 \gev. The Proton Synchrotron is next in the chain, accelerating protons to 25~\gev and creating the desired spacing between proton bunches. Then finally the Super Proton Synchrotron accelerating protons to 450~\gev ready for injection into the LHC. Source: CERN.}
   \label{fig:accelerator_chain}
 \end{figure}
@@ -58,17 +58,17 @@ Run~2 began in 2015 with proton collisions at a centre-of-mass energy of $\sqrt{
 %https://twiki.cern.ch/twiki/bin/view/AtlasPublic/LuminosityPublicResultsRun2
 %https://twiki.cern.ch/twiki/bin/view/AtlasPublic/LuminosityPublicResultsRun2
 %http://lhcb-public.web.cern.ch/lhcb-public/
-\begin{table}[tbp]
+\begin{table}[t]
 \begin{center}
-\begin{tabular}{lllll}
+\begin{tabular}{lccccc}
 \hline
-\multirow{2}{c}{Run} & \multirow{2}{c}{Year} & \multirow{2}{c}{$\sqrt{s}$ / \tev} & \multicolumn{3}{c}{Integrated luminosity / \fb}\\ 
-\cline{4-5}
+\multirow{2}{*}{Run} & \multirow{2}{*}{Year} & \multirow{2}{*}{$\sqrt{s}$ / \tev} & \multicolumn{3}{c}{Integrated luminosity / \fb}\\ 
+\cline{4-6}
     &     &                             & ATLAS &  CMS       & LHCb \\ \hline
- \multirow{3}{c}{Run 1}    & 2010 & 7   & 0.04  & 0.04        & 0.04\\
+ \multirow{3}{*}{Run 1}    & 2010 & 7   & 0.04  & 0.04        & 0.04\\
      & 2011 & 7                         & 5.08  & 5.55      &  1.11 \\
     & 2012 & 8                          & 21.3  & 21.79  &  2.08 \\ \hline
-\multirow{2}{c}{Run 2}    & 2015 & 13   & 3.9   & 3.81 &        & 0.32\\
+\multirow{2}{*}{Run 2}    & 2015 & 13   & 3.9   & 3.81         & 0.32\\
     & 2016 & 13                         & 35.6  & 37.76         & 1.67     \\ \hline
 
 \end{tabular}
@@ -89,7 +89,7 @@ The LHCb experiment was built to study the SM and search for new physics phenome
 At the LHC the dominant production mechanisms of \bbbar pairs are gluon-gluon fusion, quark anti-quark annihilation and gluon-gluon splitting. The \bbbar pairs produced travel at small angles relative to the beam pipe as shown in Figure~\ref{fig:bbar_production} and hadronize to form a range of \bhadrons, including $B^{+}$, $B^{0}_{s}$ and $\Lambda^{0}_{b}$, that are studied by LHCb. 
 
  
-\begin{figure}[tb] 
+\begin{figure}[ptb] 
   \centering    
   \includegraphics[ width=0.45\textwidth]{./Figs/LHC_LHCb/b_distrib_lhcb.pdf}
   \caption{Simulated angular distribution for \bbbar production at the LHC, angles are relative to the beam pipe with $\theta =0$ in the forward direction and $\theta = \pi$  in the backward direction~\cite{Amato:1998xt}.}
@@ -100,7 +100,7 @@ At the LHC the dominant production mechanisms of \bbbar pairs are gluon-gluon fu
 
 The LHCb experiment was built as a single arm forward spectrometer, with an angular coverage of 10 to 300~mrad in the vertical direction and 10 to 250~mrad in the horizontal direction relative to the the beam pipe. The angular coverage was chosen to exploit the small angles at which \bbbar pairs are produced. A cross-section of the LHCb detector is shown in Figure \ref{fig:LHCb_detector}, where a right handed coordinate system is used. Protons collide at the interaction point on the left hand side of the diagram, the products of the collisions travel through the detector leaving information in the sub-detectors along the length of the detector. The information deposited in the sub-detectors is reconstructed to determine what happened during the $pp$ collisions. 
 
-\begin{figure}[htb] 
+\begin{figure}[tbp] 
   \centering    
   \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/lhcb.png}
   \caption{Cross section of the LHCb detector \cite{Alves:2008zz}.}
@@ -132,7 +132,7 @@ Each station is composed of two sensors: the R-sensor that the radial distance o
 The cylindrical geometery used for the VELO sensors, shown in Figure~\ref{fig:velo_sensor}, is chosen to allow fast reconstruction of particle trajectories in the VELO.
 %In each station the two sensors measure different coordinates, one measures the $r$ coordinates of charged particles and the other measures the $\phi$ coordinates as shown in Figure~\ref{fig:velo_sensor}. The $r$, $\phi$ coordinates and the $z$ placement of the sensors are used to reconstruct charged particle trajectories. Cylindrical coordinates were chosen to allow fast reconstruction of particle trajectories in the VELO.
 
-\begin{figure}[htb] 
+\begin{figure}[tbp] 
   \centering    
   \includegraphics[ width=0.7\textwidth]{./Figs/LHC_LHCb/velo.png}
   \caption{The VELO layout and position of sensors along the beam axis \cite{Alves:2008zz}.}
@@ -140,7 +140,7 @@ The cylindrical geometery used for the VELO sensors, shown in Figure~\ref{fig:ve
 \end{figure}
 
 
-\begin{figure}[htb]
+\begin{figure}[tbp]
   \centering
   \includegraphics[ width=0.6\textwidth]{./Figs/LHC_LHCb/Velo_sensor_diagram.png}
   \caption{Diagram of $r$ and $\phi$ sensor layouts~\cite{Alves:2008zz}.}
@@ -171,7 +171,7 @@ The VELO achieves a vertex resolution of 10 - 20~$\mu$m transverse to the $z$ di
 
 
 %Can I just put the track resolution possible with the VELO?
-\begin{figure}[tb] 
+\begin{figure}[tbp] 
   \centering    
   \includegraphics[ width=0.49 \textwidth]{./Figs/LHC_LHCb/hidef_ResXY_1PV_2011Data.png}
   \includegraphics[ width=0.49 \textwidth]{./Figs/LHC_LHCb/hidef_ResZ_1PV_2011Data.png}
@@ -257,7 +257,12 @@ The algorithms start with either segments of tracks in the VELO or the T station
 Once the segments of the track have been found, the trajectory is fitted with a Kalman Filter~\cite{Kalman,Fruhwirth:1987fm} with takes into account multiple scattering and energy loss within the detector. For each track the Filter returns the $\chi^{2}$ per degree of freedom, a measure of quality for the track. In LHCb this parameter is used to ensure that only good quality tracks are used in physics analyses. 
 The reconstructed tracks are classified into five types depending on which detectors they travelled through, as shown in Figure \ref{fig:types_of_tracks}.
 
-
+\begin{figure}[tb]
+  \centering
+  \includegraphics[ width=0.8\textwidth]{./Figs/LHC_LHCb/Types_of_tracks.png}
+  \caption{Different types of tracks that are reconstructed at LHCb~\cite{Aaij:2014pwa}.}
+  \label{fig:types_of_tracks}
+\end{figure}
 
 The different track classifications are:
 \begin{itemize}
@@ -269,12 +274,12 @@ The different track classifications are:
 \end{itemize}
 
 
-\begin{figure}[tb] 
-  \centering    
-  \includegraphics[ width=0.8\textwidth]{./Figs/LHC_LHCb/Types_of_tracks.png}
-  \caption{Different types of tracks that are reconstructed at LHCb~\cite{Aaij:2014pwa}.}
-  \label{fig:types_of_tracks}
-\end{figure}
+%\begin{figure}[tb] 
+%  \centering    
+%  \includegraphics[ width=0.8\textwidth]{./Figs/LHC_LHCb/Types_of_tracks.png}
+%  \caption{Different types of tracks that are reconstructed at LHCb~\cite{Aaij:2014pwa}.}
+%  \label{fig:types_of_tracks}
+%\end{figure}
 
 The efficiency to correctly reconstruct tracks varies with the particle momentum and the number of tracks present in an event, as shown in Figure~\ref{fig:types_of_tracks} for 2012 data. In Run 1 long tracks were correctly reconstructed on average of 96~$\%$ of the time.
 
@@ -334,7 +339,7 @@ The RICH detectors are based on the following principle; when a charged particle
 The angle at which Cherenkov radiation is produced gives a measurement of a particle’s speed, which when combined with the particle’s momentum, the particle mass and consequently its identity can be determined. However many particles travel through the RICH detectors and create overlapping rings of light making particle identification complex. Particle trajectories through the RICH detectors are inferred from information in the tracking stations and the expected pattern of Cherenkov radiation is calculated for each possible particle type. The expected patterns of light are compared to the observed pattern to find the likelihood for each particle type, all possible particle types are compared to maximise the likelihood. An indepth description of the reconstruction algorithm used in the RICH detectors can be found in~\cite{Forty:684714}. 
 
 
-\begin{figure}[htb]
+\begin{figure}[tb]
   \centering
   \includegraphics[ width=0.40\textwidth]{./Figs/LHC_LHCb/RICH1diagram.png}
   \includegraphics[ width=0.3\textwidth]{./Figs/LHC_LHCb/rich2_schematic.png}
@@ -355,14 +360,14 @@ The RICH-2 detector is located upstream of RICH-1, between the last tracking sta
 The rings of light collected by the RICH detectors when combined with information about particle momentum and tracks from the tracking stations enables the particle type to be identified. Figure \ref{fig:RICH_preformance} shows how the Cherenkov angle and momentum can be combined to identify different types of particles in the RICH-1 detector, there are distinct bands for each particle mass. Figure \ref{fig:RICH_radiator_predictions} shows what is expected for the different radiators.  
 
 
-\begin{figure}[htb]
+\begin{figure}[tbp]
   \centering
   \includegraphics[width=0.8\textwidth]{./Figs/LHC_LHCb/hidef_Fig38.png}
   \caption{Cherenkov angles for isolated tracks as a function of momentum in the RICH-1 detector for 2011 data \cite{Adinolfi:2012qfa}.}
   \label{fig:RICH_preformance}
 \end{figure}
 
-\begin{figure}[htb]
+\begin{figure}[tbp]
   \centering
   \includegraphics[ width=0.7\textwidth]{./Figs/LHC_LHCb/RICH_radiators.pdf}
   \caption{Expected Cherenkov angles produced by different particles travelling through the radiators in the RICH detectors~\cite{Alves:2008zz}.}
@@ -407,7 +412,7 @@ The information collected in the PID detectors is combined to provide several di
 The muon stations are used, along with information from the tracking system, to produce a binary selection (isMuon) to identify muons. The tracking system is used to extrapolate a field of interest within the muon stations, a muon is identified if hits in the muon stations can be combined with those from the tracking system within the field of interest. The number of the hits required in the muon stations depends on the momentum of the muon. Muons with momentum in the range 3<$p$<6~\gevc must leave hits in M2-3, those in the momentum range 6<$p$<10~\gevc leave hits in M2-3 and either M4 or M5, and finally muons with momentum above 10~\gevc must be observed in all the muon stations. Figure~\ref{fig:isMuon_efficiency} shows the efficiency for the isMuon selection at selecting muons and probabilities of mis-identifying hadrons as muons. The efficiencies and mis-identification probabilities are computed using the {\it tag and probe technique}~\cite{}. This technique uses two tracks from a decay and particle identification requirements are applied to one track, the tag track, and the other track, the probe track, is used to evaluate the efficiency or mis-identification probability. The muon efficiency uses $J/\psi \to \mu^+ \mu^-$ decays, proton mis-identification probabilities are computed using $\Lambda^0 \to p \pi^-$ and pion and kaon mis-identification probability are computed from $D^{*+} \to \pi^+ D^0 (\to K^- \pi^+)$ decays. The mis-identification rate is higher for lower momentum particles, which is expected given there are less hits in the muons detectors. The main contribution to misidentifying hadrons as muons comes from the kaons and pions that decay in flight, the muons from these decays are then detected in the muon stations.
 
 
-\begin{figure}[htb] 
+\begin{figure}[tbp] 
   \centering    
   \includegraphics[width=0.49\textwidth]{./Figs/LHC_LHCb/hidef_Fig41topleft.png}
   \includegraphics[width=0.49\textwidth]{./Figs/LHC_LHCb/hidef_Fig41topright.png}
@@ -427,10 +432,7 @@ The second approches uses Neural Networks~\cite{Feindt:2006pm} to combine inform
 
 Figure~\ref{fig:DLL_vs_ProbNN} shows a comparison of the performance of the DLL and ProbNN variables in selecting protons and muons. Although the performance to the two types of variables are quite different, the efficiencies of each variable varies with different kinematic properties of the decay. The most appropriate PID variable type to use depends on the physics analysis it is being used in. 
 
-
-
-
-\begin{figure}[htb] 
+\begin{figure}[tbp] 
   \centering    
   \includegraphics[ width=0.49\textwidth]{./Figs/LHC_LHCb/hidef_Fig43left.png}
   \includegraphics[ width=0.49\textwidth]{./Figs/LHC_LHCb/hidef_Fig43right.png}
@@ -439,10 +441,6 @@ Figure~\ref{fig:DLL_vs_ProbNN} shows a comparison of the performance of the DLL 
 \end{figure}
 
 %https://twiki.cern.ch/twiki/bin/view/LHCb/PIDConferencePlots resolution!
-
-
-
-
 
 \subsection{Trigger}
 
@@ -535,7 +533,7 @@ The LHCb software framework is set up so that it can be used on the Worldwide LH
 
 %The data taking periods of the LHC and the integrated luminoscity collect by the LHCb experiment are described in Section~\ref{}. 
 
-The data collected by the LHCb experiment during $pp$ collisions is summaried in Figure~\ref{fig:LHCb_lumi}. The physics analyses described in this dissertation use an integrated luminoscity of 4.4~\fb which consists of data recorded during 2011, 2012 and 2015 and up until September of 2016. The intergrated luminosities used for each year are given in Table~\ref{}. The integrated luminosity of Run~2 is currently less that the total from Run~1, however the production cross section for \bhadrons approximately doubled with the increase in centre-of-mass energy between Run~1 and Run~2 therefore the Run~2 data set will already contain more \bhadrons useful for physics analyses than the Run~1 data set. 
+The data collected by the LHCb experiment during $pp$ collisions is summaried in Figure~\ref{fig:LHCb_lumi}. The physics analyses described in this dissertation use an integrated luminoscity of 4.4~\fb which consists of data recorded during 2011, 2012 and 2015 and up until September of 2016. The intergrated luminosities used for each year are given in Table~\ref{tab:Runs2}. The integrated luminosity of Run~2 is currently less that the total from Run~1, however the production cross section for \bhadrons approximately doubled with the increase in centre-of-mass energy between Run~1 and Run~2 therefore the Run~2 data set will already contain more \bhadrons useful for physics analyses than the Run~1 data set. 
 
 
 %The expected end of Run~2 is 2018 by which time LHCb is expected to have recorded 5~\fb luminosity during the Run. Run~2 will be followed by a second long shut down period (LS2) in which LHCb shall be upgraded ready to record proton collisions at 14~\tev during Run~3. This run of data taking is expected to be from 2021 - 2024 and by the end of Run~3 LHCb is expected to have collected an integrated luminosity of 23~\fb over all the runs. 
@@ -558,19 +556,19 @@ The data collected by the LHCb experiment during $pp$ collisions is summaried in
 
 \begin{table}[tbp]
 \begin{center}
-\begin{tabular}{lll}
+\begin{tabular}{lccc}
 \hline
-Run & Year & Integrated luminosity / \fb\\ 
- \multirow{3}{c}{Run 1}    & 2010 & 7          & 0.04\\
-     & 2011 & 7                             &  1.11 \\
+Run & Year & $\sqrt{s}$ \tev & Integrated luminosity / \fb\\ 
+\hline
+ \multirow{2}{*}{Run 1}   & 2011 & 7                             &  1.11 \\
     & 2012 & 8                         &  2.08 \\ \hline
-\multirow{2}{c}{Run 2}    & 2015 & 13           & 0.32\\
+\multirow{2}{*}{Run 2}    & 2015 & 13           & 0.32\\
     & 2016 & 13                                & 1.10     \\ \hline
 
 \end{tabular}
 \vspace{0.7cm}
 \caption{Integrated luminosity of data collected by the LHCb experiment during $pp$ collisions used in the analyses documented in Chapters~\ref{sec:BFanalysis} and~\ref{sec:lifetimemeasurement}.}
-\label{tab:Runs}
+\label{tab:Runs2}
 \end{center}
 \vspace{-1.0cm}
 \end{table}
