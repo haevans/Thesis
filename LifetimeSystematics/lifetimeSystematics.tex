@@ -259,7 +259,7 @@ where $\epsilon (t)$ is the acceptance function with parameters given in Table \
 Decays are generated assuming the \bsmumu effective lifetime is equal to the lifetime of the heavy $B^{0}_{s}$ mass eigenstate of \tH = 1.610 \ps. A fit is then performed to the generated decay time distribution but  the resolution term is no longer included in the \pdf. The measured \tmumu value is compared to the value used to generate the decays. 
 
 
-The resolution function is determined from weighted simulated \bsmumu decays that were used to compute the acceptance function in Section~\ref{sec:signalDTpdf}. The difference between the reconstructed decay time and the `true' decay time with which decays were generated is computed for each decay that passes the full selection. The resulting distribution is fitted with a resolution function composed of the sum of three Gaussian functions. Each Gaussian function has the same mean value, which is left free in the fit, but different widths that are also free in the final fit. The fit parameters are shown in Table \ref{tab:resolutionfit}. % and the total fit in Figure \ref{fig:resolution_fit_plot}. 
+The resolution function is determined from weighted simulated \bsmumu decays that were used to compute the acceptance function in Section~\ref{sec:signalDTpdf}. The difference between the reconstructed decay time and the `true' decay time with which decays were generated is computed for each decay that passes the full selection. The resulting distribution is fitted with a resolution function composed of the sum of three Gaussian functions. Each Gaussian function has the same mean value, which is left free in the fit, but different widths that are also free in the final fit. The fit parameters are shown in Table \ref{tab:resolutionfit} and the results in Figure~\ref{}. % and the total fit in Figure \ref{fig:resolution_fit_plot}. 
 The resulting distribution has a similar form to those used in references~\cite{Aaij:2016ohx,Aaij:2015vza}, where the detector resolution is modelled with two narrow Gaussian functions and the Gaussian function for incorrectly assigned PVs is broader and describes a small fraction of decays.
 
 
@@ -283,8 +283,15 @@ $f_{3}$                 & 0.681                \\ \hline
 \vspace{-1.0cm}                                                                                   
 \end{table}
 
+\begin{figure}[htbp]
+  \centering
+    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/PV_decaytime_diff_fit.pdf}
+  \caption{Fit result to the difference between the reconstructed decay time and the true decay time for simulated decays that pass the \bsmumu \el selection.}
+  \label{fig:PVfit}
+\end{figure}
 
-The result from the fit to the generated decays without the resolution function included is  \tmumu = 1.6098$\pm$ 0.0014 \ps, which is consistent with the lifetime of generate events. The difference between the lifetime used to generate events and the fitted value is 0.0002 ps, a factor of 10 smaller than the smallest systematic uncertainty. This cross check shows that the presence of incorrectly assigned PVs or detector resolution effects that are not included in the acceptance function have a negligible effect on the \bsmumu effective lifetime.
+
+The result from the fit to the generated decays without the resolution function included is \tmumu = 1.6098$\pm$ 0.0014 \ps, which is consistent with the lifetime of generate events. The difference between the lifetime used to generate events and the fitted value is 0.0002 ps, a factor of 10 smaller than the smallest systematic uncertainty. This cross check shows that the presence of incorrectly assigned PVs or detector resolution effects that are not included in the acceptance function have a negligible effect on the \bsmumu effective lifetime.
 
 
 
