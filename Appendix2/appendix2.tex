@@ -132,10 +132,10 @@ The final set of training parameters are given in Table~\ref{tab:ELtrainingparam
 The training parameters used in the uBoost BDT have not been optimised and are given in Table~\ref{tab:ELtrainingparamss}. The parameter values suggested in reference~\cite{Stevens:2013dya} have been used where is was shown that different training parameters had a small impact of the overall BDT performance. %are given in Table~\ref{}, the parameters are taken from~\ref{} and have no alternative parameters were investigated because little improvment can be gained for this algorithm by altering the training parameters.
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{ll|ll}
-\hline
-\multicolumn{2}{c}{Adaptive Boost BDT} & \multicolumn{2}{c}{uBoost BDT} \\ \hline
-Parameter & Value & Parameter & Value\\ \hline
+\begin{tabular}{llll}
+\toprule \toprule
+\multicolumn{2}{c}{Adaptive Boost BDT} & \multicolumn{2}{c}{uBoost BDT} \\ \midrule
+Parameter & Value & Parameter & Value\\ \midrule
 nTrees & 1000 &  nTrees & 100\\
 %nEventsMin & 400 \\                                                                                                                                                                
 MinNodeSize & 5$\%$ & nEventsMin & 100 \\
@@ -143,7 +143,7 @@ MaxDepth & 3 & MaxDepth & 4 \\
 %NNodesMax = 100000 \\                                                                                                                                                              
 $\beta$ & 0.1 & $\beta$ & 1.0 \\
 nCuts & 30 & nCuts & 200 \\
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Training parameters used to specify the training of the adaptive boost and uBoost BDT.}
