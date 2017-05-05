@@ -45,9 +45,11 @@ The \BFs of the backgrounds from mis-identfied decays are shown in Table~\ref{}.
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{lc}
-\hline
-Decay & Branching Fraction \\ \hline
+\begin{tabular}{lr}
+\toprule
+\toprule
+Decay & Branching fraction \\ \midrule
+$B_{s}^{0}\to\mu^{+}\mu^{-}\gamma$ & XXXX \\
 \bskk & $(2.52 \pm 0.17) \times 10^{-5}$\\%~\cite{Olive:2016xmw}\\ 
 \bskpi & $(5.6 \pm 0.6) \times 10^{-6}$\\%\cite{Olive:2016xmw} \\
 \bdkpi & $(1.96 \pm 0.05)\times 10^{-5}$\\%~\cite{Olive:2016xmw}\\
@@ -58,7 +60,9 @@ Decay & Branching Fraction \\ \hline
 \bupimumu& $(1.83 \pm 0.25) \times 10^{-8}$\\%~\cite{Aaij:2015nea} \\ %LHCb measurement
 \bdpimumu& $(8.6 \pm 3.6) \times 10^{-9}$\\%~\cite{Aaij:2015nea,Wang:2012ab} \\ % not measured uses theory perdiction for ratio with bupimumu
 \bcjpsimunu & $(9.5 \pm 0.2) \times 10^{-6}$\\%~\cite{Aaij:2012dd,Aaij:2014jxa}\\ % not measured use LHCb ration measurements
-\hline
+\bottomrule
+\bottomrule
+
 \end{tabular}
 \vspace{0.7cm}
 \caption{Branching fractions for background decays. The measured values of the \bhh, \bdpimunu \lambdab and \bupimumu \BFs are taken from references~\cite{Olive:2016xmw,Aaij:2015bfa, Aaij:2015nea}. The theoritcal prediction for \bsKmunu \BF combines information from references~\cite{Bouchard:2014ypa,PhysRevD.91.074510}, the \bcjpsimunu \BF is estimated from references~\cite{Aaij:2012dd,Aaij:2014jxa} and the \bupimumu \BFs is evalutated from~\cite{Aaij:2015nea,Wang:2012ab}   }
@@ -103,15 +107,17 @@ The simulated decays used for studies performed for this dissertation are listed
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{p{0.17 \textwidth}p{0.30 \textwidth}p{0.14 \textwidth}p{0.13 \textwidth}p{0.13 \textwidth}}
-\hline
+\toprule
+\toprule
+
 Decay & Generator level cuts & Data taking & Simulation & Events  \\ 
-      &  & conditions & version   &  ($\times 10^6$) \\\hline
-\multicolumn{5}{c}{{\it Stripping selection studies selection}}  \\ \hline
+      &  & conditions & version   &  ($\times 10^6$) \\\midrule
+\multicolumn{5}{c}{{\it Stripping selection studies selection}}  \\ \midrule
 \bsmumu& &2012& sim06b  & 2 \\
 \bdmumu& &2012& sim06b  & 2  \\
 \bdkpi& &2012& sim06b  & 1  \\
-\bujpsik& &2012& sim06b  & \\ \hline
-\multicolumn{5}{c}{{\it Multivariate classifier training}}  \\ \hline
+\bujpsik& &2012& sim06b  & \\ \midrule
+\multicolumn{5}{c}{{\it Multivariate classifier training}}  \\ \midrule
 \bbbarmumux &$p>$~3~\gevc & 2012 & sim06b & 8\\
             & 4.7~$< M_{\mu^{+} \mu^{-}} <$~6.0~\gevcc & & & \\
             &  DOCA~$<$~0.4mm & & & \\
@@ -120,8 +126,8 @@ Decay & Generator level cuts & Data taking & Simulation & Events  \\
             & 4.7~$< M_{\mu^{+} \mu^{-}} <$~6.0~\gevcc & & & \\
            & DOCA~$<$~0.4mm & & & \\
           & PtProd~$>$~16~\gevc    & & & \\    %  & 2012  & sim06b                & 7  \\
-\bsmumu &                & 2012  & sim06b                & 2 \\ \hline
-\multicolumn{5}{c}{{\it Analysis method development}}  \\ \hline
+\bsmumu &                & 2012  & sim06b                & 2 \\ \midrule
+\multicolumn{5}{c}{{\it Analysis method development}}  \\ \midrule
 \bsmumu& &2011 & sim08a   &0.6   \\
 & & 2012 & sim08i  & 2   \\
 & & 2015& sim09a  & 2  \\
@@ -131,7 +137,7 @@ Decay & Generator level cuts & Data taking & Simulation & Events  \\
 & & 2015& sim09a  & 4    \\
 & & 2016& sim09a   & 8   \\
 \bskk  & & 2012& sim08g  & 7  \\ %13102002, 2016 is sim09a 4.1 M per pol, 2011 is sim-8b and 0.8 M per pol   
-& & 2015& sim09a   & 4   \\  \hline
+& & 2015& sim09a   & 4   \\  \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Simulated samples used for developing the selection and analysis of \bmumu decays listed according to the study the decays are used in. Cuts are applied to \bbbarmumux to the magnitude muon momenta ($p$), invariant mass of two muons ($M_{\mu^+ \mu-}$), the distance of closest approach of the muons (DOCA) and the product of the transverse momenta of the muons (PtProd).}
@@ -254,21 +260,21 @@ In summary, the requirements imposed on the trigger to select \bsmumu, \bhh, \bu
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{ll}
-\hline
-Trigger Line& Trigger decision \\ \hline
+\begin{tabular}{lc}
+\toprule
+Trigger Line& Trigger decision \\ \midrule
 %\multicolumn{2}{c}{{\it set A}} \\ \hline
 %L0Global& Dec\\
 %Hlt1Phys& Dec \\
 %Hlt2Phys& Dec \\ \hline
-\multicolumn{2}{c}{{\it \bsmumu, \bujpsik, \bsjpsiphi decays}} \\ \hline
+\multicolumn{2}{c}{{\it \bsmumu, \bujpsik, \bsjpsiphi}} \\ \midrule
 L0Global& DEC \\
 Hlt1Phys& DEC \\
-Hlt2Phys& DEC \\ \hline
-\multicolumn{2}{c}{{\it\bhh decays}} \\ \hline
+Hlt2Phys& DEC \\ \midrule
+\multicolumn{2}{c}{{\it\bhh}} \\ \midrule
 L0Global& TIS\\
 Hlt1Phys& TIS \\
-Hlt2B2HHDecision& TOS \\ \hline
+Hlt2B2HHDecision& TOS \\ \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Trigger decisions used to select \bsmumu, \bhh, \bujpsik and \bsjpsiphi decays.}% Set `A' is used to select decays for the Branching Fraction analysis. Set `B' is used to select \bsmumu decays for the effective lifetime analysis. Sets `A' and `C' are used to select \bhh decays used to develop the \bsmumu effective lifetime analysis.}
@@ -344,10 +350,10 @@ The stripping selection cuts applied for the Run~1 branching fraction analysis~\
 %\vspace*{\fill}
 \begin{table}[tp]
 \begin{center}
-\begin{tabular}{l|l|l}
-\hline
+\begin{tabular}{lll}
+\toprule
   Particle              & \bsmumu                                     & \bhh                                  \\
-\hline             
+\midrule            
 \bsd         & |M - M$_{PDG}$| $<$ 1200 \mevcc              & |M - M$_{PDG}$| $<$ 500 \mevcc     \\          
                       & DIRA > 0                                    & DIRA > 0                             \\       
                       & \chiFD $>$225                        &  \chiFD $>$225              \\ 
@@ -356,14 +362,14 @@ The stripping selection cuts applied for the Run~1 branching fraction analysis~\
                       & DOCA $<$ 0.3 mm                             & DOCA $<$ 0.3 mm                            \\               
                       &                                             & $\tau$ $<$ 13.248 \ps                      \\
                       &                                             & $p_{T}$ $>$ 500 \mevc                      \\
-\hline             
+\\           
 $\mu$ or $h$   &$\chi^{2}_{trk} < 3$                 & $\chi^{2}_{trk} < 3$            \\       
                         & isMuon = True                             &                                             \\ 
                         & Minimum \chiIP $>$ 25               & Minimum \chiIP $>$ 25             \\                   
                         &    $p_{T}$ $>$ 0.25 \gevc                   & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\
                         &                                           & Ghost probability $<$ 0.3        \\
 
-\hline
+\bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Selection requirements applied during the stripping selection for Run~1 data used in the \bmumu \BF analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bmumu and \bhh decays. $M_{PDG}$ corresponds to the Particle Data Group~\cite{Olive:2016xmw} mass of each particle.}
@@ -379,29 +385,30 @@ $\mu$ or $h$   &$\chi^{2}_{trk} < 3$                 & $\chi^{2}_{trk} < 3$     
 %\vspace*{\fill}
 \begin{table}[tp]
 \begin{center}
-\begin{tabular}{l|l|l|l}
-\hline
+\begin{tabular}{llll}
+\toprule
   Particle            &$B^{+} \to J/\psi(\mu^{+}\mu^{-})K^{+}$                            & Particle   &$B^{0}_{s} \to J/\psi(\mu^{+}\mu^{-}) \phi(K^{+}K^{-})$ \\
-\hline             
+\midrule             
 $B^{+}$        & |M - M$_{PDG}$| $<$   500 \mevcc           & \bs         & |M - M$_{PDG}$| $<$   500 \mevcc             \\          
                       & $\chi^{2}_{VTX}<$ 45         &            &  $\chi^{2}_{VTX} <$ 75             \\       
-                      & \chiIP $<$ 25                &            &  \chiIP $<$ 25               \\ \hline   
+                      & \chiIP $<$ 25                &            &  \chiIP $<$ 25               \\ 
+\\  
 \jpsi                & |M - M$_{PDG}$| $<$   100 \mevcc      & \jpsi      &  |M - M$_{PDG}$| $<$   100 \mevcc     \\
                     & DIRA > 0                             &           &   DIRA > 0           \\
                     &  \chiFD $>$ 225                &           & \chiFD $>$ 225        \\
                     & \chivtx < 9           &           & \chivtx < 9       \\  
                     &   DOCA $<$ 0.3 mm                   &            & DOCA $<$ 0.3 mm      \\  
-\hline             
+\\            
 $\mu^{\pm}$               & \chitrk < 3           &$\mu^{\pm}$       &   \chitrk < 3 \\       
                     & isMuon = True                      &            &isMuon = True    \\ 
                     & Minimum \chiIP $>$ 25        &            & Minimum \chiIP $>$ 25    \\                   
                     &  0.25 \gevc $<$ $p_{T}$            &            &  0.25 \gevc $<$ $p_{T}$    \\
-\hline
+\\
 $K^{+}$             & \chitrk < 3           & $\phi$           &  |M - M$_{PDG}$| $<$   20 \mevcc  \\
                     & $p_{T}$ $>$ 0.25 \gevc              &           &  Minimum \chiIP $>$ 4  \\
                    & Minimum \chiIP $>$ 25         & K$^{\pm}$           & \chitrk < 3  \\
                  &                                   &                       & $p_{T}$ $>$ 0.25 \gevc     \\
-\hline
+\bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Selection requirements applied during the stripping selection for Run~1 data used in the \bmumu branching fraction analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bujpsik and \bsjpsiphi decays. $M_{PDG}$ corresponds to the Particle Data Group~\cite{Olive:2016xmw} mass of each particle.}
@@ -450,11 +457,11 @@ No trigger requirements have been applied so that only the effect of the strippi
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{lcccc}
-\hline
+\toprule
                   & \multicolumn{4}{c}{Efficiency}  \\ 
-\cline{2-5}
+\cmidrule{2-5}
 Requirement                                  & \bsmumu                   & \bdmumu                       & \bhh                &\bujpsik  \\
-\hline
+\midrule
 $B$ |M - M$_{PDG}$|                           & (100.00 $\pm$ 0.00)$\%$  & (100.00 $\pm$ 0.00 )$\%$      & (98.25 $\pm$ 0.02)$\%$        & (99.73 $\pm$ 0.02)$\%$ \\
 \bsd or \jpsi DIRA                            & (99.41 $\pm$ 0.01) $\%$  & (99.47 $\pm$ 0.01)$\%$        & (99.47 $\pm$ 0.01)$\%$        & (95.83 $\pm$ 0.08)$\%$ \\
 \bsd or \jpsi \chiFD                   & (83.74 $\pm$ 0.06) $\%$  & (83.96 $\pm$ 0.06)$\%$        & (83.83 $\pm$ 0.06)$\%$        & (82.90 $\pm$ 0.15)$\%$ \\
@@ -463,11 +470,11 @@ $B$ |M - M$_{PDG}$|                           & (100.00 $\pm$ 0.00)$\%$  & (100.
 \bsd or \jpsi DOCA                           & (99.82 $\pm$ 0.01) $\%$   & (99.80 $\pm$ 0.01)$\%$        & (99.83 $\pm$ 0.01)$\%$        & (99.58 $\pm$ 0.03)$\%$ \\               
 
 $\mu$, $h$, $K^{+}$ minimum \chiIP    & (80.16 $\pm$ 0.06) $\%$  & (80.62 $\pm$ 0.06 )$\%$        & (79.66 $\pm$ 0.07)$\%$        & (86.98 $\pm$ 0.14)$\%$ \\
-\hline
+\midrule
 Total after above cuts                  & (71.29 $\pm$  0.07) $\%$  & (71.82 $\pm$ 0.07)$\%$        & (70.97 $\pm$ 0.07)$\%$        & (71.30 $\pm$ 0.18)$\%$ \\
-\hline
+\midrule
 Total after all cuts      & (71.29 $\pm$  0.07) $\%$                & (71.82 $\pm$ 0.07)$\%$            & (70.70 $\pm$ 0.07)$\%$        & (62.25 $\pm$ 0.20)$\%$ \\
-\hline
+\bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Signal efficiencies of \bmumu, \bhh and \bujpsik stripping lines using simulated \bmumu, \bdkpi and \bujpsik decays, respectively. The stripping selection cuts are lised in Tables~\ref{tab:PreviousStrippingA} and~\ref{tab:PreviousStrippingB} and efficiencies are evaluted only for cuts are shared between all stripping lines.}%n the \bsmumu stripping, each cut separately and the total efficiencies are given for the listed cuts and the complete set of cuts present in each stripping line. }
@@ -586,9 +593,9 @@ The set of chosen cuts used in Table~\ref{tab:Retention} aims to keep both cuts 
 \vspace*{\fill}
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{ cc|c|cccc}\hline
+\begin{tabular}{ llccccc}\toprule
   \multicolumn{2}{c}{Stripping cut} & Stripping line efficiency &  \multicolumn{4}{c}{Stripping line retention} \\
-\hline
+\midrule
 $\sqrt{\chi^{2}_{FD}}$ & Daughter  $\sqrt{\text{IP} \chi^{2}}$ & \bsmumu  & \bmumu & \bdkpi & \bujpsik & \bsjpsiphi \\
 \hline
 15                    &5.00                  & (71.29 $\pm$ 0.07) $\%$  &  1.0      &1.0     &1.0      & 1.0 \\
@@ -598,7 +605,7 @@ $\sqrt{\chi^{2}_{FD}}$ & Daughter  $\sqrt{\text{IP} \chi^{2}}$ & \bsmumu  & \bmu
 11                    &3.00                  & (82.72 $\pm$ 0.06) $\%$  &  3.7      &2.4     &1.6      & 1.9 \\
 10                    &2.75                  & (84.86 $\pm$ 0.06) $\%$  &  4.7      &3.0     &1.7      & 2.1 \\
 9                     &2.50                  & (86.96 $\pm$ 0.06) $\%$  &  6.8      &3.9     &2.0      & 2.2 \\
-\hline
+\bottomrule
 \end{tabular}
 \end{center}
 %\label{tab:Retention}
@@ -620,20 +627,20 @@ The final set of cuts used in the stripping selection must be a compromise betwe
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{lcc}
-\hline
+\begin{tabular}{lrr}
+\toprule
 Stripping Lines & Events & Retention / $\%$ \\
-\hline
+\midrule
 \bmumu & 898880 & 0.0022 \\
 \bhh & 14502295  &  0.0831 \\
 \bujpsik & 3344568 & 0.0087  \\
 \bsjpsiphi & 456787  & 0.0011 \\
 %$B \to J/\psi K^{*}$ &  12574956 & 0.018 \\
-\hline
+\midrule
 %Total & 31779975& - \\
 %Total with correlation & 31402536 \\
 Total & 18745743& - \\
-\hline
+\bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{The number of events passing stripping lines used for the \bsmumu analysis in reference~\cite{Aaij:2013aka} from the selection listed in Tables~\ref{tab:PreviousStrippingA} and~\ref{tab:PreviousStrippingB} and the percentage of the total LHCb data set that they correspond to. The total does not include correlation between lines and the requirements \chiFD $ > 225$ and daugher \chiIP $> 25$ are used.}%, which is expected to be 42 $\%$ between \bmumu and \bhh lines. }
@@ -858,9 +865,9 @@ The performance of the BDTS at removing backgrounds is illustrated in Figure~\re
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{ll}
-\hline
-\multicolumn{2}{c}{Selection applied to BDTS training samples.} \\ \hline
-\bs & $\mu^{\pm}$\\ \hline
+\toprule
+\multicolumn{2}{c}{Selection applied to BDTS training samples.} \\ \midrule
+\bs & $\mu^{\pm}$\\ \midrule
  \chiFD $>$ 225 & $p_{T}$ $>$ 500 \mevc \\
  \chiIP $<$ 25  &   \chitrk $<$ 3    \\
  Vertex $\chi^{2}$/$ndof$ $<$ 9    & minimum \chiIP $>$ 25   \\
@@ -868,13 +875,13 @@ The performance of the BDTS at removing backgrounds is illustrated in Figure~\re
  $\tau$ $<$ 13.248 \ps  &  $p$ $<$ 500 \gevc  \\
  $p_{T}$ $>$ 500 \mevc  & \\ 
 DIRA $>$ 0 & \\
-\hline
-\multicolumn{2}{c}{Trigger requirements} \\ \hline
-Trigger line & Decision \\ \hline
+\midrule
+\multicolumn{2}{c}{Trigger requirements} \\ \midrule
+Trigger line & Decision \\ \midrule
 L0Global&DEC\\
 Hlt1Phys&DEC \\
 Hlt2Phys&DEC \\ 
-\hline
+\bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Selection cuts applied to select the signal and background samples used to train the BDTS. The isMuon requirement is not applied to the muons so that the BDTS can be used on \bhh decays.}
