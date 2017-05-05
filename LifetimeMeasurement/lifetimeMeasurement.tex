@@ -293,17 +293,17 @@ P_{cbg}(t) = \epsilon(t)\times \left( f \cdot e^{-t/\tau_{1}} + (1-f)\cdot e^{-t
 where $\tau_{1}$ and $\tau_{2}$ are two independent lifetimes used to describe the background, $f$~describes the fraction of candidates with lifetime $\tau_{1}$ and the same acceptance shape as in Equation~\ref{eq:accpt} is used for describe the decay time efficiency $\epsilon(t)$. The lifetimes are different, one describes a long-lived component and the other a short-lived component that are evident in the data. The decay time acceptance is flat at large decay times, therefore the lifetimes of the combinatorial background decays are determined from a \ml fit using Equation~\ref{eq:cbgDTpdf}, setting $\epsilon(t)=1$, to candidates with a decay time above 2.5~\ps. The acceptance function parameters are then determined from a \ml fit to the full decay time range using Equation~\ref{eq:cbgDTpdf}, where the lifetimes and the fraction of candidates with each lifetime are fixed. The results are shown in Figure~\ref{fig:CBGaccpt} and the \pdf parameters in Table~\ref{tab:bkgparams}, the $t_{0}$ parameter is fixed in the fit to improve fit stability. 
 \begin{table}[tbp]
 \begin{center}
-\begin{tabular}{lc}
-\hline
+\begin{tabular}{lr}
+\toprule
 Parameter & Value \\
-\hline
+\midrule
 $a$ & 1.45 $\pm$ 0.12 \ps$^{-1}$\\
 $n$ & 1.92 $\pm$ 0.17 \\
 $t_{0}$ & 0.290 \ps \\
 $\tau_{1}$ & $17 \pm 16$ \ps \\ 
 $\tau_{2}$ & $1.3 \pm 0.3$ \ps \\
 $f$ & 0.032 $\pm$ 0.027 \\
-\hline
+\bottomrule
 \end{tabular}
 \vspace{0.7cm}             
 \caption{Parameters used to described the background decay time distribution from combinatorial background decays in data passing the \bhh selection.}
