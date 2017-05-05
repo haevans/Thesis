@@ -41,12 +41,12 @@ as shown in Table~\ref{tab:correlation}, therefore the dimuon invariant mass can
 \begin{table}[hbtp]
 \begin{center}
 \begin{tabular}{lcc}
-\hline
-Year & \bsmumu correlation &  \bbbarmumux correlation \\ \hline
+\toprule \toprule
+Year & \bsmumu correlation &  \bbbarmumux correlation \\ \midrule
 2011 & -0.008  & 0.003  \\
 2012 &  -0.006&   0.008\\
 2015 &  -0.006&   0.010\\ 
-2016 &  0.008& 0.002\\ \hline
+2016 &  0.008& 0.002\\ \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}                                                                                                                                               
 \caption{Correlation between mass and decay time for candidates from \bsmumu simulated decays and combinatorial background decays from data for 2011, 2012, 2015 and 2016 data taking conditions. The full effective lifetime selection is applied to simulated \bsmumu decays and decays in data must pass the effective lifetime selection requirements apart from the global BDT cut and have a dimuon invariant mass of $>5447$~\mevcc.}
@@ -217,12 +217,12 @@ where $i$ represents the year and $N^{\mu^{+}\mu^{-}_{i}$ the number of simulate
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{lccccc}
-\hline
-Year ($i$) & $Y_i^{\JPsiPhi}$ & $\epsilon_i$ & $N^{\mumu}_i$ & $\omega_i$ & $\mathcal{N}^{\mumu}_i \equiv N^{\mumu}_i \omega_i$ \\ \hline 
+\toprule \toprule
+Year ($i$) & $Y_i^{\JPsiPhi}$ & $\epsilon_i$ & $N^{\mumu}_i$ & $\omega_i$ & $\mathcal{N}^{\mumu}_i \equiv N^{\mumu}_i \omega_i$ \\ \midrule 
 2011       & 19190           & 0.412        & 70448        & 1.72       & 131364 \\
 2012       & 42103           & 0.406        & 254822       & 1.03       & 262461 \\
 2015       & 8571            & 0.410        & 222820       & 0.24       & 53917 \\ 
-2016       & 37765           & 0.406        & 124870       & 1.88       & 235218 \\ \hline
+2016       & 37765           & 0.406        & 124870       & 1.88       & 235218 \\ \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}                                                                                                                                               
 \caption{Weights used to combine simulated \bsmumu decays for each year to determine the acceptance function. Weights ensure the proportion of simulated events for each year matches what is expected in data.}
@@ -258,14 +258,14 @@ An unbinned \ml fit is performed to the combined simulated \bsmumu decays to det
 \begin{table}[tbp]
 \begin{center}
 \begin{tabular}{lc}
-\hline
+\toprule \toprule
 Parameter & Value \\
-\hline
+\midrule
 $a$ & 0.574 $\pm$ 0.011 \ps$^{-1}$\\
 $n$ & 1.49 $\pm$ 0.03 \\
 $t_{0}$ &  0.313 $\pm$ 0.007 \ps \\
 
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}             
 \caption{Parameters for the \bsmumu acceptance function determined from weighted simulated \bsmumu decays.}
@@ -293,8 +293,8 @@ P_{cbg}(t) = \epsilon(t)\times \left( f \cdot e^{-t/\tau_{1}} + (1-f)\cdot e^{-t
 where $\tau_{1}$ and $\tau_{2}$ are two independent lifetimes used to describe the background, $f$~describes the fraction of candidates with lifetime $\tau_{1}$ and the same acceptance shape as in Equation~\ref{eq:accpt} is used for describe the decay time efficiency $\epsilon(t)$. The lifetimes are different, one describes a long-lived component and the other a short-lived component that are evident in the data. The decay time acceptance is flat at large decay times, therefore the lifetimes of the combinatorial background decays are determined from a \ml fit using Equation~\ref{eq:cbgDTpdf}, setting $\epsilon(t)=1$, to candidates with a decay time above 2.5~\ps. The acceptance function parameters are then determined from a \ml fit to the full decay time range using Equation~\ref{eq:cbgDTpdf}, where the lifetimes and the fraction of candidates with each lifetime are fixed. The results are shown in Figure~\ref{fig:CBGaccpt} and the \pdf parameters in Table~\ref{tab:bkgparams}, the $t_{0}$ parameter is fixed in the fit to improve fit stability. 
 \begin{table}[tbp]
 \begin{center}
-\begin{tabular}{lr}
-\toprule
+\begin{tabular}{lc}
+\toprule \toprule
 Parameter & Value \\
 \midrule
 $a$ & 1.45 $\pm$ 0.12 \ps$^{-1}$\\
@@ -303,7 +303,7 @@ $t_{0}$ & 0.290 \ps \\
 $\tau_{1}$ & $17 \pm 16$ \ps \\ 
 $\tau_{2}$ & $1.3 \pm 0.3$ \ps \\
 $f$ & 0.032 $\pm$ 0.027 \\
-\bottomrule
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}             
 \caption{Parameters used to described the background decay time distribution from combinatorial background decays in data passing the \bhh selection.}
@@ -344,8 +344,8 @@ The expected number of signal and background decays in the data set passing the 
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{lc}
-\hline
-Decay & Expected yield \\ \hline
+\toprule \toprule
+Decay & Expected yield \\ \midrule
 \bsmumu & 30.94\\ 
 \bdmumu & 3.27\\ 
 \bhh & 9.68\\ 
@@ -356,7 +356,7 @@ Decay & Expected yield \\ \hline
 \bdpimumu  &  4.86\\ 
 \bcjpsimunu  &  9.79\\ 
 Combinatorial background & 66.23\\ 
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}                                                                                                                                               
 \caption{Number of expected decays in data passing the \bsmumu effective lifetime selection.}
@@ -430,11 +430,11 @@ Another way to assess the accuracy of the statistical uncertainties returned by 
 \begin{table}[ht]
 \begin{center}
 \begin{tabular}{lccc}
-\hline
- & \tmumu &   \Gmumu$\equiv \frac{1}{t_{\mu\mu}}$  &Gaussian \\ \hline 
+\toprule \toprule
+ & \tmumu &   \Gmumu$\equiv \frac{1}{t_{\mu\mu}}$  &Gaussian \\ \midrule 
 $1\sigma$ & 68.50 $\pm$ 0.08$\%$ & 67.92 $\pm$ 0.08$\%$ & 68.27$\%$ \\
 $2\sigma$ &  93.44$\pm$ 0.10$\%$ & 95.91$\pm$ 0.10$\%$ &  95.45$\%$ \\
-$3\sigma$ & 98.06$\pm$ 0.10$\%$ &  99.55$\pm$ 0.10$\%$ & 99.73$\%$ \\ \hline
+$3\sigma$ & 98.06$\pm$ 0.10$\%$ &  99.55$\pm$ 0.10$\%$ & 99.73$\%$ \\ \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}                                                                                                                                               
 \caption{Coverage of the statistical uncertainties evaluated as the number of pseudoexperiments for the expected number of decays with measured \tmumu (\Gmumu) values that are with 1, 2 and 3 times $\sigma_{\tau_{\mu\mu}}$ ($\sigma_{\Gamma_{\mu\mu}}$) of the generated lifetime value.}
@@ -508,42 +508,42 @@ The expected statistical uncertainties for \tmumu and \Gmumu are smallest for fi
 
 \begin{table}[tb]
 \begin{center}
-\begin{tabular}{|l|c|l|c|c|}
-\hline
+\begin{tabular}{lclcc}
+\toprule \toprule
 Fit no.               & Mass Range  			 &  Components included in the mass \pdf & Yields & Yields \\ 
-	               & /\mevcc 			  &				           & free  & fixed		\\ \hline
-\multirow{4}{*}{1.}	& \multirow{4}{*}{4900 - 6000}  &  \bsmumu, \bdmumu, comb. bkg.	& \checked & \\ \cline{3-5}
+	               & /\mevcc 			  &				           & free  & fixed		\\ \midrule
+\multirow{4}{*}{1.}	& \multirow{4}{*}{4900 - 6000}  &  \bsmumu, \bdmumu, comb. bkg.	& \checked & \\ \cmidrule{3-5}
                         &               		&  \bhh, \lambdab, \bcjpsimunu, 	& & \multirow{3}{*}{\checked} \\
 			&				& \bdpimunu, \bsKmunu,  & &  \\ 
-			&				&	\bupimumu, \bdpimumu   & &  \\ \hline
+			&				&	\bupimumu, \bdpimumu   & &  \\ \midrule
 
-\multirow{3}{*}{2.}	& \multirow{3}{*}{4900 - 6000} & \bsmumu, \bdmumu, comb. bkg.	& \checked & \\ \cline{3-5}
+\multirow{3}{*}{2.}	& \multirow{3}{*}{4900 - 6000} & \bsmumu, \bdmumu, comb. bkg.	& \checked & \\ \cmidrule{3-5}
                        &  				& \bhh, \lambdab, \bcjpsimunu, & & \multirow{2}{*}{\checked} \\
-			&	&$B^{0}_{(s)} \to \pi^{-}(K^{-}) \mu^{+} \nu_{\mu}$, $B^{0(+)} \to \pi^{0(+)} \mu^{+}\mu^{-}$ & & \\  \hline
+			&	&$B^{0}_{(s)} \to \pi^{-}(K^{-}) \mu^{+} \nu_{\mu}$, $B^{0(+)} \to \pi^{0(+)} \mu^{+}\mu^{-}$ & & \\  \midrule
 
-\multirow{4}{*}{3.}	 & \multirow{4}{*}{5150 - 6000}  &  \bsmumu, \bdmumu, comb. bkg.	& \checked & \\ \cline{3-5}
+\multirow{4}{*}{3.}	 & \multirow{4}{*}{5150 - 6000}  &  \bsmumu, \bdmumu, comb. bkg.	& \checked & \\ \cmidrule{3-5}
                         &               		  &  \bhh, \lambdab, \bcjpsimunu, & & \multirow{3}{*}{\checked} \\
 			&				&	\bdpimunu, \bsKmunu,  & &  \\ 
-			&				&	\bupimumu, \bdpimumu,  & &  \\ \hline
+			&				&	\bupimumu, \bdpimumu,  & &  \\ \midrule
 
-\multirow{3}{*}{4.}	& \multirow{3}{*}{5150 - 6000} & \bsmumu, \bdmumu, comb. bkg.	& \checked & \\ \cline{3-5}
+\multirow{3}{*}{4.}	& \multirow{3}{*}{5150 - 6000} & \bsmumu, \bdmumu, comb. bkg.	& \checked & \\ \cmidrule{3-5}
                        &  				& \bhh, \lambdab, \bcjpsimunu & & \multirow{2}{*}{\checked} \\
-				& & $B^{0}_{(s)} \to \pi^{-}(K^{-}) \mu^{+} \nu_{\mu}$, $B^{0(+)} \to \pi^{0(+)} \mu^{+}\mu^{-}$ & & \\  \hline
+				& & $B^{0}_{(s)} \to \pi^{-}(K^{-}) \mu^{+} \nu_{\mu}$, $B^{0(+)} \to \pi^{0(+)} \mu^{+}\mu^{-}$ & & \\  \midrule
 
 
-\multirow{2}{*}{5.}	& \multirow{2}{*}{5200 - 6000} & \bsmumu, \bdmumu, comb. bkg.			&  \checked & \\ \cline{3-5}
-			&				  & \bhh, \lambdab, \bcjpsimunu			& 	& \checked  \\ \hline
-\multirow{2}{*}{6.}	& \multirow{2}{*}{5200 - 6000} & \bsmumu, \bdmumu, comb. bkg.			& \checked & \\ \cline{3-5}
-			&				&  \bhh, \lambdab 					& & \checked  \\ \hline
+\multirow{2}{*}{5.}	& \multirow{2}{*}{5200 - 6000} & \bsmumu, \bdmumu, comb. bkg.			&  \checked & \\ \cmidrule{3-5}
+			&				  & \bhh, \lambdab, \bcjpsimunu			& 	& \checked  \\ \midrule
+\multirow{2}{*}{6.}	& \multirow{2}{*}{5200 - 6000} & \bsmumu, \bdmumu, comb. bkg.			& \checked & \\ \cmidrule{3-5}
+			&				&  \bhh, \lambdab 					& & \checked  \\ \midrule
 
 
-7.			& 5200 - 6000 			& \bsmumu, \bdmumu, comb. bkg.			&  \checked &   \\ \hline
-8.			& 5200 - 6000 			& \bsmumu, comb. bkg.				& \checked &   \\ \hline
-9.			& 5250 - 6000 			& \bsmumu ,comb. bkg.				&    \checked & \\ \hline
-10.			& 5300 - 6000 			& \bsmumu, comb. bkg.				&  \checked &  \\ \hline
-11.			& 5320 - 6000 			& \bsmumu, comb. bkg.				&  \checked &  \\ \hline
-12.			& 5340 - 6000 			& \bsmumu, comb. bkg.				&  \checked &  \\ \hline
-13.			& 5350 - 6000 			& \bsmumu, comb. bkg.				&  \checked &  \\ \hline
+7.			& 5200 - 6000 			& \bsmumu, \bdmumu, comb. bkg.			&  \checked &   \\ \midrule
+8.			& 5200 - 6000 			& \bsmumu, comb. bkg.				& \checked &   \\ \midrule
+9.			& 5250 - 6000 			& \bsmumu ,comb. bkg.				&    \checked & \\ \midrule
+10.			& 5300 - 6000 			& \bsmumu, comb. bkg.				&  \checked &  \\ \midrule
+11.			& 5320 - 6000 			& \bsmumu, comb. bkg.				&  \checked &  \\ \midrule
+12.			& 5340 - 6000 			& \bsmumu, comb. bkg.				&  \checked &  \\ \midrule
+13.			& 5350 - 6000 			& \bsmumu, comb. bkg.				&  \checked &  \\ \bottomrule \bottomrule
   
 \end{tabular}
 \vspace{0.7cm}
@@ -560,10 +560,10 @@ Fit no.               & Mass Range  			 &  Components included in the mass \pdf 
 \begin{table}[hp]
 \begin{center}
 %\begin{tabular}{p{0.5cm}p{1.0cm}p{1.0cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{1.4cm}}
-\begin{tabular}{|l|cc|cc|cc|c|ccc|}
-\hline
-Fit & \multicolumn{2}{|c|}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{N}$(Comb. bkg.)} & \multicolumn{2}{|c|}{Comb. bkg. slope} & \tmumu & \multicolumn{3}{c|}{\Gmumu} \\ \hline
- &Mean&Width&Mean&Width&Mean&Width&$\sigma$/\ps&Mean&Width&$\sigma$/\ps$^{-1}$\\ \hline
+\begin{tabular}{lrrrrrrrrrr}
+\toprule \toprule
+Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{N}$(Comb. bkg.)} & \multicolumn{2}{c}{Comb. bkg. slope} & \tmumu & \multicolumn{3}{c}{\Gmumu} \\ \midrule
+ &Mean&Width&Mean&Width&Mean&Width&$\sigma$/\ps&Mean&Width&$\sigma$/\ps$^{-1}$\\ \midrule
 1. & -0.043 & 1.002 & -0.048 & 1.050 & -0.071 & 1.005 & 0.40 & 0.021 & 0.946 & 0.15 \\
 2. & -0.064 & 1.015 & -0.018 & 1.048 & -0.092 & 1.006 & 0.35 & 0.013 & 0.970 & 0.13 \\
 3. & -0.034 & 0.973 & -0.067 & 1.023 & -0.019 & 0.999 & 0.42 & 0.031 & 0.935 & 0.12 \\
@@ -576,7 +576,7 @@ Fit & \multicolumn{2}{|c|}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathca
 10. & -0.101 & 1.013 & 0.396 & 0.989 & -0.571 & 1.068 & 0.31 & -0.043 & 0.985 & 0.11 \\
 11. & 0.050 & 1.006 & 0.060 & 1.013 & -0.123 & 1.013 & 0.29 & 0.024 & 0.982 & 0.11  \\
 12. & 0.020 & 1.009 & 0.015 & 1.007 & -0.066 & 0.991 & 0.30 & 0.021 & 0.995 & 0.11 \\
-13. & 0.007 & 1.001 & -0.039 & 1.033 & -0.029 & 0.995 & 0.34 & 0.023 & 0.983 & 0.13 \\ \hline
+13. & 0.007 & 1.001 & -0.039 & 1.033 & -0.029 & 0.995 & 0.34 & 0.023 & 0.983 & 0.13 \\ \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Results for the pseudoexperiments testing the mass fit configurations. The mean and width of the pull distributions for the \bsmumu and combinatorial background yields and the slope of the combinatorial background mass \pdf are shown along with the expected statistical uncertainty on \tmumu and \Gmumu. The uncertainties on the means are 0.010 and the widths are 0.007 for all configurations.}                                                                                                   
@@ -596,9 +596,9 @@ Fit & \multicolumn{2}{|c|}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathca
 %\begin{center}
 %\begin{tabular}{p{0.5cm}p{1.0cm}p{1.0cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{1.4cm}}
 %\begin{tabular}{lcccccccccc}
-%\hline
-%Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{N}$(Comb.)} & \multicolumn{2}{c}{$\lambda$} & \tmumu & \multicolumn{3}{c}{\Gmumu} %\\ \hline
-% &Mean&Width&Mean&Width&Mean&Width&$\sigma$/\ps&Mean&Width&$\sigma$/\ps$^{-1}$\\ \hline
+%\bottomrule \bottomrule
+%Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{N}$(Comb.)} & \multicolumn{2}{c}{$\lambda$} & \tmumu & \multicolumn{3}{c}{\Gmumu} %\\ \bottomrule \bottomrule
+% &Mean&Width&Mean&Width&Mean&Width&$\sigma$/\ps&Mean&Width&$\sigma$/\ps$^{-1}$\\ \bottomrule \bottomrule
 %1. & -0.04 & 1.00 & -0.05 & 1.05 & 0.06 & 1.00 & 0.38 & 0.03 & 0.95 & 0.14 \\
 %2. & -0.06 & 1.01 & -0.05 & 1.05 & 0.09 & 1.01 & 0.37 & -0.01 & 0.96 & 0.13 \\
 %3. & -0.04 & 0.99 & -0.08 & 1.03 & -0.04 & 0.99 & 0.41 & 0.00 & 0.94 & 0.15 \\
@@ -609,7 +609,7 @@ Fit & \multicolumn{2}{|c|}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathca
 %8. &-0.52 & 1.05 & 1.73 & 0.89 & -2.23 & 1.08 & 0.33 & -0.15 & 0.99 & 0.12 \\
 %9. & 0.45 & 1.04 & 1.29 & 0.91 & -1.78 & 1.13 & 0.33 & -0.14 & 0.99 & 0.12 \\
 %10. & -0.08 & 1.03 & 0.36 & 0.98 & -0.49 & 1.06 & 0.30 & -0.05 & 1.00 & 0.11 \\
-%11. &0.00 & 1.01 & 0.06 & 1.02 & -0.10 & 1.02 & 0.29 & 0.00 & 1.00 & 0.11 \\ \hline
+%11. &0.00 & 1.01 & 0.06 & 1.02 & -0.10 & 1.02 & 0.29 & 0.00 & 1.00 & 0.11 \\ \bottomrule \bottomrule
 %This will not be the same as the systematic Fit Accuarcy part since all backgrounds are generated here!
 %\end{tabular}
 %\vspace{0.7cm}
@@ -668,11 +668,11 @@ Therefore, it is important to check whether the statistical coverage for \tmumu 
 \begin{table}[hb]
 \begin{center}
 \begin{tabular}{lccc}
-\hline
- & \tmumu &  \Gmumu & Gaussian \\ \hline 
+\toprule \toprule
+ & \tmumu &  \Gmumu & Gaussian \\ \midrule 
 $1\sigma$ & 68.83 $\pm$0.08\% & 67.76$\pm$0.08\% & 68.27\% \\
 $2\sigma$ &  93.11$\pm$0.10\% & 95.55$\pm$0.10\% &  95.45\% \\
-$3\sigma$ & 97.92$\pm$0.10\% &  99.67$\pm$0.10\% & 99.73 \% \\ \hline
+$3\sigma$ & 97.92$\pm$0.10\% &  99.67$\pm$0.10\% & 99.73 \% \\ \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}                                                                                                                                               
 \caption{Coverage of the statistical uncertainties evaluated as the number of pseudoexperiments using the observed number of decays with measured \tmumu (\Gmumu) values that are with 1, 2 and 3 times $\sigma_{\tau_{\mu\mu}}$ ($\sigma_{\Gamma_{\mu\mu}}$) of the generated lifetime value..}

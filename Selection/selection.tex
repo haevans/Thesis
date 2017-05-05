@@ -137,7 +137,7 @@ Decay & Generator level cuts & Data taking & Simulation & Events  \\
 & & 2015& sim09a  & 4    \\
 & & 2016& sim09a   & 8   \\
 \bskk  & & 2012& sim08g  & 7  \\ %13102002, 2016 is sim09a 4.1 M per pol, 2011 is sim-8b and 0.8 M per pol   
-& & 2015& sim09a   & 4   \\  \bottomrule
+& & 2015& sim09a   & 4   \\  \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Simulated samples used for developing the selection and analysis of \bmumu decays listed according to the study the decays are used in. Cuts are applied to \bbbarmumux to the magnitude muon momenta ($p$), invariant mass of two muons ($M_{\mu^+ \mu-}$), the distance of closest approach of the muons (DOCA) and the product of the transverse momenta of the muons (PtProd).}
@@ -261,7 +261,7 @@ In summary, the requirements imposed on the trigger to select \bsmumu, \bhh, \bu
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{lc}
-\toprule
+\toprule \toprule
 Trigger Line& Trigger decision \\ \midrule
 %\multicolumn{2}{c}{{\it set A}} \\ \hline
 %L0Global& Dec\\
@@ -274,7 +274,7 @@ Hlt2Phys& DEC \\ \midrule
 \multicolumn{2}{c}{{\it\bhh}} \\ \midrule
 L0Global& TIS\\
 Hlt1Phys& TIS \\
-Hlt2B2HHDecision& TOS \\ \bottomrule
+Hlt2B2HHDecision& TOS \\ \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Trigger decisions used to select \bsmumu, \bhh, \bujpsik and \bsjpsiphi decays.}% Set `A' is used to select decays for the Branching Fraction analysis. Set `B' is used to select \bsmumu decays for the effective lifetime analysis. Sets `A' and `C' are used to select \bhh decays used to develop the \bsmumu effective lifetime analysis.}
@@ -351,7 +351,7 @@ The stripping selection cuts applied for the Run~1 branching fraction analysis~\
 \begin{table}[tp]
 \begin{center}
 \begin{tabular}{lll}
-\toprule
+\toprule \toprule
   Particle              & \bsmumu                                     & \bhh                                  \\
 \midrule            
 \bsd         & |M - M$_{PDG}$| $<$ 1200 \mevcc              & |M - M$_{PDG}$| $<$ 500 \mevcc     \\          
@@ -369,7 +369,7 @@ $\mu$ or $h$   &$\chi^{2}_{trk} < 3$                 & $\chi^{2}_{trk} < 3$     
                         &    $p_{T}$ $>$ 0.25 \gevc                   & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\
                         &                                           & Ghost probability $<$ 0.3        \\
 
-\bottomrule
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Selection requirements applied during the stripping selection for Run~1 data used in the \bmumu \BF analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bmumu and \bhh decays. $M_{PDG}$ corresponds to the Particle Data Group~\cite{Olive:2016xmw} mass of each particle.}
@@ -386,7 +386,7 @@ $\mu$ or $h$   &$\chi^{2}_{trk} < 3$                 & $\chi^{2}_{trk} < 3$     
 \begin{table}[tp]
 \begin{center}
 \begin{tabular}{llll}
-\toprule
+\toprule \toprule
   Particle            &$B^{+} \to J/\psi(\mu^{+}\mu^{-})K^{+}$                            & Particle   &$B^{0}_{s} \to J/\psi(\mu^{+}\mu^{-}) \phi(K^{+}K^{-})$ \\
 \midrule             
 $B^{+}$        & |M - M$_{PDG}$| $<$   500 \mevcc           & \bs         & |M - M$_{PDG}$| $<$   500 \mevcc             \\          
@@ -408,7 +408,7 @@ $K^{+}$             & \chitrk < 3           & $\phi$           &  |M - M$_{PDG}$
                     & $p_{T}$ $>$ 0.25 \gevc              &           &  Minimum \chiIP $>$ 4  \\
                    & Minimum \chiIP $>$ 25         & K$^{\pm}$           & \chitrk < 3  \\
                  &                                   &                       & $p_{T}$ $>$ 0.25 \gevc     \\
-\bottomrule
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Selection requirements applied during the stripping selection for Run~1 data used in the \bmumu branching fraction analysis~\cite{CMS:2014xfa, Aaij:2013aka} to select \bujpsik and \bsjpsiphi decays. $M_{PDG}$ corresponds to the Particle Data Group~\cite{Olive:2016xmw} mass of each particle.}
@@ -456,8 +456,8 @@ No trigger requirements have been applied so that only the effect of the strippi
 %\begin{sideways}
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{lcccc}
-\toprule
+\begin{tabular}{lrrrr}
+\toprule \toprule
                   & \multicolumn{4}{c}{Efficiency}  \\ 
 \cmidrule{2-5}
 Requirement                                  & \bsmumu                   & \bdmumu                       & \bhh                &\bujpsik  \\
@@ -474,7 +474,7 @@ $\mu$, $h$, $K^{+}$ minimum \chiIP    & (80.16 $\pm$ 0.06) $\%$  & (80.62 $\pm$ 
 Total after above cuts                  & (71.29 $\pm$  0.07) $\%$  & (71.82 $\pm$ 0.07)$\%$        & (70.97 $\pm$ 0.07)$\%$        & (71.30 $\pm$ 0.18)$\%$ \\
 \midrule
 Total after all cuts      & (71.29 $\pm$  0.07) $\%$                & (71.82 $\pm$ 0.07)$\%$            & (70.70 $\pm$ 0.07)$\%$        & (62.25 $\pm$ 0.20)$\%$ \\
-\bottomrule
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Signal efficiencies of \bmumu, \bhh and \bujpsik stripping lines using simulated \bmumu, \bdkpi and \bujpsik decays, respectively. The stripping selection cuts are lised in Tables~\ref{tab:PreviousStrippingA} and~\ref{tab:PreviousStrippingB} and efficiencies are evaluted only for cuts are shared between all stripping lines.}%n the \bsmumu stripping, each cut separately and the total efficiencies are given for the listed cuts and the complete set of cuts present in each stripping line. }
@@ -593,11 +593,11 @@ The set of chosen cuts used in Table~\ref{tab:Retention} aims to keep both cuts 
 \vspace*{\fill}
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{ llccccc}\toprule
+\begin{tabular}{ ccrrrrr}\toprule \toprule
   \multicolumn{2}{c}{Stripping cut} & Stripping line efficiency &  \multicolumn{4}{c}{Stripping line retention} \\
 \midrule
 $\sqrt{\chi^{2}_{FD}}$ & Daughter  $\sqrt{\text{IP} \chi^{2}}$ & \bsmumu  & \bmumu & \bdkpi & \bujpsik & \bsjpsiphi \\
-\hline
+\midrule
 15                    &5.00                  & (71.29 $\pm$ 0.07) $\%$  &  1.0      &1.0     &1.0      & 1.0 \\
 14                    &4.25                  & (74.91 $\pm$ 0.07) $\%$  &  1.5      &1.3     &1.1      & 1.3 \\
 13                    &4.00                  & (76.84 $\pm$ 0.07) $\%$  &  1.8      &1.5     &1.2      & 1.4 \\
@@ -605,7 +605,7 @@ $\sqrt{\chi^{2}_{FD}}$ & Daughter  $\sqrt{\text{IP} \chi^{2}}$ & \bsmumu  & \bmu
 11                    &3.00                  & (82.72 $\pm$ 0.06) $\%$  &  3.7      &2.4     &1.6      & 1.9 \\
 10                    &2.75                  & (84.86 $\pm$ 0.06) $\%$  &  4.7      &3.0     &1.7      & 2.1 \\
 9                     &2.50                  & (86.96 $\pm$ 0.06) $\%$  &  6.8      &3.9     &2.0      & 2.2 \\
-\bottomrule
+\bottomrule \bottomrule
 \end{tabular}
 \end{center}
 %\label{tab:Retention}
@@ -628,7 +628,7 @@ The final set of cuts used in the stripping selection must be a compromise betwe
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{lrr}
-\toprule
+\toprule \toprule
 Stripping Lines & Events & Retention / $\%$ \\
 \midrule
 \bmumu & 898880 & 0.0022 \\
@@ -640,7 +640,7 @@ Stripping Lines & Events & Retention / $\%$ \\
 %Total & 31779975& - \\
 %Total with correlation & 31402536 \\
 Total & 18745743& - \\
-\bottomrule
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{The number of events passing stripping lines used for the \bsmumu analysis in reference~\cite{Aaij:2013aka} from the selection listed in Tables~\ref{tab:PreviousStrippingA} and~\ref{tab:PreviousStrippingB} and the percentage of the total LHCb data set that they correspond to. The total does not include correlation between lines and the requirements \chiFD $ > 225$ and daugher \chiIP $> 25$ are used.}%, which is expected to be 42 $\%$ between \bmumu and \bhh lines. }
@@ -865,7 +865,7 @@ The performance of the BDTS at removing backgrounds is illustrated in Figure~\re
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{ll}
-\toprule
+\toprule \toprule
 \multicolumn{2}{c}{Selection applied to BDTS training samples.} \\ \midrule
 \bs & $\mu^{\pm}$\\ \midrule
  \chiFD $>$ 225 & $p_{T}$ $>$ 500 \mevc \\
@@ -881,7 +881,7 @@ Trigger line & Decision \\ \midrule
 L0Global&DEC\\
 Hlt1Phys&DEC \\
 Hlt2Phys&DEC \\ 
-\bottomrule
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Selection cuts applied to select the signal and background samples used to train the BDTS. The isMuon requirement is not applied to the muons so that the BDTS can be used on \bhh decays.}
@@ -892,16 +892,16 @@ Hlt2Phys&DEC \\
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{ll}
-\hline
-Parameter & Value \\ \hline
+\begin{tabular}{lr}
+\toprule \toprule
+Parameter & Value \\ \midrule
 nTrees & 250 \\
 nEventsMin & 400 \\
 MaxDepth & 3 \\
 %NNodesMax = 100000 \\
 $\beta$ & 1.0 \\
 nCuts & 20 \\
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Training parameters used to specify the training of the BDTS.}
@@ -958,9 +958,9 @@ A comparison of the signal and background distributions of the input variables i
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{ll}
-\hline
-Parameter & Value \\ \hline
+\begin{tabular}{lr}
+\toprule \toprule
+Parameter & Value \\ \midrule
 nTrees & 1000 \\
 %nEventsMin & 400 \\
 MinNodeSize & 1$\%$ \\
@@ -968,7 +968,7 @@ MaxDepth & 3 \\
 %NNodesMax = 100000 \\
 $\beta$ & 0.75 \\
 nCuts & 30 \\
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Training parameters used to specify the training of the global BDT.}
@@ -987,9 +987,9 @@ The complete list of selection requirements applied to the training samples used
 \begin{center}
 
 \begin{tabular}{ll}
-\hline
-\multicolumn{2}{c}{Selection applied to global BDT training samples.} \\ \hline
-\bs & $\mu^{\pm}$\\ \hline
+\toprule \toprule
+\multicolumn{2}{c}{Selection applied to global BDT training samples.} \\ \midrule
+\bs & $\mu^{\pm}$\\ \midrule
  \chiFD $>$ 225 & $p_{T}$ $>$ 500 \mevc \\
  \chiIP $<$ 25  & \chitrk $<$ 3    \\
  Vertex $\chi^{2}$/$ndof$ $<$ 9    & minimum \chiIP $>$ 25   \\
@@ -998,13 +998,13 @@ The complete list of selection requirements applied to the training samples used
  $p_{T}$ $>$ 500 \mevc  &  isMuon = True\\ 
 DIRA $>$ 0 & BDTS > 0.05 \\
 4900 $<$ M$_{\mu^{+}\mu^{-}}$ < 6000 \mevcc & \\
-\hline
-\multicolumn{2}{c}{Trigger requirements} \\ \hline
-Trigger line & Decision\\ \hline
+\midrule
+\multicolumn{2}{c}{Trigger requirements} \\ \midrule
+Trigger line & Decision\\ \midrule
 L0Global&DEC\\
 Hlt1Phys&DEC \\
 Hlt2Phys&DEC \\ 
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Selection cuts applied to select candidates for signal and background samples used to train the BDT.}
@@ -1063,9 +1063,9 @@ The selection requirements do not remove all backgrounds decays from the data se
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{ll}
-\hline
+\toprule \toprule
 Particle                & \bsmumu                              \\%        & \bhh                                 \\
-\hline
+\midrule
 \bsd          & 4900 \mevcc $<$ M $<$ 6000 \mevcc     \\%         & 5000 \mevcc $<$ M $<$ 5800  \mevcc      \\                         
                         & DIRA $>$ 0                         \\%              & DIRA $>$ 0                             \\
                         & \chiFD $>$ 225              \\%            & \chiFD $>$ 225                  \\      
@@ -1074,7 +1074,7 @@ Particle                & \bsmumu                              \\%        & \bhh
                         & DOCA $<$ 0.3 mm    \\%                            & DOCA $<$ 0.3 mm                          \\    
                         & $\tau$ $<$ 13.248 \ps  \\%                        & $\tau$ $<$ 13.248 \ps                \\
                         & $p_{T}$ $>$ 500 \mevc  \\%                         & $p_{T}$ $>$ 500 \mevc                \\%%
-\hline
+\\
 $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
                         & Minimum \chiIP $>$ 25 \\%                   & Minimum \chiIP $>$ 25           \\             
                         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\%          & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc    \\
@@ -1083,12 +1083,12 @@ $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)
                     & $|m_{\mu\mu} - m_{J/\psi}| < 30$~\mevcc   \\%        &$|$m_{\mu\mu} - m_{\jpsi}$| $<$ 30$~\mevcc    \\
                         & isMuon = True               \\%                   &  -                                \\
                         & PID$_{\mu}$ > 0.4 (0.8)       \\%                  & -                 \\
-\hline
+\\
                         & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\ \hline                   
 Trigger requirements & L0Global = DEC\\
                      & Hlt1Phys = DEC\\
                      & Hlt2Phys = DEC \\
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Selection cuts applied to select \bsmumu, where selection is different between Run~1 and Run~2 the Run~2 values are shown in parenthesis.}
@@ -1111,7 +1111,7 @@ Trigger requirements & L0Global = DEC\\
 %\begin{table}[htbp]
 %\begin{center}
 %\begin{tabular}{lll}
-%\hline
+%\bottomrule \bottomrule
 %Particle                & \bsmumu                                     & \bhh                                 \\
 %\hline
 %\bs or $B^{+}$          & 4900 \mevcc $<$ M $<$ 6000 \mevcc           & 5000 \mevcc $<$ M $<$ 5800  \mevcc      \\                         
@@ -1211,21 +1211,21 @@ The requirements imposed on the trigger to select \bsmumu and \bhh decays are sh
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{ll}
-\hline
-Trigger Line    & Trigger decision \\ \hline
-%\multicolumn{2}{c}{{\it set A}} \\ \hline                                          
+\begin{tabular}{lc}
+\toprule \toprule
+Trigger Line    & Trigger decision \\ \midrule
+%\multicolumn{2}{c}{{\it set A}} \\ \midrule                                          
 %L0Global       & Dec\\                                                             
 %Hlt1Phys       & Dec \\                                                            
-%Hlt2Phys       & Dec \\ \hline                                                     
-\multicolumn{2}{c}{{\it \bsmumu decays}} \\ \hline
+%Hlt2Phys       & Dec \\ \midrule                                                     
+\multicolumn{2}{c}{{\it \bsmumu decays}} \\ \midrule
 L0Global        & TIS or TOS \\
 Hlt1Phys        & TIS or TOS \\
-Hlt2Phys        & TIS or TOS \\ \hline
-\multicolumn{2}{c}{{\it \bhh decays}} \\ \hline
+Hlt2Phys        & TIS or TOS \\ \midrule
+\multicolumn{2}{c}{{\it \bhh decays}} \\ \midrule
 L0Global        & TIS\\
 Hlt1Phys        & TIS \\
-Hlt2Phys        & TIS \\ \hline
+Hlt2Phys        & TIS \\ \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Trigger lines used to select \bsmumu and \bhh decays for the \el.}
@@ -1257,15 +1257,15 @@ The separation of \bhh decays into \bskk and \bskpi decays is done using the DLL
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{lll}
-\hline
+\toprule \toprule
 Decay                    & Particle               & PID requirements \\
-\hline
+\midrule
 \bsmumu  (Run~1 and 2015) & $\mu^{\pm}$& PID$_{\mu}$ > 0.2 \\
-\bsmumu  (2016)          & $\mu^{\pm}$& PID$_{\mu}$ > 0.4 \\ \hline
+\bsmumu  (2016)          & $\mu^{\pm}$& PID$_{\mu}$ > 0.4 \\ \midrule
 \bdkpi and \bskpi       & $K^{+}$                & DLL$_{K\pi}$ $>$ 10 \\
-                         & $\pi{-}$              & DLL$_{K\pi}$ $<$ -10 \\ \hline
+                         & $\pi{-}$              & DLL$_{K\pi}$ $<$ -10 \\ \midrule
 \bskk                    & $K^{+}$ and $K^{-}$    & DLL$_{K\pi}$ $>$ 10 \\
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \vspace{0.7cm}
@@ -1295,13 +1295,13 @@ Simulated 2012 \bsmumu decays were used as the signal training sample and two di
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{lc}
-\hline
-Sample & Number of decays \\ \hline
+\begin{tabular}{lr}
+\toprule \toprule
+Sample & Number of decays \\ \midrule
 Simulated \bsmumu & 668292 \\
 Simulated \bbbarmumux & 586586 \\
 Data & 189077\\
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Number of candidates present in each training sample after the selection cuts have been applied. Simulated decays and decays in data were identified as candidates that pass the selection requirements listed in Table~\ref{tab:BDTpresel}, expect the BDTS cut was not applied and the decays in data must be in the mass range 5447 - 6000 \mevcc.}
@@ -1374,15 +1374,15 @@ The same comparisons were made with the BDT used in the previous analysis~\cite{
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{l|cccccccccc}
-\hline
+\begin{tabular}{lrrrrrrrrrr}
+\toprule \toprule
 BDT & \multicolumn{9}{c}{Number events above BDT output value}  \\
-\hline
-   & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\ \hline
+\midrule
+   & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\ \midrule
 Global BDT  & 2261 & 597 & 229 & 89 & 34 & 13 & 4 & 1 & 0 \\ 
 Adaptive BDT  & 4623 & 1395 & 513 & 215 & 77 & 32 & 15 & 4 & 2 \\
 uBoost BDT & 7904 & 3344 & 1535 &630 & 268 & 92 & 27 & 7 & 0 \\
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \vspace{0.7cm}
@@ -1426,14 +1426,14 @@ The ratios for the different cuts values are shown in Table~\ref{tab:EfficiencyR
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{lc}
-\hline
-Decay & Expected number of candidates \\ \hline
+\begin{tabular}{lr}
+\toprule \toprule
+Decay & Expected number of candidates \\ \midrule
 \bsmumu & 30.94 \\
 Combinatorial background & 66.23\\
-\hline
+\midrule
 Total & 97.17\\
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Expected number of \bsmumu and combinatorial background candidates after the \bsmumu selection requirement and with a global BDT value greater than 0.55 in the mass range 4900 $< m_{\mu^{+}\mu^{-}} <$ 6000 \mevcc. }
@@ -1444,15 +1444,15 @@ Total & 97.17\\
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{lc}
-\hline
-Global BDT cut & $R_{\epsilon}$ \\ \hline 
+\begin{tabular}{lr}
+\toprule \toprule
+Global BDT cut & $R_{\epsilon}$ \\ \midrule 
 0.40 & 8.69 \\
 0.45 & 3.91 \\
 0.50 & 1.91 \\
 0.55 & 1.00 \\
 0.60 & 0.55 \\
-0.65 & 0.32 \\ \hline
+0.65 & 0.32 \\ \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 
@@ -1487,15 +1487,15 @@ The mass distribution of the combinatorial background is described by an exponen
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{lc}
-\hline
-BDT cut & $\lambda$ /c$^{2}$MeV$^{-1}$\\ \hline
+\begin{tabular}{lr}
+\toprule \toprule
+BDT cut & $\lambda$ /c$^{2}$MeV$^{-1}$\\ \midrule
 0.40 & -0.00114 $\pm$ 0.00028 \\
 0.45 & -0.00129 $\pm$ 0.00041 \\
 0.50 & -0.00132 $\pm$ 0.00060 \\
 0.55 & -0.00004 $\pm$ 0.00089 \\
 0.60 & -0.00000 $\pm$ 0.00114 \\
-0.65 & -0.00024 $\pm$ 0.00122 \\ \hline
+0.65 & -0.00024 $\pm$ 0.00122 \\ \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{The slope of the combinatorial background mass distribution for different cut value on the global BDT evaluated from \bbbarmumux simulated decays.}
@@ -1511,16 +1511,16 @@ The results from 10,000 pseudoexperiments for BDT cut values every 0.05 in the r
 
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{lccc}
-\hline
+\begin{tabular}{lrrr}
+\toprule \toprule
 Global BDT cut & $\frac{S}{\sqrt{S+B}}$&  $\sigma \left(\tau_{\mu\mu} \right)$   / \ps & $\sigma \left(\tau^{-}_{\mu\mu} \right)$ / \ps$^{-1}$ \\   
-\hline
+\midrule
 0.40           & 3.87 & 0.345 & 0.128 \\ %& $-0.01 \pm 0.01$ & $1.020 \pm 0.007$ \\
 0.45        & 4.51 & 0.309 & 0.114 \\ %& $-0.02 \pm 0.01$ & $1.014 \pm 0.007$ \\
 0.50        & 4.85 & 0.291 & 0.108 \\ %& $-0.01 \pm 0.01$ & $1.029 \pm 0.007$ \\
 0.55       & 4.94 & 0.285 & 0.106 \\ %& $0.00 \pm 0.01$ & $1.010 \pm 0.007$ \\
 0.60           & 4.86 & 0.297 & 0.109 \\ %& $-0.02 \pm 0.01$ & $0.996 \pm 0.007$ \\
-0.65            & 4.65 & 0.309 & 0.115 \\  \hline%&  $-0.01 \pm 0.01$  & $1.000 \pm 0.007$ \\ \hline
+0.65            & 4.65 & 0.309 & 0.115 \\  \bottomrule \bottomrule%&  $-0.01 \pm 0.01$  & $1.000 \pm 0.007$ \\ \hline
 \end{tabular} 
 \vspace{0.7cm}
 \caption{ The signal significance for each cut value in the global BDT and median of the expected uncertainties for \tmumu and \invtmumu from 10,000 pseudoexperiments for the expected number of events. }
@@ -1538,9 +1538,9 @@ The selection requirements do not remove all backgrounds decays from the data se
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{ll}
-\hline
+\toprule \toprule
 Particle                & \bsmumu                              \\%        & \bhh                                 \\
-\hline
+\midrule
 \bs          & 5320 \mevcc $<$ M $<$ 6000 \mevcc     \\%         & 5000 \mevcc $<$ M $<$ 5800  \mevcc      \\                         
                         & DIRA $>$ 0                         \\%              & DIRA $>$ 0                             \\
                         & \chiFD $>$ 225              \\%            & \chiFD $>$ 225                  \\      
@@ -1549,7 +1549,7 @@ Particle                & \bsmumu                              \\%        & \bhh
                         & DOCA $<$ 0.3 mm    \\%                            & DOCA $<$ 0.3 mm                          \\    
                         & $\tau$ $<$ 13.248 \ps  \\%                        & $\tau$ $<$ 13.248 \ps                \\
                         & $p_{T}$ $>$ 500 \mevc  \\%                         & $p_{T}$ $>$ 500 \mevc                \\%%
-\hline 
+\\ 
 $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
                         & Minimum \chiIP $>$ 25 \\%                   & Minimum \chiIP $>$ 25           \\             
                         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\%          & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc    \\
@@ -1558,14 +1558,15 @@ $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)
                     & $|m_{\mu\mu} - m_{J/\psi}| < 30$~\mevcc   \\%        &$|$m_{\mu\mu} - m_{\jpsi}$| $<$ 30$~\mevcc    \\
                         & isMuon = True               \\%                   &  -                                \\
                         & PID$_{\mu}$ > 0.2 (0.4)       \\%                  & -                 \\
-\hline
+\\
                         & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\ 
 				                  
-			& Global BDT > 0.55 \\ \hline
+			& Global BDT > 0.55 \\ 
+\\
 Trigger requirements & L0Global = TIS or TOS \\
                      & Hlt1Phys = TIS or TOS \\
                      & Hlt2Phys = TIS or TOS \\
-\hline
+\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Selection cuts applied to select \bsmumu, where selection is different between Run~1 and Run~2 the Run~2 values are shown in parenthesis.}
