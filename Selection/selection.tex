@@ -593,10 +593,10 @@ The set of chosen cuts used in Table~\ref{tab:Retention} aims to keep both cuts 
 \vspace*{\fill}
 \begin{table}[htbp]
 \begin{center}
-\begin{tabular}{ ccrrrrr}\toprule \toprule
+\begin{tabular}{ ccccccc}\toprule \toprule
   \multicolumn{2}{c}{Stripping cut} & Stripping line efficiency &  \multicolumn{4}{c}{Stripping line retention} \\
 \midrule
-$\sqrt{\chi^{2}_{FD}}$ & Daughter  $\sqrt{\text{IP} \chi^{2}}$ & \bsmumu  & \bmumu & \bdkpi & \bujpsik & \bsjpsiphi \\
+$\sqrt{\chi^{2}_{FD}}$ & Daughter  $\sqrt{\chi^{2}_{IP}}$ & \bsmumu  & \bmumu & \bdkpi & \bujpsik & \bsjpsiphi \\
 \midrule
 15                    &5.00                  & (71.29 $\pm$ 0.07) $\%$  &  1.0      &1.0     &1.0      & 1.0 \\
 14                    &4.25                  & (74.91 $\pm$ 0.07) $\%$  &  1.5      &1.3     &1.1      & 1.3 \\
@@ -876,7 +876,7 @@ The performance of the BDTS at removing backgrounds is illustrated in Figure~\re
  $p_{T}$ $>$ 500 \mevc  & \\ 
 DIRA $>$ 0 & \\
 \midrule
-\multicolumn{2}{c}{Trigger requirements} \\ \midrule
+%\multicolumn{2}{c}{Trigger requirements} \\ \midrule
 Trigger line & Decision \\ \midrule
 L0Global&DEC\\
 Hlt1Phys&DEC \\
@@ -999,7 +999,7 @@ The complete list of selection requirements applied to the training samples used
 DIRA $>$ 0 & BDTS > 0.05 \\
 4900 $<$ M$_{\mu^{+}\mu^{-}}$ < 6000 \mevcc & \\
 \midrule
-\multicolumn{2}{c}{Trigger requirements} \\ \midrule
+%\multicolumn{2}{c}{Trigger requirements} \\ \midrule
 Trigger line & Decision\\ \midrule
 L0Global&DEC\\
 Hlt1Phys&DEC \\
@@ -1074,6 +1074,8 @@ Particle                & \bsmumu                              \\%        & \bhh
                         & DOCA $<$ 0.3 mm    \\%                            & DOCA $<$ 0.3 mm                          \\    
                         & $\tau$ $<$ 13.248 \ps  \\%                        & $\tau$ $<$ 13.248 \ps                \\
                         & $p_{T}$ $>$ 500 \mevc  \\%                         & $p_{T}$ $>$ 500 \mevc                \\%%
+                        & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\ \hline                                                                                           
+
 \\
 $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
                         & Minimum \chiIP $>$ 25 \\%                   & Minimum \chiIP $>$ 25           \\             
@@ -1084,7 +1086,7 @@ $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)
                         & isMuon = True               \\%                   &  -                                \\
                         & PID$_{\mu}$ > 0.4 (0.8)       \\%                  & -                 \\
 \\
-                        & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\ \hline                   
+%                        & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\ \hline                   
 Trigger requirements & L0Global = DEC\\
                      & Hlt1Phys = DEC\\
                      & Hlt2Phys = DEC \\
@@ -1218,11 +1220,11 @@ Trigger Line    & Trigger decision \\ \midrule
 %L0Global       & Dec\\                                                             
 %Hlt1Phys       & Dec \\                                                            
 %Hlt2Phys       & Dec \\ \midrule                                                     
-\multicolumn{2}{c}{{\it \bsmumu decays}} \\ \midrule
+\multicolumn{2}{c}{{\it \bsmumu}} \\ \midrule
 L0Global        & TIS or TOS \\
 Hlt1Phys        & TIS or TOS \\
 Hlt2Phys        & TIS or TOS \\ \midrule
-\multicolumn{2}{c}{{\it \bhh decays}} \\ \midrule
+\multicolumn{2}{c}{{\it \bhh}} \\ \midrule
 L0Global        & TIS\\
 Hlt1Phys        & TIS \\
 Hlt2Phys        & TIS \\ \bottomrule \bottomrule
@@ -1264,7 +1266,7 @@ Decay                    & Particle               & PID requirements \\
 \bsmumu  (2016)          & $\mu^{\pm}$& PID$_{\mu}$ > 0.4 \\ \midrule
 \bdkpi and \bskpi       & $K^{+}$                & DLL$_{K\pi}$ $>$ 10 \\
                          & $\pi{-}$              & DLL$_{K\pi}$ $<$ -10 \\ \midrule
-\bskk                    & $K^{+}$ and $K^{-}$    & DLL$_{K\pi}$ $>$ 10 \\
+\bskk                    & $K^{\pm}$    & DLL$_{K\pi}$ $>$ 10 \\
 \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
@@ -1377,7 +1379,7 @@ The same comparisons were made with the BDT used in the previous analysis~\cite{
 \begin{tabular}{lrrrrrrrrrr}
 \toprule \toprule
 BDT & \multicolumn{9}{c}{Number events above BDT output value}  \\
-\midrule
+\cmidrule{2-10}
    & 0.1 & 0.2 & 0.3 & 0.4 & 0.5 & 0.6 & 0.7 & 0.8 & 0.9 \\ \midrule
 Global BDT  & 2261 & 597 & 229 & 89 & 34 & 13 & 4 & 1 & 0 \\ 
 Adaptive BDT  & 4623 & 1395 & 513 & 215 & 77 & 32 & 15 & 4 & 2 \\
@@ -1489,7 +1491,7 @@ The mass distribution of the combinatorial background is described by an exponen
 \begin{center}
 \begin{tabular}{lr}
 \toprule \toprule
-BDT cut & $\lambda$ /c$^{2}$MeV$^{-1}$\\ \midrule
+Global BDT cut & $\lambda$ /c$^{2}$MeV$^{-1}$\\ \midrule
 0.40 & -0.00114 $\pm$ 0.00028 \\
 0.45 & -0.00129 $\pm$ 0.00041 \\
 0.50 & -0.00132 $\pm$ 0.00060 \\
@@ -1549,6 +1551,9 @@ Particle                & \bsmumu                              \\%        & \bhh
                         & DOCA $<$ 0.3 mm    \\%                            & DOCA $<$ 0.3 mm                          \\    
                         & $\tau$ $<$ 13.248 \ps  \\%                        & $\tau$ $<$ 13.248 \ps                \\
                         & $p_{T}$ $>$ 500 \mevc  \\%                         & $p_{T}$ $>$ 500 \mevc                \\%%
+                        & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\                                                                                                  
+
+                        & Global BDT > 0.55 \\
 \\ 
 $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
                         & Minimum \chiIP $>$ 25 \\%                   & Minimum \chiIP $>$ 25           \\             
@@ -1558,10 +1563,9 @@ $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)
                     & $|m_{\mu\mu} - m_{J/\psi}| < 30$~\mevcc   \\%        &$|$m_{\mu\mu} - m_{\jpsi}$| $<$ 30$~\mevcc    \\
                         & isMuon = True               \\%                   &  -                                \\
                         & PID$_{\mu}$ > 0.2 (0.4)       \\%                  & -                 \\
-\\
-                        & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\ 
+%                        & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\ 
 				                  
-			& Global BDT > 0.55 \\ 
+%			& Global BDT > 0.55 \\ 
 \\
 Trigger requirements & L0Global = TIS or TOS \\
                      & Hlt1Phys = TIS or TOS \\

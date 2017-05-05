@@ -257,13 +257,13 @@ An unbinned \ml fit is performed to the combined simulated \bsmumu decays to det
 
 \begin{table}[tbp]
 \begin{center}
-\begin{tabular}{lc}
+\begin{tabular}{lr}
 \toprule \toprule
 Parameter & Value \\
 \midrule
-$a$ & 0.574 $\pm$ 0.011 \ps$^{-1}$\\
+$a$ /\ps$^{-1}$ & 0.574 $\pm$ 0.011\\
 $n$ & 1.49 $\pm$ 0.03 \\
-$t_{0}$ &  0.313 $\pm$ 0.007 \ps \\
+$t_{0}$ /\ps &  0.313 $\pm$ 0.007 \\
 
 \bottomrule \bottomrule
 \end{tabular}
@@ -293,15 +293,15 @@ P_{cbg}(t) = \epsilon(t)\times \left( f \cdot e^{-t/\tau_{1}} + (1-f)\cdot e^{-t
 where $\tau_{1}$ and $\tau_{2}$ are two independent lifetimes used to describe the background, $f$~describes the fraction of candidates with lifetime $\tau_{1}$ and the same acceptance shape as in Equation~\ref{eq:accpt} is used for describe the decay time efficiency $\epsilon(t)$. The lifetimes are different, one describes a long-lived component and the other a short-lived component that are evident in the data. The decay time acceptance is flat at large decay times, therefore the lifetimes of the combinatorial background decays are determined from a \ml fit using Equation~\ref{eq:cbgDTpdf}, setting $\epsilon(t)=1$, to candidates with a decay time above 2.5~\ps. The acceptance function parameters are then determined from a \ml fit to the full decay time range using Equation~\ref{eq:cbgDTpdf}, where the lifetimes and the fraction of candidates with each lifetime are fixed. The results are shown in Figure~\ref{fig:CBGaccpt} and the \pdf parameters in Table~\ref{tab:bkgparams}, the $t_{0}$ parameter is fixed in the fit to improve fit stability. 
 \begin{table}[tbp]
 \begin{center}
-\begin{tabular}{lc}
+\begin{tabular}{lr}
 \toprule \toprule
 Parameter & Value \\
 \midrule
-$a$ & 1.45 $\pm$ 0.12 \ps$^{-1}$\\
+$a$ /\ps$^{-1}$ & 1.45 $\pm$ 0.12\\
 $n$ & 1.92 $\pm$ 0.17 \\
-$t_{0}$ & 0.290 \ps \\
-$\tau_{1}$ & $17 \pm 16$ \ps \\ 
-$\tau_{2}$ & $1.3 \pm 0.3$ \ps \\
+$t_{0}$ /\ps & 0.290 \\
+$\tau_{1}$ /\ps & $17 \pm 16$  \\ 
+$\tau_{2}$ /\ps & $1.3 \pm 0.3$ \\
 $f$ & 0.032 $\pm$ 0.027 \\
 \bottomrule \bottomrule
 \end{tabular}
@@ -343,7 +343,7 @@ The expected number of signal and background decays in the data set passing the 
 
 \begin{table}[ht]
 \begin{center}
-\begin{tabular}{lc}
+\begin{tabular}{lr}
 \toprule \toprule
 Decay & Expected yield \\ \midrule
 \bsmumu & 30.94\\ 
@@ -561,9 +561,10 @@ Fit no.               & Mass Range  			 &  Components included in the mass \pdf 
 \begin{center}
 %\begin{tabular}{p{0.5cm}p{1.0cm}p{1.0cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{1.4cm}}
 \begin{tabular}{lrrrrrrrrrr}
-\toprule \toprule
-Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{N}$(Comb. bkg.)} & \multicolumn{2}{c}{Comb. bkg. slope} & \tmumu & \multicolumn{3}{c}{\Gmumu} \\ \midrule
- &Mean&Width&Mean&Width&Mean&Width&$\sigma$/\ps&Mean&Width&$\sigma$/\ps$^{-1}$\\ \midrule
+%\toprule \toprule
+\hline \hline
+Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{N}$(Comb. bkg.)} & \multicolumn{2}{c}{Comb. bkg. slope} & \tmumu & \multicolumn{3}{c}{\Gmumu} \\ \hline
+ &Mean&Width&Mean&Width&Mean&Width&$\sigma$/\ps&Mean&Width&$\sigma$/\ps$^{-1}$\\ \hline
 1. & -0.043 & 1.002 & -0.048 & 1.050 & -0.071 & 1.005 & 0.40 & 0.021 & 0.946 & 0.15 \\
 2. & -0.064 & 1.015 & -0.018 & 1.048 & -0.092 & 1.006 & 0.35 & 0.013 & 0.970 & 0.13 \\
 3. & -0.034 & 0.973 & -0.067 & 1.023 & -0.019 & 0.999 & 0.42 & 0.031 & 0.935 & 0.12 \\
@@ -576,7 +577,7 @@ Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{
 10. & -0.101 & 1.013 & 0.396 & 0.989 & -0.571 & 1.068 & 0.31 & -0.043 & 0.985 & 0.11 \\
 11. & 0.050 & 1.006 & 0.060 & 1.013 & -0.123 & 1.013 & 0.29 & 0.024 & 0.982 & 0.11  \\
 12. & 0.020 & 1.009 & 0.015 & 1.007 & -0.066 & 0.991 & 0.30 & 0.021 & 0.995 & 0.11 \\
-13. & 0.007 & 1.001 & -0.039 & 1.033 & -0.029 & 0.995 & 0.34 & 0.023 & 0.983 & 0.13 \\ \bottomrule \bottomrule
+13. & 0.007 & 1.001 & -0.039 & 1.033 & -0.029 & 0.995 & 0.34 & 0.023 & 0.983 & 0.13 \\ \hline \hline %\bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
 \caption{Results for the pseudoexperiments testing the mass fit configurations. The mean and width of the pull distributions for the \bsmumu and combinatorial background yields and the slope of the combinatorial background mass \pdf are shown along with the expected statistical uncertainty on \tmumu and \Gmumu. The uncertainties on the means are 0.010 and the widths are 0.007 for all configurations.}                                                                                                   
