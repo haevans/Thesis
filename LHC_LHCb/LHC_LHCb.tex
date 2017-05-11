@@ -7,9 +7,9 @@ The PS was succeeded by the Super Proton Synchrotron (SPS) in 1976. The SPS was 
 Now 62 years since its foundation, CERN has grown to include 22 member states\footnote{Countries and organisations that are unable to become member states can still participate in scientific research as observer states \cite{Member_States}.} and is still at the forefront of high energy physics research. CERN’s latest accelerator, the Large Hadron Collider (LHC), is the most energetic particle accelerator yet to be built. It was built in the tunnel that housed LEP and was designed to collide protons at a centre-of-mass energy of 14~\tev. 
 
 This chapter introduces the LHC and the LHCb experiment, one of the experiments that studies the products of particle collisions produced at the LHC.
-The LHC is described in Section~\ref{LHC} along with the experimental runs that have occured so far. The LHCb experiment and the sub-detectors it is composed of are described in Section~\ref{LHCb}.
+The LHC is described in Section~\ref{LHC} along with the experimental runs that have occurred so far. The LHCb experiment and the sub-detectors it is composed of are described in Section~\ref{LHCb}.
 The study of particles produced in proton-proton ($pp$) collisions requires information about the passage of charged particles and identity of particles travelling through the detector. The sub-detectors in LHCb experiment that are designed to track particles and identify the particle types are described in Sections~\ref{Tracking} and \ref{PID}, respectively.
-Not all events that occur when protons collide contain particles that are intersting for the study of the SM and the search for NPeffects, therefore the LHCb experiment uses a trigger system, presented in Section~\ref{Trigger}, to identify interesting events that are saved to be later analysed. The analysis of data recorded by the experiment requires the use of custom software packages which are descriebd in Section~\ref{SoftwareSimulation}. Finally, the data recorded by the LHCb experiment and used for the analyses described in this dissertation are given in Section~\ref{LHCb_data}. 
+Not all events that occur when protons collide contain particles that are interesting for the study of the SM and the search for NP effects, therefore the LHCb experiment uses a trigger system, presented in Section~\ref{Trigger}, to identify interesting events that are saved to be later analysed. The analysis of data recorded by the experiment requires the use of custom software packages which are described in Section~\ref{SoftwareSimulation}. Finally, the data recorded by the LHCb experiment and used for the analyses described in this dissertation are given in Section~\ref{LHCb_data}. 
  
 \section{The Large Hadron Collider}
 \label{LHC}
@@ -49,21 +49,21 @@ Therefore the luminosity delivered at each interaction point can be tuned using 
 
 
 
-There are seven experiments on the LHC that study particles produced in proton and heavy ion collisions at the interaction points. These detecotors are: %. The main physics goals of these experiments are desribed briefly in the following:
+There are seven experiments on the LHC that study particles produced in proton and heavy ion collisions at the interaction points. These detectors are: %. The main physics goals of these experiments are desribed briefly in the following:
 \begin{itemize}
 \item ATLAS~\cite{Aad:2008zzm} and CMS~\cite{Chatrchyan:2008aa}, are general purpose detectors designed to search for the Higgs boson and NP effects that are beyond the scope of the SM. These experiments operate at the full instantaneous luminosity of the LHC; %Perhaps say we found the Higgs?
 \item ALICE~\cite{Aamodt:2008zz} studies quark-gluon plasma produced in heavy ion collisions to understand conditions similar to those present in the early universe, products from $pp$ and lead-proton collisions are used to understand collisions of lead ions;
 \item  TOTEM~\cite{Anelli:2008zza} studies properties of protons as they collide head on at the LHC, to measure the $pp$ interaction cross section and understand the internal structure of protons %luminosity% a and the 
-\item MOEDAL~\cite{Pinfold:2009oia} is desgined to detect magnetic monopoles and massive stable charged particles predicted by theoies that go beyond the scope of the SM;
+\item MOEDAL~\cite{Pinfold:2009oia} is designed to detect magnetic monopoles and massive stable charged particles predicted by theories that go beyond the scope of the SM;
 \item the LHCf experiment~\cite{Adriani:2008zz} studies particles that are created at very small angles to the incident proton beams to understand similar processes that occur in cosmic rays; and %Finally there is the Large Hadron Collider Beauty experiment (LHCb) that will be described in the next section. %, this experiment was designed to studies rare $b$-hadron decays and $\mathcal{CP}$ violating processes and operates at a lower luminosity and has a smaller angular acceptance than the general purpose detectors. %Should probably include the full experiment names as I have done for LHCb or not include the name for LHCb.
 \item the final experiment is the LHCb experiment~\cite{Alves:2008zz} was designed to study rare $b$-hadron decays and $\mathcal{CP}$ violating processes and operates at a lower luminosity and has a smaller angular acceptance than the general purpose detectors. 
 \end{itemize}
 %Proton beams first circulated the LHC in 2008 and since then there have been two physics runs separated by a long shutdown period.
 Proton beams first circulated the LHC in 2008 and since then the experiments have recorded data during two physics runs separated by a long shutdown period.
-The amount of data recoreded by an experiment is given in terms of the time integrated luminosity.
+The amount of data recorded by an experiment is given in terms of the time integrated luminosity.
 Run 1 began in 2010 and continued until 2013, during this time protons were collided with a centre-of-mass energies of $\sqrt{s}$~=~7~and $\sqrt{s}$~=8~TeV. 
 After Run~1 there was a period of long shut down (LS1) during which work was done to prepare the LHC to operate at higher energies and renovation work was preformed on the accelerators that provide the LHC with protons.
-Run~2 began in 2015 with proton collisions at a centre-of-mass energy of $\sqrt{s}$~=~13~TeV, this run will continue until 2018 when a second period of upgrades and maintenance, the Long Shutdown~2, will begin. The centre-of-mass energies for $pp$ collisions for each year of operation so far are summarised in Table~\ref{tab:Runs}, alongside the integrated luminosity recoreded by tge ATLAS, CMS and LHCb experiments. %for the experiments.
+Run~2 began in 2015 with proton collisions at a centre-of-mass energy of $\sqrt{s}$~=~13~TeV, this run will continue until 2018 when a second period of upgrades and maintenance, the Long Shutdown~2, will begin. The centre-of-mass energies for $pp$ collisions for each year of operation so far are summarised in Table~\ref{tab:Runs}, alongside the integrated luminosity recorded by the ATLAS, CMS and LHCb experiments. %for the experiments.
 
 %https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublicResults#2010_Proton_Proton_Collisions
 %https://twiki.cern.ch/twiki/bin/view/AtlasPublic/LuminosityPublicResultsRun2
@@ -100,12 +100,12 @@ The LHCb experiment was built to study the SM and search for NP phenomena throug
 %The LHCb experiment was built to study CP violation and rare decays of \bhadrons to search for new physics processes that could be revealed in these decays. 
 At the LHC the dominant production mechanisms of \bbbar pairs are gluon-gluon fusion, quark anti-quark annihilation and gluon-gluon splitting. The \bbbar pairs produced travel at small angles relative to the beam pipe as shown in Figure~\ref{fig:bbar_production}. % and hadronize to form a range of \bhadrons, including $B^{+}$, $B^{0}_{s}$ and $\Lambda^{0}_{b}$, that are studied by LHCb. 
 The $b\bar{b}$ pair is created at the primary vertex of an event, where the protons collide. The quarks then hadronise to form form a range of \bhadrons, including $B^{+}$, $B^{0}_{s}$ and $\Lambda^{0}_{b}$. % a $b$ hadron. 
-A typical $b$ hadron will exits for approximately 1.5 ps~\cite{Olive:2016xmw} before decaying into leptons, light hadrons or a mixtire of both. The vertex where the $b$ hadron decays is know as the secondary vertex and is displaced by XXX from the primary vertex. %The LHCb experiment was built to optimsed cost and physics output in the study of these decays. 
-The LHCb experiment was desinged considering both the cost of the detector and the physics processes that could be studied with it. 
+A typical $b$ hadron will exits for approximately 1.5 ps~\cite{Olive:2016xmw} before decaying into leptons, light hadrons or a mixture of both. The vertex where the $b$ hadron decays is know as the secondary vertex and is displaced by XXX from the primary vertex. %The LHCb experiment was built to optimsed cost and physics output in the study of these decays. 
+The LHCb experiment was designed considering both the cost of the detector and the physics processes that could be studied with it. 
 \begin{figure}[ptb] 
   \centering    
   \includegraphics[ width=0.45\textwidth]{./Figs/LHC_LHCb/07_rad_acc_scheme_right.pdf}%b_distrib_lhcb.pdf}
-  \caption{Simulated angular distribution for \bbbar production at the LHC at center-of-mass energies of 7~\tev, angles are relative to the beam pipe with $\theta =0$ in the forward direction and $\theta = \pi$ in the backward direction. The red area showns \bbbar pairs that are produced within the angular coverage of the LHCb detector and the purple shaded area showns \bbbar pairs outside the detector coverage. Source: LHCb.}
+  \caption{Simulated angular distribution for \bbbar production at the LHC at center-of-mass energies of 7~\tev, angles are relative to the beam pipe with $\theta =0$ in the forward direction and $\theta = \pi$ in the backward direction. The red area shows \bbbar pairs that are produced within the angular coverage of the LHCb detector and the purple shaded area shows \bbbar pairs outside the detector coverage. Source: LHCb.}
  \label{fig:bbar_production}
 \end{figure}
 
@@ -131,7 +131,7 @@ Although the angular coverage of the LHCb experiment is only 4\% of the total so
 \end{figure}
 
 
-The different sub-detectors have been chosen to exploit the characteristics of \bhadron decays and fall into two distinct categories; tracking detectors and particle identification detectors. The sub-detectors and their performances are described breifly in the following sections along with the trigger system and software needed to analyse the data collected by the experiment. %Finally the data recorded by the experiment during Run 1 and Run 2 is presented in Section \ref{LHCb_data}. 
+The different sub-detectors have been chosen to exploit the characteristics of \bhadron decays and fall into two distinct categories; tracking detectors and particle identification detectors. The sub-detectors and their performances are described briefly in the following sections along with the trigger system and software needed to analyse the data collected by the experiment. %Finally the data recorded by the experiment during Run 1 and Run 2 is presented in Section \ref{LHCb_data}. 
 For a more detailed description of the detector and its performance during Run 1, see references~\cite{Alves:2008zz,LHCb:2003ab,Aaij:2014jba} and those given in the text.
 
 
@@ -146,7 +146,7 @@ The tracking detectors work on the principle that the passage of high energy cha
 Hits left in the different detector are combined to form tracks that are used to identify particle decays as described in Section~\ref{sec:Track_recon}.
 \subsubsection{The vertex locator}
 \label{VELO}
-The VErtex LOcator (VELO)~\cite{Barbosa-Marinho:504321, LHCbVELOGroup:2014uea} is a silicon detector surrounding the interaction point. Its main purpose is to provide precise information about the $pp$ interaction vertices and secondary decay vertices of the particles produced. Information from the VELO enables precise measurements of particle lifetimes and the impact parameters of particle tracks necessary forthe study of particle decays. % physics analyses.
+The VErtex LOcator (VELO)~\cite{Barbosa-Marinho:504321, LHCbVELOGroup:2014uea} is a silicon detector surrounding the interaction point. Its main purpose is to provide precise information about the $pp$ interaction vertices and secondary decay vertices of the particles produced. Information from the VELO enables precise measurements of particle lifetimes and the impact parameters of particle tracks necessary for the study of particle decays. % physics analyses.
 
 
 The VELO is made of two identical halves, each half consists of 21 stations containing two silicon sensors arranged along the beam pipe. The two halves of the VELO slot together and there is a small gap in the centre for the beams to pass through. The arrangement of sensors along the $z$ axis, shown in Figure \ref{fig:velo}, is designed so that the sensors cover the full LHCb acceptance and a charged particle within the detector acceptance will pass through at least three stations. 
@@ -174,7 +174,7 @@ The cylindrical geometry used for the VELO sensors, shown in Figure~\ref{fig:vel
 The momentum resolution achievable for charged tracks by the LHCb experiment is limited by the multiple scattering of particles as they travel through material the detector is made from. Therefore, to ensure good momentum resolution throughout the detector, the VELO is kept in a vacuum to reduce the material each particle must travel through. %its material budget. 
 Each half of the VELO is enclosed inside an aluminium box, which keeps it in a vacuum and shields the electronic readouts from radio frequencies generated by the beam. %The overall material budget of the VELO comes to 17.5 $\%$ of a radiation length.
 
-Excellent resolution of the position of each vertex is required in the VELO. To achieve this the sensors need to be as close as possible to the interaction point. This is acheived by making the VELO out of two retractable halves and including the $pp$ interaction point within the coverage of the VELO. 
+Excellent resolution of the position of each vertex is required in the VELO. To achieve this the sensors need to be as close as possible to the interaction point. This is achieved by making the VELO out of two retractable halves and including the $pp$ interaction point within the coverage of the VELO. 
 %The sensors of the VELO are located as close as possible to the $pp$ interaction point in order to acheive excellent vertex resolution. The VELO is made out of retractable halves and including the interaction point within the coverage of the VELO. 
 During data taking, when the VELO is recording particle tracks the inner most part of the sensors are 8mm from the beam axis. However during the injection phase the width of the beam is much larger, therefore the halves of the VELO are retracted to be 3~cm from the nominal beam axis. This keeps the VELO safe from unnecessary radiation damage. The two halves of the VELO are displaced by 150~mm in the $z$ direction, as shown in Figure~\ref{fig:velo}, so that when the VELO is closed, the sensors in each half overlap to help with detector alignment and reduced edge effects. 
 
@@ -200,7 +200,7 @@ The VELO achieves a resolution on the position of each of 10 - 20~$\mu$m transve
   \includegraphics[ width=0.49 \textwidth]{./Figs/LHC_LHCb/hidef_ResXY_1PV_2011Data.png}
   \includegraphics[ width=0.49 \textwidth]{./Figs/LHC_LHCb/hidef_ResZ_1PV_2011Data.png}
 
-  \caption{The resolution of the position of verticies in an event acheived by the VELO in 2012 data. The resolution is showns for primary vertcies perpendicular (left) and parallel (right) to the beam axis as a function of the number of tracks in an event~\cite{LHCbVELOGroup:2014uea}.}
+  \caption{The resolution of the position of vertices in an event achieved by the VELO in 2012 data. The resolution is shown for primary vertices perpendicular (left) and parallel (right) to the beam axis as a function of the number of tracks in an event~\cite{LHCbVELOGroup:2014uea}.}
   \label{fig:Velo_PV_resolution}
 \end{figure}
 
@@ -209,7 +209,7 @@ The VELO achieves a resolution on the position of each of 10 - 20~$\mu$m transve
   \centering    
   \includegraphics[ width=0.49 \textwidth]{./Figs/LHC_LHCb/hidef_IPRes-Vs-P-CompareIPxIPy-2012.png}
   \includegraphics[ width=0.49 \textwidth]{./Figs/LHC_LHCb/hidef_IPXRes-Vs-InversePT-Compare2012DataToMC.png}
-  \caption{The impact parameter resolution as a function of momentum (left) and inverse transverse momentum (right) acheived by the VELO for 2012 data~\cite{LHCbVELOGroup:2014uea}.}
+  \caption{The impact parameter resolution as a function of momentum (left) and inverse transverse momentum (right) achieved by the VELO for 2012 data~\cite{LHCbVELOGroup:2014uea}.}
   \label{fig:IP_res}
 \end{figure}
 
@@ -230,7 +230,7 @@ The TT is made up of 4 layers of silicon trackers that cover the full LHCb angul
 
 
 The T stations, T1-T3, use two different technologies. The central part of each station is covered by the Inner Tracker (IT), made of silicon, while the external part is covered by the Outer Tracker and composed of straw drift tubes. %are split into two sections. Each station is composed of an Inner Tracker (IT)~\cite{Barbosa-Marinho:582793} made of silicon and an Outer Tracker (OT)~\cite{Barbosa-Marinho:519146} composed of straw drift tubes. 
-There is a large increase in the size of the tracking stations between the TT and the T3 to ensure all stations cover the full angular acceptance of the detector. The size of the TT is 150~cm~$\times$~130~cm and the T3 station is 600~cm~$\times$~490~cm. The relative sizes of the tracking statioes are illustrated in Figure \ref{fig:size_of_tracking_stations} and well as the IT and OT sections of the T1-T3 stations. 
+There is a large increase in the size of the tracking stations between the TT and the T3 to ensure all stations cover the full angular acceptance of the detector. The size of the TT is 150~cm~$\times$~130~cm and the T3 station is 600~cm~$\times$~490~cm. The relative sizes of the tracking stations are illustrated in Figure \ref{fig:size_of_tracking_stations} and well as the IT and OT sections of the T1-T3 stations. 
 %Therefore the T stations are not composed of only silicon due to its high cost. % of silion. 
 %The large size of the T stations meant that silicon was not used for the full coverage of each station due to its high cost.
 \begin{figure}[tb] 
@@ -248,7 +248,7 @@ The silicon trackers are arranged in a cross shape around the beam pipe, as show
 \label{Magnet}
 A warm dipole magnet~\cite{Amato:424338} is used to measure the momentum and electric charge of particles travelling through the LHCb detector. The magnet was designed to have an integrated field strength of 4~Tm for track that travels 10~m through the detector.%In a magnetic field the trajectories of charged particles are bent and the particle momentum can be measured from the curve of the track. %from the radius of curvature of the particle track the particle momentum can be determined.
 
-The magnet is located between the TT and the T stations and magentic field influences all particles in the LHCb angular coverage. The field is in the vertical direction therefore bending tracks in the horizontal direction. The magnet was designed so that the field strength in the RICH detectors is negligible (less than 2 mT) and to have the largest strength possible between the TT and T stations. Figure \ref{fig:Magnet_field} shows a plot of the magnet strength alongside the detector layout. %A small magnetic field is achieved in the RICH detectors by iron shielding. The magnet was designed to have an integrated field strength is 4~Tm for track that travels 10~m through the detector.% and the peak strength is 1.1T. % I should maybe mention the measurement of the field and how it had to be accurate (with Hall probes) in order to get good momentum resolution but I don’t want to. The magnetic field strength enables the tracking systems to achieve a momentum resolution of $\delta p / p \~0.4\%$. 
+The magnet is located between the TT and the T stations and magnetic field influences all particles in the LHCb angular coverage. The field is in the vertical direction therefore bending tracks in the horizontal direction. The magnet was designed so that the field strength in the RICH detectors is negligible (less than 2 mT) and to have the largest strength possible between the TT and T stations. Figure \ref{fig:Magnet_field} shows a plot of the magnet strength alongside the detector layout. %A small magnetic field is achieved in the RICH detectors by iron shielding. The magnet was designed to have an integrated field strength is 4~Tm for track that travels 10~m through the detector.% and the peak strength is 1.1T. % I should maybe mention the measurement of the field and how it had to be accurate (with Hall probes) in order to get good momentum resolution but I don’t want to. The magnetic field strength enables the tracking systems to achieve a momentum resolution of $\delta p / p \~0.4\%$. 
 
 \begin{figure}[tb]
   \centering
@@ -266,7 +266,7 @@ The magnet is located between the TT and the T stations and magentic field influ
 %\end{figure}
 
 
-The polarity of the magnetic field is periodically switched so that charged tracks are bend in the oposite direction. The polatity is switched to enable approximately equal amounts of data to be recorded for each magnet polarity during every year of data taking.
+The polarity of the magnetic field is periodically switched so that charged tracks are bend in the opposite direction. The polarity is switched to enable approximately equal amounts of data to be recorded for each magnet polarity during every year of data taking.
 %so that it bends charged tracks in opposite directions. 
 This is done to measure detection asymmetries in half of the detector and to help understand systematic uncertainties of $\mathcal{CP}$ violation measurements. % These are not relevant for B2mm.
 %The magent polatrity is swtiched so that approximately equal amounts of data is recorded for each magnet polarity in a year. 
@@ -294,7 +294,7 @@ The different track classifications are:
 \item Upstream tracks are made by low momentum particles that leave hits in the VELO and TT stations. The absence of hits further down the detector is because the magnetic field sweeps the particles out of the detector acceptance. Upstream tracks have poor momentum resolution but are useful for understanding backgrounds and pattern recognition in the RICH-1 detector located between the VELO and the TT;
 \item Downstream tracks are produced by the decays of long-lived neutral particles, that travel out of the VELO before decaying. These particles only leave tracks in the TT and T stations. 
 \item T tracks are tracks that cross only the T1-T3 stations and are formed from particles created in interactions with the detector material. Similar to upstream tracks, T tracks can help to understand backgrounds and pattern recognition in the RICH-2 detector located just before the T stations; and
-\item Long tracks are the most useful for understanding particles decays recoreded by the detector because they are formed by particles that travel through the VELO, TT and T1-T3 stations. Information from all the tracking stations is combined therefore these tracks have the best momentum resolution.
+\item Long tracks are the most useful for understanding particles decays recorded by the detector because they are formed by particles that travel through the VELO, TT and T1-T3 stations. Information from all the tracking stations is combined therefore these tracks have the best momentum resolution.
 \end{itemize}
 
 
@@ -347,7 +347,7 @@ The combined tracking systems achieve a momentum resolution of $\delta p / p = 0
 \subsection{Particle identification}
 \label{PID}
 The particle identification (PID) detectors consist of two Ring Imaging CHerenkov (RICH) detectors, electromagnetic and hadronic calorimeters, and muon stations. Together these detectors distinguish between different charged leptons and hadrons and between neutral particles such as photons and neutral pions. Good particle identification is necessary to determine which \bhadron decayed and to distinguish between topologically similar decays, such as \bdkpi, \bskk and \bmumu decays. %This could be out elsewhere perhaps in the RICH specific part?
-The seperate particle identification detectors are described in Sections~\ref{RICH} to~\ref{Muon_stations} and the methods used to combine information from each detector to identify different particle types is described in Section~\ref{PID_variables}. 
+The separate particle identification detectors are described in Sections~\ref{RICH} to~\ref{Muon_stations} and the methods used to combine information from each detector to identify different particle types is described in Section~\ref{PID_variables}. 
 
 
 \subsubsection{Ring Imaging Cherenkov detectors}
@@ -356,7 +356,7 @@ The seperate particle identification detectors are described in Sections~\ref{RI
 
 The LHCb experiment uses two RICH detectors~\cite{Amato:494263,Adinolfi:2012qfa} that are shown in Figure~\ref{fig:RICH_diagram}.
 The RICH-1 detector is located between the VELO and the TT station and RICH-2 detector is located between the last tracking station and the first muon station.
- Together the detectors provide particle identification information for particles that fall in the mometum range of 2 to 100~\gevc.
+ Together the detectors provide particle identification information for particles that fall in the momentum range of 2 to 100~\gevc.
 %RICH detectors~\cite{Amato:494263,Adinolfi:2012qfa} are used at LHCb to distinguish charged hadrons and leptons that have a momentum between 2 and 100~GeV/c. 
 The RICH detectors are vital to distinguish between pions, kaons and protons frequently produced in \bhadron decays. %This needs to be done because correctly reconstructing the b hadron invariant mass relies on correctly identifying what it decayed into. Information from the RICH is particularly important at distinguishing different b2hh decays which is useful for this thesis. 
 The energy range of the RICH detectors was chosen because the typical decay products of 2-body and multi-body \bhadron decays is around 50~GeV. 
@@ -367,7 +367,7 @@ These detectors are based on the following principle; when a charged particle tr
 The angle at which Cherenkov radiation is produced gives a measurement of a particle’s speed, which when combined with the particle’s momentum, as measured by the tracking detectors, the particle mass and consequently its identity can be determined. However many particles travel through the RICH detectors and create overlapping rings of light making particle identification complex. 
 As charged particles travel through RICH detectors, the rings of light produced are focused by spherical and planar mirrors onto Hybrid Photon Detectors (HPDs)~\cite{Alemi:1999np}, as shown in Figure~\ref{fig:RICH_diagram}. The radii of the detected rings provides information about how fast the particle was travelling.
 Particle trajectories through the RICH detectors are inferred from information in the tracking stations and the expected pattern of Cherenkov radiation is calculated for each possible particle type. The expected patterns of light are compared to the observed pattern to find the likelihood for each particle type, all possible particle types are compared to maximise the likelihood. An in depth description of the reconstruction algorithm used in the RICH detectors can be found in~\cite{Forty:684714}. 
-The performance of HPDs used in the RICH detectors is senstive to the magnetic field of the dipole magnet.
+The performance of HPDs used in the RICH detectors is sensitive to the magnetic field of the dipole magnet.
 %Both RICH detectors use HPDs that are sensitive to magnetic fields, 
 Therefore the HPDs are shielded from the using iron sheets ensuring the field is less than 2mT across them. %This allows accurate detection of light created within the RICH detectors.
 
@@ -381,11 +381,11 @@ Therefore the HPDs are shielded from the using iron sheets ensuring the field is
 \end{figure}
 
 
-The two RICH detectors provide identification information for different particle momentum ranges. The RICH-1 is senstive to particles in the momentum range of 2 to 40~GeV/c and the RICH-2 is sensitive to particles in the range 15~-~100~GeV/c, to acheive this the detectors are made of different materials.  
+The two RICH detectors provide identification information for different particle momentum ranges. The RICH-1 is sensitive to particles in the momentum range of 2 to 40~GeV/c and the RICH-2 is sensitive to particles in the range 15~-~100~GeV/c, to achieve this the detectors are made of different materials.  
 The RICH-1 detector is composed of an array of 16 aerogel tiles sensitive to particles with a momentum between 2 and 10~GeV/c, behind the aerogel is a $\text{C}_{4}\text{F}_{10}$ gas radiator sensitive to particles in the momentum range 10 to 40~GeV/c. The aerogel radiator was removed after Run 1, therefore the RICH-1 is only sensitive to particles in the momentum range 10 to 40~GeV/c in Run~2. Unlike the RICH-1, the RICH-2 detector is composed of only one radiator, a $\text{C}\text{F}_{4}$ gas radiator.
 
-As well as ccovering different momentum ranges the RICH detectors also have different angular acceptances. The RICH-1 covers the full LHCb angular acceptance whereas the RICH-2 covers $\pm$~120~mrad in the horizontal and $\pm$ 100 mrad in the vertical direction. 
-Although the angular acceptance for the RICH-2 detector is smaller, the area is covers contains the higher momentum particles ir is sensitive to because the low momentum particles have been bent out of the acceptance by the magnetic field.
+As well as covering different momentum ranges the RICH detectors also have different angular acceptances. The RICH-1 covers the full LHCb angular acceptance whereas the RICH-2 covers $\pm$~120~mrad in the horizontal and $\pm$ 100 mrad in the vertical direction. 
+Although the angular acceptance for the RICH-2 detector is smaller, the area it covers contains the higher momentum particles it is sensitive to because the low momentum particles have been bent out of the acceptance by the magnetic field.
 
 
 %The RICH-1 detector is located between the VELO and the TT station, it covers the full LHCb angular acceptance and provides PID information on particles in the momentum range 2 to 40~GeV/c. The RICH-1 detector illustrated in Figure~\ref{fig:RICH_diagram}, contains two different radiator materials; at the front of the detector is an array of 16 aerogel tiles sensitive to particles with a momentum between 2 and 10~GeV/c, behind the aerogel is a $\text{C}_{4}\text{F}_{10}$ gas radiator sensitive to particles in the momentum range 10 to 40~GeV/c. The aerogel radiator was removed after Run 1, therefore the RICH-1 is only sensitive to particles in the momentum range 10 to 40~GeV/c in Run~2. As charged particles travel through RICH-1, the rings of light produced are focused by spherical and planar mirrors onto Hybrid Photon Detectors (HPDs)~\cite{}. The radii of the detected rings provides information about how fast the particle was travelling. %The speed of the particles, when combined with information about it’s momentum from the tracking stations realise the particles mass and therefore it’s identity.
@@ -397,8 +397,8 @@ Although the angular acceptance for the RICH-2 detector is smaller, the area is 
 
 %Both RICH detectors use HPDs that are sensitive to magnetic fields, the HPDs are shielded from the magnet field using iron sheets ensuring the field is less than 2mT across them. This allows accurate detection of light created within the RICH detectors.
  
-The expected Cherenkov angles for particle types with different momenta  is shown in Fgure~\ref{fig:RICH_radiator_predictions} for the radiator materials in the RICH detectors are shown in Figure~\ref{fig:RICH_preformance}.
-The reconstructed Cherenkov angle as a function of momentum is shown in Figure~\ref{fig:RICH_preformance} for particles transversing the RICH-1 detector in 2011 data, the data showns distinct bands for each particle type as expected for the detector.
+The expected Cherenkov angles for particle types with different momenta  is shown in Figure~\ref{fig:RICH_radiator_predictions} for the radiator materials in the RICH detectors are shown in Figure~\ref{fig:RICH_preformance}.
+The reconstructed Cherenkov angle as a function of momentum is shown in Figure~\ref{fig:RICH_preformance} for particles transversing the RICH-1 detector in 2011 data, the data shows distinct bands for each particle type as expected for the detector.
 
  
 %The perforamance of the RICH-1 gas radidator on 2011 data 
@@ -423,7 +423,7 @@ The reconstructed Cherenkov angle as a function of momentum is shown in Figure~\
 \subsubsection{Calorimeters}
 \label{Calo}
 
-The calorimeter system~\cite{LHCB:2000ab} consists of four detectors: a Scintillating Pad Detector (SPD); a Pre-Shower (PS); an electromagnetic calorimeter (ECAL); and a hadronic calorimeter (HCAL). Information from the calorimeters is used to identify electrons, photons and hadrons with high transverse momentum to be used in the first level of the trigger and to help with the reconstruction and identification of these particles. The ECAL is particulary important in the reconstruction of photons and neutral pions because it is the only part of the detector that measures the energy and momentum of these particles. 
+The calorimeter system~\cite{LHCB:2000ab} consists of four detectors: a Scintillating Pad Detector (SPD); a Pre-Shower (PS); an electromagnetic calorimeter (ECAL); and a hadronic calorimeter (HCAL). Information from the calorimeters is used to identify electrons, photons and hadrons with high transverse momentum to be used in the first level of the trigger and to help with the reconstruction and identification of these particles. The ECAL is particularly important in the reconstruction of photons and neutral pions because it is the only part of the detector that measures the energy and momentum of these particles. 
 
 The calorimeters in LHCb are sampling calorimeters consisting of layers of lead absorbers and scintillating material. In lead, incident particles create showers of secondary particles, the charged particles produced in the absorbers create light as they pass through the scintillators. The light travels through wavelength shifters where it is collected by photon multiplier tubes and turned into an electrical signal. Electromagnetic showers cause by photons, electrons or positrons are started by ionisation, bremsstrahlung radiation or pair production depending on the energy of the incident particle and whether it is a electron or positron or a photon. Hadronic showers are caused by the interaction of hadrons with the detector via the strong force which produces showers of secondary particles. The showers produced in the calorimeters are along the direction of flight of the incident particle. %zUnlike other sub-detectors in LHCb, the calorimeters change the particle as it moves through the detector in order to measure the energy.
 
