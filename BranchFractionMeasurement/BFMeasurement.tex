@@ -67,7 +67,7 @@ The signal shape parameters are evaluated in the following ways:
 All parameters are evaluated separately for the \bd and \bs for the Run~1 and Run~2 data sets. The resulting parameter values are given in Tables~\ref{tab:signalpdfRun1} and~\ref{tab:signalpdfRun2} and the mass fits are shown in Figures~\ref{fig:means}, \ref{fig:quarkonia} and \ref{fig:interp}.
 %The difference in the mean values for Run~1 and Run~2 parameters arises from .... The PDG values for the masses are 5366.83 $\pm$ 0.22 \mevcc for the \bs and 5279.62 $\pm$ 0.15 \mevcc.
 The systematic uncertainties on the $\mu$ values come from varying the particle identification cuts used to separate the different \bhh decays and the systematic uncertainties on the $\sigma$ come from the mass windows chosen for the quarkonia mass fits and the chosen mass fit model.
-\begin{table}[htbp]
+\begin{table}[tbp]
 \begin{center}
 \begin{tabular}{lcc}
  \toprule \toprule
@@ -84,7 +84,7 @@ $\alpha$ & 2.054 $\pm$ 0.013 & 2.053 $\pm$ 0.007 \\  \bottomrule \bottomrule
 \vspace{-1.0cm}                                                                                                                  
 \end{table}
 
-\begin{table}[htbp]
+\begin{table}[tbp]
 \begin{center}
 \begin{tabular}{lcc}
  \toprule \toprule
@@ -144,7 +144,7 @@ The particle identification and trigger efficiencies are different for \bdkpi an
 The same calibration is used for \bsmumu and \bdmumu decays.
 The calibration is performed for each year separately then combined to give the Run 1 and Run 2 fractions per BDT bin. Figure~\ref{fig:BDTpdfs} shows the BDT distribution for \bmumu decays calibrated with \bdkpi data for Run 1 and Run 2. 
 The systematic uncertainties on the BDT calibration arise from the mass range used in the fit, the choice of the fit model and particle identification requirements and the trigger and particle identification efficiency corrections.
-\begin{figure}[htbp]
+\begin{figure}[tbp]
     \centering
    \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width= \textwidth]{./Figs/BFAnalysis/C_macros/BDT_calibration_Run1.pdf}
@@ -206,7 +206,7 @@ Therefore the mass \pdfs and expected yields of each background must be evaluate
 %The mass \pdfs and yields of the background from \bhh and semi-leptonic decays are constrained in the fit around the expected values. The backgrounds that have lower masses than the \bd and \bs must be accurately modelled in the fit to ensure the combinatorial background yield, that spans the full mass range, is accurate described within the signal mass windows. The approaches for finding the mass \pdfs and expected yields differ for \bhh and semi-leptonic backgrounds, these procedures are described in the following sections.
 
 \subsection{\bhh}% mass and BDT \pdfs}
-The mass \pdf describing mis-identified \bhh decays is formed of two Crystal Ball functions. The parameter values are evaluated from simulated decays for \bdkpi, \bskk, \bdpipi and \bskpi decays in which the momenta of tracks are smeared to model the hadrons decaying in flight. The parameters are evaluated separately for each decay and combined using the branching fractions and the particle identification efficiencies for each decay.
+The mass \pdf describing mis-identified \bhh decays is formed of two Crystal Ball functions. The two functions have the same mean but all other parameters can be different and the power-law tails for each function are on oposite side of the mean value. This combination of functions is called a double Crystal Ball function. The parameter values are evaluated from simulated decays for \bdkpi, \bskk, \bdpipi and \bskpi decays in which the momenta of tracks are smeared to model the hadrons decaying in flight. The parameters are evaluated separately for each decay and combined using the branching fractions and the particle identification efficiencies for each decay.
 
 The total number of mis-identified \bhh decays in Run 1 and Run 2 data, $\mathcal{N}_{B \to hh \to \mu \mu}$, is found using the relationship
 \begin{equation}
@@ -299,7 +299,7 @@ Figure~\ref{fig:Bujpsikyield}~and~\ref{fig:Bdkpiyield} show the mass fits used t
 
 
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
     \centering
    \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=  \textwidth]{./Figs/BFAnalysis/BuJpsiK_Run1.pdf}
@@ -316,7 +316,7 @@ Figure~\ref{fig:Bujpsikyield}~and~\ref{fig:Bdkpiyield} show the mass fits used t
     \caption{ Mass fit to measure \bujpsik yield for the normalisation for Run 1 (left) and Run 2 (right) data. The total \pdf is made up of components of \bujpsik and $B^{+} \to J/\psi \pi^{+}$ decays and combinatorial background.}
     \label{fig:Bujpsikyield}
 \end{figure}
-\begin{figure}[htbp]
+\begin{figure}[tbp]
     \centering
   \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=  \textwidth]{./Figs/BFAnalysis/Bd2KPi_mass_RunI_BDTbinNone.pdf}
@@ -422,7 +422,7 @@ The \bsmumu branching fraction in Equation~\ref{eq:BFresults} assumes the Standa
 %\end{figure}
 
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
     \centering
     \begin{subfigure}[b]{0.48\textwidth}
         \includegraphics[width=\textwidth]{./Figs/BFAnalysis/Fig17a.pdf}

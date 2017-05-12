@@ -34,7 +34,7 @@ The pull distribution for \Gmumu and the coverage of the statical uncertainties 
 
 The results of 10,000 pseudoexperiments are shown in Table~\ref{tab:tabB} and the different lifetimes return accurate pull distributions for the fitted \Gmumu values with means and widths consistent with 0 and 1, respectively. %, and the expected uncertainties for \tmumu are similar. 
 Therefore, the fit returns an accurate measured value for the \bsmumu lifetime independent of the lifetime chosen for the \bs.
-\begin{table}[htp]
+\begin{table}[tp]
 \begin{center}
 \begin{tabular}{lccccccccc}
 \toprule \toprule
@@ -58,7 +58,7 @@ implying that the mass fit does not accurately estimate the \bsmumu yield. Howev
 
 In the pseudoexperiments the number of expected decays in the mass range 4900 - 6000 \mevcc are given in Table~\ref{tab:expectedevents}. These numbers are used as the basis for the pseudoexperiments. However, the number of decays generated is fluctuated for each study about the expected value using a Poisson distribution, therefore the number of decays generated, $N_{gen}$, is different to the expected number. This enables an extended maximum likelihood fit to be used to fit the mass distribution where the total number of events is a free parameter. To achieve an Gaussian shaped pull distribution of the measured \bsmumu yields, the uncertainties on the measured yields must be distributed according to a Gaussian function. This will be true when there are a large number of \bsmumu decays, in the high statistics limit, where a Poisson distribution is a good approximation of a Gaussian distribution. However, the current data contains a small number of \bsmumu decays. The uncertainty on the measured yields is proportional to $\sqrt{N_{gen}}$, where $N_{gen}$ is the number of generated decays, and does not have a Gaussian distribution. This effect would shift the mean value of the pull distribution but not lead to an incorrect estimation of the \bsmumu yield. The fractional bias, $(N_{meas} - N_{gen})/N_{gen}$, where $N_{meas}$ is the measured \bsmumu yield is shown in Figure~\ref{fig:FracBias} and supports this explanation by producing a mean consistent at zero, with a negligible bias of 0.8 $\%$. 
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
     \centering
         \includegraphics[width=0.6 \textwidth]{./Figs/LifetimeSystematics/Fractional_bias_Bsmumu_yield_CKM.pdf}
     \caption{Fractional bias of the measured \bsmumu yield from pseudoexperiments for the expected number of decays with 4.4 \fb. Only \bsmumu and combinatorial background decays are included in the pseudoexperiments.}
@@ -69,7 +69,7 @@ In the pseudoexperiments the number of expected decays in the mass range 4900 - 
 Furthermore, the pull distributions for \bsmumu yields for pseudoexperiments with higher statistics produce means that tend towards 0 as the number of decays increases as shown in Figure~\ref{fig:BsmumuYieldPulls}. %for the expected number of decays with 50 and 300 \fb. 
 Therefore the mass fit returns accurate yields for \bsmumu and the biased pull distribution arises from the low statistics of the data set. The same reasoning can be applied to the pull distribution of the yields of combinatorial background decays that have a slightly less bias mean value of $\sim0.006$ compared to the \bsmumu yields.
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
     \centering
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/Bs2MuMu_yield_pull_50fb.pdf}
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/Bs2MuMu_yield_pull_300fb.pdf}
@@ -84,7 +84,7 @@ The remaining area of the fit to investigate is any underlying bias from the fit
 The overall bias in the fit for measuring \tmumu is evaluated from the difference between the measured and generated values from pseudoexperiments. A total of 10,000 pseudoexperiments are performed generating only \bsmumu and combinatorial background decays. % so the fit bias is not masked by contamination from mis-identified backgrounds. 
 The difference between the measured and generated \tmumu values is evaluated for pseudoexperiments generated with the expected and also the observed number of \bsmumu decays. The fit bias is evaluated for the observed number of decays as well as the expected number of decays because there are fewer than expected therefore the bias may be larger. The resulting distributions are shown in Figure~\ref{fig:BsmumuYieldPulls}. The mean of the difference in \tmumu values is 0.02 \ps for the expected number of decays and 0.03 \ps for the observed number of decays. Therefore the larger uncertainty of 0.03 \ps is used as the measured of the systematic uncertainty caused by the fit on the final result for \tmumu. %giving a systematic uncertainty of 0.03ps for the fit accuracy of \tmumu and no systematic uncertainty for \Gmumu.
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
     \centering
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/tau_meas-tau_gen_expected.pdf}
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/tau_meas_tau_gen_observed.pdf}
@@ -160,7 +160,7 @@ The data collected in Run~1 and Run~2 are combined for the measurement of the \b
 
 Once again pseudoexperiments are performed to understand the size of the impact of the mass model choice on the effective lifetime measurement. Only \bsmumu and combinatorial background decays are generated to separate mass \pdf effects from the contamination of mis-identified backgrounds and \bdmumu decays. \bsmumu candidates are generated using the Run~1 parameters in Table~\ref{tab:signalpdfRun1} but the mass fit is performed using the Run~2 parameters in Table~\ref{tab:signalpdfRun2}. The pull distribution for 10,000 pseudoexperiments for \Gmumu from this configuration are compared with those from pseudoexperiments where Run~1 parameters are used to generate and fit the mass distribution. The change in the measured lifetime with the mass \pdf parameters is negligible as shown in Figure~\ref{fig:masspdfsyst}. Therefore, no systematic uncertainty is assigned. 
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
     \centering
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/Gamma_pull_mass_pdf_Run1.pdf}
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeSystematics/Gamma_pull_mass_pdf_Run2.pdf}
@@ -181,7 +181,7 @@ The DLL$_{K\pi}$ variable is used to separate \bdkpi decays from other \bhh deca
 
 The measurement of the \bdki lifetime is performed in the same way as the \bsmumu effective lifetime measurement and all years of data are combined into one data set. An extended unbinned maximum likelihood fit is performed to the \bdkpi mass distribution. Components for \bdkpi, \bskpi and combinatorial background decays are included in the mass fit. Both $B$-meson decays are modelled by Crystal Ball functions and combinatorial background decays are modelled by an exponential function. The mass fit, shown in Figure~\ref{fig:bdkpimassfit}, is used to calculate sWeights that are re-normalised using Equation~\ref{eq:sWeightsrex}. The lifetime, $\tau_{K\pi}$, is  measured from the sWeighted decay time distribution. 
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
 \centering
   \includegraphics[width=0.6\textwidth]{./Figs/LifetimeSystematics/Bd2KPi_mass_fit.pdf}
 \caption{Maximum likelihood fit to the mass distribution of \bdkpi decays for data taken in 2011, 2012, 2015 and 2016. Components for \bdkpi, \bskpi and combinatorial background decays are included. }
@@ -243,14 +243,14 @@ The \bskk acceptance is found using the same method as \bsmumu with \bsjpsiphi d
 where only the statistical uncertainty is given.% and the fit results are shown in Figure~\ref{fig:bskklifetimefit}. 
 The measured values are consistent with the predicted value of 1.395 $\pm$ 0.020 \ps \cite{Aaij:2014fia} and shows that \bdkpi weights can be used for other decays as well as \bdkpi. 
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
 \centering
   \includegraphics[width=0.6\textwidth]{./Figs/LifetimeSystematics/Bs2KK_acceptance_Fit.pdf}
 \caption{Decay time distribution in weighted 2012 and 2015 simulated decays and the fit  results to determine the acceptance function parameters. }
 \label{fig:bskkacceptancefit}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
 \centering
   \includegraphics[width=0.6\textwidth]{./Figs/LifetimeSystematics/Bd2KPi_lifetime_fit.pdf}
 \caption{Maximum likelihood fit to the signal weighted decay time distribution of \bskk decays for data taken in 2012 and 2015 data. }
@@ -308,7 +308,7 @@ The result from the fit to the generated decays without the resolution function 
 
 However, this check assumed that simulated decays provide a good estimate of the number of incorrectly assigned PVs. Figure~\ref{fig:Bd2KPi_nPVs_MC_data_comparison} shows the number of \bdkpi decays passing the selection for simulated \bdkpi decays and sWeighted decays data for each year. On average there are more PVs per event in simulated decays compared to data, therefore using simulation would give an overestimation of the number of incorrectly assigned PVs expected in data. 
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
   \centering
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/2011_nPVs.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/2012_nPVs.pdf}
@@ -330,7 +330,7 @@ During the selection an upper decay time cut is applied to remove long-lived bac
 As discussed in Section~\ref{sec:bkgDTpdf} determining the decay time distribution of combinatorial background decays is challenging because there are too few decays left in either data or \bbbarmumux simulated decays after the selection requirements to determine the decay time \pdf. Therefore, the combinatorial background of \bhh decays in the mass range 5600 - 6000 \mevcc is used. The validity of using \bhh combinatorial background to model \bsmumu combinatorial background is studied by comparing the average lifetime of decays in bins of global BDT. The average lifetimes are shown in Table~\ref{tab:MeanDecayTimeBDTBins} for decays in data passing the selection requirements for \bsmumu and \bhh decays and in the mass ranges 5447 - 6000 \mevcc and 5600 - 6000 \mevcc, respectively. At low values of the global BDT the average lifetimes are similar and the lifetime of backgrounds of both decays increases with the output of the global BDT. Overall \bhh combinatorial background decays are longer lived than \bsmumu combinatorial background decays therefore the \bhh decay time model is a conservative estimate for \bsmumu combinatorial background as far as the affect of long-lived components in concerned. 
 
 
-\begin{table}[htbp]
+\begin{table}[tbp]
 \begin{center}
 \begin{tabular}{lllll}
 \toprule \toprule
@@ -357,7 +357,7 @@ The model used for the combinatorial background decay time currently introduces 
 
 The resulting pull distributions for \Gmumu are shown in Figure~\ref{fig:CBGextreme}, the difference in the mean value of the distributions for the two studies is negligible and the width changes by 0.008 \ps$^{-1}$ between the two studies. The change in the width is the largest and therefore the systematic uncertainty is estimated from this. Assuming the expected uncertainty for \tmumu a systematic uncertainty of 0.002~\ps is assigned due to the combinatorial background decay time model.
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
   \centering
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/Gamma_pull_mass_pdf_Run1.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/Bs2MuMu_gamma_pull_CKM_extremeCBG_DT.pdf}
@@ -378,7 +378,7 @@ The size of this effect has been estimated using two simple pseudoexperiments. T
 
 The values of \tmumu are compared for the two studies and a systematic uncertainty is assigned for the change in \tmumu caused by the inclusion of the acceptance function. The fit results are shown in Figure~\ref{fig:mixofstates} and the difference between the measured lifetimes for the two studies is 0.018~\ps and is assigned as a systematic uncertainty.
 
-\begin{figure}[htbp]
+\begin{figure}[tbp]
   \centering
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/No_acc_fit.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeSystematics/Acc_fit.pdf}
@@ -486,7 +486,7 @@ The complete list of systematic uncertainties for \tmumu are summarised in Table
 
 %What is the percentage of the unceratines of the measured result? Both statistical and systematic?
 
-\begin{table}[htp]
+\begin{table}[tp]
 \begin{center}
 \begin{tabular}{lc}
 \toprule \toprule
