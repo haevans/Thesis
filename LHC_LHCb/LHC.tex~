@@ -1,0 +1,11 @@
+\chapter{CERN, the LHC and LHCb}
+\label{CERN_LHC_LHCb}
+
+The European Organisation for Nuclear Research (CERN) was founded in 1954 and began with 12 member states as a organisation to encourage European collaboration and the study of nuclear physics. Since it's foundation the collaborative nature of CERN allowed for large-scale expensive experiments and machines to be built. The Proton Synchrotron was CERN's flagship accelerator, operational in 1959 it had a circumference of 628~m and accelerated protons to XXX~GeV, the highest energy at that time. Now 62 years since it's foundation CERN has grown to include 21 member states \footnote{about the other types of countries involved.} and is still at the forefront of high energy physics research. CERN’s latest accelerator, the Large Hadron Collider (LHC), is most energetic particle accelerator ever built, with a 27km circumference the LHC was designed to protons at~14 TeV. This chapter shall discuss the LHC and the LHC beauty experiment, one of the experiments that uses collisions provided by the LHC\cite{Aaij:2013aka}.
+
+\section{The LHC}
+\label{LHC}
+
+
+The LHC is a proton synchrotron that was designed to accelerate and collide two beams of protons travelling in oposite directions up to a center-of-mass energy of 14~TeV. Although operation of the LHC began in 2010 it is yet to reach design energy. The purpose of the LHC is to provide high energy proton collisions, the products of which are used for precision tests of the Standard Model (SM) and to search for new physics particles that go beyond the scope of the SM. There are four interaction points on the LHC ring where the beams are brought to collide, at these points various experiments detect and study the products of these collisions. The LHC can also accelerate lead-nuclei up to an energy of 2.76~TeV per nucleon, but it is only the products from proton collisions that are the topic of this thesis.
+

@@ -1,0 +1,105 @@
+\thispagestyle {empty}
+\contentsline {chapter}{Abstract}{iii}{chapter*.1}
+\contentsline {chapter}{Preface}{vii}{chapter*.3}
+\contentsline {chapter}{\numberline {1}{\bf Introduction}}{1}{chapter.1}
+\contentsline {chapter}{\numberline {2}{\bf Theory of }\relax \mathversion {bold}{$B\to \mu ^+ \mu ^-$}{\bf decays; the Standard Model and beyond}}{7}{chapter.2}
+\contentsline {section}{\numberline {2.1}$B^0_{(s)}\to \mu ^+ \mu ^-$ decays in the Standard Model}{7}{section.2.1}
+\contentsline {section}{\numberline {2.2}$B^{0}_{(s)} \to \mu ^{+} \mu ^{-}$\xspace Branching Fraction}{10}{section.2.2}
+\contentsline {section}{\numberline {2.3}Quark mixing}{13}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Time evolution of the $B_{(s)}^{0}$\xspace }{13}{subsection.2.3.1}
+\contentsline {subsection}{\numberline {2.3.2}Impact on the Branching Fraction}{18}{subsection.2.3.2}
+\contentsline {section}{\numberline {2.4}$A_{\Delta \Gamma }$\xspace and the effective lifetime}{19}{section.2.4}
+\contentsline {section}{\numberline {2.5}The Standard Model predictions}{20}{section.2.5}
+\contentsline {section}{\numberline {2.6}New Physics models and $B^{0}_{(s)} \to \mu ^{+} \mu ^{-}$\xspace decays}{21}{section.2.6}
+\contentsline {chapter}{\numberline {3}{\bf The LHC and the LHCb experiment}}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}The Large Hadron Collider}{26}{section.3.1}
+\contentsline {section}{\numberline {3.2}The LHCb experiment}{29}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Tracking}{30}{subsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.1.1}The vertex locator}{32}{subsubsection.3.2.1.1}
+\contentsline {subsubsection}{\numberline {3.2.1.2}Tracking stations}{34}{subsubsection.3.2.1.2}
+\contentsline {subsubsection}{\numberline {3.2.1.3}Dipole magnet}{36}{subsubsection.3.2.1.3}
+\contentsline {subsubsection}{\numberline {3.2.1.4}Track reconstruction and performance}{37}{subsubsection.3.2.1.4}
+\contentsline {subsection}{\numberline {3.2.2}Particle identification}{39}{subsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.1}Ring Imaging Cherenkov detectors}{39}{subsubsection.3.2.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2.2}Calorimeters}{41}{subsubsection.3.2.2.2}
+\contentsline {subsubsection}{\numberline {3.2.2.3}Muon stations}{43}{subsubsection.3.2.2.3}
+\contentsline {subsubsection}{\numberline {3.2.2.4}Particle identification and performance}{45}{subsubsection.3.2.2.4}
+\contentsline {subsection}{\numberline {3.2.3}Trigger}{47}{subsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.3.1}L0 trigger}{48}{subsubsection.3.2.3.1}
+\contentsline {subsubsection}{\numberline {3.2.3.2}HLT trigger}{50}{subsubsection.3.2.3.2}
+\contentsline {subsection}{\numberline {3.2.4}Software and simulation}{50}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Summary}{52}{section.3.3}
+\contentsline {chapter}{\numberline {4}{\bf Event selection}}{55}{chapter.4}
+\contentsline {section}{\numberline {4.1}Background sources}{56}{section.4.1}
+\contentsline {section}{\numberline {4.2}Simulated particle decays}{58}{section.4.2}
+\contentsline {section}{\numberline {4.3}Event selection for branching fraction measurements}{58}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Trigger requirements}{60}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Cut-based selection}{62}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Development of the stripping selection}{62}{subsubsection.4.3.2.1}
+\contentsline {subsubsection}{\numberline {4.3.2.2}Investigation of the stripping selection}{66}{subsubsection.4.3.2.2}
+\contentsline {subsubsection}{\numberline {4.3.2.3}Additional offline cuts}{75}{subsubsection.4.3.2.3}
+\contentsline {subsection}{\numberline {4.3.3}Particle identification}{76}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Multivariate Classifiers}{76}{subsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.4.1}Boosted Decision Trees}{77}{subsubsection.4.3.4.1}
+\contentsline {subsubsection}{\numberline {4.3.4.2}The BDTS}{79}{subsubsection.4.3.4.2}
+\contentsline {subsubsection}{\numberline {4.3.4.3}Global BDT}{82}{subsubsection.4.3.4.3}
+\contentsline {subsection}{\numberline {4.3.5}Summary}{86}{subsection.4.3.5}
+\contentsline {section}{\numberline {4.4}Selection for the effective lifetime measurement}{89}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Trigger requirements}{90}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Mass range}{90}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Particle identification}{91}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}Multivariate classifier}{92}{subsection.4.4.4}
+\contentsline {subsubsection}{\numberline {4.4.4.1}Development of effective lifetime\xspace multivariate classifiers}{93}{subsubsection.4.4.4.1}
+\contentsline {subsubsection}{\numberline {4.4.4.2}Investigation of background training samples}{94}{subsubsection.4.4.4.2}
+\contentsline {subsubsection}{\numberline {4.4.4.3}Selection efficiency with decay time}{95}{subsubsection.4.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.4.4}Classifier performance comparison}{97}{subsubsection.4.4.4.4}
+\contentsline {subsubsection}{\numberline {4.4.4.5}Optimisation of BDT cut choice}{99}{subsubsection.4.4.4.5}
+\contentsline {subsection}{\numberline {4.4.5}Summary}{104}{subsection.4.4.5}
+\contentsline {chapter}{\numberline {5}\bf {Measurement of }\relax \mathversion {bold}{$B^{0}_{(s)} \to \mu ^{+} \mu ^{-}$\xspace }\bf { branching fractions}}{107}{chapter.5}
+\contentsline {section}{\numberline {5.1}Analysis strategy}{107}{section.5.1}
+\contentsline {section}{\numberline {5.2}$B^{0}_{(s)} \to \mu ^{+} \mu ^{-}$\xspace mass and BDT PDFs\xspace }{110}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Mass PDFs\xspace }{110}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}BDT PDFs\xspace }{114}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Decay time dependence}{114}{subsection.5.2.3}
+\contentsline {section}{\numberline {5.3}Background mass PDFs\xspace and expected yields}{115}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}$B \to h^{+} h^{'-}$\xspace }{116}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Semi-leptonic decays}{118}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Combinatorial background}{118}{subsection.5.3.3}
+\contentsline {section}{\numberline {5.4}Normalisation}{119}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}$B^{0} \to K^{+} \pi ^{-}$\xspace and $B^{+} \to J/\psi K^{+}$\xspace yields}{119}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Efficiency ratio}{121}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Hadronisation factors}{121}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Normalisation parameters}{122}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Results}{122}{section.5.5}
+\contentsline {chapter}{\numberline {6}{\bf Measurement of the }\relax \mathversion {bold}{$B_{s}^{0} \to \mu ^{+} \mu ^{-}$\xspace }{\bf effective lifetime}}{127}{chapter.6}
+\contentsline {section}{\numberline {6.1}Analysis strategy}{127}{section.6.1}
+\contentsline {section}{\numberline {6.2}Mass PDFs\xspace }{129}{section.6.2}
+\contentsline {section}{\numberline {6.3}Decay time distributions}{130}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}$B_{s}^{0} \to \mu ^{+} \mu ^{-}$\xspace PDF\xspace }{131}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Background PDFs\xspace }{139}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Measurement strategy}{142}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}To fit for $\tau $ or $\tau ^{-1}$?}{144}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Optimisation of fit configuration}{146}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Results}{153}{section.6.5}
+\contentsline {chapter}{\numberline {7}{\bf Systematic uncertainties and cross checks on the effective lifetime\xspace }}{157}{chapter.7}
+\contentsline {section}{\numberline {7.1}Accuracy of the fit}{157}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Fit stability with $\tau _{\mu \mu }$\xspace values}{158}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}$B_{s}^{0} \to \mu ^{+} \mu ^{-}$\xspace yield estimation}{159}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Overall bias on $\tau _{\mu \mu }$\xspace }{159}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Background contamination}{161}{section.7.2}
+\contentsline {section}{\numberline {7.3}Mass PDF\xspace parameters}{164}{section.7.3}
+\contentsline {section}{\numberline {7.4}Acceptance function accuracy}{164}{section.7.4}
+\contentsline {section}{\numberline {7.5}Incorrectly assigned primary vertices and the detector resolution}{170}{section.7.5}
+\contentsline {section}{\numberline {7.6}Combinatorial background decay time model}{171}{section.7.6}
+\contentsline {section}{\numberline {7.7}Mix of $B_{s}^{0}$\xspace mass eigenstates}{174}{section.7.7}
+\contentsline {section}{\numberline {7.8}Production asymmetry of $B_{s}^{0}$\xspace and $\overline {B}_{s}^{0}$}{175}{section.7.8}
+\contentsline {section}{\numberline {7.9}Summary}{177}{section.7.9}
+\contentsline {chapter}{\numberline {8}{\bf Summary and Outlook}}{179}{chapter.8}
+\contentsline {section}{\numberline {8.1}Summary}{179}{section.8.1}
+\contentsline {section}{\numberline {8.2}Outlook}{181}{section.8.2}
+\contentsline {chapter}{Bibliography}{185}{chapter*.140}
+\contentsline {chapter}{Appendix \numberline {A}{\bf Distributions of input variables for the global BDT}}{197}{Appendix.a.A}
+\contentsline {chapter}{Appendix \numberline {B}Multivariate classifier development}{201}{Appendix.a.B}
+\contentsline {section}{\numberline {B.1}Input variables}{201}{section.a.B.1}
+\contentsline {section}{\numberline {B.2}Training parameters}{204}{section.a.B.2}
+\contentsline {section}{\numberline {B.3}Overtraining test}{204}{section.a.B.3}

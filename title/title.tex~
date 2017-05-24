@@ -1,0 +1,25 @@
+\begin{titlepage}
+  \centering
+  \includegraphics[width=0.25\textwidth]{University_Crest.pdf}\par\vspace{1cm}
+  {\scshape\LARGE  University of Cambridge \par}
+  \vspace{1cm}
+  %{\scshape\Large PhD Thesis\par}
+  \vspace{1.5cm}
+  {\LARGE\bfseries Measurements of \boldmath{$B \to \mu^{+} \mu^{-}$} decays using the LHCb Experiment \par}
+  \vspace{2cm}
+  {\Large\itshape Hannah Mary Evans\\
+    Selwyn College\par}
+  \vfill
+  {\large
+  Supervisor  \\
+  Prof. Valerie Gibson
+  %Dr Marc Olivier Bettler \\
+  %Dr Harry Cliff \\
+  }
+  \vfill
+
+% Bottom of the page
+  {\large This dissertation is submitted for the degree of Doctor of Philosophy \\
+\\
+June 2017}
+\end{titlepage}

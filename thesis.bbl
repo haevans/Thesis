@@ -1,0 +1,1615 @@
+\ifx\mcitethebibliography\mciteundefinedmacro
+\PackageError{LHCb.bst}{mciteplus.sty has not been loaded}
+{This bibstyle requires the use of the mciteplus package.}\fi
+\providecommand{\href}[2]{#2}
+\begin{mcitethebibliography}{100}
+\mciteSetBstSublistMode{n}
+\mciteSetBstMaxWidthForm{subitem}{\alph{mcitesubitemcount})}
+\mciteSetBstSublistLabelBeginEnd{\mcitemaxwidthsubitemform\space}
+{\relax}{\relax}
+
+\bibitem{Aaij:2017vad}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of the
+  $B^0_s\to\mu^+\mu^-$ branching fraction and effective lifetime and search for
+  $B^0\to\mu^+\mu^-$ decays}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.118.191801}{Phys.\ Rev.\
+  Lett.\  {\bf 118} (2017) 191801}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{GLASHOW1961579}
+S.~L. Glashow, \ifthenelse{\boolean{articletitles}}{{\it Partial-symmetries of
+  weak interactions},
+  }{}\href{http://dx.doi.org/http://dx.doi.org/10.1016/0029-5582(61)90469-2}{Nuclear
+  Physics {\bf 22} (1961), no.~4 579 }\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevLett.19.1264}
+S.~Weinberg, \ifthenelse{\boolean{articletitles}}{{\it A model of leptons},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.19.1264}{Phys.\ Rev.\ Lett.\
+  {\bf 19} (1967) 1264}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevD.2.1285}
+S.~L. Glashow, J.~Iliopoulos, and L.~Maiani,
+  \ifthenelse{\boolean{articletitles}}{{\it Weak interactions with
+  lepton-hadron symmetry},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.2.1285}{Phys.\ Rev.\ D {\bf 2}
+  (1970) 1285}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevLett.20.1205}
+R.~Davis, D.~S. Harmer, and K.~C. Hoffman,
+  \ifthenelse{\boolean{articletitles}}{{\it Search for neutrinos from the sun},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.20.1205}{Phys.\ Rev.\ Lett.\
+  {\bf 20} (1968) 1205}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Fukuda:1998fd}
+Super-Kamiokande collaboration, Y.~Fukuda {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurements of the solar neutrino
+  flux from Super-Kamiokande's first 300 days}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.81.1158}{Phys.\ Rev.\ Lett.\
+  {\bf 81} (1998) 1158}, \href{http://arxiv.org/abs/hep-ex/9805021}{{\tt
+  arXiv:hep-ex/9805021}}, [Erratum: Phys. Rev. Lett.81,4279(1998)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevLett.86.5656}
+Super-Kamiokande Collaboration, S.~Fukuda {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it Constraints on neutrino
+  oscillations using 1258 days of super-kamiokande solar neutrino data},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.86.5656}{Phys.\ Rev.\ Lett.\
+  {\bf 86} (2001) 5656}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevLett.87.071301}
+SNO Collaboration, Q.~R. Ahmad {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it Measurement of the rate of
+  ${\ensuremath{\nu}}_{e}+\mathit{d}\ensuremath{\rightarrow}\mathit{p}+\mathit{p}+{\mathit{e}}^{\ensuremath{-}}$
+  interactions produced by $^{8}b$ solar neutrinos at the sudbury neutrino
+  observatory},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.87.071301}{Phys.\ Rev.\ Lett.\
+   {\bf 87} (2001) 071301}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{darkmatter1}
+F.~Zwicky, \ifthenelse{\boolean{articletitles}}{{\it Spectral displacement of
+  extra galactic nebulae}, }{}Helv.\ Phys.\ Acta {\bf 86} (1933)\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{darkmatter2}
+M.~S. Roberts and A.~H. Rots, \ifthenelse{\boolean{articletitles}}{{\it
+  Comparison of rotation curves of different galaxy types}, }{}Astronomy and
+  Astrophysics {\bf 26} (1973) 483\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Dunkley:2008ie}
+J.~Dunkley {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {Five-Year
+  Wilkinson Microwave Anisotropy Probe (WMAP) Observations: Likelihoods and
+  Parameters from the WMAP data}}, }{}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Ade:2015xua}
+P.~A.~R. Ade {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {Planck
+  2015 results. XIII. Cosmological parameters}},
+  }{}\href{http://dx.doi.org/10.1051/0004-6361/201525830}{Astron.\ Astrophys.\
+  {\bf 594} (2016) A13}, \href{http://arxiv.org/abs/1502.0158}{{\tt
+  arXiv:1502.0158}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Sakharov:1967dj}
+A.~D. Sakharov, \ifthenelse{\boolean{articletitles}}{{\it {Violation of CP
+  Invariance, c Asymmetry, and Baryon Asymmetry of the Universe}},
+  }{}\href{http://dx.doi.org/10.1070/PU1991v034n05ABEH002497}{Pisma Zh.\ Eksp.\
+  Teor.\ Fiz.\  {\bf 5} (1967) 32}, [Usp. Fiz. Nauk161,61(1991)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Gavela:1993ts}
+M.~B. Gavela, P.~Hernandez, J.~Orloff, and O.~Pene,
+  \ifthenelse{\boolean{articletitles}}{{\it {Standard model CP violation and
+  baryon asymmetry}},
+  }{}\href{http://dx.doi.org/10.1142/S0217732394000629}{Mod.\ Phys.\ Lett.\
+  {\bf A9} (1994) 795}, \href{http://arxiv.org/abs/hep-ph/9312215}{{\tt
+  arXiv:hep-ph/9312215}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{lowenergySM}
+M.~Dine, {\em Supersymmetry and String Theory: Beyond the Standard Model},
+  Cambridge University Press, 2007\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Ellis:2002wba}
+J.~R. Ellis, \ifthenelse{\boolean{articletitles}}{{\it {Limits of the standard
+  model}}, }{} in {\em {PSI Zuoz Summer School on Exploring the Limits of the
+  Standard Model Zuoz, Engadin, Switzerland, August 18-24, 2002}}, 2002.
+\newblock \href{http://arxiv.org/abs/hep-ph/0211168}{{\tt
+  arXiv:hep-ph/0211168}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Pomarol:2012sb}
+A.~Pomarol, \ifthenelse{\boolean{articletitles}}{{\it {Beyond the Standard
+  Model}}, }{} in {\em {Proceedings, High-energy Physics. Proceedings, 18th
+  European School (ESHEP 2010): Raseborg, Finland, June 20 - July 3, 2010}},
+  pp.~115--151, 2012.
+\newblock \href{http://arxiv.org/abs/1202.1391}{{\tt arXiv:1202.1391}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Chatrchyan:2012xdj}
+CMS collaboration, S.~Chatrchyan {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Observation of a new boson at a
+  mass of 125 GeV with the CMS experiment at the LHC}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2012.08.021}{Phys.\ Lett.\
+  {\bf B716} (2012) 30}, \href{http://arxiv.org/abs/1207.7235}{{\tt
+  arXiv:1207.7235}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aad:2012tfa}
+ATLAS collaboration, G.~Aad {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Observation of a new particle in
+  the search for the Standard Model Higgs boson with the ATLAS detector at the
+  LHC}}, }{}\href{http://dx.doi.org/10.1016/j.physletb.2012.08.020}{Phys.\
+  Lett.\  {\bf B716} (2012) 1}, \href{http://arxiv.org/abs/1207.7214}{{\tt
+  arXiv:1207.7214}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevLett.118.111801}
+Belle Collaboration, S.~Wehle {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it Lepton-flavor-dependent angular
+  analysis of
+  $b\ensuremath{\rightarrow}{K}^{*}{\ensuremath{\ell}}^{+}{\ensuremath{\ell}}^{\ensuremath{-}}$},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.118.111801}{Phys.\ Rev.\
+  Lett.\  {\bf 118} (2017) 111801}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2014pli}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Differential branching fractions
+  and isospin asymmetries of $B \to K^{(*)} \mu^+ \mu^-$ decays}},
+  }{}\href{http://dx.doi.org/10.1007/JHEP06(2014)133}{JHEP {\bf 06} (2014)
+  133}, \href{http://arxiv.org/abs/1403.8044}{{\tt arXiv:1403.8044}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2015yra}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of the ratio of
+  branching fractions $\mathcal{B}(\bar{B}^0 \to
+  D^{*+}\tau^{-}\bar{\nu}_{\tau})/\mathcal{B}(\bar{B}^0 \to
+  D^{*+}\mu^{-}\bar{\nu}_{\mu})$}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.115.159901,
+  10.1103/PhysRevLett.115.111803}{Phys.\ Rev.\ Lett.\  {\bf 115} (2015), no.~11
+  111803}, \href{http://arxiv.org/abs/1506.0861}{{\tt arXiv:1506.0861}},
+  [Erratum: Phys. Rev. Lett.115,no.15,159901(2015)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Lees:2013uzd}
+BaBar Collaboration, J.~P. Lees {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of an Excess of
+  $\bar{B} \to D^{(*)}\tau^- \bar{\nu}_\tau$ Decays and Implications for
+  Charged Higgs Bosons}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.88.072012}{Phys.\ Rev.\  {\bf
+  D88} (2013), no.~7 072012}, \href{http://arxiv.org/abs/1303.0571}{{\tt
+  arXiv:1303.0571}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Huschle:2015rga}
+Belle Collaboration, M.~Huschle {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of the branching ratio
+  of $\bar{B} \to D^{(\ast)} \tau^- \bar{\nu}_\tau$ relative to $\bar{B} \to
+  D^{(\ast)} \ell^- \bar{\nu}_\ell$ decays with hadronic tagging at Belle}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.92.072014}{Phys.\ Rev.\  {\bf
+  D92} (2015), no.~7 072014}, \href{http://arxiv.org/abs/1507.0323}{{\tt
+  arXiv:1507.0323}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Lees:2012xj}
+BaBar Collaboration, J.~P. Lees {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Evidence for an excess of $\bar{B}
+  \to D^{(*)} \tau^-\bar{\nu}_\tau$ decays}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.109.101802}{Phys.\ Rev.\
+  Lett.\  {\bf 109} (2012) 101802}, \href{http://arxiv.org/abs/1205.5442}{{\tt
+  arXiv:1205.5442}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2015oid}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Angular analysis of the $B^{0} \to
+  K^{*0} \mu^{+} \mu^{-}$ decay using 3 fb$^{-1}$ of integrated luminosity}},
+  }{}\href{http://dx.doi.org/10.1007/JHEP02(2016)104}{JHEP {\bf 02} (2016)
+  104}, \href{http://arxiv.org/abs/1512.0444}{{\tt arXiv:1512.0444}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2015esa}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Angular analysis and differential
+  branching fraction of the decay $B^0_s\to\phi\mu^+\mu^-$}},
+  }{}\href{http://dx.doi.org/10.1007/JHEP09(2015)179}{JHEP {\bf 09} (2015)
+  179}, \href{http://arxiv.org/abs/1506.0877}{{\tt arXiv:1506.0877}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevLett.113.151601}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it Test of lepton universality using
+  ${B}^{+}\ensuremath{\rightarrow}{K}^{+}{\ensuremath{\ell}}^{+}{\ensuremath{\ell}}^{\ensuremath{-}}$
+  decays}, }{}\href{http://dx.doi.org/10.1103/PhysRevLett.113.151601}{Phys.\
+  Rev.\ Lett.\  {\bf 113} (2014) 151601}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{R_K_star}
+\relax
+\mciteBstWouldAddEndPunctfalse
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aad:2012pn}
+ATLAS collaboration, G.~Aad {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Search for the decay $B_s^0 \to
+  \mu \mu$ with the ATLAS detector}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2012.06.013}{Phys.\ Lett.\
+  {\bf B713} (2012) 387}, \href{http://arxiv.org/abs/1204.0735}{{\tt
+  arXiv:1204.0735}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaboud:2016ire}
+ATLAS collaboration, M.~Aaboud {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Study of the rare decays of
+  $B^0_s$ and $B^0$ into muon pairs from data collected during the LHC Run 1
+  with the ATLAS detector}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s10052-016-4338-8}{Eur.\ Phys.\ J.\
+  {\bf C76} (2016), no.~9 513}, \href{http://arxiv.org/abs/1604.0426}{{\tt
+  arXiv:1604.0426}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Chatrchyan:2011kr}
+CMS collaboration, S.~Chatrchyan {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Search for $B^{0}_{s} \to \mu^{+}
+  \mu^{-}$ and $B^0 \to \mu^{+} \mu^{-}$ decays in $pp$ collisions at $\sqrt{s}
+  = $ 7 TeV}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.107.191802}{Phys.\ Rev.\
+  Lett.\  {\bf 107} (2011) 191802}, \href{http://arxiv.org/abs/1107.5834}{{\tt
+  arXiv:1107.5834}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Chatrchyan:2012rga}
+CMS collaboration, S.~Chatrchyan {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Search for $B^0_s \to \mu^+ \mu^-$
+  and $B^0 \to \mu^+ \mu^-$ decays}},
+  }{}\href{http://dx.doi.org/10.1007/JHEP04(2012)033}{JHEP {\bf 04} (2012)
+  033}, \href{http://arxiv.org/abs/1203.3976}{{\tt arXiv:1203.3976}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Chatrchyan:2013bka}
+CMS collaboration, S.~Chatrchyan {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of the $B^{0}_{s} \to
+  \mu^+ \mu^-$ branching fraction and search for $B^0 \to \mu^+ \mu^-$ with the
+  CMS Experiment}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.111.101804}{Phys.\ Rev.\
+  Lett.\  {\bf 111} (2013) 101804}, \href{http://arxiv.org/abs/1307.5025}{{\tt
+  arXiv:1307.5025}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2011rja}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Search for the rare decays $B^0_s
+  \to \mu^+\mu^-$ and $B^0 \to \mu^+\mu^-$}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2011.04.031}{Phys.\ Lett.\
+  {\bf B699} (2011) 330}, \href{http://arxiv.org/abs/1103.2465}{{\tt
+  arXiv:1103.2465}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb:2011ac}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Search for the rare decays $B^0_s
+  \to \mu^+ \mu^-$ and $B^0 \to \mu^+ \mu^-$}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2012.01.038}{Phys.\ Lett.\
+  {\bf B708} (2012) 55}, \href{http://arxiv.org/abs/1112.1600}{{\tt
+  arXiv:1112.1600}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2012ac}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Strong constraints on the rare
+  decays $B_s \to \mu^+ \mu^-$ and $B^0 \to \mu^+ \mu^-$}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.108.231801}{Phys.\ Rev.\
+  Lett.\  {\bf 108} (2012) 231801}, \href{http://arxiv.org/abs/1203.4493}{{\tt
+  arXiv:1203.4493}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2012nna}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {First Evidence for the Decay
+  $B_s^0 \to \mu^+ \mu^-$}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.110.021801}{Phys.\ Rev.\
+  Lett.\  {\bf 110} (2013), no.~2 021801},
+  \href{http://arxiv.org/abs/1211.2674}{{\tt arXiv:1211.2674}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2013aka}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of the $B^0_s \to
+  \mu^+ \mu^-$ branching fraction and search for $B^0 \to \mu^+ \mu^-$ decays
+  at the LHCb experiment}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.111.101805}{Phys.\ Rev.\
+  Lett.\  {\bf 111} (2013) 101805}, \href{http://arxiv.org/abs/1307.5024}{{\tt
+  arXiv:1307.5024}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{CMS:2014xfa}
+LHCb collaboration, CMS collaboration, V.~Khachatryan {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Observation of the rare
+  $B^0_s\to\mu^+\mu^-$ decay from the combined analysis of CMS and LHCb data}},
+  }{}\href{http://dx.doi.org/10.1038/nature14474}{Nature {\bf 522} (2015) 68},
+  \href{http://arxiv.org/abs/1411.4413}{{\tt arXiv:1411.4413}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Blake:2016olu}
+T.~Blake, G.~Lanfranchi, and D.~M. Straub,
+  \ifthenelse{\boolean{articletitles}}{{\it {Rare $B$ Decays as Tests of the
+  Standard Model}},
+  }{}\href{http://dx.doi.org/10.1016/j.ppnp.2016.10.001}{Prog.\ Part.\ Nucl.\
+  Phys.\  {\bf 92} (2017) 50}, \href{http://arxiv.org/abs/1606.0091}{{\tt
+  arXiv:1606.0091}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Anikeev:2001rk}
+K.~Anikeev {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {$B$ physics
+  at the Tevatron: Run II and beyond}}, }{} in {\em {Workshop on B Physics at
+  the Tevatron: Run II and Beyond Batavia, Illinois, September 23-25, 1999}},
+  2001.
+\newblock \href{http://arxiv.org/abs/hep-ph/0201071}{{\tt
+  arXiv:hep-ph/0201071}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Dunietz:2000cr}
+I.~Dunietz, R.~Fleischer, and U.~Nierste,
+  \ifthenelse{\boolean{articletitles}}{{\it {In pursuit of new physics with
+  $B_s$ decays}}, }{}\href{http://dx.doi.org/10.1103/PhysRevD.63.114015}{Phys.\
+  Rev.\  {\bf D63} (2001) 114015},
+  \href{http://arxiv.org/abs/hep-ph/0012219}{{\tt arXiv:hep-ph/0012219}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Nierste:2009wg}
+U.~Nierste, \ifthenelse{\boolean{articletitles}}{{\it {Three Lectures on Meson
+  Mixing and CKM phenomenology}}, }{} in {\em {Heavy quark physics.
+  Proceedings, Helmholtz International School, HQP08, Dubna, Russia, August
+  11-21, 2008}}, pp.~1--38, 2009.
+\newblock \href{http://arxiv.org/abs/0904.1869}{{\tt arXiv:0904.1869}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevLett.10.531}
+N.~Cabibbo, \ifthenelse{\boolean{articletitles}}{{\it Unitary symmetry and
+  leptonic decays},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.10.531}{Phys.\ Rev.\ Lett.\
+  {\bf 10} (1963) 531}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{doi:10.1143/PTP.49.652}
+M.~Kobayashi and T.~Maskawa, \ifthenelse{\boolean{articletitles}}{{\it
+  Cp-violation in the renormalizable theory of weak interaction},
+  }{}\href{http://dx.doi.org/10.1143/PTP.49.652}{Progress of Theoretical
+  Physics {\bf 49} (1973), no.~2 652}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevLett.51.1945}
+L.~Wolfenstein, \ifthenelse{\boolean{articletitles}}{{\it Parametrization of
+  the kobayashi-maskawa matrix},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.51.1945}{Phys.\ Rev.\ Lett.\
+  {\bf 51} (1983) 1945}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Olive:2016xmw}
+Particle Data Group, C.~Patrignani {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Review of Particle Physics}},
+  }{}\href{http://dx.doi.org/10.1088/1674-1137/40/10/100001}{Chin.\ Phys.\
+  {\bf C40} (2016), no.~10 100001}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{DeBruyn:2012wj}
+K.~De~Bruyn {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {Branching
+  Ratio Measurements of $B_s$ Decays}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.86.014027}{Phys.\ Rev.\  {\bf
+  D86} (2012) 014027}, \href{http://arxiv.org/abs/1204.1735}{{\tt
+  arXiv:1204.1735}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Tolk:2148631}
+S.~Tolk, {\em {Discovery Of Rare B decays. First observation of the $B_s
+  \rightarrow \mu^+\mu^-$ decays, first evidence of the $B^0 \rightarrow \mu^+
+  \mu^-$ decays.}}, PhD thesis, Groningen U., Dec, 2015, Presented 08 Apr
+  2016\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRev.179.1499}
+K.~G. Wilson, \ifthenelse{\boolean{articletitles}}{{\it Non-lagrangian models
+  of current algebra},
+  }{}\href{http://dx.doi.org/10.1103/PhysRev.179.1499}{Phys.\ Rev.\  {\bf 179}
+  (1969) 1499}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Wilson1972}
+W.~Wilson, Kenneth G.and~Zimmermann, \ifthenelse{\boolean{articletitles}}{{\it
+  Operator product expansions and composite field operators in the general
+  framework of quantum field theory},
+  }{}\href{http://dx.doi.org/10.1007/BF01878448}{Communications in Mathematical
+  Physics {\bf 24} (1972), no.~2 87}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{DeBruyn:2012wk}
+K.~De~Bruyn {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {Probing
+  New Physics via the $B^0_s\to \mu^+\mu^-$ Effective Lifetime}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.109.041801}{Phys.\ Rev.\
+  Lett.\  {\bf 109} (2012) 041801}, \href{http://arxiv.org/abs/1204.1737}{{\tt
+  arXiv:1204.1737}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Buras:2013uqa}
+A.~J. Buras, R.~Fleischer, J.~Girrbach, and R.~Knegjens,
+  \ifthenelse{\boolean{articletitles}}{{\it {Probing New Physics with the
+  $B^{0}_{s} \to \mu^+ \mu^-$ Time-Dependent Rate}},
+  }{}\href{http://dx.doi.org/10.1007/JHEP07(2013)077}{JHEP {\bf 07} (2013) 77},
+  \href{http://arxiv.org/abs/1303.3820}{{\tt arXiv:1303.3820}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Amhis:2016xyh}
+Y.~Amhis {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {Averages of
+  $b$-hadron, $c$-hadron, and $\tau$-lepton properties as of summer 2016}},
+  }{}\href{http://arxiv.org/abs/1612.0723}{{\tt arXiv:1612.0723}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Fleischer:2011cw}
+R.~Fleischer and R.~Knegjens, \ifthenelse{\boolean{articletitles}}{{\it
+  {Effective Lifetimes of $B_s$ Decays and their Constraints on the
+  $B_s^0$-$\bar B_s^0$ Mixing Parameters}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s10052-011-1789-9}{Eur.\ Phys.\ J.\
+  {\bf C71} (2011) 1789}, \href{http://arxiv.org/abs/1109.5115}{{\tt
+  arXiv:1109.5115}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Bobeth:2013uxa}
+C.~Bobeth {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {$B_{s,d} \to
+  l^+ l^-$ in the Standard Model with Reduced Theoretical Uncertainty}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.112.101801}{Phys.\ Rev.\
+  Lett.\  {\bf 112} (2014) 101801}, \href{http://arxiv.org/abs/1311.0903}{{\tt
+  arXiv:1311.0903}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Bazavov:2011aa}
+Fermilab Lattice, MILC, A.~Bazavov {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {B- and D-meson decay constants
+  from three-flavor lattice QCD}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.85.114506}{Phys.\ Rev.\  {\bf
+  D85} (2012) 114506}, \href{http://arxiv.org/abs/1112.3051}{{\tt
+  arXiv:1112.3051}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Na:2012kp}
+H.~Na {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {The $B$ and
+  $B_s$ Meson Decay Constants from Lattice QCD}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.86.034506}{Phys.\ Rev.\  {\bf
+  D86} (2012) 034506}, \href{http://arxiv.org/abs/1202.4914}{{\tt
+  arXiv:1202.4914}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Witzel:2013sla}
+O.~Witzel, \ifthenelse{\boolean{articletitles}}{{\it {$B$-meson decay constants
+  with domain-wall light quarks and nonperturbatively tuned relativistic
+  $b$-quarks}}, }{}PoS {\bf LATTICE2013} (2014) 377,
+  \href{http://arxiv.org/abs/1311.0276}{{\tt arXiv:1311.0276}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Knegjens:2014zva}
+R.~J. Knegjens, {\em {Strategies to Hunt for New Physics with Strange Beauty
+  Mesons}}, PhD thesis, Vrije U., Amsterdam, 2014\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Altmannshofer:2014rta}
+W.~Altmannshofer and D.~M. Straub, \ifthenelse{\boolean{articletitles}}{{\it
+  {New physics in $b\rightarrow s$ transitions after LHC run 1}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s10052-015-3602-7}{Eur.\ Phys.\ J.\
+  {\bf C75} (2015), no.~8 382}, \href{http://arxiv.org/abs/1411.3161}{{\tt
+  arXiv:1411.3161}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{DAmbrosio:2002vsn}
+G.~D'Ambrosio, G.~F. Giudice, G.~Isidori, and A.~Strumia,
+  \ifthenelse{\boolean{articletitles}}{{\it {Minimal flavor violation: An
+  Effective field theory approach}},
+  }{}\href{http://dx.doi.org/10.1016/S0550-3213(02)00836-2}{Nucl.\ Phys.\  {\bf
+  B645} (2002) 155}, \href{http://arxiv.org/abs/hep-ph/0207036}{{\tt
+  arXiv:hep-ph/0207036}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Martin:1997ns}
+S.~P. Martin, \ifthenelse{\boolean{articletitles}}{{\it {A Supersymmetry
+  primer}}, }{}\href{http://arxiv.org/abs/hep-ph/9709356}{{\tt
+  arXiv:hep-ph/9709356}}, [Adv. Ser. Direct. High Energy Phys.18,1(1998)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Hou:2008xd}
+W.-S. Hou, \ifthenelse{\boolean{articletitles}}{{\it {Source of CP Violation
+  for the Baryon Asymmetry of the Universe}}, }{}Chin.\ J.\ Phys.\  {\bf 47}
+  (2009) 134, \href{http://arxiv.org/abs/0803.1234}{{\tt
+  arXiv:0803.1234}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Straub:2010ih}
+D.~M. Straub, \ifthenelse{\boolean{articletitles}}{{\it {New physics
+  correlations in rare decays}}, }{} in {\em {CKM unitarity triangle.
+  Proceedings, 6th International Workshop, CKM 2010, Warwick, UK, September
+  6-10, 2010}}.
+\newblock \href{http://arxiv.org/abs/1012.3893}{{\tt arXiv:1012.3893}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{CMSandLHCbCollaborations:2013pla}
+LHCb collaboration, CMS collaboration,
+  \ifthenelse{\boolean{articletitles}}{{\it {Combination of results on the rare
+  decays $B^0_{(s)} \to \mu^+\mu^-$ from the CMS and LHCb experiments}},
+  }{}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{HALL1981397}
+L.~J. and M.~B. Wise, \ifthenelse{\boolean{articletitles}}{{\it Flavor changing
+  higgs boson couplings},
+  }{}\href{http://dx.doi.org/http://dx.doi.org/10.1016/0550-3213(81)90469-7}{Nuclear
+  Physics B {\bf 187} (1981), no.~3 397 }\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Witten:1981nf}
+E.~Witten, \ifthenelse{\boolean{articletitles}}{{\it {Dynamical Breaking of
+  Supersymmetry}},
+  }{}\href{http://dx.doi.org/10.1016/0550-3213(81)90006-7}{Nucl.\ Phys.\  {\bf
+  B188} (1981) 513}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Buras:2002wq}
+A.~J. Buras, P.~H. Chankowski, J.~Rosiek, and L.~Slawianowska,
+  \ifthenelse{\boolean{articletitles}}{{\it {Correlation between $\Delta M_s$
+  and $B^0_{s, d} \to \mu^{+} \mu^{-}$ in supersymmetry at large $\tan
+  \beta$}}, }{}\href{http://dx.doi.org/10.1016/S0370-2693(02)02639-4}{Phys.\
+  Lett.\  {\bf B546} (2002) 96},
+  \href{http://arxiv.org/abs/hep-ph/0207241}{{\tt arXiv:hep-ph/0207241}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Babu:1999hn}
+K.~S. Babu and C.~F. Kolda, \ifthenelse{\boolean{articletitles}}{{\it {Higgs
+  mediated $B^0 \to \mu^{+} \mu^{-}$ in minimal supersymmetry}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.84.228}{Phys.\ Rev.\ Lett.\
+  {\bf 84} (2000) 228}, \href{http://arxiv.org/abs/hep-ph/9909476}{{\tt
+  arXiv:hep-ph/9909476}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Isidori:2001fv}
+G.~Isidori and A.~Retico, \ifthenelse{\boolean{articletitles}}{{\it {Scalar
+  flavor changing neutral currents in the large tan beta limit}},
+  }{}\href{http://dx.doi.org/10.1088/1126-6708/2001/11/001}{JHEP {\bf 11}
+  (2001) 001}, \href{http://arxiv.org/abs/hep-ph/0110121}{{\tt
+  arXiv:hep-ph/0110121}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Barbieri:2016las}
+R.~Barbieri, C.~W. Murphy, and F.~Senia,
+  \ifthenelse{\boolean{articletitles}}{{\it {B-decay Anomalies in a Composite
+  Leptoquark Model}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s10052-016-4578-7}{Eur.\ Phys.\ J.\
+  {\bf C77} (2017), no.~1 8}, \href{http://arxiv.org/abs/1611.0493}{{\tt
+  arXiv:1611.0493}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Becirevic:2016yqi}
+D.~Bečirević, S.~Fajfer, N.~Košnik, and O.~Sumensari,
+  \ifthenelse{\boolean{articletitles}}{{\it {Leptoquark model to explain the
+  $B$-physics anomalies, $R_K$ and $R_D$}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.94.115021}{Phys.\ Rev.\  {\bf
+  D94} (2016), no.~11 115021}, \href{http://arxiv.org/abs/1608.0850}{{\tt
+  arXiv:1608.0850}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Hiller:2014yaa}
+G.~Hiller and M.~Schmaltz, \ifthenelse{\boolean{articletitles}}{{\it {$R_K$ and
+  future $b \to s \ell \ell$ physics beyond the standard model opportunities}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.90.054014}{Phys.\ Rev.\  {\bf
+  D90} (2014) 054014}, \href{http://arxiv.org/abs/1408.1627}{{\tt
+  arXiv:1408.1627}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Bauer:2015knc}
+M.~Bauer and M.~Neubert, \ifthenelse{\boolean{articletitles}}{{\it {Minimal
+  Leptoquark Explanation for the R$_{D^{(*)}}$ , R$_K$ , and $(g-2)_g$
+  Anomalies}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.116.141802}{Phys.\ Rev.\
+  Lett.\  {\bf 116} (2016), no.~14 141802},
+  \href{http://arxiv.org/abs/1511.0190}{{\tt arXiv:1511.0190}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Fajfer:2015ycq}
+S.~Fajfer and N.~Košnik, \ifthenelse{\boolean{articletitles}}{{\it {Vector
+  leptoquark resolution of $R_K$ and $R_{D^{(*)}}$ puzzles}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2016.02.018}{Phys.\ Lett.\
+  {\bf B755} (2016) 270}, \href{http://arxiv.org/abs/1511.0602}{{\tt
+  arXiv:1511.0602}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Altmannshofer:2017wqy}
+W.~Altmannshofer, C.~Niehoff, and D.~M. Straub,
+  \ifthenelse{\boolean{articletitles}}{{\it {$B_s\to\mu^+\mu^-$ as current and
+  future probe of new physics}}, }{}\href{http://arxiv.org/abs/1702.0549}{{\tt
+  arXiv:1702.0549}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Member_States}
+CERN.
+\newblock http://home.cern/about/member-states\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aad:2008zzm}
+ATLAS, G.~Aad {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {The
+  ATLAS Experiment at the CERN Large Hadron Collider}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/3/08/S08003}{JINST {\bf 3}
+  (2008) S08003}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Chatrchyan:2008aa}
+CMS, S.~Chatrchyan {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {The
+  CMS Experiment at the CERN LHC}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/3/08/S08004}{JINST {\bf 3}
+  (2008) S08004}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aamodt:2008zz}
+ALICE, K.~Aamodt {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {The
+  ALICE experiment at the CERN LHC}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/3/08/S08002}{JINST {\bf 3}
+  (2008) S08002}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Anelli:2008zza}
+TOTEM, G.~Anelli {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {The
+  TOTEM experiment at the CERN Large Hadron Collider}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/3/08/S08007}{JINST {\bf 3}
+  (2008) S08007}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Pinfold:2009oia}
+MoEDAL, J.~Pinfold {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it
+  {Technical Design Report of the MoEDAL Experiment}}, }{}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Adriani:2008zz}
+LHCf, O.~Adriani {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {The
+  LHCf detector at the CERN Large Hadron Collider}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/3/08/S08006}{JINST {\bf 3}
+  (2008) S08006}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Alves:2008zz}
+LHCb collaboration, A.~A. Alves, Jr. {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {The LHCb Detector at the LHC}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/3/08/S08005}{JINST {\bf 3}
+  (2008) S08005}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCblumi}
+LHCb collaboration, http://lhcb-public.web.cern.ch/lhcb-public/\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{CMSlumi}
+CMS collaboration, https://twiki.cern.ch/twiki/bin/view/CMSPublic/LumiPublic
+  Results#Overview\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{ALTASlumi}
+ATLAS collaboration, https://twiki.cern.ch/twiki/bin/view/AtlasPublic/Luminosit
+  yPublicResultsRun2 and
+  https://twiki.cern.ch/twiki/bin/view/AtlasPublic/Lumino
+  sityPublicResultsRun2\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb:2003ab}
+LHCb collaboration, \ifthenelse{\boolean{articletitles}}{{\it {LHCb technical
+  design report: Reoptimized detector design and performance}}, }{}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2014jba}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {LHCb Detector Performance}},
+  }{}\href{http://dx.doi.org/10.1142/S0217751X15300227}{Int.\ J.\ Mod.\ Phys.\
+  {\bf A30} (2015), no.~07 1530022}, \href{http://arxiv.org/abs/1412.6352}{{\tt
+  arXiv:1412.6352}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Barbosa-Marinho:504321}
+LHCb Collaboration, {\em {LHCb VELO (VErtex LOcator): Technical Design
+  Report}}, Technical Design Report LHCb, CERN, Geneva, 2001\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCbVELOGroup:2014uea}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Performance of the LHCb Vertex
+  Locator}}, }{}\href{http://dx.doi.org/10.1088/1748-0221/9/09/P09007}{JINST
+  {\bf 9} (2014) 09007}, \href{http://arxiv.org/abs/1405.7808}{{\tt
+  arXiv:1405.7808}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Barbosa-Marinho:582793}
+LHCb Collaboration, {\em {LHCb inner tracker: Technical Design Report}},
+  Technical Design Report LHCb, CERN, Geneva, 2002.
+\newblock revised version number 1 submitted on 2002-11-13 14:14:34\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Barbosa-Marinho:519146}
+LHCb Collaboration, {\em {LHCb outer tracker: Technical Design Report}},
+  Technical Design Report LHCb, CERN, Geneva, 2001\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Amato:424338}
+LHCb Collaboration, {\em {LHCb magnet: Technical Design Report}}, Technical
+  Design Report LHCb, CERN, Geneva, 2000\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Kalman}
+R.~E. Kalman, \ifthenelse{\boolean{articletitles}}{{\it {A New Approach to
+  Linear Filetering and Prediction Problems}},
+  }{}\href{http://dx.doi.org/10.1115/1.3662552}{Journal of Basic Engineering
+  {\bf 82} (1960) 35}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Fruhwirth:1987fm}
+R.~Fruhwirth, \ifthenelse{\boolean{articletitles}}{{\it {Application of Kalman
+  filtering to track and vertex fitting}},
+  }{}\href{http://dx.doi.org/10.1016/0168-9002(87)90887-4}{Nucl.\ Instrum.\
+  Meth.\  {\bf A262} (1987) 444}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2014pwa}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of the track
+  reconstruction efficiency at LHCb}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/10/02/P02007}{JINST {\bf 10}
+  (2015), no.~02 P02007}, \href{http://arxiv.org/abs/1408.1251}{{\tt
+  arXiv:1408.1251}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Amato:494263}
+LHCb Collaboration, {\em {LHCb RICH: Technical Design Report}}, Technical
+  Design Report LHCb, CERN, Geneva, 2000\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Adinolfi:2012qfa}
+LHCb RICH Group, M.~Adinolfi {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Performance of the LHCb RICH
+  detector at the LHC}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s10052-013-2431-9}{Eur.\ Phys.\ J.\
+  {\bf C73} (2013) 2431}, \href{http://arxiv.org/abs/1211.6759}{{\tt
+  arXiv:1211.6759}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Alemi:1999np}
+TA2, M.~Alemi {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {First
+  operation of a hybrid photon detector prototype with electrostatic
+  cross-focussing and integrated silicon pixel readout}},
+  }{}\href{http://dx.doi.org/10.1016/S0168-9002(99)01448-5}{Nucl.\ Instrum.\
+  Meth.\  {\bf A449} (2000) 48}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Forty:684714}
+R.~W. Forty and O.~Schneider, \ifthenelse{\boolean{articletitles}}{{\it {RICH
+  pattern recognition}}, }{} Tech. Rep. LHCb-98-040, CERN, Geneva, Apr,
+  1998\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCB:2000ab}
+LHCb, \ifthenelse{\boolean{articletitles}}{{\it {LHCb calorimeters: Technical
+  design report}}, }{}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Barbosa-Marinho:504326}
+LHCb Collaboration, {\em {LHCb muon system: Technical Design Report}},
+  Technical Design Report LHCb, CERN, Geneva, 2001\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Archilli:2013npa}
+F.~Archilli {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it
+  {Performance of the Muon Identification at LHCb}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/8/10/P10020}{JINST {\bf 8}
+  (2013) P10020}, \href{http://arxiv.org/abs/1306.0249}{{\tt
+  arXiv:1306.0249}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Feindt:2006pm}
+M.~Feindt and U.~Kerzel, \ifthenelse{\boolean{articletitles}}{{\it {The
+  NeuroBayes neural network package}},
+  }{}\href{http://dx.doi.org/10.1016/j.nima.2005.11.166}{Nucl.\ Instrum.\
+  Meth.\  {\bf A559} (2006) 190}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2012me}
+R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {The LHCb
+  Trigger and its Performance in 2011}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/8/04/P04022}{JINST {\bf 8}
+  (2013) P04022}, \href{http://arxiv.org/abs/1211.3055}{{\tt
+  arXiv:1211.3055}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Albrecht:2013fba}
+LHCb HLT project, J.~Albrecht, V.~V. Gligorov, G.~Raven, and S.~Tolk,
+  \ifthenelse{\boolean{articletitles}}{{\it {Performance of the LHCb High Level
+  Trigger in 2012}},
+  }{}\href{http://dx.doi.org/10.1088/1742-6596/513/1/012001}{J.\ Phys.\ Conf.\
+  Ser.\  {\bf 513} (2014) 012001}, \href{http://arxiv.org/abs/1310.8544}{{\tt
+  arXiv:1310.8544}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2011er}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Absolute luminosity measurements
+  with the LHCb detector at the LHC}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/7/01/P01010}{JINST {\bf 7}
+  (2012) P01010}, \href{http://arxiv.org/abs/1110.2866}{{\tt
+  arXiv:1110.2866}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Lupton:2230910}
+O.~Lupton and G.~Wilkinson, {\em {Studies of $D^0\to K^{0}_{S} h^{+} h^{'-}$
+  decays at the LHCb experiment}}, PhD thesis, Oxford U., Jul, 2016, Presented
+  14 Sep 2016\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Mato:1998gfa}
+P.~Mato, \ifthenelse{\boolean{articletitles}}{{\it {GAUDI-Architecture design
+  document}}, }{}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Antunes-Nobrega:835156}
+LHCb collaboration, R.~Antunes-Nobrega {\em et~al.}, {\em {LHCb computing:
+  Technical Design Report}}, Technical Design Report LHCb, CERN, Geneva, 2005.
+\newblock Submitted on 11 May 2005\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Stagni:2012rs}
+F.~Stagni {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {LHCbDirac:
+  Distributed computing in LHCb}},
+  }{}\href{http://dx.doi.org/10.1088/1742-6596/396/3/032104}{J.\ Phys.\ Conf.\
+  Ser.\  {\bf 396} (2012) 032104}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Brunel}
+http://lhcb-release-area.web.cern.ch/LHCb-release-area/DOC/brunel/\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{DV}
+http://lhcb-release-area.web.cern.ch/LHCb-release-area/DOC/davinci/\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Brun:1997pa}
+R.~Brun and F.~Rademakers, \ifthenelse{\boolean{articletitles}}{{\it {ROOT: An
+  object oriented data analysis framework}},
+  }{}\href{http://dx.doi.org/10.1016/S0168-9002(97)00048-X}{Nucl.\ Instrum.\
+  Meth.\  {\bf A389} (1997) 81}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{1742-6596-331-3-032047}
+LHCb collaboration, I.~Belyaev {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Handling of the generation of
+  primary events in Gauss, the LHCb simulation framework}}, }{}Journal of
+  Physics: Conference Series {\bf 331} (2011) 032047\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Clemencic:2011zza}
+LHCb collaboration, M.~Clemencic {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {The LHCb simulation application,
+  Gauss: Design, evolution and experience}},
+  }{}\href{http://dx.doi.org/10.1088/1742-6596/331/3/032023}{J.\ Phys.\ Conf.\
+  Ser.\  {\bf 331} (2011) 032023}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Sjostrand:2006za}
+T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
+  \ifthenelse{\boolean{articletitles}}{{\it {PYTHIA 6.4 Physics and Manual}},
+  }{}\href{http://dx.doi.org/10.1088/1126-6708/2006/05/026}{JHEP {\bf 05}
+  (2006) 026}, \href{http://arxiv.org/abs/hep-ph/0603175}{{\tt
+  arXiv:hep-ph/0603175}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Sjostrand:2007gs}
+T.~Sjostrand, S.~Mrenna, and P.~Z. Skands,
+  \ifthenelse{\boolean{articletitles}}{{\it {A Brief Introduction to PYTHIA
+  8.1}}, }{}\href{http://dx.doi.org/10.1016/j.cpc.2008.01.036}{Comput.\ Phys.\
+  Commun.\  {\bf 178} (2008) 852}, \href{http://arxiv.org/abs/0710.3820}{{\tt
+  arXiv:0710.3820}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Lange:2001uf}
+D.~J. Lange, \ifthenelse{\boolean{articletitles}}{{\it {The EvtGen particle
+  decay simulation package}},
+  }{}\href{http://dx.doi.org/10.1016/S0168-9002(01)00089-4}{Nucl.\ Instrum.\
+  Meth.\  {\bf A462} (2001) 152}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Golonka:2005pn}
+P.~Golonka and Z.~Was, \ifthenelse{\boolean{articletitles}}{{\it {PHOTOS Monte
+  Carlo: A Precision tool for QED corrections in $Z$ and $W$ decays}},
+  }{}\href{http://dx.doi.org/10.1140/epjc/s2005-02396-4}{Eur.\ Phys.\ J.\  {\bf
+  C45} (2006) 97}, \href{http://arxiv.org/abs/hep-ph/0506026}{{\tt
+  arXiv:hep-ph/0506026}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Agostinelli:2002hh}
+GEANT4, S.~Agostinelli {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it
+  {GEANT4: A Simulation toolkit}},
+  }{}\href{http://dx.doi.org/10.1016/S0168-9002(03)01368-8}{Nucl.\ Instrum.\
+  Meth.\  {\bf A506} (2003) 250}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Allison:2006ve}
+J.~Allison {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {Geant4
+  developments and applications}},
+  }{}\href{http://dx.doi.org/10.1109/TNS.2006.869826}{IEEE Trans.\ Nucl.\ Sci.\
+   {\bf 53} (2006) 270}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{boole}
+http://lhcb-release-area.web.cern.ch/LHCb-release-area/DOC/boole/\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Bird:2011zz}
+I.~Bird, \ifthenelse{\boolean{articletitles}}{{\it {Computing for the Large
+  Hadron Collider}},
+  }{}\href{http://dx.doi.org/10.1146/annurev-nucl-102010-130059}{Ann.\ Rev.\
+  Nucl.\ Part.\ Sci.\  {\bf 61} (2011) 99}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{WWCG}
+Worldwide LHC Computing Grid, http://www.cern.ch/LHCgrid\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Paterson:1397926}
+S.~Paterson and A.~Tsaregorodtsev, \ifthenelse{\boolean{articletitles}}{{\it
+  {DIRAC Infrastructure for Distributed Analysis}}, }{}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Ganga}
+http://ganga.web.cern.ch/ganga/\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Ganga2}
+K.~Harrison {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {GANGA:} a
+  user-grid interface for atlas and lhcb}, }{}CoRR {\bf cs.SE/0306085}
+  (2003)\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Melikhov:2004mk}
+D.~Melikhov and N.~Nikitin, \ifthenelse{\boolean{articletitles}}{{\it {Rare
+  radiative leptonic decays B(d,s) ---> l+l- gamma}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.70.114028}{Phys.\ Rev.\  {\bf
+  D70} (2004) 114028}, \href{http://arxiv.org/abs/hep-ph/0410146}{{\tt
+  arXiv:hep-ph/0410146}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aditya:2012im}
+Y.~G. Aditya, K.~J. Healey, and A.~A. Petrov,
+  \ifthenelse{\boolean{articletitles}}{{\it {Faking $B_s \to \mu^+\mu^-$}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.87.074028}{Phys.\ Rev.\  {\bf
+  D87} (2013) 074028}, \href{http://arxiv.org/abs/1212.4166}{{\tt
+  arXiv:1212.4166}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2015bfa}
+LHCb, R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it
+  {Determination of the quark coupling strength $|V_{ub}|$ using baryonic
+  decays}}, }{}\href{http://dx.doi.org/10.1038/nphys3415}{Nature Phys.\  {\bf
+  11} (2015) 743}, \href{http://arxiv.org/abs/1504.0156}{{\tt
+  arXiv:1504.0156}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2015nea}
+LHCb, R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {First
+  measurement of the differential branching fraction and $C\!P$ asymmetry of
+  the $B^\pm\to\pi^\pm\mu^+\mu^-$ decay}},
+  }{}\href{http://dx.doi.org/10.1007/JHEP10(2015)034}{JHEP {\bf 10} (2015)
+  034}, \href{http://arxiv.org/abs/1509.0041}{{\tt arXiv:1509.0041}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Bouchard:2014ypa}
+C.~M. Bouchard {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {$B_s
+  \to K \ell \nu$ form factors from lattice QCD}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.90.054506}{Phys.\ Rev.\  {\bf
+  D90} (2014) 054506}, \href{http://arxiv.org/abs/1406.2279}{{\tt
+  arXiv:1406.2279}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{PhysRevD.91.074510}
+RBC and UKQCD Collaborations, J.~M. Flynn {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it $b\to \pi\ell\nu$ and $b_{s} \to
+  k\ell\nu$ form factors and $|v_{ub}|$ from $2+1$-flavour lattice qcd with
+  domainwall light quarks and relativistic heavy quarks},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.91.074510}{Phys.\ Rev.\ D {\bf
+  91} (2015) 074510}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2012dd}
+LHCb, R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it
+  {Measurements of $B_c^+$ production and mass with the $B_c^+ \to J/\psi
+  \pi^+$ decay}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.109.232001}{Phys.\ Rev.\
+  Lett.\  {\bf 109} (2012) 232001}, \href{http://arxiv.org/abs/1209.5634}{{\tt
+  arXiv:1209.5634}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2014jxa}
+LHCb, R.~Aaij {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it
+  {Measurement of the ratio of $B_c^+$ branching fractions to $J/\psi\pi^+$ and
+  $J/\psi\mu^+\nu_\mu$}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.90.032009}{Phys.\ Rev.\  {\bf
+  D90} (2014), no.~3 032009}, \href{http://arxiv.org/abs/1407.2126}{{\tt
+  arXiv:1407.2126}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Wang:2012ab}
+W.-F. Wang and Z.-J. Xiao, \ifthenelse{\boolean{articletitles}}{{\it {The
+  semileptonic decays $B/B_s \to (\pi, K)(\ell^+\ell^-,\ell\nu,\nu\bar{\nu})$
+  in the perturbative QCD approach beyond the leading-order}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevD.86.114025}{Phys.\ Rev.\  {\bf
+  D86} (2012) 114025}, \href{http://arxiv.org/abs/1207.0265}{{\tt
+  arXiv:1207.0265}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Anderlini:2202412}
+L.~Anderlini {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {The
+  PIDCalib package}}, }{} Tech. Rep. LHCb-PUB-2016-021. CERN-LHCb-PUB-2016-021,
+  CERN, Geneva, Jul, 2016\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Diego}
+D.~Martinez~Santos, {\em {Study of the very rare decay
+  $B_s\rightarrow\mu^{+}\mu^{-}$ in LHCb}}, PhD thesis, Santiago de Compostela,
+  Universidade de Santiago de Compostela, Santiago de Compostela, 2010,
+  Presented on 05 May 2010\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Hocker:2007ht}
+A.~Hoecker {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {TMVA:
+  Toolkit for Multivariate Data Analysis}}, }{}PoS {\bf ACAT} (2007) 040,
+  \href{http://arxiv.org/abs/physics/0703039}{{\tt
+  arXiv:physics/0703039}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Archilli:1970886}
+F.~Archilli {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it {Background
+  studies for $B^0 \rightarrow \mu^+\mu^-$ analysis optimization}}, }{} Tech.
+  Rep. LHCb-INT-2014-047. CERN-LHCb-INT-2014-047, CERN, Geneva, Nov, 2014\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Stevens:2013dya}
+J.~Stevens and M.~Williams, \ifthenelse{\boolean{articletitles}}{{\it {uBoost:
+  A boosting method for producing uniform selection efficiencies from
+  multivariate classifiers}},
+  }{}\href{http://dx.doi.org/10.1088/1748-0221/8/12/P12013}{JINST {\bf 8}
+  (2013) P12013}, \href{http://arxiv.org/abs/1305.7248}{{\tt
+  arXiv:1305.7248}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Pivk:2004ty}
+M.~Pivk and F.~R. Le~Diberder, \ifthenelse{\boolean{articletitles}}{{\it
+  {SPlot: A Statistical tool to unfold data distributions}},
+  }{}\href{http://dx.doi.org/10.1016/j.nima.2005.08.106}{Nucl.\ Instrum.\
+  Meth.\  {\bf A555} (2005) 356},
+  \href{http://arxiv.org/abs/physics/0402083}{{\tt
+  arXiv:physics/0402083}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{James:1975dr}
+F.~James and M.~Roos, \ifthenelse{\boolean{articletitles}}{{\it {Minuit: A
+  System for Function Minimization and Analysis of the Parameter Errors and
+  Correlations}},
+  }{}\href{http://dx.doi.org/10.1016/0010-4655(75)90039-9}{Comput.\ Phys.\
+  Commun.\  {\bf 10} (1975) 343}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Skwarnicki:1986xj}
+T.~Skwarnicki, {\em {A study of the radiative cascade transitions between the
+  Upsilon-prime and Upsilon resonances}}, PhD thesis, Institute of Nuclear
+  Physics, Krakow, 1986,
+  {\href{http://inspirehep.net/record/230779/}{DESY-F31-86-02}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Argus_pdf}
+ARGUS, H.~Albrecht {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it
+  {Search for hadronic b$\rightarrow$u decays}},
+  }{}\href{http://dx.doi.org/10.1016/0370-2693990091293-K}{Phys.\ Lett.\  {\bf
+  B241} (1990) 278}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Santos:2013gra}
+D.~Martínez~Santos and F.~Dupertuis, \ifthenelse{\boolean{articletitles}}{{\it
+  {Mass distributions marginalized over per-event errors}},
+  }{}\href{http://dx.doi.org/10.1016/j.nima.2014.06.081}{Nucl.\ Instrum.\
+  Meth.\  {\bf A764} (2014) 150}, \href{http://arxiv.org/abs/1312.5000}{{\tt
+  arXiv:1312.5000}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Tolk:1557354}
+S.~Tolk, J.~Albrecht, F.~Dettori, and A.~Pellegrino,
+  \ifthenelse{\boolean{articletitles}}{{\it {Data-driven measurement of trigger
+  efficiencies with the TisTos method}}, }{} Tech. Rep. LHCb-INT-2013-038.
+  CERN-LHCb-INT-2013-038, CERN, Geneva, Jun, 2013\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb-CONF-2013-011}
+LHCb collaboration, \ifthenelse{\boolean{articletitles}}{{\it {Updated average
+  $f_s/f_d$ $b$-hadron production fraction ratio for 7 TeV $pp$ collisions}},
+  }{}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{0954-3899-28-10-313}
+A.~L. Read, \ifthenelse{\boolean{articletitles}}{{\it Presentation of search
+  results: the cl s technique}, }{}Journal of Physics G: Nuclear and Particle
+  Physics {\bf 28} (2002), no.~10 2693\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Verkerke:2003ir}
+W.~Verkerke and D.~P. Kirkby, \ifthenelse{\boolean{articletitles}}{{\it {The
+  RooFit toolkit for data modeling}}, }{}eConf {\bf C0303241} (2003) MOLT007,
+  \href{http://arxiv.org/abs/physics/0306116}{{\tt arXiv:physics/0306116}},
+  [,186(2003)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb:2011ab}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of the CP violating
+  phase $\phi_s$ in $\bar{B}^0_s \to J/\psi f_0(980)$}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2012.01.017}{Phys.\ Lett.\
+  {\bf B707} (2012) 497}, \href{http://arxiv.org/abs/1112.3056}{{\tt
+  arXiv:1112.3056}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2014fia}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Effective lifetime measurements in
+  the $B_s^0 \to K^+K^− , B^0 \to K^+\pi^−$ and $B_s^0 \to \pi^+K^−$
+  decays}}, }{}\href{http://dx.doi.org/10.1016/j.physletb.2014.07.051}{Phys.\
+  Lett.\  {\bf B736} (2014) 446}, \href{http://arxiv.org/abs/1406.7204}{{\tt
+  arXiv:1406.7204}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2016ohx}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {First study of the CP -violating
+  phase and decay-width difference in $B_s^0\to\psi(2S)\phi$ decays}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2016.09.028}{Phys.\ Lett.\
+  {\bf B762} (2016) 253}, \href{http://arxiv.org/abs/1608.0485}{{\tt
+  arXiv:1608.0485}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2015vza}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of $CP$ violation in
+  $B^0 \rightarrow J/\psi K^0_S$ decays}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.115.031601}{Phys.\ Rev.\
+  Lett.\  {\bf 115} (2015), no.~3 031601},
+  \href{http://arxiv.org/abs/1503.0708}{{\tt arXiv:1503.0708}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2014bba}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Measurement of the $\bar{B}^0-B^0$
+  and $\bar{B}^0_s-B^0_s$ production asymmetries in $pp$ collisions at
+  $\sqrt{s}=7$ TeV}},
+  }{}\href{http://dx.doi.org/10.1016/j.physletb.2014.10.005}{Phys.\ Lett.\
+  {\bf B739} (2014) 218}, \href{http://arxiv.org/abs/1408.0275}{{\tt
+  arXiv:1408.0275}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Adeva:2009ny}
+LHCb collaboration, B.~Adeva {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Roadmap for selected key
+  measurements of LHCb}}, }{}\href{http://arxiv.org/abs/0912.4179}{{\tt
+  arXiv:0912.4179}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Fleischer:2017ltw}
+R.~Fleischer, R.~Jaarsma, and G.~Tetlalmatzi-Xolocotzi,
+  \ifthenelse{\boolean{articletitles}}{{\it {In Pursuit of New Physics with
+  $B^0_{s,d}\to\ell^+\ell^-$}}, }{}\href{http://arxiv.org/abs/1703.1016}{{\tt
+  arXiv:1703.1016}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Bobeth:2017xry}
+C.~Bobeth, A.~J. Buras, A.~Celis, and M.~Jung,
+  \ifthenelse{\boolean{articletitles}}{{\it {Yukawa enhancement of $Z$-mediated
+  New Physics in $\Delta S = 2$ and $\Delta B = 2$ Processes}},
+  }{}\href{http://arxiv.org/abs/1703.0475}{{\tt arXiv:1703.0475}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Chiang:2017etj}
+C.-W. Chiang, X.-G. He, F.~Ye, and X.-B. Yuan,
+  \ifthenelse{\boolean{articletitles}}{{\it {Constraints and Implications on
+  Higgs FCNC Couplings from Precision Measurement of $B_s \to \mu^+\mu^-$
+  Decay}}, }{}\href{http://arxiv.org/abs/1703.0628}{{\tt
+  arXiv:1703.0628}}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{LHCb-PUB-2014-040}
+\ifthenelse{\boolean{articletitles}}{{\it {Impact of the LHCb upgrade detector
+  design choices on physics and trigger performance}}, }{} Tech. Rep.
+  LHCb-PUB-2014-040. CERN-LHCb-PUB-2014-040. LHCb-INT-2013-024, CERN, Geneva,
+  Aug, 2014\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Aaij:2244311}
+LHCb collaboration, R.~Aaij {\em et~al.},
+  \ifthenelse{\boolean{articletitles}}{{\it {Expression of Interest for a
+  Phase-II LHCb Upgrade: Opportunities in flavour physics, and beyond, in the
+  HL-LHC era}}, }{} Tech. Rep. CERN-LHCC-2017-003, CERN, Geneva, Feb,
+  2017\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Augusto:1499646}
+O.~Augusto, \ifthenelse{\boolean{articletitles}}{{\it {LHCb; LHCb Jet
+  Reconstruction}}, }{} Dec, 2012\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{CidVidal:2025971}
+X.~Cid~Vidal, \ifthenelse{\boolean{articletitles}}{{\it {Using jets to identify
+  semi-leptonic B decays}}, }{} Tech. Rep. LHCb-INT-2015-022.
+  CERN-LHCb-INT-2015-022, CERN, Geneva, Jun, 2015\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Jackson:1996sy}
+D.~J. Jackson, \ifthenelse{\boolean{articletitles}}{{\it {A Topological vertex
+  reconstruction algorithm for hadronic jets}},
+  }{}\href{http://dx.doi.org/10.1016/S0168-9002(97)00341-0}{Nucl.\ Instrum.\
+  Meth.\  {\bf A388} (1997) 247}\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Morda:2120795}
+A.~Mordà and G.~Mancinelli, {\em {Rare dileptonic B0(s) meson decays at
+  LHCb}}, PhD thesis, Aix-Marseille U., 2015, presented 28 Sep 2015\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\bibitem{Abulencia:2005pw}
+CDF, A.~Abulencia {\em et~al.}, \ifthenelse{\boolean{articletitles}}{{\it
+  {Search for $B_s \to \mu^+ \mu^-$ and $B_d \to \mu^+ \mu^-$ decays in
+  $p\bar{p}$ collisions with CDF II}},
+  }{}\href{http://dx.doi.org/10.1103/PhysRevLett.95.221805}{Phys.\ Rev.\ Lett.\
+   {\bf 95} (2005) 221805}, \href{http://arxiv.org/abs/hep-ex/0508036}{{\tt
+  arXiv:hep-ex/0508036}}, [Erratum: Phys. Rev. Lett.95,249905(2005)]\relax
+\mciteBstWouldAddEndPuncttrue
+\mciteSetBstMidEndSepPunct{\mcitedefaultmidpunct}
+{\mcitedefaultendpunct}{\mcitedefaultseppunct}\relax
+\EndOfBibitem
+\end{mcitethebibliography}

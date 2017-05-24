@@ -1,0 +1,143 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+A level-1 auxiliary file: ./title/title.aux
+A level-1 auxiliary file: Abstract/abstract.aux
+A level-1 auxiliary file: Declaration/declaration.aux
+A level-1 auxiliary file: Preface/preface.aux
+A level-1 auxiliary file: Introduction/Introduction.aux
+A level-1 auxiliary file: Theory/theory.aux
+A level-1 auxiliary file: LHC_LHCb/LHC_LHCb.aux
+A level-1 auxiliary file: Selection/selection.aux
+A level-1 auxiliary file: BranchFractionMeasurement/BFMeasurement.aux
+A level-1 auxiliary file: LifetimeMeasurement/lifetimeMeasurement.aux
+A level-1 auxiliary file: LifetimeSystematics/lifetimeSystematics.aux
+A level-1 auxiliary file: Summary/summary.aux
+The style file: LHCb.bst
+A level-1 auxiliary file: Appendix1/appendix1.aux
+A level-1 auxiliary file: Appendix2/appendix2.aux
+Database file #1: References/references.bib
+Repeated entry---line 380 of file References/references.bib
+ : %@article{Aaij:2013aka
+ :                       , %Run1 LHCb
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 411 of file References/references.bib
+ : 
+ : %      SLACcitation   = "%%CITATION = ARXIV:1211.2674;%%"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 567 of file References/references.bib
+ : %@article{Aaij:2013aka
+ :                       ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 642 of file References/references.bib
+ : @article{Pivk:2004ty
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 851 of file References/references.bib
+ : %@article{Aaij:2012nna
+ :                       ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1106 of file References/references.bib
+ :       
+ :       %collaboration  = "WMAP",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1293 of file References/references.bib
+ :       
+ :       %SLACcitation   = "%%CITATION = ARXIV:1303.3820;%%"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1499 of file References/references.bib
+ : 
+ : %      author = "Aaij, R. and others",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1506 of file References/references.bib
+ : @article{R_K_star
+ :                  ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1520 of file References/references.bib
+ : @article{PhysRevD.2.1285
+ :                         ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1544 of file References/references.bib
+ : 
+ : %URL = { + http://dx.doi.org/10.1143/PTP.49.652},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring HALL1981397's extra "author" field
+--line 1802 of file References/references.bib
+Repeated entry---line 2262 of file References/references.bib
+ : @article{Babu:1999hn
+ :                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2277 of file References/references.bib
+ : @article{Isidori:2001fv
+ :                        ,
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 2325 of file References/references.bib
+ :       
+ :       year           = "2017",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2598 of file References/references.bib
+ : @article{Altmannshofer:2017wqy
+ :                               ,
+I'm skipping whatever remains of this entry
+Warning--all relevant fields are empty in R_K_star
+Warning--empty year in Straub:2010ih
+Warning--empty author in CMSandLHCbCollaborations:2013pla
+Warning--empty author in LHCb:2003ab
+Warning--empty author and editor in Barbosa-Marinho:504321
+Warning--empty author and editor in Barbosa-Marinho:582793
+Warning--empty author and editor in Barbosa-Marinho:519146
+Warning--empty author and editor in Amato:424338
+Warning--empty author and editor in Amato:494263
+Warning--empty author in LHCB:2000ab
+Warning--empty author and editor in Barbosa-Marinho:504326
+Warning--empty author in LHCb-CONF-2013-011
+Warning--empty author in LHCb-PUB-2014-040
+Warning--empty note in Augusto:1499646
+You've used 170 entries,
+            2638 wiz_defined-function locations,
+            1771 strings with 34977 characters,
+and the built_in function-call counts, 92136 in all, are:
+= -- 9482
+> -- 1251
+< -- 7
++ -- 1342
+- -- 297
+* -- 8115
+:= -- 13019
+add.period$ -- 178
+call.type$ -- 170
+change.case$ -- 146
+chr.to.int$ -- 0
+cite$ -- 184
+duplicate$ -- 3484
+empty$ -- 9171
+format.name$ -- 297
+if$ -- 20796
+int.to.chr$ -- 0
+int.to.str$ -- 170
+missing$ -- 532
+newline$ -- 1039
+num.names$ -- 150
+pop$ -- 1175
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1005
+stack$ -- 0
+substring$ -- 16022
+swap$ -- 38
+text.length$ -- 347
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 14
+while$ -- 978
+width$ -- 173
+write$ -- 2553
+(There were 15 error messages)
