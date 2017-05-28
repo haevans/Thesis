@@ -42,6 +42,16 @@ ENTRY
     eprint
     report
     collaboration
+    extraPrefix
+    extraVolume
+    extraPages
+    extraYear
+    extraDoi
+    extra2Prefix
+    extra2Volume
+    extra2Pages
+    extra2Year
+    extra2Doi
   }
   {}
   { label }
@@ -300,7 +310,12 @@ FUNCTION {format.names}
   s num.names$ 'numnames :=
   numnames 'namesleft :=
     { namesleft #0 > }
-    { s nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't :=
+    { s ".\ " "." find.replace 
+      ". " "." find.replace 
+      ".-" "MAGIC" find.replace
+      "." ".\ " find.replace
+      "MAGIC" ".-" find.replace
+      nameptr "{f.~}{vv~}{ll}{, jj}" format.name$ 't :=
       nameptr #1 >
         { nameptr num.names.shown.with.forced.et.al #1 + =
           numnames max.num.names.before.forced.et.al >
@@ -342,19 +357,19 @@ FUNCTION {format.authors}
 
 FUNCTION {format.eprint.newarXivid}
 { eprint #1 #6 substring$ "arXiv:" =
-    {"\href{http://arxiv.org/abs/" eprint #7 #9 substring$ * "}" *
-        "{{\tt " * eprint #7 #9 substring$ * "}}" *}
-    {"\href{http://arxiv.org/abs/" eprint #1 #9 substring$  * "}" *
-        "{{\tt arXiv:" * eprint #1 #9 substring$ * "}}" *}
+    {"\href{http://arxiv.org/abs/" eprint #7 #10 substring$ * "}" *
+        "{{\normalfont\ttfamily " * eprint #7 #10 substring$ * "}}" *}
+    {"\href{http://arxiv.org/abs/" eprint #1 #10 substring$  * "}" *
+        "{{\normalfont\ttfamily arXiv:" * eprint #1 #10 substring$ * "}}" *}
   if$
 }
 
 FUNCTION {format.eprint.oldarXivid}
 { archive empty$
     {"\href{http://arxiv.org/abs/" eprint * "}" *
-        "{{\tt arXiv:" * eprint * "}}" *}
+        "{{\normalfont\ttfamily arXiv:" * eprint * "}}" *}
     {"\href{http://arxiv.org/abs/" archive *  "/" * eprint * "}" *
-        "{{\tt arXiv:" * archive * "/" * eprint * "}}" *}
+        "{{\normalfont\ttfamily arXiv:" * archive * "/" * eprint * "}}" *}
   if$
 }
 
@@ -380,25 +395,40 @@ FUNCTION {format.eprint.paren}
   if$
 }
 
-FUNCTION {format.lhcbid.internal}
-{ "\href{http://cdsweb.cern.ch/search?p=" number * 
-  "&f=reportnumber&action_search=Search&c=LHCb+Internal+Notes&c=LHCb+Analysis+Notes} {" * 
-  number * "}" * 
-}
-
-FUNCTION {format.lhcbid.public}
-{ "\href{http://cdsweb.cern.ch/search?p=" number * 
-  "&f=reportnumber&action_search=Search&c=LHCb+Reports&c=LHCb+Conference+Proceedings&c=LHCb+Conference+Contributions&c=LHCb+Notes&c=LHCb+Theses&c=LHCb+Papers} {" * 
-  number * "}" * 
-}
-
 FUNCTION {format.lhcbid}
-{ number #6 #3 substring$ "ANA" =
-  number #6 #3 substring$ "INT" =
-  or
-    { format.lhcbid.internal }
-    { format.lhcbid.public }
-  if$
+{ number
+  "{" "" find.replace
+  "}" "" find.replace
+  's :=
+  s #6 #3 substring$ "ANA" =
+  { "LHCb+Analysis+Notes" }
+  { s #6 #3 substring$ "INT" = 
+      { "LHCb+Internal+Notes"}
+      { s #6 #4 substring$ "CONF" = 
+	  { "LHCb+Conference+Contributions"}
+	  { s #6 #3 substring$ "PUB" = 
+	      { "LHCb+Notes"}
+	      { s #6 #5 substring$ "PAPER" = 
+		  { "LHCb+Papers" }
+		  { s #6 #4 substring$ "PROC" = 
+		      { "LHCb+Conference+Proceedings" }
+		      { s #6 #6 substring$ "THESIS" = 
+			  { "LHCb+Theses" }
+			  { s #6 #4 substring$ "TALK" = 
+  			      { "LHCb+Talks" }
+			      { "LHCb+Reports" 
+			      } if$
+			  } if$
+		      } if$
+		  } if$
+	      } if$
+	  } if$
+      } if$
+  } if$
+
+  "\href{http://cdsweb.cern.ch/search?p=" s * 
+  "&f=reportnumber&action_search=Search&c=" * swap$ * "} {" * 
+  s * "}" *
 }
 
 FUNCTION {format.DOI}
@@ -433,7 +463,7 @@ FUNCTION {format.editors}
 FUNCTION {format.title}
 { title empty$
     { "" }
-    { "\ifthenelse{\boolean{articletitles}}{{\it " title "t" change.case$ * "}, " *  "}{}" * }
+    { "\ifthenelse{\boolean{articletitles}}{\emph{" title "t" change.case$ * "}, " *  "}{}" * }
   if$
 }
 
@@ -492,6 +522,21 @@ FUNCTION {format.date.paren}
     {"(" year * ")" *}
   if$
 }
+
+FUNCTION {format.extraDate.paren}
+{ extraYear empty$
+    { "" }
+    {"(" extraYear * ")" *}
+  if$
+}
+
+FUNCTION {format.extra2Date.paren}
+{ extra2Year empty$
+    { "" }
+    {"(" extra2Year * ")" *}
+  if$
+}
+
 
 FUNCTION {format.collaboration}
 { collaboration empty$
@@ -625,11 +670,38 @@ FUNCTION {format.pages.norange}
   if$
 }
 
+FUNCTION {format.extraPages.norange}
+{ extraPages empty$
+    { "" }
+    { extraPages first.page  }
+  if$
+}
+
+FUNCTION {format.extra2Pages.norange}
+{ extra2Pages empty$
+    { "" }
+    { extra2Pages first.page  }
+  if$
+}
 
 FUNCTION {format.volume}
 { volume empty$
     { "" }
-    { "{\bf " volume * "}" * }
+    { "\textbf{" volume * "}" * }
+  if$
+}
+
+FUNCTION {format.extraVolume}
+{ extraVolume empty$
+    { "" }
+    { "\textbf{" extraVolume * "}" * }
+  if$
+}
+
+FUNCTION {format.extra2Volume}
+{ extra2Volume empty$
+    { "" }
+    { "\textbf{" extra2Volume * "}" * }
   if$
 }
 
@@ -811,12 +883,16 @@ FUNCTION {format.articlenodoi}
       blank.sep
       format.pages.norange output }
       if$
+      eprint empty$
+      { }
+      { format.eprint.paren output }
+      if$
       }
     if$
-    report missing$
-            { journal empty$ {} { format.eprint.paren output} if$ }
-            {blank.sep format.report output format.eprint.paren output}
-            if$
+    eprint missing$ eprint empty$ or
+      { blank.sep format.report output }
+      { }
+      if$
     }
     { format.article.crossref output.nonnull
       format.pages output
@@ -853,14 +929,51 @@ FUNCTION {format.articledoi}
       blank.sep
       format.pages.norange 
       "}" *
-      output } 
+      output 
+      extraPrefix missing$
+	{}
+	{extraPrefix " " *
+        "\href{http://dx.doi.org/" * extraDoi * "}{" * "doi" output.check
+        article.sep
+        "ibid.\  " output
+        blank.sep
+        format.extraVolume output
+        blank.sep
+        format.extraDate.paren "extraYear" output.check
+        blank.sep
+        format.extraPages.norange 
+        "}" *
+        output 
+	}
+      if$
+      extra2Prefix missing$
+	{}
+	{extra2Prefix " " *
+        "\href{http://dx.doi.org/" * extra2Doi * "}{" * "doi" output.check
+        article.sep
+        "ibid.\  " output
+        blank.sep
+        format.extra2Volume output
+        blank.sep
+        format.extra2Date.paren "extra2Year" output.check
+        blank.sep
+        format.extra2Pages.norange 
+        "}" *
+        output 
+	}
+      if$
+      } 
       if$
       }
     if$
-    report missing$
-            { journal empty$ {} { format.eprint.paren output} if$ }
-            {blank.sep format.report output format.eprint.paren output}
-            if$
+    eprint empty$
+    { }
+    { format.eprint.paren output }
+    if$
+    eprint missing$ eprint empty$ or
+      { blank.sep format.report output }
+      { }
+      if$
     }
     { format.article.crossref output.nonnull
       format.pages output
