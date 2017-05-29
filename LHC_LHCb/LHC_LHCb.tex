@@ -100,7 +100,7 @@ The LHCb experiment was built to study the SM and search for NP phenomena throug
 %The LHCb experiment was built to study CP violation and rare decays of \bhadrons to search for new physics processes that could be revealed in these decays. 
 At the LHC the dominant production mechanisms of \bbbar pairs are gluon-gluon fusion, quark anti-quark annihilation and gluon-gluon splitting, as shown in Figure~\ref{fig:bbbarprod}. The \bbbar pairs produced travel at small angles relative to the beam pipe and the angular distribution is shown in Figure~\ref{fig:bbar_production}. % and hadronize to form a range of \bhadrons, including $B^{+}$, $B^{0}_{s}$ and $\Lambda^{0}_{b}$, that are studied by LHCb. 
 The $b\bar{b}$ pair is created at the primary vertex of an event, where the protons collide. The quarks then hadronise to form a range of \bhadrons, including $B^{+}$, $B^{0}_{s}$ and $\Lambda^{0}_{b}$. % a $b$ hadron. 
-A typical $b$ hadron will exist for approximately 1.5 ps~\cite{Olive:2016xmw} before decaying into leptons, light hadrons or a mixture of both. The vertex where the $b$ hadron decays is know as the secondary vertex and is displaced by a few centimeters from the primary vertex. %The LHCb experiment was built to optimsed cost and physics output in the study of these decays. 
+A typical $b$ hadron will exist for approximately 1.5 ps~\cite{Olive:2016xmw} before decaying into leptons, light hadrons or a mixture of both. The vertex where the $b$ hadron decays is know as the secondary vertex and is displaced by a few centimetres from the primary vertex. %The LHCb experiment was built to optimsed cost and physics output in the study of these decays. 
 The LHCb experiment was designed considering both the cost of the detector and the physics processes that could be studied with it. 
 
 
@@ -122,7 +122,7 @@ The LHCb experiment was designed considering both the cost of the detector and t
     \caption{}
     \label{fig:}
   \end{subfigure}
-  \caption{Dominant production mechanisms for \bbbar pais created in $pp$ collisions are: gluon-gluon fusion (a); quark anti-quark annihilation (b); and gluon-gluon splitting (c).}
+  \caption{Dominant production mechanisms for \bbbar pairs created in $pp$ collisions are: gluon-gluon fusion (a); quark anti-quark annihilation (b); and gluon-gluon splitting (c).}
   \label{fig:bbbarprod}
 \end{figure}
 
@@ -154,7 +154,7 @@ Although the angular coverage of the LHCb experiment is only 4\% of the total so
 \begin{figure}[tbp] 
   \centering    
   \includegraphics[ width=1.0\textwidth]{./Figs/LHC_LHCb/lhcb.png}
-  \caption{Schematic of the LHCb detector \cite{Alves:2008zz}. A right-handed coordiante system is chosen where the $x$ and $z$ directions are shown and the $x$ direct points into the page.}
+  \caption{Schematic of the LHCb detector \cite{Alves:2008zz}. A right-handed coordinate system is chosen where the $x$ and $z$ directions are shown and the $x$ direct points into the page.}
   \label{fig:LHCb_detector}
 \end{figure}
 
@@ -168,7 +168,7 @@ For a more detailed description of the detector and its performance during Run 1
 \subsection{Tracking}
 \label{Tracking}
 
-The tracking system within the LHCb experiment consists of the vertex locator, a dipole magnet and three tracking stations after the magnet. The vetrex locator and tracking stations are described in Sections~\ref{VELO} and ~\ref{Tracking_Stations} and the magnet is described in Section~\ref{Magnet}. Together, the sub-detectors provide precise information on the passage of charged particles through the detector, a measurement of the particle momentum and electric charge. 
+The tracking system within the LHCb experiment consists of the vertex locator, a dipole magnet and three tracking stations after the magnet. The vertex locator and tracking stations are described in Sections~\ref{VELO} and ~\ref{Tracking_Stations} and the magnet is described in Section~\ref{Magnet}. Together, the sub-detectors provide precise information on the passage of charged particles through the detector, a measurement of the particle momentum and electric charge. 
 The tracking detectors work on the principle that the passage of high energy charged particles through silicon or ionised gas causes the excitation or ionisation of atoms in the material. The release of this energy is recorded and translated into an electrical signal that reveals the path of a particle. 
 %Precise particle track and momentum measurements are necessary to obtain the accurate particle mass and decay time measurements that help distinguish between different hadrons decaying in the LHCb detector. 
 Hits left in the different detector are combined to form tracks that are used to identify particle decays as described in Section~\ref{sec:Track_recon}.
@@ -616,7 +616,7 @@ Just like the L0 trigger, trigger lines in the HLT vary for each year of data ta
 \label{SoftwareSimulation}
 %Options instead of referenes, Susan references the realease areas!
 
-The data that is read out of the LHCb experiment needs further processing before it can be analysed to study the SM and search for NP effects. The \textsc{Gaudi} framework~\cite{Mato:1998gfa} is a C++ framework that is the basis for the software applications needed to process data at recoreded by the LHCb experiment~\cite{Antunes-Nobrega:835156}. This framework ensures the necessary software is available to all users and changes to the software are implemented across all applications, it is suited to the distributed computing system used in LHCb~\cite{Stagni:2012rs}. 
+The data that is read out of the LHCb experiment needs further processing before it can be analysed to study the SM and search for NP effects. The \textsc{Gaudi} framework~\cite{Mato:1998gfa} is a C++ framework that is the basis for the software applications needed to process data at recorded by the LHCb experiment~\cite{Antunes-Nobrega:835156}. This framework ensures the necessary software is available to all users and changes to the software are implemented across all applications, it is suited to the distributed computing system used in LHCb~\cite{Stagni:2012rs}. 
 
 
 Once events have been accepted by the trigger, the first step in processing the output of the detector is reconstructing events, this is done by the \textsc{Brunel}~\cite{Brunel} application. The reconstruction is applied to events that are accepted by the trigger for both Run 1 and Run 2 data, however the reconstruction used for Run 2 data is the same as that used in the trigger. The \textsc{Brunel} application takes the digitised detector read out, reconstructs hits in the tracking stations to find particle trajectories and momenta, and combines information from the RICH detectors, calorimeters and muon stations to compute PID variables. The output of processing by the \textsc{Brunel} application are stored in `Data Summary Type' (DST) files. 
