@@ -234,7 +234,7 @@ Overall simulated decays accurately model what occurs in data. However, the dist
 The mis-modelling of particle identification variables is corrected for using the PIDCalib package~\cite{Anderlini:2202412} and simulated decays are re-weighted using information from data to accurately model the underlying event, as described in Section~\ref{sec:signalDTpdf}. 
 
 
-\section{Event selection for branching fraction measurements}
+\section[Event selection for the \bmumu branching fraction measurements]{Event selection for the \boldmath{\bmumu} branching fraction measurements}
 \label{sec:BFsel}
 As well as identifying \bmumu decays in data, the \BF measurements, described in Chapter~\ref{sec:BFanalysis}, require \bujpsik and \bhh decays as normalisation modes to determine the branching fractions from the observed number of \bmumu decays in data. 
 Furthermore \bsjpsiphi decays are used to verify steps of the measurement process. 
@@ -515,7 +515,7 @@ The efficiencies have been evaluated for each cut that is used in all three stri
 
 \afterpage{
 \begin{landscape}
-\vspace*{\fill}
+%\vspace*{\fill}
 %\begin{sideways}
 \begin{table}[tbp]
 \begin{center}
@@ -544,7 +544,7 @@ Total after all cuts      & (71.29 $\pm$  0.07) $\%$                & (71.82 $\p
 \label{tab:Run1strippingEff}
 \end{center}
 \end{table} 
-\vspace*{\fill}
+%\vspace*{\fill}
 \end{landscape}
 %\end{sideways}
 }
@@ -556,13 +556,12 @@ Total after all cuts      & (71.29 $\pm$  0.07) $\%$                & (71.82 $\p
 The efficiencies for most of the stripping cuts are $\sim 97 \%$ or higher. However, the efficiencies of the cuts on the \chiFD of the \bsd or \jpsi and the daughter \chiIP of the muon or hadron pair are lower at $83 \%$ and $80 \%$, respectively. Therefore improvements to the stripping selection efficiencies could be achieved by altering these two selection requirements.
 
 \subsubsection*{Comparison of different stripping lines}
+
 The selection efficiencies are very similar for stripping cuts across the different decays, fitting the requirement that the selection of signal and normalisation decays used in the branching fraction measurement are as similar as possible. 
 
 The similarity of the selection efficiencies for the signal and normalisation decays is further illustrated in Figures~\ref{fig:BJpsiK} and~\ref{fig:BKPi}, which show the ratio of selection efficiencies of \bsmumu decays to \bujpsik and \bdkpi decays for a range of selection cuts. With the exception of the \bsmumu and \bujpsik \chiIP cuts on the daughter particles, the ratio of efficiencies is well within $3\%$ of unity for the range of cuts values shown. The ratio of the \bsmumu and \bujpsik efficiencies for the daughter particle \chiIP, Figure~\ref{fig:JpsidaugtIP}, markedly deviates from unity, showing that the \chiIP distribution of the muons and kaon are very different as seen previously in reference~\cite{Diego}. If the \chiFD, \bs or \jpsi \chiIP and \chivtx selection cuts are applied to the simulated events before the daughter \chiIP requirement the ratio of \bsmumu and \bujpsik efficiencies is much closer to~1. The stability of the ratios of selection efficiencies across a large range of cuts values shows that changing a cut value in the \bmumu selection will have a similar impact on the efficiencies of the normalisation decays. 
 
-
-
-\begin{figure}[tbp]
+\begin{figure}[p]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{./Figs/Selection/B2JpsiK_IP.pdf}
@@ -589,7 +588,7 @@ The similarity of the selection efficiencies for the signal and normalisation de
 \end{figure}
 
 
-\begin{figure}[tbp]
+\begin{figure}[p]
   \centering
   \begin{subfigure}[b]{0.48\textwidth}
     \includegraphics[width=\textwidth]{./Figs/Selection/Bd2KPi_IP.pdf}
@@ -615,7 +614,7 @@ The similarity of the selection efficiencies for the signal and normalisation de
   \label{fig:BKPi}
 \end{figure}
 
-
+%\pagebreak
 
 
 
@@ -624,24 +623,25 @@ The similarity of the selection efficiencies for the signal and normalisation de
 
 \subsubsection*{Efficiencies of different cuts values}
 The set of events removed by each cut in the stripping selection is not independent. Therefore the effect of changing one cut on the total efficiency of a stripping selection must be considered. Figure~\ref{fig:efficiencyplots} shows the total efficiency of the \bsmumu stripping line on simulated \bsmumu decays for a range of \chiFD and daughter \chiIP cut values. As expected the lower the cut values the more efficient the stripping line becomes. It is important that any increase in \bsmumu selection efficiency from the stripping is not removed when the trigger requirements are applied. Figure~\ref{fig:triggereffplots} shows that the trigger efficiencies are relatively flat across a large range of \chiFD and daughter \chiIP cut values. Therefore the efficiency gained by a change in the stripping selection is not lost when trigger requirements are imposed. The selection efficiency for \bdmumu is very similar to \bsmumu as seen in Table~\ref{tab:Run1strippingEff}, therefore only \bsmumu have been studied for different stripping selection cut values. 
+\clearpage
 
 
 \begin{figure}[tbp]
     \centering
-        \includegraphics[width= 0.8 \textwidth]{./Figs/Selection/sel_eff_chart.pdf}
+        \includegraphics[width= 0.9 \textwidth]{./Figs/Selection/sel_eff_chart.pdf}
     \caption{Efficiency of the \bmumu stripping line to select \bsmumu simulated decays for a range of cuts on the \bs \chiFD and the minimum muon \chiIP.}
     \label{fig:efficiencyplots}
 \end{figure}
 
 \begin{figure}[tbp]
    \centering
-        \includegraphics[width=0.8\textwidth]{./Figs/Selection/Trigger.pdf}
+        \includegraphics[width=0.9\textwidth]{./Figs/Selection/Trigger.pdf}
     \caption{Trigger efficiencies of \bsmumu simulated decays across a range of \bs \chiFD and the minimum muon \chiIP cut values for the trigger requirements listed in Table~\ref{tab:triggers} for \bmumu decays.}%used to select \bmumu decays for the branching fraction measurement. }
     \label{fig:triggereffplots}
 \end{figure}
 
 
-
+\clearpage
 \subsubsection*{Data retention}
 
 One of the main purposes of the stripping selection is to reduce the size of the data set, therefore the cuts cannot be set as loose as possible and the amount of data passing the selection must be considered. Any change applied to the \bmumu stripping line must be propagated through into the stripping lines for \bhh, \bujpsik and \bsjpsiphi decays. Therefore the retention of all stripping lines must be evaluated. The efficiencies of the \bsjpsiphi stripping line have not been presented because this decay is not used as a normalisation mode for the \BF measurements but only to cross check the results, therefore the efficiency of this stripping line compared to the \bmumu stripping line is less important.
@@ -653,7 +653,7 @@ The set of chosen cuts used in Table~\ref{tab:Retention} aims to keep both cuts 
 
 \afterpage{
 \begin{landscape}
-\vspace*{\fill}
+%\vspace*{\fill}
 \begin{table}[tbp]
 \begin{center}
 \begin{tabular}{ ccccccc}\toprule \toprule
@@ -676,7 +676,7 @@ The set of chosen cuts used in Table~\ref{tab:Retention} aims to keep both cuts 
 \caption{Efficiency of the \bmumu stripping line to select \bsmumu decays and the change in the data retention for \bmumu, \bhh, \bujpsik and \bsjpsiphi stripping lines for a range of \chiFD and daughter \chiIP cut values. The amount of data passing each selection has been normalised to the original set of stripping select cuts of $\sqrt{\chi^{2}_{\mathrm{FD}}} > 15$ and $\sqrt{\chi^{2}_{\mathrm{IP}}} > 5$. The uncertainty on the normalised retention is less than 1$\%$.}
 \label{tab:Retention}
 \end{table}
-\vspace*{\fill}
+%\vspace*{\fill}
 \end{landscape}
 }
 
@@ -892,6 +892,7 @@ The BDTS uses input variables similar to those in the stripping selection to cla
 The signal and background samples used to train the BDTS are simulated \bsmumu decays and background candidates in a sample of Run~1 data from the mass ranges 4800 - 5000 \mevcc and 5500 - 6000 \mevcc. The selection cuts listed in Table~\ref{tab:BDTSpresel} are applied to the training samples and the training parameters used are listed in Table~\ref{tab:BDTStrainingparams}. The output of the BDTS is flattened between 0 and 1 so that signal is uniformly distributed across the range and background is peaked at zero as illustrated in Figure~\ref{fig:FlatteningBDTS}. The BDTS is applied to all candidates passing the \bmumu, \bhh and \bujpsik stripping lines, and candidates are required to have a BDTS value above 0.05. When the BDTS is applied to \bujpsik decays the distance of closest approach of the muons refers to the muons in the \jpsi and the \chivtx is of the \jpsi. %The chosen cut value has a efficiency of X $\%$ on \bsmumu decays and reject X $\%$ of \bbbarmumux decays. 
 The performance of the BDTS at removing backgrounds is illustrated in Figure~\ref{fig:BDTSpreformance}. %Full details of the development of the BDTS can be found in~\ref{}.
 
+
 \begin{table}[tbp]
 \begin{center}
 \begin{tabular}{ll}
@@ -941,6 +942,7 @@ nCuts & 20 \\
 \end{table}
 
 
+
 \begin{figure}[tbp]
     \centering
     %\begin{subfigure}[b]{0.49\textwidth}
@@ -980,25 +982,26 @@ nCuts & 20 \\
 \end{figure}
 
 
+
 \subsubsection{Global BDT}
 \label{sec:globalBDT}
 
-The global BDT is the final step in identifying \bmumu decays and it is very effective at separating them from long-lived combinatorial background decays. The discriminating power achieved by the global BDT is mostly dependent on isolation criteria. Isolation criteria provide a measure of how far away each muon from a \bmumu candidate is from other tracks in the event. The tracks of the muons from a real \bmumu decays will be, in general, far from other tracks in the event because the \bmumu decay tree contains no other tracks apart from the muons. However long-lived combinatorial background arises from semi-leptonic decays where the muon tracks are likely to be close to other tracks that originate from the same decay tree. % as the muon. %Various different definitions of isolations have been used across different experiments from D0 and CDF to ATLAS, CMS and LHCb. 
+The global BDT is the final step in identifying \bmumu decays and it is very effective at separating them from long-lived combinatorial background decays. The discriminating power achieved by the global BDT is mostly dependent on isolation criteria. Isolation criteria provide a measure of how far away each muon from a \bmumu candidate is from other tracks in the event. The tracks of the muons from a real \bmumu decays will be, in general, far from other tracks in the event because the \bmumu decay tree contains no other tracks apart from the muons. However, long-lived combinatorial background arises from semi-leptonic decays where the muon tracks are likely to be close to other tracks that originate from the same decay tree. % as the muon. %Various different definitions of isolations have been used across different experiments from D0 and CDF to ATLAS, CMS and LHCb. 
 Isolation criteria are very useful in the selection of very rare decays like \bsmumu because they enable background to be removed whilst keeping a high efficiency for signal decays.
 
 Two isolation criteria are used in the global BDT, one compares long tracks in the event to the muons in \bmumu candidates and the other compares VELO tracks in the event to the muons. The definition of the track types are given in Section~\ref{sec:Track_recon}. The isolation variables are built from the output of BDTs. For each type of track a BDT is trained on simulated \bsmumu and \bbbarmumux decays using a set of input variables that describe track and vertex properties and the separation between muons in a \bsmumu candidate and other tracks in the event. 
-The BDT for the long track isolation criteria compares the $\mu^{+}$ from a \bsmumu candidate with all other long tracks in the event, excluding the track of the $\mu^{-}$, and gives an output for each possible $\mu^{+}$ and track pairing. The process is repeated for the $\mu^{-}$. The BDT is designed to produce high output values for muons from \bbbarmumux decays and a low value for muons from \bsmumu decays. The long track isolation criteria of a \bsmumu candidate is then composed of the sum of the highest BDT output values produced for the $\mu^{+}$ and the $\mu^{-}$. The same setup is used for the VELO track isolation criteria expect muons are compared to VELO tracks rather than long tracks. The separation power of these isolations are shown in Figure~\ref{fig:Isolations}. Full details of the isolation variables can be found in reference~\cite{Archilli:1970886}.
+The BDT for the long track isolation criteria compares the $\mu^{+}$ from a \bsmumu candidate with all other long tracks in the event, excluding the track of the $\mu^{-}$, and gives an output for each possible $\mu^{+}$ and track pairing. The process is repeated for the $\mu^{-}$. The BDT is designed to produce high output values for muons from \bbbarmumux decays and a low value for muons from \bsmumu decays. The long track isolation criteria of a \bsmumu candidate is then composed of the sum of the highest BDT output values produced for the $\mu^{+}$ and the $\mu^{-}$. The same setup is used for the VELO track isolation criteria expect muons are compared to VELO tracks rather than long tracks. The separation power of these isolations are shown in Figure~\ref{fig:BDTvars}. Full details of the isolation variables can be found in reference~\cite{Archilli:1970886}.
 
 
 %Two isolation criteria are used as input vairbales for the glabla BDT. One gives a measure of the seperation between muons an a \bmumu candidates and long tracks in an event, the other compares muons with VELO tracks in an event. The track type definitions are given in Section~\ref{sec:Track_recon}. The long track isolation criteria is made up from the output values of a BDT. It is trained in simulated \bmumu decays and long tracks from simulated \bbbarmumux decays as signal and background training samples, respectively. The BDT uses track and vertex information as well as the angular and spatial seperation between long tracks and muons in a \bmumu candidate to produce high output values for background and low output values for signal. The BDT compared the $\mu^+$ of a \bmumu candidate to all long tracks in the event, excluding the tracks from the $\mu^-$, and gives an output value for each pairing. The same is done for the $\mu^-$. The isolation criteria is then the sum of the highest BDT output values produce by $\mu^+$-track and $\mu^-$-track pairings.
 
-\begin{figure}[tbp]
-    \centering
-        \includegraphics[width=0.49\textwidth]{./Figs/Selection/iso_vel_Mar.pdf}
-              \includegraphics[width=0.49\textwidth]{./Figs/Selection/long_track_Mar.pdf}
-           \caption{VELO track (a) and long track (b) isolation distributions of simulated \bsmumu and \bbbarmumux decays used to train the global BDT passing cuts in Table~\ref{tab:BDTpresel}.}
-    \label{fig:Isolations}
-\end{figure}
+%\begin{figure}[tbp]
+%    \centering
+%        \includegraphics[width=0.49\textwidth]{./Figs/Selection/iso_vel_Mar.pdf}
+%              \includegraphics[width=0.49\textwidth]{./Figs/Selection/long_track_Mar.pdf}
+%           \caption{VELO track (a) and long track (b) isolation distributions of simulated \bsmumu and \bbbarmumux decays used to train the global BDT passing cuts in Table~\ref{tab:BDTpresel}.}
+%    \label{fig:Isolations}
+%\end{figure}
 
 The isolation criteria are used along with five other variables in the global BDT. The full list of input variables used are:
 \begin{itemize}
@@ -1011,20 +1014,31 @@ The isolation criteria are used along with five other variables in the global BD
 \item the angle, $\theta$, between the momentum vector of the \bs and the vector connecting the production and decay vertices of the \bs.
 \end{itemize}
 
-A comparison of the signal and background distributions of the input variables in the training samples are shown in Figures~\ref{fig:Isolations} and \ref{fig:BDTvars}. These variables were chosen by training a BDT beginning with the most discriminating variable, the long track isolation criteria, and adding variables to determine which improved the performance to the classifier. Only variables that significantly improved the performance were included in the global BDT. The training parameters used in the BDT are listed in Table~\ref{tab:BDTtrainingparams}. These parameters were chosen by scanning across a range of variables and choosing those that gave the best performance. 
+A comparison of the signal and background distributions of the input variables in the training samples are shown in Figures~\ref{fig:BDTvars}. These variables were chosen by training a BDT beginning with the most discriminating variable, the long track isolation criteria, and adding variables to determine which improved the performance to the classifier. Only variables that significantly improved the performance were included in the global BDT. The training parameters used in the BDT are listed in Table~\ref{tab:BDTtrainingparams}. These parameters were chosen by scanning across a range of variables and choosing those that gave the best performance. 
 The performance of each BDT with different input variables and training parameters was evaluated by comparing the number of background decays from \bmumu candidates in data with masses above 5447~\mevcc remaining after different cuts on the BDT output values. The cut values compared have the same efficiency for each BDT to select simulated \bsmumu decays and the best performing BDT removed the lowest number of background decays for the highest signal efficiency.
 \begin{figure}[tbp]
     \centering
+        \includegraphics[width=0.49\textwidth]{./Figs/Selection/iso_vel_Mar.pdf}
+              \includegraphics[width=0.49\textwidth]{./Figs/Selection/long_track_Mar.pdf}
         \includegraphics[width=0.49\textwidth]{./Figs/Selection/Arcos_Mar.pdf}
        \includegraphics[width=0.49\textwidth]{./Figs/Selection/B_IPS_Mar.pdf}
  \includegraphics[width=0.49\textwidth]{./Figs/Selection/Vertex_Mar.pdf}
  \includegraphics[width=0.49\textwidth]{./Figs/Selection/srqt_Mar.pdf}
  \includegraphics[width=0.49\textwidth]{./Figs/Selection/Min_IP_Mar.pdf}
 
-    \caption{Distributions of input variables of the global BDT from simulated \bsmumu and \bbbarmumux decays used to train the global BDT passing cuts in Table~\ref{tab:BDTpresel}. Input variables are $\theta$ (a), \bs \chiIP (b), \bs \chivtx (c), $\sqrt{\Delta \phi^{2} + \Delta \eta^{2}}$ (d) and minimum muon \chiIP (e).}
+    \caption{Distributions of input variables of the global BDT from simulated \bsmumu and \bbbarmumux decays used to train the global BDT passing cuts in Table~\ref{tab:BDTpresel}. Input variables are VELO track isolation criteria (a), long track isolation criteria (b) $\theta$ (c), \bs \chiIP (d), \bs \chivtx (e), $\sqrt{\Delta \phi^{2} + \Delta \eta^{2}}$ (f) and minimum muon \chiIP (g).}
     \label{fig:BDTvars}
 \end{figure}
 
+
+
+
+ %The global BDT was trained on simulated \bsmumu and \bbbarmumux decays with 2012 data taking conditions for the signal and background samples. The simulated decas had to pass the selection requirements listed in Table~\ref{}. Independant samples were used for training and testing the global BDT. 
+
+
+Simulated \bsmumu and \bbbarmumux decays are used to provide large signal and background training samples for the global BDT. %In data \bsmumu candidates in the mass range 5431 to 6550 \mevcc consist almost entirely of \bbbarmumux decays, however the number of candidates in this mass range is too small to be a useful as sample of background candidates to train a BDT with comparable performance to one trained entirely on simulated decays.
+ %The simulated sample \bbbarmumux decays corresponds to the background expected with 7~\fb of data from $pp$ collisions at $\sqrt{s}$~=~8~\tev. The production of such a large sample requires a lot of space to be saved, therefore several measures were taken to reduce the size needed to save the simulated \bbbarmumux decays. The cuts, listed in Table~\ref{tab:MC_decays}, were applied to the simulated decays as they were generated to reduce the number of events saved on disk. Also the stripping selection cuts in Table~\ref{tab:PreviousStrippingA} were applied and candidates that did not pass the stripping selection were not saved. Unfortunately the \bbbarmumux sample therefore does not include candidates that are selected by the looser stripping selection described in Section~\ref{sec:cutbasedsel}. In order to gain the best performance of the BDT on data the same cuts are applied to data that are applied to the samples used to train the BDT. Therefore the original cuts on \chiFD and daughter \chiIP listed in Table~\ref{tab:PreviousStrippingA} must be used to select \bsmumu candidates. 
+The complete list of selection requirements applied to the training samples used to develop global BDT are listed in Table~\ref{tab:BDTpresel}, the same selection is applied to \bsmumu and \bbbarmumux decays.  
 
 \begin{table}[tbp]
 \begin{center}
@@ -1047,15 +1061,8 @@ nCuts & 30 \\
 \vspace{-1.0cm}
 \end{table}
 
- %The global BDT was trained on simulated \bsmumu and \bbbarmumux decays with 2012 data taking conditions for the signal and background samples. The simulated decas had to pass the selection requirements listed in Table~\ref{}. Independant samples were used for training and testing the global BDT. 
-
-
-Simulated \bsmumu and \bbbarmumux decays are used to provide large signal and background training samples for the global BDT. %In data \bsmumu candidates in the mass range 5431 to 6550 \mevcc consist almost entirely of \bbbarmumux decays, however the number of candidates in this mass range is too small to be a useful as sample of background candidates to train a BDT with comparable performance to one trained entirely on simulated decays.
- %The simulated sample \bbbarmumux decays corresponds to the background expected with 7~\fb of data from $pp$ collisions at $\sqrt{s}$~=~8~\tev. The production of such a large sample requires a lot of space to be saved, therefore several measures were taken to reduce the size needed to save the simulated \bbbarmumux decays. The cuts, listed in Table~\ref{tab:MC_decays}, were applied to the simulated decays as they were generated to reduce the number of events saved on disk. Also the stripping selection cuts in Table~\ref{tab:PreviousStrippingA} were applied and candidates that did not pass the stripping selection were not saved. Unfortunately the \bbbarmumux sample therefore does not include candidates that are selected by the looser stripping selection described in Section~\ref{sec:cutbasedsel}. In order to gain the best performance of the BDT on data the same cuts are applied to data that are applied to the samples used to train the BDT. Therefore the original cuts on \chiFD and daughter \chiIP listed in Table~\ref{tab:PreviousStrippingA} must be used to select \bsmumu candidates. 
-The complete list of selection requirements applied to the training samples used to develop global BDT are listed in Table~\ref{tab:BDTpresel}, the same selection is applied to \bsmumu and \bbbarmumux decays.  
 \begin{table}[tbp]
 \begin{center}
-
 \begin{tabular}{ll}
 \toprule \toprule
 \multicolumn{2}{c}{Selection applied to global BDT training samples.} \\ \midrule
@@ -1077,7 +1084,7 @@ Hlt2Phys&DEC \\
 \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
-\caption{Selection cuts applied to select candidates for signal and background samples used to train the BDT. $m_{\mu\mu}$ is the invariant mass to the two muons in the \bmumu candidate.}
+\caption{Selection cuts applied to select candidates for signal and background samples used to train the global BDT. $m_{\mu\mu}$ is the invariant mass to the two muons in the \bmumu candidate.}
 \label{tab:BDTpresel}
 \end{center}
 \vspace{-1.0cm}
@@ -1108,7 +1115,7 @@ The global BDT is applied to data taken in all years and in the same way as the 
 \begin{figure}[tbp]
     \centering
 % \begin{subfigure}[b]{0.48\textwidth}
-%        \includegraphics[width=\textwidth]{./Figs/Selection/ROC_full.pdf}
+%        \includegraphics[width=0.8\textwidth]{./Figs/Selection/ROC_full.pdf}
         %\caption{ }
         %\label{fig:ROCfull}
 %    \end{subfigure}
@@ -1132,6 +1139,38 @@ The criteria to select \bhh, \bujpsik and \bsjpsiphi decays are composed of the 
  %The selection criteria for \bhh and \bujpsik decays is kept as close as possible to that used to identify \bmumu decays in order to reduce systematic uncertainties from selection efficiencies in the normalisation procedure described in Section~\ref{sec:Normalisation}. 
 %\begin{landscape}
 %\vspace*{\fill}
+%\begin{table}[tbp]
+%\begin{center}
+%\begin{tabular}{ll}
+%%\toprule \toprule
+%\multicol{2}{c}{\bmumu selection criteria applied to} \\ \midrule
+%\bsd & $\mu^{\pm} \\ \midrule
+%4900 \mevcc $<$ $m_{\mu\mu}$ $<$ 6000 \mevcc &\chitrk $<$ 3 (4) \\ 
+%        DIRA $>$ 0    & Minimum \chiIP $>$ 25  \\ 
+%\chiFD $>$ 225 & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc   \\ 
+%\chiIP $<$ 25 & $p$ $<$ 500 \gevc    \\ 
+%\chivtx$<$ 9 & ghost probability $<$ 0.3 (0.4)  \\ 
+%DOCA $<$ 0.3 mm & isMuon = True    \\ 
+%$\tau$ $<$ 13.248 \ps & PID$^{\mathrm{Run 1} + 2015}_{\mu}$ > 0.4 or PID$^{2016}_{\mu}> 0.8$ \\ 
+%$p_{T}$ $>$ 500 \mevc & \\ 
+%BDTS > 0.05  & \\ 
+% $|m_{\mu\mu} - m_{J/\psi}| < 30$~\mevcc  & \\ \midrule
+
+%Trigger requirements & L0Global = DEC\\
+%                     & Hlt1Phys = DEC\\
+%                     & Hlt2Phys = DEC \\
+%\bottomrule \bottomrule
+%\end{tabular}
+%\vspace{0.7cm}
+%\caption{Selection requirements applied to select \bmumu, where selection is different between Run~1 and Run~2 the Run~2 values are shown in parenthesis.}
+%\label{tab:BFfullselection}
+%\vspace{-1.0cm}
+%\end{center}
+%\end{table}
+
+
+
+
 \begin{table}[tbp]
 \begin{center}
 \begin{tabular}{ll}
@@ -1141,13 +1180,12 @@ Particle                & \bmumu                              \\%        & \bhh 
 \bsd          & 4900 \mevcc $<$ $m_{\mu\mu}$ $<$ 6000 \mevcc     \\%         & 5000 \mevcc $<$ M $<$ 5800  \mevcc      \\                         
                         & DIRA $>$ 0                         \\%              & DIRA $>$ 0                             \\
                         & \chiFD $>$ 225              \\%            & \chiFD $>$ 225                  \\      
-                        & \chiIP $<$ 25             \\%              & \chiIP $<$ 25                   \\
+                        & \chiIP $<$ 25            \\%              & \chiIP $<$ 25                   \\
                         & \chivtx$<$ 9      \\%               & Vertex $\chi^{2}$/ndof $<$ 9              \\      
                         & DOCA $<$ 0.3 mm    \\%                            & DOCA $<$ 0.3 mm                          \\    
                         & $\tau$ $<$ 13.248 \ps  \\%                        & $\tau$ $<$ 13.248 \ps                \\
                         & $p_{T}$ $>$ 500 \mevc  \\%                         & $p_{T}$ $>$ 500 \mevc                \\%%
                         & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\ \hline                                                                                           
-                        & PID$^{\mathrm{Run 1} + 2015}_{\mu}$ > 0.4 or PID$^{2016)_{\mu}> 0.8$       \\%                  & -                 \\                                               
                         & $|m_{\mu\mu} - m_{J/\psi}| < 30$~\mevcc   \\%        &$|$m_{\mu\mu} - m_{\jpsi}$| $<$ 30$~\mevcc    \\  
 \\
 $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)         \\                       
@@ -1155,11 +1193,9 @@ $\mu$   &\chitrk $<$ 3 (4)   \\%               & Track $\chi^{2}$/ndof $<$ 3 (4)
                         & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc  \\%          & 0.25 \gevc $<$ $p_{T}$ $<$ 40 \gevc    \\
                         & $p$ $<$ 500 \gevc    \\%                            & $p$ $<$ 500 \gevc                       \\
                         & ghost probability $<$ 0.3 (0.4)     \\%           & ghost probability $<$ 0.3 (0.4)   \\    
-                    & $|m_{\mu\mu} - m_{J/\psi}| < 30$~\mevcc   \\%        &$|$m_{\mu\mu} - m_{\jpsi}$| $<$ 30$~\mevcc    \\
                         & isMuon = True               \\%                   &  -                                \\
-                        %& PID$_{\mu}$ > 0.4 (0.8)       \\%                  & -                 \\
+                        & PID$^{\mathrm{Run 1} + 2015}_{\mu}$ > 0.4 or PID$^{2016}_{\mu}> 0.8$       \\%                  & -                 \\                                               
 \\
-%                        & BDTS > 0.05             \\%                       &    BDTS > 0.05           \\ \hline                   
 Trigger requirements & L0Global = DEC\\
                      & Hlt1Phys = DEC\\
                      & Hlt2Phys = DEC \\
@@ -1175,7 +1211,7 @@ Trigger requirements & L0Global = DEC\\
 
 \begin{figure}[tbp]
     \centering
-    \includegraphics[width=0.8\textwidth]{./Figs/Selection/hidef_Fig3.png}
+    \includegraphics[width=\textwidth]{./Figs/Selection/hidef_Fig3.png}
     \caption{Mass and global BDT values for candidates in Run~1 and Run~2 data that pass the \bmumu selection criteria. The green dashed lines show the \bs and \bd mass windows.}
     \label{fig:BFdata}
 \end{figure}
@@ -1263,8 +1299,8 @@ Trigger requirements & L0Global = DEC\\
 %\end{landscape}
 %}
 
-
-\section{Selection for the effective lifetime measurement}
+\clearpage
+\section[Selection for the \bsmumu effective lifetime measurement]{Selection for the \boldmath{\bsmumu} effective lifetime measurement}
 \label{sec:ELsel}
 
 
@@ -1364,10 +1400,10 @@ The separation of \bhh decays into \bskk and \bskpi decays is done using the DLL
 \toprule \toprule
 Decay & Year                    & Particle               & PID requirements \\
 \midrule
-\bsmumu  &2011, 2012, 2015) & $\mu^{\pm}$& PID$_{\mu}$ > 0.2 \\
+\bsmumu  &2011, 2012, 2015 & $\mu^{\pm}$& PID$_{\mu}$ > 0.2 \\
 \bsmumu  &2016          & $\mu^{\pm}$& PID$_{\mu}$ > 0.4 \\ \midrule
-\bdkpi  & 2011, 2012, 2015, 2016&       & $K^{+}$                & DLL$_{K\pi}$ $>$ 10 \\
-                         & $\pi{-}$              & DLL$_{K\pi}$ $<$ $-10$ \\ \midrule
+\bdkpi  & 2011, 2012, 2015, 2016&        $K^{+}$                & DLL$_{K\pi}$ $>$ 10 \\
+          &               & $\pi{-}$              & DLL$_{K\pi}$ $<$ $-10$ \\ \midrule
 \bskk   &2011, 2012, 2015, 2016                 & $K^{\pm}$    & DLL$_{K\pi}$ $>$ 10 \\
 \bottomrule \bottomrule
 \end{tabular}
@@ -1499,7 +1535,7 @@ Ideally, to reduce systematic uncertainties on the measurement of the effective 
 
 \subsubsection{Classifier performance comparison}
 \label{sec:BDTcomp}
-The final classifier used to select \bsmumu candidates is the BDT that has the greatest separation power between signal and combinatorial background decays and consequently removing the most combinatorial background decays for a given signal efficiency, provided the selection efficiency as a function of decay time can be accurately modelled. The performances of the BDTs developed for the effective lifetime measurement are compared to that of the global BDT used to classify candidates for the branching fraction measurements. Two different approaches are used to evaluate the performances: the signal significance of \bhh decays as a function of BDT cut values; and the rejection of \bsmumu backgrounds in data. In order to enable easy comparison of the different BDTs, the outputs of the BDTs developed for the effective lifetime measurement have been flattened in the same way as the global BDT, described in Section~\ref{sec:ELmva}. % to enable easy comparison.
+The final classifier used to select \bsmumu candidates is the BDT that has the greatest separation power between signal and combinatorial background decays and consequently removing the most combinatorial background decays for a given signal efficiency, provided the selection efficiency as a function of decay time can be accurately modelled. The performances of the BDTs developed for the effective lifetime measurement are compared to that of the global BDT used to classify candidates for the branching fraction measurements. Two different approaches are used to evaluate the performances: the signal significance of \bhh decays as a function of BDT cut values; and the rejection of \bsmumu backgrounds in data. In order to enable easy comparison of the different BDTs, the outputs of the BDTs developed for the effective lifetime measurement have been flattened in the same way as the global BDT, described in Section~\ref{sec:MVC}. % to enable easy comparison.
 
 The signal significance for each BDT is evaluated on \bhh decays in Run 1 data and the maximum signal significance is found in the same way as in Section~\ref{sec:prefs}. The BDTS cut is applied in the selection process because the global BDT was designed to be used with the BDTS and the performance of the BDTs developed for the effective lifetime is best when the BDTS requirement is used. The results are shown in Figure~\ref{fig:SSall}; the global BDT produces the highest signal significance, but is closely followed by the adaptive boosting BDT developed for the effective lifetime measurement. 
 
@@ -1567,25 +1603,7 @@ The number of expected \bsmumu and combinatorial background decays for different
 These predictions are given in Table~\ref{tab:expectednumbers} and assume the SM branching fraction for \bsmumu decays. % are given in Table~\ref{tab:expectednumbers}. 
 The methods used to evaluate the expected number of each decay are detailed in Chapter~\ref{sec:BFanalysis}. 
 
-
-%From the expected number of \bsmumu and combinatorial background decays given in Table~\ref{tab:expectednumbers}, the number of decays in the mass range 5320 - 6000~\mevcc 
- 
-The expected number of \bsmumu decays after different BDT cut values is straight forward to compute from the number in Table~\ref{tab:expectednumbers} because of the flattening procedure applied to the global BDT output and therefore the number of \bsmumu decays is evenly distributed across the BDT range. The number of combinatorial background decays expected after each BDT is determined from the number of decays in Table~\ref{tab:expectednumbers} and using information from simulated \bbbarmumux decays that have had all the \el selection requirement applied up until the cut on the global BDT. 
-A ratio is evaluated from \bbbarmumux decays, given by
-\begin{equation}
-R = \frac{\epsilon(BDT > X)}{\epsilon(BDT > 0.55)},
-\end{equation}
-where $\epsilon(BDT > X)$ is the fraction of simulated \bbbarmumux decays that have a global BDT value greater than $X$ and $\epsilon(BDT > 0.55)$ is the fraction of simulated \bbbarmumux decays that have a global BDT value greater than 0.55. The expected number of combinatorial background decays after each BDT cut is then evaluated from multiplying $R$ by the number of decays in Table~\ref{tab:expectednumbers}.
-%The ratio of simulated \bbbarmumux decays that have passed the other selection criteria except the BDT, using the ratio
-%\begin{equation}
-%R = \frac{\epsilon(BDT > X)}{\epsilon(BDT > 0.55)},
-%\end{equation}
-%where $\epsilon(BDT > X)$ is the efficiency of the cut BDT $>$ X. %The \bsmumu selection requirements are applied to the simulated decays before taking the efficiency. 
-The ratios for the different cuts values are shown in Table~\ref{tab:EfficiencyRatioCombBG} along with the expected number of \bsmumu and combinatorial background decays for each BDT cut. Simulated decays had to be used to compute the efficiencies rather than data because there are too few candidates left after tight BDT cuts in  data to enable meaningful studies. 
-
-
-
-\begin{table}[tbp]
+\begin{table}[btp]
 \begin{center}
 \begin{tabular}{lr}
 \toprule \toprule
@@ -1602,26 +1620,26 @@ Total & 71.1\\
 \end{center}
 \vspace{-1.0cm}
 \end{table}
+%From the expected number of \bsmumu and combinatorial background decays given in Table~\ref{tab:expectednumbers}, the number of decays in the mass range 5320 - 6000~\mevcc 
+ 
+The expected number of \bsmumu decays after different BDT cut values is straight forward to compute from the information in Table~\ref{tab:expectednumbers}. This is because  the flattening procedure applied to the global BDT output means that the number of \bsmumu decays is evenly distributed across the BDT range. The number of combinatorial background decays expected after each BDT is determined from the number of decays in Table~\ref{tab:expectednumbers} and using information from simulated \bbbarmumux decays that have had all the \el selection requirement applied up until the cut on the global BDT. 
+A ratio is evaluated from \bbbarmumux decays, given by
+\begin{equation}
+R = \frac{\epsilon(BDT > X)}{\epsilon(BDT > 0.55)},
+\end{equation}
+where $\epsilon(BDT > X)$ is the fraction of simulated \bbbarmumux decays that have a global BDT value greater than $X$ and $\epsilon(BDT > 0.55)$ is the fraction of simulated \bbbarmumux decays that have a global BDT value greater than 0.55. The expected number of combinatorial background decays after each BDT cut is then evaluated from multiplying $R$ by the number of decays in Table~\ref{tab:expectednumbers}.
+%The ratio of simulated \bbbarmumux decays that have passed the other selection criteria except the BDT, using the ratio
+%\begin{equation}
+%R = \frac{\epsilon(BDT > X)}{\epsilon(BDT > 0.55)},
+%\end{equation}
+%where $\epsilon(BDT > X)$ is the efficiency of the cut BDT $>$ X. %The \bsmumu selection requirements are applied to the simulated decays before taking the efficiency. 
+The ratios for the different cuts values are shown in Table~\ref{tab:EfficiencyRatioCombBG} along with the expected number of \bsmumu and combinatorial background decays for each BDT cut. Simulated decays had to be used to compute the efficiencies rather than data because there are too few candidates left after tight BDT cuts in  data to enable meaningful studies. 
 
-\begin{table}[tbp]
-\begin{center}
-\begin{tabular}{lrrrr}
-\toprule \toprule
-Global BDT cut & $\mathcal{N}$(\bsmumu) & $R_{\epsilon}$ & $\mathcal{N}$(Combinatorial)  & $\lambda$ /$c^{2}$MeV$^{-1}$ \\ \midrule 
-0.40 &40.5 & 8.69 & 269.1 & -0.00114 $\pm$ 0.00028\\
-0.45 &37.2 & 3.91 & 116.2 &-0.00129 $\pm$ 0.00041\\
-0.50 &33.8 & 1.91 & 56.3 &-0.00132 $\pm$ 0.00060\\
-0.55 &30.5 & 1.00 & 40.6 &-0.00004 $\pm$ 0.00089\\
-0.60 &27.1 & 0.55 & 22.5 & -0.00000 $\pm$ 0.00114\\
-0.65 &23.8& 0.32 12.4 &  -0.00024 $\pm$ 0.00122\\ \bottomrule \bottomrule
-\end{tabular}
-\vspace{0.7cm}
 
-\caption{Inputs to the pseudoexperiments used to determine the optimum global BDT cut value for the effective lifetime analysis. For each BDT cut value the number of expected \bsmumu decays ($\mathcal{N}$(\bsmumu)), the ratio ($R_{\epsilon}$) used to find the number of combinatorial background decays, the expected number of combinatorial background decays ($\mathcal{N}$(Combinatorial)) and the slope of the combinatorial background mass distribution ($\lambda$) are given. }
-\label{tab:EfficiencyRatioCombBG}
-\end{center}
-\vspace{-1.0cm}
-\end{table}
+
+
+
+
 
 %\begin{table}[tbp]
 %%\begin{center}
@@ -1666,26 +1684,45 @@ The mass distribution of the combinatorial background is described by an exponen
 \end{figure}
 
 
+\begin{table}[tbp]
+\begin{center}
+\begin{tabular}{lcccc}
+\toprule \toprule
+BDT cut & $\mathcal{N}$(\bsmumu) & $R_{\epsilon}$ & $\mathcal{N}$(Comb.)  & $\lambda$ /$c^{2}$MeV$^{-1}$ \\ \midrule 
+0.40 &40.5 & 8.69 & 269.1 & -0.00114 $\pm$ 0.00028\\
+0.45 &37.2 & 3.91 & 116.2 &-0.00129 $\pm$ 0.00041\\
+0.50 &33.8 & 1.91 & 56.3 &-0.00132 $\pm$ 0.00060\\
+0.55 &30.5 & 1.00 & 40.6 &-0.00004 $\pm$ 0.00089\\
+0.60 &27.1 & 0.55 & 22.5 & -0.00000 $\pm$ 0.00114\\
+0.65 &23.8& 0.32 & 12.4 &  -0.00024 $\pm$ 0.00122\\ \bottomrule \bottomrule
+\end{tabular}
+\vspace{0.7cm}
 
+\caption{Inputs to the pseudoexperiments used to determine the optimum global BDT cut value for the effective lifetime analysis. For each BDT cut value the number of expected \bsmumu decays ($\mathcal{N}$(\bsmumu)), the ratio ($R_{\epsilon}$) used to find the number of combinatorial background decays, the expected number of combinatorial background decays ($\mathcal{N}$(Combinatorial)) and the slope of the combinatorial background mass distribution ($\lambda$) are given. }
+\label{tab:EfficiencyRatioCombBG}
+\end{center}
+\vspace{-1.0cm}
+\end{table}
 
 The results from 10,000 pseudoexperiments for BDT cut values every 0.05 in the range 0.4 - 0.65 are shown in Table~\ref{tab:selOptimisation} with the median uncertainty of the fits for \tmumu and \invtmumu are given along with the signal significance and the expected number of \bsmumu and combinatorial background decays for each BDT cut. The median uncertainties are used rather than the mean because the distribution of uncertainties is asymmetric. The highest signal significance and lowest expected uncertainties occur for a BDT cut of 0.55. Therefore this cut value is used to select \bsmumu decays and the same cut is applied to the global BDT to select \bhh decays. 
 
 
 \begin{table}[tbp]
 \begin{center}
-\begin{tabular}{lrrrrr}
+\begin{tabular}{lrr}
 \toprule \toprule
-Global BDT cut & $\frac{S}{\sqrt{S+B}}$&  $\sigma \left(\tau_{\mu\mu} \right)$   / \ps & $\sigma \left(\tau^{-}_{\mu\mu} \right)$ / \ps$^{-1}$ & $\mathcal{N}$(\bsmumu) & $\mathcal{N}$(Combinatorial) \\   
-\midrule
+Global BDT cut & $\frac{S}{\sqrt{S+B}}$&  $\sigma \left(\tau_{\mu\mu} \right)$   / \ps \\ \midrule %& $\sigma \left(\tau^{-}_{\mu\mu} \right)$ / \ps$^{-1}$ & $\mathcal{N}$(\bsmumu) & $\mathcal{N}$(Combinatorial) \\   
+
 0.40           & 3.87 & 0.345 \\%& 0.128 & 40.5 & 269.1 \\ %& $-0.01 \pm 0.01$ & $1.020 \pm 0.007$ \\
 0.45        & 4.51 & 0.309 \\%&& 0.114 & 37.2 & 116.2 \\ %& $-0.02 \pm 0.01$ & $1.014 \pm 0.007$ \\
 0.50        & 4.85 & 0.291 \\%&& 0.108 & 33.8 & 56.3 \\ %& $-0.01 \pm 0.01$ & $1.029 \pm 0.007$ \\
 0.55       & 4.94 & 0.285 \\%&& 0.106 & 30.5 & 40.6 \\ %& $0.00 \pm 0.01$ & $1.010 \pm 0.007$ \\
 0.60           & 4.86 & 0.297 \\%&& 0.109 27.1 & 22.5 \\ %& $-0.02 \pm 0.01$ & $0.996 \pm 0.007$ \\
 0.65            & 4.65 & 0.309 \\%&& 0.115 23.8 & 12.4 \\  \bottomrule \bottomrule%&  $-0.01 \pm 0.01$  & $1.000 \pm 0.007$ \\ \hline
+ \bottomrule \bottomrule
 \end{tabular} 
 \vspace{0.7cm}
-\caption{ The signal significance for each cut value in the global BDT and median of the expected uncertainties for \tmumu and \invtmumu from 10,000 pseudoexperiments for the expected number of events. The expected number of \bsmumu ($\mathcal{N}$(\bsmumu)) and combinatorial background ($\mathcal{N}$(Combinatorial)) decays that are generated in the pseudoexperiments are also listed for each BDT cut. }
+\caption{ The signal significance for each cut value in the global BDT and median of the expected uncertainties for \tmumu and \invtmumu from 10,000 pseudoexperiments for the expected number of events. The expected number of \bsmumu ($\mathcal{N}$(\bsmumu)) and combinatorial background ($\mathcal{N}$(Comb.)) decays that are generated in the pseudoexperiments are also listed for each BDT cut. }
 \label{tab:selOptimisation}
 \end{center}
 \vspace{-1.0cm}
@@ -1695,6 +1732,19 @@ Global BDT cut & $\frac{S}{\sqrt{S+B}}$&  $\sigma \left(\tau_{\mu\mu} \right)$  
 \label{sec:ELsummary}
 The complete set of selection criteria used for identify \bsmumu decays in Run~1 and Run~2 data for the \elm are listed in Table~\ref{tab:fullpreselectionEL}. % alongside the selection to identify \bhh decays to verify the measurement str.% ands~\ref{} alongside the selection for \bhh, \bujpsik and \bsjpsiphi decays.
 The selection requirements do not remove all backgrounds decays from the data set but reduce them to a level at which the effective lifetime can be measured. The selection criteria for \bhh decays used to verify the measurement strategy are very similar to the selection used to identify \bmumu decays the differences are in the mass range used and the trigger and particle identification requirements in Sections~\ref{sec:ELmass}, \ref{sec:ELtrigger} and~\ref{sec:ELpid}. The mass and decay time distributions for \bsmumu candidates passing the selection criteria in 4.4~\fb of Run~1 and Run~2 data are shown in Figure~\ref{fig:mass_DT}. 
+
+
+
+\begin{figure}[h]
+    \centering
+        \includegraphics[width=0.65 \textwidth]{./Figs/Selection/mass_candidates.pdf}
+        \includegraphics[width=0.65 \textwidth]{./Figs/Selection/lifetime_candidates.pdf}
+    \caption{Dimuon invariant mass (a) and decay time (b) distributions for \bsmumu candidates in 4.4~\fb of Run~1 and Run~2 data passing the selection requirements in Table~\ref{tab:fullpreselectionEL}. }
+    \label{fig:mass_DT}
+\end{figure}
+
+
+
 %\begin{landscape}
 %\vspace*{\fill}
 \begin{table}[tbp]
@@ -1743,11 +1793,3 @@ Trigger requirements & L0Global = TIS or TOS \\
 %\vspace*{\fill}
 %\end{landscape}
 
-
-\begin{figure}[tbp]
-    \centering
-        \includegraphics[width=0.49 \textwidth]{./Figs/Selection/mass_candidates.pdf}
-        \includegraphics[width=0.49 \textwidth]{./Figs/Selection/lifetime_candidates.pdf}
-    \caption{Dimuon invariant mass (left) and decay time (right) distributions for \bsmumu candidates in 4.4~\fb of Run~1 and Run~2 data passing the selection requirements in Table~\ref{tab:fullpreselectionEL}. }
-    \label{fig:mass_DT}
-\end{figure}
