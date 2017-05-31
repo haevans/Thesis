@@ -3,7 +3,7 @@
 
 This chapter describes the measurement of the \bsmumu effective lifetime. % on 4.4~\fb of data.% on data that passes the selection requirements detailed in Chapter~\ref{selection_chapter}. 
 Section~\ref{sec:fitstrategy} presents an overview of the analysis strategy. %used to measure the \bsmumu effective lifetime from data. % , the mass and decay time distributions of \bsmumu decays and backgrounds passing the selection must to known for the optimisation of the analysis strategy and the measurement of the effective lifetime. 
-The \pdfs of the mass and decay time distributions of signal and background candidates are described in Sections~\ref{sec:ELmasspdfs} and~\ref{sec:DTpdfs}. Due to the very rare nature of \bsmumu decays, the fit configuration used to measured the \el is optimised to produce the smallest expected statistical uncertainty on the measured value, the optimisation studies are detailed in Section~\ref{sec:toys}. Finally, the measurement of the \bsmumu effective lifetime is presented in Section~\ref{sec:ELresults}.
+The \pdfs of the mass and decay time distributions for signal and background candidates are described in Sections~\ref{sec:ELmasspdfs} and~\ref{sec:DTpdfs}. Due to the very rare nature of \bsmumu decays, the fit configuration used to measured the \el is optimised to produce the smallest expected statistical uncertainty on the measured value, the optimisation studies are detailed in Section~\ref{sec:toys}. Finally, the measurement of the \bsmumu effective lifetime is presented in Section~\ref{sec:ELresults}.
 
 
 
@@ -58,7 +58,7 @@ Year & \bsmumu correlation &  \bbbarmumux correlation \\ \midrule
 \vspace{-1.0cm}                                                                                                                                               
 \end{table}
 
-The sWeights used in the fit are calculated using the RooFit package~\cite{Verkerke:2003ir}. However, the raw sWeights from the mass fit cannot be used directly in the \ml fit to measure the \el. The normalisation of the sWeights will not produce the correct statistical uncertainty on the effective lifetime measurement that is related to the sum of the weights rather that the statistics of the data set~\cite{renorm, remorn2}. %because it does not . 
+The sWeights used in the fit are calculated using the RooFit package~\cite{Verkerke:2003ir}. However, the raw sWeights from the mass fit cannot be used directly in the \ml fit to measure the \el. The normalisation of the sWeights will not produce the correct statistical uncertainty on the effective lifetime measurement. The uncertainty will be related to the sum of the weights rather that the number of candidated in the data set~\cite{renorm, remorn2}. %because it does not . 
 Therefore, the fit uses re-normalised sWeights given by %the sWeights are re-normalised using
 \begin{equation}
 \omega^{'}_{i}= \omega_{i} \cdot \frac{\displaystyle\sum_{j} \omega_{j}}{\displaystyle\sum_{j} \omega_{j}^{2}},
@@ -68,10 +68,10 @@ where $\omega_{i}$ are the sWeight values for each decay and $\omega_{j}$ are sW
 
 
 The measurement strategy of the \bsmumu effective lifetime requires the mass and decay time \pdfs of \bsmumu decays and the mass \pdfs of background that pass the selection criteria in Chapter~\ref{selection_chapter}. However, the overall performance of this strategy depends on the fit to the invariant mass distribution and how accurately the sWeights are calculated.
-Pseudoexperiments are performed to determine the best mass fit configuration to measure the \el and study the fit over different \bsmumu mass ranges, the largest of which is 4900 - 6000 \mevcc. Therefore the pseudoexperiments require the decay time \pdfs of the backgrounds as well as the signal and the signal and mass \pdfs in the range 4900 - 6000 \mevcc.
-The mass \pdfs used for the effective lifetime measurement are described in Section~\ref{sec:ELmasspdfs} and the decay time \pdfs are described in Section~\ref{sec:DTpdfs} 
+Pseudoexperiments are performed to determine the best mass fit configuration to measure the \el and the fit is studied for different \bsmumu mass ranges, the largest of which is 4900 - 6000 \mevcc. Therefore the pseudoexperiments require the decay time \pdfs of the backgrounds as well as the signal and the signal and background mass \pdfs in the range 4900 - 6000 \mevcc.
+The mass \pdfs used for the effective lifetime measurement are described in Section~\ref{sec:ELmasspdfs} and the decay time \pdfs are described in Section~\ref{sec:DTpdfs}. 
 The pseudoexperiments used to determine the fit configuration are described in Section~\ref{sec:toys} along with the final fit configuration and the expected sensitivity of the measurement. 
-Finally, the results are present in Section~\ref{sec:ELresults}. 
+Finally, the results are presented in Section~\ref{sec:ELresults}. 
 
 
 
@@ -83,7 +83,7 @@ The selection criteria used to identify \bsmumu candidates for the \bmumu branch
 Therefore, the background decays passing for the \el measurement are the same as those passing the branching fraction, although the yields are different. % due to the different particle identification requirements and the cut on the global BDT. 
 Consequently the mass fit used to extract the sWeights is very similar to the fit used for the \BFm in Sections~\ref{sec:signalPdfs} and~\ref{sec:backgrounds}. The \pdf used in the mass fit has the form
 \begin{equation}
-\mathcal{P}_{tot}(m) = N_{sig}\mathcal{P}_{sig}(m) + \displaystyle\sum_{i} N^i_{bkg}\mathcal{P}^i_{bkg}(m),
+\mathcal{P}_{tot}(m_{\mu\mu}) = N_{sig}\mathcal{P}_{sig}(m_{\mu\mu}) + \displaystyle\sum_{i} N^i_{bkg}\mathcal{P}^i_{bkg}(m_{\mu\mu}),
 \label{eq:masspdf}
 \end{equation}
 where $i$ represents a particular background, $N_{sig(bkg)}$ are the signal (background) yields and $P_{sig(bkg)}$ are the signal (background) \pdfs. The background decays include; \bdmumu, \bhh, \lambdab, \bdpimunu, \bsKmunu, \bupimumu, \bdpimumu, \bcjpsimunu and combinatorial background decays. For the effective lifetime measurement the \bdmumu decay is included as a background. 
@@ -145,7 +145,7 @@ where $t$ is the decay time, $a$ and $n$ describe the curvature of the efficienc
 
 The acceptance function parameters are determined from a fit to simulated decay and these parameters are then fixed in the fit to data to measure the \el. A systematic uncertainty describing how well the acceptance function is understood is detailed in Section~\ref{sec:accptsyst}.
 
-There are several steps performed in the evaluation of the acceptance function parameters to ensure the final function describes the selection efficiency of \bsmumu decays as a function of decay time accurately.
+There are several steps performed in the evaluation of the acceptance function parameters to ensure the final function describes the selection efficiency of \bsmumu decays accurately.
 First, simulated \bsmumu decays are weighted using information from \bdkpi decays in data and simulation to correct for mis-modelling of the underlying event in simulation. Second, simulated \bsmumu decays from each year of data taking are combined into one sample to account for different selection efficiencies for each year. Third, a unbinned \ml fit is performed to the decay time distribution of the weighted simulated decays to find the acceptance function parameters. Each of the steps is described in the following.
 
 
@@ -186,7 +186,7 @@ The selection requirements described in Chapter~\ref{selection_chapter} are used
 
 
 
-The distributions of the number of tracks per event for \bdkpi decays in data and simulated decays are used to weight \bdkpi decays so that the distribution in simulation matches that in data. The weights are evaluated by taking the ratio of the normalised histograms in Figure~\ref{fig:nTracksMCDataComp} for each year. The affect on the 
+The distributions of the number of tracks per event for \bdkpi decays in data and simulated decays are used to weight \bdkpi decays so that the distribution in simulation matches that in data. The weights are evaluated by taking the ratio of the normalised histograms in Figure~\ref{fig:nTracksMCDataComp} for each year. The affect on the decay time distribution of using these weights and then applying the global BDT cut
 
 \clearpage 
 \begin{figure}[h]%tbp]
@@ -199,14 +199,14 @@ The distributions of the number of tracks per event for \bdkpi decays in data an
   \label{fig:BdToKpi_weightDecayTime}
 \end{figure}
 
-\noindent decay time distribution of using these weights and then applying the global BDT cut is shown in Figure~\ref{fig:BdToKpi_weightDecayTime} for the simulated \bdkpi decays. The difference between the decay time distributions with and without the weights is not large but clearly noticeable at low decay times where the change in selection efficiency is greatest. 
+%\noindent decay time distribution of using these weights and then applying the global BDT cut is shown in Figure~\ref{fig:BdToKpi_weightDecayTime} for the simulated \bdkpi decays. The difference between the decay time distributions with and without the weights is not large but clearly noticeable at low decay times where the change in selection efficiency is greatest. 
+\noindent is shown in Figure~\ref{fig:BdToKpi_weightDecayTime} for the simulated \bdkpi decays. The difference between the decay time distributions with and without the weights is not large but clearly noticeable at low decay times where the change in selection efficiency is greatest.       
 
 
+The same weights are applied to simulated \bsmumu decays by binning the number of tracks per event for \bsmumu decays in the same way as used for \bdkpi decays. The weights are applied to decays that pass the selection but before the global BDT cut is applied. The decay time distributions for weighted and unweightedf \bsmumu simulated decays after the global BDT cut has been applied is shown in Figure~\ref{fig:BsmmDT}. %in the comparison of weighted and unweighted \bsmumu decay time distributions. 
+Similar to \bdkpi decays, the largest effect is at low decay times where the change in selection efficiency, caused by the BDT cut, is greatest as seen in Figure~\ref{fig:accpteg}.
 
-The same weights are applied to simulated \bsmumu decays by binning the number of tracks per event for \bsmumu decays in the same way as used for \bdkpi decays. The weights are applied to decays that pass the selection but before the global BDT cut is applied. The change in the decay time distribution before and after re-weighting for \bsmumu simulated decays after the global BDT cut is shown in Figure~\ref{fig:BsmmDT}. %in the comparison of weighted and unweighted \bsmumu decay time distributions. 
-Similar to \bdkpi decays, the largest effect is at low decay times where the change in selection efficiency is greatest as seen in Figure~\ref{fig:accpteg}.
-
-The re-weighting relies on the number of tracks per event being very similar for \bdkpi and \bsmumu decays. This cannot be evaluated in data due to the small number of \bsmumu decays in data. However, Figure~\ref{fig:BsmmVsBdToKpinTracks} shows a comparison of the number of tracks per event for simulated \bsmumu and \bdkpi decays in each year and resulting distributions are similar.
+The re-weighting relies on the number of tracks per event being similar for \bdkpi and \bsmumu decays. This cannot be evaluated in data due to the small number of \bsmumu decays in data. However, Figure~\ref{fig:BsmmVsBdToKpinTracks} shows a comparison of the number of tracks per event for simulated \bsmumu and \bdkpi decays in each year and resulting distributions are similar.
 
 
 \clearpage
@@ -276,8 +276,8 @@ Year ($i$) & $Y_i^{\JPsiPhi}$ & $\epsilon_i$ & $N^{\mumu}_i$ & $\omega_i$ & $\ma
 
 \subsubsection*{Acceptance parameter fit}
 
-The weights applied to \bsmumu simulated decays from \bdkpi decay ensure that the decay time efficiency is described accurately and the simulated decays have been combined to represent the proportion of decays present in each year of data. Therefore the acceptance parameters can now be determined.  
-An unbinned \ml fit is performed to the decay time distribution of the combined simulated \bsmumu decays weighted using the number of tracks in \bdkpi events to determine the acceptance parameters in Equation~\ref{eq:accpt}. In the fit the acceptance parameters are free and the \bsmumu lifetime is constrained to the weighted average of lifetimes used to generate each year of simulated decays. The fit result is shown in Figure~\ref{fig:accptfit} and the acceptance parameters are given in Table~\ref{tab:accptsig}. Figure~\ref{fig:accptplot} shows the shape of the fitted acceptance function. %selection efficiency histogram as a function of decay time with the acceptance function overlaid.
+The weights applied to \bsmumu simulated decays from \bdkpi decays ensure that the decay time efficiency is described accurately and the simulated decays have been combined to represent the proportion of decays present from each year of data. Therefore the acceptance parameters can now be determined.  
+An unbinned \ml fit is performed to the decay time distribution of the weighted simulated \bsmumu decays to determine the acceptance parameters in Equation~\ref{eq:accpt}. In the fit the acceptance parameters are free and the \bsmumu lifetime is constrained to the weighted average of lifetimes used to generate each year of simulated decays. The fit result is shown in Figure~\ref{fig:accptfit} and the acceptance parameters are given in Table~\ref{tab:accptsig}. Figure~\ref{fig:accptplot} shows the shape of the fitted acceptance function. %selection efficiency histogram as a function of decay time with the acceptance function overlaid.
 
 
 
@@ -286,7 +286,7 @@ An unbinned \ml fit is performed to the decay time distribution of the combined 
     \centering
         \includegraphics[width= 0.6\textwidth]{./Figs/LifetimeMeasurement/Bs2MuMu_Acceptance_fit.pdf}
        % \includegraphics[width= 0.49 \textwidth]{./Figs/LifetimeMeasurement/Bs2MuMu_Accetpance_pull.pdf}
-    \caption{Maximum likelihood fit to the combined decay time distribution of 2011, 2012, 2015 and 2016 simulated \bsmumu decays and the pull distribution of the fit. }
+    \caption{Maximum likelihood fit to the combined decay time distribution of weighted 2011, 2012, 2015 and 2016 simulated \bsmumu decays. }
     \label{fig:accptfit}
 \end{figure}
 
@@ -297,7 +297,7 @@ An unbinned \ml fit is performed to the decay time distribution of the combined 
         \includegraphics[width= 0.6 \textwidth]{./Figs/LifetimeMeasurement/Bs2MuMu_Acceptance_plot_no_points.pdf}
         %\includegraphics[width= 0.6 \textwidth]{./Figs/LifetimeMeasurement/Acceptance_per_year.pdf}
 
-    \caption{Acceptance function determined from the Maximum likelihood fit to the combined decay time distribution of weighted 2011, 2012, 2015 and 2016 simulated decays.} %}Selection efficiency histogram as a function of decay time with the acceptance \pdf overlaid for weighted 2011, 2012, 2015 and 2016 simulated \bsmumu decays (left) and the efficiency histograms for each year separately for weighted simulated \bsmumu decays. }
+    \caption{Acceptance function determined from the fit to the combined decay time distribution of weighted 2011, 2012, 2015 and 2016 simulated \bsmumu decays.} %}Selection efficiency histogram as a function of decay time with the acceptance \pdf overlaid for weighted 2011, 2012, 2015 and 2016 simulated \bsmumu decays (left) and the efficiency histograms for each year separately for weighted simulated \bsmumu decays. }
     \label{fig:accptplot}
 \end{figure}
 
@@ -327,9 +327,9 @@ $t_{0}$ /\ps &  0.313 $\pm$ 0.007 \\
 %The final fit to measure the \bsmumu effective lifetime does not require knowledge of the decay time \pdfs of the backgrounds. However, the fit configuration is developed using toy studies that use the mass and decay time distributions of both signal and background decays. Therefore realistic models of the decay time \pdfs are needed to determine the optimal fit configuration. 
 
 
-The selection biases the decay time distributions of the backgrounds in a similar way as the \bsmumu decay time. Therefore, they are described by the same \pdf as in Equation~\ref{eq:DTpdf} and the acceptance function in Equation~\ref{eq:accpt} is used to model the selection efficiency as a function of decay time. However, different acceptance function parameters are needed to describe the different background. 
+The selection biases the decay time distributions of the backgrounds in a similar way as the \bsmumu decay time. Therefore, they are described by the same \pdf as in Equation~\ref{eq:DTpdf} and the acceptance function in Equation~\ref{eq:accpt} is used to model the selection efficiency as a function of decay time. However, different acceptance function parameters are needed to describe the different backgrounds. 
 
-The backgrounds from mis-identified and \bdmumu decays are assigned the same acceptance parameters as \bsmumu decays because the decay time efficiency of these backgrounds is approximately the same as the signal. The acceptances of these backgrounds does not need to be as accurately known as the acceptance function of the signal because very few background decays from these sources will be present in the dataset after the selection and the final result does not depend on the acceptance function of the backgrounds. The lifetimes of these background decays are taken from a fit to simulated decays. For \bhh the fit is performed to a combined set of \bhh decays representing what is expected in data. %the values used in the toy studies for the decay times \pdfs are given in Table~\ref{}. 
+The backgrounds from mis-identified and \bdmumu decays are assigned the same acceptance parameters as \bsmumu decays because the decay time efficiency of these backgrounds is approximately the same as the signal. The acceptance function of these backgrounds do not need to be as accurately known as the acceptance function of the signal because very few background decays from these sources will be present in the dataset after the selection and the final result does not depend on the acceptance function of the backgrounds. The lifetimes of these background decays are taken from a fit to simulated decays. For \bhh the fit is performed to a combined set of \bhh decays representing what is expected in data. %the values used in the toy studies for the decay times \pdfs are given in Table~\ref{}. 
 
 The decay time \pdf of the combinatorial background is more challenging to determine. This background arises from random combinations of muons in the event and not from one source, therefore there is no single lifetime that describes the background. Furthermore, the global BDT which is designed to separate \bsmumu decays from combinatorial background decays will have a different efficiency as a function of decay time for the combinatorial background compared to the \bsmumu decays. The decay time \pdf of the combinatorial background cannot be evaluated from simulated decays or decays in data that pass the \bsmumu selection because there are too few candidates left after the selection has been applied. %The decay time \pdf must be evaluated after the global BDT cut because it has the greatest impact on the shape of the acceptance function. 
 Therefore, it is evaluated from the combinatorial background of \bhh decays using candidates in data that pass the \bhh selection and have a dimuon invariant mass greater than 5447~\mevcc. %, above the \bs signal region. 
@@ -341,10 +341,10 @@ P_{\mathrm{cbg}}(t) = \epsilon(t)\times \left( f \cdot e^{-t/\tau_{1}} + (1-f)\c
 \end{equation}
 where $\tau_{1}$ and $\tau_{2}$ are two independent lifetimes used to describe the background, $f$~describes the fraction of candidates with lifetime $\tau_{1}$ and the same acceptance parametrisation as in Equation~\ref{eq:accpt} is used for describe the decay time efficiency $\epsilon(t)$. The lifetimes in the \pdf are different, one describes a long-lived component and the other a short-lived component that are evident in the data. 
 
-Two fits are applied to \bhh decays to find the decay time \pdf parameters. The first fit determines $f$, $\tau_1$ and $\tau_2$ and the second is used to find $a$ and $n$. The value of $t_0$ is fixed in the fit to improve fit stability.
+Two fits are applied to \bhh combinatorial backgroud to find the decay time \pdf parameters. The first fit determines $f$, $\tau_1$ and $\tau_2$ and the second is used to find $a$ and $n$. The value of $t_0$ is fixed in the fit to improve fit stability.
 The biases to the decay time distribution from the selection criteria have the greatest affect at low decay times, therefore the decay time acceptance is flat at large decay times. The lifetimes of the combinatorial background decays and the fraction of decays with each lifetime are determined from a fit using Equation~\ref{eq:cbgDTpdf}, setting $\epsilon(t)=1$, to candidates with a decay time above 2.5~\ps. The acceptance function parameters are then determined from a fit to the full decay time range using Equation~\ref{eq:cbgDTpdf}, where the lifetimes and the fraction of candidates with each lifetime are fixed. The results are shown in Figure~\ref{fig:CBGaccpt} and the \pdf parameters in Table~\ref{tab:bkgparams}. %, the $t_{0}$ parameter is fixed in the fit to improve fit stability. 
 
-This model for the background assumes that the decay time distribution of \bhh candidates formed by random combinations of kaons and pions is the same as that of \bsmumu candidates formed by randomly combining muons. There are too few candidates passing the \bsmumu selection to verify this assumption, although the validity of this model and the impact of the pseudoexperiments is investigated in Section~\ref{sec:CBGdecytimemodel}.%however the average decay time of \bhh and \bsmumu candidates with a mass above 5600 \mevcc is evaluated in bins of BDT. The results are shown in Table~\ref{}, the average decay times are not significantly different for \bhh and \bsmumu candidates therefore the decay time \pdf described here is a good model for the combinatorial background in the toy studies.
+This model for the background assumes that the decay time distribution of \bhh candidates formed by random combinations of kaons and pions is the same as that of \bsmumu candidates formed by randomly combining muons. There are too few candidates passing the \bsmumu selection to verify this assumption, although the validity of this model and the impact on the measured \bsmumu effective lifetime is investigated in Section~\ref{sec:CBGdecytimemodel}.%however the average decay time of \bhh and \bsmumu candidates with a mass above 5600 \mevcc is evaluated in bins of BDT. The results are shown in Table~\ref{}, the average decay times are not significantly different for \bhh and \bsmumu candidates therefore the decay time \pdf described here is a good model for the combinatorial background in the toy studies.
 
 
 \begin{table}[tbp]
@@ -382,7 +382,7 @@ $f$ & 0.032 $\pm$ 0.027 \\
       %  \caption{ }                                                                                                                    
      %   \label{fig:BDTSbkg}                                                                                                            
    \end{subfigure}
-    \caption{Maximum likelihood fit to determine the lifetimes of the background (a), with the long live component (green) and the short-lived component (red). The decay time distribution acceptance (b) of the combinatorial background decays in data passing the \bhh selection requirements.}
+    \caption{Maximum likelihood fit to determine the lifetimes to describe the combinatorial background (a), with the long live component (green) and the short-lived component (red), and the fit to determine the acceptance function parameters (b) from the decay time distribution of combinatorial background decays in data passing the \bhh selection requirements.}
     \label{fig:CBGaccpt}
 \end{figure}
 
@@ -393,7 +393,7 @@ $f$ & 0.032 $\pm$ 0.027 \\
 The strategy to measure the \bsmumu effective lifetime is described in Section~\ref{sec:fitstrategy}. The extremely rare nature of \bsmumu decays means that the stability and performance of the final fit will be highly dependent on the fit to the invariant mass distribution used to find the sWeights. Pseudoexperiments are performed to determine which mass range would produce an accurate fit with the smallest expected uncertainty on the measured effective lifetime for the dataset. The choice of the mass range determines which background sources need to be included into the fit.
 
 
-The expected number of signal and background decays in data passing the \bsmumu selection in the mass range 4600 - 6000 \mevcc are used as the basis for the pseudoexperiments. The expected background yields are calculated using the same methods described in Section~\ref{sec:backgrounds} but taking into account the looser particle identification requirement and the cut placed on the global BDT. The number of \bsmumu and \bdmumu decays are calculated using the normalisation factors in Section~\ref{sec:Normalisation} and assuming the branching fraction values predicted by the SM. The expected yields are shown in Table~\ref{tab:expectedevents}. 
+The expected number of signal and background decays in data passing the \bsmumu selection in the mass range 4900 - 6000 \mevcc are used as the basis for the pseudoexperiments. The expected background yields are calculated using the same methods described in Section~\ref{sec:backgrounds} but taking into account the looser particle identification requirement and the cut placed on the global BDT. The number of \bsmumu and \bdmumu decays are calculated using the normalisation factors in Section~\ref{sec:Normalisation} and assuming the branching fraction values predicted by the SM. The expected yields are shown in Table~\ref{tab:expectedevents}. 
 
 
 
@@ -429,7 +429,7 @@ Total & 193.75 \\
 
 \clearpage
 \noindent \bbbarmumux decays. The SM prediction for \tmumu is used to describe the lifetime of \bsmumu decays. %, assuming the Standard Model prediction for \tmumu, and taking the slope of the combinatorial background mass \pdf from simulated decays.
-The \el is then measured using the strategy described in Section~\ref{sec:fitstrategy}, where the sWeights are computed from a fit to the invariant mass distribution. The lifetime is measured by a fit to the sWeighted decay time distribution. A series of different mass ranges and background components are tested. For each possible configuration a study containing 10,000 pseudoexperiments are performed and the performance of each configuration is evaluated using two of different metrics. The first, is the median expected uncertainty of the \bsmumu lifetime and inverse lifetime. The median rather than the mean uncertainty is used due to the asymmetric spread of uncertainties observed for the expected statistics. The second measure, is the pull distributions of any free parameters in the fit, where the pull is defined as $(x - \mu)/\sigma$ with $x$ the measured parameter value, $\mu$ the value used in the generation and $\sigma$ the uncertainty on the measured parameter value. Ideally the pull distributions will be Gaussian in shape with a mean at~0 and a width of~1.
+The \el is then measured using the strategy described in Section~\ref{sec:fitstrategy}, where the sWeights are computed from a fit to the invariant mass distribution and the lifetime is measured by a fit to the sWeighted decay time distribution. A series of different mass ranges and background components are tested. For each possible configuration a study containing 10,000 pseudoexperiments is performed and the performance of each configuration is evaluated using two of different metrics. The first, is the median expected uncertainty of the \bsmumu lifetime. The median rather than the mean uncertainty is used due to the asymmetric spread of uncertainties observed for the expected statistics. The second measure, is the pull distributions of any free parameters in the fit, where the pull is defined as $(x - \mu)/\sigma$ with $x$ the measured parameter value, $\mu$ the value used in the generation and $\sigma$ the uncertainty on the measured parameter value. Ideally the pull distributions will be Gaussian in shape with a mean at~0 and a width of~1.
 
  The details of the pseudoexperiments and mass fits tested are given in Section~\ref{sec:toyresults}. However, first is a discussion of whether the lifetime or inverse lifetime should be measured given the expected number of decays present in the data set.  
 
@@ -472,9 +472,10 @@ During the development of the fit strategy, the pseudoexperiments produced biase
 
 The log-likelihood profile of the  fit as a function of \tmumu reveals the cause of the biased pull distribution. For the simplified studies illustrated in Figure~\ref{fig:taupulls}, the decay time is modelled by
 \begin{equation}
-N(t, \tau^{\mu \mu}) = N_{0}e^{-t/\tau_{\mu\mu}}.
+N(t, \tau_{\mu \mu}) = N_{0}e^{-t/\tau_{\mu\mu}}.
 \end{equation}
-The likelihood profile as a function of decay time for this model is shown in Figure~\ref{fig:taupulls} and there is a clear discontinuity at the zero. The discontinuity arises because the value of $N(t, \tau)$ approaches zero as $\tau$ reduces in value until at the origin where $\tau = 0$ and 
+The likelihood profile as a function of decay time for this model is shown in Figure~\ref{fig:taupulls} and there is a clear discontinuity at the zero. The discontinuity arises because the value of $N(t, \tau)$ approaches zero as $\tau$ reduces in value until at the origin where $\tau = 0$ and $N(t, \tau)$ is undefined. %jumps to infinity. The jump in value is reflected as the discontinuity in the log-likelihood profile.   
+%For the low number of \bsmumu decays expected in 
 
 
 \begin{figure}[tbp]
@@ -491,7 +492,7 @@ The likelihood profile as a function of decay time for this model is shown in Fi
       %  \caption{ }                                                                                                                                                                                        
      %   \label{fig:BDTSbkg}                                                                                                                                                                                
    \end{subfigure}
-    \caption{Pull distribution (a) for \tmumu using a simplified configuration where no acceptance function is used and only signal and combinatorial background decays are generated in the mass range 4900 - 6000 \mevcc with the expected statistics for 4.4 \fb of data used to measured the \el. Likelihood profile for \tmumu (b).}
+    \caption{Pull distribution (a) for \tmumu using a simplified configuration where no acceptance function is used and only signal and combinatorial background decays are generated in the mass range 4900 - 6000 \mevcc with the expected statistics for 4.4 \fb of data used to measured the \el and the likelihood profile for \tmumu (b).}
     \label{fig:taupulls}
 \end{figure}
 
@@ -517,9 +518,9 @@ The likelihood profile as a function of decay time for this model is shown in Fi
 
 \clearpage 
 
-\noindent $N(t, \tau)$ is undefined. %jumps to infinity. The jump in value is reflected as the discontinuity in the log-likelihood profile. 
-For the low number of \bsmumu decays expected in data, the fitted value for \tmumu is only a few standard deviations away from this discontinuity, thereby biasing the estimation of the statistical uncertainty and changing the pull distribution from the expected Gaussian shape. However, as the number of expected signal and background decays increases the \tmumu pull distributions become Gaussian in shape as shown in Figure~\ref{fig:morestatstaupulls}. This is as expected because when the statistical uncertainty decreases, the discontinuity of Figure~\ref{fig:taupulls} is no longer within a few standard deviations of the measured \tmumu.
-
+%\noindent $N(t, \tau)$ is undefined. %jumps to infinity. The jump in value is reflected as the discontinuity in the log-likelihood profile. 
+%For the low number of \bsmumu decays expected in data, the fitted value for \tmumu is only a few standard deviations away from this discontinuity, thereby biasing the estimation of the statistical uncertainty and changing the pull distribution from the expected Gaussian shape. However, as the number of expected signal and background decays increases, the \tmumu pull distributions become Gaussian in shape as shown in Figure~\ref{fig:morestatstaupulls}. This is as expected because when the statistical uncertainty decreases, the discontinuity of Figure~\ref{fig:taupulls} is no longer within a few standard deviations of the measured \tmumu.
+For the low number of \bsmumu decays expected in data the fitted value for \tmumu is only a few standard deviations away from this discontinuity, thereby biasing the estimation of the statistical uncertainty and changing the pull distribution from the expected Gaussian shape. However, as the number of expected signal and background decays increases, the \tmumu pull distributions become Gaussian in shape as shown in Figure~\ref{fig:morestatstaupulls}. This is as expected because when the statistical uncertainty decreases, the discontinuity of Figure~\ref{fig:taupulls} is no longer within a few standard deviations of the measured \tmumu.           
 %\begin{figure}[tbp]
 %    \centering
 %    \begin{subfigure}[b]{0.48\textwidth}
@@ -554,7 +555,7 @@ For the low number of \bsmumu decays expected in data, the fitted value for \tmu
 
 The bias in the \tmumu pull distribution shows that the distribution cannot be interpreted in the usual way and also that the statistical uncertainties from the \ml to the weighted decay time distribution may not be correct. 
 
-Another way to assess the accuracy of the statistical uncertainties returned by the fit is the coverage of the uncertainties; the percentage of fitted \tmumu values from the pseudoexperiments that fall within 1, 2 and 3 standard deviations of the lifetime used to generate the pseudoexperiments. Table~\ref{tab:LifetimeCoverage} shows the coverage of the statistical uncertainties for \tmumu from a set of 10,000 pseudoexperiments for the expected \bsmumu and combinatorial background yields with the data set use for the \el measurement alongside the intervals expected for a Gaussian distribution. The simple toy configuration used to produce the log-likelihood function is used. A comparison between the coverage of \tmumu and the Gaussian intervals shows that the coverage of the statistical uncertainties is very close to the expected values. Therefore the uncertainty on \tmumu is still reasonably estimated from the fit despite the poor pull distribution.
+Another way to assess the accuracy of the statistical uncertainties returned by the fit is the coverage of the uncertainties; the percentage of fitted \tmumu values from the pseudoexperiments that fall within 1, 2 and 3 standard deviations of the lifetime used to generate the pseudoexperiments. Table~\ref{tab:LifetimeCoverage} shows the coverage of the statistical uncertainties for \tmumu from a set of 10,000 pseudoexperiments for the expected \bsmumu and combinatorial background yields with the data set alongside the intervals expected for a Gaussian distribution. The simple toy configuration used to produce the log-likelihood function is used. A comparison between the coverage of \tmumu and the Gaussian intervals shows that the coverage of the statistical uncertainties is very close to the expected values. Therefore the uncertainty on \tmumu is still reasonably estimated from the fit despite the poor pull distribution.
 
 \begin{table}[tb]
 \begin{center}
@@ -603,7 +604,7 @@ Ideally, the fit strategy would be performed to extract the lifetime not the inv
 \subsection{Optimisation of fit configuration}
 \label{sec:toyresults}
 
-The mass distribution of the expected number of \bsmumu candidates passing the effective lifetime selection is shown in Figure~\ref{fig:toygen} alongside the corresponding decay time distribution for one pseudoexperiment for the Run~1 and Run~2 data set. 
+The mass distribution of the expected number of \bsmumu candidates passing the effective lifetime selection is shown in Figure~\ref{fig:toygen} alongside the corresponding decay time distribution for one pseudoexperiment for the combined Run~1 and Run~2 data set. 
 The contributions from the different signal and background sources are shown and the backgrounds beneath the \bs mass peak are the combinatorial background and the tails of the \bhh, \bdmumu and \lambdab backgrounds. The expected mass distribution is used to determine a range of mass fit configurations to be tested using toy studies to find the configuration that produces the smallest expected uncertainty on the measurement of \tmumu and \Gmumu provided the pull distributions of free parameters in the fit are accurate.
 
 %\clearpage 
@@ -613,7 +614,7 @@ The contributions from the different signal and background sources are shown and
         \includegraphics[width= 0.8 \textwidth]{./Figs/LifetimeMeasurement/mass_pdf2.pdf}
         \includegraphics[width= 0.8 \textwidth]{./Figs/LifetimeMeasurement/DT_pdf2.pdf}
  
-    \caption{Distributions of a) mass and b) decay time for the generated decays in the mass range 4900 - 6000 for on pseudoexperiment.}
+    \caption{Distributions of a) mass and b) decay time for the generated decays in the mass range 4900 - 6000 for one pseudoexperiment based on the expected number of signal and background decays in the data set.}
     \label{fig:toygen}
 \end{figure}
 
@@ -632,13 +633,13 @@ For each possible mass fit configuration the \bsmumu, \bdmumu and combinatorial 
 The SM predicts that \tmumu is equal to the lifetime of the heavy \bs mass eigenstate, \tH, the average value calculated by the Particle Data Group of \tmumu = 1.661~\ps, is used to generated events for the pseudoexperiments~\cite{Olive:2016xmw}. %Standard Model prediction, \tmumu = \tH, for the \bsmumu effective lifetime is used to generate events for the pseudoexperiments where \tH is taken from the PDG value. 
 Also, regardless of which background components are included in the mass fit all backgrounds are generated for each mass range. %The \pdfs used in the pseudoexperiments are detailed in Appendix~\ref{}.
 
-A total of 10,000 pseudoexperiments are performed for each mass configuration and the results are given in Table~\ref{tab:toyResults}. The mean and widths of the pull distributions of \Gmumu, \bsmumu yield, combinatorial background yield and slope of the background mass \pdf as well as the median expected uncertainty on \tmumu and \Gmumu are used to measure the performance of each mass fit configuration. The pull distribution of the fit for \tmumu is not used to assess the performance of each mass fit configuration given the discussion in Section~\ref{sec:tauORinvtau}.
+A total of 10,000 pseudoexperiments are performed for each mass configuration and the results are given in Table~\ref{tab:toyResults}. The mean and widths of the pull distributions of \Gmumu, the \bsmumu yield, the combinatorial background yield and the slope of the background mass \pdf as well as the median expected uncertainties on \tmumu and \Gmumu are used to measure the performance of each mass fit configuration. The pull distribution of the fit for \tmumu is not used to assess the performance of each mass fit configuration given the discussion in Section~\ref{sec:tauORinvtau}.
 
 
 
 The expected statistical uncertainties for \tmumu and \Gmumu are smallest for fit configuration 11, where the mass range is restricted to 5320 - 6000 \mevcc and only the \bsmumu and combinatorial background components are used in the mass fit \pdf. The mean and widths for the different pull distributions are consistent with the expected mean of 0 and width of 1 for this fit configuration. The larger mass ranges with more background components included in the mass \pdf have larger uncertainties for \tmumu and \Gmumu as well as biased pull distributions. %It is not surprising that the simplest fit performs the best given the very low expected number of events. 
 
-Therefore, the fit configuration 11 is chosen to measure the \bsmumu effective lifetime. Figure~\ref{fig:toyegs} gives an example of the mass and decay time \ml fits for the chosen configuration. Figure~\ref{fig:toygen} shows that the number of background decays from \bdmumu, \bhh and \lambdab is extremely low above 5320 \mevcc, therefore these backgrounds do not need to be modelled in the mass \pdf. The affect on the final result of not modelling these backgrounds is estimated in Section~\ref{sec:BKGcontaim}.
+Therefore, the fit configuration 11 is chosen to measure the \bsmumu effective lifetime. Figure~\ref{fig:toyegs} gives an example of the mass and decay time fits for the chosen configuration. Figure~\ref{fig:toygen} shows that the number of background decays from \bdmumu, \bhh and \lambdab is extremely low above 5320 \mevcc, therefore these backgrounds do not need to be modelled in the mass \pdf. The affect on the final result of not modelling these backgrounds is estimated in Section~\ref{sec:BKGcontaim}.
 
 
 The expected uncertainties for the chosen fit configuration for \tmumu and \Gmumu are $\sigma \left ( \tau_{\mu\mu}  \right ) = $ 0.28 ps and  $\sigma \left ( \Gamma_{\mu\mu}  \right ) = $ 0.11 \ps$^{-1}$, respectively. However, due to the low expected number of decays there is a large spread in the expected uncertainties as shown in Figure~\ref{fig:exptuncert}. Therefore, the uncertainties on the measurements would range between 0.1 - 0.8 ps for \tmumu and 0.07 - 0.2 \ps$^{-1}$ for \Gmumu.
@@ -777,7 +778,7 @@ Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{
         \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeMeasurement/5320-6000_tau_err.pdf}
         \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/5320-6000_gamma_err.pdf}
 
-    \caption{Expected statistical uncertainties for a) \tmumu and b) \Gmumu using fit configuration number 11.}
+    \caption{Expected statistical uncertainties for a) \tmumu and b) \Gmumu using fit configuration~11 in Table~\ref{tab:toyconfig}.}
     \label{fig:exptuncert}
 \end{figure}
 
@@ -823,7 +824,7 @@ $3\sigma$ & 97.92 $\pm$ 0.10\% &  99.67 $\pm$ 0.10\% & 99.73 \% \\ \bottomrule \
           \includegraphics[width= 0.8\textwidth]{./Figs/LifetimeMeasurement/lifetime_mass_results.pdf}
             \includegraphics[width=0.8\textwidth]{./Figs/LifetimeMeasurement/lifetime_results.pdf}
 
-    \caption{Maximum likelihood fit to a) the invariant mass distribution and b) weighted decay time distribution of \bsmumu candidates using an integrated luminosity of 4.4 \fb of data collected by the LHCb experiment. \bsmumu candidates are described by the red peak in the mass plot and combinatorial background by the blue dashed line, the total \pdf is given by the solid blue line.}
+    \caption{Maximum likelihood fit to a) the invariant mass distribution and b) weighted decay time distribution of \bsmumu candidates using an integrated luminosity of 4.4~\fb of data collected by the LHCb experiment.}
     \label{fig:ELresults}
 \end{figure}
 
