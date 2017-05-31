@@ -1,4 +1,4 @@
-\chapter[Multivariate classifier development]{{\bf Multivariate classifier development for the \bothmath{\bsmumu} effective lifetime measurement}}
+\chapter[Multivariate classifier development]{{\bf Multivariate classifier development for the \boldmath{\bsmumu} effective lifetime measurement}}
 \label{sec:appendix2}
 %Details of the input variables used and the development of the classifiers.
 %What need to go into here ...
@@ -34,7 +34,7 @@ The input variables used in both algorithms are related to the \bs, the muons, i
 The reconstruction of jets in an event provides the most inclusive way to reconstruct semi-leptonic decays, where both the neutral particles and hadrons produced in the decays can be included into one jet. 
 The BDTs are designed to remove combinatorial background decays formed from combining muons produced by semi-leptonic $b\bar{b} \to \mu^{+} \mu^{-} X_{1} X_{2}$ processes, therefore information about semi-leptonic decays from reconstructed jets can help to separate signal and background decays
 %The BDTs are designed to remove combinatorial background decays, many of which are formed by combining muons from two different semi-leptonic decays in the event therefore information about these decays from reconstructed jets can help to seperate signal and background decays. 
-The reconstruction of jets at LHCb is detailed in reference~\cite{Augusto:1499646} and, during the reconstruction, constraints can be placed on the jets as to whether one or both muons in the \bsmumu candidate or the \bs is within a jet. 
+The reconstruction of jets at LHCb is detailed in reference~\cite{Augusto:1499646, Barter:1970903} and, during the reconstruction, constraints can be placed on the jets as to whether one or both muons in the \bsmumu candidate or the \bs is within a jet. 
 Once the jets in an event have been created variables can be constructed based on the properties of the jets and the comparisons between the jets and muons in the event~\cite{CidVidal:2025971}. These variables can be used to exploit differences in the jets created for semi-leptonic decays and \bsmumu decays. For example a jet containing the \bs of a \bsmumu candidate created from two semi-leptonic decays by \bbbarmumux will include both the $b$ and $\bar{b}$ created in the $pp$ interaction, whereas a jet constrain a real \bsmumu decay is less likely to include both the original $b$ and $\bar{b}$ quarks. The information included in jet variables is complementary to that contained in the isolation variables.
 
 
@@ -42,11 +42,11 @@ Once the jets in an event have been created variables can be constructed based o
 The adaptive boosting and uBoost BDTs use input variables that are also used in the cut based selection. These variables are:
 %Some of the input variables used are also in used in the cut based selection, these variables are; 
 \begin{itemize}
-\item IP and IP \chisqd of the \bs;
-\item vertex fit \chisqd/$ndof$ of the \bs; 
+\item IP and \chiIP of the \bs;
+\item \chiVTX of the \bs; 
 \item the flight distance of the \bs;
 \item the $p_T$ of the \bs and the minimum $p_T$ of the two muons; and
-\item the minimum IP \chisqd of the two muons.
+\item the minimum \chiIP of the two muons.
 %\item the polerisation angle which is the cosine of the angle between a vector perpendicular ot the plane containing the \bs momentum and the beam axis and the muon momentum in the \bs rest frame
 \end{itemize}
 The definitions of these variables are given in Section~\ref{strippingold}. The additional input variables used in both BDTs are: %the cut based selection are;
@@ -54,7 +54,7 @@ The definitions of these variables are given in Section~\ref{strippingold}. The 
 \begin{itemize}
 \item  the `polarisation angle' which is the cosine of the angle between a vector perpendicular to a plane containing the \bs momentum and the beam axis and the muon momentum in the \bs rest frame; 
 \item $(\Delta \phi)^{2}$, where $\Delta \phi$ is the difference in azimuthal angles of the muons;
-\item a BDT isolation variable designed in the same way to those described in Section~\ref{sec:globalBDT}, using information from long tracks. This isolation version was produced during the development of the final isolations used in the global BDT, the details of this variable can be found in reference~\cite{Archilli:1970886}. \footnote{Replacing this isolation variable with the Long track and VELO track isolations does no significantly improve the overall performance of either BDT.}; and
+\item a BDT isolation variable designed in the same way to those described in Section~\ref{sec:globalBDT}, using information from long tracks. This isolation version was produced during the development of the final isolations used in the global BDT, the details of this variable can be found in reference~\cite{Archilli:1970886}\footnote{Replacing this isolation variable with the Long track and VELO track isolations does no significantly improve the overall performance of either BDT.}; and
 \item ZVtop isolation variable which uses a topological vertex algorithm~\cite{Jackson:1996sy} and is defined in reference~\cite{Morda:2120795}.
 \end{itemize}
 The remaining input variables used in the uBoost BDT are:
