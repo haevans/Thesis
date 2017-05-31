@@ -172,7 +172,7 @@ The systematic uncertainties on the BDT calibration arise from the mass range us
 Although the BDT is calibrated, the dependence of the BDT response on the \bsd candidate decay time must also be considered. 
 The response of the global BDT for \bmumu decays is correlated with their decay time due to the use of the \bs IP and \chiIP and isolation criteria as inputs to the BDT. This correlation will lead to slightly incorrect estimations of the \bsmumu BDT \pdf. In the SM the \bsmumu effective lifetime, \tmumu, is equal to the lifetime of the heavy \bs mass eigenstate, \tH. However in reality \tmumu could be somewhere in between the lifetimes of the heavy and light mass eigenstates. As described in Chapter~\ref{sec:theory_chptr} the \bsmumu effective lifetime is related to the parameter \ADG, where \ADG = +1 for \tmumu = \tH and \ADG = $-1$ for \tmumu = \tL, where \tL is the lifetime of the light \bsmumu mass eigenstate.
 
-The simulated decays used to train and flatten the global BDT use as the \bsmumu lifetime the mean of the measured \tH and \tL values at the time of the simulation production~\cite{Olive:2016xmw}. Therefore, the lifetime used is different between simulation versions. Since the BDT output is correlated with the lifetime, the fraction of \bsmumu decays in each BDT bin will depend on the lifetime used in the simulation. Numerical correction factors are computed for each year to scale the fraction of \bsmumu decays in each BDT bin for the situations where \ADF = $-1$, 0 or +1, so that the dependence on \ADG of the measured branching fractions can be evaluated.
+The simulated decays used to train and flatten the global BDT use as the \bsmumu lifetime the mean of the measured \tH and \tL values at the time of the simulation production~\cite{Olive:2016xmw}. Therefore, the lifetime used is different between simulation versions. Since the BDT output is correlated with the lifetime, the fraction of \bsmumu decays in each BDT bin will depend on the lifetime used in the simulation. Numerical correction factors are computed for each year to scale the fraction of \bsmumu decays in each BDT bin for the situations where \ADG = $-1$, 0 or +1, so that the dependence on \ADG of the measured branching fractions can be evaluated.
 
 No corrections are needed for \bdmumu because the difference in lifetime of the heavy and light \bd mass eigenstates is negligible and the need for correction cancels out with the BDT calibration that uses the \bd decay \bdkpi. 
 
@@ -198,12 +198,12 @@ The backgrounds present in the final data set originate from:
 \end{itemize}
 
 The backgrounds present in the data set must be included in the fit to the dimuon invariant mass in order to accurately measure the \bmumu branching fractions.
-Therefore, the mass \pdfs and expected yields of each background must be evaluated. The following sections summarise the information used for each background source in the \BF fit and Figure~\ref{fig:BFbkgnds} shows the mass distributions of the background sources for the expected number of candidates with BDT values of BDT $> 0.5$.
+Therefore, the mass \pdfs and expected yields of each background must be evaluated. The following sections summarise the information used for each background source in the \BF fit and Figure~\ref{fig:BFbkgnds} shows the mass distributions of the background sources for the expected number of candidates with BDT values of BDT~$> 0.5$.
 
 \begin{figure}[tbp]
     \centering
-     \includegraphics[width= 0.8 \textwidth]{./Figs/BFAnalysis/Fig4.pdf}
-     \caption{Mass distributions for \bmumu backgrounds with global BDT values of BDT $>$ 0.5. The backgrounds shown are from \bhh, \bdpimunu, \bsKmunu, \lambdab, \bpimumu, \bcjpsimunu and combinatorial background. The green dashed lines show the \bmumu mass window. }
+     \includegraphics[width= 0.9 \textwidth]{./Figs/BFAnalysis/Fig4.pdf}
+     \caption{Mass distributions for \bmumu backgrounds with global BDT values of BDT~$>$~0.5. The backgrounds shown are from \bhh, \bdpimunu, \bsKmunu, \lambdab, \bpimumu, \bcjpsimunu and combinatorial background. The green dashed lines show the \bmumu mass window. }
      \label{fig:BFbkgnds}
 \end{figure}
 %To measure the number of \bsmumu decays these backgrounds must be modelled in the invariant mass fit in each BDT bin, therefore the mass \pdfs and fraction of events present in each BDT bin must be determined.  Backgrounds that fall below the \bd and \bs mass windows still need to be accruatly modelled so that the number of combinatorial background decays that cover the full mass range can be accuratley described/measured. The proceedure is slightly different for \bhh decays compared to semi-leptonic decays.
@@ -219,7 +219,7 @@ The total number of mis-identified \bhh decays expected in Run 1 and Run 2 data,
 \label{eq:bhhprediction}
 \end{equation}
 where ${\mathcal{N}_{B \to hh}$ is the number of TIS \bhh decays in data, $\epsilon^{TRIG}_{B^{0}_{(s)} \to \mu \mu, B \to hh}$ are the \bmumu and \bhh trigger efficiencies and $ \epsilon_{B \to hh \to \mu\mu}$ is the probability that a \bhh decay is mis-identified as \bmumu. 
-The number of \bhh decays is calculated from a fit to the mass distribution of \bdkpi candidates identified in data, the number of \bdkpi candidates is translated into the total number of \bhh by scaling the \bdkpi yields by the relative production rates of \bdkpi decays compared to the other \bhh decays. The trigger efficiencies are calculated from simulated decays and the mis-identification probabilities are evaluated using the PIDCalib package\cite{Anderlini:2202412}. 
+The number of \bhh decays is calculated from a fit to the mass distribution of \bdkpi candidates identified in data, the number of \bdkpi candidates is translated into the total number of \bhh by scaling the \bdkpi yields by the relative production rates of \bdkpi decays compared to the other \bhh decays. The trigger efficiencies are calculated from simulated decays and the mis-identification probabilities are evaluated using the PIDCalib package~\cite{Anderlini:2202412}. 
 Once the total number of mis-identified \bhh decays in Run 1 and Run 2 data are found, the probability that a \bhh decay is mis-identified as a \bmumu decay is then evaluated for each BDT bin in the data sets. 
 The number of mis-identified \bhh decays expected in each BDT bin is calculated by multiplying the total number of mis-identified \bhh decays with the mis-identification probability for each BDT bin. 
 The output of this procedure gives the expected number of mis-identified \bhh decays in each BDT bin for Run~1 and Run~2 data separately.
@@ -233,7 +233,7 @@ The output of this procedure gives the expected number of mis-identified \bhh de
 \subsection{Exclusive backgrounds}%Semi-leptonic decays}%mass and BDT \pdfs}
 The mass \pdfs and expected yields for exclusive backgrounds from \bdpimunu, \bsKmunu, \lambdab, \bupimumu, \bdpimumu and \bcjpsimunu decays are all evaluated using the same techniques.
 
-The mass \pdfs of exclusive backgrounds vary across the BDT range. Therefore these \pdfs are evaluated using simulated decays for each BDT bin separately. An Argus function~\cite{Argus_pdf} convoluted with a Gaussian function is used to describe the mass distributions. The Gaussian function accounts for the mass resolution of the detector. The shapes of \bdpimunu and \bsKmunu are extremely similar and therefore these backgrounds are modelled with one common \pdf. Similarly one mass \pdf is used to model \bupimumu and \bdpimumu decays. The mass \pdfs are shown in Figure~\ref{fig:BFbkgnds} for high BDT output values. The approach is used to evaluate the mass \pdfs for the exclusive backgrounds for each BDT bin in both Run 1 and Run 2 data.
+The mass \pdfs of exclusive backgrounds vary across the BDT range. Therefore these \pdfs are evaluated using simulated decays for each BDT bin separately. An Argus function~\cite{Argus_pdf} convoluted with a Gaussian function is used to describe the mass distributions. The Gaussian function accounts for the mass resolution of the detector. The shapes of \bdpimunu and \bsKmunu are extremely similar and therefore these backgrounds are modelled with one common \pdf. Similarly one mass \pdf is used to model \bupimumu and \bdpimumu decays. The mass \pdfs are shown in Figure~\ref{fig:BFbkgnds} for high BDT output values. %The approach is used to evaluate the mass \pdfs for the exclusive backgrounds for each BDT bin in both Run 1 and Run 2 data.
 
 The expected yields of the exclusive backgrounds in each BDT bin are estimated by using to the number of \bujpsik decays observed in data via
 \begin{equation}
@@ -253,7 +253,7 @@ where $x$ represents each background decay. The background estimation can be fac
 where $\beta$ combines the yield, selection efficiency and hadronisation factor of \bujpsik decays and is the same for all backgrounds. The $\beta$ term is evaluated using the same method as the normalisation of the \bmumu branching fractions described in Section~\ref{sec:Normalisation}. The \bujpsik efficiencies and yields are evaluated across the full BDT range whereas the detection and selection efficiency of each background, $ \epsilon_{x}$, are evaluated separately for each BDT bin using information from both data and simulated decays. The hadronisation factors and branching fractions are specific to each background and where possible measured, rather than predicted, branching fractions are used. The branching fraction values used for each background are given in Table~\ref{tab:backgroundBFs}. %The expected yields of semi-leptonic backgrounds in each BDT bin for Run 1 and Run 2 data are given in Table~\ref{}.
 The output of the procedure gives the expected yields of each background in each BDT bin for both Run 1 and Run 2 data.
 \subsection{Combinatorial background}
-The combinatorial background is the most straight forward background to model and it is described by an exponential function. The slope of the function is required to have the same value for all BDT bins but the slope can be different for Run~1 and Run~2 data. These slopes are determined from a simultaneous fit to candidates in data across the BDT bins in the mass ranges [4900, ($m_{B^{0}} - 80$)] \mevcc and [($m_{B^{0}_{0}$ + 80), 6000] \mevcc, where the mass shapes and yields of the remaining backgrounds are constrained to their expected values. The expected number of combinatorial background decays does not need to be evaluated because the yield is not constrained in the fit to measured the \BFs.
+The combinatorial background is the most straight forward background to model and it is described by an exponential function. The slope of the function is required to have the same value for all BDT bins but the slope can be different for Run~1 and Run~2 data. These slopes are determined from a simultaneous fit to candidates in data across the BDT bins in the mass ranges [4900, ($m_{B^{0}_{(s)} - 80$)] \mevcc and [($m_{B^{0}_{(s)}$ + 80), 6000] \mevcc, where the mass shapes and yields of the remaining backgrounds are constrained to their expected values. The expected number of combinatorial background decays does not need to be evaluated because the yield is not constrained in the fit to measured the \BFs.
 
 %The combinatorial background is modelled by an exponential function. The combinatorial background yield is not constrained in the fit and the slope is required to have the same value across all BDT bins for the Run 1 and Run 2 data sets. These slopes are determined from a simultaneous fit to candidates in data in BDT bins for the mass ranges [4900, ($m_{B^{0}} - 60$)] \mevcc and [($m_{B^{0}_{0}$ + 60, 6000] \mevcc, where the mass shapes and yields of the remaining backgrounds are constrained to their expected values.
 \section{Normalisation}
@@ -261,10 +261,10 @@ The combinatorial background is the most straight forward background to model an
 
 The \bmumu branching fractions are measured by normalising the number of observed \bmumu decays to the number of observed \bujpsik and \bdkpi decays. 
 The normalisation parameters $\alpha_{d(s)}$, in Equation~\ref{eq:BFnorm} for \bmumu decays depend on the yields of the normalisation decays, the ratio of the detection and selection efficiencies and the hadronisation factors. 
-The yields of \bujpsik and \bdkpi decays are evaluated separately for Run 1 and Run 2 data and this process is described in Section~\ref{sec:yeilds}. 
+The yields of \bujpsik and \bdkpi decays are evaluated separately for Run~1 and Run~2 data and this process is described in Section~\ref{sec:yeilds}. 
 The evaluation of the selection efficiencies is described in Section~\ref{sec:effratio} and this is done separately for each year of data taking.
 The hadronisation factors used for the normalisation discussed in Section~\ref{hadronfact} and depend on the centre-of-mass energy of collisions.
-The different inputs are combined to obtain the final normalisation parameters for Run 1 and Run 2 data that are presented in Section~\ref{normparams}.
+The different inputs are combined to obtain the final normalisation parameters for Run~1 and Run~2 data that are presented in Section~\ref{normparams}.
 %The evaluation of each of these terms is described in the following sections.
 In addition to the normalisation channels, \bsjpsiphi decays are used to check the normalisation parameters. Consequently the yields of \bsjpisphi decays and the detection and selection efficiencies must also be evaluated. This is done in the same way as the normalisation channels.
 %The normaliation paramters, $\apha_{d(s)}$ in equation~\ref{eq:BFnorm} can be re-written in more detail as
@@ -367,7 +367,7 @@ The efficiencies are calculated for \bsmumu, \bdmumu, \bdkpi and \bujpsik separa
 \label{hadronfact}
 The normalisation factors depend on the hadronisation factors, $f_{u}, f_{s}, f_{d}$, that give the fraction of $b\bar{b}$ pairs that produce $B^{\pm}$, \bd or $\overline{B}^{0}$ and \bs or $\overline{B}^{0}_{s}$ mesons. %probability of a $b$ or $\bar{b}$ quark to form a $B^{+}$, \bs or \bd, respectively. 
 The factors $f_{d}$ and $f_{u}$ are equal to good approximation, therefore the \bdmumu branching fraction does not depend on any hadronisation factors. For the \bsmumu decay the ratio $f_{s}/f_{d}$ is used in the normalisation, since $f_{d} = f_{u}$. This ratio has been measured at LHCb for $pp$ collisions at $\sqrt{s}$ = 7~TeV~\cite{LHCb-CONF-2013-011}. The stability of this ratio at different centre-of-mass energies was tested using the ratio of \bsjpsiphi and \bujpsik decays at 8 and 13 \tev relative to their ratio at 7~\tev. %The reconstruction, selection and trigger efficiencies were corrected for in the ratios. 
-The ratios are stable across the different collision energies and $f_{s}/f_{d}$ is assumed to be identical for $\sqrt{s}$ = 8 TeV. For Run~2, the $f_{s}/f_{d}$ ratio is modified due to a small relative production difference in \bsjpsiphi and \bujpsik decays for Run~2 compared to Run~1. 
+The ratios are stable across the different collision energies and $f_{s}/f_{d}$ is assumed to be identical for $\sqrt{s}$ = 8 TeV. For Run~2, the $f_{s}/f_{d}$ ratio is modified due to a small relative production difference in \bsjpsiphi and \bujpsik decays observed for Run~2 compared to Run~1. 
 The uncertainty on the hadronisation factor ratio contributes the largest uncertainty to the \bsmumu branching fraction. 
 
 Alternatively, the \bsmumu \BF could be normalised using a different \bs decay, such as \bsjpsiphi. However the precision of the measured branching fractions and abundance of such decays is not high enough at present to provide a lower overall uncertainty on the measured branching fraction.
@@ -447,15 +447,14 @@ The fit results are shown in Figure~\ref{fig:BFfit}.
        \includegraphics[width=\textwidth]{./Figs/BFAnalysis/legendB.pdf}
     \end{subfigure}
     \caption{Mass distribution in BDT bins for selected \bsmumu and \bdmumu candidates with the fit overlaid for Run\
- 1 and Run 2 data. The fit includes components for \bdmumu, \bsmumu, combinatorial backgrounds, mis-identified \bhh \
-decays and backgrounds from semi-leptonic decays. }
+ 1 and Run 2 data. The fit includes components for \bdmumu, \bsmumu, combinatorial backgrounds and backgrounds from mis-identified decays. }
     \label{fig:BFfit}
 \end{figure}
 
 
 
 In the mass fit all \pdfs, except the combinatorial background, are constrained within Gaussian limits of their expected values based on the uncertainties \pdf parameters. 
-The fraction of \bmumu in each BDT bin is constrained using the BDT \pdf and the yields of the mis-identified background are constrained around their expected values. The combinatorial background yields are left free in the fit and the slope of the mass distribution is required to have the same value across all bins for each data set.
+The fraction of \bmumu decays in each BDT bin is constrained using the BDT \pdf and the yields of the mis-identified background are constrained around their expected values. The combinatorial background yields are left free in the fit and the slope of the mass distribution is required to have the same value across all bins for each data set.
 %Prehaps the preceeding part about the mass fit and constraints is not needed here but could be put in the analysis strategy part more clearly?
 %The fit is shown in Figure~\ref{fig:BFfit}  and the measured \BFs are
 The measured \BFs are
@@ -471,7 +470,7 @@ The measured \BFs are
 where the first quoted uncertainty is the statistical uncertainty and the second is the systematic uncertainty. The dominant contributions to the systematic uncertainties are from the ratio $f_s / f_d$ and the uncertainty on the background yields for the \bsmumu and \bdmumu \BFs, respectively. %Figure~\ref{} showns the comparison of the measured \BFs and the SM predictions and Figure~\ref{fig:BFfit} shows the fit results for \bmumu candidates in the four BDT bins for both Run 1 and Run 2 data. % and Figure~\ref{fig:contour} the 2-dimensional likelihood profile for the \bdmumu and \bsmumu branching fraction measurements.
 The statistical significance of the \bsmumu signal is 7.8$\sigma$ making this measurement the first single experiment observation of the \bsmumu decay. The significance of the \bdmumu signal is 1.6$\sigma$, therefore the CL$_{\text{s}}$ method~\cite{0954-3899-28-10-313} is used to place an upper limit on the branching fraction of $\mathcal{B}$(\bdmumu)$ < 3.4 \times 10^{-10}$ at the 95$\%$ confidence level.
 
-The \bsmumu branching fraction in Equation~\ref{eq:BFresults} assumes the Standard Model value for \ADG, applying the corrections detailed in Section~\ref{sec:ADGBDTcorrections}; \ADG values of 0 and $-$1 shift the central value of $\mathcal{B}$(\bsmumu) by 4.6$\%$ and 10.9$\%$, respectively. All results are consistent with the predictions of the SM as illustrated in Figure~\ref{fig:contour}.
+The \bsmumu branching fraction in Equation~\ref{eq:BFresults} assumes the Standard Model value for \ADG of \ADG~=~+1, applying the corrections detailed in Section~\ref{sec:ADGBDTcorrections}; \ADG values of~0 and~$-$1 shift the central value of $\mathcal{B}$(\bsmumu) by 4.6$\%$ and 10.9$\%$, respectively. All results are consistent with the predictions of the SM as illustrated in Figure~\ref{fig:contour}.
 %Figure~\ref{fig:BFfit} shows the fit results for \bmumu candidates in the four BDT bins for both Run 1 and Run 2 data.
 
 
