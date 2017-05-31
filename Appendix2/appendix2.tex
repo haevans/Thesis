@@ -29,13 +29,13 @@ Initially the BDTs were trained using all input variables within the set and var
 
 
 The adaptive boosting BDT uses 11 input variables and the uBoost BDT uses 21 variables which includes all variables in used by adaptive boosting BDT.
-The input variables used in both algorithms are related to the \bs, the muons, isolation variables and properties of jets in the reconstructed in the event. Isolation variables, discussed in Section~\ref{sec:globalBDT}, give a measure of how busy an event is and the separation of the tracks in a \bsmumu candidate from other tracks in the event. 
+The input variables used in both algorithms are related to the \bs, the muons, isolation variables and properties of jets reconstructed in the event. Isolation variables, discussed in Section~\ref{sec:globalBDT}, give a measure of how busy an event is and the separation of the tracks in a \bsmumu candidate from other tracks in the event. 
 
 The reconstruction of jets in an event provides the most inclusive way to reconstruct semi-leptonic decays, where both the neutral particles and hadrons produced in the decays can be included into one jet. 
-The BDTs are designed to remove combinatorial background decays formed from combining muons produced by semi-leptonic $b\bar{b} \to \mu^{+} \mu^{-} X_{1} X_{2}$ processes, therefore information about semi-leptonic decays from reconstructed jets can help to separate signal and background decays
+The BDTs are designed to remove combinatorial background decays formed from combining muons produced by semi-leptonic $b\bar{b} \to \mu^{+} \mu^{-} X_{1} X_{2}$ processes, therefore information about semi-leptonic decays from reconstructed jets can help to separate signal and background decays. 
 %The BDTs are designed to remove combinatorial background decays, many of which are formed by combining muons from two different semi-leptonic decays in the event therefore information about these decays from reconstructed jets can help to seperate signal and background decays. 
 The reconstruction of jets at LHCb is detailed in reference~\cite{Augusto:1499646, Barter:1970903} and, during the reconstruction, constraints can be placed on the jets as to whether one or both muons in the \bsmumu candidate or the \bs is within a jet. 
-Once the jets in an event have been created variables can be constructed based on the properties of the jets and the comparisons between the jets and muons in the event~\cite{CidVidal:2025971}. These variables can be used to exploit differences in the jets created for semi-leptonic decays and \bsmumu decays. For example a jet containing the \bs of a \bsmumu candidate created from two semi-leptonic decays by \bbbarmumux will include both the $b$ and $\bar{b}$ created in the $pp$ interaction, whereas a jet constrain a real \bsmumu decay is less likely to include both the original $b$ and $\bar{b}$ quarks. The information included in jet variables is complementary to that contained in the isolation variables.
+Once the jets in an event have been created variables can be constructed based on the properties of the jets and the comparisons between the jets and muons in the event~\cite{CidVidal:2025971}. These variables can be used to exploit differences in the jets created for semi-leptonic decays and \bsmumu decays. For example a jet containing the \bs of a \bsmumu candidate created from two semi-leptonic decays by \bbbarmumux will include both the $b$ and $\bar{b}$ created in the $pp$ interaction, whereas a jet containing a real \bsmumu decay is less likely to include both the original $b$ and $\bar{b}$ quarks. The information included in jet variables is complementary to that contained in the isolation variables.
 
 
 
@@ -43,7 +43,7 @@ The adaptive boosting and uBoost BDTs use input variables that are also used in 
 %Some of the input variables used are also in used in the cut based selection, these variables are; 
 \begin{itemize}
 \item IP and \chiIP of the \bs;
-\item \chiVTX of the \bs; 
+\item \chivtx of the \bs; 
 \item the flight distance of the \bs;
 \item the $p_T$ of the \bs and the minimum $p_T$ of the two muons; and
 \item the minimum \chiIP of the two muons.
@@ -54,7 +54,7 @@ The definitions of these variables are given in Section~\ref{strippingold}. The 
 \begin{itemize}
 \item  the `polarisation angle' which is the cosine of the angle between a vector perpendicular to a plane containing the \bs momentum and the beam axis and the muon momentum in the \bs rest frame; 
 \item $(\Delta \phi)^{2}$, where $\Delta \phi$ is the difference in azimuthal angles of the muons;
-\item a BDT isolation variable designed in the same way to those described in Section~\ref{sec:globalBDT}, using information from long tracks. This isolation version was produced during the development of the final isolations used in the global BDT, the details of this variable can be found in reference~\cite{Archilli:1970886}\footnote{Replacing this isolation variable with the Long track and VELO track isolations does no significantly improve the overall performance of either BDT.}; and
+\item a BDT isolation variable designed in the same way to those described in Section~\ref{sec:globalBDT}, using information from long tracks. This isolation version was produced during the development of the final isolations used in the global BDT, the details of this variable can be found in reference~\cite{Archilli:1970886}\footnote{Replacing this isolation variable with the Long track and VELO track isolations does not significantly improve the overall performance of either BDT.}; and
 \item ZVtop isolation variable which uses a topological vertex algorithm~\cite{Jackson:1996sy} and is defined in reference~\cite{Morda:2120795}.
 \end{itemize}
 The remaining input variables used in the uBoost BDT are:
@@ -66,17 +66,17 @@ The remaining input variables used in the uBoost BDT are:
 \begin{equation}
 I_{CDF} = \frac{p_{T}(B_{s}{^0})}{p_{T}(B_{s}{^0}) + \displaystyle\sum_{track \in cone}p_{T}(track) };
 \end{equation}
-\item a cut based muon isolation, $I_{\mu}$, this isolation variable was the precursor of the BDT based isolation variables and is based on placing cuts on variables relating long tracks in the event to the muons in \bsmumu candidates. The definition of this variable can be found in reference~\ref{Morda:2120795};
+\item a cut based muon isolation, $I_{\mu}$, this isolation variable was the precursor of the BDT based isolation variables and is based on placing cuts on variables relating long tracks in the event to the muons in \bsmumu candidates. The definition of this variable can be found in reference~\~\cite{Morda:2120795};
 \item the angle between the \bs momentum and the sum of the momenta of all tracks in the event, excluding tracks from long lived particles and tracks associated with a different primary vertex then the primary vertex of the \bs. Since $b$ and $\bar{b}$ quarks are produced in pairs in $pp$ collisions, the angle is effectively the angle between the \bs and the other $b$ quark from the pair produced. Therefore this variable is called the `other $B$ angle', if there are too few candidates in the event to compute this variable the value is set to 1; %B_otherB_ang
 \item the angle between the $\mu^+$ candidate in the \bs rest frame and the sum of the momenta in the \bs rest frame of all tracks in the event, excluding tracks from long lived particles and tracks associated with a different primary vertex then the primary vertex of the \bs. If there are too few tracks in the event to compute this variable the angle is set to $\pi/2$;%B_otherB_boo_ang
 %\item variabes %B_JETBJETWIDTH, B_JETBPT, B_JETBPTRATIO, B_JETMU1DRMU2
 \item  the jet width of jets that are forced to contain both muons in the \bsmumu candidate and are constructed around the \bs. The width is defined as the average value of $\sqrt{\Detla \eta^2 + \Detla \phi^2}$ where the difference is computed between each component in the jet and the jet total, in the total width each component in the jet is a weighted by its $p_{T}$;
-\item distance, $\sqrt{\Detla \eta^2 + \Detla \phi^2}$, between a jet force to contain one lepton and the other lepton in the \bsmumu candidate
+\item distance, $\sqrt{\Detla \eta^2 + \Detla \phi^2}$, between a jet forced to contain one lepton and the other lepton in the \bsmumu candidate
 \item the transverse momentum of jets that are forced to contain both muons in the \bsmumu candidate and are constructed around the \bs; and 
 \item the ratio of the transverse momenta of the muons and the jet that contains the muons and is constructed around the \bs.
 \end{itemize}
 
-The distributions of the input variables for \bsmumu and \bbbarmumux 2012 sim06 simulated decays are shown in Figure~\ref{fig:myBDTvars}.
+The distributions of the input variables for \bsmumu and \bbbarmumux 2012 simulated decays are shown in Figure~\ref{fig:myBDTvars}.
 
 \begin{figure}[htbp]
   \centering
@@ -88,7 +88,7 @@ The distributions of the input variables for \bsmumu and \bbbarmumux 2012 sim06 
     \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/min_mu_PT.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/min_mu_IP.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/polerization.pdf}
-  \caption{The distributions of the input variables used in the adaptive boost and uBoost BDTs for \bsmumu and \bbbarmumux 2012 sim06 simulated decays.}
+  \caption{The distributions of the input variables used in the adaptive boost and uBoost BDTs for \bsmumu and \bbbarmumux 2012 simulated decays.}
   \label{fig:myBDTvars}
 \end{figure}
 
@@ -103,7 +103,7 @@ The distributions of the input variables for \bsmumu and \bbbarmumux 2012 sim06 
     \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/CDF.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/muon_iso.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/B_other_angle.pdf}
-  \caption{The distributions of the input variables used in the adaptive boost and uBoost BDTs for \bsmumu and \bbbarmumux 2012 sim06 simulated decays.}
+  \caption{The distributions of the input variables used in the adaptive boost and uBoost BDTs for \bsmumu and \bbbarmumux 2012 simulated decays.}
   \label{fig:myBDTvars}
 \end{figure}
 
@@ -117,7 +117,7 @@ The distributions of the input variables for \bsmumu and \bbbarmumux 2012 sim06 
     \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/jet_pt.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/jet_pt_ratio.pdf}
  
-  \caption{The distributions of the input variables used in only the uBoost BDT for \bsmumu and \bbbarmumux 2012 sim06 simulated decays.}
+  \caption{The distributions of the input variables used in only the uBoost BDT for \bsmumu and \bbbarmumux 2012 simulated decays.}
   \label{fig:myBDTvars}
 \end{figure}
 
@@ -129,7 +129,7 @@ The distributions of the input variables for \bsmumu and \bbbarmumux 2012 sim06 
 The training parameters discussed in Section~\ref{sec:GeneralBDT} put constraints on how a BDT separates signal and background decays. 
 The training parameters used in the adaptive boost BDT were optimised by iterating over different training parameter values and choosing the BDT that gave the best signal significance for identifying \bhh decays in Run~1 data. The computation of the signal significance is described in Section~\ref{sec:dev_BDTs}. %The training parameters were optimised one-by-one in the order NCuts, NTrees, MinNodeSize, MaxDepth the $\beta$, the default TMVA values were taken as the starting point.
 The final set of training parameters are given in Table~\ref{tab:ELtrainingparamss}. %{\it I can find the book with this in and add a few more details?}
-The training parameters used in the uBoost BDT have not been optimised and are given in Table~\ref{tab:ELtrainingparamss}. The parameter values suggested in reference~\cite{Stevens:2013dya} have been used where is was shown that different training parameters had a small impact of the overall BDT performance. %are given in Table~\ref{}, the parameters are taken from~\ref{} and have no alternative parameters were investigated because little improvment can be gained for this algorithm by altering the training parameters.
+The training parameters used in the uBoost BDT have not been optimised and are given in Table~\ref{tab:ELtrainingparamss}. The parameter values suggested in reference~\cite{Stevens:2013dya} have been used where it was shown that different training parameters had a small impact of the overall BDT performance. %are given in Table~\ref{}, the parameters are taken from~\ref{} and have no alternative parameters were investigated because little improvment can be gained for this algorithm by altering the training parameters.
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{llll}
@@ -157,7 +157,7 @@ nCuts & 30 & nCuts & 200 \\
 %- Overtaining of the BDTs
 As discussed in Section~\ref{sec:GeneralBDT}, it is important that BDTs are not overtrained. %To test this the signal and background samples are split into two and half of the signal and background samples are used to train a BDT, the BDT is then applied to the other half of the signal and background samples. 
 %The BDT output value is evaluated for each decay in the sample and the output values are compared for both s
-To test this assumption the signal and background samples are both split in two to create a training set and a testing set.
+To test this assumption the signal and background samples are both split in two, to create a training set and a testing set.
 A BDT is trained using the training set, and the BDT is then applied to both the training and testing sets. The distribution of BDT output values for signal and background decays in the training and testing sets are compared. If the BDT is overtrained the response of the BDT will be quite different for the training and testing sets for signal and background decays. However, if the BDT is not overtrained the distributions will be similar for the training and testing sets. 
 
 Figure~\ref{fig:ELBDTovertrain} shows the results of this test where the responses for the training and testing samples lie on top of each other. Therefore, neither the uBoost BDT or the adaptive boosting BDT developed for the effective lifetime measurement are overtrained. The same test was performed for the global BDT developed of the \BFm and the global BDT is not overtrained.  
@@ -168,7 +168,7 @@ Figure~\ref{fig:ELBDTovertrain} shows the results of this test where the respons
         \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/Overtainting_BDT.pdf}
         \includegraphics[width=0.49\textwidth]{./Figs/Appendix2/uBoost_overtraining.pdf}
 
-    \caption{BDT response for training and testing samples of signal and background decays for the adaptive boost BDT (left) and the uBoost BDT (right). }
+    \caption{BDT response for training and testing samples of signal and background decays for a) the adaptive boost BDT and b) the uBoost BDT. }
     \label{fig:ELBDTovertrain}
 \end{figure}
 

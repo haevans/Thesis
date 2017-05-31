@@ -3,8 +3,8 @@
 
 %if print - it's like a print out if not its what you get online. Spaceing is 
 %different.
-\documentclass[a4paper,12pt,numbered,index]{Classes/PhDThesisPSnPDF}
-%\documentclass[a4paper,12pt,numbered,index, chapter]{Classes/PhDThesisPSnPDF}
+\documentclass[a4paper,12pt,numbered,index, print, custommargin]{Classes/PhDThesisPSnPDF}
+%\documentclass[a4paper,12pt,numbered,index, chapter, print, custommargin]{Classes/PhDThesisPSnPDF}
 
 %\usepackage{lineno}
 %\linenumbers
@@ -112,7 +112,7 @@
 % To use choose `chapter' option in the document class
 
 \ifdefineChapter
- \includeonly{Summary/summary}%LHC_LHCb/LHC_LHCb}%ITheory/theory}%Introduction/Introduction}%Introduction\Introduction}%LifetimeMeasurement/lifetimeMeasurement}%Summary/summary}%Selection/selection}%LHC_LHCb/LHC_LHCb}%Introduction/Introduction}%Theory/theory}%Introduction/Introduction}%LifetimeSystematics/lifetimeSystematics}%LifetimeMeasurement/lifetimeMeasurement}%LifetimeMeasurement/lifetimeMeasurement}%LifetimeSystematics/lifetimeSystematics}%LifetimeMeasurement/lifetimeMeasurement}%Selection/selection} %LHC_LHCb/LHC_LHCb}%BranchFractionMeasurement/BFMeasurement}%LHC_LHCb/LHC_LHCb}%Selection/selection} %Selection/selection} 
+ \includeonly{Summary/summary}%LifetimeSystematics/lifetimeSystematics}%{LifetimeMeasurement/lifetimeMeasurement}%BranchFractionMeasurement/BFMeasurement}%SSelection/selection} %Selection/selection}%{Theory/theory}%Theory/theory}%Summary/summary}%Introduction/Introduction}%LifetimeSystematics/lifetimeSystematics}%LifetimeMeasurement/lifetimeMeasurement}%BranchFractionMeasurement/BFMeasurement}%Selection/selection}%LHC_LHCb/LHC_LHCb}%Introduction/Introduction}%Theory/theory}%Introduction/Introduction}%Summary/summary}%LHC_LHCb/LHC_LHCb}%ITheory/theory}%Introduction/Introduction}%Introduction\Introduction}%LifetimeMeasurement/lifetimeMeasurement}%Summary/summary}%Selection/selection}%LHC_LHCb/LHC_LHCb}%Introduction/Introduction}%Theory/theory}%Introduction/Introduction}%LifetimeSystematics/lifetimeSystematics}%LifetimeMeasurement/lifetimeMeasurement}%LifetimeMeasurement/lifetimeMeasurement}%LifetimeSystematics/lifetimeSystematics}%LifetimeMeasurement/lifetimeMeasurement}%Selection/selection} %LHC_LHCb/LHC_LHCb}%BranchFractionMeasurement/BFMeasurement}%LHC_LHCb/LHC_LHCb}%Selection/selection} %Selection/selection} 
 \fi
 
 % ******************************** Front Matter ********************************
@@ -133,7 +133,7 @@
 \include{Declaration/declaration}
 %\include{Dedication/dedication}
 \chapterfont{\raggedleft}
-%\include{Acknowledgement/acknowledgement}
+\include{Acknowledgement/acknowledgement}
 \include{Preface/preface}
 \chapterfont{\raggedright}
 
@@ -206,6 +206,9 @@
 
 \end{appendices}
 
+%\listoffigures                                                                                                                               
+
+%\listoftables   
 % *************************************** Index ********************************
 \printthesisindex % If index is present
 
