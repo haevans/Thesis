@@ -1,6 +1,6 @@
 \chapter{\bf{Measurement of }\boldmath{\bmumu}\bf{ branching fractions}}
 \label{sec:BFanalysis}
-This chapter presents the measurements of the \bdmumu and \bsmumu branching fractions, focusing in more detail on the parts of the analysis that are also used for the measurement of the \bsmumu \el in Chapter~\ref{sec:lifetimemeasurement}. Section~\ref{sec:BFAnalysisStrategy} gives an overview of the analysis strategy and a description of how the \bmumu yield is extracted from the data is given in Section~\ref{sec:signalPdfs}. The estimation of the background decays that must be understood for the \BF measurements are detailed in Section~\ref{sec:backgrounds} and the normalisation procedure to convert the number of observed \bmumu decays into the branching fractions is explained in Section~\ref{sec:Normalisation}. Finally, the results are presented in Section~\ref{sec:BFResults}. 
+This chapter presents the measurements of the \bdmumu and \bsmumu branching fractions, focusing in more detail on the parts of the analysis that are also used for the measurement of the \bsmumu \el in Chapter~\ref{sec:lifetimemeasurement}. Section~\ref{sec:BFAnalysisStrategy} gives an overview of the analysis strategy and a description of how the \bmumu yield is extracted from the data is given in Section~\ref{sec:signalPdfs}. The estimation of the background decays that must be understood for the \BF measurements is detailed in Section~\ref{sec:backgrounds} and the normalisation procedure to convert the number of observed \bmumu decays into the branching fractions is explained in Section~\ref{sec:Normalisation}. Finally, the results are presented in Section~\ref{sec:BFResults}. 
 The \bsmumu effective lifetime measurement uses the mass distributions of signal and background decays and the expected yields described in Sections~\ref{sec:signalPdfs} and \ref{sec:backgrounds}. 
 %The work presented in this Chapter was performed by the \bmumu LHCb analysis group and is published here~\cite{}. My contribution was  maintaining the stripping selection used for this analysis and providing the ROOT files for contained the data and simulated events needed for the analysis development and measurements. %Could go here or in the declaration?
 
@@ -33,16 +33,16 @@ where $f_{d(s)}$ is the hadronisation factor, giving the probability for a $b$ o
 where $norm$ indicates the normalisation channel. The normalisation factors can be combined into one normalisation parameter $\alpha_{d(s)}$ for each of the \bs and \bd decays. The normalisation procedure removes the uncertainty from $\sigma_{b \bar{b}}$, the systematic uncertainties in the efficiencies cancel out in the ratio, as well as uncertainties on $f_{d(s)}$ depending on the choice of the normalisation channel. 
 Therefore, to measure the \BFs in this way the number of \bmumu decays in data and the normalisation parameters $\alpha_{d(s)}$ must be measured. 
 
-The number of \bmumu decays in data is found by performing a simultaneous unbinned extended maximum likelihood fit~\cite{Brun:1997pa,James:1975dr} to the dimuon invariant mass distribution of \bmumu candidates in data in four BDT bins. For this measurement data from Run~1 and Run~2 are kept separate in the fit, therefore the simultaneous fit is performed over 8 categories; four BDT bins for each run.
+The number of \bmumu decays in data is found by performing a simultaneous unbinned extended maximum likelihood fit~\cite{Brun:1997pa,James:1975dr} to the dimuon invariant mass distribution of \bmumu candidates in data in four global BDT bins. For this measurement data from Run~1 and Run~2 are kept separate in the fit, therefore the simultaneous fit is performed over 8 categories; four BDT bins for each run.
 The BDT bin boundaries used in the fit are
 \begin{equation}
 [0.25, 0.4, 0.5, 0.6, 1.0].
 \label{eq:BDTbins}
 \end{equation}
-Pseudoexperiments based on the expected number of signal and background decays were performed to determine the BDT bin configuration that gave the best fit stability and sensitivity to the \bmumu branching fractions. The bins were optimised for the \bdmumu sensitivity because this decay is yet to be observed.
+Pseudoexperiments based on the expected number of signal and background decays in different BDT bin configurations were performed to determine the binning choice that gave the best fit stability and sensitivity to the \bmumu branching fractions. The bins were optimised for the \bdmumu sensitivity because this decay is yet to be observed.
 Candidates with BDT values between 0 and 0.25 are not included in the fit because this bin is dominated by backgrounds from random combinations of muons in the event. The inclusion of this bin does not improve the branching fraction sensitivity and reduces the stability of the fit. %The highest BDT is the largest due to the excellent performance of the BDT at removing background decays. Table/Figure X, shows the number of \bmumu candidates in data passing the selection described in Chapter X with dimuon mass greater that 5447 \mevcc. At high BDT values there are very few candidates therefore a wide bin is used for high BDT values to ensure there are enough candidates in high mass regions to ensure a stable, accurate fit.
 
-The candidates in data that pass the selection criteria described in Chapter~\ref{selection_chapter} consist of background as well as signal decays. Therefore in order to find the number of \bmumu decays from the simultaneous fit information is needed about both the signal and background. For the fit, the mass \pdfs of \bmumu decays must be know as well as the BDT \pdf, which described the fraction of \bmumu decays expected in each BDT bin. The evaluation of the \bmumu mass and BDT \pdfs in Run 1 and Run 2 data are described in Section~\ref{sec:signalPdfs}. The backgrounds present in the data must be modelled in the mass fit, therefore the mass \pdfs and expected yields of the backgrounds in each BDT bin must be evaluated for Run 1 and Run 2 data. The backgrounds included in the fit are described in Section~\ref{sec:backgrounds} along with the mass \pdfs and expected yields for each background. 
+The candidates in data that pass the selection criteria described in Chapter~\ref{selection_chapter} consist of background as well as signal decays. Therefore in order to find the number of \bmumu decays from the simultaneous fit information is needed about both the signal and background. For the fit, the mass \pdf of \bmumu decays must be know as well as the BDT \pdf, which described the fraction of \bmumu decays expected in each BDT bin. The evaluation of the \bmumu mass and BDT \pdfs in Run 1 and Run 2 data are described in Section~\ref{sec:signalPdfs}. The backgrounds present in the data must be modelled in the mass fit, therefore the mass \pdfs and expected yields of the backgrounds in each BDT bin must be evaluated for Run 1 and Run 2 data. The backgrounds included in the fit are described in Section~\ref{sec:backgrounds} along with the mass \pdfs and expected yields for each background. 
 
 
 
@@ -51,7 +51,7 @@ The normalisation parameters are evaluated for two different normalisation decay
 A normalisation decay is chosen to be as similar as possible to \bmumu decays, in order to reduce systematic uncertainties introduced by different detection and selection efficiencies between the signal and normalisation channels. Furthermore, the chosen decay needs to be abundant and have a precisely measured \BF so that the precision of the \bmumu branching fraction measurements are not limited by the uncertainties of the normalisation channel. Two decays are chosen as normalisation channels: \bujpsik, where \jpsimumu; and \bdkpi. Both decays have large, precisely measured branching fractions and are similar to \bmumu decays in complementary ways. The \bujpsik decay has a very similar trigger efficiency due to the two muons from the \jpsi, although the extra particle in the final state leads to different selection and reconstruction efficiencies. The \bdkpi decay has a very similar topology to \bmumu, therefore the selection and reconstruction efficiencies will be similar, but the trigger efficiency for hadrons is quite different to muons.  
 
 The normalisation factors $\alpha_{d(s)}$ for \bdmumu and \bsmumu decays are evaluated independently for each normalisation channel and year of data taking, the factors are combined to produce an overall normalisation factor for Run 1 and Run 2. The evaluation of the normalisation factors is described in Section~\ref{sec:Normalisation}.
-As mention in Chapter~\ref{selection_chapter}, the analysis is performed as a `blind' analysis and the mass regions $\pm$ 80 \mevcc either side of the \bs and \bd mass peaks are not revealed until each step in the analysis procedure has been finalised. 
+As mentioned in Chapter~\ref{selection_chapter}, the analysis is performed as a `blind' analysis and the mass regions $\pm$ 80 \mevcc either side of the \bs and \bd mass peaks are not revealed until each step in the analysis procedure has been finalised. 
 %Through out this chapter many fits are performed, assume they are all unbinned \ml fits unless otherwise stated. 
 \section[\bmumu mass and BDT \pdfs]{\boldmath{\bmumu} mass and BDT \pdfs}
 \label{sec:signalPdfs}
@@ -140,9 +140,9 @@ $\alpha$ & 2.063 $\pm$ 0.007 & 2.062 $\pm$ 0.008 \\
 
 %The fraction of \bmumu decays in each BDT bin is meeded to measure the branching fraction therefore the BDT \pdf needs to be evaluated. 
 The global BDT distribution for \bmumu decays is expected to be uniform between 0 and 1 as designed by the flattening procedure described in Section~\ref{BDTS}. The fraction of \bmumu decays in a BDT bin should be proportional to the bin width. However, the global BDT was trained and flattened using simulated decays, therefore to avoid differences between simulated decays and data affecting the expected fraction of \bmumu decays in each BDT bin, the BDT \pdf is evaluated from \bdkpi decays in data. This process is known as the BDT calibration.
-The global BDT is designed to use only kinematic and geometric information to classify candidates and includes no PID information. Therefore the BDT distributions of \bdkpi decays will be the same to a good approximation as \bmumu decays since they are kinematically identical. %\bdkpi decays are used to calibrate the BDT response because it is the most abundant \bhh decay. 
+The global BDT is designed to use only kinematic and geometric information to classify candidates and includes no PID information. Therefore the BDT distributions of \bdkpi decays will be the same to a good approximation as \bmumu decays since they are kinematically very similar. %\bdkpi decays are used to calibrate the BDT response because it is the most abundant \bhh decay. 
 
-The number of \bdkpi decays is extracted from data by fitting the mass distribution of \bdkpi candidates in each BDT bin for Run~1 and Run~2 data. The \bdkpi candidates must pass the standard \bhh selection outlined in Section~\ref{sec:BFtrigger} and are separated from other \bhh modes using the DLL$_{K\pi}$ variable. %To reduce the difference in the trigger efficiency between \bdkip and \bmumu decays, \bdkpi candidates are required to be TIS at L0 and Hlt1, but TOS at Hlt2, to ensure enough statistics.
+The number of \bdkpi decays is extracted from data by fitting the mass distribution of \bdkpi candidates in each BDT bin for Run~1 and Run~2 data. The \bdkpi candidates must pass the standard \bhh selection outlined in Section~\ref{sec:BFsel} and are separated from other \bhh modes using the DLL$_{K\pi}$ variable. %To reduce the difference in the trigger efficiency between \bdkip and \bmumu decays, \bdkpi candidates are required to be TIS at L0 and Hlt1, but TOS at Hlt2, to ensure enough statistics.
 
 The particle identification and trigger efficiencies are different for \bdkpi and \bmumu decays. Therefore, the \bdkpi yields in each BDT bin are corrected for the different efficiencies. %this. %for using by the different trigger and particle identification efficiencies. 
 The same calibration is used for \bdmumu and \bsmumu decays.
@@ -183,11 +183,11 @@ No corrections are needed for \bdmumu because the difference in lifetime of the 
 The selection described in Chapter~\ref{selection_chapter} is effective at reducing the backgrounds in the data set to a suitable level so that number of the \bmumu decays can be measured. However, some background decays remain in the final data set that cannot be completely removed without drastically reducing the signal efficiency. %The backgrounds present in the data set must be included in the fit to the dimuon invariant mass in order to accurately measure the \bmumu branching fractions. 
 The backgrounds present in the final data set originate from:
 \begin{itemize}
-\item \bhh decays when both hadrons are mis-identified as muons, commonly caused by hadrons decaying semi-leptonically during their flight through the detector after leaving the VELO. This background falls within the \bd mass window but not the \bs mass window due to the missing energy from the undetected neutrino;
+\item \bhh decays when both hadrons are mis-identified as muons, commonly caused by hadrons decaying semi-leptonically during their flight through the detector after leaving the VELO. This background peaks within the \bd mass window but not the \bs mass window due to the missing energy from the undetected neutrino;
 \item semi-leptonic decays where one hadron is mis-identified as a muon that include
 \begin{itemize}
-\item \bdpimunu and \bsKmunu decays where the final state hadrons are mis-identified as muons. The mass of these backgrounds falls below the \bd mass window in the left mass sideband; and
-\item \lambdab decays when the proton is mis-identified as a muon. The large mass of the $\Lambda^{0}_{b}$ means that this background pollutes the \bs and \bd mass windows and below;
+\item \bdpimunu and \bsKmunu decays where the final state hadrons are mis-identified as muons. The majority of these backgrounds falls below the \bd mass window in the left mass sideband; and
+\item \lambdab decays when the proton is mis-identified as a muon. This background produces a small number of decays with masses within the \bs and \bd mass windows and at in the left mass sideband;
 \end{itemize}
 \item decays which contain two muons that form a good vertex that include
 \begin{itemize}
@@ -203,7 +203,7 @@ Therefore, the mass \pdfs and expected yields of each background must be evaluat
 \begin{figure}[tbp]
     \centering
      \includegraphics[width= 0.9 \textwidth]{./Figs/BFAnalysis/Fig4.pdf}
-     \caption{Mass distributions for \bmumu backgrounds with global BDT values of BDT~$>$~0.5. The backgrounds shown are from \bhh, \bdpimunu, \bsKmunu, \lambdab, \bpimumu, \bcjpsimunu and combinatorial background. The green dashed lines show the \bmumu mass window. }
+     \caption{Mass distributions for \bmumu backgrounds with global BDT values of BDT~$>$~0.5. The backgrounds shown are from \bhh, \bdpimunu, \bsKmunu, \lambdab, \bpimumu, \bcjpsimunu and combinatorial background. The green dashed lines show the \bmumu mass window defined at the start of the chapter. }
      \label{fig:BFbkgnds}
 \end{figure}
 %To measure the number of \bsmumu decays these backgrounds must be modelled in the invariant mass fit in each BDT bin, therefore the mass \pdfs and fraction of events present in each BDT bin must be determined.  Backgrounds that fall below the \bd and \bs mass windows still need to be accruatly modelled so that the number of combinatorial background decays that cover the full mass range can be accuratley described/measured. The proceedure is slightly different for \bhh decays compared to semi-leptonic decays.
@@ -253,7 +253,7 @@ where $x$ represents each background decay. The background estimation can be fac
 where $\beta$ combines the yield, selection efficiency and hadronisation factor of \bujpsik decays and is the same for all backgrounds. The $\beta$ term is evaluated using the same method as the normalisation of the \bmumu branching fractions described in Section~\ref{sec:Normalisation}. The \bujpsik efficiencies and yields are evaluated across the full BDT range whereas the detection and selection efficiency of each background, $ \epsilon_{x}$, are evaluated separately for each BDT bin using information from both data and simulated decays. The hadronisation factors and branching fractions are specific to each background and where possible measured, rather than predicted, branching fractions are used. The branching fraction values used for each background are given in Table~\ref{tab:backgroundBFs}. %The expected yields of semi-leptonic backgrounds in each BDT bin for Run 1 and Run 2 data are given in Table~\ref{}.
 The output of the procedure gives the expected yields of each background in each BDT bin for both Run 1 and Run 2 data.
 \subsection{Combinatorial background}
-The combinatorial background is the most straight forward background to model and it is described by an exponential function. The slope of the function is required to have the same value for all BDT bins but the slope can be different for Run~1 and Run~2 data. These slopes are determined from a simultaneous fit to candidates in data across the BDT bins in the mass ranges [4900, ($m_{B^{0}_{(s)} - 80$)] \mevcc and [($m_{B^{0}_{(s)}$ + 80), 6000] \mevcc, where the mass shapes and yields of the remaining backgrounds are constrained to their expected values. The expected number of combinatorial background decays does not need to be evaluated because the yield is not constrained in the fit to measured the \BFs.
+The combinatorial background is the most straightforward background to model and it is described by an exponential function. The slope of the function is required to have the same value for all BDT bins but the slope can be different for Run~1 and Run~2 data. These slopes are determined from a simultaneous fit to candidates in data across the BDT bins in the mass ranges [4900, ($m_{B^{0}_{(s)}} - 80$)] \mevcc and [($m_{B^{0}_{(s)}}$ + 80), 6000] \mevcc, where the mass shapes and yields of the remaining backgrounds are constrained to their expected values. The expected number of combinatorial background decays does not need to be evaluated because the yield is not constrained in the fit to measured the \BFs.
 
 %The combinatorial background is modelled by an exponential function. The combinatorial background yield is not constrained in the fit and the slope is required to have the same value across all BDT bins for the Run 1 and Run 2 data sets. These slopes are determined from a simultaneous fit to candidates in data in BDT bins for the mass ranges [4900, ($m_{B^{0}} - 60$)] \mevcc and [($m_{B^{0}_{0}$ + 60, 6000] \mevcc, where the mass shapes and yields of the remaining backgrounds are constrained to their expected values.
 \section{Normalisation}
@@ -263,7 +263,7 @@ The \bmumu branching fractions are measured by normalising the number of observe
 The normalisation parameters $\alpha_{d(s)}$, in Equation~\ref{eq:BFnorm} for \bmumu decays depend on the yields of the normalisation decays, the ratio of the detection and selection efficiencies and the hadronisation factors. 
 The yields of \bujpsik and \bdkpi decays are evaluated separately for Run~1 and Run~2 data and this process is described in Section~\ref{sec:yeilds}. 
 The evaluation of the selection efficiencies is described in Section~\ref{sec:effratio} and this is done separately for each year of data taking.
-The hadronisation factors used for the normalisation discussed in Section~\ref{hadronfact} and depend on the centre-of-mass energy of collisions.
+The hadronisation factors used for the normalisation are discussed in Section~\ref{hadronfact} and depend on the centre-of-mass energy of collisions.
 The different inputs are combined to obtain the final normalisation parameters for Run~1 and Run~2 data that are presented in Section~\ref{normparams}.
 %The evaluation of each of these terms is described in the following sections.
 In addition to the normalisation channels, \bsjpsiphi decays are used to check the normalisation parameters. Consequently the yields of \bsjpisphi decays and the detection and selection efficiencies must also be evaluated. This is done in the same way as the normalisation channels.
@@ -282,7 +282,7 @@ In addition to the normalisation channels, \bsjpsiphi decays are used to check t
 
 \subsection[\bdkpi and \bujpsik yields]{\boldmath{\bdkpi} and \boldmath{\bujpsik} yields}
 \label{sec:yeilds}
-The yields of \bujpsik and \bdkpi decays are measured from data from fitting the mass distributions of these decays in Run~1 and Run~2 data. % separately. 
+The yields of \bujpsik and \bdkpi decays are measured from data by fitting the mass distributions of these decays in Run~1 and Run~2 data. % separately. 
 The \bujpsik mass \pdf is modelled by an Ipathia function~\cite{Santos:2013gra} and the fit includes components for combinatorial background and $B^{+} \to J/\psi \pi^{+}$ decays that are mis-identified as \bujpsik decays. The mass \pdf parameters are determined from a mixture of information from data and simulated decays. The \bdkpi mass fit includes components for \bskpi decays and combinatorial background as well as \bdkpi decays. Both \bdkpi and \bskpi decays are modelled by double Crystal Ball functions and the parameters are determined from a mixture of information from data and simulated decays. %yields are calculated in the same way as the BDT calibration with the same trigger requirements. However, to get the normalisation, the total number of \bdkpi decays across the full BDT range is required rather than the bin-by-bin yields computed previously. 
 Figure~\ref{fig:Bujpsikyield}~and~\ref{fig:Bdkpiyield} show the mass fits used to calculate the Run 1 and Run 2 \bujpsik and \bdkpi yields.
 
@@ -321,7 +321,7 @@ Figure~\ref{fig:Bujpsikyield}~and~\ref{fig:Bdkpiyield} show the mass fits used t
       %  \caption{ }
      %   \label{fig:BDTSbkg}
  %  \end{subfigure}
-    \caption{ Mass fit to measure the \bujpsik yield for the normalisation for Run 1 and Run 2 data. The total \pdf is made up of components of \bujpsik and $B^{+} \to J/\psi \pi^{+}$ decays and combinatorial background.}
+    \caption{ Mass fit to measure the \bujpsik yield for the normalisation for Run 1 (left) and Run 2 (right) data. The total \pdf is made up of components of \bujpsik and $B^{+} \to J/\psi \pi^{+}$ decays and combinatorial background.}
     \label{fig:Bujpsikyield}
 \end{figure}
 \begin{figure}[tbp]
@@ -338,7 +338,7 @@ Figure~\ref{fig:Bujpsikyield}~and~\ref{fig:Bdkpiyield} show the mass fits used t
       %  \caption{ }                                                                                                                               
      %   \label{fig:BDTSbkg}                                                                                                                       
    %\end{subfigure}
-    \caption{Mass fit to measure the \bdkpi yield for the normalisation for Run 1 and Run 2 data. The total \pdf is made up of component\
+    \caption{Mass fit to measure the \bdkpi yield for the normalisation for Run 1 (left) and Run 2 (right) data. The total \pdf is made up of component\
 ts for \bdkpi and \bskpi decays and combinatorial background.}
     \label{fig:Bdkpiyield}
 \end{figure}
@@ -368,7 +368,7 @@ The efficiencies are calculated for \bsmumu, \bdmumu, \bdkpi and \bujpsik separa
 The normalisation factors depend on the hadronisation factors, $f_{u}, f_{s}, f_{d}$, that give the fraction of $b\bar{b}$ pairs that produce $B^{\pm}$, \bd or $\overline{B}^{0}$ and \bs or $\overline{B}^{0}_{s}$ mesons. %probability of a $b$ or $\bar{b}$ quark to form a $B^{+}$, \bs or \bd, respectively. 
 The factors $f_{d}$ and $f_{u}$ are equal to good approximation, therefore the \bdmumu branching fraction does not depend on any hadronisation factors. For the \bsmumu decay the ratio $f_{s}/f_{d}$ is used in the normalisation, since $f_{d} = f_{u}$. This ratio has been measured at LHCb for $pp$ collisions at $\sqrt{s}$ = 7~TeV~\cite{LHCb-CONF-2013-011}. The stability of this ratio at different centre-of-mass energies was tested using the ratio of \bsjpsiphi and \bujpsik decays at 8 and 13 \tev relative to their ratio at 7~\tev. %The reconstruction, selection and trigger efficiencies were corrected for in the ratios. 
 The ratios are stable across the different collision energies and $f_{s}/f_{d}$ is assumed to be identical for $\sqrt{s}$ = 8 TeV. For Run~2, the $f_{s}/f_{d}$ ratio is modified due to a small relative production difference in \bsjpsiphi and \bujpsik decays observed for Run~2 compared to Run~1. 
-The uncertainty on the hadronisation factor ratio contributes the largest uncertainty to the \bsmumu branching fraction. 
+The uncertainty on the hadronisation factor ratio contributes the largest systematic uncertainty to the \bsmumu branching fraction. 
 
 Alternatively, the \bsmumu \BF could be normalised using a different \bs decay, such as \bsjpsiphi. However the precision of the measured branching fractions and abundance of such decays is not high enough at present to provide a lower overall uncertainty on the measured branching fraction.
 
@@ -384,8 +384,8 @@ The yearly normalisation factors are combined for each channel to produce the ov
 \begin{tabular}{lcc}
 \toprule \toprule
 Normalisation Parameters & Run 1 & Run 2 \\ \midrule
-$\alpha_{d} \times 10^{11}$ & 2.877 $\pm$ 0.101 & 3.521 $\pm$ 0.155 \\ %Why are they so differe  
-$\alpha_{s} \times 10^{10}$ & 1.071 $\pm$ 0.072 & 1.306$ \pm$ 0.095 \\
+$\alpha_{d} \times 10^{11}$ & 2.88 $\pm$ 0.10 & 3.52 $\pm$ 0.16 \\ %Why are they so differe  
+$\alpha_{s} \times 10^{10}$ & 1.07 $\pm$ 0.07 & 1.31$ \pm$ 0.10 \\
 \bottomrule \bottomrule
 \end{tabular}
 \vspace{0.7cm}
