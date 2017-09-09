@@ -399,39 +399,63 @@ The expected number of signal and background decays in data passing the \bsmumu 
 
 
 
-The pseudoexperiments are performed by generating the mass and decay time distributions for the expected number of signal and background decays in the data. The number of decays generated in the pseudoexperiments are fluctuated using Poisson distributions for each decay type where the mean values are taken from the expected yields in Table~\ref{tab:expectedevents}. The \pdfs described in Section~\ref{sec:ELmasspdfs} and~\ref{sec:DTpdfs} are used and the slope of the combinatorial background mass \pdf is taken from simulated 
+The pseudoexperiments are performed by generating the mass and decay time distributions for the expected number of signal and background decays in the data for a particular mass range. The number of decays generated in the pseudoexperiments are fluctuated using Poisson distributions for each decay type where the mean values are taken from the expected yields in Table~\ref{tab:expectedevents}. The \pdfs described in Section~\ref{sec:ELmasspdfs} and~\ref{sec:DTpdfs} are used and the slope of the combinatorial background mass \pdf is taken from simulated 
 
 
-\begin{table}[b!]
+%\begin{table}[b!]
+%\begin{center}
+%\begin{tabular}{lr}
+%\toprule \toprule
+%Decay & Expected yield \\ \midrule
+%\bsmumu & 30.94\\ 
+%\bdmumu & 3.27\\ 
+%\bhh & 9.68\\ 
+%\lambdab &  13.34\\ 
+%\bdpimunu & 40.50 \\ 
+%\bsKmunu &  9.13\\ 
+%\bupimumu &  6.01\\ 
+%\bdpimumu  &  4.86\\ 
+%\bcjpsimunu  &  9.79\\ 
+%Combinatorial background & 66.23\\ 
+%\midrule
+%Total & 193.75 \\
+%\bottomrule \bottomrule
+%\end{tabular}
+%\vspace{0.7cm}                                                                                                                                               
+%\caption{Number of expected decays in data passing the \bsmumu effective lifetime selection.}
+%\label{tab:expectedevents}
+%\end{center}
+%\vspace{-1.0cm}                                                                                                                                               
+%\end{table}
+\begin{table}[tbp]
 \begin{center}
-\begin{tabular}{lr}
+\begin{tabular}{lcc}
 \toprule \toprule
-Decay & Expected yield \\ \midrule
-\bsmumu & 30.94\\ 
-\bdmumu & 3.27\\ 
-\bhh & 9.68\\ 
-\lambdab &  13.34\\ 
-\bdpimunu & 40.50 \\ 
-\bsKmunu &  9.13\\ 
-\bupimumu &  6.01\\ 
-\bdpimumu  &  4.86\\ 
-\bcjpsimunu  &  9.79\\ 
-Combinatorial background & 66.23\\ 
-\midrule
-Total & 193.75 \\
+Decay & \multicolumn{2}{c}{Expected yields in mass ranges} \\
+ \cmidrule{2-3}
+& 4900 - 6000 \mevcc & 5320 - 6000 \mevcc \\ \midrule
+\bsmumu & 30.94 & 30.47 \\
+\bdmumu & 3.27& 0.20\\
+\bhh & 9.68& 0.92\\
+\lambdab &  13.34 & 0.64\\
+\bdpimunu & 40.50 & 0.06 \\
+\bsKmunu &  9.13 & 0.03\\
+\bupimumu &  6.01 & 0.00\\
+\bdpimumu  &  4.86 & 0.60\\
+\bcjpsimunu  &  9.79 & 0.00\\
+Combinatorial background & 66.2 & 40.6\\
 \bottomrule \bottomrule
 \end{tabular}
-\vspace{0.7cm}                                                                                                                                               
-\caption{Number of expected decays in data passing the \bsmumu effective lifetime selection.}
+\vspace{0.7cm}
+\caption{Number of expected signal and background decays in data passing the \bsmumu effective lifetime selection in the mass ranges 4900 - 6000 \mevcc and 5320 - 6000~\mevcc.}
 \label{tab:expectedevents}
 \end{center}
-\vspace{-1.0cm}                                                                                                                                               
+\vspace{-1.0cm}
 \end{table}
-
 
 \clearpage
 \noindent \bbbarmumux decays. The SM prediction for \tmumu is used to describe the lifetime of \bsmumu decays. %, assuming the Standard Model prediction for \tmumu, and taking the slope of the combinatorial background mass \pdf from simulated decays.
-The \el is then measured using the strategy described in Section~\ref{sec:fitstrategy}, where the sWeights are computed from a fit to the invariant mass distribution and the lifetime is measured by a fit to the sWeighted decay time distribution. A series of different mass ranges and background components are tested. For each possible configuration a study containing 10,000 pseudoexperiments is performed and the performance of each configuration is evaluated using two different metrics. The first is the median expected uncertainty of the \bsmumu lifetime. The median rather than the mean uncertainty is used due to the asymmetric spread of uncertainties observed for the expected statistics. The second measure is the pull distributions of any free parameters in the fit, where the pull is defined as $(x - \mu)/\sigma$ with $x$ the measured parameter value, $\mu$ the value used in the generation and $\sigma$ the uncertainty on the measured parameter value. Ideally the pull distributions will be Gaussian in shape with a mean at~0 and a width of~1.
+The \el is then measured using the strategy described in Section~\ref{sec:fitstrategy}, where the sWeights are computed from a fit to the invariant mass distribution and the lifetime is measured by a fit to the sWeighted decay time distribution. A series of different mass ranges and background components are tested. For each possible configuration a study containing 10,000 pseudoexperiments are performed and the performance of each configuration is evaluated using two different metrics. The first is the median expected uncertainty of the \bsmumu lifetime. The median rather than the mean uncertainty is used due to the asymmetric spread of uncertainties observed for the expected statistics. The second measure is the pull distributions of any free parameters in the fit, where the pull is defined as $(x - \mu)/\sigma$ with $x$ the measured parameter value, $\mu$ the value used in the generation and $\sigma$ the uncertainty on the measured parameter value. Ideally the pull distributions will be Gaussian in shape with a mean at~0 and a width of~1.
 
  The details of the pseudoexperiments and mass fits tested are given in Section~\ref{sec:toyresults}. However, first is a discussion of whether the lifetime or inverse lifetime should be measured given the expected number of decays present in the data set.  
 
@@ -606,7 +630,7 @@ Ideally, the fit strategy would be performed to extract the lifetime not the inv
 \subsection{Optimisation of fit configuration}
 \label{sec:toyresults}
 
-The mass distribution of the expected number of \bsmumu candidates passing the effective lifetime selection is shown in Figure~\ref{fig:toygen} alongside the corresponding decay time distribution for one pseudoexperiment for the combined Run~1 and Run~2 data set. 
+The mass distribution of the expected number of \bsmumu candidates passing the effective lifetime selection and in the mass range 4900 - 6000 \mevcc is shown in Figure~\ref{fig:toygen} alongside the corresponding decay time distribution for one pseudoexperiment for the combined Run~1 and Run~2 data set. 
 The contributions from the different signal and background sources are shown and the backgrounds beneath the \bs mass peak are the combinatorial background and the tails of the \bhh, \bdmumu and \lambdab backgrounds. The expected mass distribution is used to determine a range of mass fit configurations to be tested using toy studies to find the configuration that produces the smallest expected uncertainty on the measurement of \tmumu and \Gmumu provided the pull distributions of free parameters in the fit are accurate.
 
 %\clearpage 
@@ -635,13 +659,13 @@ For each possible mass fit configuration the \bsmumu, \bdmumu and combinatorial 
 The SM predicts that \tmumu is equal to the lifetime of the heavy \bs mass eigenstate, \tH. The average value calculated by the Particle Data Group of \tmumu = 1.661~\ps, is used to generated events for the pseudoexperiments~\cite{Olive:2016xmw}. %Standard Model prediction, \tmumu = \tH, for the \bsmumu effective lifetime is used to generate events for the pseudoexperiments where \tH is taken from the PDG value. 
 Also, regardless of which background components are included in the mass fit all backgrounds are generated for each mass range. %The \pdfs used in the pseudoexperiments are detailed in Appendix~\ref{}.
 
-A total of 10,000 pseudoexperiments are performed for each mass configuration and the results are given in Table~\ref{tab:toyResults}. The mean and widths of the pull distributions of \Gmumu, the \bsmumu yield, the combinatorial background yield and the slope of the background mass \pdf as well as the median expected uncertainties on \tmumu and \Gmumu are used to measure the performance of each mass fit configuration. The pull distribution of the fit for \tmumu is not used to assess the performance of each mass fit configuration given the discussion in Section~\ref{sec:tauORinvtau}.
+A total of 10,000 pseudoexperiments are performed for each mass configuration and the results are given in Table~\ref{tab:toyResults}; the events are generated in the same mass range which is used in the fits. The mean and widths of the pull distributions of \Gmumu, the \bsmumu yield, the combinatorial background yield and the slope of the background mass \pdf as well as the median expected uncertainties on \tmumu and \Gmumu are used to measure the performance of each mass fit configuration. The pull distribution of the fit for \tmumu is not used to assess the performance of each mass fit configuration given the discussion in Section~\ref{sec:tauORinvtau}.
 
 
 
 The expected statistical uncertainties for \tmumu and \Gmumu are smallest for fit configuration 11, where the mass range is restricted to 5320 - 6000 \mevcc and only the \bsmumu and combinatorial background components are included in the mass fit \pdf. The mean and widths for the different pull distributions are consistent with the expected mean of 0 and width of 1 for this fit configuration. The larger mass ranges with more background components included in the mass \pdf have larger uncertainties for \tmumu and \Gmumu as well as biased pull distributions. %It is not surprising that the simplest fit performs the best given the very low expected number of events. 
 
-Therefore, the fit configuration 11 is chosen to measure the \bsmumu effective lifetime. Figure~\ref{fig:toyegs} gives an example of the mass and decay time fits for the chosen configuration. Figure~\ref{fig:toygen} shows that the number of background decays from \bdmumu, \bhh and \lambdab is extremely low above 5320 \mevcc, therefore these backgrounds do not need to be modelled in the mass \pdf. The effect on the final result of not modelling these backgrounds is estimated in Section~\ref{sec:BKGcontaim}.
+Therefore, the fit configuration 11 is chosen to measure the \bsmumu effective lifetime. Figure~\ref{fig:toyegs} gives an example of the mass and decay time fits for the chosen configuration. Figure~\ref{fig:toygen} and Table~\ref{tab:expectedevents} show that the number of background decays from \bdmumu, \bhh and \lambdab is extremely low above 5320 \mevcc, therefore these backgrounds do not need to be modelled in the mass \pdf. The effect on the final result of not modelling these backgrounds is estimated in Section~\ref{sec:BKGcontaim}.
 
 
 The expected uncertainties for the chosen fit configuration for \tmumu and \Gmumu are $\sigma \left ( \tau_{\mu\mu}  \right ) = $ 0.28 ps and  $\sigma \left ( \Gamma_{\mu\mu}  \right ) = $ 0.11 \ps$^{-1}$, respectively. However, due to the low expected number of decays there is a large spread in the expected uncertainties as shown in Figure~\ref{fig:exptuncert}. Therefore, the uncertainties on the measurements would range between 0.1 - 0.8 ps for \tmumu and 0.07 - 0.2 \ps$^{-1}$ for \Gmumu.
@@ -694,36 +718,102 @@ Fit no.               & Mass Range  			 &  Components included in the mass \pdf 
 
 
 
+%\afterpage{
+%\begin{landscape}
+%\vspace*{\fill}
+%\begin{table}[h!]
+%\begin{center}
+%%\begin{tabular}{p{0.5cm}p{1.0cm}p{1.0cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{1.4cm}}
+%\begin{tabular}{lcccccccccc}
+%%\toprule \toprule
+%\hline \hline
+%Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{N}$(Comb. bkg.)} & \multicolumn{2}{c}{Comb. bkg. slope} & \tmumu & \multicolumn{3}{c}{\Gmumu} \\ \hline
+% &Mean&Width&Mean&Width&Mean&Width&$\sigma$/\ps&Mean&Width&$\sigma$/\ps$^{-1}$\\ \hline
+%1. & $-$0.043 & 1.002 & $-$0.048 & 1.050 & $-$0.071 & 1.005 & 0.40 & 0.021 & 0.946 & 0.15 \\
+%2. & $-$0.064 & 1.015 & $-$0.018 & 1.048 & $-$0.092 & 1.006 & 0.35 & 0.013 & 0.970 & 0.13 \\
+%3. & $-$0.034 & 0.973 & $-$0.067 & 1.023 & $-$0.019 & 0.999 & 0.42 & 0.031 & 0.935 & 0.12 \\
+%4. & $-$0.042 & 0.981 & $-$0.066 & 1.024 & $-$0.018 & 0.999 & 0.41 & 0.028 & 0.942 & 0.15 \\
+%5. & $-$0.094 & 0.997 & 0.100 & 1.007 & $-$0.228 & 1.018 & 0.40 & 0.017 & 0.933 & 0.15 \\
+%6. & $-$0.124 & 1.024 & 0.110 & 1.009 & $-$0.242 & 1.021 & 0.32 & $-$0.008 & 0.973 & 0.12 \\
+%7. & $-$0.367 & 1.045 & 1.248 & 0.923 & $-$1.823 & 1.104 & 0.33 & $-$0.091 & 0.975 & 0.12 \\
+%8. & $-$0.521 & 1.049 & 1.770 & 0.983 & $-$2.425 & 1.075 & 0.34 & $-$0.114 & 0.969 & 0.12 \\
+%9. & $-$0.473 & 1.044 & 1.296 & 0.918 & $-$1.883 & 1.126 & 0.34 & $-$0.126 & $-$0.993 & 0.12 \\
+%10. & $-$0.101 & 1.013 & 0.396 & 0.989 & $-$0.571 & 1.068 & 0.31 & $-$0.043 & 0.985 & 0.11 \\
+%11. & 0.050 & 1.006 & 0.060 & 1.013 & $-$0.123 & 1.013 & 0.29 & 0.024 & 0.982 & 0.11  \\
+%12. & 0.020 & 1.009 & 0.015 & 1.007 & $-$0.066 & 0.991 & 0.30 & 0.021 & 0.995 & 0.11 \\
+%13. & 0.007 & 1.001 & $-$0.039 & 1.033 & $-$0.029 & 0.995 & 0.34 & 0.023 & 0.983 & 0.13 \\ \hline \hline %\bottomrule \bottomrule
+%\end{tabular}
+%\vspace{0.7cm}
+%\caption{Results for the pseudoexperiments testing the mass fit configurations. The mean and width of the pull distributions for the \bsmumu and combinatorial background yields and the slope of the combinatorial background mass \pdf are shown along with the expected statistical uncertainty on \tmumu and \Gmumu. The uncertainties on the means are 0.010 and the widths are 0.007 for all configurations.}                                                                                                   
+%\label{tab:toyResults}
+%\end{center}
+%\vspace{-1.0cm}                                                                                                                                               
+%\end{table}
+%\vspace*{\fill}
+%\end{landscape}
+%}
+
+%\afterpage{
+%\begin{landscape}
+%\vspace*{\fill}
+%\begin{table}[h!]
+%\begin{center}
+%%\begin{tabular}{p{0.5cm}p{1.0cm}p{1.0cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{1.4cm}}                                                                                                  
+%\begin{tabular}{lrrrrrrrrrrrrrrr}
+%%\begin{tabular}{p{0.8cm}p{0.5cm}p{1.0cm}p{1.0cm}p{0.5cm}p{1.0cm}p{1.0cm}p{0.5cm}p{1.0cm}p{1.0cm}p{0.5cm}p{1.0cm}p{1.0cm}p{1.0cm}p{0.5cm}p{1.0cm}}
+%%\toprule \toprule                                                                                                                                                                                          
+%\hline \hline
+%Fit & $ $ $ $& \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & $ $ $ $&  \multicolumn{2}{c}{$\mathcal{N}$(Comb. bkg.)} & $ $ $ $&  \multicolumn{2}{c}{Comb. bkg. slope} &  $ $ $ $&  \multicolumn{3}{c}{\Gmumu}&$ $ $ $&  \tmumu  \\ \hline
+%&&Mean&Width  &&Mean&Width&&Mean&Width&&Mean&Width&$\sigma$/\ps$^{-1}$  && $\sigma$/\ps\\ \hline
+%1. && $-$0.043 & 1.002 && $-$0.048 & 1.050 && $-$0.071 & 1.005 && 0.021 & 0.946 & 0.15 && 0.40 \\
+%2. && $-$0.064 & 1.015 && $-$0.018 & 1.048 && $-$0.092 & 1.006 && 0.013 & 0.970 & 0.13 && 0.35 \\
+%3. && $-$0.034 & 0.973 && $-$0.067 & 1.023 && $-$0.019 & 0.999 && 0.031 & 0.935 & 0.12 && 0.42\\
+%4. && $-$0.042 & 0.981 && $-$0.066 & 1.024 && $-$0.018 & 0.999 && 0.028 & 0.942 & 0.15 && 0.41\\
+%5. && $-$0.094 & 0.997 && 0.100 & 1.007 && $-$0.228 & 1.018 && 0.017 & 0.933 & 0.15 && 0.40 \\
+%6. && $-$0.124 & 1.024 && 0.110 & 1.009 && $-$0.242 & 1.021 && $-$0.008 & 0.973 & 0.12 && 0.32  \\
+%7. && $-$0.367 & 1.045 && 1.248 & 0.923 && $-$1.823 & 1.104&& $-$0.091 & 0.975 & 0.12 && 0.33\\
+%8. && $-$0.521 & 1.049 && 1.770 & 0.983 && $-$2.425 & 1.075&& $-$0.114 & 0.969 & 0.12 && 0.34 \\
+%9. && $-$0.473 & 1.044 && 1.296 & 0.918 && $-$1.883 & 1.126 && $-$0.126 & $-$0.993 & 0.12 && 0.34 \\
+%10.&& $-$0.101 & 1.013 && 0.396 & 0.989 && $-$0.571 & 1.068 && $-$0.043 & 0.985 & 0.11 && 0.31\\
+%11.&& 0.050 & 1.006  && 0.060 & 1.013 && $-$0.123 & 1.013 && 0.024 & 0.982 & 0.11  && 0.29 \\
+%12.&& 0.020 & 1.009  && 0.015 & 1.007 && $-$0.066 & 0.991 && 0.021 & 0.995 & 0.11 && 0.30\\
+%13.&& 0.007 & 1.001 && $-$0.039 & 1.033 && $-$0.029 & 0.995&& 0.023 & 0.983 & 0.13 && 0.34 \\ \hline \hline %\bottomrule \bottomrule                                                                 
+
 \afterpage{
 \begin{landscape}
 \vspace*{\fill}
 \begin{table}[h!]
 \begin{center}
-%\begin{tabular}{p{0.5cm}p{1.0cm}p{1.0cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{1.4cm}}
-\begin{tabular}{lcccccccccc}
-%\toprule \toprule
+%\begin{tabular}{p{0.5cm}p{1.0cm}p{1.0cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{0.9cm}p{1.4cm}}                                                                                                 \
+                                                                                                                                                                                                            
+\begin{tabular}{lccccccccccccccc}
+%\toprule \toprule                                                                                                                                                                                         \
+                                                                                                                                                                                                            
 \hline \hline
-Fit & \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & \multicolumn{2}{c}{$\mathcal{N}$(Comb. bkg.)} & \multicolumn{2}{c}{Comb. bkg. slope} & \tmumu & \multicolumn{3}{c}{\Gmumu} \\ \hline
- &Mean&Width&Mean&Width&Mean&Width&$\sigma$/\ps&Mean&Width&$\sigma$/\ps$^{-1}$\\ \hline
-1. & $-$0.043 & 1.002 & $-$0.048 & 1.050 & $-$0.071 & 1.005 & 0.40 & 0.021 & 0.946 & 0.15 \\
-2. & $-$0.064 & 1.015 & $-$0.018 & 1.048 & $-$0.092 & 1.006 & 0.35 & 0.013 & 0.970 & 0.13 \\
-3. & $-$0.034 & 0.973 & $-$0.067 & 1.023 & $-$0.019 & 0.999 & 0.42 & 0.031 & 0.935 & 0.12 \\
-4. & $-$0.042 & 0.981 & $-$0.066 & 1.024 & $-$0.018 & 0.999 & 0.41 & 0.028 & 0.942 & 0.15 \\
-5. & $-$0.094 & 0.997 & 0.100 & 1.007 & $-$0.228 & 1.018 & 0.40 & 0.017 & 0.933 & 0.40 \\
-6. & $-$0.124 & 1.024 & 0.110 & 1.009 & $-$0.242 & 1.021 & 0.32 & $-$0.008 & 0.973 & 0.12 \\
-7. & $-$0.367 & 1.045 & 1.248 & 0.923 & $-$1.823 & 1.104 & 0.33 & $-$0.091 & 0.975 & 0.12 \\
-8. & $-$0.521 & 1.049 & 1.770 & 0.983 & $-$2.425 & 1.075 & 0.34 & $-$0.114 & 0.969 & 0.12 \\
-9. & $-$0.473 & 1.044 & 1.296 & 0.918 & $-$1.883 & 1.126 & 0.34 & $-$0.126 & $-$.993 & 0.12 \\
-10. & $-$0.101 & 1.013 & 0.396 & 0.989 & $-$0.571 & 1.068 & 0.31 & $-$0.043 & 0.985 & 0.11 \\
-11. & 0.050 & 1.006 & 0.060 & 1.013 & $-$0.123 & 1.013 & 0.29 & 0.024 & 0.982 & 0.11  \\
-12. & 0.020 & 1.009 & 0.015 & 1.007 & $-$0.066 & 0.991 & 0.30 & 0.021 & 0.995 & 0.11 \\
-13. & 0.007 & 1.001 & $-$0.039 & 1.033 & $-$0.029 & 0.995 & 0.34 & 0.023 & 0.983 & 0.13 \\ \hline \hline %\bottomrule \bottomrule
+Fit & $ $ $ $& \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & $ $ $ $&  \multicolumn{2}{c}{$\mathcal{N}$(Comb. bkg.)} & $ $ $ $&  \multicolumn{2}{c}{Comb. bkg. slope} &  $ $ $ $&  \multicolumn{2}{c}{\Gmumu}& $ $ $ $  &\multicolumn{2}{c}{Expected uncertainty on}  \\ \hline
+&&Mean&Width  &&Mean&Width&&Mean&Width&&Mean&Width&&\Gmumu/\ps$^{-1}$  &\tmumu/\ps\\ \hline
+1. && $-$0.043 & 1.002 && $-$0.048 & 1.050 && $-$0.071 & 1.005 && 0.021 & 0.946 && 0.15 & 0.40 \\
+2. && $-$0.064 & 1.015 && $-$0.018 & 1.048 && $-$0.092 & 1.006 && 0.013 & 0.970 && 0.13 & 0.35 \\
+3. && $-$0.034 & 0.973 && $-$0.067 & 1.023 && $-$0.019 & 0.999 && 0.031 & 0.935 && 0.12 & 0.42\\
+4. && $-$0.042 & 0.981 && $-$0.066 & 1.024 && $-$0.018 & 0.999 && 0.028 & 0.942 && 0.15 & 0.41\\
+5. && $-$0.094 & 0.997 && 0.100 & 1.007 && $-$0.228 & 1.018 && 0.017 & 0.933 && 0.15 & 0.40 \\
+6. && $-$0.124 & 1.024 && 0.110 & 1.009 && $-$0.242 & 1.021 && $-$0.008 & 0.973 && 0.12 & 0.32  \\
+7. && $-$0.367 & 1.045 && 1.248 & 0.923 && $-$1.823 & 1.104&& $-$0.091 & 0.975 && 0.12 & 0.33\\
+8. && $-$0.521 & 1.049 && 1.770 & 0.983 && $-$2.425 & 1.075&& $-$0.114 & 0.969 && 0.12 & 0.34 \\
+9. && $-$0.473 & 1.044 && 1.296 & 0.918 && $-$1.883 & 1.126 && $-$0.126 & $-$0.993 && 0.12 & 0.34 \\
+10.&& $-$0.101 & 1.013 && 0.396 & 0.989 && $-$0.571 & 1.068 && $-$0.043 & 0.985 && 0.11 & 0.31\\
+11.&& 0.050 & 1.006  && 0.060 & 1.013 && $-$0.123 & 1.013 && 0.024 & 0.982 && 0.11  & 0.29 \\
+12.&& 0.020 & 1.009  && 0.015 & 1.007 && $-$0.066 & 0.991 && 0.021 & 0.995 && 0.11 & 0.30\\
+13.&& 0.007 & 1.001 && $-$0.039 & 1.033 && $-$0.029 & 0.995&& 0.023 & 0.983 && 0.13 & 0.34 \\ \hline \hline %\bottomrule \bottomrule                                                                       \
+            
+          
 \end{tabular}
 \vspace{0.7cm}
-\caption{Results for the pseudoexperiments testing the mass fit configurations. The mean and width of the pull distributions for the \bsmumu and combinatorial background yields and the slope of the combinatorial background mass \pdf are shown along with the expected statistical uncertainty on \tmumu and \Gmumu. The uncertainties on the means are 0.010 and the widths are 0.007 for all configurations.}                                                                                                   
+\caption{Results for the pseudoexperiments testing the mass fit configurations. The mean and width of the pull distributions for the \bsmumu and combinatorial background yields and the slope of the combinatorial background mass \pdf are shown. Also shown are the mean and width of the pull distribution for the fit for \Gmumu, along with expected statistical uncertainty for \Gmumu and \tmumu. The uncertainties on the means are 0.010 and the widths are 0.007 for all configurations.}   \
+
 \label{tab:toyResults}
 \end{center}
-\vspace{-1.0cm}                                                                                                                                               
+\vspace{-1.0cm}
 \end{table}
 \vspace*{\fill}
 \end{landscape}
@@ -794,7 +884,7 @@ The results of the unbinned \ml fit to the dimuon mass distribution and the sWei
 \tau_{\mu\mu} = 2.04 \pm 0.44  \text{ ps} 
 \end{equation}
 \begin{equation}
-\Gamma_{\mu\mu} = 0.489  \pm 0.117 \text{ ps}^{-1}
+\Gamma_{\mu\mu} = 0.49  \pm 0.12 \text{ ps}^{-1}
 \end{equation}
 where the uncertainties are statistical only. The results are consistent with the SM prediction given in Chapter~\ref{sec:theory_chptr} and the measured value is 1$\sigma$ from \ADG = +1 and 1.4$\sigma$ from \ADG = $-$1. 
 

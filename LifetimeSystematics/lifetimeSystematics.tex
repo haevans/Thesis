@@ -83,7 +83,7 @@ Therefore the mass fit returns accurate yields for \bsmumu and the biased pull d
 The remaining area of the fit to investigate is any underlying bias from the fit on the measured value of \tmumu. %As discussed in Section~\ref{sec:tauORinvtau}, the pull distribution for the measured effective lifetime is biased for the expected number of statistics but the pull distribution for \Gmumu produces a mean and width consistent with 0 and 1, respectively. However, the coverage of the uncertainties of both \tmumu and \Gmumu are reasonable and the biased \tmumu pull arises from the likelihood function as discussed in Section~\ref{sec:tauORinvtau}. 
 
 The overall bias in the fit for measuring \tmumu is evaluated from the difference between the measured and generated values of \tmumu from pseudoexperiments. A total of 10,000 pseudoexperiments are performed generating only \bsmumu and combinatorial background decays. % so the fit bias is not masked by contamination from mis-identified backgrounds. 
-The difference between the measured and generated \tmumu values is evaluated for pseudoexperiments generated with the expected and also the observed number of \bsmumu and combinatorial background decays. The fit bias is evaluated for the observed number of decays as well as the expected number of decays because there are fewer than expected therefore the bias may be larger. The resulting distributions are shown in Figure~\ref{fig:BsmumuYieldPulls}. The mean of the difference in \tmumu values is 0.02 \ps for the expected number of decays and 0.03 \ps for the observed number of decays. Therefore the larger uncertainty of 0.03 \ps is used as the measure of the systematic uncertainty caused by the fit on the final result for \tmumu. %giving a systematic uncertainty of 0.03ps for the fit accuracy of \tmumu and no systematic uncertainty for \Gmumu.
+Only the comnbinatorial background is included in these pseudoexperiments so that the bias from the fit is not masked by the presence of the other backgrounds that are not modelled in the fit. The difference between the measured and generated \tmumu values is evaluated for pseudoexperiments generated with the expected and also the observed number of \bsmumu and combinatorial background decays. The fit bias is evaluated for the observed number of decays as well as the expected number of decays because there are fewer than expected therefore the bias may be larger. The resulting distributions are shown in Figure~\ref{fig:BsmumuYieldPulls}. The mean of the difference in \tmumu values is 0.02 \ps for the expected number of decays and 0.03 \ps for the observed number of decays. Therefore the larger uncertainty of 0.03 \ps is used as the measure of the systematic uncertainty caused by the fit on the final result for \tmumu. %giving a systematic uncertainty of 0.03ps for the fit accuracy of \tmumu and no systematic uncertainty for \Gmumu.
 
 \begin{figure}[tbp]
     \centering
@@ -98,34 +98,34 @@ The difference between the measured and generated \tmumu values is evaluated for
 \label{sec:BKGcontaim}
 The mass fit configuration used to measure the \bsmumu effective lifetime includes components for \bsmumu and combinatorial background decays to fit candidates with a \bs mass between 5320 - 6000 \mevcc. Although the majority of background decays from mis-identified and \bdmumu decays fall outside this mass window, as shown in Figure~\ref{fig:toygen}, the tails of some backgrounds are still within this region. The backgrounds of particular importance for the chosen mass range include \bdmumu, \bhh, \lambdab, \bdpimunu, \bsKmunu, \bupimumu, \bdpimumu and \bcjpsimunu.%, with \bhh, \bdmumu and \lambdab being of particular importance for the chosen mass range. 
 
-The number of expected background decays and their mass \pdfs in the range 4900 - 6000 \mevcc are computed using the methods described in Chapter~\ref{sec:BFanalysis} and the number of decays expected in the smaller mass range 5320 - 6000 \mevcc are determined by integrating the mass \pdfs over this mass range. The expected yields for each background are given in Table~\ref{tab:tabC} and are less than 1 candidate, except the combinatorial background, in the range 5320 - 6000 \mevcc.  
-\begin{table}[tbp]
-\begin{center}
-\begin{tabular}{lcc}
-\toprule \toprule
-Decay & \multicolumn{2}{c}{Expected yields in mass ranges} \\ 
- \cmidrule{2-3}
-& 4900 - 6000 \mevcc & 5320 - 6000 \mevcc \\ \midrule
-\bsmumu & 30.94 & 30.47 \\ 
-\bdmumu & 3.27& 0.20\\ 
-\bhh & 9.68& 0.92\\ 
-\lambdab &  13.34 & 0.64\\ 
-\bdpimunu & 40.50 & 0.06 \\ 
-\bsKmunu &  9.13 & 0.03\\ 
-\bupimumu &  6.01 & 0.00\\ 
-\bdpimumu  &  4.86 & 0.60\\ 
-\bcjpsimunu  &  9.79 & 0.00\\ 
-Combinatorial background & 66.2 & 40.6\\ 
-\bottomrule \bottomrule
-\end{tabular}
-\vspace{0.7cm}                                                                                                                                               
-\caption{Number of expected signal and background decays in data passing the \bsmumu effective lifetime selection in the mass ranges 4900 - 6000 \mevcc and 5320 - 6000~\mevcc.}
-\label{tab:tabC}
-\end{center}
-\vspace{-1.0cm}                                                                                                                                               
-\end{table}
+The number of expected background decays and their mass \pdfs in the range 4900 - 6000 \mevcc are computed using the methods described in Chapter~\ref{sec:BFanalysis} and the number of decays expected in the smaller mass range 5320 - 6000 \mevcc are determined by integrating the mass \pdfs over this mass range. The expected yields for each background are given in Table~\ref{tab:expectedevents} and are less than 1 candidate, except the combinatorial background, in the range 5320 - 6000 \mevcc.  
+%\begin{table}[tbp]
+%\begin{center}
+%\begin{tabular}{lcc}
+%\toprule \toprule
+%Decay & \multicolumn{2}{c}{Expected yields in mass ranges} \\ 
+% \cmidrule{2-3}
+%& 4900 - 6000 \mevcc & 5320 - 6000 \mevcc \\ \midrule
+%\bsmumu & 30.94 & 30.47 \\ 
+%\bdmumu & 3.27& 0.20\\ 
+%\bhh & 9.68& 0.92\\ 
+%\lambdab &  13.34 & 0.64\\ 
+%\bdpimunu & 40.50 & 0.06 \\ 
+%\bsKmunu &  9.13 & 0.03\\ 
+%\bupimumu &  6.01 & 0.00\\ 
+%\bdpimumu  &  4.86 & 0.60\\ 
+%\bcjpsimunu  &  9.79 & 0.00\\ 
+%Combinatorial background & 66.2 & 40.6\\ 
+%\bottomrule \bottomrule
+%\end{tabular}
+%\vspace{0.7cm}                                                                                                                                               
+%\caption{Number of expected signal and background decays in data passing the \bsmumu effective lifetime selection in the mass ranges 4900 - 6000 \mevcc and 5320 - 6000~\mevcc.}
+%\label{tab:tabC}
+%\end{center}
+%\vspace{-1.0cm}                                                                                                                                               
+%\end{table}
 
-The impact of backgrounds not modelled in the mass fit on the measured \tmumu value is evaluated using two sets of pseudoexperiments. The pseudoexperiments have the same general set up as described in Section~\ref{sec:toys}. One set of pseudoexperiments assumes there are no backgrounds other than the combinatorial background and therefore only \bsmumu and combinatorial background candidates are generated. The second set of pseudoexperiments uses a more realistic model and generates all possible background decays. The expected yields are fluctuated using a Poisson distribution around their expected values to two decimal places. For each configuration 10,000 pseudoexperiments are performed and the pull distributions for \Gmumu of each set up are compared. %The pull distributions for \tmumu are not used due to their non-Gaussian distribution disused in Section~\ref{sec:tauORinvtau}. 
+The impact of backgrounds not modelled in the mass fit on the measured \tmumu value is evaluated using two sets of pseudoexperiments. The pseudoexperiments have the same general set up as described in Section~\ref{sec:toys}. One set of pseudoexperiments assumes there are no backgrounds other than the combinatorial background and therefore only \bsmumu and combinatorial background candidates are generated. The second set of pseudoexperiments uses a more realistic model and generates all possible background decays. The same fit is used in both sets of pseudoexperiments to measure the \bsmumu \el; in the fit only components for \bsmumu decays and combinatorial background are included. The expected yields are fluctuated using a Poisson distribution around their expected values to two decimal places. For each configuration 10,000 pseudoexperiments are performed and the pull distributions for \Gmumu of each set up are compared. %The pull distributions for \tmumu are not used due to their non-Gaussian distribution disused in Section~\ref{sec:tauORinvtau}. 
 
 The inclusion of all the background decays causes a shift in the mean of the \Gmumu pull distribution of 0.024 $\mathrm{ps}^{-1}$ as shown in Figure~\ref{fig:bkdcontam}. Therefore, assuming the expected uncertainty in Section~\ref{sec:toyresults} for \tmumu, the systematic shift from not including all backgrounds in the fit configuration is 0.007 \ps.% for \tmumu and Y for \Gmumu. 
 
