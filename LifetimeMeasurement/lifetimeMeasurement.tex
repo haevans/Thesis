@@ -142,7 +142,7 @@ The selection efficiency of \bsmumu decays as a function of decay time is modell
 \end{equation}
 where $t$ is the decay time, $a$ and $n$ describe the curvature of the efficiency at low decay times and $t_0$ is the decay time below which the efficiency is zero. 
 
-The acceptance function parameters are determined by fitting the reconstructed decay time distribution of simulated decays using the \pdf in Equation~\ref{eq:DTpdf} with the lifetime fixed to the value used to generate the simulated decays. The normalisation of the \pdf in the fit therefore means that the limit of $\epsilon(t) \rightarrow 1$ as $t \rightarrow \infty$ is not relevant in this situation.
+The acceptance function parameters are determined by fitting the reconstructed decay time distribution of simulated decays using the \pdf in Equation~\ref{eq:DTpdf} with the lifetime fixed to the value used to generate the simulated decays. The normalisation of the \pdf in the fit means that the limit of $\epsilon(t) \rightarrow 1$ as $t \rightarrow \infty$ is not relevant in this situation.
 In the fit to data to measure the \el the acceptance function parameters are fixed and a systematic uncertainty describing how well the acceptance function is understood is detailed in Section~\ref{sec:accptsyst}.
 
 %The acceptance function parameters are determined from a fit to simulated decays and these parameters are then fixed in the fit to data to measure the \el. A systematic uncertainty describing how well the acceptance function is understood is detailed in Section~\ref{sec:accptsyst}. 
@@ -157,11 +157,11 @@ First, simulated \bsmumu decays are weighted using information from \bdkpi decay
 In general simulated decays model distributions in data reasonably well. However the number of tracks present in an event is not well modelled in the simulation. %The isolation variables used in the global BDT depend on the number of track in an event and the isolation variables are also correlated with the decay time of the \bs. 
 Although the \bsmumu decay time distribution does not depend on the number of tracks present in the event, the isolation criteria used in the global BDT do. Therefore, the selection efficiency as a function of decay time depends on the number of tracks in the event and cannot be accurately described by simulated decays alone. To overcome this the number of tracks for simulated \bsmumu decays are weighted using information from the number of tracks per event for \bdkpi decays in both data and simulation. The number of tracks for \bdkpi decays is found for decays in data and simulated decays for each year of data-taking where no requirement is made on the output of the BDT. The difference between the distributions from simulation and data are used to evaluated weights which are applied to the simulated decays so that the distribution of number of tracks in an event matches the distribution in data. These weights are then applied to simulated \bsmumu decays before the BDT cut is applied. The effect of the weights can be seen in the different reconstructed decay time distributions of weighted and unweighted decays that have a BDT value of BDT $>0.55$.
 
-The selection requirements described in Chapter~\ref{selection_chapter} are used to identify \bdkpi decays in data and simulation but, importantly the global BDT cut is not applied. The distribution of the number of tracks \bdkpi decays in data is obtained by performing a fit to the $K\pi$ mass distribution and extracting sWeights. The sWeights are applied to data to find the distribution of the number of tracks in an event for \bdkpi decays. The distribution of the weighted number of tracks per event in data is compared with the distribution in simulated \bdkpi decays. The mass fits to \bdkpi decays in data are shown in Figure~\ref{fig:ntracksmassifts} and the normalised distributions of the number of tracks per event in weighted data and simulated decays are shown in Figure~\ref{fig:nTracksMCDataComp}. Each year of data-taking is kept separate and the same simulation version is used for \bdkpi simulated decays as available for \bsmumu decays.
+%The selection requirements described in Chapter~\ref{selection_chapter} are used to identify \bdkpi decays in data and simulation but, importantly the global BDT cut is not applied. The distribution of the number of tracks \bdkpi decays in data is obtained by performing a fit to the $K\pi$ mass distribution and extracting sWeights. The sWeights are applied to data to find the distribution of the number of tracks in an event for \bdkpi decays. The distribution of the weighted number of tracks per event in data is compared with the distribution in simulated \bdkpi decays. The mass fits to \bdkpi decays in data are shown in Figure~\ref{fig:ntracksmassifts} and the normalised distributions of the number of tracks per event in weighted data and simulated decays are shown in Figure~\ref{fig:nTracksMCDataComp}. Each year of data-taking is kept separate and the same simulation version is used for \bdkpi simulated decays as available for \bsmumu decays.
 
 
 
-\begin{figure}[t!]
+\begin{figure}[tbp]
   \centering
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/Bd2KPi_2011_mass_fit.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/Bd2KPi_2012_mass_fit.pdf}
@@ -183,15 +183,26 @@ The selection requirements described in Chapter~\ref{selection_chapter} are used
   \caption{Normalised histograms of the number of tracks per event (nTracks) in simulated \bdkpi decays and sWeighted \bdkpi decays in data for a) 2011, b) 2012, c) 2015 and d) 2016 data-taking conditions.}  \label{fig:nTracksMCDataComp}
 \end{figure}
 %\FloatBarrier
+%\clearpage
+%\noindent separate and the same simulation version is used for \bdkpi simulated decays as available for \bsmumu decays.
+
+%\clearpage                                                                                                                                                                                                 
+%\begin{figure}[tbp]
+%  \centering
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2011_decaytime_Bd2KPi_weighting_impact.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2012_decaytime_Bd2KPi_weighting_impact.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2015_decaytime_Bd2KPi_weighting_impact.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2016_decaytime_Bd2KPi_weighting_impact.pdf}
+%  \caption{Decay time distributions for weighted and unweighted \bdkpi simulated decays for a) 2011, b) 2012, c) 2015 and d) 2016 data-taking conditions.}%2012_decaytime_Bd2KPi_weighting_impact.pdf (top 
+%  \label{fig:BdToKpi_weightDecayTime}
+%\end{figure}
+The selection requirements described in Chapter~\ref{selection_chapter} are used to identify \bdkpi decays in data and simulation but, importantly the global BDT cut is not applied. The distribution of the number of tracks \bdkpi decays in data is obtained by performing a fit to the $K\pi$ mass distribution and extracting sWeights. The sWeights are applied to data to find the distribution of the number of tracks in an event for \bdkpi decays. The distribution of the weighted number of tracks per event in data is compared with the distribution in simulated \bdkpi decays. The mass fits to \bdkpi decays in data are shown in Figure~\ref{fig:ntracksmassifts} and the normalised distributions of the number of tracks per event in weighted data and simulated decays are shown in Figure~\ref{fig:nTracksMCDataComp}. Each year of data-taking is kept separate and the same simulation version is used for \bdkpi simulated decays as available for \bsmumu decays.
 
 
+The distributions of the number of tracks per event for \bdkpi decays in data and simulated decays are used to weight \bdkpi decays so that the distribution in simulation matches that in data. The weights are evaluated by taking the ratio of the normalised histograms in Figure~\ref{fig:nTracksMCDataComp} for each year. The affect on the decay time distribution of using these weights and then applying the global BDT cut is shown in Figure~\ref{fig:BdToKpi_weightDecayTime} for the simulated \bdkpi decays. The difference between the decay time distributions with and without the weights is not large but clearly noticeable at low decay times where the change in selection efficiency is greatest.
 
 
-
-The distributions of the number of tracks per event for \bdkpi decays in data and simulated decays are used to weight \bdkpi decays so that the distribution in simulation matches that in data. The weights are evaluated by taking the ratio of the normalised histograms in Figure~\ref{fig:nTracksMCDataComp} for each year. The affect on the decay time distribution of using these weights and then applying the global BDT cut
-
-\clearpage 
-\begin{figure}[h]%tbp]
+\begin{figure}[tbp]
   \centering
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2011_decaytime_Bd2KPi_weighting_impact.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2012_decaytime_Bd2KPi_weighting_impact.pdf}
@@ -200,40 +211,91 @@ The distributions of the number of tracks per event for \bdkpi decays in data an
   \caption{Decay time distributions for weighted and unweighted \bdkpi simulated decays for a) 2011, b) 2012, c) 2015 and d) 2016 data-taking conditions.}%2012_decaytime_Bd2KPi_weighting_impact.pdf (top 
   \label{fig:BdToKpi_weightDecayTime}
 \end{figure}
-
-%\noindent decay time distribution of using these weights and then applying the global BDT cut is shown in Figure~\ref{fig:BdToKpi_weightDecayTime} for the simulated \bdkpi decays. The difference between the decay time distributions with and without the weights is not large but clearly noticeable at low decay times where the change in selection efficiency is greatest. 
-\noindent is shown in Figure~\ref{fig:BdToKpi_weightDecayTime} for the simulated \bdkpi decays. The difference between the decay time distributions with and without the weights is not large but clearly noticeable at low decay times where the change in selection efficiency is greatest.       
-
-
-The same weights are applied to simulated \bsmumu decays by binning the number of tracks per event for \bsmumu decays in the same way as used for \bdkpi decays. The weights are applied to decays that pass the selection but before the global BDT cut is applied. The reconstructed decay time distributions for weighted and unweighted \bsmumu simulated decays after the global BDT cut has been applied are shown in Figure~\ref{fig:BsmmDT}. %in the comparison of weighted and unweighted \bsmumu decay time distributions. 
-Similar to \bdkpi decays, the largest effect is at low decay times where the change in selection efficiency, caused by the BDT cut, is greatest as seen in Figure~\ref{fig:accpteg}.
-
-The re-weighting relies on the number of tracks per event being similar for \bdkpi and \bsmumu decays. This cannot be evaluated in data due to the small number of \bsmumu decays in data. However, Figure~\ref{fig:BsmmVsBdToKpinTracks} shows a comparison of the number of tracks per event for simulated \bsmumu and \bdkpi decays in each year and resulting distributions are similar.
-
-
-\clearpage
+%\clearpage 
+%\begin{figure}[tbp]
+%  \centering
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2011_decaytime_Bd2KPi_weighting_impact.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2012_decaytime_Bd2KPi_weighting_impact.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2015_decaytime_Bd2KPi_weighting_impact.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2016_decaytime_Bd2KPi_weighting_impact.pdf}
+%  \caption{Decay time distributions for weighted and unweighted \bdkpi simulated decays for a) 2011, b) 2012, c) 2015 and d) 2016 data-taking conditions.}%2012_decaytime_Bd2KPi_weighting_impact.pdf (top 
+%  \label{fig:BdToKpi_weightDecayTime}
+%\end{figure}
 \begin{figure}[tbp]
   \centering
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2011_DT_Bs2MuMu.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2012_DT_Bs2MuMu.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2015_DT_Bs2MuMu.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2016_DT_Bs2MuMu.pdf}
-  \caption{Decay time distributions for weighted and unweighted \bsmumu simulated decays for a) 2011, b) 2012, c) 2015 and d) 2016 data-taking conditions. Distributions have been normalised to have unit area.}
+  \caption{Decay time distributions for weighted and unweighted \bsmumu simulated decays for a) 2011, b) 2012, c) 2015 and d) 2016 data-taking conditions. Distributions have been normalised to have unit \
+area.}
   \label{fig:BsmmDT}
 \end{figure}
 
-\begin{figure}[tbp]
+%\begin{figure}[tbp]
+%  \centering
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2011_Bs2MuMu_Bd2KPi.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2012_Bs2MuMu_Bd2KPi.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2015_Bs2MuMu_Bd2KPi.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2016_Bs2MuMu_Bd2KPi.pdf}
+%  \caption{Normalised histograms of the number of tracks per event in simulated \bdkpi and simulated \bsmumu decays for a) 2011, b) 2012, c) 2015 and d) 2016 data.}%nTracks_2011_Bs2MuMu_Bd2KPi.pdf (top left), 2012 (top right), 2015 (bottom left) and 2016 (bottom right) data. }                                                                                                                                  
+%  \label{fig:BsmmVsBdToKpinTracks}
+%\end{figure}
+%\noindent decay time distribution of using these weights and then applying the global BDT cut is shown in Figure~\ref{fig:BdToKpi_weightDecayTime} for the simulated \bdkpi decays. The difference between the decay time distributions with and without the weights is not large but clearly noticeable at low decay times where the change in selection efficiency is greatest. 
+%\noindent is shown in Figure~\ref{fig:BdToKpi_weightDecayTime} for the simulated \bdkpi decays. The difference between the decay time distributions with and without the weights is not large but clearly noticeable at low decay times where the change in selection efficiency is greatest.       
+
+
+The same weights are applied to simulated \bsmumu decays by binning the number of tracks per event for \bsmumu decays in the same way as used for \bdkpi decays. The weights are applied to decays that pass the selection but before the global BDT cut is applied. The reconstructed decay time distributions for weighted and unweighted \bsmumu simulated decays after the global BDT cut has been applied are shown in Figure~\ref{fig:BsmmDT}. %in the comparison of weighted and unweighted \bsmumu decay time distributions. 
+Similar to \bdkpi decays, the largest effect is at low decay times where the change in selection efficiency, caused by the BDT cut, is greatest as seen in Figure~\ref{fig:accpteg}.      
+%\clearpage
+%\begin{figure}[tbp]
+% \centering
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2011_Bs2MuMu_Bd2KPi.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2012_Bs2MuMu_Bd2KPi.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2015_Bs2MuMu_Bd2KPi.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2016_Bs2MuMu_Bd2KPi.pdf}
+%  \caption{Normalised histograms of the number of tracks per event in simulated \bdkpi and simulated \bsmumu decays for a) 2011, b) 2012, c) 2015 and d) 2016 data.}%nTracks_2011_Bs2MuMu_Bd2KPi.pdf (top left), 2012 (top right), 2015 (bottom left) and 2016 (bottom right) data. }                                                                                                                                 \
+ The re-weighting relies on the number of tracks per event being similar for \bdkpi and \bsmumu decays. This cannot be evaluated in data due to the small number of \bsmumu decays in data. However, Figure~\ref{fig:BsmmVsBdToKpinTracks} shows a comparison of the number of tracks per event for simulated \bsmumu and \bdkpi decays in each year and resulting distributions are similar.
+                                                                                                                                                                                                           
+ \begin{figure}[tbp]
   \centering
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2011_Bs2MuMu_Bd2KPi.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2012_Bs2MuMu_Bd2KPi.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2015_Bs2MuMu_Bd2KPi.pdf}
     \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2016_Bs2MuMu_Bd2KPi.pdf}
-  \caption{Normalised histograms of the number of tracks per event in simulated \bdkpi and simulated \bsmumu decays for a) 2011, b) 2012, c) 2015 and d) 2016 data.}%nTracks_2011_Bs2MuMu_Bd2KPi.pdf (top left), 2012 (top right), 2015 (bottom left) and 2016 (bottom right) data. }
+  \caption{Normalised histograms of the number of tracks per event in simulated \bdkpi and simulated \bsmumu decays for a) 2011, b) 2012, c) 2015 and d) 2016 data.}%nTracks_2011_Bs2MuMu_Bd2KPi.pdf (top l\eft), 2012 (top right), 2015 (bottom left) and 2016 (bottom right) data. }                                                                                                                                 \
+                                                                                                                                                                                                            
   \label{fig:BsmmVsBdToKpinTracks}
-\end{figure}
+\end{figure}% \label{fig:BsmmVsBdToKpinTracks}
+%\end{figure}
+%\noindent largest effect is at low decay times where the change in selection efficiency, caused by the BDT cut, is greatest as seen in Figure~\ref{fig:accpteg}.
+
+%The re-weighting relies on the number of tracks per event being similar for \bdkpi and \bsmumu decays. This cannot be evaluated in data due to the small number of \bsmumu decays in data. However, Figure~\ref{fig:BsmmVsBdToKpinTracks} shows a comparison of the number of tracks per event for simulated \bsmumu and \bdkpi decays in each year and resulting distributions are similar.
+
+
+%\clearpage
+%\begin{figure}[tbp]
+%  \centering
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2011_DT_Bs2MuMu.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2012_DT_Bs2MuMu.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2015_DT_Bs2MuMu.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/2016_DT_Bs2MuMu.pdf}
+%  \caption{Decay time distributions for weighted and unweighted \bsmumu simulated decays for a) 2011, b) 2012, c) 2015 and d) 2016 data-taking conditions. Distributions have been normalised to have unit area.}
+%  \label{fig:BsmmDT}
+%\end{figure}%%
+
+%\begin{figure}[tbp]
+%  \centering
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2011_Bs2MuMu_Bd2KPi.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2012_Bs2MuMu_Bd2KPi.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2015_Bs2MuMu_Bd2KPi.pdf}
+%    \includegraphics[width=0.49\textwidth]{./Figs/LifetimeMeasurement/nTracks_2016_Bs2MuMu_Bd2KPi.pdf}
+%  \caption{Normalised histograms of the number of tracks per event in simulated \bdkpi and simulated \bsmumu decays for a) 2011, b) 2012, c) 2015 and d) 2016 data.}%nTracks_2011_Bs2MuMu_Bd2KPi.pdf (top left), 2012 (top right), 2015 (bottom left) and 2016 (bottom right) data. }
+%  \label{fig:BsmmVsBdToKpinTracks}
+%\end{figure}
 %accptance from MC problems can in Bd2kPi decays - was is just Run 2 or both? Could the problem actually have been sim09a not MC in general?
 
-\clearpage
+%\clearpage
 
 \subsubsection*{Combining \boldmath{\bsmumu} simulated decays from each year of data-taking}
 
@@ -241,7 +303,7 @@ The re-weighting relies on the number of tracks per event being similar for \bdk
 So far, each year of data-taking is treated separately. This is due to the different \bs lifetimes used in the generation of simulated decays as well as different selection and trigger efficiencies. The different selection efficiencies for each data-taking year are shown in Figure~\ref{fig:accptplotyrs}. Therefore to accurately model the \bsmumu acceptance function, simulated decays from each year of data-taking must be used. The number of simulated decays available for each year does not correspond to the proportions of decays present in each year of the data. Therefore, additional weights are used to combine the simulated decays so that the combined set of decays has the same proportions of decays for each year as the complete data set. 
 
 
-\begin{figure}[btp]
+\begin{figure}[h!]
     \centering
         %\includegraphics[width= 0.6 \textwidth]{./Figs/LifetimeMeasurement/Bs2MuMu_Acceptance_plot.pdf}
         %\includegraphics[width= 0.6 \textwidth]{./Figs/LifetimeMeasurement/Bs2MuMu_Acceptance_plot_no_points.pdf}
@@ -281,7 +343,13 @@ Year ($i$) & $Y_i^{\JPsiPhi}$ & $\epsilon_i$ & $N^{\mumu}_i$ & $\omega_i$ & $\ma
 The weights applied to \bsmumu simulated decays from \bdkpi decays ensure that the decay time efficiency is described accurately and the simulated decays have been combined to represent the proportion of decays present from each year of data. Therefore the acceptance parameters can now be determined.  
 An unbinned \ml fit is performed to the reconstructed decay time distribution of the weighted simulated \bsmumu decays to determine the acceptance parameters in Equation~\ref{eq:accpt}. In the fit the acceptance parameters are free and the \bsmumu lifetime is constrained to the weighted average of lifetimes used to generate each year of simulated decays. The fit result is shown in Figure~\ref{fig:accptfit} and the acceptance parameters are given in Table~\ref{tab:accptsig}. Figure~\ref{fig:accptplot} shows the shape of the fitted acceptance function. %selection efficiency histogram as a function of decay time with the acceptance function overlaid.
 
+\subsection{Background decay time \pdfs}
+\label{sec:bkgDTpdf}
 
+%The final fit to measure the \bsmumu effective lifetime does not require knowledge of the decay time \pdfs of the backgrounds. However, the fit configuration is developed using toy studies that use the \mass and decay time distributions of both signal and background decays. Therefore realistic models of the decay time \pdfs are needed to determine the optimal fit configuration.                           
+
+
+The selection biases the decay time distributions of the backgrounds in a similar way as the \bsmumu decay time. Therefore, they are described by the same \pdf as in Equation~\ref{eq:DTpdf} and the acceptance function in Equation~\ref{eq:accpt} is used to model the selection efficiency as a function of decay time. However, different acceptance function parameters are needed to describe the different backgrounds.
 
 
 \begin{figure}[tbp]
@@ -323,15 +391,15 @@ $t_{0}$ /\ps &  0.313 $\pm$ 0.007 \\
 \vspace{-1.0cm}                                                                                                                                               
 \end{table}
 
-\subsection{Background decay time \pdfs}
-\label{sec:bkgDTpdf}
+%\subsection{Background decay time \pdfs}
+%\label{sec:bkgDTpdf}
 
 %The final fit to measure the \bsmumu effective lifetime does not require knowledge of the decay time \pdfs of the backgrounds. However, the fit configuration is developed using toy studies that use the mass and decay time distributions of both signal and background decays. Therefore realistic models of the decay time \pdfs are needed to determine the optimal fit configuration. 
 
 
-The selection biases the decay time distributions of the backgrounds in a similar way as the \bsmumu decay time. Therefore, they are described by the same \pdf as in Equation~\ref{eq:DTpdf} and the acceptance function in Equation~\ref{eq:accpt} is used to model the selection efficiency as a function of decay time. However, different acceptance function parameters are needed to describe the different backgrounds. 
+%The selection biases the decay time distributions of the backgrounds in a similar way as the \bsmumu decay time. Therefore, they are described by the same \pdf as in Equation~\ref{eq:DTpdf} and the acceptance function in Equation~\ref{eq:accpt} is used to model the selection efficiency as a function of decay time. However, different acceptance function parameters are needed to describe the different backgrounds. 
 
-The backgrounds from mis-identified and \bdmumu decays are assigned the same acceptance parameters as \bsmumu decays because the decay time efficiency of these backgrounds is approximately the same as the signal. The acceptance function of these backgrounds do not need to be as accurately known as the acceptance function of the signal because very few background decays from these sources will be present in the dataset after the selection and the final result does not depend on the acceptance function of the backgrounds. The lifetimes of these background decays are taken from a fit to simulated decays. For \bhh the fit is performed to a combined set of \bhh decays representing what is expected in data. %the values used in the toy studies for the decay times \pdfs are given in Table~\ref{}. 
+The backgrounds from mis-identified and \bdmumu decays are assigned the same acceptance parameters as \bsmumu decays because the decay time efficiency of these backgrounds is approximately the same as the signal. The acceptance functions of these backgrounds do not need to be as accurately known as the acceptance function of the signal because very few background decays from these sources will be present in the dataset after the selection and the final result does not depend on the acceptance function of the backgrounds. The lifetimes of these background decays are taken from a fit to simulated decays. For \bhh the fit is performed to a combined set of \bhh decays representing what is expected in data. %the values used in the toy studies for the decay times \pdfs are given in Table~\ref{}. 
 
 The decay time \pdf of the combinatorial background is more challenging to determine. This background arises from random combinations of muons in the event and not from one source, therefore there is no single lifetime that describes the background. Furthermore, the global BDT which is designed to separate \bsmumu decays from combinatorial background decays will have a different efficiency as a function of decay time for the combinatorial background compared to the \bsmumu decays. The decay time \pdf of the combinatorial background cannot be evaluated from simulated decays or decays in data that pass the \bsmumu selection because there are too few candidates left after the selection has been applied. %The decay time \pdf must be evaluated after the global BDT cut because it has the greatest impact on the shape of the acceptance function. 
 Therefore, it is evaluated from the combinatorial background of \bhh decays using candidates in data that pass the \bhh selection and have a dimuon invariant mass greater than 5447~\mevcc. %, above the \bs signal region. 
@@ -341,7 +409,7 @@ The decay time \pdf for combinatorial background decays is modelled by
 P_{\mathrm{cbg}}(t) = \epsilon(t)\times \left( f \cdot e^{-t/\tau_{1}} + (1-f)\cdot e^{-t/\tau_{2}} \right)
 \label{eq:cbgDTpdf}
 \end{equation}
-where $\tau_{1}$ and $\tau_{2}$ are two independent lifetimes used to describe the background, $f$~describes the fraction of candidates with lifetime $\tau_{1}$ and the same acceptance parametrisation as in Equation~\ref{eq:accpt} is used for describe the decay time efficiency $\epsilon(t)$. The lifetimes in the \pdf are different, one describes a long-lived component and the other a short-lived component that can be seen in the data. The decay time \pdf for the combinatorial background is not used in the fit to measure the \el but only during studies to determine the best fit strategy. Therefore the exact parameterisation of this background is not critial to the measured \bsmumu effective lifetime.  
+where $\tau_{1}$ and $\tau_{2}$ are two independent lifetimes used to describe the background, $f$~describes the fraction of candidates with lifetime $\tau_{1}$ and the same acceptance parametrisation as in Equation~\ref{eq:accpt} is used for describe the decay time efficiency $\epsilon(t)$. The lifetimes in the \pdf are different, one describes a long-lived component and the other a short-lived component that can be seen in the data. The decay time \pdf for the combinatorial background is not used in the fit to measure the \el but only during studies to determine the best fit strategy. Therefore the exact parameterisation of this background is not critial to the measurement of the \bsmumu effective lifetime.  
 
 Two fits are applied to \bhh combinatorial backgroud to find the decay time \pdf parameters. The first fit determines $f$, $\tau_1$ and $\tau_2$ and the second is used to find $a$ and $n$. The value of $t_0$ is fixed in the fit to improve fit stability.
 The biases to the decay time distribution from the selection criteria have the greatest effect at low decay times, therefore the decay time acceptance is flat at large decay times. The lifetimes of the combinatorial background decays and the fraction of decays with each lifetime are determined from a fit using Equation~\ref{eq:cbgDTpdf}, setting $\epsilon(t)=1$, to candidates with a decay time above 2.5~\ps. The acceptance function parameters are then determined from a fit to the full decay time range using Equation~\ref{eq:cbgDTpdf}, where the lifetimes and the fraction of candidates with each lifetime are fixed. The results are shown in Figure~\ref{fig:CBGaccpt} and the \pdf parameters in Table~\ref{tab:bkgparams}. %, the $t_{0}$ parameter is fixed in the fit to improve fit stability. 
@@ -399,7 +467,7 @@ The expected number of signal and background decays in data passing the \bsmumu 
 
 
 
-The pseudoexperiments are performed by generating the mass and decay time distributions for the expected number of signal and background decays in the data for a particular mass range. The number of decays generated in the pseudoexperiments are fluctuated using Poisson distributions for each decay type where the mean values are taken from the expected yields in Table~\ref{tab:expectedevents}. The \pdfs described in Section~\ref{sec:ELmasspdfs} and~\ref{sec:DTpdfs} are used and the slope of the combinatorial background mass \pdf is taken from simulated 
+%The pseudoexperiments are performed by generating the mass and decay time distributions for the expected number of signal and background decays in the data for a particular mass range. The number of decays generated in the pseudoexperiments are fluctuated using Poisson distributions for each decay type where the mean values are taken from the expected yields in Table~\ref{tab:expectedevents}. The \pdfs described in Section~\ref{sec:ELmasspdfs} and~\ref{sec:DTpdfs} are used and the slope of the combinatorial background mass \pdf is taken from simulated \bbbarmumux decays. The SM prediction for \tmumu is used to describe the lifetime of \bsmumu decays.
 
 
 %\begin{table}[b!]
@@ -427,7 +495,7 @@ The pseudoexperiments are performed by generating the mass and decay time distri
 %\end{center}
 %\vspace{-1.0cm}                                                                                                                                               
 %\end{table}
-\begin{table}[tbp]
+\begin{table}[b!]
 \begin{center}
 \begin{tabular}{lcc}
 \toprule \toprule
@@ -453,8 +521,9 @@ Combinatorial background & 66.2 & 40.6\\
 \vspace{-1.0cm}
 \end{table}
 
-\clearpage
-\noindent \bbbarmumux decays. The SM prediction for \tmumu is used to describe the lifetime of \bsmumu decays. %, assuming the Standard Model prediction for \tmumu, and taking the slope of the combinatorial background mass \pdf from simulated decays.
+%\clearpage
+%\noindent \bbbarmumux decays. The SM prediction for \tmumu is used to describe the lifetime of \bsmumu decays. %, assuming the Standard Model prediction for \tmumu, and taking the slope of the combinatorial background mass \pdf from simulated decays.
+The pseudoexperiments are performed by generating the mass and decay time distributions for the expected number of signal and background decays in the data for a particular mass range. The number of decays generated in the pseudoexperiments are fluctuated using Poisson distributions for each decay type where the mean values are taken from the expected yields in Table~\ref{tab:expectedevents}. The \pdfs described in Section~\ref{sec:ELmasspdfs} and~\ref{sec:DTpdfs} are used and the slope of the combinatorial background mass \pdf is taken from simulated \bbbarmumux decays. The SM prediction for \tmumu is used to describe the lifetime of \bsmumu decays.
 The \el is then measured using the strategy described in Section~\ref{sec:fitstrategy}, where the sWeights are computed from a fit to the invariant mass distribution and the lifetime is measured by a fit to the sWeighted decay time distribution. A series of different mass ranges and background components are tested. For each possible configuration a study containing 10,000 pseudoexperiments are performed and the performance of each configuration is evaluated using two different metrics. The first is the median expected uncertainty of the \bsmumu lifetime. The median rather than the mean uncertainty is used due to the asymmetric spread of uncertainties observed for the expected statistics. The second measure is the pull distributions of any free parameters in the fit, where the pull is defined as $(x - \mu)/\sigma$ with $x$ the measured parameter value, $\mu$ the value used in the generation and $\sigma$ the uncertainty on the measured parameter value. Ideally the pull distributions will be Gaussian in shape with a mean at~0 and a width of~1.
 
  The details of the pseudoexperiments and mass fits tested are given in Section~\ref{sec:toyresults}. However, first is a discussion of whether the lifetime or inverse lifetime should be measured given the expected number of decays present in the data set.  
@@ -619,18 +688,24 @@ Ideally, the fit strategy would be performed to extract the lifetime not the inv
      \includegraphics[width= 0.49 \textwidth]{./Figs/LifetimeMeasurement/50fb_gamma_pull.pdf}
       \includegraphics[width=0.49 \textwidth]{./Figs/LifetimeMeasurement/300fb_simple_gamma_pull.pdf}
         \includegraphics[width= 0.49 \textwidth]{./Figs/LifetimeMeasurement/Gamma_LL.pdf}  
-
-  \caption{Pull distribution for \Gmumu using simplified pseudoexperiments for the Run~1 and Run~2 data set of 4.4~\fb (a) as well as 50 (b) and 300 (c) \fb and the likelihood profile as a function of \Gmumu (d).  A fit is performed to each pull distribution using a Gaussian function, the results are shown by the blue curves and the means ($\mu$) and widths ($\sigma$) of the Gaussian functions are shown.}
+  \caption{Pull distribution for \Gmumu using simplified pseudoexperiments for the Run~1 and Run~2 data set of 4.4~\fb (a) as well as 50 (b) and 300 (c) \fb and the likelihood profile as a function of \Gmumu (d).  The pull distributions are fitted with a Gaussian function in blue.}%A fit is performed to each pull distribution using a Gaussian function, the results are shown by the blue curves and the means ($\mu$) and widths ($\sigma$) of the Gaussian functions are shown.}
     \label{fig:gammapulls}
 \end{figure}
 
 
-
-
 \subsection{Optimisation of fit configuration}
-\label{sec:toyresults}
+%\label{sec:toyresults}
+%\begin{figure}[p!]
+%    \centering
+%        \includegraphics[width= 0.8 \textwidth]{./Figs/LifetimeMeasurement/mass_pdf2.pdf}
+%        \includegraphics[width= 0.8 \textwidth]{./Figs/LifetimeMeasurement/DT_pdf2.pdf}%
 
-The mass distribution of the expected number of \bsmumu candidates passing the effective lifetime selection and in the mass range 4900 - 6000 \mevcc is shown in Figure~\ref{fig:toygen} alongside the corresponding decay time distribution for one pseudoexperiment for the combined Run~1 and Run~2 data set. 
+%    \caption{Distributions of a) mass and b) decay time for the generated decays in the mass range 4900 - 6000 for one pseudoexperiment based on the expected number of signal and background decays in the data set.}
+%    \label{fig:toygen}
+%\end{figure}
+
+
+The mass distribution of the expected number of \bsmumu candidates passing the effective lifetime selection is shown in Figure~\ref{fig:toygen} alongside the corresponding decay time distribution for one pseudoexperiment for the combined Run~1 and Run~2 data set. 
 The contributions from the different signal and background sources are shown and the backgrounds beneath the \bs mass peak are the combinatorial background and the tails of the \bhh, \bdmumu and \lambdab backgrounds. The expected mass distribution is used to determine a range of mass fit configurations to be tested using toy studies to find the configuration that produces the smallest expected uncertainty on the measurement of \tmumu and \Gmumu provided the pull distributions of free parameters in the fit are accurate.
 
 %\clearpage 
@@ -800,7 +875,7 @@ Fit & $ $ $ $& \multicolumn{2}{c}{$\mathcal{N}$(\bsmumu)} & $ $ $ $&  \multicolu
 6. && $-$0.124 & 1.024 && 0.110 & 1.009 && $-$0.242 & 1.021 && $-$0.008 & 0.973 && 0.12 & 0.32  \\
 7. && $-$0.367 & 1.045 && 1.248 & 0.923 && $-$1.823 & 1.104&& $-$0.091 & 0.975 && 0.12 & 0.33\\
 8. && $-$0.521 & 1.049 && 1.770 & 0.983 && $-$2.425 & 1.075&& $-$0.114 & 0.969 && 0.12 & 0.34 \\
-9. && $-$0.473 & 1.044 && 1.296 & 0.918 && $-$1.883 & 1.126 && $-$0.126 & $-$0.993 && 0.12 & 0.34 \\
+9. && $-$0.473 & 1.044 && 1.296 & 0.918 && $-$1.883 & 1.126 && $-$0.126 & 0.993 && 0.12 & 0.34 \\
 10.&& $-$0.101 & 1.013 && 0.396 & 0.989 && $-$0.571 & 1.068 && $-$0.043 & 0.985 && 0.11 & 0.31\\
 11.&& 0.050 & 1.006  && 0.060 & 1.013 && $-$0.123 & 1.013 && 0.024 & 0.982 && 0.11  & 0.29 \\
 12.&& 0.020 & 1.009  && 0.015 & 1.007 && $-$0.066 & 0.991 && 0.021 & 0.995 && 0.11 & 0.30\\
